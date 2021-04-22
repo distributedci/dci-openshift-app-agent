@@ -41,6 +41,8 @@
   hosts: jumphost
   tags:
     - pre-run
+  environment:
+    KUBECONFIG: "{{ kubeconfig_path }}"
   tasks:
     - block:
         - name: Run the pre-run hook
