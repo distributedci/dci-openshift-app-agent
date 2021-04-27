@@ -1,6 +1,7 @@
 ---
 
 dci_config_dir: /etc/dci-openshift-app-agent
+dci_cache_dir: /var/lib/dci-openshift-app-agent
 dci_components: []
 dci_teardown_on_success: true
 dci_teardown_on_failure: false
@@ -9,7 +10,6 @@ dci_tags: ["debug"]
 dci_gits_to_component: "{{ dci_config_dir }}"
 dci_rpms_to_components:
   - dci-openshift-app-agent
-dci_cache_dir: /var/lib/dci-openshift-app-agent
 
 ...
 
