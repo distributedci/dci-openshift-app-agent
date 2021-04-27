@@ -94,12 +94,25 @@ It's included either when there's a failure or at the end of all the steps.
 
 Name | Default | Description
 ------------ | ------------- | -------------
+dci\_config\_dir | /etc/dci-openshift-app-agent | 
+dci\_cache\_dir | /var/lib/dci-openshift-app-agent | 
+dci\_tags | ["debug"] | 
 dci\_openshift\_app\_ns | | namespace for the workload
 do\_cnf\_cert | false | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
 tnf\_operators\_regexp | "" | regexp to select operators
 tnf\_cnfs\_regexp | "" |  regexp to select CNF
 tnf\_exclude\_connectivity\_regexp | | regexp to exclude containers from the connectivity test
 tnf\_suites | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general)
+cvp\_bundle\_spec |  | 
+cvp\_bundle\_tag |  | 
+dci\_pullsecret\_file |  | 
+dci\_registry\_host |  | 
+dci\_cs\_url |  | 
+dci\_client\_id |  | 
+dci\_api\_secret |  | 
+cvp\_submit |  | 
+pyxis\_apikey |  | 
+pyxis\_identifier |  | 
 
 ## Launching the agent
 
