@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dceeff0d_3377d9cf",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "typo, should read \"regexp to exclude containers from the connectivity test\"",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a7dfe0f_ef922de1",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "It would be nice to add a link to the list of suites available, e.g.\n\nlist of space separated test [suites](https://github.com/test-network-function/test-network-function#general)\n\n```",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c611607f_3115dbc3",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "I think we need to use `until` here, otherwise `retries` is set back to 1\n(https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html#retrying-a-task-until-a-condition-is-met)",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "51b4c1c2_8a47fced",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fcedb677_c123b56d",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "This should be inside the `if` below. Seems like we only build if we\u0027re using a registry",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c7ba97d2_19b7f62b",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "I wonder if the namespace should be also replaced to use `{{ tnf_ns }}` or if this will always run in `tnf` (https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-partner/namespace.yaml#L4)",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "61ab3284_13e33f20",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "This should be inside the `if` above.\n\nI wonder if the namespace should be also replaced to use `{{ tnf_ns }}` or if this will always run in `tnf` (https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-partner/partner.yaml#L8)",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "595352a3_574c7fc6",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 34
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "Should it be `  ? namespace: {{ tnf_ns }}` ? if the namespace.yaml and parter.yaml would do that as well.",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7a02316c_d8545dae",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 34
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-05-03T21:30:57Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
