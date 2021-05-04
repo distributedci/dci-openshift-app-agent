@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "c16e32a2_ba1b1e5a",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dceeff0d_3377d9cf",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a7dfe0f_ef922de1",
         "filename": "README.md",
         "patchSetId": 34
@@ -33,6 +51,24 @@
       "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ffb0047f_423a21ba",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7a7dfe0f_ef922de1",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "ef8fdddc_741bd014",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c611607f_3115dbc3",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "51b4c1c2_8a47fced",
         "filename": "roles/cnf-cert/tasks/pre-run.yml",
         "patchSetId": 34
@@ -67,6 +121,24 @@
       "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8540a27c_227cc21e",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "51b4c1c2_8a47fced",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "bfdd56dd_b852f4ff",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fcedb677_c123b56d",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c7ba97d2_19b7f62b",
         "filename": "roles/cnf-cert/tasks/pre-run.yml",
         "patchSetId": 34
@@ -101,6 +191,24 @@
       "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5accbcf4_223da05d",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "\u003e I wonder if the namespace should be also replaced to use `{{ tnf_ns }}` or if this will always run in `tnf` (https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-partner/namespace.yaml#L4)\n\nno that\u0027s hardcoded in the Test Suite and should be different from the namespace of the CNF it is testing ({{ tnf_ns }}).",
+      "parentUuid": "c7ba97d2_19b7f62b",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "438338f1_7b4ae52e",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 34
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "61ab3284_13e33f20",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "595352a3_574c7fc6",
         "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
         "patchSetId": 34
@@ -138,6 +264,24 @@
     },
     {
       "key": {
+        "uuid": "3438bb05_4ced279d",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 34
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "\u003e Should it be `  ? namespace: {{ tnf_ns }}` ? if the namespace.yaml and parter.yaml would do that as well.\n\nthat\u0027s hardcoded from what I can tell.",
+      "parentUuid": "595352a3_574c7fc6",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7a02316c_d8545dae",
         "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
         "patchSetId": 34
@@ -152,6 +296,24 @@
       "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4160a1fe_c537cb31",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 34
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-05-04T07:15:43Z",
+      "side": 1,
+      "message": "\u003e ditto\n\nsame",
+      "parentUuid": "7a02316c_d8545dae",
+      "revId": "f6b7bf9a0bc701fb73381a18a354c448a3326152",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
