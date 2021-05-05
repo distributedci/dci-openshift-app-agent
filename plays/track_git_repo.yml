@@ -1,4 +1,5 @@
 ---
+
 - name: get last commit id
   command: git -C {{ item }} rev-parse HEAD  # noqa 305
   register: last_commit_id
@@ -22,10 +23,13 @@
     state: present
   register: git_component
   when: last_commit_id.rc == 0
+  tags: [dci]
 
 - name: 'Attach git component to the job'
   dci_job_component:
     component_id: " {{ git_component.component.id }} "
     job_id: " {{ job_id }} "
   when: last_commit_id.rc == 0
+  tags: [dci]
+
 ...

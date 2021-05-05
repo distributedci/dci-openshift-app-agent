@@ -5,39 +5,6 @@
     state: directory
   register: job_logs
 
-# Install oc client when NOT present
-- name: "Download oc client"
-  when: oc_result.rc != 0
-  get_url:
-    url: "{{ oc_url }}"
-    dest: "/tmp"
-
-- name: "Unarchive oc"
-  when: oc_result.rc != 0
-  unarchive:
-    src: "/tmp/oc.tar.gz"
-    dest: "/tmp"
-    creates: "/tmp/oc"
-
-- name: "Copy oc to /usr/local/bin/"
-  when: oc_result.rc != 0
-  copy:
-    src: "/tmp/oc"
-    dest: "/usr/local/bin/"
-    mode: u=rwx,g=rx,o=rx
-  become: yes
-
-# Configure oc_path
-- name: "Configure oc_path from $PATH"
-  set_fact:
-    oc_tool_path: "{{ oc_result.stdout }}"
-  when: oc_result.rc == 0
-
-- name: "Configure oc_path from Download"
-  set_fact:
-    oc_tool_path: "/usr/local/bin/oc"
-  when: oc_result.rc != 0
-
 - name: "cnf-cert pre-run"
   include_role:
     name: cnf-cert
