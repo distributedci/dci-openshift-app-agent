@@ -5,37 +5,34 @@
     state: directory
   register: job_logs
 
-# Install oc client when NOT present
-- name: "Download oc client"
-  when: oc_result.rc != 0
-  get_url:
-    url: "{{ oc_url }}"
-    dest: "/tmp"
+- name: "Download and install missing clients"
+  block:
+    - name: "Create client lists when not present"
+      set_fact:
+        client_list: "{{ (['openshift-client'] if oc_result.rc != 0 else []) + ['opm'] if opm_result.rc != 0 else [] }}"
+        bin_client_list: "{{ (['oc'] if oc_result.rc != 0 else []) + ['opm'] if opm_result.rc != 0 else [] }}"
 
-- name: "Unarchive oc"
-  when: oc_result.rc != 0
-  unarchive:
-    src: "/tmp/oc.tar.gz"
-    dest: "/tmp"
-    creates: "/tmp/oc"
+    - name: "Untar clients when not present"
+      unarchive:
+        src: "{{ ocp_clients_url }}/{{ item }}-linux.tar.gz"
+        dest: "/tmp"
+        remote_src: true
+      loop: "{{ client_list }}"
 
-- name: "Copy oc to /usr/local/bin/"
-  when: oc_result.rc != 0
-  copy:
-    src: "/tmp/oc"
-    dest: "/usr/local/bin/"
-    mode: u=rwx,g=rx,o=rx
-  become: yes
+    - name: "Copy clients to /usr/local/bin/"
+      copy:
+        src: "/tmp/{{ item }}"
+        dest: "/usr/local/bin/"
+        mode: u=rwx,g=rx,o=rx
+      become: true
+      loop: "{{ bin_client_list }}"
 
-# Configure oc_path
-- name: "Configure oc_path from $PATH"
+  when: oc_result.rc != 0 or opm_result.rc != 0
+
+- name: "Configure clients PATH"
   set_fact:
-    oc_tool_path: "{{ oc_result.stdout }}"
-  when: oc_result.rc == 0
-
-- name: "Configure oc_path from Download"
-  set_fact:
-    oc_tool_path: "/usr/local/bin/oc"
+    oc_tool_path: "{{ oc_result.stdout if oc_result.rc == 0 else '/usr/local/bin/oc' }}"
+    opm__tool_path: "{{ opm_result.stdout if opm_result.rc == 0 else '/usr/local/bin/opm' }}"
   when: oc_result.rc != 0
 
 - name: "cnf-cert pre-run"
