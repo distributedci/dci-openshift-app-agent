@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f3d8458d_05d55435",
+        "filename": "group_vars/all",
+        "patchSetId": 8
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2021-05-05T09:23:47Z",
+      "side": 1,
+      "message": "oc version needs to be aligne with ocp version",
+      "revId": "0b4239b0d99940ee6d48f643919952a7313d1641",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4086141f_15164973",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2021-05-05T09:23:47Z",
+      "side": 1,
+      "message": "Version of oc client should be aligned with ocp version",
+      "revId": "0b4239b0d99940ee6d48f643919952a7313d1641",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
