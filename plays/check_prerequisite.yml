@@ -2,8 +2,14 @@
 - name: "Check if oc executable is present"
   command: "which oc"
   register: oc_result
-  ignore_errors: True
+  ignore_errors: true
   changed_when: oc_result.rc != 0
+
+- name: "Check if opm executable is present"
+  command: "which opm"
+  register: opm_result
+  ignore_errors: true
+  changed_when: opm_result.rc != 0
 
 # Check which hooks are present
 - name: "Check if pre-run hooks is present"
