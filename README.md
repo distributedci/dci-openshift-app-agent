@@ -92,14 +92,14 @@ It's included either when there's a failure or at the end of all the steps.
 
 ## Variables
 
-Name | Default | Description
------------- | ------------- | -------------
-dci\_openshift\_app\_ns | | namespace for the workload
-do\_cnf\_cert | false | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
-tnf\_operators\_regexp | "" | regexp to select operators
-tnf\_cnfs\_regexp | "" |  regexp to select CNF
-tnf\_exclude\_connectivity\_regexp | | regexp to exclude containers from the connectivity test
-tnf\_suites | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general)
+| Name                            | Default              | Description                                                                                                   |
+| ------------------------------- | -------------------- | ------------------------------------------------------------------------------------------------------------- |
+| dci_openshift_app_ns            |                      | namespace for the workload                                                                                    |
+| do_cnf_cert                     | false                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)                    |
+| tnf_operators_regexp            | ""                   | regexp to select operators                                                                                    |
+| tnf_cnfs_regexp                 | ""                   | regexp to select CNF                                                                                          |
+| tnf_exclude_connectivity_regexp |                      | regexp to exclude containers from the connectivity test                                                       |
+| tnf_suites                      | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general) |
 
 ## Launching the agent
 
