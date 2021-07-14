@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d6c9d47b_342d8c2a",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-07-14T19:47:35Z",
+      "side": 1,
+      "message": "Not sure if you meant also to include the repo where the rpm is provided, in any case let\u0027s add it in here https://packages.distributed-ci.io/dci-release.el8.noarch.rpm",
+      "revId": "165e63cc2eaafc0162d5b24072e4b2964fed137f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b87b70b4_365c8816",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-07-14T19:47:35Z",
+      "side": 1,
+      "message": "I\u0027d probably omit the reference to pipelines as this repo has no context on how we configure pipelines to change settings in d-o-a-a.",
+      "revId": "165e63cc2eaafc0162d5b24072e4b2964fed137f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce86f8f0_4eaa9e18",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 159,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-07-14T19:47:35Z",
+      "side": 1,
+      "message": "I\u0027d probably remove this sub-section altogether, because is very specific to our environment in dallas.\n\nI think a better place for this sub-section would be the https://github.com/dci-labs/dallas-internal-docs",
+      "revId": "165e63cc2eaafc0162d5b24072e4b2964fed137f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
