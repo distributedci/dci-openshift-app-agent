@@ -39,11 +39,11 @@
     dest: "{{ tnf_tempdir.path }}/cnf_test_configuration.yml"
   when: test_network_function_version != "v2.0.0"
 
-- name: Template tnf_config.yml (version v2.0.0)
+- name: Template tnf_config.yml (version v2.0.0 and beyond)
   template:
     src: templates/tnf_config.yml.j2
     dest: "{{ tnf_tempdir.path }}/tnf_config.yml"
-  when: test_network_function_version == "v2.0.0"
+  when: test_network_function_version == "v2.0.0" or test_network_function_version == "HEAD"
 
 # - name: Run the CNF Test Suite (container)
 #   shell: |
@@ -65,7 +65,7 @@
     chdir: "{{ tnf_git_dir }}/test_network_function"
   when: test_network_function_version != "v2.0.0"
 
-- name: Run the CNF Test Suite (version v2.0.0)
+- name: Run the CNF Test Suite (version v2.0.0 and beyond)
   shell: |
     set -x
     rm -f test_network_function/*.xml test-network-function/tnf_config.yml
@@ -74,6 +74,6 @@
     cp test-network-function/*.xml {{ tnf_tempdir.path }}
   args:
     chdir: "{{ tnf_git_dir }}/test_network_function"
-  when: test_network_function_version == "v2.0.0"
+  when: test_network_function_version == "v2.0.0" or test_network_function_version == "HEAD"
 
 ...

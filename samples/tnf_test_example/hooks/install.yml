@@ -24,3 +24,9 @@
               limits:
                 memory: 512Mi
                 cpu: 0.25
+
+- name: Tag pod if labels are provided
+  shell: |
+    set -ex
+    oc label pod test "{{ tnf_targetpodlabels_name }}"="{{ tnf_targetpodlabels_value }}" -n "{{ dci_openshift_app_ns }}"
+  when: tnf_targetpodlabels_name is not undefined and tnf_targetpodlabels_value is not undefined
