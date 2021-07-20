@@ -92,14 +92,22 @@ It's included either when there's a failure or at the end of all the steps.
 
 ## Variables
 
-Name | Default | Description
------------- | ------------- | -------------
-dci\_openshift\_app\_ns | | namespace for the workload
-do\_cnf\_cert | false | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
-tnf\_operators\_regexp | "" | regexp to select operators
-tnf\_cnfs\_regexp | "" |  regexp to select CNF
-tnf\_exclude\_connectivity\_regexp | | regexp to exclude containers from the connectivity test
-tnf\_suites | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general)
+Name                               | Default | Description
+---------------------------------- | ------- | -------------
+dci\_topic                         |                      | Name of the topic. `OCP-4.5` and up
+dci\_tags                          | ["debug"]            | List of tags to set on the job
+dci\_name                          |                      | Name of the job
+dci\_configuration                 |                      | String representing the configuration of the job
+dci\_comment                       |                      | Comment to associate with the job
+dci\_url                           |                      | URL to associate with the job
+dci\_components\_by\_query         | []                   | Component by query. ['name:4.5.9']
+dci\_component                     | []                   | Component by UUID. ['acaf3f29-22bb-4b9f-b5ac-268958a9a67f']
+dci\_openshift\_app\_ns            |                      | namespace for the workload
+do\_cnf\_cert                      | false                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
+tnf\_operators\_regexp             | ""                   | regexp to select operators
+tnf\_cnfs\_regexp                  | ""                   |  regexp to select CNF
+tnf\_exclude\_connectivity\_regexp |                      | regexp to exclude containers from the connectivity test
+tnf\_suites                        | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general)
 
 ## Launching the agent
 
