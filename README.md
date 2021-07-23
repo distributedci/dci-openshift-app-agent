@@ -78,16 +78,16 @@ dci\_component                     | []                   | Component by UUID. [
 dci\_openshift\_app\_image         |                      | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns            |                      | namespace for the workload
 do\_cnf\_cert                      | false                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
-test\_network\_function\_version   | HEAD                 | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8 and v2.0.0.
+test\_network\_function\_version   | v2.0.0               | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8 and v2.0.0.
 tnf\_operators\_regexp             | ""                   | regexp to select operators
 tnf\_cnfs\_regexp                  | ""                   |  regexp to select CNF
 tnf\_exclude\_connectivity\_regexp | null                 | regexp to exclude containers from the connectivity test
-tnf\_suites                        | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general)
+tnf\_suites                        | "diagnostic generic" | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general-tests). Note that, for versions until v2.0.0, you can execute the following test suites: diagnostic, generic, container, operator, multus. For versions higher than v2.0.0, you can execute the following tests: diagnostic, generic, access-control, networking, lifecycle, observability, platform-alteration, operator, affiliated-certification, multus
 tnf\_registry                      | ""                   | registry to fetch the container used for the CNF Cert Suite. Must be set in disconnected environments.
 tnf\_registry\_creds               | ""                   | path to the pull-secret.txt file to access to the registry. Must be set in disconnected environments.
 tnf\_targetpodlabels\_name         | null                 | for CNF Cert Suite versions higher than v2.0.0, name of the label to be attached to the workload created, then using it in the CNF Cert Suite configuration file for retrieving automatically the workload. Not to be used for versions equal or lower to v2.0.0
 tnf\_targetpodlabels\_value        | null                 | for CNF Cert Suite versions higher than v2.0.0, value of the label to be attached to the workload created, then using it in the CNF Cert Suite configuration file for retrieving automatically the workload. Not to be used for versions equal or lower to v2.0.0
-
+tnf\_disable\_autodiscover\_pods   | true                 | for CNF Cert Suite versions higher than v2.0.0, if set to false, it enables the autodiscover mode, so that no content in the configuration file is needed because specific labels are used for retrieving the pods for the tests. Not to be used for versions equal or lower to v2.0.0
 
 ## Launching the agent
 
