@@ -1,13 +1,18 @@
 ---
-{% if tnf_ns and tnf_targetpodlabels_name and tnf_targetpodlabels_value %}
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' %}
 targetPodLabels:
+{% if tnf_ns and tnf_targetpodlabels_name and tnf_targetpodlabels_value %}
   - namespace: {{ tnf_ns }}
     name: {{ tnf_targetpodlabels_name }}
     value: {{ tnf_targetpodlabels_value }}
 {% endif %}
+{% endif %}
 
 generic:
   containersUnderTest:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods %}
+    # autodiscovering enabled
+{% else %}
 {% for pod in tnf_pod_list.resources %}
 {% if ( pod.metadata.name | regex_search(tnf_cnfs_regexp) ) %}
 {% for container in pod.spec.containers %}
@@ -20,7 +25,11 @@ generic:
     # {{ pod.metadata.name }}
 {% endif %}
 {% endfor %}
+{% endif %}
   partnerContainers:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods %}
+    # autodiscovering enabled
+{% else %}
 {% for pod in tnf_ns_partner_pod_list.resources %}
 {% for container in pod.spec.containers %}
 {% if container.name == 'partner' %}
@@ -33,7 +42,11 @@ generic:
 {% endif %}
 {% endfor %}
 {% endfor %}
+{% endif %}
   testOrchestrator:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods %}
+    # autodiscovering enabled
+{% else %}
 {% for pod in tnf_ns_partner_pod_list.resources %}
 {% for container in pod.spec.containers %}
 {% if container.name == 'partner' %}
@@ -45,6 +58,7 @@ generic:
 {% endif %}
 {% endfor %}
 {% endfor %}
+{% endif %}
   excludeContainersFromConnectivityTests:
 {% for pod in tnf_pod_list.resources %}
 {% if not tnf_exclude_connectivity_regexp or ( pod.metadata.name | regex_search(tnf_exclude_connectivity_regexp) ) %}
@@ -57,6 +71,9 @@ generic:
 {% endfor %}
 
 cnfs:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods %}
+    # autodiscovering enabled
+{% else %}
 {% for pod in tnf_pod_list.resources %}
 {% if ( pod.metadata.name | regex_search(tnf_cnfs_regexp) ) %}
   - name: {{ pod.metadata.name }}
@@ -68,6 +85,7 @@ cnfs:
 # {{ pod.metadata.name }}
 {% endif %}
 {% endfor %}
+{% endif %}
 
 operators:
 {% for csv in tnf_csv_list.resources %}
