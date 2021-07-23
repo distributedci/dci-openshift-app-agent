@@ -1,10 +1,132 @@
 ---
-{% if tnf_ns and tnf_targetpodlabels_name and tnf_targetpodlabels_value %}
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' %}
+
 targetPodLabels:
+{% if tnf_ns and tnf_targetpodlabels_name and tnf_targetpodlabels_value %}
   - namespace: {{ tnf_ns }}
     name: {{ tnf_targetpodlabels_name }}
     value: {{ tnf_targetpodlabels_value }}
 {% endif %}
+
+testTarget:
+  containersUnderTest:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods|bool %}
+    # autodiscovering enabled
+{% else %}
+{% for pod in tnf_pod_list.resources %}
+{% if ( pod.metadata.name | regex_search(tnf_cnfs_regexp) ) %}
+{% for container in pod.spec.containers %}
+    - namespace: {{ tnf_ns }}
+      podName: {{ pod.metadata.name }}
+      containerName: {{ container.name }}
+      defaultNetworkDevice: {{ tnf_if }}
+{% endfor %}
+{% else %}
+    # {{ pod.metadata.name }}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+  excludeContainersFromConnectivityTests:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods|bool %}
+    # autodiscovering enabled
+{% else %}
+{% for pod in tnf_pod_list.resources %}
+{% if ( pod.metadata.name | regex_search(tnf_exclude_connectivity_regexp) ) %}
+{% for container in pod.spec.containers %}
+    - namespace: {{ tnf_ns }}
+      podName: {{ pod.metadata.name }}
+      containerName: {{ container.name }}
+{% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+  podsUnderTest:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods|bool %}
+    # autodiscovering enabled
+{% else %}
+{% for pod in tnf_pod_list.resources %}
+{% if ( pod.metadata.name | regex_search(tnf_cnfs_regexp) ) %}
+    - name: {{ pod.metadata.name }}
+      namespace: {{ tnf_ns }}
+      tests:
+        - PRIVILEGED_POD
+        - PRIVILEGED_ROLE
+{% else %}
+    # {{ pod.metadata.name }}
+{% endif %}
+{% endfor %}
+{% endif %}
+
+  operators:
+{% for csv in tnf_csv_list.resources %}
+{% if ( csv.metadata.name | regex_search(tnf_operators_regexp) ) %}
+    - name: {{ csv.metadata.name }}
+      namespace: {{ tnf_ns }}
+      subscriptionName: etcd
+      autogenerate: false
+      tests:
+        - OPERATOR_STATUS
+{% else %}
+    # {{ csv.metadata.name }}
+{% endif %}
+{% endfor %}
+
+testPartner:
+  partnerContainers:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods|bool %}
+    # autodiscovering enabled
+{% else %}
+{% for pod in tnf_ns_partner_pod_list.resources %}
+{% for container in pod.spec.containers %}
+{% if container.name == 'partner' or container.name == 'master' %}
+    - namespace: tnf
+      podName: {{ pod.metadata.name }}
+      containerName: {{ container.name }}
+      defaultNetworkDevice: {{ tnf_if }}
+{% else %}
+    # {{ pod.metadata.name }}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+  fsDiffMasterContainer:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods|bool %}
+    # autodiscovering enabled
+{% else %}
+{% for pod in tnf_ns_partner_pod_list.resources %}
+{% for container in pod.spec.containers %}
+{% if container.name == 'master' %}
+    namespace: tnf
+    podName: {{ pod.metadata.name }}
+    containerName: {{ container.name }}
+{% else %}
+    # {{ pod.metadata.name }}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+  testOrchestrator:
+{% if autodiscovering_enabled is defined and autodiscovering_enabled != '0' and not tnf_disable_autodiscover_pods|bool %}
+    # autodiscovering enabled
+{% else %}
+{% for pod in tnf_ns_partner_pod_list.resources %}
+{% for container in pod.spec.containers %}
+{% if container.name == 'partner' %}
+    namespace: tnf
+    podName: {{ pod.metadata.name }}
+    containerName: {{ container.name }}
+{% else %}
+    # {{ pod.metadata.name }}
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endif %}
+
+{% else %}
 
 generic:
   containersUnderTest:
@@ -20,6 +142,7 @@ generic:
     # {{ pod.metadata.name }}
 {% endif %}
 {% endfor %}
+
   partnerContainers:
 {% for pod in tnf_ns_partner_pod_list.resources %}
 {% for container in pod.spec.containers %}
@@ -33,6 +156,7 @@ generic:
 {% endif %}
 {% endfor %}
 {% endfor %}
+
   testOrchestrator:
 {% for pod in tnf_ns_partner_pod_list.resources %}
 {% for container in pod.spec.containers %}
@@ -45,9 +169,10 @@ generic:
 {% endif %}
 {% endfor %}
 {% endfor %}
+
   excludeContainersFromConnectivityTests:
 {% for pod in tnf_pod_list.resources %}
-{% if not tnf_exclude_connectivity_regexp or ( pod.metadata.name | regex_search(tnf_exclude_connectivity_regexp) ) %}
+{% if ( pod.metadata.name | regex_search(tnf_exclude_connectivity_regexp) ) %}
 {% for container in pod.spec.containers %}
     - namespace: {{ tnf_ns }}
       podName: {{ pod.metadata.name }}
@@ -82,6 +207,8 @@ operators:
 # {{ csv.metadata.name }}
 {% endif %}
 {% endfor %}
+
+{% endif %}
 
 certifiedcontainerinfo:
 

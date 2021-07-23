@@ -41,18 +41,48 @@
   delay: 10
   until: not cnf_certification_test_partner_gitref.failed
 
+# Following these examples: 
+# https://github.com/test-network-function/cnf-certification-test-partner/blob/main/deploy-partner-pods.sh
+# https://github.com/test-network-function/cnf-certification-test-partner/blob/main/deploy-test-pods.sh
 - name: Build the partner pod
   shell: |
     set -ex
-    cd {{ tnf_git_dir }}/cnf_certification_test_partner/test-partner
+    cd {{ tnf_git_dir }}/cnf_certification_test_partner
+    mkdir -p ./temp
+
     if [ -n "{{ tnf_registry }}" -a -n "{{ tnf_registry_creds }}" ]; then
       podman build -t testnetworkfunction/cnf-test-partner .
       podman tag testnetworkfunction/cnf-test-partner {{ tnf_registry }}/testnetworkfunction/cnf-test-partner
       podman push --authfile {{ tnf_registry_creds }} {{ tnf_registry }}/testnetworkfunction/cnf-test-partner
       sed -i -e 's@quay.io/testnetworkfunction/cnf-test-partner:latest@{{ tnf_registry }}/testnetworkfunction/cnf-test-partner@' partner.yaml
     fi
-    oc get ns|grep ^tnf || oc create -f ./namespace.yaml
-    oc get pod -n tnf|grep ^partner || oc create -f ./partner.yaml
+
+    export res=$(oc get namespace $NAMESPACE_TO_GENERATE 2>&1)
+    if [[ ${res#Error from server (NotFound)} != ${res} ]] || [[ ${res#No resources found} != ${res} ]]; then
+      cat ./local-test-infra/namespace.yaml | ./script/mo > ./temp/rendered-namespace.yaml
+      oc apply -f ./temp/rendered-namespace.yaml
+      rm ./temp/rendered-namespace.yaml
+    else
+      echo "namespace ${NAMESPACE_TO_GENERATE} already exists, no reason to recreate"
+    fi
+
+    export res=$(oc get pod -n $NAMESPACE_TO_GENERATE -l test-network-function.com/generic=fs_diff_master 2>&1)
+    if [[ ${res#No resources found} != ${res} ]]; then
+      cat ./local-test-infra/fsdiff-deployment.yaml | ./script/mo > ./temp/rendered-fsdiff-template.yaml
+      oc apply -f ./temp/rendered-fsdiff-template.yaml
+      rm ./temp/rendered-fsdiff-template.yaml
+    else
+      echo "fsDiffMasterPod already exists, no reason to recreate"
+    fi
+
+    export res=$(oc get pod -n $NAMESPACE_TO_GENERATE -l test-network-function.com/generic=orchestrator 2>&1)
+    if [[ ${res#No resources found} != ${res} ]]; then
+      cat ./local-test-infra/local-partner-deployment.yaml | ./script/mo > ./temp/rendered-partner-template.yaml
+      oc apply -f ./temp/rendered-partner-template.yaml
+      rm ./temp/rendered-partner-template.yaml
+    else
+      echo "partner pod already exists, no reason to recreate"
+    fi
 
 - name: Build the CNF Test Suite
   shell: |
