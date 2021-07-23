@@ -6,7 +6,7 @@
     name: "{{ dci_openshift_app_ns }}"
     state: present
 
-- name: Create a Deployment with 1 replica of the testing pod
+- name: Create a Deployment with 2 replicas of the testing pod
   k8s:
     state: present
     definition:
@@ -16,7 +16,7 @@
         name: test
         namespace: "{{ dci_openshift_app_ns }}"
       spec:
-        replicas: 1
+        replicas: 2
         selector:
           matchLabels:
             app: test
@@ -28,25 +28,59 @@
           spec:
             containers:
               - command: [ "/bin/bash", "-c", "echo 'logs' && tail -f /dev/null" ]
-                image: "{{ dci_openshift_app_image | default('quay.io/testnetworkfunction/cnf-test-partner:latest') }}"
+                image: "{{ dci_openshift_app_image }}"
                 name: test
                 resources:
+                  requests:
+                    memory: 256Mi
+                    cpu: 0.10
                   limits:
                     memory: 512Mi
                     cpu: 0.25
+                lifecycle:
+                  preStop:
+                     exec:
+                       command: ["/bin/sh","-c","killall -0 tail"]
+            affinity:
+              podAntiAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                - labelSelector:
+                    matchExpressions:
+                    - key: app
+                      operator: In
+                      values:
+                      - test
+                  topologyKey: "kubernetes.io/hostname"
 
-- name: Retrieve pod name
+- name: Retrieve pod names
   shell: |
     set -ex
-    oc get pods -n "{{ dci_openshift_app_ns }}" -o json|jq -r .items[0].metadata.name
-  register: test_pod_name_output
+    oc get pods -n "{{ dci_openshift_app_ns }}" -o json|jq -r .items["{{ item }}"].metadata.name
+  loop:
+    - "0"
+    - "1"  
+  register: test_pod_names_output
 
-- name: Set test_pod_name variable
+- name: Set test_pod_names variable
   set_fact:
-    test_pod_name: "{{ test_pod_name_output.stdout }}"
+    test_pod_names: "{{ test_pod_names_output.results }}"
 
-#- name: Tag pod if labels are provided
-#  shell: |
-#    set -ex
-#    oc label pod "{{ test_pod_name }}" "{{ tnf_targetpodlabels_name }}"="{{ tnf_targetpodlabels_value }}" -n "{{ dci_openshift_app_ns }}"
-#  when: tnf_targetpodlabels_name is not undefined and tnf_targetpodlabels_value is not undefined
+# In this case and the following, labels are included after deploying the pods. However, as stated here:
+# https://github.com/test-network-function/test-network-function#podsundertest--containersundertest
+# "It's highly recommended that the labels shoud be defined in pod definition rather than added after pod is created"
+- name: Tag pods with autodiscover labels if enabled
+  shell: |
+    set -ex
+    oc label pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" "{{ dci_openshift_app_ns }}"/"{{ tnf_targetpodlabels_name }}"="{{ tnf_targetpodlabels_value }}" --overwrite
+    oc annotate pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" test-network-function.com/container_tests="[\"PRIVILEGED_POD\",\"PRIVILEGED_ROLE\"]" --overwrite
+  when: tnf_targetpodlabels_name is defined and tnf_targetpodlabels_value is defined
+  loop: "{{ test_pod_names }}"
+
+- name: Tag pods with autodiscover labels related to exclude connectivity features if enabled
+  shell: |
+    set -ex
+    if [[ "{{ item.stdout }}" =~ "{{ tnf_exclude_connectivity_regexp }}" && "{{ tnf_exclude_connectivity_regexp }}" != "" ]]; then
+      oc label pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" test-network-function.com/skip_connectivity_tests=true --overwrite
+    fi
+  when: tnf_targetpodlabels_name is defined and tnf_targetpodlabels_value is defined and tnf_exclude_connectivity_regexp is defined
+  loop: "{{ test_pod_names }}"
