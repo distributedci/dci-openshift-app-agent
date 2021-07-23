@@ -3,16 +3,31 @@
 - pause:
     seconds: 60
 
+- name: Retrieve pod names
+  shell: |
+    set -ex
+    oc get pods -n "{{ dci_openshift_app_ns }}" -o json|jq -r .items["{{ item }}"].metadata.name
+  loop:
+    - "0"
+    - "1"  
+  register: test_pod_names_output
+
+- name: Set test_pod_names variable
+  set_fact:
+    test_pod_names: "{{ test_pod_names_output.results }}"
+
 - name: Search for all running pods
   k8s_info:
     namespace: "{{ dci_openshift_app_ns }}"
     kind: Pod
-    name: "{{ test_pod_name }}"
+    name: "{{ item.stdout }}"
     field_selectors:
       - status.phase=Running
+  loop: "{{ test_pod_names }}"
   register: test_service
 
-- name: Fail if pod is NOT found
+- name: Fail if any pod is NOT found
   fail:
     msg: "test is not running"
-  when: test_service == False
+  when: item == False
+  loop: "{{ test_service.results }}"
