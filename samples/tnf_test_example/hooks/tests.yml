@@ -7,12 +7,14 @@
   k8s_info:
     namespace: "{{ dci_openshift_app_ns }}"
     kind: Pod
-    name: "{{ test_pod_name }}"
+    name: "{{ item.stdout }}"
     field_selectors:
       - status.phase=Running
+  loop: "{{ test_pod_names }}"
   register: test_service
 
-- name: Fail if pod is NOT found
+- name: Fail if any pod is NOT found
   fail:
     msg: "test is not running"
-  when: test_service == False
+  when: item == False
+  loop: "{{ test_service.results }}"

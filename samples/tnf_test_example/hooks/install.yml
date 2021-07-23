@@ -6,7 +6,7 @@
     name: "{{ dci_openshift_app_ns }}"
     state: present
 
-- name: Create a Deployment with 1 replica of the testing pod
+- name: Create a Deployment with 2 replicas of the testing pod
   k8s:
     state: present
     definition:
@@ -16,7 +16,7 @@
         name: test
         namespace: "{{ dci_openshift_app_ns }}"
       spec:
-        replicas: 1
+        replicas: 2
         selector:
           matchLabels:
             app: test
@@ -34,19 +34,57 @@
                   limits:
                     memory: 512Mi
                     cpu: 0.25
+                lifecycle:
+                  preStop:
+                     exec:
+                       command: ["/bin/sh","-c","killall -0 tail"]
+            affinity:
+              podAntiAffinity:
+                requiredDuringSchedulingIgnoredDuringExecution:
+                - labelSelector:
+                    matchExpressions:
+                    - key: app
+                      operator: In
+                      values:
+                      - test
+                  topologyKey: "kubernetes.io/hostname"
 
-- name: Retrieve pod name
+- name: Retrieve pod names
   shell: |
     set -ex
-    oc get pods -n "{{ dci_openshift_app_ns }}" -o json|jq -r .items[0].metadata.name
-  register: test_pod_name_output
+    oc get pods -n "{{ dci_openshift_app_ns }}" -o json|jq -r .items["{{ item }}"].metadata.name
+  loop:
+    - "0"
+    - "1"  
+  register: test_pod_names_output
 
-- name: Set test_pod_name variable
+- name: Set test_pod_names variable
   set_fact:
-    test_pod_name: "{{ test_pod_name_output.stdout }}"
+    test_pod_names: "{{ test_pod_names_output.results }}"
 
-#- name: Tag pod if labels are provided
-#  shell: |
-#    set -ex
-#    oc label pod "{{ test_pod_name }}" "{{ tnf_targetpodlabels_name }}"="{{ tnf_targetpodlabels_value }}" -n "{{ dci_openshift_app_ns }}"
-#  when: tnf_targetpodlabels_name is not undefined and tnf_targetpodlabels_value is not undefined
+- name: Tag pods with autodiscover labels if enabled
+  shell: |
+    set -ex
+    oc label pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" test-network-function.com/generic=target --overwrite
+    oc label pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" test-network-function.com/container=target --overwrite
+    oc annotate pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" test-network-function.com/container_tests="[\"PRIVILEGED_POD\",\"PRIVILEGED_ROLE\"]" --overwrite
+  when: tnf_disable_autodiscover_pods is defined and not tnf_disable_autodiscover_pods|bool
+  loop: "{{ test_pod_names }}"
+
+- name: Tag pods with autodiscover labels related to exclude connectivity features if enabled
+  shell: |
+    set -ex
+    if [[ "{{ item.stdout }}" =~ "{{ tnf_exclude_connectivity_regexp }}" && "{{ tnf_exclude_connectivity_regexp }}" != "" ]]; then
+      oc label pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" test-network-function.com/skip_connectivity_tests=true --overwrite
+    fi
+  when: tnf_disable_autodiscover_pods is defined and not tnf_disable_autodiscover_pods|bool and tnf_exclude_connectivity_regexp is defined
+  loop: "{{ test_pod_names }}"
+
+# If custom labels are provided, only the first pod in the list will be labeled, 
+# to test this feature with just one pod, remaining the other in the same status
+- name: Tag one single pod with custom labels if they are provided and autodiscovering is not enabled
+  shell: |
+    set -ex
+    oc label pod -n "{{ dci_openshift_app_ns }}" "{{ item.stdout }}" "{{ tnf_targetpodlabels_name }}"="{{ tnf_targetpodlabels_value }}" --overwrite
+  when: tnf_targetpodlabels_name is not undefined and tnf_targetpodlabels_value is not undefined and tnf_disable_autodiscover_pods is defined and tnf_disable_autodiscover_pods|bool and item.item == "0"
+  loop: "{{ test_pod_names }}"
