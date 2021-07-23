@@ -70,7 +70,7 @@ Name | Default | Description
 dci\_openshift\_app\_image | | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns | | namespace for the workload
 do\_cnf\_cert | false | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
-test\_network\_function\_version | HEAD | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8 and v2.0.0.
+test\_network\_function\_version | v2.0.0 | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8 and v2.0.0.
 tnf\_operators\_regexp | "" | regexp to select operators
 tnf\_cnfs\_regexp | "" |  regexp to select CNF
 tnf\_exclude\_connectivity\_regexp | null | regexp to exclude containers from the connectivity test
