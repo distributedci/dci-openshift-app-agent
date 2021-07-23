@@ -27,10 +27,34 @@
     namespace: tnf
   register: tnf_ns_partner_pod_list
 
-- name: Get stats of the test-network-function/tnf_config.yml file
+- name: Check if test-network-function/tnf_config.yml file exists to decide the config file to be created
   ansible.builtin.stat:
     path: "{{ tnf_git_dir }}/test_network_function/test-network-function/tnf_config.yml"
   register: tnf_config_file
+
+- name: Check if autodiscovering can be defined
+  shell: |
+    set -x
+    cat {{ tnf_git_dir }}/test_network_function/test-network-function/tnf_config.yml | grep targetPodLabels | wc -l
+  register: autodiscovering_enabled_output
+
+- name: Set autodiscovering_enabled variable
+  set_fact:
+    autodiscovering_enabled: "{{ autodiscovering_enabled_output.stdout }}"
+
+- name: Debug autodiscovering_enabled variable
+  debug:
+    msg: autodiscovering_enabled is equal to {{ autodiscovering_enabled }}
+
+- name: Debug tnf_disable_autodiscover_pods variable TRUE
+  debug:
+    msg: tnf_disable_autodiscover_pods is equal to {{ tnf_disable_autodiscover_pods }} (TRUE)
+  when: tnf_disable_autodiscover_pods
+
+- name: Debug tnf_disable_autodiscover_pods variable FALSE
+  debug:
+    msg: tnf_disable_autodiscover_pods is equal to {{ tnf_disable_autodiscover_pods }} (FALSE)
+  when: not tnf_disable_autodiscover_pods
 
 - name: Template generic_test_configuration.yml
   template:
@@ -65,6 +89,9 @@
     if [ "{{ tnf_config_file.stat.exists }}" == "True" ]; then
       rm -f test-network-function/*.xml test-network-function/tnf_config.yml
       cp {{ tnf_tempdir.path }}/tnf_config.yml test-network-function/
+      if [ "{{ autodiscovering_enabled }}" != "0" ]; then
+        export TNF_DISABLE_CONFIG_AUTODISCOVER="{{ tnf_disable_autodiscover_pods }}"
+      fi
     else
       rm -f test-network-function/*.xml test-network-function/generic_test_configuration.yml test-network-function/cnf_test_configuration.yml
       cp {{ tnf_tempdir.path }}/generic_test_configuration.yml {{ tnf_tempdir.path }}/cnf_test_configuration.yml test-network-function/
