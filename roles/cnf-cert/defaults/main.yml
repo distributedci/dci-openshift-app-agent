@@ -14,3 +14,4 @@ tnf_exclude_connectivity_regexp: null
 tnf_suites: "diagnostic generic"
 tnf_targetpodlabels_name: null
 tnf_targetpodlabels_value: null
+tnf_disable_autodiscover_pods: true

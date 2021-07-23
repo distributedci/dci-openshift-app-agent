@@ -54,6 +54,25 @@
     oc get ns|grep ^tnf || oc create -f ./namespace.yaml
     oc get pod -n tnf|grep ^partner || oc create -f ./partner.yaml
 
+- name: Retrieve partner's pod name
+  shell: |
+    set -ex
+    oc get pods -n tnf -o json|jq -r .items[0].metadata.name
+  register: partner_test_pod_name_output
+  when: tnf_disable_autodiscover_pods is defined and not tnf_disable_autodiscover_pods|bool
+
+- name: Set partner_test_pod_name variable
+  set_fact:
+    partner_test_pod_name: "{{ partner_test_pod_name_output.stdout }}"
+  when: tnf_disable_autodiscover_pods is defined and not tnf_disable_autodiscover_pods|bool
+
+- name: Label partner's pod with autodiscovery label
+  shell: |
+    set -ex
+    oc label pod -n tnf "{{ partner_test_pod_name }}" test-network-function.com/generic=orchestrator --overwrite
+    oc annotate pod -n tnf "{{ partner_test_pod_name }}" test-network-function.com/defaultnetworkinterface="eth0" --overwrite
+  when: tnf_disable_autodiscover_pods is defined and not tnf_disable_autodiscover_pods|bool
+
 - name: Build the CNF Test Suite
   shell: |
     set -ex
