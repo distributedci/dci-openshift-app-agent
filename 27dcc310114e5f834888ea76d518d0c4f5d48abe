@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7c627a89_69dfa53c",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-08-25T16:21:40Z",
+      "side": 1,
+      "message": "I think this one is not needed as the check_prerequisite.yml will fail if a install.yml does not exist at this location.",
+      "revId": "27dcc310114e5f834888ea76d518d0c4f5d48abe",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
