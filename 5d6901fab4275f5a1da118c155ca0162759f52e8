@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dad0190f_d33e44f5",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-08-30T18:56:16Z",
+      "side": 1,
+      "message": "I recall we were having issues pushing images to the registry because podman was generating them with manifest v1. We had to add BUILDAH_FORMAT\u003ddocker env variable to make it work. Not sure if this is affecting you too because I do not see new versions of the images in the jumphost registry in: \n - http://172.27.17.53:5050/#!/taglist/testnetworkfunction/test-network-function\n\nI only see: v1.0.5\n\nRegards",
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1f1a8fb8_f7106c95",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-08-30T18:56:16Z",
+      "side": 1,
+      "message": "Hello Ramon.\n\nMaybe you can use k8sinfo module to validate if the namespaces exist, is so... apply the manifests.\n\n- name: \"Check for XYX projects/namespaces\"\n  k8s_info:\n    api_version: \"v1\"\n    kind: \"Namespace\"\n    name: \"xyz_manifest\"\n  register: xyz_namespace\n\n- name: \"Uninstalling: ME\"\n  shell:\n    cmd: command\n  when: xyz_namespace.resources|length \u003d\u003d 1\n\nRegards",
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f13e31c_c14cbd6d",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-08-30T18:56:16Z",
+      "side": 1,
+      "message": "Maybe can move this to the role defaults",
+      "range": {
+        "startLine": 31,
+        "startChar": 62,
+        "endLine": 31,
+        "endChar": 113
+      },
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc45666a_c3978da0",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-08-30T18:56:16Z",
+      "side": 1,
+      "message": "This may not be very important, but it it would be good to define a request section. \n\nThanks!",
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
