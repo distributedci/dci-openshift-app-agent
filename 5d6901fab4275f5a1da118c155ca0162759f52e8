@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "40bebf0a_18532524",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-08-31T09:06:35Z",
+      "side": 1,
+      "message": "I can add that env variable just in case, but I would say it is not affecting, because the image used here is not intended to be changed. The image is already saved in the jumphost registry and it will not change.",
+      "parentUuid": "dad0190f_d33e44f5",
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1f1a8fb8_f7106c95",
         "filename": "roles/cnf-cert/tasks/pre-run.yml",
         "patchSetId": 22
@@ -33,6 +51,24 @@
       "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a919fb18_c5999040",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-08-31T09:06:35Z",
+      "side": 1,
+      "message": "yes, you\u0027re right. The reason why it is written in this way is because it was copied from a script, but I will refactor it",
+      "parentUuid": "1f1a8fb8_f7106c95",
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -59,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "208d2c08_4c46ee2e",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-08-31T09:06:35Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "4f13e31c_c14cbd6d",
+      "range": {
+        "startLine": 31,
+        "startChar": 62,
+        "endLine": 31,
+        "endChar": 113
+      },
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fc45666a_c3978da0",
         "filename": "samples/tnf_test_example/hooks/install.yml",
         "patchSetId": 22
@@ -73,6 +133,24 @@
       "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "06fea6b1_f3723078",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-08-31T09:06:35Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "fc45666a_c3978da0",
+      "revId": "5d6901fab4275f5a1da118c155ca0162759f52e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
