@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dc417492_bc91477b",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "Could simplify a bit this with:\ngrep -c targetPodLabels {{ tnf_git_dir }}/test_network_function/test-network-function/tnf_config.yml",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4c099eb6_80268e54",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "Is there any value in attempting to run the tests in the container? I know that it was not an option as the TNF code didn\u0027t seem to be working back then, but not sure if with newer versions that has been improved.\nI see that running tests in a container could potentially reduce the maintenance as currently we have to build and satisfy its deps.",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67531303_045156a3",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "Would it be possible to move the two env vars in this conditional to the other conditional of autodiscovering_enabled when is not 0 in line 78? I think those vars are used when running the tests, if possible then it reduces one conditional and makes it easier to read",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f49c8cb9_d0e64f4a",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "I see default value of tnf_exclude_connectivity_regexp is null, shouldn\u0027t the previous validation be kept to avoid passing a null to regex_search ?",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af0b4433_9b1a5dc9",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "similar comment, not sure if tnf_exclude_connectivity_regexp may fail as it\u0027s default value is null",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b16da307_0997af98",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "64466119_abd7290d",
+        "filename": "samples/tnf_test_example/hooks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "Let\u0027s trim that space at the end",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "57b849d1_46415f40",
+        "filename": "samples/tnf_test_example/hooks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-01T22:49:39Z",
+      "side": 1,
+      "message": "I think you could reduce multiple tasks with a single one using k8s_info, something like:\n\n- name: Checking test pods are running\n  k8s_info:\n    namespace: \"{{ dci_openshift_apps_ns }}\"\n    kind: Pod\n    label_selectors:\n      - test-network-function.com/generic\u003dtarget\n  register: test_result\n  retries: 60\n  delay: 5\n  until:\n    - \"test_result.resources|length \u003e 1\"\n    - \"\u0027status\u0027 in test_result.resources[0]\"\n    - \"\u0027phase\u0027 in test_result.resources[0].status\"\n    - \"test_result.resources[0].status.phase \u003d\u003d \u0027Running\u0027\"\n\nThe above is an example by checking only one pod but it may be possible to check that all the expected nodes are running, at least is the idea 😄",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
