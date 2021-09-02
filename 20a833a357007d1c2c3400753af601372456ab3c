@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bec83408_d9a424d0",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "This should not be necessary, if targetPodLabels is not found grep -c it should get you a 0.\nThe command should not fail, if it does maybe is because the file is not in place?",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3b0a4f2e_820528df",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "I agree, this is better. I think you can simplify a bit with:\ntnf_exclude_connectivity_regexp is defined and tnf_exclude_connectivity_regexp|legth",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6fc0240b_9529b8f7",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "Hmmm, I\u0027m thinking about this. I guess tnf_targetpodlabels_name and tnf_targetpodlabels_value are always defined, just happens that they are defined as null I wonder if this could be a problem. It does, look at this example: https://gist.github.com/tonyskapunk/b911cfbd3dc2f672f108332ef00fb8e5#null",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "78360cc3_73d894b5",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9aebb40d_25522b29",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3e444d86_0005ed41",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "Similar comment I think `is defined` may not be needed when you always define the vars, even if it\u0027s null",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b32d9e60_cf60e4ae",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-02T21:12:56Z",
+      "side": 1,
+      "message": "This one is interesting as the var is always defined, is just null, here you couldn\u0027t do:\n`varname is defined and varname|length` because null does not have length. I think `not tnf_exclude_connectivity_regexp` should work.",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
