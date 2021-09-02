@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "3cea6693_1d57273d",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "done, thanks! as this command is also executed even when the tnf_config.yml is not present (because other version of the CNF Cert Suite may be used instead), I have included a when clause to only do this when the tnf_config.yml file is present in the CNF Cert Suite repo. In case it is not present, the default value of autodiscovering_enabled, created in defaults/main.yml, is used.\nAnd also, I need to include a ignore_errors: true clause because that command fails when targetPodLabels is not found.",
+      "parentUuid": "dc417492_bc91477b",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c099eb6_80268e54",
         "filename": "roles/cnf-cert/tasks/tests.yml",
         "patchSetId": 25
@@ -33,6 +51,24 @@
       "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4454b854_20a21fff",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "I don\u0027t really know if the usage of containers instead of the binary would provide more value to us. \nAt least for v1.0.8, the use of containers was not working in our d-o-a-a, that\u0027s why the code was commented and, now, removed. Honestly, I have not tested the container solution since then, but I think it has included changes in the way it is working, at least for v3.0.0.\nFor the moment, at least with the three CNF Cert Suite versions I have tested  (v1.0.8, v2.0.0 and v3.0.0), the way of building and executing the binary has not changed (only to provide the -f argument in v3.0.0, but this also happens with the containerized solution), and it is working fine for all the versions without needing a lot of changes.\nI can add the re-evaluation of the usage of the containerized test suite as a new task to be reviewed, if you find it okey, checking also the impact of moving to the container rather than using the binary.",
+      "parentUuid": "4c099eb6_80268e54",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "8902fb13_19ea0f2f",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "yes, sure, done!",
+      "parentUuid": "67531303_045156a3",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f49c8cb9_d0e64f4a",
         "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
         "patchSetId": 25
@@ -67,6 +121,24 @@
       "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "283cfda0_211300bc",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "I totally forgot that the default value was null, because I always looked at the pipelines and there, the value used is the empty string, thanks Tony.\n\nHowever, should the validation be the following instead?\n\n{% if tnf_exclude_connectivity_regexp is defined and tnf_exclude_connectivity_regexp !\u003d \"\" and ( pod.metadata.name | regex_search(tnf_exclude_connectivity_regexp) ) %}\n\nI mean, first of all, we need to check if tnf_exclude_connectivity_regexp is defined and not the empty string (this second one is just in case, because I experienced problems with this with some manual tests I did), and if true, check if the regex passes. In the previous code:\n\n{% if not tnf_exclude_connectivity_regexp or ( pod.metadata.name | regex_search(tnf_exclude_connectivity_regexp) ) %}\n\nIt is like, AFAIK, the validation passes if the variable is not defined OR the regex passes. So, if the variable is null, the validation passes? That\u0027s why I eventually changed it.",
+      "parentUuid": "f49c8cb9_d0e64f4a",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "95c21336_c3cf2780",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "yes, doing the same than in the other comment",
+      "parentUuid": "af0b4433_9b1a5dc9",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b16da307_0997af98",
         "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
         "patchSetId": 25
@@ -101,6 +191,24 @@
       "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4035b699_8dc89e78",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "same as before",
+      "parentUuid": "b16da307_0997af98",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "d9737483_5b71f85b",
+        "filename": "samples/tnf_test_example/hooks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "done, although with the other change to reduce multiple tasks with a single one, this will be removed.",
+      "parentUuid": "64466119_abd7290d",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "57b849d1_46415f40",
         "filename": "samples/tnf_test_example/hooks/tests.yml",
         "patchSetId": 25
@@ -135,6 +261,24 @@
       "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d3fbb00d_ec636512",
+        "filename": "samples/tnf_test_example/hooks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-02T12:08:57Z",
+      "side": 1,
+      "message": "wow, it is a nice checkchange, thanks Tony!! Applied in the code 😊",
+      "parentUuid": "57b849d1_46415f40",
+      "revId": "3c9f318b77572621f93ab079f41b147eb7e199c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
