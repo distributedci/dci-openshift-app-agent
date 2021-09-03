@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "5afeb8f5_72079f6e",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "I included this check because, if CNF Cert Suite version is v2.0.0, tnf_config.yml exists but it does not include \"targetPodLabels\" keyword. \nIt is true that it returns 0 in stdout in that case, but the task outputs in stderr as well, and as a result, the task failed unless ignore_errors is included. I didn\u0027t find a better way to do this, excepting using the method I put before your change (use cat ... | grep ... | wc -l), which works in all cases without problems.\nWhat do you think, then? Should I leave the ignore_errors?",
+      "parentUuid": "bec83408_d9a424d0",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b0a4f2e_820528df",
         "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
         "patchSetId": 26
@@ -33,6 +51,24 @@
       "revId": "20a833a357007d1c2c3400753af601372456ab3c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c991caa_8654517a",
+        "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "Thanks for the feedback Tony. I\u0027ve followed your example related to null and defined variables, and I have updated this condition too:\n\ntnf_exclude_connectivity_regexp is not none and tnf_exclude_connectivity_regexp|length\n\nAs tnf_exclude_connectivity_regexp is always defined, we only need to check if it is not null and non empty.",
+      "parentUuid": "3b0a4f2e_820528df",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "da5f053a_e1a5385d",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "Yes, you are right, thanks for the example, because I have had doubts with regards to defined, empty, etc. I have used your example to test some more cases: https://gist.github.com/ramperher/3bc4b219d152f079d2c1b1a0bebe4d1c, and then I can propose the following solution:\n\n{% if tnf_targetpodlabels_name is not none and tnf_targetpodlabels_name|length and tnf_targetpodlabels_value is not none and tnf_targetpodlabels_value|length %}\n\nthen, we are checking if the variables are not null and not empty",
+      "parentUuid": "6fc0240b_9529b8f7",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "78360cc3_73d894b5",
         "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
         "patchSetId": 26
@@ -67,6 +121,24 @@
       "revId": "20a833a357007d1c2c3400753af601372456ab3c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3aa2afae_3dafde39",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "answered in the other comment too",
+      "parentUuid": "78360cc3_73d894b5",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "bda7b88d_c45adccd",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "answered in the other comment too",
+      "parentUuid": "9aebb40d_25522b29",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3e444d86_0005ed41",
         "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
         "patchSetId": 26
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "892e069b_fe635a91",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "yep, changed to the same as commented before:\n\n{% if tnf_targetpodlabels_name is not none and tnf_targetpodlabels_name|length and tnf_targetpodlabels_value is not none and tnf_targetpodlabels_value|length %}\n\nHowever, here I have a problem, and it also happens with tnf_exclude_connectivity_regexp variable. As the default values of these variables are defined in roles/cnf-cert, which is out of the scope of samples/tnf_test_example/hooks, if I don\u0027t include any of these variables in the pipeline I am using to call the d-o-a-a or as an Ansible extravar if calling directly the d-o-a-a, it fails because Ansible detects these variables are not defined. So, I needed to include these tasks in install.yml:\n\n- name: Set tnf_targetpodlabels_name if not defined\n  set_fact:\n    tnf_targetpodlabels_name: null\n  when: tnf_targetpodlabels_name is not defined\n\n- name: Set tnf_targetpodlabels_value if not defined\n  set_fact:\n    tnf_targetpodlabels_value: null\n  when: tnf_targetpodlabels_value is not defined\n\n- name: Set tnf_exclude_connectivity_regexp if not defined\n  set_fact:\n    tnf_exclude_connectivity_regexp: null\n  when: tnf_exclude_connectivity_regexp is not defined\n\n(it is also done in hooks/pre-run.yml with the variable called dci_openshift_app_ns)\n\nI am wondering if it is a better way of doing this, e.g. importing the values from roles/cnf-cert/defaults/main.yml into samples/tnf_test_example/hooks but not overwritting the values provided as extravars from outside.",
+      "parentUuid": "3e444d86_0005ed41",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b32d9e60_cf60e4ae",
         "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
         "patchSetId": 26
@@ -118,6 +226,24 @@
       "revId": "20a833a357007d1c2c3400753af601372456ab3c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99f0b50f_afadf8a5",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 26
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-03T10:13:19Z",
+      "side": 1,
+      "message": "I finally just put the same condition than in generic_test_configuration.yml.j2 and tnf_config.yml.j2, which is:\n\nif tnf_exclude_connectivity_regexp is not none and tnf_exclude_connectivity_regexp|length\n\nhere, we first confirm that is not null, and then, we check if it is not empty. Because, if using \"not tnf_exclude_connectivity_regexp\", it returns true if it is null (and we want the opposite condition: to have a non-null variable, don\u0027t we?)",
+      "parentUuid": "b32d9e60_cf60e4ae",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
