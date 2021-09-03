@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "71ef12dd_eb4152af",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-03T19:54:09Z",
+      "side": 1,
+      "message": "grep -c, should not send its results to stderr as long as it\u0027s doing it in an existing readable file.\n\n$ grep -c nomatch /dev/null 2\u003e/dev/null \n0\n\nOh I see why 😄, the exit code of that is 1 because it didn\u0027t match anything, that\u0027s why!, it can be fixed with\n\ngrep -c targetPodLabels {{ tnf_git_dir }}/test_network_function/test-network-function/tnf_config.yml || :",
+      "parentUuid": "5afeb8f5_72079f6e",
+      "revId": "20a833a357007d1c2c3400753af601372456ab3c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3b0a4f2e_820528df",
         "filename": "roles/cnf-cert/templates/generic_test_configuration.yml.j2",
         "patchSetId": 26

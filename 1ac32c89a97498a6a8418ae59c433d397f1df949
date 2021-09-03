@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b526d2b8_a120aca1",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 27
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-03T19:54:09Z",
+      "side": 1,
+      "message": "Don\u0027t think we need these in here, because they are defined already in the defaults: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/cnf-cert/defaults/main.yml#L13-L16\n\nIf they are not defined when the role is called, then those are the values defined and all of them are null already.\n\nIf any other value is defined when calling the role that takes precedence, so I think we are good without them",
+      "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
