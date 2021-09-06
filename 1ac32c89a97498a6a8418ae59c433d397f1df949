@@ -16,6 +16,24 @@
       "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d6f6b431_f10bdaae",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 27
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-06T10:08:29Z",
+      "side": 1,
+      "message": "But this is what I was commenting on my previous comment, here: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/22351/26/samples/tnf_test_example/hooks/templates/test_deployment.yml.j2#17. I will summarize that comment below.\n\nThe thing is, the default value for these three variables are defined in roles/cnf-cert (because they are needed to build the templates provided in the cnf-cert role), and this role is out of the secope of samples/tnf_test_example_hooks, because the hooks are directly called from the main d-o-a-a playbook (dci-openshift-app-agent.yml). So, as I said, if I don\u0027t include any of these variables in the pipeline I am using to call the d-o-a-a or as an Ansible extravar if calling directly the d-o-a-a, it fails because Ansible detects these variables are not defined. That\u0027s why I have included these three definitions, which it is also done in hooks/pre-run.yml with the variable called dci_openshift_app_ns.\n\nAnd what I was wondering is if it is a better way of doing this, e.g. importing the values from roles/cnf-cert/defaults/main.yml into samples/tnf_test_example/hooks but not overwritting the values provided as extravars from outside. Or, otherwise, if I can leave these definitions as they are now.",
+      "parentUuid": "b526d2b8_a120aca1",
+      "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
