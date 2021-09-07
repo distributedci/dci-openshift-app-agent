@@ -34,6 +34,24 @@
       "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "179e2da0_1d01edfd",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 27
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-07T14:03:21Z",
+      "side": 1,
+      "message": "Ah! thanks for the clarification, I completely missed your first comment, my bad.\n\nLet me then take a different view then. When this template is rendered there are two options for any of these four variables, either they are defined or not. Only when is defined you want to distinguish between null, empty and non-empty values, right?\n\nIf I\u0027m not missing anything, then you could replace the above with a conditional in the template like this:\n\nif tnf_targetpodlabels_name is defined and if tnf_targetpodlabels_name is not none and tnf_targetpodlabels_name|length\n\nI know is really long!! 😮\n\nBut I was thinking you could reduce it a bit by passing vars into the task below like this:\n\nk8s:\nvars:\n  tnf_targetpodlabels_name: \"{{ tnf_targetpodlabels_name|default(\u0027\u0027) }}\"\n\nThat way inside the template you only check for length like this\n\nif tnf_targetpodlabels_name|length\n\nWhat do you think of this approach? it should make it easier to understand and to read",
+      "parentUuid": "d6f6b431_f10bdaae",
+      "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
