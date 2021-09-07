@@ -52,6 +52,24 @@
       "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "02a89c16_359a627a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 27
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-07T15:40:11Z",
+      "side": 1,
+      "message": "it is a good solution, thanks Tony!! \nBut just only one modification included from my side: if the same variable name is used, when templating, it happens a \"recursive loop\" error like this: https://github.com/ansible/ansible/issues/58952\nI just renamed the variable used to avoid this, e.g.:\ntargetpodlabels_name: \"{{ tnf_targetpodlabels_name|default(\u0027\u0027) }}\"\n(just remove tnf_ in the variable name)",
+      "parentUuid": "179e2da0_1d01edfd",
+      "revId": "1ac32c89a97498a6a8418ae59c433d397f1df949",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
