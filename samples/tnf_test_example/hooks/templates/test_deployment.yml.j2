@@ -15,7 +15,7 @@ spec:
         test-network-function.com/generic: target
         test-network-function.com/container: target
 {% if targetpodlabels_name|length and targetpodlabels_value|length %}
-        {{ dci_openshift_app_ns }}/{{ targetpodlabels_name }}: {{ targetpodlabels_value }}
+        test-network-function.com/{{ targetpodlabels_name }}: {{ targetpodlabels_value }}
 {% if exclude_connectivity_regexp|length and ( "test" | regex_search(exclude_connectivity_regexp) ) %}
         test-network-function.com/skip_connectivity_tests: 'true'
 {% endif %}
