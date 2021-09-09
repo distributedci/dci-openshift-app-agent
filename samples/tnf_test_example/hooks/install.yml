@@ -1,16 +1,24 @@
 ---
+- name: Check if namespace exists
+  k8s_info:
+    api_version: v1
+    kind: Namespace
+    name: "{{ app_ns }}"
+  register: app_namespace
+
 - name: Create namespace
   k8s:
     api_version: v1
     kind: Namespace
-    name: "{{ dci_openshift_app_ns }}"
+    name: "{{ app_ns }}"
     state: present
+  when: app_namespace.resources|length == 0
 
 - name: Check if test pods exist
   k8s_info:
     api_version: v1
     kind: Pod
-    namespace: "{{ dci_openshift_app_ns }}"
+    namespace: "{{ app_ns }}"
     label_selectors:
       - test-network-function.com/generic = target
   register: test_pods
