@@ -1,0 +1,39 @@
+---
+
+# Following these examples:
+# https://github.com/test-network-function/cnf-certification-test-partner/blob/v3.0.0/deploy-partner-pods.sh
+# https://github.com/test-network-function/cnf-certification-test-partner/blob/v3.0.0/deploy-test-pods.sh
+# As image is generated from Dockerfile, it is not needed to copy the Quay.io image with skopeo, 
+# as done for the image to be used with oc debug
+- name: Build the partner pod image
+  shell: |
+    set -ex
+    cd {{ tnf_git_dir }}/cnf_certification_test_partner
+    
+    export BUILDAH_FORMAT=docker
+    podman build -f ./test-partner/Dockerfile -t testnetworkfunction/cnf-test-partner
+    podman tag testnetworkfunction/cnf-test-partner {{ provisionhost_registry }}/testnetworkfunction/cnf-test-partner
+    podman push --authfile {{ provisionhost_registry_creds }} {{ provisionhost_registry }}/testnetworkfunction/cnf-test-partner
+    sed -i -e 's@quay.io/testnetworkfunction/cnf-test-partner:latest@{{ provisionhost_registry }}/testnetworkfunction/cnf-test-partner@' ./local-test-infra/local-partner-deployment.yaml
+
+- name: Copy image to be used with oc debug
+  block: 
+  - name: Create variable with only image name
+    set_fact:
+      tnf_debug_image_name: "{{ tnf_debug_image | regex_search('/.*') | replace('/','') }}"
+
+  - name: Copy image
+    shell: |
+      set -ex
+      skopeo copy --authfile {{ provisionhost_registry_creds }} \
+      docker://quay.io/{{ tnf_debug_image_name }} \
+      docker://{{ provisionhost_registry }}/{{ tnf_debug_image_name }}
+
+- name: Copy test-network-function image
+  shell: |
+    set -ex
+    skopeo copy --authfile {{ provisionhost_registry_creds }} \
+    docker://quay.io/testnetworkfunction/test-network-function \
+    docker://{{ provisionhost_registry }}/testnetworkfunction/test-network-function
+
+...
