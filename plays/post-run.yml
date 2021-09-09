@@ -13,6 +13,8 @@
   include_role:
     name: cnf-cert
     tasks_from: post-run.yml
+  vars:
+    tnf_git_dir: "{{ dci_cache_dir }}"
   when: do_cnf_cert|bool
 
 ...
