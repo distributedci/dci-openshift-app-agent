@@ -1,8 +1,7 @@
 ---
-
 - name: Checking all test pods are running
   k8s_info:
-    namespace: "{{ dci_openshift_app_ns }}"
+    namespace: "{{ app_ns }}"
     kind: Pod
     label_selectors:
       - test-network-function.com/generic=target
