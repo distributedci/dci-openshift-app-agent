@@ -69,7 +69,7 @@
   shell: |
     set -ex
     cd {{ tnf_git_dir }}/cnf_certification_test_partner
-    export NAMESPACE_TO_GENERATE="tnf"
+    export TNF_PARTNER_NAMESPACE="tnf"
     cat ./local-test-infra/namespace.yaml | ./script/mo > ./temp/rendered-namespace.yaml
     oc apply -f ./temp/rendered-namespace.yaml
     rm ./temp/rendered-namespace.yaml
@@ -88,7 +88,7 @@
   shell: |
     set -ex
     cd {{ tnf_git_dir }}/cnf_certification_test_partner
-    export NAMESPACE_TO_GENERATE="tnf"
+    export TNF_PARTNER_NAMESPACE="tnf"
     cat ./local-test-infra/local-partner-deployment.yaml | ./script/mo > ./temp/rendered-partner-template.yaml
     oc apply -f ./temp/rendered-partner-template.yaml
     rm ./temp/rendered-partner-template.yaml
