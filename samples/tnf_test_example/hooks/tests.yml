@@ -1,5 +1,4 @@
 ---
-
 - name: Checking all test pods are running
   k8s_info:
     namespace: "{{ dci_openshift_app_ns }}"
