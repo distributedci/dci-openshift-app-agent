@@ -1,10 +1,18 @@
 ---
 
-- name: Delete tnf namespace
-  k8s:
-    api_version: v1
-    kind: Namespace
-    name: tnf
+# Namespace not deleted here, even if being the same used for cnf-cert. To be deleted in partner hooks
+# Alternative when using container: oc delete deployment partner -n <ns>
+- name: Delete the partner pod
+  shell: |
+    set -ex
+    oc delete -f ./temp/rendered-partner-template.yaml
+  args:
+    chdir: "{{ tnf_git_dir }}/cnf_certification_test_partner"
+
+# Don't do it if using containerized version?
+- name: Delete temp directory
+  file:
+    path: "{{ tnf_git_dir }}/cnf_certification_test_partner/temp"
     state: absent
 
 ...

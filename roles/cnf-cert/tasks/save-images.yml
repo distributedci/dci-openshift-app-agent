@@ -1,0 +1,47 @@
+---
+
+- name: Copy cnf-test-partner image
+  block:
+  - name: Copy image
+    shell: |
+      set -ex
+      skopeo copy --authfile {{ provisionhost_registry_creds }} \
+      docker://quay.io/testnetworkfunction/cnf-test-partner:latest \
+      docker://{{ provisionhost_registry }}/testnetworkfunction/cnf-test-partner
+
+  - name: Replace image to be used in partner deployment
+    shell: |
+      set -ex
+      sed -i -e 's@quay.io/testnetworkfunction/cnf-test-partner:latest@{{ provisionhost_registry }}/testnetworkfunction/cnf-test-partner@' ./local-test-infra/local-partner-deployment.yaml
+    args:
+      chdir: "{{ tnf_git_dir }}/cnf_certification_test_partner"
+
+- name: Copy image to be used with oc debug
+  block:
+  - name: Create variable with only image name
+    set_fact:
+      tnf_debug_image_name: "{{ tnf_debug_image | regex_search('/.*') }}"
+
+  # tnf_debug_image_name starts with '/'
+  - name: Copy image
+    shell: |
+      set -ex
+      skopeo copy --authfile {{ provisionhost_registry_creds }} \
+      docker://quay.io{{ tnf_debug_image_name }} \
+      docker://{{ provisionhost_registry }}{{ tnf_debug_image_name }}
+
+# Copied just in case, but it may not be needed because it runs directly in the jumphost
+- name: Copy test-network-function image
+  block:
+  - name: Create variable with version name
+    set_fact:
+      tnf_version_image: "{{ ( test_network_function_version | regex_search('v[0-9].[0-9].[0-9]') ) | ternary(test_network_function_version, 'latest') }}"
+
+  - name: Copy image
+    shell: |
+      set -ex
+      skopeo copy --authfile {{ provisionhost_registry_creds }} \
+      docker://quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }} \
+      docker://{{ provisionhost_registry }}/testnetworkfunction/test-network-function
+
+...
