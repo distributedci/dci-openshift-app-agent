@@ -1,0 +1,7 @@
+---
+- name: Preflight check operators one by one
+  include_tasks: preflight_check_operator.yml
+  loop: "{{ preflight_operators_to_check }}"
+  loop_control:
+    loop_var: operator
+...
