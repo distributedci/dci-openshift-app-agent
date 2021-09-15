@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "025a3903_c1dbb79d",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-15T21:17:12Z",
+      "side": 1,
+      "message": "Since preflight is a one-shot binary, you could add `--rm` in here",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a6e02944_78e91cac",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-15T21:17:12Z",
+      "side": 1,
+      "message": "Is this maybe a leftover of a test?",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "361b5d88_06487a24",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-15T21:17:12Z",
+      "side": 1,
+      "message": "We can avoid this if --rm is used :)",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f758f92e_fec3d480",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-15T21:17:12Z",
+      "side": 1,
+      "message": "I wonder if we should upload the logs to DCI. They (preflight devs) used to produce a junit output but it was removed at some point https://github.com/redhat-openshift-ecosystem/openshift-preflight/commit/ee0ebc476e18714e4344c0a5ca58b1227966ff2a#diff-7b226e2c43cb28a869b02277ad5184ffce22c756fd9893e3b3109869e7eb50ed If we find value in it we can ask to be added back",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5853f171_56ec6188",
+        "filename": "roles/preflight/tasks/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-09-15T21:17:12Z",
+      "side": 1,
+      "message": "I think all these tasks are included already in the loop of the containers to check",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
