@@ -1,0 +1,65 @@
+---
+- name: Create directory to mount artifacts volume
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: directory
+
+- name: Force preflight images pull
+  shell: |
+    podman pull {{ item }}
+  loop: "{{ preflight_containers_to_check }}"
+
+- name: Run preflight tests
+  shell: |
+    podman run \
+    --name preflight \
+    --privileged \
+    -v {{ preflight_artifacts }}:/artifacts \
+    -e PFLT_LOGFILE=/artifacts/preflight.log \
+    quay.io/opdev/preflight:stable \
+    check container \
+    {{ item }}
+
+- name: Check preflight output
+  shell: |
+    cat {{ preflight_artifacts }}/results.json
+  register: preflight_output
+
+- name: Check preflight errors
+  shell: |
+    cat {{ preflight_artifacts }}/preflight.log
+  register: preflight_errors
+
+- name: Register preflight failed and passed tests
+  set_fact:
+    preflight_passed_tests: "{{ preflight_output.stdout | from_json | json_query(jmesquery_passed) }}"
+    preflight_failed_tests: "{{ preflight_output.stdout | from_json | json_query(jmesquery_failed) }}"
+  vars:
+    jmesquery_passed: 'results.passed'
+    jmesquery_failed: 'results.failed'
+
+- name: Print passed preflight tests
+  debug:
+    msg: "Container: {{ item }}. The following preflight tests passed ok: {{ preflight_passed_tests }}"
+  when:
+    - preflight_passed_tests is defined
+    - preflight_passed_tests | length > 0
+
+- name: Fail if there are failed preflight tests
+  fail:
+    msg: "Container: {{ item }}. The following preflight tests failed: {{ preflight_failed_tests }}. 
+    cat preflight.log: {{ preflight_errors.stdout }}"
+  when: 
+    - preflight_failed_tests is defined
+    - preflight_failed_tests | length > 0
+  ignore_errors: yes
+
+- name: Delete container to check
+  shell: |
+    podman rm preflight
+
+- name: Delete directory with preflight output
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: absent
+...

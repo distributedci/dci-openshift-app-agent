@@ -1,0 +1,7 @@
+---
+- name: Check containers one by one
+  include_tasks: preflight_check_one_container.yml
+  loop: "{{ preflight_containers_to_check }}"
+  loop_control:
+    loop_var: container
+...
