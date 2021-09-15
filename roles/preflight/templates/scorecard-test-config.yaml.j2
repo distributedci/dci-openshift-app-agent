@@ -1,0 +1,51 @@
+---
+apiVersion: scorecard.operatorframework.io/v1alpha3
+kind: Configuration
+metadata:
+  name: config
+stages:
+- parallel: true
+  tests:
+  - entrypoint:
+    - scorecard-test
+    - basic-check-spec
+    image: quay.io/operator-framework/scorecard-test@sha256:ff3ce0785e706185260a8308c0f40bae950fdba03cbb302fd002dddf3129b189
+    labels:
+      suite: basic
+      test: basic-check-spec-test
+  - entrypoint:
+    - scorecard-test
+    - olm-bundle-validation
+    image: quay.io/operator-framework/scorecard-test@sha256:ff3ce0785e706185260a8308c0f40bae950fdba03cbb302fd002dddf3129b189
+    labels:
+      suite: olm
+      test: olm-bundle-validation-test
+  - entrypoint:
+    - scorecard-test
+    - olm-crds-have-validation
+    image: quay.io/operator-framework/scorecard-test@sha256:ff3ce0785e706185260a8308c0f40bae950fdba03cbb302fd002dddf3129b189
+    labels:
+      suite: olm
+      test: olm-crds-have-validation-test
+  - entrypoint:
+    - scorecard-test
+    - olm-crds-have-resources
+    image: quay.io/operator-framework/scorecard-test@sha256:ff3ce0785e706185260a8308c0f40bae950fdba03cbb302fd002dddf3129b189
+    labels:
+      suite: olm
+      test: olm-crds-have-resources-test
+  - entrypoint:
+    - scorecard-test
+    - olm-spec-descriptors
+    image: quay.io/operator-framework/scorecard-test@sha256:ff3ce0785e706185260a8308c0f40bae950fdba03cbb302fd002dddf3129b189
+    labels:
+      suite: olm
+      test: olm-spec-descriptors-test
+  - entrypoint:
+    - scorecard-test
+    - olm-status-descriptors
+    image: quay.io/operator-framework/scorecard-test@sha256:ff3ce0785e706185260a8308c0f40bae950fdba03cbb302fd002dddf3129b189
+    labels:
+      suite: olm
+      test: olm-status-descriptors-test
+...
