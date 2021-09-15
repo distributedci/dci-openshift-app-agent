@@ -111,6 +111,9 @@ provisionhost\_registry            | ""                                         
 provisionhost\_registry\_creds     | ""                                                   | path to the pull-secret.txt file to access to the registry. Must be set in disconnected environments.
 dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns            |                                                      | namespace for the workload
+dci\_must\_gather\_images          | ["registry.redhat.io/openshift4/ose-must-gather"]    | List of the must-gather images to use when retrieving logs.
+provisioner\_name                  |                                                      | Provisioner address (name or IP) to be accessed for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
+provisioner\_user                  |                                                      | Provisioner username, used to access to the provisioner for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
 do\_cnf\_cert                      | false                                                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
 test\_network\_function\_version   | v3.0.0                                               | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8, v2.0.0 and v3.0.0
 tnf\_operators\_regexp             | ""                                                   | regexp to select operators. Only for versions equal or lower to v2.0.0
