@@ -1,0 +1,20 @@
+---
+- name: Preflight check containers one by one
+  include_tasks: check_one_container.yml
+  loop: "{{ preflight_containers_to_check }}"
+  loop_control:
+    loop_var: container
+
+- name: Operator-sdk scorecard check
+  include_tasks: scorecard_check_operator.yml
+  loop: "{{ preflight_operators_to_check }}"
+  loop_control:
+    loop_var: operator
+
+- name: Preflight check operators one by one
+  include_tasks: check_one_operator.yml
+  loop: "{{ preflight_operators_to_check }}"
+  loop_control:
+    loop_var: operator
+  when: false
+...
