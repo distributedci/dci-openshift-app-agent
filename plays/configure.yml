@@ -17,4 +17,11 @@
     tnf_registry_creds: "{{ local_registry_user }}:{{ local_registry_password }}"
   when: do_cnf_cert is defined and do_cnf_cert|bool
 
+- name: "preflight pre-run"
+  include_role:
+    name: preflight
+    tasks_from: pre-run.yml
+  when:
+    - do_preflight_tests is defined
+    - do_preflight_tests | bool
 ...

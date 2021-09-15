@@ -1,0 +1,7 @@
+---
+- name: Force pull images for preflight check
+  shell: |
+    podman pull {{ preflight_image_to_pull }}
+  loop: "{{ preflight_containers_to_check }}"
+  loop_control:
+    loop_var: preflight_image_to_pull
