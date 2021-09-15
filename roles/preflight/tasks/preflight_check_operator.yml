@@ -1,0 +1,254 @@
+---
+- name: Setup tmp preflight folders
+  block:
+    - name: Create temporary preflight_tmp_dir directory
+      tempfile:
+        state: directory
+        suffix: preflight_tmp_dir
+      register: preflight_tmp_dir
+
+    - name: Set directories for artifacts and operator bundle extract
+      set_fact:
+        preflight_artifacts: "{{ preflight_tmp_dir.path }}/artifacts"
+        preflight_kubeconfig: "{{ preflight_tmp_dir.path }}/kubeconfig"
+
+    - name: Create directories to mount artifacts volume and kubeconfig volume
+      file:
+        path: "{{ preflight_dir_to_create }}"
+        state: directory
+        mode: 0744
+      loop:
+        - "{{ preflight_artifacts }}"
+        - "{{ preflight_kubeconfig }}"
+      loop_control:
+        loop_var: preflight_dir_to_create
+
+    - name: Copy kubeconfig file into kubeconfig folder
+      copy:
+        src: "{{ kubeconfig_path }}"
+        dest: "{{ preflight_kubeconfig }}"
+
+- name: Manage operator index image in the disconnected environment
+  block:
+    - name: Set tag for the index image
+      set_fact:
+        OO_INDEX: "{{ provisionhost_registry }}/{{ operator.split('/')[-2] }}/index-{{ operator.split('/')[-1] }}"
+
+    - name: Build index image in temporary preflight directory
+      shell:
+        cmd: |
+          opm index add --pull-tool podman \
+          --bundles {{ operator }} \
+          --tag {{ OO_INDEX }}
+        chdir: "{{ preflight_tmp_dir.path }}"
+
+    - name: Push index image into local registry
+      shell: |
+        podman push \
+        --authfile {{ provisionhost_registry_creds }} \
+        {{ OO_INDEX }}
+  when:
+    - dci_disconnected is defined
+    - dci_disconnected | bool
+
+- name: Set tag for the index image in connected environment
+  set_fact:
+    OO_INDEX: "quay.io/tkrishtop/index-testpmd-operator-bundle:v0.2.9"
+  when: dci_disconnected is undefined or not dci_disconnected | bool
+
+- name: Manage preflight runtime assets and scorecard images mirroring
+  block:
+    - name: Retrieve preflight runtime-assets
+      shell: |
+        podman run \
+        -it \
+        --rm \
+        --pull=always \
+        --name preflight \
+        --privileged \
+        {{ preflight_version }} \
+        runtime-assets
+      register: preflight_assets
+
+    - name: Get preflight context
+      set_fact:
+        preflight_context: "{{ preflight_assets.stdout | from_json }}"
+
+    - name: Get scorecard config images
+      set_fact:
+        config_images: "{{ preflight_context.images | list | unique }}"
+
+    - name: Load template with busybox and ubi images
+      set_fact:
+        busybox_config: "{{ lookup('file', 'templates/scorecard-busybox-ubi.yaml.j2') | from_yaml }}"
+
+    - name: Get busybox and ubi images
+      set_fact:
+        busybox_images: "{{ busybox_config.images | list | unique }}"
+
+    - name: Merge all scorecard images in one list
+      set_fact:
+        scorecard_images: "{{ busybox_images + config_images }}"
+
+    - name: Mirror scorecard images
+      shell: |
+        skopeo copy \
+        --all \
+        --remove-signatures \
+        --authfile {{ provisionhost_registry_creds }} \
+        --dest-tls-verify=false \
+        docker://{{ item }} \
+        docker://{{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+      loop: "{{ scorecard_images }}"
+
+    - name: Save catalog mirror to temporary scorecard directory
+      shell: |
+        oc adm catalog mirror -a {{ provisionhost_registry_creds }} \
+        {{ OO_INDEX }} {{ provisionhost_registry }} --to-manifests={{ preflight_tmp_dir.path }}/tmp_oc
+
+    - name: Append to imageContentSourcePolicy
+      blockinfile:
+        block: |
+          # Scorecard container
+            - mirrors:
+              - {{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+              source: {{ item.split('@')[0] }}
+        marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.split('@')[0] }}"
+        path: "{{ preflight_tmp_dir.path }}/tmp_oc/imageContentSourcePolicy.yaml"
+      loop: "{{ scorecard_images }}"
+
+    - name: Apply Image Content Source Policy
+      k8s:
+        definition: "{{ lookup('file', preflight_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
+
+    - name: Delay for policy to apply, there is no nodes to reboot anymore since ocp-4.7
+      pause:
+        minutes: 1
+  when:
+    - dci_disconnected is defined
+    - dci_disconnected | bool
+
+- name: Create preflight-testing namespace
+  k8s:
+    name: preflight-testing
+    api_version: v1
+    kind: Namespace
+    state: present
+
+- name: Run preflight check operator tests
+  environment:
+    - OPENSHIFT_AUTH: "{{ provisionhost_registry_creds }}"
+    - OO_BUNDLE: "{{ operator }}"
+    - OO_INDEX: "{{ OO_INDEX }}"
+  shell: |
+    podman run \
+    -it \
+    --rm \
+    --pull=always \
+    --name preflight \
+    --privileged \
+    -e PFLT_JUNIT=true \
+    -e PFLT_ARTIFACTS=/artifacts \
+    -e PFLT_LOGFILE=/artifacts/preflight.log \
+    -e PFLT_LOGLEVEL=trace \
+    -e KUBECONFIG=/kubeconfig \
+    -e PFLT_INDEXIMAGE={{ OO_INDEX }} \
+    -e PFLT_NAMESPACE=preflight-testing \
+    -e PFLT_SERVICEACCOUNT=default \
+    -v {{ preflight_kubeconfig }}/kubeconfig:/kubeconfig \
+    -v {{ preflight_artifacts }}:/artifacts \
+    {{ preflight_version }} \
+    check operator \
+    {{ operator }}
+  async: 350
+  poll: 0
+  register: preflight_exec
+
+- name: Check image policy
+  shell: |
+    cat {{ preflight_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml' }}
+
+- name: Wait for scorecard pod to get ready
+  pause:
+    seconds: 20
+
+- name: Retrieve scorecard pod name
+  shell: |
+    oc get pods --namespace preflight-testing -o custom-columns=POD:.metadata.name --no-headers
+  register: scorecard_pod
+
+- name: Get events for the pod
+  shell: |
+    KUBECONFIG={{ kubeconfig_path }} kubectl get events --namespace preflight-testing | grep {{ scorecard_pod.stdout }}
+  when: scorecard_pod.stdout|length > 0
+
+- name: Check on preflight execution
+  async_status:
+    jid: "{{ preflight_exec.ansible_job_id }}"
+  register: job_result
+  until: job_result.finished
+  retries: 7
+  delay: 50
+  ignore_errors: true
+
+- name: Delete preflight-testing namespace
+  k8s:
+    name: preflight-testing
+    api_version: v1
+    kind: Namespace
+    state: absent
+
+- name: Load preflight check operator test results
+  shell: |
+    cat {{ preflight_artifacts }}/results.json
+  register: preflight_results
+
+- name: Load preflight check operator errors
+  shell: |
+    cat {{ preflight_artifacts }}/preflight.log
+  register: preflight_errors
+
+- name: Set prefix for preflight check operator output files
+  set_fact:
+    preflight_prefix: "preflight_operator_{{ operator.split('/')[-1] | replace(':', '_') }}"
+
+- name: Upload logs for preflight check operator into DCI
+  copy:
+    src: "{{ preflight_artifacts }}/{{ file_to_copy }}"
+    dest: "{{ job_logs.path }}/{{ preflight_prefix }}_{{ file_to_copy }}"
+  loop: "{{ preflight_operator_output }}"
+  loop_control:
+    loop_var: file_to_copy
+  ignore_errors: true
+
+- name: Delete preflight-testing namespace
+  k8s:
+    name: preflight-testing
+    api_version: v1
+    kind: Namespace
+    state: absent
+
+- name: Register preflight check operator failed and passed tests
+  set_fact:
+    preflight_passed_tests: "{{ preflight_results.stdout | from_json | json_query(jmesquery_passed) }}"
+    preflight_failed_tests: "{{ preflight_results.stdout | from_json | json_query(jmesquery_failed) }}"
+  vars:
+    jmesquery_passed: 'results.passed'
+    jmesquery_failed: 'results.failed'
+
+- name: Print preflight check operator passed tests
+  debug:
+    msg: "Operator: {{ operator }}. The following preflight tests passed ok: {{ preflight_passed_tests }}"
+  when:
+    - preflight_passed_tests is defined
+    - preflight_passed_tests | length > 0
+
+- name: Fail if there are failed preflight check operator tests
+  fail:
+    msg: "Operator: {{ operator }}. The following preflight tests failed: {{ preflight_failed_tests }}
+    cat preflight.log: {{ preflight_errors.stdout }}"
+  when:
+    - preflight_failed_tests is defined
+    - preflight_failed_tests | length > 0
+  ignore_errors: yes
+...
