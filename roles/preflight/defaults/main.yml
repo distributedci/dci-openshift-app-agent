@@ -1,0 +1,30 @@
+---
+# scorecard vars
+operator_sdk_tool_path: "/usr/local/bin/operator-sdk-flag"
+
+# this version contains scorecard busybox fix and runtime-assets
+# preflight_version: quay.io/opdev/preflight:1.0.3
+# version with elapsed time junit fix
+preflight_version: quay.io/tkrishtop/preflight:junit
+
+
+# testpmd:v0.2.9
+preflight_operators_to_check:
+  - {
+    image: 'quay.io/rh-nfv-int/testpmd-operator-bundle@sha256:5e28f883faacefa847104ebba1a1a22ee897b7576f0af6b8253c68b5c8f42815',
+    index_image: 'quay.io/tkrishtop/index-testpmd-operator-bundle:v0.2.9',
+    }
+  - {
+    image: 'quay.io/opdev/simple-demo-operator-bundle@sha256:eff7f86a54ef2a340dbf739ef955ab50397bef70f26147ed999e989cfc116b79',
+    index_image: 'quay.io/opdev/simple-demo-operator-catalog:v0.0.3',
+    }
+
+preflight_operator_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+  - hashes.txt
+  - operator_bundle_scorecard_BasicSpecCheck.json
+  - operator_bundle_scorecard_OlmSuiteCheck.json
+
+...
