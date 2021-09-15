@@ -1,0 +1,26 @@
+---
+# common vars
+# this version contains junit
+preflight_version: f756bf413e6baff4b7e4f70d222ee491b43b566d
+preflight_artifacts: /tmp/preflight_artifacts
+
+# preflight check container vars
+preflight_containers_to_check:
+  - quay.io/opdev/preflight:stable
+  - quay.io/testnetworkfunction/cnf-test-partner:latest
+preflight_container_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+
+# preflight check operator vars
+preflight_kubeconfig: /tmp/preflight_kubeconfig
+preflight_operators_to_check:
+  - registry.dfwt5g.lab:5000/preflight/testpmd-operator-bundle:v0.2.9
+preflight_operator_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+  - hashes.txt
+
+...
