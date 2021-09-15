@@ -1,0 +1,196 @@
+---
+- name: Setup tmp scorecard folders
+  block:
+    - name: Create temporary scorecard directory
+      tempfile:
+        state: directory
+        suffix: scorecard_tmp_dir
+      register: scorecard_tmp_dir
+
+    - name: Set directories for artifacts and operator bundle extract
+      set_fact:
+        scorecard_artifacts: "{{ scorecard_tmp_dir.path }}/artifacts"
+        scorecard_operator_dir: "{{ scorecard_tmp_dir.path }}/scorecard_operator_dir"
+
+    - name: Create directories for artifacts and operator bundle extract
+      file:
+        path: "{{ scorecard_dir_to_create }}"
+        state: directory
+        mode: 0744
+      loop:
+        - "{{ scorecard_artifacts }}"
+        - "{{ scorecard_operator_dir }}"
+      loop_control:
+        loop_var: scorecard_dir_to_create
+
+- name: Exract operator bundle
+  block:
+    - name: Extract operator bundle and add read permissions
+      shell:
+        cmd: |
+          oc image extract {{ operator }} --confirm -a {{ provisionhost_registry_creds }}
+          chmod -R go+r ./
+        chdir: "{{ scorecard_operator_dir }}"
+
+    - name: Print extracted operator data
+      shell: |
+        tree "{{ scorecard_operator_dir }}"
+
+- name: Manage operator index image, which is containerized version of the catalog
+  block:
+    - name: Set tag for the index image
+      set_fact:
+        OO_INDEX: "{{ provisionhost_registry }}/{{ operator.split('/')[-2] }}/index-{{ operator.split('/')[-1] }}"
+
+    - name: Build index image in temporary scorecard directory
+      shell:
+        cmd: |
+          opm index add --pull-tool podman \
+          --bundles {{ operator }} \
+          --tag {{ OO_INDEX }}
+        chdir: "{{ scorecard_tmp_dir.path }}"
+
+    - name: Push index image into local registry
+      shell: |
+        podman push \
+        --authfile {{ provisionhost_registry_creds }} \
+        {{ OO_INDEX }}
+
+# - name: Manage scorecard config and scorecard images mirroring
+#   block:
+#     - name: Load scorecard config v1.7.2
+#       set_fact:
+#         scorecard_config: "{{ lookup('file', 'templates/scorecard-test-config.yaml.j2') | from_yaml }}"
+
+#     - name: Get scorecard images
+#       set_fact:
+#         scorecard_images: "{{ scorecard_config.stages[0].tests | map(attribute='image') | list | unique }}"
+
+#     - name: Mirror scorecard images
+#       shell: |
+#         skopeo copy --all \
+#         --authfile {{ provisionhost_registry_creds }} \
+#         --dest-tls-verify=false \
+#         docker://{{ item }} \
+#         docker://{{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+#       loop: "{{ scorecard_images }}"
+
+#     - name: Save catalog mirror to temporary scorecard directory
+#       shell: |
+#         oc adm catalog mirror -a {{ provisionhost_registry_creds }} \
+#         {{ OO_INDEX }} {{ provisionhost_registry }} --to-manifests={{ scorecard_tmp_dir.path }}/tmp_oc
+
+#     - name: Append to imageContentSourcePolicy
+#       blockinfile:
+#         block: |
+#           # Scorecard container
+#             - mirrors:
+#               - {{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+#               source: {{ item.split('@')[0] }}
+#         path: "{{ scorecard_tmp_dir.path }}/tmp_oc/imageContentSourcePolicy.yaml"
+#       loop: "{{ scorecard_images }}"
+
+#     - name: Apply Image Content Source Policy
+#       k8s:
+#         definition: "{{ lookup('file', scorecard_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
+
+#     - name: Delay for policy to apply, there is no nodes to reboot anymore since ocp-4.7
+#       pause:
+#         minutes: 1
+
+- name: Tmp debug block to update imageContentSourcePolicy for busybox and ubi images
+  block:
+    - name: Set busybox and ubi images
+      set_fact:
+        busybox_config: "{{ lookup('file', 'templates/scorecard-busybox-ubi.yaml.j2') | from_yaml }}"
+
+    - name: Get busybox and ubi images
+      set_fact:
+        busybox_images: "{{ busybox_config.images | list | unique }}"
+
+    - name: Mirror busybox images
+      shell: |
+        skopeo copy \
+        --all \
+        --remove-signatures \
+        --authfile {{ provisionhost_registry_creds }} \
+        --dest-tls-verify=false \
+        docker://{{ item }} \
+        docker://{{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+      loop: "{{ busybox_images }}"
+
+    - name: Save catalog mirror to temporary scorecard directory
+      shell: |
+        oc adm catalog mirror -a {{ provisionhost_registry_creds }} \
+        {{ OO_INDEX }} {{ provisionhost_registry }} --to-manifests={{ scorecard_tmp_dir.path }}/tmp_oc
+
+    - name: Append to imageContentSourcePolicy
+      blockinfile:
+        block: |
+          # Scorecard container
+            - mirrors:
+              - {{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+              source: {{ item.split('@')[0] }}
+        marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.split('@')[0] }}"
+        path: "{{ scorecard_tmp_dir.path }}/tmp_oc/imageContentSourcePolicy.yaml"
+      loop: "{{ busybox_images }}"
+
+    - name: Apply Image Content Source Policy
+      k8s:
+        definition: "{{ lookup('file', scorecard_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
+
+    - name: Delay for policy to apply, there is no nodes to reboot anymore since ocp-4.7
+      pause:
+        minutes: 1
+  when:
+    - dci_disconnected is defined
+    - dci_disconnected | bool
+
+- name: Template scorecard config
+  template:
+    src: templates/scorecard-test-config.yaml.j2
+    dest: "{{ scorecard_artifacts }}/scorecard-test-config.yaml"
+
+- name: Set path to scorecard config
+  set_fact:
+    scorecard_config_path: "{{ scorecard_artifacts }}/scorecard-test-config.yaml"
+
+- name: Create scorecard-testing namespace
+  k8s:
+    name: scorecard-testing
+    api_version: v1
+    kind: Namespace
+    state: present
+
+- name: Run operator-sdk scorecard --selector=test=basic-check-spec-test
+  environment:
+    - OPENSHIFT_AUTH: "{{ provisionhost_registry_creds }}"
+    - OO_BUNDLE: "{{ operator }}"
+    - OO_INDEX: "{{ OO_INDEX }}"
+    - ARTIFACT_DIR: "{{ scorecard_artifacts }}"
+  shell: |
+    operator-sdk-dev scorecard \
+    --output json \
+    --selector=test=basic-check-spec-test \
+    --kubeconfig "{{ kubeconfig_path }}" \
+    --namespace scorecard-testing \
+    --service-account default \
+    --config {{ scorecard_config_path }} \
+    --verbose \
+    --wait-time 300s \
+    "{{ scorecard_operator_dir }}"
+  register: scorecard_exec
+  ignore_errors: true
+
+- name: Copy scorecard basic-check-spec-test output into logs
+  template:
+    src: templates/scorecard-basic-check-spec-test.j2
+    dest: "{{ job_logs.path }}/scorecard_{{ operator.split('/')[-1] | replace(':', '_') }}_basic_check_spec_test.json"
+
+- name: Delete scorecard-testing namespace
+  k8s:
+    name: scorecard-testing
+    api_version: v1
+    kind: Namespace
+    state: absent
+...
