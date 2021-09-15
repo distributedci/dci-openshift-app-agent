@@ -1,0 +1,30 @@
+---
+# common vars
+# this version contains junit
+preflight_version: 0.0.1
+preflight_artifacts: /tmp/preflight_artifacts
+
+# scorecard vars
+scorecard_artifacts: /tmp/scorecard_artifacts
+scorecard_operator_dir: /tmp/scorecard_operator_dir
+
+# preflight check container vars
+preflight_containers_to_check:
+  - quay.io/opdev/preflight:stable
+  - quay.io/testnetworkfunction/cnf-test-partner:latest
+preflight_container_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+
+# preflight check operator vars
+preflight_kubeconfig: /tmp/preflight_kubeconfig
+preflight_operators_to_check:
+  - registry.dfwt5g.lab:5000/rh-nfv-int/testpmd-operator-bundle:v0.2.9
+preflight_operator_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+  - hashes.txt
+
+...
