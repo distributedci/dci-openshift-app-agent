@@ -1,0 +1,70 @@
+---
+- name: Create directory to mount artifacts volume
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: directory
+
+- name: Copy kubeconfig into artifacts folder
+  copy:
+    src: "{{ kubeconfig_path }}"
+    dest: "{{ preflight_artifacts }}"
+
+- name: Run preflight tests
+  shell: |
+    podman run \
+    -it \
+    --rm \
+    --pull=always \
+    --name preflight \
+    --privileged \
+    -v {{ preflight_artifacts }}:/artifacts \
+    -e PFLT_LOGFILE=/artifacts/preflight.log \
+    -v {{ preflight_artifacts }}/kubeconfig:/kubeconfig \
+    -e KUBECONFIG=/kubeconfig \
+    quay.io/opdev/preflight:{{ preflight_version }} \
+    check operator \
+    {{ operator }}
+
+- name: Upload preflight output
+  shell: |
+    cat {{ preflight_artifacts }}/results.json
+    cp {{ preflight_artifacts }}/results.json \
+    {{ job_logs.path }}/preflight_operator_{{ operator.split("/")[-1] | replace(':', '_') }}_results.json
+  register: preflight_output
+
+- name: Upload preflight errors
+  shell: |
+    cat {{ preflight_artifacts }}/preflight.log
+    cp {{ preflight_artifacts }}/preflight.log \
+    {{ job_logs.path }}/preflight_operator_{{ operator.split("/")[-1] | replace(':', '_') }}_errors.log
+  register: preflight_errors
+
+- name: Delete directory with preflight output
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: absent
+
+- name: Register preflight failed and passed tests
+  set_fact:
+    preflight_passed_tests: "{{ preflight_output.stdout | from_json | json_query(jmesquery_passed) }}"
+    preflight_failed_tests: "{{ preflight_output.stdout | from_json | json_query(jmesquery_failed) }}"
+  vars:
+    jmesquery_passed: 'results.passed'
+    jmesquery_failed: 'results.failed'
+
+- name: Print passed preflight tests
+  debug:
+    msg: "Operator: {{ operator }}. The following preflight tests passed ok: {{ preflight_passed_tests }}"
+  when:
+    - preflight_passed_tests is defined
+    - preflight_passed_tests | length > 0
+
+- name: Fail if there are failed preflight tests
+  fail:
+    msg: "Operator: {{ operator }}. The following preflight tests failed: {{ preflight_failed_tests }}
+    cat preflight.log: {{ preflight_errors.stdout }}"
+  when:
+    - preflight_failed_tests is defined
+    - preflight_failed_tests | length > 0
+  ignore_errors: yes
+...
