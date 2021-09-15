@@ -1,0 +1,25 @@
+---
+# this version contains preflight runtime-assets
+# preflight_version: quay.io/opdev/preflight:406f54f7aba2c59f5d79b5a10031af415b7c66bc
+# this version contains scorecard busybox fix
+preflight_version: registry.dfwt5g.lab:5000/tkrishtop/preflight:main
+
+# preflight check container vars
+preflight_containers_to_check:
+  - quay.io/opdev/preflight:0.0.1
+  - quay.io/testnetworkfunction/cnf-test-partner:latest
+preflight_container_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+
+# preflight check operator vars
+preflight_operators_to_check:
+  - quay.io/rh-nfv-int/testpmd-operator-bundle:v0.2.9
+preflight_operator_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+  - hashes.txt
+
+...
