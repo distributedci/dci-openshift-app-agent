@@ -78,6 +78,10 @@ dci\_component                     | []                                         
 dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns            |                                                      | namespace for the workload
 do\_cnf\_cert                      | false                                                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
+do\_preflight\_tests               | false                                                | Launch [preflight test suite](https://github.com/redhat-openshift-ecosystem/openshift-preflight).
+preflight\_artifacts               | /var/tmp/preflight_artifacts                         | Tmp folder to store preflight tests output: results.json (both for `check container` and `check operator`), error logs preflight.log (both for `check container` and `check operator`), operator certification hash hashes.txt (for `check operator`). This folder is removed once the tests are done, and its content is uploaded into DCI logs and could be found under the "Files" tab.
+preflight\_containers\_to\_check   | quay.io/opdev/preflight:stable, quay.io/testnetworkfunction/cnf-test-partner:latest                         | List of containers to be checked with preflight test suite.
+preflight\_tests\_version          | 0.0.0                                                | Preflight test suite version, here are [currently availale versions](https://quay.io/repository/opdev/preflight?tab=tags).
 test\_network\_function\_version   | v3.0.0                                               | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8, v2.0.0 and v3.0.0
 tnf\_operators\_regexp             | ""                                                   | regexp to select operators. Only for versions equal or lower to v2.0.0
 tnf\_cnfs\_regexp                  | ""                                                   | regexp to select CNF. Only for versions equal or lower to v2.0.0
@@ -89,6 +93,7 @@ tnf\_targetpodlabels\_name         | ""                                         
 tnf\_targetpodlabels\_value        | ""                                                   | for CNF Cert Suite v3.0.0, value of the label to be attached to the workload created, then using it in the CNF Cert Suite configuration file for retrieving automatically the workload. Not to be used for versions equal or lower to v2.0.0
 tnf\_non\_intrusive\_only          | true                                                 | for CNF Cert Suite v3.0.0, set it to true if you would like to skip intrusive tests which may disrupt cluster operations. Likewise, to enable intrusive tests, set it to false. Not to be used for versions equal or lower to v2.0.0
 verify\_cnf\_features              | false                                                | for CNF Cert Suite v3.0.0, the test suites from [openshift-kni/cnf-feature-deploy](https://github.com/openshift-kni/cnf-features-deploy) can be run prior to the actual CNF certification test execution and the results are incorporated in the same claim file if the following environment variable is set to true. Not to be used for versions equal or lower to v2.0.0
+
 
 ## Launching the agent
 
