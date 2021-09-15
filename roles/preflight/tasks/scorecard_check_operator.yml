@@ -1,0 +1,67 @@
+---
+- name: Create scorecard-testing namespace
+  k8s:
+    name: scorecard-testing
+    api_version: v1
+    kind: Namespace
+    state: present
+
+- name: Create directories for artifacts and operator bundle extract
+  file:
+    path: "{{ scorecard_dir_to_create }}"
+    state: directory
+  loop:
+    - "{{ scorecard_artifacts }}"
+    - "{{ scorecard_operator_dir }}"
+  loop_control:
+    loop_var: scorecard_dir_to_create
+
+- name: Template scorecard config
+  template:
+    src: templates/scorecard-test-config.yaml.j2
+    dest: "{{ scorecard_artifacts }}/scorecard-test-config.yaml"
+
+- name: Extract operator bundle and add read permissions
+  shell: 
+    cmd: |
+      oc image extract {{ operator }} --confirm -a {{ provisionhost_registry_creds }}
+      chmod -R go+r ./
+    chdir: "{{ scorecard_operator_dir }}"
+
+- name: Print extracted operator data
+  shell: |
+    tree "{{ scorecard_operator_dir }}"
+
+- name: Run operator-sdk scorecard
+  environment:
+    - REGISTRY_AUTH_FILE: "{{ provisionhost_registry_creds }}"
+    - OPENSHIFT_AUTH: "{{ provisionhost_registry_creds }}"
+    - ARTIFACT_DIR: "{{ scorecard_artifacts }}"
+    - SCORECARD_CONFIG: "{{ scorecard_artifacts }}/scorecard-test-config.yaml"
+    - KUBECONFIG: "{{ kubeconfig_path }}"
+    - OO_BUNDLE: "{{ operator }}"
+    - OPERATOR_DIR: "{{ scorecard_operator_dir }}"
+  shell: |
+    operator-sdk scorecard \
+    --output json \
+    --selector=test=basic-check-spec-test \
+    --kubeconfig "{{ kubeconfig_path }}" \
+    --namespace default \
+    --service-account default \
+    --config {{ scorecard_config }} \
+    --verbose \
+    --wait-time 300s \
+    "{{ scorecard_operator_dir }}"
+  register: scorecard_check
+
+- name: Print scorecard check results
+  debug:
+    var: scorecard_check.stdout
+
+- name: Delete scorecard-testing namespace
+  k8s:
+    name: scorecard-testing
+    api_version: v1
+    kind: Namespace
+    state: absent
+...
