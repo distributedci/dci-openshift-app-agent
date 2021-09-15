@@ -1,0 +1,51 @@
+---
+apiVersion: scorecard.operatorframework.io/v1alpha3
+kind: Configuration
+metadata:
+  name: config
+stages:
+- parallel: true
+  tests:
+  - entrypoint:
+    - scorecard-test
+    - basic-check-spec
+    image: registry.dfwt5g.lab:5000/operator-framework/scorecard-test:master
+    labels:
+      suite: basic
+      test: basic-check-spec-test
+  - entrypoint:
+    - scorecard-test
+    - olm-bundle-validation
+    image: registry.dfwt5g.lab:5000/operator-framework/scorecard-test:master
+    labels:
+      suite: olm
+      test: olm-bundle-validation-test
+  - entrypoint:
+    - scorecard-test
+    - olm-crds-have-validation
+    image: registry.dfwt5g.lab:5000/operator-framework/scorecard-test:master
+    labels:
+      suite: olm
+      test: olm-crds-have-validation-test
+  - entrypoint:
+    - scorecard-test
+    - olm-crds-have-resources
+    image: registry.dfwt5g.lab:5000/operator-framework/scorecard-test:master
+    labels:
+      suite: olm
+      test: olm-crds-have-resources-test
+  - entrypoint:
+    - scorecard-test
+    - olm-spec-descriptors
+    image: registry.dfwt5g.lab:5000/operator-framework/scorecard-test:master
+    labels:
+      suite: olm
+      test: olm-spec-descriptors-test
+  - entrypoint:
+    - scorecard-test
+    - olm-status-descriptors
+    image: registry.dfwt5g.lab:5000/operator-framework/scorecard-test:master
+    labels:
+      suite: olm
+      test: olm-status-descriptors-test
+...
