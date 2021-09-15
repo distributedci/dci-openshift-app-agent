@@ -10,8 +10,13 @@ dci_tags: ["debug"]
 dci_gits_to_component: "{{ dci_config_dir }}"
 dci_rpms_to_components:
   - dci-openshift-app-agent
-dci_cache_dir: /var/lib/dci-openshift-app-agent
 do_cnf_cert: false
+do_preflight_tests: false
+preflight_containers_to_check:
+  - quay.io/opdev/preflight:stable
+  - quay.io/testnetworkfunction/cnf-test-partner:latest
+preflight_operators_to_check:
+  - quay.io/rh-nfv-int/testpmd-operator-bundle:v0.2.9
 provisionhost_registry: "{% if dci_disconnected is defined and dci_disconnected|bool and local_registry_host is defined and local_registry_port is defined %}{{ local_registry_host }}:{{ local_registry_port }}{% else %}{% endif %}"
 provisionhost_registry_creds: "{% if dci_disconnected is defined and dci_disconnected|bool and provision_cache_store is defined %}{{ provision_cache_store }}/pull-secret.txt{% else %}{% endif %}"
 
