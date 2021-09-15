@@ -1,0 +1,6 @@
+---
+preflight_tests_version: 0.0.0
+preflight_artifacts: /var/tmp/preflight_artifacts
+preflight_containers_to_check:
+  - quay.io/opdev/preflight:stable
+  - quay.io/testnetworkfunction/cnf-test-partner:latest

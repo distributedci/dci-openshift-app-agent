@@ -1,0 +1,6 @@
+---
+- name: Delete directory with preflight output
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: absent
+...
