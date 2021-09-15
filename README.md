@@ -77,6 +77,7 @@ dci\_components\_by\_query         | []                                         
 dci\_component                     | []                                                   | Component by UUID. ['acaf3f29-22bb-4b9f-b5ac-268958a9a67f']
 dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns            |                                                      | namespace for the workload
+dci\_must\_gather\_images          | ["registry.redhat.io/openshift4/ose-must-gather"]    | List of the must-gather images to use when retrieving logs.
 do\_cnf\_cert                      | false                                                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
 test\_network\_function\_version   | v3.0.0                                               | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports v1.0.8, v2.0.0 and v3.0.0
 tnf\_operators\_regexp             | ""                                                   | regexp to select operators. Only for versions equal or lower to v2.0.0
