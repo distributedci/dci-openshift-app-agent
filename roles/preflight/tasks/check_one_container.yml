@@ -1,0 +1,70 @@
+---
+- name: Create directory to mount artifacts volume
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: directory
+
+- name: Run preflight check container
+  shell: |
+    podman run \
+    -it \
+    --rm \
+    --pull=always \
+    --name preflight \
+    --privileged \
+    -e PFLT_ARTIFACTS=/artifacts \
+    -e PFLT_LOGFILE=/artifacts/preflight.log \
+    -e PFLT_LOGLEVEL=debug \
+    -v {{ preflight_artifacts }}:/artifacts \
+    quay.io/opdev/preflight:{{ preflight_version }} \
+    check container \
+    {{ container }}
+
+- name: Load preflight check container test results
+  shell: |
+    cat {{ preflight_artifacts }}/results.json
+  register: preflight_results
+
+- name: Load preflight check container errors
+  shell: |
+    cat {{ preflight_artifacts }}/preflight.log
+  register: preflight_errors
+
+- name: Upload logs for preflight check container into DCI
+  copy:
+    src: "{{ preflight_artifacts }}/{{ file_to_copy }}"
+    dest: "{{ job_logs.path }}/preflight_container_{{ container.split('/')[-1] | replace(':', '_') }}_{{ file_to_copy }}"
+  loop: "{{ preflight_container_output }}"
+  loop_control:
+    loop_var: file_to_copy
+
+- name: Delete directory with preflight output
+  file:
+    path: "{{ preflight_artifacts }}"
+    state: absent
+
+- name: Register preflight failed and passed tests
+  set_fact:
+    preflight_passed_tests: "{{ preflight_results.stdout | from_json | json_query(jmesquery_passed) }}"
+    preflight_failed_tests: "{{ preflight_results.stdout | from_json | json_query(jmesquery_failed) }}"
+  vars:
+    jmesquery_passed: 'results.passed'
+    jmesquery_failed: 'results.failed'
+
+- name: Print preflight check container passed tests
+  debug:
+    msg: "Container: {{ container }}. The following preflight tests passed ok: {{ preflight_passed_tests }}"
+  when:
+    - preflight_passed_tests is defined
+    - preflight_passed_tests | length > 0
+
+- name: Fail if there are failed preflight check container tests
+  fail:
+    msg: "Container: {{ container }}. The following preflight tests failed: {{ preflight_failed_tests }}
+    cat preflight.log: {{ preflight_errors.stdout }}"
+  when:
+    - preflight_failed_tests is defined
+    - preflight_failed_tests | length > 0
+  ignore_errors: yes
+
+...
