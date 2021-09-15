@@ -1,0 +1,15 @@
+---
+- block:
+    - name: pre-run
+      include_tasks: pre-run.yml
+
+    - name: tests
+      include_tasks: tests.yml
+
+    - name: post-run
+      include_tasks: post-run.yml
+
+  when:
+    - do_preflight_tests is defined
+    - do_preflight_tests | bool
+...
