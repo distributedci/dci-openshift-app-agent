@@ -1,0 +1,190 @@
+---
+- name: Setup tmp preflight folders
+  block:
+    - name: Create temporary preflight_tmp_dir directory
+      tempfile:
+        state: directory
+        suffix: preflight_tmp_dir
+      register: preflight_tmp_dir
+
+    - name: Set directories for artifacts and operator bundle extract
+      set_fact:
+        preflight_artifacts: "{{ preflight_tmp_dir.path }}/artifacts"
+        preflight_kubeconfig: "{{ preflight_tmp_dir.path }}/kubeconfig"
+
+    - name: Create directories to mount artifacts volume and kubeconfig volume
+      file:
+        path: "{{ preflight_dir_to_create }}"
+        state: directory
+        mode: 0744
+      loop:
+        - "{{ preflight_artifacts }}"
+        - "{{ preflight_kubeconfig }}"
+      loop_control:
+        loop_var: preflight_dir_to_create
+
+    - name: Copy kubeconfig file into kubeconfig folder
+      copy:
+        src: "{{ kubeconfig_path }}"
+        dest: "{{ preflight_kubeconfig }}"
+
+- name: Manage operator index image in the disconnected environment
+  block:
+    - name: Replace global registry with local one to create tag for the index image in disconnected env
+      set_fact:
+        OO_INDEX: "{{ '/'.join([ provisionhost_registry ] + operator.index_image.split('/')[1:]) }}"
+
+    - name: Build index image in temporary preflight directory
+      shell:
+        cmd: |
+          opm index add --pull-tool podman \
+          --bundles {{ operator.image }} \
+          --tag {{ OO_INDEX }}
+        chdir: "{{ preflight_tmp_dir.path }}"
+
+    - name: Push index image into local registry
+      shell: |
+        podman push \
+        --authfile {{ provisionhost_registry_creds }} \
+        {{ OO_INDEX }}
+  when:
+    - dci_disconnected is defined
+    - dci_disconnected | bool
+
+- name: Retrieve operator index image in connected environment
+  set_fact:
+    OO_INDEX: "{{ operator.index_image }}"
+  when: dci_disconnected is undefined or not dci_disconnected | bool
+
+- name: Manage preflight runtime assets and scorecard images mirroring
+  block:
+    - name: Retrieve preflight runtime-assets
+      shell: |
+        podman run \
+        -it \
+        --rm \
+        --pull=always \
+        --name preflight \
+        --privileged \
+        {{ preflight_version }} \
+        runtime-assets
+      register: preflight_assets
+
+    - name: Get preflight context
+      set_fact:
+        preflight_context: "{{ preflight_assets.stdout | from_json }}"
+
+    - name: Get scorecard config images
+      set_fact:
+        config_images: "{{ preflight_context.images | list | unique }}"
+
+    - name: Load template with busybox and ubi images
+      set_fact:
+        busybox_config: "{{ lookup('file', 'templates/scorecard-busybox-ubi.yaml.j2') | from_yaml }}"
+
+    - name: Get busybox and ubi images
+      set_fact:
+        busybox_images: "{{ busybox_config.images | list | unique }}"
+
+    - name: Merge all scorecard images in one list + operator bundle image
+      set_fact:
+        scorecard_images: "{{ busybox_images + config_images + [ operator.image ] }}"
+
+    - name: Mirror scorecard images
+      shell: |
+        skopeo copy \
+        --all \
+        --remove-signatures \
+        --authfile {{ provisionhost_registry_creds }} \
+        --dest-tls-verify=false \
+        docker://{{ item }} \
+        docker://{{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+      loop: "{{ scorecard_images }}"
+
+    - name: Save catalog mirror to temporary scorecard directory
+      shell: |
+        oc adm catalog mirror -a {{ provisionhost_registry_creds }} \
+        {{ OO_INDEX }} {{ provisionhost_registry }} --to-manifests={{ preflight_tmp_dir.path }}/tmp_oc
+
+    - name: Append to imageContentSourcePolicy
+      blockinfile:
+        block: |
+          # Scorecard container
+            - mirrors:
+              - {{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+              source: {{ item.split('@')[0] }}
+        marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.split('@')[0] }}"
+        path: "{{ preflight_tmp_dir.path }}/tmp_oc/imageContentSourcePolicy.yaml"
+      loop: "{{ scorecard_images }}"
+
+    - name: Apply Image Content Source Policy
+      k8s:
+        definition: "{{ lookup('file', preflight_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
+  when:
+    - dci_disconnected is defined
+    - dci_disconnected | bool
+
+- name: Create preflight-testing namespace
+  k8s:
+    name: preflight-testing
+    api_version: v1
+    kind: Namespace
+    state: present
+
+- name: Run preflight check operator tests
+  shell: |
+    podman run \
+    -it \
+    --rm \
+    --pull=always \
+    --name preflight \
+    --privileged \
+    -e PFLT_JUNIT=true \
+    -e PFLT_ARTIFACTS=/artifacts \
+    -e PFLT_LOGFILE=/artifacts/preflight.log \
+    -e PFLT_LOGLEVEL=trace \
+    -e KUBECONFIG=/kubeconfig \
+    -e PFLT_INDEXIMAGE={{ OO_INDEX }} \
+    -e PFLT_NAMESPACE=preflight-testing \
+    -e PFLT_SERVICEACCOUNT=default \
+    -v {{ preflight_kubeconfig }}/kubeconfig:/kubeconfig \
+    -v {{ preflight_artifacts }}:/artifacts \
+    {{ preflight_version }} \
+    check operator \
+    {{ operator.image }}
+  register: preflight_exec
+  ignore_errors: true
+
+- name: Delete preflight-testing namespace
+  k8s:
+    name: preflight-testing
+    api_version: v1
+    kind: Namespace
+    state: absent
+
+- name: Display the content of /artifacts folder
+  shell: |
+    tree "{{ preflight_artifacts }}"
+  ignore_errors: true
+
+- name: Upload passed and failed tests
+  block:
+    - name: Set prefix for preflight check operator output files
+      set_fact:
+        preflight_prefix: "preflight_{{ operator.image.split('@')[0].split('/')[-1] }}_{{ operator.index_image.split(':')[-1] }}"
+
+    - name: Upload logs for preflight check operator into DCI
+      copy:
+        src: "{{ item }}"
+        dest: "{{ job_logs.path }}/{{ preflight_prefix }}_{{ item }}"
+      with_fileglob:
+        - "{{ preflight_artifacts }}/*"
+      ignore_errors: true
+
+- name: Delete preflight-testing namespace
+  k8s:
+    name: preflight-testing
+    api_version: v1
+    kind: Namespace
+    state: absent
+...
