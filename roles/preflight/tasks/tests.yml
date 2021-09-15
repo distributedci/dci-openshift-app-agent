@@ -1,0 +1,17 @@
+---
+- name: Preflight check operators one by one
+  include_tasks: preflight_check_operator.yml
+  loop: "{{ preflight_operators_to_check }}"
+  loop_control:
+    loop_var: operator
+
+# These tests are here to retrieve the logs,
+# which are not displayed by preflight.
+# TODO: remove them once the issue is fixed
+# https://github.com/redhat-openshift-ecosystem/openshift-preflight/issues/169
+- name: Scorecard tests
+  include_tasks: scorecard_check_operator.yml
+  loop: "{{ preflight_operators_to_check }}"
+  loop_control:
+    loop_var: operator
+...
