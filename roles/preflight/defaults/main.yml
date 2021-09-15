@@ -1,0 +1,20 @@
+---
+# this version contains scorecard busybox fix and runtime-assets
+preflight_version: quay.io/opdev/preflight:1.0.3
+
+# testpmd:v0.2.9
+preflight_operators_to_check:
+  - {
+    image: 'quay.io/rh-nfv-int/testpmd-operator-bundle@sha256:5e28f883faacefa847104ebba1a1a22ee897b7576f0af6b8253c68b5c8f42815',
+    index_image: 'quay.io/tkrishtop/index-testpmd-operator-bundle:v0.2.9',
+    }
+
+preflight_operator_output:
+  - results.json
+  - results-junit.xml
+  - preflight.log
+  - hashes.txt
+  - operator_bundle_scorecard_BasicSpecCheck.json
+  - operator_bundle_scorecard_OlmSuiteCheck.json
+
+...
