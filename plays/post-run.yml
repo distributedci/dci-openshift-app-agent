@@ -15,4 +15,9 @@
     tasks_from: post-run.yml
   when: do_cnf_cert is defined and do_cnf_cert|bool
 
+- name: "preflight post-run"
+  include_role:
+    name: preflight
+    tasks_from: post-run.yml
+  when: do_preflight_tests | default(true) | bool
 ...
