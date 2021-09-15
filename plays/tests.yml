@@ -22,4 +22,10 @@
       path: "{{ job_logs.path }}"
   when: do_cnf_cert|bool
 
+- name: "preflight tests"
+  include_role:
+    name: preflight
+    tasks_from: tests.yml
+  when: do_preflight_tests | bool
+
 ...
