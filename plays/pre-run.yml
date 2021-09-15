@@ -21,4 +21,26 @@
   with_items:
     - "{{ dci_gits_to_component }}"
 
+- name: Mirror must-gather images for offline mode
+  command:
+    cmd: >
+      skopeo copy --remove-signatures --all --authfile {{ dci_pullsecret_file }}
+      --dest-tls-verify=false docker://{{ item }}
+      docker://{{ local_image_location }}
+  vars:
+    dci_pullsecret_file: "{{ tnf_registry_creds }}"
+    local_registry: "{{ tnf_registry }}"
+    local_image_location: "{{ local_registry }}/{{ item | regex_replace('^[^/]*/', '') }}"
+  register: skopeo_copy
+  retries: 5
+  delay: 5
+  until:
+    - skopeo_copy is not failed
+  loop: "{{ dci_must_gather_images | default(['registry.redhat.io/openshift4/ose-must-gather']) }}"
+  when:
+    - tnf_registry_creds is defined
+    - tnf_registry_creds | length > 0
+    - tnf_registry is defined
+    - tnf_registry | length > 0
+
 ...
