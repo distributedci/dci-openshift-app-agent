@@ -1,0 +1,6 @@
+---
+# Tmp preflight version until we'll have a new preflight release
+# with that fix: https://github.com/redhat-openshift-ecosystem/openshift-preflight/pull/332
+preflight_version: quay.io/opdev/preflight:1.0.4
+
+...
