@@ -1,0 +1,24 @@
+---
+# common vars
+preflight_version: 0.0.0
+preflight_artifacts: /var/tmp/preflight_artifacts
+
+# preflight check container vars
+preflight_containers_to_check:
+  - quay.io/opdev/preflight:stable
+  - quay.io/testnetworkfunction/cnf-test-partner:latest
+preflight_container_output:
+  - results.json
+  - preflight.log
+
+# preflight check operator vars
+preflight_kubeconfig: /var/tmp/preflight_kubeconfig
+preflight_operators_to_check:
+  - quay.io/rh-nfv-int/testpmd-operator-bundle:v0.2.9
+preflight_operator_output:
+  - results.json
+  - preflight.log
+  - hashes.txt
+preflight_namespace: preflight-testing
+
+...
