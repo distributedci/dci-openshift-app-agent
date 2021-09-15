@@ -1,0 +1,5 @@
+---
+preflight_tests_version: 0.0.0
+preflight_artifacts: /var/tmp/preflight_artifacts
+
+...
