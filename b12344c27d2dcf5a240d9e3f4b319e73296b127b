@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "af043dce_e49104b9",
+        "filename": "plays/configure.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2021-09-16T13:40:43Z",
+      "side": 0,
+      "message": "Does connected mode makes sense in this context? If so, then it should be able to retrieve the images from the Internet right?",
+      "revId": "b12344c27d2dcf5a240d9e3f4b319e73296b127b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
