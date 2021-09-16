@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "8cb2f7e0_89b18d7a",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-16T07:38:30Z",
+      "side": 1,
+      "message": "Good idea!",
+      "parentUuid": "025a3903_c1dbb79d",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a6e02944_78e91cac",
         "filename": "roles/preflight/tasks/check_one_container.yml",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2021-09-15T21:17:12Z",
       "side": 1,
       "message": "Is this maybe a leftover of a test?",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "39503c2e_ed503184",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-16T07:38:30Z",
+      "side": 1,
+      "message": "Ehm. Preflight check is quite strict. I\u0027ve checked several containers, even the official ones from registry.redhat.io like mysql etc - and nothing is perfect according to this tool, the failed tests are always present :) Without ignore_errors this test will always fails. Do we want that?",
+      "parentUuid": "a6e02944_78e91cac",
       "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "c672cd0d_63b7b27b",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-16T07:38:30Z",
+      "side": 1,
+      "message": "agree!",
+      "parentUuid": "361b5d88_06487a24",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f758f92e_fec3d480",
         "filename": "roles/preflight/tasks/check_one_container.yml",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2021-09-15T21:17:12Z",
       "side": 1,
       "message": "I wonder if we should upload the logs to DCI. They (preflight devs) used to produce a junit output but it was removed at some point https://github.com/redhat-openshift-ecosystem/openshift-preflight/commit/ee0ebc476e18714e4344c0a5ca58b1227966ff2a#diff-7b226e2c43cb28a869b02277ad5184ffce22c756fd9893e3b3109869e7eb50ed If we find value in it we can ask to be added back",
+      "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "641f083f_625222a9",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-16T07:38:30Z",
+      "side": 1,
+      "message": "For the moment we have results.json (json like test_name-\u003edetailed results) and preflight.log (error file). I\u0027ll check how to upload them to DCI.",
+      "parentUuid": "f758f92e_fec3d480",
       "revId": "bacef3a0fa26c9e6b4da05f5df7d2934e4f56286",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
