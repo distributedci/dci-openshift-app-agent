@@ -11,6 +11,9 @@ dci_gits_to_component: "{{ dci_config_dir }}"
 dci_rpms_to_components:
   - dci-openshift-app-agent
 dci_cache_dir: /var/lib/dci-openshift-app-agent
+dci_disconnected: false
+local_registry: "{% if dci_disconnected is defined and dci_disconnected|bool %}registry.dfwt5g.lab:5000{% else %}{% endif %}" 
+local_registry_creds: "{% if dci_disconnected is defined and dci_disconnected|bool %}/opt/cache/pull-secret.txt{% else %}{% endif %}"
 
 ...
 
