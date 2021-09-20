@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a6e6e3d8_cdd3b469",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-20T11:54:56Z",
+      "side": 1,
+      "message": "Maybe, I would include a variable referencing the version to be used of the preflight container. This is, because, if the latest version of the code changes, it may have an impact in the outcomes you obtain and the task may fail. By including the version as variable, you can include the latest version tested and then, for new releases, test using the latest version and then change the default version to newer versions when tested and validated, also changing your tasks with the corresponding updates. This is done for the CNF Cert Suite, in fact.",
+      "range": {
+        "startLine": 16,
+        "startChar": 28,
+        "endLine": 16,
+        "endChar": 34
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2a59e6da_1c3dd272",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-20T11:54:56Z",
+      "side": 1,
+      "message": "I guess you have a pending action point related to using junit format instead of JSON to see the result listed in the Tests section on DCI, right?",
+      "range": {
+        "startLine": 20,
+        "startChar": 7,
+        "endLine": 20,
+        "endChar": 31
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a062585_8351663c",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-20T11:54:56Z",
+      "side": 1,
+      "message": "This is just an informative message, right? I mean, if there are failed preflight tests, we only inform about it (as done for CNF Cert Suite) and that\u0027s all, no?",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 48
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "002b13a1_c8b82678",
+        "filename": "roles/preflight/vars/main.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-20T11:54:56Z",
+      "side": 1,
+      "message": "One question I have. Will the container images to be checked be the ones that we are currently using on d-o-a-a? Or whatever image? In any case, if new images need to be checked, the variable can be redefined in the corresponding pipeline, leaving this definition as default value.\nSecondly, I would document the meaning of the new variables, also preflight_artifacts, in the d-o-a-a README, to have it as reference.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 29
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
