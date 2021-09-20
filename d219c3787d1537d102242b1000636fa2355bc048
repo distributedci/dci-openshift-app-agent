@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "626d43c7_b89b7cf3",
+        "filename": "group_vars/all",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-20T12:56:42Z",
+      "side": 1,
+      "message": "Hi Ramon, maybe it would be a good idea to initialize these variables somehow since they\u0027re global?",
+      "revId": "d219c3787d1537d102242b1000636fa2355bc048",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
