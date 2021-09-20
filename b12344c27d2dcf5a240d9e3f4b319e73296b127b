@@ -16,6 +16,24 @@
       "revId": "b12344c27d2dcf5a240d9e3f4b319e73296b127b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3c864f2b_f4bd51b6",
+        "filename": "plays/configure.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-20T11:08:52Z",
+      "side": 0,
+      "message": "Yes. In the cnf-cert role, pre-run tasks, if the registry is \"\" (by default it is), then the images are retrieved from the Internet, using the link to the corresponding repository. Of course, all the variables have to be correct for this, but that\u0027s the idea.",
+      "parentUuid": "af043dce_e49104b9",
+      "revId": "b12344c27d2dcf5a240d9e3f4b319e73296b127b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
