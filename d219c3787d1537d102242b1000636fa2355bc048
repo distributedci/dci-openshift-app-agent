@@ -34,6 +34,24 @@
       "revId": "d219c3787d1537d102242b1000636fa2355bc048",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c89ed9a6_a6a08d77",
+        "filename": "group_vars/all",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-20T13:52:19Z",
+      "side": 1,
+      "message": "What do you think about using some sort of conditional definition? \n\n```\nlocal_registry: \"{% if dci_disconnected | bool %}local_registry_value{% else %}{% endif %}\" \nlocal_registry_creds: \"{% if dci_disconnected | bool %}local_registry_creds_value{% else %}{% endif %}\"\n```",
+      "parentUuid": "85c66e76_c8d59c22",
+      "revId": "d219c3787d1537d102242b1000636fa2355bc048",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
