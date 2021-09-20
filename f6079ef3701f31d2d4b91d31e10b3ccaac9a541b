@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "0e8e4365_f3741902",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-20T12:53:21Z",
+      "side": 1,
+      "message": "Hi Ramon, good idea, I\u0027ll change it this way then.",
+      "parentUuid": "a6e6e3d8_cdd3b469",
+      "range": {
+        "startLine": 16,
+        "startChar": 28,
+        "endLine": 16,
+        "endChar": 34
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2a59e6da_1c3dd272",
         "filename": "roles/preflight/tasks/check_one_container.yml",
         "patchSetId": 7
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "2778f847_bfd2240b",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-20T12:53:21Z",
+      "side": 1,
+      "message": "Yep, I\u0027m currently discussing with preflight team is it possible to fallback this change (they had junitxml in the past): https://github.com/redhat-openshift-ecosystem/openshift-preflight/commit/ee0ebc476e18714e4344c0a5ca58b1227966ff2a#diff-7b226e2c43cb28a869b02277ad5184ffce22c756fd9893e3b3109869e7eb50ed\n\nIn short, they don\u0027t want to have results submitted in alternate formats, and proposed me to open an issue to discuss it within the team. (P.S. I\u0027ll check this issue as resolved, I have another one with junit pending).",
+      "parentUuid": "2a59e6da_1c3dd272",
+      "range": {
+        "startLine": 20,
+        "startChar": 7,
+        "endLine": 20,
+        "endChar": 31
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a062585_8351663c",
         "filename": "roles/preflight/tasks/check_one_container.yml",
         "patchSetId": 7
@@ -68,6 +116,30 @@
       "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4ecfdd93_cf93966c",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-20T12:53:21Z",
+      "side": 1,
+      "message": "Yes, I discussed that with Fred. The idea is not to fail even if the tests are failing, to allow chained tests execution, so I\u0027m using `ignore_errors: yes` at the end.",
+      "parentUuid": "9a062585_8351663c",
+      "range": {
+        "startLine": 54,
+        "startChar": 0,
+        "endLine": 54,
+        "endChar": 48
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
