@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0cd5c324_a66f016b",
+        "filename": "group_vars/all",
+        "patchSetId": 6
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-21T11:21:34Z",
+      "side": 1,
+      "message": "To make things more standard, we could probably define two more variables in the inventories {{ disconnected_registry }} and {{ disconnected_registry_creds }} and then rewrite like this\n```\nlocal_registry: \"{% if dci_disconnected is defined and dci_disconnected|bool %}{{ disconnected_registry }}{% else %}{% endif %}\"\nlocal_registry_creds: \"{% if dci_disconnected is defined and dci_disconnected|bool %}{{ disconnected_registry_creds }}{% else %}{% endif %}\"\n```",
+      "revId": "881889a8d309e4c434942d2fa024acf432d9c73d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
