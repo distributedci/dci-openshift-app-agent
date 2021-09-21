@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "c41bbefc_c2d5f2e4",
+        "filename": "roles/preflight/tasks/check_one_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-21T09:19:18Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0e8e4365_f3741902",
+      "range": {
+        "startLine": 16,
+        "startChar": 28,
+        "endLine": 16,
+        "endChar": 34
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2a59e6da_1c3dd272",
         "filename": "roles/preflight/tasks/check_one_container.yml",
         "patchSetId": 7
@@ -163,6 +187,30 @@
       "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "caed793d_eef7fa66",
+        "filename": "roles/preflight/vars/main.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-09-21T09:19:18Z",
+      "side": 1,
+      "message": "We could check whatever image would be of use to test. Thanks for the idea to put it as an external variable and to document it.",
+      "parentUuid": "002b13a1_c8b82678",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 29
+      },
+      "revId": "f6079ef3701f31d2d4b91d31e10b3ccaac9a541b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
