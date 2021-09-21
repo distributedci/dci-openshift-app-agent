@@ -52,6 +52,24 @@
       "revId": "d219c3787d1537d102242b1000636fa2355bc048",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b41fc69_a01d9982",
+        "filename": "group_vars/all",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-21T09:50:14Z",
+      "side": 1,
+      "message": "included in patchset 3, thanks!",
+      "parentUuid": "c89ed9a6_a6a08d77",
+      "revId": "d219c3787d1537d102242b1000636fa2355bc048",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
