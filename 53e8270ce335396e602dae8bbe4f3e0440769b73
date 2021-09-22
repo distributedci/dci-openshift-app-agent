@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ebf0c1aa_971f74c7",
+        "filename": "group_vars/all",
+        "patchSetId": 17
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-22T09:23:47Z",
+      "side": 1,
+      "message": "Maybe I would move these two variables to roles/preflight/defaults/main.yml, as they are just variables related to preflight. In the case of do_dnf_cert, do_preflight_tests, provisionhost_registry and provisionhost_registry_creds, as they can be used in different places in d-o-a-a, it makes sense to put them in this file.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 53
+      },
+      "revId": "53e8270ce335396e602dae8bbe4f3e0440769b73",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
