@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ee6a805f_a26b76a9",
+        "filename": "README.md",
+        "patchSetId": 27
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-23T07:49:41Z",
+      "side": 1,
+      "message": "It should be preflight\\_version, according to the code",
+      "range": {
+        "startLine": 87,
+        "startChar": 0,
+        "endLine": 87,
+        "endChar": 25
+      },
+      "revId": "7530ab0b8b47741c3873715088a5f512a6bdde7c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}

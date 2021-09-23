@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "393c3e6b_06c2750e",
+        "filename": "group_vars/all",
+        "patchSetId": 27
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-23T07:49:41Z",
+      "side": 0,
+      "message": "This line has been deleted from the base version. Is this needed?",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 47
+      },
+      "revId": "0afc52979fae074c7c506d89efb6d44fe5aac22e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
