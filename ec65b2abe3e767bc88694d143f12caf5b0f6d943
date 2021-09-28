@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47db81ea_4d24e023",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-09-28T09:54:15Z",
+      "side": 1,
+      "message": "Maybe, in this point or in the previous one, I would add that you can configure d-o-a-a to point to the desired hooks by setting the dci_config_dir variable. In fact, I have seen this variable is not commented in the table above, I would also include it.",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 2
+      },
+      "revId": "ec65b2abe3e767bc88694d143f12caf5b0f6d943",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
