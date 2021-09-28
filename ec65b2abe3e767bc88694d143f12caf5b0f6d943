@@ -22,6 +22,30 @@
       "revId": "ec65b2abe3e767bc88694d143f12caf5b0f6d943",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "09f8c9ab_a7644b70",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-09-28T14:00:08Z",
+      "side": 1,
+      "message": "Thanks Ramon, good suggestion, I added those options.",
+      "parentUuid": "47db81ea_4d24e023",
+      "range": {
+        "startLine": 108,
+        "startChar": 0,
+        "endLine": 108,
+        "endChar": 2
+      },
+      "revId": "ec65b2abe3e767bc88694d143f12caf5b0f6d943",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
