@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84a28e99_c2529aa6",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-01T11:05:16Z",
+      "side": 1,
+      "message": "I would remove this",
+      "range": {
+        "startLine": 79,
+        "startChar": 9,
+        "endLine": 79,
+        "endChar": 16
+      },
+      "revId": "c2b6d5bcd9cac84da3f2f5f5401800a7c61a22a8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
