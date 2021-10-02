@@ -42,8 +42,8 @@
     # Schedule a new job only if not passed via pipeline
     - name: "Schedule a new job"
       dci_job:
-        components: "{{ dci_components }}"
-        components_by_query: "{{ dci_components_by_query }}"
+        components: "{{ dci_components | default([]) }}"
+        components_by_query: "{{ dci_components_by_query | default('') }}"
         topic: "{{ dci_topic }}"
         comment: "{{ dci_comment | default('') }}"
         url: "{{ dci_url | default('') }}"
@@ -61,6 +61,11 @@
         id: '{{ job_id }}'
         tags: '{{ dci_tags }}'
       when: dci_tags[0] is defined
+
+    # Keep in sync with test-runner parsing from d-o-a
+    - name: UI URL
+      debug:
+        msg: 'Follow the log at: {{ dci_ui_url }}/jobs/{{ hostvars.localhost.job_info.job.id }}/jobStates' # noqa 204
 
 # Step 1a : Red Hat "pre-run" step
 - name: "Execute Red Hat pre-run step"
