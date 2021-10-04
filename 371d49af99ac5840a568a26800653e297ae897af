@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0777d07c_30249f0a",
+        "filename": "roles/cnf-cert/tasks/post-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-04T13:13:49Z",
+      "side": 1,
+      "message": "Maybe we should do:\n```\n- tnf_git_dir is defined\n- tnf_git_dir.path is defined\n```\n\nThat should cover the case when a post-run tag is executed wihtout pre-run, right?",
+      "revId": "371d49af99ac5840a568a26800653e297ae897af",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e05df283_33f17c2e",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-04T13:13:49Z",
+      "side": 1,
+      "message": "I think we always want to do this, i.e I don\u0027t think we need the `when` statement in here because if tnf_git_dir is defined externally it will not contain .path, wdyt?",
+      "revId": "371d49af99ac5840a568a26800653e297ae897af",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "50113f82_775989ac",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-04T13:13:49Z",
+      "side": 1,
+      "message": "If we are always running commands inside any of the git repos `tnf_git_dir.path/*` then I think we could do `chdir` in the shell module to the required git repo, the same applies to the rest down below",
+      "revId": "371d49af99ac5840a568a26800653e297ae897af",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
