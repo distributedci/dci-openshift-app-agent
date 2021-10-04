@@ -3,7 +3,7 @@
 - name: Install the Go toolchain and make
   become: yes
   dnf:
-    name: 
+    name:
         - go-toolset
         - make
     state: latest
@@ -13,11 +13,17 @@
     set -ex
     go get -u github.com/onsi/ginkgo/ginkgo
 
+- name: Create temporary directory for git repos
+  tempfile:
+    state: directory
+  register: tnf_git_dir
+  when: tnf_git_dir is not defined
+
 - name: Clone test-network-function
   git:
     repo: "{{ test_network_function_repo }}"
     version: "{{ test_network_function_version }}"
-    dest: "{{ tnf_git_dir }}/test_network_function"
+    dest: "{{ tnf_git_dir.path }}/test_network_function"
     force: yes
   # On RHEL8 git clone can sporadically fail with OpenSSL SSL_read:
   # SSL_ERROR_SYSCALL, errno 104. This is a workaround to try cloning the repo
@@ -31,7 +37,7 @@
   git:
     repo: "{{ cnf_certification_test_partner_repo }}"
     version: "{{ cnf_certification_test_partner_version }}"
-    dest: "{{ tnf_git_dir }}/cnf_certification_test_partner"
+    dest: "{{ tnf_git_dir.path }}/cnf_certification_test_partner"
     force: yes
   # On RHEL8 git clone can sporadically fail with OpenSSL SSL_read:
   # SSL_ERROR_SYSCALL, errno 104. This is a workaround to try cloning the repo
@@ -47,7 +53,7 @@
 - name: Build the partner pod image
   shell: |
     set -ex
-    cd {{ tnf_git_dir }}/cnf_certification_test_partner
+    cd {{ tnf_git_dir.path }}/cnf_certification_test_partner
     mkdir -p ./temp
 
     if [ -n "{{ provisionhost_registry }}" -a -n "{{ provisionhost_registry_creds }}" ]; then
@@ -68,7 +74,7 @@
 - name: Create tnf namespace
   shell: |
     set -ex
-    cd {{ tnf_git_dir }}/cnf_certification_test_partner
+    cd {{ tnf_git_dir.path }}/cnf_certification_test_partner
     export NAMESPACE_TO_GENERATE="tnf"
     cat ./local-test-infra/namespace.yaml | ./script/mo > ./temp/rendered-namespace.yaml
     oc apply -f ./temp/rendered-namespace.yaml
@@ -87,7 +93,7 @@
 - name: Build the partner pod
   shell: |
     set -ex
-    cd {{ tnf_git_dir }}/cnf_certification_test_partner
+    cd {{ tnf_git_dir.path }}/cnf_certification_test_partner
     export NAMESPACE_TO_GENERATE="tnf"
     cat ./local-test-infra/local-partner-deployment.yaml | ./script/mo > ./temp/rendered-partner-template.yaml
     oc apply -f ./temp/rendered-partner-template.yaml
@@ -97,7 +103,7 @@
 - name: Build the CNF Test Suite
   shell: |
     set -ex
-    cd {{ tnf_git_dir }}/test_network_function
+    cd {{ tnf_git_dir.path }}/test_network_function
     make build-cnf-tests
 
 ...
