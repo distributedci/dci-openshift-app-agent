@@ -16,6 +16,24 @@
       "revId": "0f8bf72a83f569ff446fd273004d70f2e190d1be",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5bc0ef08_46c38d1c",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-04T13:44:34Z",
+      "side": 1,
+      "message": "Yes, you are quite right Tony. I will modify the change to include these references, because I was not aware of them until I start working on CNF Cert Suite v3.0.1. Now, I have more knowledge about this, so I guess it will be easier in that way.\nMoreover, I will also try to test this with the change Fred has included in test-runner, that\u0027s why I left this CR in this status, because I wanted to do that check beforehand, but Fred has just finished it, so it can be tested now.",
+      "parentUuid": "2fa67906_5889eaba",
+      "revId": "0f8bf72a83f569ff446fd273004d70f2e190d1be",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
