@@ -13,6 +13,12 @@
     set -ex
     go get -u github.com/onsi/ginkgo/ginkgo
 
+- name: Create temporary directory for git repos
+  tempfile:
+    state: directory
+  register: tnf_git_dir
+  when: tnf_git_dir is not defined
+
 - name: Clone test-network-function
   git:
     repo: "{{ test_network_function_repo }}"

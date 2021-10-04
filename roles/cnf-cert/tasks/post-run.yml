@@ -7,4 +7,10 @@
     name: tnf
     state: absent
 
+- name: Delete temporary directory for git repos
+  file:
+    path: "{{ tnf_git_dir.path }}"
+    state: absent
+  when: tnf_git_dir.path is defined
+
 ...
