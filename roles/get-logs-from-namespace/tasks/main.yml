@@ -23,9 +23,9 @@
 
 - name: "Get pods status from namespace"
   shell: |
-    {{ oc_tool_path }} get pods --namespace={{ get_logs_ns }} --show-labels -o wide > {{ get_logs_folder }}/{{ get_logs_ns }}_status.log || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_status.log
+    {{ oc_tool_path }} get pods --namespace={{ get_logs_ns }} --show-labels -o wide > {{ get_logs_folder }}/{{ get_logs_ns }}_status.log 2>&1 || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_status.log
 
 - name: "Get events from from namespace"
   shell: |
-    {{ oc_tool_path }} get events --namespace={{ get_logs_ns }} > {{ get_logs_folder }}/{{ get_logs_ns }}_events.log || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_events.log
+    {{ oc_tool_path }} get events --namespace={{ get_logs_ns }} > {{ get_logs_folder }}/{{ get_logs_ns }}_events.log 2>&1 || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_events.log
 ...
