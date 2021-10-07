@@ -6,6 +6,10 @@
     status: "pre-run"
   tags: [dci]
 
+- name: debug message
+  debug:
+    msg: "this is a debug message"
+
 # Prepare host
 - name: "Configure DCI jumphost"
   include_tasks: configure.yml
