@@ -16,6 +16,24 @@
       "revId": "6b3ab9d4d02c4aa923b76524044cf035f29daf4d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "60f6114a_1ca1900d",
+        "filename": "roles/get-logs-from-namespace/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-10-07T21:55:55Z",
+      "side": 1,
+      "message": "I like the idea, if is empty then it will not be uploaded. And we can do the same check for all files. I also think we can delete the files in the same task, since it\u0027s a shell, I\u0027ll just separate lines to make it easier to read. \nI\u0027m using || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_status.log because we want to delete the files only if they are empty, I think \u0026\u0026 will delete them if their size is greater than zero.",
+      "parentUuid": "3655d8d5_5f3c0f95",
+      "revId": "6b3ab9d4d02c4aa923b76524044cf035f29daf4d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
