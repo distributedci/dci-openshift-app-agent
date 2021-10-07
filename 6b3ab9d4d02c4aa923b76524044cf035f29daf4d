@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3655d8d5_5f3c0f95",
+        "filename": "roles/get-logs-from-namespace/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-07T20:12:45Z",
+      "side": 1,
+      "message": "I think the change is reasonable. I have another idea, let me know what you thing.\n\nSince we are deleting empty files when an error is produced, then we could also apply the same to successful executions that are also empty. e.g\n\nReplace: \n\n```\n|| rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_status.log\n```\n\nWith:\n```\n; [ -s {{ get_logs_folder }}/{{ get_logs_ns }}_status.log ] \u0026\u0026 rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_status.log\n```\n\nIf this gets too complex, another option is to delete the empty logs prior submission, thoughts?",
+      "revId": "6b3ab9d4d02c4aa923b76524044cf035f29daf4d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
