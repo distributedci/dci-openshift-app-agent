@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2def1d06_47f18469",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-10-08T20:08:13Z",
+      "side": 1,
+      "message": "I commented the provisionhost_registry* conditions in my connected SNO and it was able to pull the logs[2], so unless there is a requirement to make this work only in disconnected envs, it would be a nice to have to allow connected envs (without registries) to pull logs too. What do you think? \n\n[2] https://www.distributed-ci.io/jobs/07952cdb-0cf2-40df-a33c-1fb21eb7ab9d/files",
+      "revId": "8a2ab28243fda4bcbeb24ec6d13850ef041b6dec",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
