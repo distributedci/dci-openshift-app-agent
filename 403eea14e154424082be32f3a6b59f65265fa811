@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f44031e1_249d5201",
+        "filename": "roles/get-logs-from-namespace/tasks/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-08T16:33:10Z",
+      "side": 1,
+      "message": "I believe we don\u0027t need `pipefail` here as we are no using any pipeline, same for the rest",
+      "revId": "403eea14e154424082be32f3a6b59f65265fa811",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}

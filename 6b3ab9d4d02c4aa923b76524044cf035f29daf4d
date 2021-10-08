@@ -34,6 +34,24 @@
       "revId": "6b3ab9d4d02c4aa923b76524044cf035f29daf4d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a2026d3_80829627",
+        "filename": "roles/get-logs-from-namespace/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-08T16:33:10Z",
+      "side": 1,
+      "message": "Yep, I like this better",
+      "parentUuid": "60f6114a_1ca1900d",
+      "revId": "6b3ab9d4d02c4aa923b76524044cf035f29daf4d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
