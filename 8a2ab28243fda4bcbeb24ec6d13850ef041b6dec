@@ -16,6 +16,24 @@
       "revId": "8a2ab28243fda4bcbeb24ec6d13850ef041b6dec",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "497fd197_edcc1fd2",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-11T15:42:07Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2def1d06_47f18469",
+      "revId": "8a2ab28243fda4bcbeb24ec6d13850ef041b6dec",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
