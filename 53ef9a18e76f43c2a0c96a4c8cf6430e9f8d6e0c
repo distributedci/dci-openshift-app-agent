@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66bf83e2_4cd846eb",
+        "filename": "README.md",
+        "patchSetId": 39
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "nit: HEAD branch should read: HEAD in the main branch",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1ddd56eb_0cc5028c",
+        "filename": "dci-openshift-app-agent.spec",
+        "patchSetId": 39
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "I\u0027m not sure if this change is required for the CNF cert suite, I\u0027d rather have this in a separate change.\n\nI agree that making it not system user (-r) will match to d-o-a but I think there\u0027s a disconnect because the group is a system group (-r) in both agents (see line 65). I think this change will require more discussion, thus I\u0027d suggest to do it in a different change unless required for CNF cert.",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3f63f220_28050549",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "Can we add a comment to know what tag is this digest from? For example: https://github.com/rh-nfv-int/testpmd-operator/blob/master/roles/testpmd/defaults/main.yml#L10-L11",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "50e438f2_e52d3996",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "What\u0027s the difference between `latest` and `unstable`? I see their GHA and they are creating two tags `latest` and the released version, but I don\u0027t see `unstable` in there 😕",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "127f9680_12bf46dd",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "What\u0027s the reason for pulling the image?",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a1340a62_178602f4",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "I\u0027m not sure if we need here :latest for the image to mirror, but later \"latest\" is used to pull this image",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8ff477da_6138360f",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T18:59:16Z",
+      "side": 1,
+      "message": "You could avoid the block and this task by doing the regex_search directly in the tn_debug_image var on the task below as is not used anywhere else 😊",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
