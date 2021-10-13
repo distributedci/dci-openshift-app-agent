@@ -69,6 +69,24 @@
       "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9d2490f9_e9e73cd0",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-10-13T15:01:25Z",
+      "side": 1,
+      "message": "Thanks for the clarification, I set test_network_function_version: \"HEAD\" variable and I got the tnf_config.yml rendered to use the targetNameSpaces.",
+      "parentUuid": "13d1accb_6a2b673e",
+      "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
