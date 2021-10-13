@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9297f66a_5071a342",
+        "filename": "README.md",
+        "patchSetId": 39
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "66bf83e2_4cd846eb",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1ddd56eb_0cc5028c",
         "filename": "dci-openshift-app-agent.spec",
         "patchSetId": 39
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "cd2c1d48_951cf95c",
+        "filename": "dci-openshift-app-agent.spec",
+        "patchSetId": 39
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "Okey for me, we can review it in a new change. I did it because it was commented in a PR opened in d-o-a-a github repository, but it is true that this should be reviewed with more depth and that it is a general issue, not related to the CNF Cert Suite itself.",
+      "parentUuid": "1ddd56eb_0cc5028c",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f63f220_28050549",
         "filename": "roles/cnf-cert/defaults/main.yml",
         "patchSetId": 39
@@ -47,6 +83,24 @@
       "writtenOn": "2021-10-13T18:59:16Z",
       "side": 1,
       "message": "Can we add a comment to know what tag is this digest from? For example: https://github.com/rh-nfv-int/testpmd-operator/blob/master/roles/testpmd/defaults/main.yml#L10-L11",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27d857d0_2966e56a",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "I don\u0027t know if I have found the correct version, but may it be v4.7.20? (that SHA is present here: https://openshift-release.apps.ci.l2s4.p1.openshiftapps.com/releasetag/4.7.20). In fact, I tried to look for openshift-release-dev/ocp-v4.0-art-dev in quay but I got Forbidden access.",
+      "parentUuid": "3f63f220_28050549",
       "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -70,6 +124,24 @@
     },
     {
       "key": {
+        "uuid": "8f949f0a_1439df2b",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "This is something that CNF Cert Suite team explained me. If you go to quay (https://quay.io/repository/testnetworkfunction/test-network-function?tag\u003dlatest\u0026tab\u003dtags), you will see latest and unstable. According to them, latest is linked to the last released version (v3.0.0 currently), and unstable is related to the HEAD in the test-network-function main branch. That\u0027s why, if we don\u0027t provide a test_network_function_version like v3.0.0 (e.g. HEAD), we will directly use that code, tagged as \"unstable\"",
+      "parentUuid": "50e438f2_e52d3996",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "127f9680_12bf46dd",
         "filename": "roles/cnf-cert/tasks/pre-run.yml",
         "patchSetId": 39
@@ -84,6 +156,24 @@
       "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bf652040_44095977",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "In fact we don\u0027t need to pull it, it is right, so I have removed this task",
+      "parentUuid": "127f9680_12bf46dd",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -104,6 +194,24 @@
     },
     {
       "key": {
+        "uuid": "adfe3863_936fd29b",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "I have added latest in the second one to always use latest tag in both cases, and also changing it in the pipeline.",
+      "parentUuid": "a1340a62_178602f4",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8ff477da_6138360f",
         "filename": "roles/cnf-cert/tasks/save-images.yml",
         "patchSetId": 39
@@ -118,6 +226,24 @@
       "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "74fefe22_f32d0b40",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T20:48:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8ff477da_6138360f",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
