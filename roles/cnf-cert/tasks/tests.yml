@@ -39,9 +39,17 @@
   register: autodiscovering_enabled_output
   when: tnf_config_file.stat.exists
 
-- name: Set autodiscovering_enabled variable
+- name: Check if target namespaces can be defined
+  shell: |
+    set -x
+    grep -c targetNameSpaces {{ tnf_git_dir.path }}/test_network_function/test-network-function/tnf_config.yml || :
+  register: target_namespaces_output
+  when: tnf_config_file.stat.exists
+
+- name: Set autodiscovering variables
   set_fact:
     autodiscovering_enabled: "{% if tnf_config_file.stat.exists %}{{ autodiscovering_enabled_output.stdout }}{% else %}0{% endif %}"
+    target_namespaces: "{% if tnf_config_file.stat.exists %}{{ target_namespaces_output.stdout }}{% else %}0{% endif %}"
 
 - name: Template generic_test_configuration.yml
   template:
@@ -67,8 +75,14 @@
     rm -f test-network-function/*.xml
 
     if [ "{{ autodiscovering_enabled }}" != "0" ]; then
+
+      if [ "{{ target_namespaces }}" != "0" ]; then
+        export TNF_RUN_CFD_TEST={{ verify_cnf_features }}
+      else
+        export VERIFY_CNF_FEATURES={{ verify_cnf_features }}
+      fi
+
       export TNF_NON_INTRUSIVE_ONLY={{ tnf_non_intrusive_only }}
-      export VERIFY_CNF_FEATURES={{ verify_cnf_features }}
       export LOG_LEVEL=debug
       ./run-cnf-suites.sh -f {{ tnf_suites }} &> test-network-function/execution.log
     else

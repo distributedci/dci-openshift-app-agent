@@ -1,12 +1,59 @@
 ---
 
-- name: Install the Go toolchain and make
+- name: Install make
   become: yes
   dnf:
-    name:
-        - go-toolset
-        - make
+    name: make
     state: present
+
+- name: Install Go toolset 1.16
+  block:
+  - name: Check if Go is installed in the server
+    shell: whereis go
+    register: whereis_go
+
+  - name: Retrieve Go version
+    shell: go version
+    register: go_version
+    when: whereis_go.stdout.find('/usr/bin/go') != -1
+
+  - name: Uninstall Go toolset if provided by dnf
+    become: yes
+    dnf:
+      name: go-toolset
+      state: absent
+    when: whereis_go.stdout.find('/usr/bin/go') != -1 and go_version.stdout.find('1.16') == -1
+
+  - name: Remove Go symbolic link
+    file:
+      path: "/usr/bin/go"
+      state: absent
+    become: yes
+    when: whereis_go.stdout.find('/usr/bin/go') != -1 and go_version.stdout.find('1.16') == -1
+
+  - name: Download Go 1.16
+    unarchive:
+      src: "{{ go_toolset_binary | default('https://dl.google.com/go/go1.16.9.linux-amd64.tar.gz') }}"
+      dest: /usr/local
+      remote_src: yes
+    become: yes
+    when: (whereis_go.stdout.find('/usr/bin/go') != -1 and go_version.stdout.find('1.16') == -1) or whereis_go.stdout.find('/usr/bin/go') == -1
+
+  - name: Create Go symbolic link
+    file:
+      src: "/usr/local/go/bin/go"
+      dest: "/usr/bin/go"
+      state: link
+    become: yes
+    when: (whereis_go.stdout.find('/usr/bin/go') != -1 and go_version.stdout.find('1.16') == -1) or whereis_go.stdout.find('/usr/bin/go') == -1
+
+  - name: Retrieve Go version
+    shell: go version
+    register: go_version
+
+  - name: Show Go version
+    debug:
+      msg: "{{ go_version.stdout }}"
 
 - name: Install ginkgo package
   shell: |
