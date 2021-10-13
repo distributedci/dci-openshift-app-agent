@@ -142,6 +142,24 @@
     },
     {
       "key": {
+        "uuid": "5185bad9_7799117e",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 39
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T22:34:52Z",
+      "side": 1,
+      "message": "Yep, I saw the tag in the container image repo, but is not clear how they update that tag and how they push their image over there. I\u0027m glad you have that knowledge but it would be nice to have it documented somewhere. Let\u0027s proceed as is for now but it would be good to open an issue to document that. Thanks!",
+      "parentUuid": "8f949f0a_1439df2b",
+      "revId": "53ef9a18e76f43c2a0c96a4c8cf6430e9f8d6e0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "127f9680_12bf46dd",
         "filename": "roles/cnf-cert/tasks/pre-run.yml",
         "patchSetId": 39

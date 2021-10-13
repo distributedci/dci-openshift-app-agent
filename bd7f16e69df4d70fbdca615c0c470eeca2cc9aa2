@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba7ecb0c_01df0277",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 40
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-13T22:34:52Z",
+      "side": 1,
+      "message": "Ohhh I see, wow they are using the tools image from version 4.7.20\n\nhttps://mirror.openshift.com/pub/openshift-v4/clients/ocp/4.7.20/release.txt\n\n  tools                                          quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha256:0f5ce898fbad3671fecd6f797130f950fb1abdbaf0d8154c22e2b59c74e3a918\n\nThis is quite obscure, let\u0027s add the URL above in a comment later so we know where it is coming from.\n\nThanks!",
+      "range": {
+        "startLine": 14,
+        "startChar": 72,
+        "endLine": 14,
+        "endChar": 98
+      },
+      "revId": "bd7f16e69df4d70fbdca615c0c470eeca2cc9aa2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
