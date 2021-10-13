@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3afaee31_ac49abbb",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-10-13T13:23:23Z",
+      "side": 1,
+      "message": "I see we have a task with the same name above, What do you think if we call this one, something like \"Retrieve Go version after installation\" or something around those lines.",
+      "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54e295b1_fdc14099",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-10-13T13:23:23Z",
+      "side": 1,
+      "message": "Now that we are checking if target namespaces can be defined, I see that as long as targetNameSpaces is defined in the test-network-function repo (file: test-network-function/tnf_config.yml) we\u0027ll use this. I only want to understand is there any reason we always want to do this? I assume we are gaining something for running our test with these settings and we do not want to do it the old way anymore?",
+      "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
