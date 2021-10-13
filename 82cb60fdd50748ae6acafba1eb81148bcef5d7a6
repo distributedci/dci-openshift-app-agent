@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "cf1ea485_3c6bee08",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T13:48:42Z",
+      "side": 1,
+      "message": "Done, I have renamed the first one because that was only executed if Go is already installed",
+      "parentUuid": "3afaee31_ac49abbb",
+      "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "54e295b1_fdc14099",
         "filename": "roles/cnf-cert/tasks/tests.yml",
         "patchSetId": 2
@@ -30,6 +48,24 @@
       "writtenOn": "2021-10-13T13:23:23Z",
       "side": 1,
       "message": "Now that we are checking if target namespaces can be defined, I see that as long as targetNameSpaces is defined in the test-network-function repo (file: test-network-function/tnf_config.yml) we\u0027ll use this. I only want to understand is there any reason we always want to do this? I assume we are gaining something for running our test with these settings and we do not want to do it the old way anymore?",
+      "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "13d1accb_6a2b673e",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-13T13:48:42Z",
+      "side": 1,
+      "message": "The thing is, \"targetNameSpaces\" field is only used in the HEAD version of tnf repo, but \"targetPodLabels\" field appears in HEAD and also in v3.0.0. So, we need to include this check in order to create the \"targetNameSpaces\" field if we are using the HEAD version; if not, it will not work",
+      "parentUuid": "54e295b1_fdc14099",
       "revId": "82cb60fdd50748ae6acafba1eb81148bcef5d7a6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
