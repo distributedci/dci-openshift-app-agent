@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "84ad7075_2d1ab077",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-14T14:27:44Z",
+      "side": 1,
+      "message": "I think here bash should highlight better than the shell session, although bash is an alias for Shell, so either should be better options\n\nhttps://github.com/github/linguist/blob/master/lib/linguist/languages.yml#L5571-L5578",
+      "revId": "6ed5bf36662a01d46f6f59985e07b481a115c6b5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "33103486_009b9ec3",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 312,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-14T14:27:44Z",
+      "side": 1,
+      "message": "```YAML should highlight this part better",
+      "revId": "6ed5bf36662a01d46f6f59985e07b481a115c6b5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fc3c6b0f_3cdf3f2f",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 323,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-10-14T14:27:44Z",
+      "side": 1,
+      "message": "```YAML should highlight this part better",
+      "revId": "6ed5bf36662a01d46f6f59985e07b481a115c6b5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
