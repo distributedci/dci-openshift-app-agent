@@ -39,7 +39,7 @@ Before starting make sure the next list of items are covered in the Jumpbox serv
 
 In an already registered server with RHEL you can fullfil the repositories requirements with the following commands:
 
-```bash
+```ShellSession
 # dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 # dnf -y install https://packages.distributed-ci.io/dci-release.el8.noarch.rpm
 # subscription-manager repos --enable=rhel-8-for-x86_64-baseos-rpms
@@ -47,7 +47,7 @@ In an already registered server with RHEL you can fullfil the repositories requi
 ```
 
 Then install kubernetes module
-```bash
+```ShellSession
 # dnf install python3-kubernetes
 ```
 > NOTE: Another option is to use pip3, and you can use a more recent version of the module
@@ -56,7 +56,7 @@ Then install kubernetes module
 
 The `dci-openshift-app-agent` is packaged and available as a RPM file located in [this repository](https://packages.distributed-ci.io/dci-release.el8.noarch.rpm). It can be installed in the jumphost server with the following command:
 
-```bash
+```ShellSession
 # dnf -y install dci-openshift-app-agent
 ```
 
@@ -80,7 +80,7 @@ From the [DCI web dashboard](https://www.distributed-ci.io), the partner team ad
 
 This file should be edited once:
 
-```bash
+```ShellSession
 #!/usr/bin/env bash
 DCI_CS_URL="https://api.distributed-ci.io/"
 DCI_CLIENT_ID=remoteci/<remoteci_id>
@@ -237,7 +237,7 @@ They will NOT be replaced when the `dci-openshift-app-agent` RPM is updated.
 
 The hooks that can be defined are the following:
 
-```bash
+```ShellSession
 ├── hooks
 │   ├── pre-run.yml
 │   ├── install.yml
@@ -309,7 +309,7 @@ To use these samples, you need to include the variable `dci_config_dir` with the
 1. To create a namespace and webserver pod, validate is running, and delete it, the settings.yml file will look like this:
 
 File: settings.yml
-```bash
+```ShellSession
 dci_topic: OCP-4.8
 dci_components_by_query: ['4.8.13']
 dci_comment: "Test webserver"
@@ -320,7 +320,7 @@ dci_config_dir: /var/lib/dci-openshift-app-agent/samples/basic_example
 2. To validate the CNF test suite against a example workload, the settings.yml file will look like this:
 
 File: settings.yml
-```bash
+```ShellSession
 dci_topic: OCP-4.8
 dci_components_by_query: ['4.8.13']
 dci_comment: "Test CNF suite"
@@ -353,7 +353,7 @@ You can add extra paths for Ansible roles using the
 
 If you want to test the CNF Cert Suite in a libvirt environment, remember to tag the OCP nodes to fit in the NodeSelector property defined in partner's pod (`NodeSelectors: role=partner`):
 
-```bash
+```ShellSession
 # for X in 0:n, with n = { number of master nodes - 1 }
 oc label node master-X role=partner
 ```
@@ -364,7 +364,7 @@ Red Hat Enterprise Linux 8 defaults to Ansible 2.9 installed from Ansible or bas
 
 After installing the agent, login as dci-openshift-app-agent user and install the following collections
 
-```bash
+```ShellSession
 # su - dci-openshift-app-agent
 $ ansible-galaxy collection install community.kubernetes
 $ ansible-galaxy collection install community.general
@@ -372,7 +372,7 @@ $ ansible-galaxy collection install community.general
 Also the use of newer Ansible versions requires a recent version of the kubernetes python module ( >= 12.0.0), as today only available through pip3
 
 You can upgrade the current version for the dci-openshift-app-agent user only or install a specific version like this:
-```bash
+```ShellSession
 $ python3 -m pip install -U kubernetes --user
 # or
 $ python3 -m pip install kubernetes==12.0.1 --user
@@ -395,13 +395,27 @@ If you use a proxy to go to the Internet, export the following variables in the 
 
 Replace PROXY-IP:PORT with your respective settings and 10.X.Y.Z/24 with the cluster subnet of the OCP cluster, and example.com with the base domain of your cluster.
 
-```bash
+```ShellSession
 $ export http_proxy=http://PROXY-IP:PORT
 $ export https_proxy=http://PROXY-IP:PORT
 $ export no_proxy=10.X.Y.Z/24,.example.com
 ```
 
 > NOTE: Also consider setting the proxy settings in the /etc/rhsm/rhsm.conf file if you use the Red Hat CDN to pull packages, otherwise the agent might fail to install dependencies required during the execution of the CNF test suite.
+
+## Testing a code change
+
+If you want to test a code change from Gerrit, you need to have `dci-check-change` installed on your system from the `dci-openshift-agent` package.
+
+Then for example, if you want to test the change from https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/22647, issue the following command:
+
+```ShellSession
+$ dci-check-change 22647 /var/lib/dci-openshift-agent/clusterconfigs/kubeconfig -e do_preflight_tests=true
+```
+
+You can omit the kubeconfig file as a second argument if you want `dci-check-change` to re-install OCP using `dci-openshift-agent-ctl` before testing the change.
+
+All the other arguments will be passed to `dci-openshift-app-agent-ctl`.
 
 ## License
 
