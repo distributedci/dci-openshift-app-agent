@@ -389,6 +389,10 @@ You might encounter an error when running the dci-openshift-app-agent for first 
 
 Note that have to add the SSH public key of the user that runs the "dci-openshift-app-agent-ctl" command to SSH "provisioner_name" with "provisioner_user", in case you want to retrieve logs from the OCP deployment.
 
+### Problems related to UIDs while running containers with podman in localhost
+
+TBD
+
 ## Proxy Considerations
 
 If you use a proxy to go to the Internet, export the following variables in the dci-openshift-app-agent user session where you run the agent, if you use the systemd service then it would be a good idea to store these variables in the ~/.bashrc file of the dci-openshift-app-agent user
