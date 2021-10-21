@@ -1,0 +1,42 @@
+---
+
+- name: "Create temporary directory for Git repos."
+  tempfile:
+    state: directory
+  register: cv_git_dir
+
+- name: "Clone chart_verifier."
+  git:
+    repo: "{{ chart_verifier_function_repo }}"
+    version: "{{ chart_verifier_function_version }}"
+      # what is this line?
+    dest: "{{ civ_git_dir.path }}/test_network_function"
+    force: yes
+  # On RHEL8 git clone can sporadically fail with OpenSSL SSL_read:
+  # SSL_ERROR_SYSCALL, errno 104. This is a workaround to try cloning the repo
+  # multiple times.
+  register: chart_verifier_function_gitref
+  retries: 3
+  delay: 10
+  until: not chart_verifier_gitref.failed
+
+- name: "chart_vertifer : Save images in local registry."
+  include_tasks: save-images.yml
+  when:
+    - provisionhost_registry|length
+    - provisionhost_registry_creds|length
+
+# In https://quay.io/repository/testnetworkfunction/test-network-function?tab=tags,
+# there are two main tags to take into account:
+# -latest: linked to the latest tnf release (currently, v3.0.0). So, v3.0.0 and latest
+# tags refer to the same container image.
+# -unstable: related to the HEAD version of the main branch in the tnf repository
+# (https://github.com/test-network-function/test-network-function).
+# So, if a version is provided in test_network_function_version, that version will be
+# used (but note that versions prior to v3.0.1 are no longer supported in the current
+# d-o-a-a code), and if not, unstable tag is used.
+- name: "Create variable with chart_version version name."
+  set_fact:
+    cv_version_image: "{{ ( test_network_function_version | regex_search('v[0-9].[0-9].[0-9]') ) | ternary(test_network_function_version, 'unstable') }}"
+
+...

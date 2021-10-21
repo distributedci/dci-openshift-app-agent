@@ -1,0 +1,17 @@
+---
+
+# Namespace not deleted here, even if being the same used for cnf-cert. To be deleted in partner hooks
+- name: Delete the partner deployment
+  shell: |
+    set -ex
+    oc delete deployment partner -n {{ dci_openshift_app_ns }}
+
+- name: Delete temporary directory for git repos
+  file:
+    path: "{{ cv_git_dir.path }}"
+    state: absent
+  when: 
+    - cv_git_dir is defined
+    - cv_git_dir.path is defined
+
+...

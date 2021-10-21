@@ -1,0 +1,2 @@
+those should be extravars for ansible, in our case we provide those using a pipeline or vars files in case it is executed via doaa. For example, in example CNF the pipelines has the values about the test_suite version, the tests to run, the operators to validate, etc. https://github.com/dci-labs/dallas-pipelines/blob/4b6bf12d0baeab321c6890af39bbcd3c1c49268e/example-cnf-pipeline
+, 12:24 
