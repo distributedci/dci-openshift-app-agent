@@ -16,6 +16,21 @@ do_cnf_cert: false
 provisionhost_registry: "{% if dci_disconnected is defined and dci_disconnected|bool and local_registry_host is defined and local_registry_port is defined %}{{ local_registry_host }}:{{ local_registry_port }}{% else %}{% endif %}"
 provisionhost_registry_creds: "{% if dci_disconnected is defined and dci_disconnected|bool and provision_cache_store is defined %}{{ provision_cache_store }}/pull-secret.txt{% else %}{% endif %}"
 
+# chart-verifier variables
+helm_chart_enabled: false
+helm_chart_local_filename: 
+helm_test_is_helm_v3: true
+helm_test_has_readme: true
+helm_test_contains_test: true
+helm_test_has_kubeversion: false
+helm_test_contains_values_schema: true
+helm_test_not_contains_crds: true
+helm_test_not_contain_csi_objects: true
+helm_test_images_are_certified: false
+helm_test_helm_lint: true
+helm_test_values_file: true
+
+
 ...
 
 # Local Variables:
