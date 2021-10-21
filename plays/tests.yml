@@ -9,6 +9,14 @@
     - name: Validate helm chart is deployed
       assert:
         that: "{{ helm_list.stdout | from_json }}[0].status == 'deployed'"
+
+    - name: Run chart-verifier
+      command: "podman run --rm quay.io/redhat-certification/chart-verifier verify {{ dci_chart_tgz_url }} > chart-verifier-report.yaml"
+      args:
+        chdir: "{{ job_logs.path }}"
+      register: chart_verifier
+      ignore_errors: true
+
   when:
     - dci_chart_tgz_url is defined
 
