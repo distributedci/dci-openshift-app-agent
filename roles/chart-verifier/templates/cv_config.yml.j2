@@ -1,0 +1,14 @@
+---
+targetNameSpaces:
+  - name: {{ cv_ns }}
+targetPodLabels:
+{% if cv_targetpodlabels_name|length and cv_targetpodlabels_value|length %}
+  - prefix: chart-verifier.com
+    name: {{ cv_targetpodlabels_name }}
+    value: {{ cv_targetpodlabels_value }}
+{% endif %}
+
+certifiedcontainerinfo:
+
+certifiedoperatorinfo:
+...

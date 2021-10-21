@@ -1,0 +1,40 @@
+---
+- name: "Create temporary build directory."
+  tempfile:
+    state: directory
+  register: cv_tempdir
+  when: cv_tempdir is not defined
+
+- name: "Template cv_config.yml."
+  template:
+    src: templates/cv_config.yml.j2
+    dest: "{{ cv_git_dir.path }}/chart_verifier_function/chart_verifier/cv_config.yml"
+
+- name: "Set cv_partner_registry variable."
+  set_fact:
+    cv_partner_registry: "{{ ( provisionhost_registry|length and provisionhost_registry_creds|length ) | ternary(provisionhost_registry, 'quay.io') }}"
+
+- name: "Run the CV Test Suite."
+  shell: |
+    set -x
+
+    rm -f chart_verifier-function/*.xml
+
+    export CV_OC_DEBUG_IMAGE_ID={{ cv_debug_image }}
+    export LOG_LEVEL=debug
+    export CV_PARTNER_NAMESPACE={{ dci_openshift_app_ns }}
+    export CV_PARTNER_REPO={{ CV_partner_registry }}/chartverifierfunction
+    export TNF_IMAGE=quay.io/chartverifierfunction/chart-verifier-function:{{ cf_version_image }}
+
+    ./run--container.sh -k {{ kubeconfig_path }} \
+    -t {{ cv_git_dir.path }}/chart_verifier/chart_verifier \
+    -o {{ cv_git_dir.path }}/chart_verifier/chart_verifier \
+    -f {{ cv_suites }} &> chart_verifier/execution.log
+
+    cp chart_verifier/*.xml {{ cv_tempdir.path }}
+    cp chart_verifier/execution.log {{ cv_tempdir.path }}
+    cp chart_verifier/cv_config.yml {{ cv_tempdir.path }}
+  args:
+    chdir: "{{ cv_git_dir.path }}/chart_verifier_function"
+
+...

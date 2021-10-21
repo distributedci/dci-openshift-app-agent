@@ -1,0 +1,249 @@
+---
+- hosts: localhost
+  gather_facts: yes
+  vars_files:
+  - "/usr/share/dci-openshift-app-agent/group_vars/all"
+  tasks:
+
+# Test / Variable #1
+# helm_test_is_helm_v3
+# Defaults to true
+  - block:
+    - name: "Testing if provided Helm chart is Helm v3 (API v2) compliant."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e is-helm-v3 ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of Helm v3 compliance test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm v3 (API v2) test has failed."
+      fail:
+        msg: "Helm v3 test has failed. Provided Helm chart is not v3 compliant. Please address this deficiency or set the 'helm_test_v3 variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm v3 (API v2) test has passed."
+      debug:
+        msg: "Helm-v3 test has passed. Provided Helm chart is v3 compliant."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_is_helm_v3|bool == true
+    ignore_errors: yes
+
+# Test / Variable #2
+# helm_test_has_readme
+# Defaults to true
+  - block:
+    - name: "Testing if provided Helm chart contains a README.md file."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e has-readme ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+  
+    - name: "Obtain results of Helm README.md test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm README.md test has failed."
+      fail:
+        msg: "Helm README.md test has failed. Provided Helm chart does not contain a README.md file. Please address this deficiency or set the 'helm_test_readme' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm README.md test has passed."
+      debug:
+        msg: "README.md test has passed. Provided Helm chart has a README.md file."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_has_readme|bool == true
+    ignore_errors: yes
+
+# Test / Variable #3
+# helm_test_contains_test
+# Defaults to false
+  - block: 
+    - name: "Test if provided Helm chart possesses at least one test file."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e contains-test ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of Helm test file verification."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm test file verification has failed."
+      fail:
+        msg: "Helm test file verification has failed. Provided Helm chart lacks any test files. Please address this deficiency or set the 'helm_test_file' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm test file verification has passed."
+      debug:
+        msg: "Helm test file verification has passed. Provided Helm chart contains at least one test files."
+      when: pass_or_fail is search("FAIL")
+    when: helm_test_contains_test == true
+    ignore_errors: yes
+
+
+# Test / variable #4
+# helm_test_has_kubeversion
+# Defaults to false
+  - block:
+    - name: "Test if provided Helm chart properly specifies kubeVersion to be used."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e has-kubeversion ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+    - name: "Obtain results of Helm kubeVersion test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm kubeVersion test has failed."
+      fail:
+        msg: "Helm kubeVersion test has failed. Provided Helm chart does not specify kubeVersion(s) to use. Please address this deficiency or set the 'helm_test_kubeversion' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm test file verification has passed."
+      debug:
+        msg: "Helm kubeVersion test has passed. Provided Helm chart specifies kubeVersion(s) to use."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_has_kubeversion|bool == true
+    ignore_errors: yes
+
+# Test / Variable #5
+# contains_values_schema
+# Defaults to true
+  - block:
+    - name: "Testing if provided Helm chart contains a JSON schema file to validate the chart's values.yaml file."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e contains-values-schema ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of the Helm values schema test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm values schema test has failed."
+      fail:
+        msg: "Helm values schema test has failed. Provided Helm chart does not contain a values.schema.json file to validate the chart's values.yaml file. Please address this deficiency or set the 'helm_test_values_schema' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm values schema test has passed."
+      debug:
+        msg: "Helm values schema test has passed. Provided Helm chart contains a values.schema.json file to validate the chart's values.yaml file."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_contains_values_schema|bool == true
+    ignore_errors: yes
+
+# Test / Variable #6
+# not_contains_crds
+# Defaults to true
+  - block:
+    - name: "Testing if provided Helm chart does not include Custom Resource Definitions (CRDs)."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e not-contains-crds ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of the Helm CRDs test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm CRDs test has failed."
+      fail:
+        msg: "Helm CRDs test has failed. Provided Helm chart contains Custom Resource Definitions (CRDs). Please address this deficiency or set the 'helm_test_crd' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm CRDs test has passed."
+      debug:
+        msg: "Helm CRDs test has passed. Provided Helm chart does not contain Custom Resource Definitions (CRDs)."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_not_contains_crds|bool == true
+    ignore_errors: yes
+
+
+# Test / Variable #7
+# not_contain_csi_objects
+# Defaults to true
+  - block:
+    - name: "Testing if provided Helm chart does not include Container Storage Interfaces (CSIs)."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e not-contain-csi-objects ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of Helm CSIs test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm CSIs test has failed."
+      fail:
+        msg: "Helm CSI test has failed. Provided Helm chart contains Custom Storage Interfaces (CSIs). Please address this deficiency or set the 'helm_test_not_contain_csi_objects' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm CSIs test has passed."
+      debug:
+        msg: "Helm CSIs test has passed. Provided Helm chart does not contain Custom Storage Interfaces (CSIs)."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_not_contain_csi_objects| bool == true
+    ignore_errors: yes
+
+# Test / Variable #8
+# images-are-certified
+# Defaults to false
+  - block:
+    - name: "Testing if provided Helm chart does not include Container Storage Interfaces."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e images-are-certified ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman   
+
+    - name: "Obtain results of Helm certified images test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm Red Hat certified image(s) test has failed."
+      fail:
+        msg: "Helm certified images test has failed. Provided Helm chart contains container image(s) that are not Red Hat certified. Please address this deficiency or set the 'helm_test_certified' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+      ignore_errors: yes
+
+    - name: "Helm Red Hat certified image(s) test has passed."
+      debug:
+        msg: "Helm certified images test has passed. Provided Helm chart contains container image(s) that are Red Hat certified."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_images_are_certified|bool == true
+    ignore_errors: yes
+
+# Test / Variable #9    
+# helm_test_helm_lint
+# Default to true
+  - block:
+    - name: "Testing if provided Helm chart is well formed via a lint test."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e helm-lint ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of Helm lint test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+      when: helm_test_helm_lint|bool == true
+
+    - name: "Helm lint test has failed."
+      fail:
+        msg: "Helm lint test hsa failed. Provided Helm chart contains YAML that does not pass a lint test. Please address this deficiency or set the 'helm_test_helm_lint' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm lint test has passed."
+      debug:
+        msg: "Helm lint test has passed. Provided Helm chart contains YAML that passes a lint test."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_helm_lint|bool == true
+    ignore_errors: yes
+
+# Test / Variable #10
+# helm_test_contains_values
+# Default to true
+  - block:
+    - name: "Testing if provided Helm chart contains values file."
+      shell: podman run -v $(pwd):/charts/ --rm quay.io/redhat-certification/chart-verifier verify -e contains-values ./charts/charts/"{{ helm_chart_local_filename }}"
+      register: podman
+
+    - name: "Obtain results of Helm values file verification test."
+      set_fact:
+        pass_or_fail: "{{ podman.stderr | regex_search('outcome: [A-Z]+') }}"
+
+    - name: "Helm values file verification test has failed."
+      fail:
+        msg: "Helm values file verification test has failed. Provided Helm chart does not contain a values file. Please address this deficiency or set the 'helm_test_contains_values' variable to false and try again."
+      when: pass_or_fail is search("FAIL")
+
+    - name: "Helm values file verification test has passed."
+      debug:
+        msg: "Helm values file verification test has passed. Provided Helm chart contains a values file."
+      when: pass_or_fail is search("PASS")
+    when: helm_test_helm_lint|bool == true
+    ignore_errors: yes 
