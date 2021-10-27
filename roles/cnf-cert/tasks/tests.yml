@@ -13,6 +13,7 @@
 - name: Set tnf_partner_registry variable
   set_fact:
     tnf_partner_registry: "{{ ( provisionhost_registry|length and provisionhost_registry_creds|length ) | ternary(provisionhost_registry, 'quay.io') }}"
+    tnf_daemonset_registry: "{{ ( provisionhost_registry|length and provisionhost_registry_creds|length ) | ternary(provisionhost_registry, 'registry.redhat.io') }}"
 
 - name: Run the CNF Test Suite
   shell: |
@@ -27,6 +28,7 @@
     export TNF_PARTNER_NAMESPACE={{ dci_openshift_app_ns }}
     export TNF_PARTNER_REPO={{ tnf_partner_registry }}/testnetworkfunction
     export TNF_IMAGE=quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}
+    export REDHAT_RHEL_REGISTRY={{ tnf_daemonset_registry }}/rhel8
 
     ./run-tnf-container.sh -k {{ kubeconfig_path }} \
     -t {{ tnf_git_dir.path }}/test_network_function/test-network-function \
