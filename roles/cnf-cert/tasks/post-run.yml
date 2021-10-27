@@ -4,7 +4,7 @@
 - name: Delete the partner deployment
   shell: |
     set -ex
-    oc delete deployment partner -n {{ dci_openshift_app_ns }}
+    {{ oc_tool_path }} delete deployment partner -n {{ dci_openshift_app_ns }}
   when: postrun_delete_partner|bool
 
 - name: Delete temporary directory for git repos
