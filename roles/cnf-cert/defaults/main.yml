@@ -7,8 +7,7 @@ tnf_operators_regexp: ""
 tnf_cnfs_regexp: ""
 tnf_exclude_connectivity_regexp: ""
 tnf_suites: "diagnostic access-control networking lifecycle observability platform-alteration operator"
-tnf_targetpodlabels_name: ""
-tnf_targetpodlabels_value: ""
+tnf_targetpodlabels: []
 tnf_non_intrusive_only: true
 tnf_run_cfd_test: false
 # This is the tools image from the 4.7.20 release
