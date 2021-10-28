@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a782507b_9d6b489d",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-10-28T11:49:40Z",
+      "side": 1,
+      "message": "What do you think about having here the fixed version instead of latest?",
+      "revId": "cb35c7cb7735ed4c712f22628af6e00812be259b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
