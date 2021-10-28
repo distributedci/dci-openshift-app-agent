@@ -16,6 +16,24 @@
       "revId": "cb35c7cb7735ed4c712f22628af6e00812be259b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "eb705271_a6073bde",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-10-28T12:21:26Z",
+      "side": 1,
+      "message": "As far as I know, if you go to quay.io, cnf-test-partner image only contains latest version, so in any case, it will always download latest. In case CNF Cert people includes more versions to test (like for the tnf container), we can think on modifying this, but for the moment, I would say it is not needed",
+      "parentUuid": "a782507b_9d6b489d",
+      "revId": "cb35c7cb7735ed4c712f22628af6e00812be259b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
