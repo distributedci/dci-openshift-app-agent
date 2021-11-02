@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e37599a_12b7a8dd",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 15
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-02T17:37:47Z",
+      "side": 1,
+      "message": "It would be really nice to have some examples on what each case is filtering and replacing so is easier for reading, example\n\n## Matches \"environment\u003dtest\", prefix: , name: environment\n## Matches \"some/namespace\u003dtest\", prefix: some, name: namespace\n\nOr something along those lines",
+      "revId": "5c900ee3243e92997f8017b0ede21e45286dbcb0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bb7d52fd_e9cac40b",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 15
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-02T17:37:47Z",
+      "side": 1,
+      "message": "Seems to me like here there\u0027s a missing {% endif %} for the if in line 15.",
+      "revId": "5c900ee3243e92997f8017b0ede21e45286dbcb0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
