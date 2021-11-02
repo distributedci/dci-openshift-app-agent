@@ -19,7 +19,7 @@
 
 - include_tasks: track_git_repo.yml
   with_items:
-    - "{{ dci_gits_to_component }}"
+    - "{{ dci_gits_to_components + dev_gits_to_components }}"
 
 - name: Mirror must-gather images for offline mode
   command:
