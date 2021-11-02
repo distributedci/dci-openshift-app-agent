@@ -31,5 +31,6 @@
     job_id: "{{ job_id }}"
   when: last_commit_id.rc == 0
   tags: [dci]
+  ignore_errors: true
 
 ...
