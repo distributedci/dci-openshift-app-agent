@@ -61,7 +61,9 @@
     - name: Set previous job id
       set_fact:
         dci_previous_job_id: "{{ job_info.job.previous_job_id }}"
-      when: dci_previous_job_id is not defined
+      when:
+        - 'dci_previous_job_id is not defined'
+        - 'job_info.job.previous_job_id != ""'
 
     - name: 'Set DCI tags for the current job'
       dci_job:
