@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "e96fc680_e33b4110",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 15
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-03T08:54:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1e37599a_12b7a8dd",
+      "revId": "5c900ee3243e92997f8017b0ede21e45286dbcb0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "bb7d52fd_e9cac40b",
         "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
         "patchSetId": 15
@@ -30,6 +48,24 @@
       "writtenOn": "2021-11-02T17:37:47Z",
       "side": 1,
       "message": "Seems to me like here there\u0027s a missing {% endif %} for the if in line 15.",
+      "revId": "5c900ee3243e92997f8017b0ede21e45286dbcb0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de499b59_e2ea1bf0",
+        "filename": "samples/tnf_test_example/hooks/templates/test_deployment.yml.j2",
+        "patchSetId": 15
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-03T08:54:23Z",
+      "side": 1,
+      "message": "The {% endif %} is on line 22. The idea is that exclude connectivity label is only included if targetpodlabels list is not empty (i.e. there are autodiscovery labels defined, so that the pod will be tested by the CNF Cert Suite), apart from filling correctly exclude_connectivity_regexp, of course. \nIt would not make sense to exclude a pod from connectivity tests if it does not have autodiscovery labels, because it will not be detected by the CNF Cert Suite when doing autodiscovery. That\u0027s why the endif is on line 22 instead of line 19.",
+      "parentUuid": "bb7d52fd_e9cac40b",
       "revId": "5c900ee3243e92997f8017b0ede21e45286dbcb0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
