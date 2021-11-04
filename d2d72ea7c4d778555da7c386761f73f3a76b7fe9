@@ -16,6 +16,24 @@
       "revId": "d2d72ea7c4d778555da7c386761f73f3a76b7fe9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ddd15eb7_8a528cda",
+        "filename": "roles/cnf-cert/tasks/post-run.yml",
+        "patchSetId": 21
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-04T13:43:10Z",
+      "side": 1,
+      "message": "Both Delete the partner deployment and Delete the debug daemonSet are under the same block and both of them are affected by the tnf_postrun_delete_resources conditional, so it is applied also to it",
+      "parentUuid": "154299e5_3637434f",
+      "revId": "d2d72ea7c4d778555da7c386761f73f3a76b7fe9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
