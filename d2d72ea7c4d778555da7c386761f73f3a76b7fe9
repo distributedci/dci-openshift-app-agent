@@ -34,6 +34,24 @@
       "revId": "d2d72ea7c4d778555da7c386761f73f3a76b7fe9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b229676b_a399f137",
+        "filename": "roles/cnf-cert/tasks/post-run.yml",
+        "patchSetId": 21
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 992
+      },
+      "writtenOn": "2021-11-04T14:21:13Z",
+      "side": 1,
+      "message": "Oh I didn\u0027t see the `block`.  Awesome, thanks.",
+      "parentUuid": "ddd15eb7_8a528cda",
+      "revId": "d2d72ea7c4d778555da7c386761f73f3a76b7fe9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
