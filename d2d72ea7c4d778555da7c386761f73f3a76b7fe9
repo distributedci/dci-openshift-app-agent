@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "154299e5_3637434f",
+        "filename": "roles/cnf-cert/tasks/post-run.yml",
+        "patchSetId": 21
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 992
+      },
+      "writtenOn": "2021-11-04T13:03:47Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this also have tnf_postrun_delete_resources conditional?",
+      "revId": "d2d72ea7c4d778555da7c386761f73f3a76b7fe9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
