@@ -171,7 +171,7 @@ To replay any steps, the use of Ansible tags (--tags) is an option. Please refer
 
 ```ShellSession
 # su - dci-openshift-app-agent
-$ dci-openshift-app-agent-ctl -s -- --tags job,pre-run,running,post-run
+$ dci-openshift-app-agent-ctl -s -- --tags kubeconfig,job,pre-run,running,post-run
 ```
 
 or to avoid one or multiple steps, use `--skip-tags`:
@@ -284,6 +284,24 @@ Tags:
 This hook is used for tasks required after the application has been installed and/or validated. For example, to upload logs to a central location, or to report the state of the application.
 
 This hook is not required and can be omitted.
+
+An example of how to upload your logs
+
+```YAML
+- name: Find logs (text)
+  find:
+    paths: "/path/to/your/logs"
+    recurse: yes
+    patterns: "*.log,*.txt,*.html"
+  register: logs_matched
+  delegate_to: localhost
+
+- name: "Upload text logs"
+  vars:
+    mime_type: "text/plain"
+  include_tasks: plays/upload-log.yml
+  with_items: "{{ logs_matched.files }}"
+```
 
 Tags:
 
