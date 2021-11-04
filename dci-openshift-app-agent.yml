@@ -179,12 +179,12 @@
     KUBECONFIG: "{{ kubeconfig_path }}"
   tasks:
     - block:
-        - name: "Run post-run"
-          include_tasks: plays/post-run.yml
-
         - name: Run the post-run hook
           include_tasks: '{{ dci_config_dir }}/hooks/post-run.yml'
           when: check_post_run.stat.exists
+
+        - name: "Run post-run"
+          include_tasks: plays/post-run.yml
 
       rescue: *error_with_upload_logs
 
