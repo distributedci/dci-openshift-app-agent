@@ -171,7 +171,7 @@ To replay any steps, the use of Ansible tags (--tags) is an option. Please refer
 
 ```ShellSession
 # su - dci-openshift-app-agent
-$ dci-openshift-app-agent-ctl -s -- --tags job,pre-run,running,post-run
+$ dci-openshift-app-agent-ctl -s -- --tags kubeconfig,job,pre-run,running,post-run
 ```
 
 or to avoid one or multiple steps, use `--skip-tags`:
