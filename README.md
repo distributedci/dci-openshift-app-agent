@@ -367,6 +367,7 @@ After installing the agent, login as dci-openshift-app-agent user and install th
 # su - dci-openshift-app-agent
 $ ansible-galaxy collection install community.kubernetes
 $ ansible-galaxy collection install community.general
+$ ansible-galaxy collection install containers.podman
 ```
 Also the use of newer Ansible versions requires a recent version of the kubernetes python module ( >= 12.0.0), as today only available through pip3
 
@@ -423,7 +424,7 @@ $ dci-openshift-app-agent:100000:65536
 
 ```bash
 podman stop $(podman ps -a -q)
-podman rm $(podman ps -a -q)
+podman rm $( ps -a -q)
 ```
 
 4. Kill processes related to podman:
