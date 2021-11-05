@@ -135,9 +135,9 @@
     until: not test_network_function_gitref.failed
 
   - name: Pull tnf container to bring the latest changes in the selected version
-    shell: |
-      set -ex
-      podman pull quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}
+    containers.podman.podman_image:
+      name: quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}
+      force: yes
 
   when: not tnf_is_file_path.stat.exists|bool
 ...
