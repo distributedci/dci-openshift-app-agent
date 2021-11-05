@@ -63,13 +63,11 @@
 
   # Steps from https://github.com/test-network-function/test-network-function#building-the-container-image-locally
   - name: Build the tnf container locally
-    shell: |
-      set -x
-      podman build -t {{ tnf_image }} \
-      --build-arg TNF_VERSION={{ tnf_version_image }} \
-      --build-arg TNF_SRC_URL=https://github.com/test-network-function/test-network-function .
-    args:
-      chdir: "{{ tnf_git_dir.path }}/test-network-function"
+    containers.podman.podman_image:
+      name: "{{ tnf_image }}"
+      path: "{{ tnf_git_dir.path }}/test-network-function"
+      build:
+        extra_args: "--build-arg TNF_VERSION={{ tnf_version_image }} --build-arg TNF_SRC_URL=https://github.com/test-network-function/test-network-function"
 
   # This is needed because the DCI component is not automatically created, as
   # it is done in case the git repo is directly used, in whose case it is created.
@@ -135,9 +133,9 @@
     until: not test_network_function_gitref.failed
 
   - name: Pull tnf container to bring the latest changes in the selected version
-    shell: |
-      set -ex
-      podman pull quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}
+    containers.podman.podman_image:
+      name: "quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}"
+      force: yes
 
   when: not tnf_is_file_path.stat.exists|bool
 ...
