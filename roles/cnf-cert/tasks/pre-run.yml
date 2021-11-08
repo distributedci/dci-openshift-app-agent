@@ -1,46 +1,93 @@
 ---
 
-- name: Create temporary directory for git repos
-  tempfile:
-    state: directory
-  register: tnf_git_dir
-
-- name: Clone test-network-function
-  git:
-    repo: "{{ test_network_function_repo }}"
-    version: "{{ test_network_function_version }}"
-    dest: "{{ tnf_git_dir.path }}/test_network_function"
-    force: yes
-  # On RHEL8 git clone can sporadically fail with OpenSSL SSL_read:
-  # SSL_ERROR_SYSCALL, errno 104. This is a workaround to try cloning the repo
-  # multiple times.
-  register: test_network_function_gitref
-  retries: 3
-  delay: 10
-  until: not test_network_function_gitref.failed
-
 - name: "cnf-cert : Save images in local registry"
   include_tasks: save-images.yml
   when:
     - provisionhost_registry|length
     - provisionhost_registry_creds|length
 
-# In https://quay.io/repository/testnetworkfunction/test-network-function?tab=tags,
-# there are two main tags to take into account:
-# -latest: linked to the latest tnf release (currently, v3.0.0). So, v3.0.0 and latest
-# tags refer to the same container image.
-# -unstable: related to the HEAD version of the main branch in the tnf repository
-# (https://github.com/test-network-function/test-network-function).
-# So, if a version is provided in test_network_function_version, that version will be
-# used (but note that versions prior to v3.0.1 are no longer supported in the current
-# d-o-a-a code), and if not, unstable tag is used.
-- name: Create variable with test-network-function version name
-  set_fact:
-    tnf_version_image: "{{ ( test_network_function_version | regex_search('v[0-9].[0-9].[0-9]') ) | ternary(test_network_function_version, 'unstable') }}"
+# test_network_function_repo will always be a link to the tnf Github repo
+# unless we are testing a PR from that repo, in whose case test-runner will
+# upload test_network_function_repo value to the file path in which
+# extract-dependencies script has downloaded locally the repo
+- name: Check if test_network_function_repo is a file path
+  stat:
+    path: "{{ test_network_function_repo }}"
+  register: tnf_is_file_path
 
-- name: Pull tnf container to bring the latest changes in the selected version
-  shell: |
-    set -ex
-    podman pull quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}
+- name: Tasks when test_network_function_repo points to a local file path
+  block:
 
+  - name: Retrieve information from the downloaded repo
+    git:
+      repo: https://github.com/test-network-function/test-network-function
+      dest: "{{ test_network_function_repo }}/test-network-function"
+      clone: no
+      update: no
+    register: tnf_repo_info
+
+  - name: Create variables with tnf version name and image pointing to local registry
+    set_fact:
+      tnf_version_image: "{{ tnf_repo_info.after }}"
+      tnf_image: "test-network-function:{{ tnf_version_image }}"
+
+  - name: Save test_network_function_repo value into a new tnf_git_dir.path variable
+    set_fact:
+      tnf_git_dir:
+        path: "{{ test_network_function_repo }}"
+
+  # Steps from https://github.com/test-network-function/test-network-function#building-the-container-image-locally
+  - name: Build the tnf container locally
+    shell: |
+      set -x
+      podman build -t {{ tnf_image }} \
+      --build-arg TNF_VERSION={{ tnf_version_image }} \
+      --build-arg TNF_SRC_URL=https://github.com/test-network-function/test-network-function .
+    args:
+      chdir: "{{ tnf_git_dir.path }}/test-network-function"
+
+  when: tnf_is_file_path.exists|bool
+
+- name: Tasks when test_network_function_repo points to a Github repository 
+  block:
+
+  - name: Create temporary directory for git repos
+    tempfile:
+      state: directory
+    register: tnf_git_dir
+
+  # In https://quay.io/repository/testnetworkfunction/test-network-function?tab=tags,
+  # there are two main tags to take into account:
+  # -latest: linked to the latest tnf release (currently, v3.0.0). So, v3.0.0 and latest
+  # tags refer to the same container image.
+  # -unstable: related to the HEAD version of the main branch in the tnf repository
+  # (https://github.com/test-network-function/test-network-function).
+  # So, if a version is provided in test_network_function_version, that version will be
+  # used (but note that versions prior to v3.0.1 are no longer supported in the current
+  # d-o-a-a code), and if not, unstable tag is used.
+  - name: Create variables with tnf version name and image pointing to Quay.io
+    set_fact:
+      tnf_version_image: "{{ ( test_network_function_version | regex_search('HEAD') ) | ternary('unstable', test_network_function_version) }}"
+      tnf_image: "test-network-function:{{ tnf_version_image }}"
+
+  - name: Clone test-network-function
+    git:
+      repo: "{{ test_network_function_repo }}"
+      version: "{{ test_network_function_version }}"
+      dest: "{{ tnf_git_dir.path }}/test-network-function"
+      force: yes
+    # On RHEL8 git clone can sporadically fail with OpenSSL SSL_read:
+    # SSL_ERROR_SYSCALL, errno 104. This is a workaround to try cloning the repo
+    # multiple times.
+    register: test_network_function_gitref
+    retries: 3
+    delay: 10
+    until: not test_network_function_gitref.failed
+
+  - name: Pull tnf container to bring the latest changes in the selected version
+    shell: |
+      set -ex
+      podman pull quay.io/testnetworkfunction/test-network-function:{{ tnf_version_image }}
+
+  when: not tnf_is_file_path.exists|bool
 ...
