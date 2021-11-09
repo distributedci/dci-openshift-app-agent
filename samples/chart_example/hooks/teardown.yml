@@ -1,0 +1,6 @@
+---
+
+- name: run helm install
+  command: "/usr/local/bin/helm uninstall instance }}"
+
+...
