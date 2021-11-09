@@ -1,0 +1,11 @@
+---
+
+- name: Run helm list
+  command: "/usr/local/bin/helm -n {{ dci_openshift_app_ns }} list -o json -l name=instance"
+  register: helm_list
+
+- name: Validate helm chart is deployed
+  assert:
+    that: "{{ helm_list.stdout | from_json }}[0].status == 'deployed'"
+
+...

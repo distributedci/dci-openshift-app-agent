@@ -5,4 +5,12 @@
 - name: "Upload logs"
   include_tasks: upload_logs.yml
 
+- name: Delete namespace
+  k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ dci_openshift_app_ns }}"
+    state: absent
+  when: dci_openshift_app_ns is defined
+
 ...

@@ -1,0 +1,6 @@
+---
+
+- name: Run helm install
+  command: "/usr/local/bin/helm -n {{ dci_openshift_app_ns }} install instance {{ chart_url | default('https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz') }}"
+
+...
