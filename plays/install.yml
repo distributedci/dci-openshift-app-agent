@@ -1,0 +1,22 @@
+---
+
+- name: Check if namespace exists
+  k8s_info:
+    api_version: v1
+    kind: Namespace
+    name: "{{ dci_openshift_app_ns }}"
+  register: app_namespace
+  when:
+    - dci_openshift_app_ns is defined
+
+- name: Create namespace
+  k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ dci_openshift_app_ns }}"
+    state: present
+  when:
+    - dci_openshift_app_ns is defined
+    - app_namespace.resources|length == 0
+
+...
