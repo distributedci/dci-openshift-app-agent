@@ -1,0 +1,9 @@
+---
+
+- name: Create namespace
+  command: "{{ oc_tool_path }} create namespace {{ dci_openshift_app_ns }}"
+
+- name: Run helm install
+  command: "/usr/local/bin/helm -n {{ dci_openshift_app_ns }} install instance {{ chart_url | default('https://helm.github.io/examples') }}"
+
+...
