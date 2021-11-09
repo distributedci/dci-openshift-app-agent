@@ -1,0 +1,7 @@
+---
+
+- name: Run helm uninstall
+  command: "/usr/local/bin/helm -n {{ dci_openshift_app_ns }} uninstall instance"
+  ignore_errors: true
+
+...

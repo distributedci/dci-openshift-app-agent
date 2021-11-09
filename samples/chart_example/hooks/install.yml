@@ -1,0 +1,6 @@
+---
+
+- name: Run helm install
+  command: "/usr/local/bin/helm -n {{ dci_openshift_app_ns }} install instance {{ chart_url | default('https://helm.github.io/examples') }}"
+
+...

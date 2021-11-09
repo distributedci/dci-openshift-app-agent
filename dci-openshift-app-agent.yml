@@ -124,7 +124,10 @@
             status: "running"
           tags: [dci]
 
-        - name: "Execute install"
+        - name: "Execute install play"
+          include_tasks: 'plays/install.yml'
+
+        - name: "Execute install hook"
           include_tasks: "{{ dci_config_dir }}/hooks/install.yml"
 
       rescue: &failure_with_upload_logs
