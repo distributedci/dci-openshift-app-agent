@@ -124,7 +124,10 @@
             status: "running"
           tags: [dci]
 
-        - name: "Execute install"
+        - name: "Execute install play"
+          include_tasks: 'plays/install.yml'
+
+        - name: "Execute install hook"
           include_tasks: "{{ dci_config_dir }}/hooks/install.yml"
 
       rescue: &failure_with_upload_logs
@@ -179,12 +182,12 @@
     KUBECONFIG: "{{ kubeconfig_path }}"
   tasks:
     - block:
-        - name: "Run post-run"
-          include_tasks: plays/post-run.yml
-
         - name: Run the post-run hook
           include_tasks: '{{ dci_config_dir }}/hooks/post-run.yml'
           when: check_post_run.stat.exists
+
+        - name: "Run post-run"
+          include_tasks: plays/post-run.yml
 
       rescue: *error_with_upload_logs
 
