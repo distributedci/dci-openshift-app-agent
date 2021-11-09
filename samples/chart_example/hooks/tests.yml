@@ -1,0 +1,6 @@
+---
+
+- name: run helm list
+  command: "/usr/local/bin/helm list"
+
+...
