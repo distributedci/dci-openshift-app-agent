@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f45793f5_c53c8a2d",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 427,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-11-09T21:48:35Z",
+      "side": 1,
+      "message": "Here, the podman command was required to get the list first and then delete? Or am I missing something you where trying to do?",
+      "revId": "f42f7783ac180e918df571218e76a5c49ed9f4da",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "91a6119a_61ae546f",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-11-09T21:48:35Z",
+      "side": 1,
+      "message": "As per the note in the doc you referenced in the commit \"You might already have this collection installed if you are using the ansible package. It is not included in ansible-core\" This works in our labs with ansible 2.9 but I\u0027m afraid it won\u0027t work in other environments like Mavenir Lab because they use ansible-core, so we need to include a task before to install the containers.podman.podman_image collection.",
+      "revId": "f42f7783ac180e918df571218e76a5c49ed9f4da",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
