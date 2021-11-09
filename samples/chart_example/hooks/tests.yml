@@ -1,0 +1,11 @@
+---
+
+- name: run helm list
+  command: "/usr/local/bin/helm list -o json -l name=instance"
+  register: helm_list
+
+- name: validate helm chart is deployed
+  assert:
+    that: "{{ helm_list.stdout | from_json }}[0].status == 'deployed'"
+
+...

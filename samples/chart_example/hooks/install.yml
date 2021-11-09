@@ -1,0 +1,6 @@
+---
+
+- name: run helm install
+  command: "/usr/local/bin/helm install instance {{ chart_url | default('https://helm.github.io/examples') }}"
+
+...
