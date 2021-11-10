@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "a146a47d_090f097a",
+        "filename": "plays/failure.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-10T16:51:33Z",
+      "side": 1,
+      "message": "I think this one would be better after collecting logs and in plays/teardown.yml (to be created)",
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8ed3f385_e44e93e6",
         "filename": "plays/failure.yml",
         "patchSetId": 20
@@ -19,6 +36,40 @@
         "endLine": 16,
         "endChar": 24
       },
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4029745b_59258ce7",
+        "filename": "plays/failure.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-10T16:51:33Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "16323629_0c4295db",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-10T16:51:33Z",
+      "side": 1,
+      "message": "ditto (move these two tasks to teardown?)",
       "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
