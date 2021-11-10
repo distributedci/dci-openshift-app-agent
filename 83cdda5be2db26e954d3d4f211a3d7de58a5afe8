@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "018931f7_dbf54b3b",
+        "filename": "plays/tests.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-10T14:49:01Z",
+      "side": 1,
+      "message": "The usage of `assert` would produce playbook failure if the helm chart deploy fails, and all the following tests would not be executed. Is it intended, or it\u0027s better to switch to `fail` which supports `ignore_errors`?\n\n```\n- name: Validate helm chart is deployed\n  fail:\n    msg: Error to deploy helm chart.\n  when: \"{{ helm_list.stdout | from_json }}[0].status !\u003d \u0027deployed\u0027\"\n  ignore_errors: true\n```",
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
