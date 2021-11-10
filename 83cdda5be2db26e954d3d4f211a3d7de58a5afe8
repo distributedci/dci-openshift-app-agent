@@ -16,6 +16,24 @@
       "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cf3e573b_0e2d28e7",
+        "filename": "plays/tests.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T14:51:37Z",
+      "side": 1,
+      "message": "yes it is intended as we need to stop if the deployment didn\u0027t work.",
+      "parentUuid": "018931f7_dbf54b3b",
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
