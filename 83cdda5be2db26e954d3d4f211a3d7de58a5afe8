@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ba9b19aa_34f2e2ac",
+        "filename": "README.md",
+        "patchSetId": 19
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T16:28:54Z",
+      "side": 1,
+      "message": "\u003e should we define a default value to always run a helm chart in all d-o-a-a jobs? or may we include it in the pipelines? because, with the current code, helm chart will not be run by default then\n\nI don\u0027t want to force all the partners to run a default Helm chart. Yes the idea is to run nothing by default.",
+      "parentUuid": "9da1abbf_715e2052",
+      "range": {
+        "startLine": 111,
+        "startChar": 37,
+        "endLine": 111,
+        "endChar": 46
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "568dbf6c_9bc936a3",
         "filename": "plays/common_logging.yml",
         "patchSetId": 19
@@ -45,6 +69,30 @@
       "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f9cde611_ed99f6e1",
+        "filename": "plays/common_logging.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T16:28:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "568dbf6c_9bc936a3",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 39
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "28006969_46685ab5",
+        "filename": "plays/install.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T16:28:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34260981_6adb21be",
+      "range": {
+        "startLine": 10,
+        "startChar": 6,
+        "endLine": 10,
+        "endChar": 37
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b6cd7839_4f954c94",
         "filename": "plays/install.yml",
         "patchSetId": 19
@@ -91,6 +163,30 @@
       "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "869e970f_0ca07db8",
+        "filename": "plays/install.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T16:28:54Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b6cd7839_4f954c94",
+      "range": {
+        "startLine": 19,
+        "startChar": 6,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -144,6 +240,24 @@
       "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ca331ba_702d8134",
+        "filename": "plays/tests.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T16:28:54Z",
+      "side": 1,
+      "message": "\u003e should we remove, then, the dci_openshift_app_ns in case this task fails? because I think that, if not, it will remain created. Maybe it\u0027s a task to be included in the failure process too\n\nI don\u0027t think so it is removed in the common_logging.yml that is called also in the failure path.",
+      "parentUuid": "bfa2291e_1385ceed",
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
