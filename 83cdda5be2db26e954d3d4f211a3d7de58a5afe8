@@ -2,6 +2,98 @@
   "comments": [
     {
       "key": {
+        "uuid": "9da1abbf_715e2052",
+        "filename": "README.md",
+        "patchSetId": 19
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:10:58Z",
+      "side": 1,
+      "message": "should we define a default value to always run a helm chart in all d-o-a-a jobs? or may we include it in the pipelines? because, with the current code, helm chart will not be run by default then",
+      "range": {
+        "startLine": 111,
+        "startChar": 37,
+        "endLine": 111,
+        "endChar": 46
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "568dbf6c_9bc936a3",
+        "filename": "plays/common_logging.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:10:58Z",
+      "side": 1,
+      "message": "same as install.yml",
+      "range": {
+        "startLine": 14,
+        "startChar": 8,
+        "endLine": 14,
+        "endChar": 39
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34260981_6adb21be",
+        "filename": "plays/install.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:10:58Z",
+      "side": 1,
+      "message": "I guess we don\u0027t need this since dci_openshift_app_ns is defined in group_vars/all with a default value (myns)",
+      "range": {
+        "startLine": 10,
+        "startChar": 6,
+        "endLine": 10,
+        "endChar": 37
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b6cd7839_4f954c94",
+        "filename": "plays/install.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:10:58Z",
+      "side": 1,
+      "message": "same as the previous case",
+      "range": {
+        "startLine": 19,
+        "startChar": 6,
+        "endLine": 19,
+        "endChar": 37
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "018931f7_dbf54b3b",
         "filename": "plays/tests.yml",
         "patchSetId": 19
@@ -34,6 +126,24 @@
       "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bfa2291e_1385ceed",
+        "filename": "plays/tests.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:10:58Z",
+      "side": 1,
+      "message": "should we remove, then, the dci_openshift_app_ns in case this task fails? because I think that, if not, it will remain created. Maybe it\u0027s a task to be included in the failure process too",
+      "parentUuid": "cf3e573b_0e2d28e7",
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
