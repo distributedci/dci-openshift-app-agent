@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "b026bb3a_49949e2b",
+        "filename": "README.md",
+        "patchSetId": 19
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:47:26Z",
+      "side": 1,
+      "message": "got it. So, in that case, may we put an example here of a possible helm chart as a reference in the Description? (e.g. https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz)",
+      "parentUuid": "ba9b19aa_34f2e2ac",
+      "range": {
+        "startLine": 111,
+        "startChar": 37,
+        "endLine": 111,
+        "endChar": 46
+      },
+      "revId": "83cdda5be2db26e954d3d4f211a3d7de58a5afe8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "568dbf6c_9bc936a3",
         "filename": "plays/common_logging.yml",
         "patchSetId": 19

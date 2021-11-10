@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ed3f385_e44e93e6",
+        "filename": "plays/failure.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:47:26Z",
+      "side": 1,
+      "message": "In this case, I think common_logging.yml get logs from dci_openshift_app_ns, so I would delete the namespace at the end, before Fail properly task. If not, Run common logging process would fail",
+      "range": {
+        "startLine": 16,
+        "startChar": 8,
+        "endLine": 16,
+        "endChar": 24
+      },
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9adc661f_848ba54d",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-10T16:47:26Z",
+      "side": 1,
+      "message": "Maybe I would move it at the end of this play, because cnf-cert post-run performs some tasks over dci_openshift_app_ns and they will fail if it is deleted before",
+      "range": {
+        "startLine": 16,
+        "startChar": 8,
+        "endLine": 16,
+        "endChar": 24
+      },
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
