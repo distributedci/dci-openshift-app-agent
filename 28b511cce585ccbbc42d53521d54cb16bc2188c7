@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "2bb3864c_739ff3ef",
+        "filename": "plays/failure.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T17:26:49Z",
+      "side": 1,
+      "message": "\u003e I think this one would be better after collecting logs and in plays/teardown.yml (to be created)\n\nit is separated to obey to dci_teardown_on_failure and dci_teardown_on_success.",
+      "parentUuid": "a146a47d_090f097a",
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8ed3f385_e44e93e6",
         "filename": "plays/failure.yml",
         "patchSetId": 20
@@ -56,6 +74,48 @@
       "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "314d39fc_5024a8c0",
+        "filename": "plays/failure.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T17:26:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4029745b_59258ce7",
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1517215c_c46e1609",
+        "filename": "plays/failure.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2021-11-10T17:26:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ed3f385_e44e93e6",
+      "range": {
+        "startLine": 16,
+        "startChar": 8,
+        "endLine": 16,
+        "endChar": 24
+      },
+      "revId": "28b511cce585ccbbc42d53521d54cb16bc2188c7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
