@@ -116,6 +116,23 @@
     },
     {
       "key": {
+        "uuid": "4ce3c3e6_510e9364",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:11:05Z",
+      "side": 1,
+      "message": "It is adding ANSIBLE managed marker for each line image appended. Maybe not needed and also considering that the tmp directory need to be removed during the teardown. \n# grep -c \"MANAGED BLOCK\" /tmp/ansible.rnljik6sscorecard_tmp_dir/tmp_oc/imageContentSourcePolicy.yaml \n8\n# find /tmp/ -iname tmp_oc -type d|wc -l\n58",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b0081a9b_a99117d0",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -127,6 +144,24 @@
       "writtenOn": "2021-11-11T16:19:53Z",
       "side": 1,
       "message": "Is it suitable to move the tasks before the \"Run preflight check operator tests\" task to a pre-run or install phase, maybe? I am saying this just to compare it with the cnf-cert role, in which we mirror the images in the pre-run, for example, and the namespace may be created in the install, for example. I guess it is quicker to do everything in the same task because you are iterating the same list, but in terms of organization, maybe it\u0027s worth to think about this, in case it is possible.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "69e00b28_738d3e8e",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:11:05Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "b0081a9b_a99117d0",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -201,6 +236,57 @@
       "writtenOn": "2021-11-11T20:10:09Z",
       "side": 1,
       "message": "feedback from previous file applies here as well",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "311b6f8e_a36ec9ee",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:11:05Z",
+      "side": 1,
+      "message": "Please consider removing this tmp files during the teardown\n# find /tmp -iname artifacts -o -iname scorecard_operator_dir -type d| wc -l\n90",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "11a7ff15_eb8a73cb",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:11:05Z",
+      "side": 1,
+      "message": "I believe this is just a bundle that has references to the actual operator.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3da53a01_ae497bf6",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:11:05Z",
+      "side": 1,
+      "message": "ditto",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
