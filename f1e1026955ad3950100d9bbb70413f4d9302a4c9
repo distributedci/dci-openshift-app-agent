@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "65a73e28_2fcb2e43",
+        "filename": "plays/helm_chart_tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "Maybe find a method to only run the verifier using a set of sets and collect the results. Parsing the output for each test do not look easy to maintain",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0782bf08_9b20ad5d",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "I do not thing this is needed for chart verifier",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0a14c7b7_984a1785",
+        "filename": "roles/chart-verifier/tasks/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "This is not related to chart verifier",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "673e1f93_c7411440",
+        "filename": "roles/chart-verifier/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "Is it needed to rename the image?",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b7ed9661_7c8c9f22",
+        "filename": "roles/chart-verifier/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "This is not needed by chart verifier",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52f023ff_9b59caa5",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "This is not related to CV",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cc357540_5d7e04d7",
+        "filename": "roles/chart-verifier/templates/cv_config.yml.j2",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-11T22:43:36Z",
+      "side": 1,
+      "message": "I do not think you need this file, this is from TNF.\n\nAlso swp file should be deleted.",
+      "revId": "f1e1026955ad3950100d9bbb70413f4d9302a4c9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
