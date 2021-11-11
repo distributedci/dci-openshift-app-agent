@@ -1,0 +1,199 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "426f6a46_b530284d",
+        "filename": "README.md",
+        "patchSetId": 144
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "Can we create a link to roles/preflight/templates/example_preflight_config.yml? With [...](...), I mean",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 122,
+        "endChar": 235
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6ae2bd1b_e9160745",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "maybe to be added to the README, in case we want to change it in a pipeline?",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 17
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0081a9b_a99117d0",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "Is it suitable to move the tasks before the \"Run preflight check operator tests\" task to a pre-run or install phase, maybe? I am saying this just to compare it with the cnf-cert role, in which we mirror the images in the pre-run, for example, and the namespace may be created in the install, for example. I guess it is quicker to do everything in the same task because you are iterating the same list, but in terms of organization, maybe it\u0027s worth to think about this, in case it is possible.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "32ebf101_91fdbe6b",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "you are doing this twice, here and in the end. I would say this task can be moved to a post-run, maybe.",
+      "range": {
+        "startLine": 166,
+        "startChar": 0,
+        "endLine": 166,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "87dce539_4b67dbad",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "Same impression than in in preflight_check_operator, is it worth to move all the tasks prior to this one to a pre-run? (Template scorecad config can remain under tests)",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce45b329_937d81c9",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "And this may be moved to an install phase.",
+      "range": {
+        "startLine": 137,
+        "startChar": 0,
+        "endLine": 137,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c09f054_356a454d",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "Same as the other case: is it worth to move it to a post-run?",
+      "range": {
+        "startLine": 200,
+        "startChar": 0,
+        "endLine": 200,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2a04d2e7_8ccaece1",
+        "filename": "roles/preflight/templates/example_preflight_config.yaml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "Maybe this content can be moved to a README created under roles/preflight?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "076ca4dc_57245595",
+        "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 1,
+      "message": "In general, for all the .j2 files placed under templates folder (excepting scorecard-basic-check-spec-test, maybe): why are you using jinja templates, if they are bare yaml files? And also, do you intend to build different entrypoints depending on the case to be tested, or will it be testing always the same? (because everything is hardcoded).\nIn the end: if this template is not filled with external variables, you can directly use a yaml file directly and save it under, e.g., roles/preflights/config (or something similar, but using that instead of templates), I think",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "23d49877_3ef7ac22",
+        "filename": "group_vars/all",
+        "patchSetId": 144
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-11T16:19:53Z",
+      "side": 0,
+      "message": "I think Fred has already removed it on a merged CR, so maybe you will have to rebase your code to have this last change there too.",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 47
+      },
+      "revId": "f23bf6b4523036df04e7bca88d9ce72125817ac3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
