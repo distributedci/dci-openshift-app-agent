@@ -48,6 +48,74 @@
     },
     {
       "key": {
+        "uuid": "394b26b0_9b3a0d2a",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "whenever possible try not to pollute the facts (as they are node-level variables that may overwrite other variables and cause unintended side-effects). In this case you use this path 3 other times in this file, there\u0027s no need to set a couple of extra facts for that imo",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e075209_20d2a3ea",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "this is an example where you can avoid using a fact since you can set variables at the block level, e.g.\n```\n- name: foo block\n  vars:\n    my_oo_index: \"{{ \u0027/\u0027.join(...) }}\"\n  block:\n    - name: Build index\n      shell: \"opm index --tag {{ my_oo_index }}...\"\n```",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b2aea47d_6689cd44",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "can use a single conditional with dci_disconnected | default(false) | bool, maybe even just | bool works?",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9c82ca82_61573000",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "connected and disconnected environments are 2 totally different code paths, I\u0027d suggest splitting these two big blocks into two different task files and include_tasks with the appropriate conditional",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b0081a9b_a99117d0",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -59,6 +127,40 @@
       "writtenOn": "2021-11-11T16:19:53Z",
       "side": 1,
       "message": "Is it suitable to move the tasks before the \"Run preflight check operator tests\" task to a pre-run or install phase, maybe? I am saying this just to compare it with the cnf-cert role, in which we mirror the images in the pre-run, for example, and the namespace may be created in the install, for example. I guess it is quicker to do everything in the same task because you are iterating the same list, but in terms of organization, maybe it\u0027s worth to think about this, in case it is possible.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d0150242_a6b80aec",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "I see why you set_fact the OO_INDEX, hmmm. If it\u0027s easier to keep it this way ignore my previous comments about OO_INDEX fact.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af098c25_615fe189",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "maybe set the namespace to a variable defaulting to preflight-testing?",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -82,6 +184,23 @@
         "endLine": 166,
         "endChar": 42
       },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a0fbc5df_9812f0b3",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "feedback from previous file applies here as well",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -151,6 +270,91 @@
     },
     {
       "key": {
+        "uuid": "8427ce8d_f0162a50",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "this file should be named tasks/main.yml",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8a111931_b73f1261",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "you\u0027ve checked the variable exists and it\u0027s a list, should also check the list isn\u0027t empty.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba2920e2_0b901fb8",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "Should this be added to defaults/main.yml? The comment verbiage should be added to the docs at least.\nAlso, all role checks should be grouped at the top, the way it\u0027s done right now you would potentially run the preflight checks, then fail when running the operator-sdk tests.",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cb20a365_fa181226",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "I\u0027m confused, why ignore_errors on a fail task?",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a5c1dc29_e3ab1f3e",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "this condition is irrelevant due to the check above",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2a04d2e7_8ccaece1",
         "filename": "roles/preflight/templates/example_preflight_config.yaml",
         "patchSetId": 144
@@ -174,6 +378,30 @@
     },
     {
       "key": {
+        "uuid": "e49fcc7d_19107651",
+        "filename": "roles/preflight/templates/example_preflight_config.yaml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "agreed, if this file isn\u0027t used then it shouldn\u0027t be created, instead leave it as part of the docs",
+      "parentUuid": "2a04d2e7_8ccaece1",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "076ca4dc_57245595",
         "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
         "patchSetId": 144
@@ -185,6 +413,30 @@
       "writtenOn": "2021-11-11T16:19:53Z",
       "side": 1,
       "message": "In general, for all the .j2 files placed under templates folder (excepting scorecard-basic-check-spec-test, maybe): why are you using jinja templates, if they are bare yaml files? And also, do you intend to build different entrypoints depending on the case to be tested, or will it be testing always the same? (because everything is hardcoded).\nIn the end: if this template is not filled with external variables, you can directly use a yaml file directly and save it under, e.g., roles/preflights/config (or something similar, but using that instead of templates), I think",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "beba3eef_16279ed1",
+        "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2021-11-11T20:10:09Z",
+      "side": 1,
+      "message": "yep agreed, if these are really static files then move to roles/preflight/files/",
+      "parentUuid": "076ca4dc_57245595",
       "range": {
         "startLine": 1,
         "startChar": 0,
