@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "376facd3_3f1c4e56",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-12T20:49:02Z",
+      "side": 1,
+      "message": "While I agree that is a good practice and helps with idem-potency I think we will be adding another dependency that may not be paying off just yet.\n\nIs there any particular reason to use podman_image module in here that I may be missing?\n\nWe have created https://issues.redhat.com/browse/CILAB-337 to discuss the best practices.",
+      "revId": "e8ef2d8e001bd0450957834d5cea822c765035be",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
