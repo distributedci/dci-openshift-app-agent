@@ -65,6 +65,24 @@
     },
     {
       "key": {
+        "uuid": "5fe8ec55_05173700",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-12T13:55:47Z",
+      "side": 1,
+      "message": "I agree that defining facts should be carefully handled. In this case I think it makes sense to make that tradeoff, it\u0027s easier to read and handle the locations this way.\nI think that as long as naming is handled in a proper way (in this case prefixing \"preflight_\") it should be OK, wdyt?",
+      "parentUuid": "394b26b0_9b3a0d2a",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8e075209_20d2a3ea",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -110,6 +128,57 @@
       "writtenOn": "2021-11-11T20:10:09Z",
       "side": 1,
       "message": "connected and disconnected environments are 2 totally different code paths, I\u0027d suggest splitting these two big blocks into two different task files and include_tasks with the appropriate conditional",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "69bb307c_516e39c4",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-12T13:55:47Z",
+      "side": 1,
+      "message": "nit: runtime-assets does not require privileged mode",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b98af64d_d990b96f",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-12T13:55:47Z",
+      "side": 1,
+      "message": "I think you could reduce one task and fact `preflight_context` by using json_query a la:\n```\n\"{{ preflight_assets.stdout | from_json | json_query(\u0027images\u0027) | list | unique }}\"\n```",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "94c88f62_104b554b",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-12T13:55:47Z",
+      "side": 1,
+      "message": "Likewise\n```\n\"{{ lookup(\u0027file\u0027, \u0027templates/scorecard-busybox-ubi.yaml.j2\u0027) | from_yaml |  json_query(\u0027images\u0027) | list | unique }}\"\n```",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -482,6 +551,23 @@
         "endLine": 1,
         "endChar": 3
       },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "15ebe388_90dab3ce",
+        "filename": "roles/preflight/templates/scorecard-busybox-ubi.yaml.j2",
+        "patchSetId": 144
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-12T13:55:47Z",
+      "side": 1,
+      "message": "It would be quite handy to add comments to explain what tag version these images are",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
