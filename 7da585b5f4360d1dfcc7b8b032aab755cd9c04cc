@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "8bb9475c_83f0b412",
+        "filename": "README.md",
+        "patchSetId": 144
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "426f6a46_b530284d",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 122,
+        "endChar": 235
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6ae2bd1b_e9160745",
         "filename": "roles/preflight/defaults/main.yml",
         "patchSetId": 144
@@ -45,6 +69,30 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "83c8bf30_a9515e4d",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6ae2bd1b_e9160745",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 17
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -83,6 +131,24 @@
     },
     {
       "key": {
+        "uuid": "b8c02544_3bd4423c",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Hi Tony and Jorge, thank you for the discussion. I agree with Tony here, to keep \"preflight_artifacts\" as a fact, it\u0027s used all over the playbook in different blocks. Jorge, wdyt?",
+      "parentUuid": "5fe8ec55_05173700",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8e075209_20d2a3ea",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -97,6 +163,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "30d7b325_054c7144",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8e075209_20d2a3ea",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +201,24 @@
     },
     {
       "key": {
+        "uuid": "72901ebd_fccb9698",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b2aea47d_6689cd44",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9c82ca82_61573000",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -128,6 +230,24 @@
       "writtenOn": "2021-11-11T20:10:09Z",
       "side": 1,
       "message": "connected and disconnected environments are 2 totally different code paths, I\u0027d suggest splitting these two big blocks into two different task files and include_tasks with the appropriate conditional",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "deea1606_0b82d291",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "I agree, I\u0027ll do that in the second iteration of the review.",
+      "parentUuid": "9c82ca82_61573000",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -151,6 +271,24 @@
     },
     {
       "key": {
+        "uuid": "8f085320_9541e385",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "69bb307c_516e39c4",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b98af64d_d990b96f",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -165,6 +303,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8d855abd_8885deba",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Thank you Tony, great idea!",
+      "parentUuid": "b98af64d_d990b96f",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -185,6 +341,24 @@
     },
     {
       "key": {
+        "uuid": "18a0250a_cfe4fc33",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "94c88f62_104b554b",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4ce3c3e6_510e9364",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -199,6 +373,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "110d64a2_069c26af",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Hi Beto, concerning \"ANSIBLE MANAGED BLOCK\" - I had problems making `blockinfile` work in a loop because of this feature (or bug?) https://github.com/ansible/ansible-modules-extras/issues/1592, so finally I had to keep that marker. \nConcerning the removal of tmp_dir - thank you for the good catch, I made a cleanup in dallas and added the automated cleanup in the playbooks.",
+      "parentUuid": "4ce3c3e6_510e9364",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -237,6 +429,24 @@
     },
     {
       "key": {
+        "uuid": "ccfcd6d2_a3b8dd6f",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Hi Ramon and Beto, \"Run preflight check operator tests\" is where the preflight tests are running (~5 min per operator), so I\u0027d prefer to keep in the main/tests.yml part just for the sake of time statistics etc. In general, the idea to refactor and split this large playbook is great. I\u0027ll do it in the second iteration of the review.",
+      "parentUuid": "69e00b28_738d3e8e",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d0150242_a6b80aec",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -251,6 +461,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f1a0ac9_8ce1e5f7",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 142,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d0150242_a6b80aec",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -271,6 +499,24 @@
     },
     {
       "key": {
+        "uuid": "77ec6143_125e2be8",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "af098c25_615fe189",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "32ebf101_91fdbe6b",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -282,6 +528,30 @@
       "writtenOn": "2021-11-11T16:19:53Z",
       "side": 1,
       "message": "you are doing this twice, here and in the end. I would say this task can be moved to a post-run, maybe.",
+      "range": {
+        "startLine": 166,
+        "startChar": 0,
+        "endLine": 166,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "416fff62_07c3ebff",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Hi Ramon, I removed the dupe. \nConcerning moving to a post-run, it\u0027s not that easy. I\u0027m testing several operators in a loop (roles/preflight/tasks/tests.yml), and these tests run several pods/jobs/install operators, etc. So I do prefer to create and delete namespace for each operator. \nAlthough, I like the idea to split this large playbook into several stages pre-run/run/etc.\nI\u0027ll do that in the second iteration of the review, we could move to the pre-run step a mirroring of \"static\" images: busybox, ubi8, and ocp-v4.0-art-dev. WDYT?",
+      "parentUuid": "32ebf101_91fdbe6b",
       "range": {
         "startLine": 166,
         "startChar": 0,
@@ -311,6 +581,24 @@
     },
     {
       "key": {
+        "uuid": "073c16d3_10a6d26a",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a0fbc5df_9812f0b3",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "311b6f8e_a36ec9ee",
         "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
         "patchSetId": 144
@@ -325,6 +613,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e865fe6d_00c8a9ba",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "311b6f8e_a36ec9ee",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -345,6 +651,24 @@
     },
     {
       "key": {
+        "uuid": "a1054236_dba0390d",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Hi Beto, yes, it\u0027s an extraction of the operator into the folder here. Sorry, I didn\u0027t get your point though :) P.S. scorecard_check_operator.yml is a temporary dev, to retrieve some logs while waiting for the patch from the preflight team.",
+      "parentUuid": "11a7ff15_eb8a73cb",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3da53a01_ae497bf6",
         "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
         "patchSetId": 144
@@ -362,6 +686,24 @@
     },
     {
       "key": {
+        "uuid": "0648a0d1_7e53e7a6",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "sorry Beto, I\u0027m not sure on getting your point in the previous comment",
+      "parentUuid": "3da53a01_ae497bf6",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "87dce539_4b67dbad",
         "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
         "patchSetId": 144
@@ -373,6 +715,24 @@
       "writtenOn": "2021-11-11T16:19:53Z",
       "side": 1,
       "message": "Same impression than in in preflight_check_operator, is it worth to move all the tasks prior to this one to a pre-run? (Template scorecad config can remain under tests)",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1e022c52_3909286f",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "yes, I like the idea, I\u0027m going to move all static images mirroring into the pre-run step.",
+      "parentUuid": "87dce539_4b67dbad",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -402,6 +762,30 @@
     },
     {
       "key": {
+        "uuid": "35983aff_a51f7429",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "scorecard_check_operator.yml is just to retrieve some logs missing by preflight tests. It normally is to be deleted in 1-2 weeks, after the next release of preflight, so I\u0027d prefer do not to split it to simplify the cleanup later on.\nConcerning the split of preflight_check_operator - I agree, I\u0027ll do that in the next iteration of the review.",
+      "parentUuid": "ce45b329_937d81c9",
+      "range": {
+        "startLine": 137,
+        "startChar": 0,
+        "endLine": 137,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8c09f054_356a454d",
         "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
         "patchSetId": 144
@@ -425,6 +809,30 @@
     },
     {
       "key": {
+        "uuid": "7dbe3248_7dbfb523",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Hi Ramon, I removed the dupe. \nConcerning moving to a post-run, it\u0027s not that easy. I\u0027m testing several operators in a loop (roles/preflight/tasks/tests.yml), and these tests run several pods/jobs/install operators, etc. So I do prefer to create and delete namespace for each operator. \nAlthough, I like the idea to split this large playbook into several stages pre-run/run/etc.\nI\u0027ll do that in the second iteration of the review, we could move to the pre-run step a mirroring of \"static\" images: busybox, ubi8, and ocp-v4.0-art-dev. WDYT?\nP.S. I\u0027ll mark this comment as done to keep just one open branch for the discussion.",
+      "parentUuid": "8c09f054_356a454d",
+      "range": {
+        "startLine": 200,
+        "startChar": 0,
+        "endLine": 200,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8427ce8d_f0162a50",
         "filename": "roles/preflight/tasks/tests.yml",
         "patchSetId": 144
@@ -436,6 +844,24 @@
       "writtenOn": "2021-11-11T20:10:09Z",
       "side": 1,
       "message": "this file should be named tasks/main.yml",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0f6bd004_6178ef3b",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "I reused the naming conventions from the cnf-cert role where `main.yml` is never used and `tests.yml` is called from plays/tests.yml. Should we change it everywhere?",
+      "parentUuid": "8427ce8d_f0162a50",
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -459,6 +885,24 @@
     },
     {
       "key": {
+        "uuid": "f7ebdb9d_6abbd701",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8a111931_b73f1261",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ba2920e2_0b901fb8",
         "filename": "roles/preflight/tasks/tests.yml",
         "patchSetId": 144
@@ -473,6 +917,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a6d3750e_2d5d70e1",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "\u003e Should this be added to defaults/main.yml?  \n\nWe discussed that with Fred and he prefers to have a scorecard binary path and list of operators to check directly in the pipeline. Initially, it was in fake-cnf but I\u0027m going to move it into example-cnf.  \n\n\u003e The comment verbiage should be added to the docs at least.\n\nDone.\n\n\u003e Also, all role checks should be grouped at the top, the way it\u0027s done right now you would potentially run the preflight checks, then fail when running the operator-sdk tests.\n\nScorecard tests are here just to retrieve some logs which are currently not displayed by preflight. They are not mandatory, and (I hope), could be deleted in 1-2 weeks after the next preflight release.",
+      "parentUuid": "ba2920e2_0b901fb8",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -493,6 +955,24 @@
     },
     {
       "key": {
+        "uuid": "994b03d9_e1992bd2",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "operator-sdk scorecard tests are optional. They\u0027re here to retrieve some logs not yet displayed by preflight. So if the operator-sdk binary is not defined, I\u0027d prefer simply to display an error message.",
+      "parentUuid": "cb20a365_fa181226",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a5c1dc29_e3ab1f3e",
         "filename": "roles/preflight/tasks/tests.yml",
         "patchSetId": 144
@@ -507,6 +987,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27d785fe_9e49e8a4",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "operator-sdk scorecard tests are optional. They\u0027re here to retrieve some logs not yet displayed by preflight. So if the operator-sdk binary is not defined, I\u0027d prefer simply to display an error message.",
+      "parentUuid": "a5c1dc29_e3ab1f3e",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -557,6 +1055,30 @@
     },
     {
       "key": {
+        "uuid": "54b3c711_475637ff",
+        "filename": "roles/preflight/templates/example_preflight_config.yaml",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e49fcc7d_19107651",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "15ebe388_90dab3ce",
         "filename": "roles/preflight/templates/scorecard-busybox-ubi.yaml.j2",
         "patchSetId": 144
@@ -571,6 +1093,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b5268a61_2ba3398a",
+        "filename": "roles/preflight/templates/scorecard-busybox-ubi.yaml.j2",
+        "patchSetId": 144
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15ebe388_90dab3ce",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -618,6 +1158,30 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ff6c17a_352bd0aa",
+        "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
+        "patchSetId": 144
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-15T12:40:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "beba3eef_16279ed1",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
