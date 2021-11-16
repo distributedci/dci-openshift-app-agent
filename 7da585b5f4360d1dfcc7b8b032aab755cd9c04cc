@@ -447,6 +447,24 @@
     },
     {
       "key": {
+        "uuid": "5bee8879_3e5a48fb",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-16T16:46:32Z",
+      "side": 1,
+      "message": "I think it\u0027s fine with the changes you have made right now, but leaving this opened in case Beto wants to add something.",
+      "parentUuid": "ccfcd6d2_a3b8dd6f",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d0150242_a6b80aec",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 144
@@ -561,6 +579,54 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "829d576b_ce30ab38",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-16T16:46:32Z",
+      "side": 1,
+      "message": "Fine from my side",
+      "parentUuid": "416fff62_07c3ebff",
+      "range": {
+        "startLine": 166,
+        "startChar": 0,
+        "endLine": 166,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "584b9036_578054e0",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 166,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-16T16:46:32Z",
+      "side": 1,
+      "message": "Okey from my side, it you think it is better in that way for the moment.",
+      "parentUuid": "416fff62_07c3ebff",
+      "range": {
+        "startLine": 166,
+        "startChar": 0,
+        "endLine": 166,
+        "endChar": 42
+      },
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -736,6 +802,24 @@
       "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "38bcc243_add256c0",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 144
+      },
+      "lineNbr": 127,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-16T16:46:32Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1e022c52_3909286f",
+      "revId": "7da585b5f4360d1dfcc7b8b032aab755cd9c04cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
