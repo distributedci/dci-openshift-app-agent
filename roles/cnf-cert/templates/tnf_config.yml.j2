@@ -1,8 +1,18 @@
 ---
 targetNameSpaces:
-  - name: {{ tnf_ns }}
+{% if tnf_config is iterable %}
+{% for item in tnf_config %}
+{% if item.namespace is defined and item.namespace|length %}
+  - name: {{ item.namespace }}
+{% endif %}
+{% endfor %}
+{% endif %}
 targetPodLabels:
-{% for label in tnf_targetpodlabels %}
+{% if tnf_config is iterable %}
+{% for item in tnf_config %}
+{% if item.targetpodlabels is defined and item.targetpodlabels is iterable %}
+{% for label in item.targetpodlabels %}
+{% if label|length %}
 {% if not (label|regex_search('.+?/')) %}
 ## Matches "<name>=<value>", where prefix: , name: <name>
   - prefix:
@@ -13,7 +23,11 @@ targetPodLabels:
     name: {{ label|regex_search('/.+?=')|regex_replace('/', '')|regex_replace('=', '') }}
 {% endif %}
     value: {{ label|regex_search('=.*')|regex_replace('=', '') }}
+{% endif %}
 {% endfor %}
+{% endif %}
+{% endfor %}
+{% endif %}
 
 certifiedcontainerinfo:
 
