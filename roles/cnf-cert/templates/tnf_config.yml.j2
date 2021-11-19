@@ -1,8 +1,11 @@
 ---
 targetNameSpaces:
-  - name: {{ tnf_ns }}
+{% for item in tnf_config %}
+  - name: {{ item.namespace }}
+{% endfor %}
 targetPodLabels:
-{% for label in tnf_targetpodlabels %}
+{% for item in tnf_config %}
+{% for label in item.targetpodlabels %}
 {% if not (label|regex_search('.+?/')) %}
 ## Matches "<name>=<value>", where prefix: , name: <name>
   - prefix:
@@ -13,6 +16,7 @@ targetPodLabels:
     name: {{ label|regex_search('/.+?=')|regex_replace('/', '')|regex_replace('=', '') }}
 {% endif %}
     value: {{ label|regex_search('=.*')|regex_replace('=', '') }}
+{% endfor %}
 {% endfor %}
 
 certifiedcontainerinfo:
