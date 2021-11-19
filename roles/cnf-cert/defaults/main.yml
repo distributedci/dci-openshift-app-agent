@@ -4,9 +4,11 @@ test_network_function_version: "v3.1.0"
 dci_openshift_app_image: "quay.io/testnetworkfunction/cnf-test-partner:latest"
 tnf_if: eth0
 tnf_suites: "diagnostic access-control networking lifecycle observability platform-alteration operator"
-tnf_targetpodlabels: []
-tnf_operators_regexp: ""
-tnf_exclude_connectivity_regexp: ""
+tnf_config:
+  - namespace: "{{ dci_openshift_app_ns }}"
+    targetpodlabels: []
+    operators_regexp: ""
+    exclude_connectivity_regexp: ""
 tnf_non_intrusive_only: true
 tnf_run_cfd_test: false
 # This is the tools image from the 4.7.20 release
