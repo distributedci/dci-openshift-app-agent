@@ -1,0 +1,33 @@
+---
+- name: Check if test pods exist
+  k8s_info:
+    api_version: v1
+    kind: Pod
+    namespace: "{{ app_ns }}"
+    label_selectors:
+      - test-network-function.com/generic = target
+  register: test_pods
+
+- name: Create a Deployment with 2 replicas of the testing pod
+  k8s:
+    state: present
+    definition: "{{ lookup('template', 'templates/test_deployment.yml.j2') | from_yaml }}"
+  when: test_pods.resources|length == 0
+
+- name: Wait until all test pods are running
+  k8s_info:
+    namespace: "{{ app_ns }}"
+    kind: Pod
+    label_selectors:
+      - app=test
+  register: test_result
+  retries: 60
+  delay: 5
+  until:
+    - "test_result.resources|length == 2"
+    - "'status' in test_result.resources[0]"
+    - "'phase' in test_result.resources[0].status"
+    - "test_result.resources[0].status.phase == 'Running'"
+    - "'status' in test_result.resources[1]"
+    - "'phase' in test_result.resources[1].status"
+    - "test_result.resources[1].status.phase == 'Running'"
