@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "04619cf9_909f9311",
+        "filename": "README.md",
+        "patchSetId": 167
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-22T11:19:03Z",
+      "side": 1,
+      "message": "Thank you to notice, Ramon, merge artifact, will remove it.",
+      "parentUuid": "0ebd5981_7d2d910e",
+      "range": {
+        "startLine": 136,
+        "startChar": 0,
+        "endLine": 136,
+        "endChar": 231
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "968de45f_7f6d0058",
         "filename": "roles/preflight/defaults/main.yml",
         "patchSetId": 167
@@ -45,6 +69,30 @@
       "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59ce27b4_47ce35d0",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 167
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-22T11:19:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "968de45f_7f6d0058",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 19
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "7b6072bb_be795c86",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 167
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-22T11:19:03Z",
+      "side": 1,
+      "message": "I have a hope to delete this scorecard playbook in 1-2 weeks, once the fix for log files is ready on the preflight side. That\u0027s why I keep it as one piece and do not split and optimize.",
+      "parentUuid": "7b12e2d3_2ed7e9bb",
+      "range": {
+        "startLine": 101,
+        "startChar": 1,
+        "endLine": 101,
+        "endChar": 42
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "99a4e2cd_59a1f489",
         "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
         "patchSetId": 167
@@ -94,6 +166,30 @@
     },
     {
       "key": {
+        "uuid": "93678834_d140b411",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 167
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-22T11:19:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "99a4e2cd_59a1f489",
+      "range": {
+        "startLine": 162,
+        "startChar": 0,
+        "endLine": 162,
+        "endChar": 42
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8e05eaa4_1e76d71b",
         "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
         "patchSetId": 167
@@ -114,6 +210,30 @@
       "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd0ed5df_a08415a8",
+        "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
+        "patchSetId": 167
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-22T11:19:03Z",
+      "side": 1,
+      "message": "I forgot to push a change - scorecard-test image should be taken from preflight runtime-assets. This way we could have consistent preflight and operator-sdk scorecard tests. Thank you to notice.",
+      "parentUuid": "8e05eaa4_1e76d71b",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
