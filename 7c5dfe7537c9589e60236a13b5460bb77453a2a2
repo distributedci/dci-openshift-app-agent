@@ -16,6 +16,24 @@
       "revId": "7c5dfe7537c9589e60236a13b5460bb77453a2a2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f2eb0c44_23012444",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-22T09:46:31Z",
+      "side": 1,
+      "message": "Hi Beto! Thanks for your comment 😊 I will try to explain you why we are defining this in this way.\n\nAt least, what I am seeing in other partners that are using d-o-a-a and intend to use multiple namespaces, they would need to provide the data related to the workloads to be tested for each namespace. That\u0027s why I have defined this complex variable called tnf_config, which is a list of items, where each element of the list contains the namespace, the labels, etc. An example of this with more than one namespace can be seen here, in the update of tnf-test-cnf pipeline: https://github.com/dci-labs/dallas-pipelines/pull/171/files#diff-e944dec8fa3427e1b06e55cd07e4acfff5e69620fa5f53f71d31d98fcc99a909R39-R47\n\nAnd I think it is better to define this in this way rather than having a comma-separated list of namespaces; because, for each namespace, we have to define the labels to be used and if we want to filter any operator or pod with the regexp variables we have. For achieving this, the easiest way is to have this complex structure, where each element of the list have a different namespace to refer to.\n\nAnd also, just to remark that these namespaces have to be created beforehand by the partner or to be created in the hooks. In d-o-a-a, we offer the creation-deletion of a default namespace, which is the one under dci_openshift_app_ns, as an example. If some partner needs more, they will have to create them, and include the reference in this complex structure in case they want to execute the CNF Cert Suite test.",
+      "parentUuid": "5d283d0d_542de338",
+      "revId": "7c5dfe7537c9589e60236a13b5460bb77453a2a2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
