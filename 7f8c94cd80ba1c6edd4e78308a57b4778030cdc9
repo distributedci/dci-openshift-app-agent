@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0ebd5981_7d2d910e",
+        "filename": "README.md",
+        "patchSetId": 167
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-22T10:13:21Z",
+      "side": 1,
+      "message": "test_network_function_version is already present above, so this is not needed",
+      "range": {
+        "startLine": 136,
+        "startChar": 0,
+        "endLine": 136,
+        "endChar": 231
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "968de45f_7f6d0058",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 167
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-22T10:13:21Z",
+      "side": 1,
+      "message": "also to be included in the readme files?",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 19
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7b12e2d3_2ed7e9bb",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 167
+      },
+      "lineNbr": 101,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-22T10:13:21Z",
+      "side": 1,
+      "message": "For preflight namespace, a variable is used. Maybe a variable for scorecard testing namespace should be defined too",
+      "range": {
+        "startLine": 101,
+        "startChar": 1,
+        "endLine": 101,
+        "endChar": 42
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99a4e2cd_59a1f489",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 167
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-22T10:13:21Z",
+      "side": 1,
+      "message": "Same as previous comment.",
+      "range": {
+        "startLine": 162,
+        "startChar": 0,
+        "endLine": 162,
+        "endChar": 42
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e05eaa4_1e76d71b",
+        "filename": "roles/preflight/templates/scorecard-test-config.yaml.j2",
+        "patchSetId": 167
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-22T10:13:21Z",
+      "side": 1,
+      "message": "just to recap, because I may miss something, why has the file extension been changed to .yaml.j2? Because there are not dynamic variables to be generated here, it is just a static file (so .j2 is not really needed). Or is it intended to include dynamic variables here?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "7f8c94cd80ba1c6edd4e78308a57b4778030cdc9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
