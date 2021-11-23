@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6155f1bb_36d8ff00",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "if tnf_config is empty or undefined the default value you\u0027re providing will fail as there is no item.namespace in it.\n\nI\u0027d remove the default and add a\nwhen:\n  - tnf_config is defined\n  - tnf_config|length\n  - tnf_config[0].namespace is defined",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7221f0a3_0303dcc1",
+        "filename": "samples/tnf_test_example/hooks/create_namespaces.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "I\u0027m not sure we need to check if a ns exist, the next task should ensure a ns is present after being executed",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "18a334a5_a8629a2a",
+        "filename": "samples/tnf_test_example/hooks/create_test_pods.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "Maybe we don\u0027t need this one either, not quite sure, but it would be worth testing if running the next task twice would get us the same result",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b8ff7529_4402b93b",
+        "filename": "samples/tnf_test_example/hooks/delete_namespaces.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "Is it needed to check if a ns exist to define it is absent in k8s module?\nI\u0027d expect that after this task is executed a ns should not exist either if there was one or not before",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d9846c8d_d33122f7",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "This is interesting, I wonder if the task will load if the loop does not have elements 😮\nI think another way to do this is by only executing when tnf_config has an element, i.e.\nwhen:\n  - tnf_config is defined\n  - tnf_config|length\n\nI also wonder if you want to execute this with dci_openshift_app_ns when the tnf_config does not have any entry",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c656584_84b5f36a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e0981c8f_835a4451",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-23T23:57:00Z",
+      "side": 1,
+      "message": "This one is harder to read and the comment is not quite clear to me, could you provide more details here?",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
