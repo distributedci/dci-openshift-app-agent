@@ -34,6 +34,24 @@
       "revId": "7c5dfe7537c9589e60236a13b5460bb77453a2a2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9efda9b4_87f2bc0c",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-11-23T16:47:15Z",
+      "side": 1,
+      "message": "Ramón,Thanks for the clarification and the example. Looks good!",
+      "parentUuid": "f2eb0c44_23012444",
+      "revId": "7c5dfe7537c9589e60236a13b5460bb77453a2a2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
