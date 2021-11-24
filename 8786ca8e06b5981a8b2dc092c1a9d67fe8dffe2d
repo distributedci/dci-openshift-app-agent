@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "30e3f403_3522a7c6",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "great documentation as usual, thank you Ramon!",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6155f1bb_36d8ff00",
         "filename": "plays/dump_ocp_logs.yml",
         "patchSetId": 3
@@ -13,6 +30,75 @@
       "writtenOn": "2021-11-23T23:57:00Z",
       "side": 1,
       "message": "if tnf_config is empty or undefined the default value you\u0027re providing will fail as there is no item.namespace in it.\n\nI\u0027d remove the default and add a\nwhen:\n  - tnf_config is defined\n  - tnf_config|length\n  - tnf_config[0].namespace is defined",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aac4caa8_b79137e8",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "Another approach would be to fail if the variable is not properly defined:\n\nfail:\n  msg: Impossible to run cnf tests. Please provide tnf_config variable in a proper format.\nwhen:\n  - tnf_config is undefined\n  - tnf_config | type_debug !\u003d \"list\"\n  - tnf_config | length \u003d\u003d 0",
+      "parentUuid": "6155f1bb_36d8ff00",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27a88709_414dad7f",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "It may not be safe to use item variables in complex playbooks, you could probably define the dedicated variable here\n```\nloop: \"{{ ns_list }}\"\nloop_control:\n  loop_var: get_logs_ns\n```",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0c6a620d_55fbbb52",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "Hi Ramon, I see that these scripts were here before and you didn\u0027t introduce them. But is there any particular reason to have them aside written in bash instead of rewriting them in ansible and include them in playbook directly?",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a1dcb7a_8fffcd73",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "Hi Ramon, it seems like sort of default definition of tnf_config. But can you actually run a pipeline with these default values? If not, maybe it\u0027s better just to verify tnf_config variable somewhere in cnf-cert pre-run and fail of the variable is not compliant?",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -70,6 +156,41 @@
     },
     {
       "key": {
+        "uuid": "380d2b07_d9c7b54e",
+        "filename": "samples/tnf_test_example/hooks/delete_namespaces.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "b8ff7529_4402b93b",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43568755_4e118f96",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "as above, it\u0027s probably better to use loop_var to define a variable with a custom name instead of `item`.",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "d9846c8d_d33122f7",
         "filename": "samples/tnf_test_example/hooks/install.yml",
         "patchSetId": 3
@@ -81,6 +202,40 @@
       "writtenOn": "2021-11-23T23:57:00Z",
       "side": 1,
       "message": "This is interesting, I wonder if the task will load if the loop does not have elements 😮\nI think another way to do this is by only executing when tnf_config has an element, i.e.\nwhen:\n  - tnf_config is defined\n  - tnf_config|length\n\nI also wonder if you want to execute this with dci_openshift_app_ns when the tnf_config does not have any entry",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "db601ccf_0c10f276",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "it seems like default values are not needed here, since they\u0027re already defined in defaults/main",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6f10e4f1_092c8ff6",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-24T08:56:38Z",
+      "side": 1,
+      "message": "it seems like default values are not needed here, since they\u0027re already defined in defaults/main",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
