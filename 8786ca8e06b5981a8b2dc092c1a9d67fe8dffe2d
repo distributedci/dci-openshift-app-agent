@@ -230,6 +230,24 @@
     },
     {
       "key": {
+        "uuid": "438e9d0e_c82405a8",
+        "filename": "samples/tnf_test_example/hooks/create_namespaces.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-24T18:27:11Z",
+      "side": 1,
+      "message": "I think it was added in there because it was done before in the sample: https://github.com/redhat-cip/dci-openshift-app-agent/commit/95281aa8857958d61fe4df6e75649f1e237538dd#diff-68cba3e8fd0a66e3d8364b7578c7cd70a04023f298a894902157c649c92dc6b2 😊 either way I think is fair to challenge why we are doing it this way\n\nI understand that you want to re-use what may be there, I\u0027m not quite sure if that would be ideal or not but let\u0027s put that on a side for a second. If you want to reuse a ns that is already in place, by running a task that set the state to present should not change what\u0027s already in place.  From the ansible doc: \n\"If set to present, an existing object will be patched, if its attributes differ from those specified using resource_definition or src.\" So it should be safe to run that task.\n\nRegarding re-using a ns that may be in place, it really depends if you want to have a fresh ns everytime, if that would be the case then it would be better to delete then create the ns.",
+      "parentUuid": "76856a3b_6fd1a769",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "18a334a5_a8629a2a",
         "filename": "samples/tnf_test_example/hooks/create_test_pods.yml",
         "patchSetId": 3
@@ -259,6 +277,24 @@
       "side": 1,
       "message": "As I said in create_namespaces, I remember I had problems in the past if not checking the pods beforehand in case d-o-a-a failed and the namespaces/pods created in the hooks were not removed. With this check, if that\u0027s the case, we avoid creating them again. I saved a lot of time when doing troubleshooting thanks to this, honestly, hehe, so I would say I would maintain it, but I don\u0027t know what you think.",
       "parentUuid": "18a334a5_a8629a2a",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b0502af9_cea6e1c2",
+        "filename": "samples/tnf_test_example/hooks/create_test_pods.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-24T18:27:11Z",
+      "side": 1,
+      "message": "Thanks for the info, I agree that it will reduce the time by not running it again, the only concern I have is that we are assuming the deployed pods are exactly the ones we expect during the run.\n\nIf there is any change in the templates/test_deployment.yml.j2 then we won\u0027t catch it, that\u0027s why I think that we should not check the pods and always apply the deployment, if the deployment is the same as expected, then it shouldn\u0027t take that long, wdyt?",
+      "parentUuid": "d4f176d1_2b1a5f50",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true

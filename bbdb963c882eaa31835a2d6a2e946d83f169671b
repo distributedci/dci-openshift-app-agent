@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c10819bf_16a57c75",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-24T18:27:11Z",
+      "side": 1,
+      "message": "nit: empty space",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e9365cf6_e3b1459c",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-11-24T18:27:11Z",
+      "side": 1,
+      "message": "I think one of the downsides of looping an empty list is that while effectively the task is being skipped, it is not displayed in the task that it was skipped. In your example you will see this:\n\nThis task was skipped because the list was empty:\n```\nTASK [Obtain namespaces from tnf_config variable - excepting dci_openshift_app_ns] ***************************************\n```\n\nThis other task was skipped due to a condition not met:\n```\nTASK [Obtain namespaces from tnf_config variable - excepting dci_openshift_app_ns] ***************************************\nskipping: [localhost] \u003d\u003e (item\u003d{\u0027namespace\u0027: \u0027test-cnf\u0027, \u0027targetpodlabels\u0027: [\u0027environment\u003dtest\u0027], \u0027operators_regexp\u0027: \u0027\u0027, \u0027exclude_connectivity_regexp\u0027: \u0027\u0027}) \n\n```\n\nEffectively the result is the same.\n\n\nRegarding the defaults within the task, I wonder if by failing earlier as Tatiana mentioned would be a better approach to make easier to read the tasks where we are adding defaults.\n\nMy thought is that if a variable that is expected is not defined then defaults.yml should provide its value in a sane way. But, if an invalid variable is provided then we check earlier and fail OR skip the related tests (TNF) if it does not meet the requirements, instead of adding these defaults values, wdyt?",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
