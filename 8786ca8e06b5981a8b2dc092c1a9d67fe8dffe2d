@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "c363907c_ec7d8953",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "thanks!! 😄",
+      "parentUuid": "30e3f403_3522a7c6",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6155f1bb_36d8ff00",
         "filename": "plays/dump_ocp_logs.yml",
         "patchSetId": 3
@@ -54,6 +72,24 @@
     },
     {
       "key": {
+        "uuid": "c4f93962_f0232f81",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Thanks for your response guys. But, in fact, the purpose of using `tnf_config|default([])` in the loop clause is to avoid the cases of tnf_config being empty or undefined. In that case, tnf_config will not be iterated and it will not enter in the task, so consequently item.namespace will not be checked in that case. \n\nI tested it yesterday locally and it worked for these cases. I have created a Gist to reflect this, in case you want to check it: https://gist.github.com/ramperher/877b784e2652e4e6fc6fedb60937b142\n\nSo, I would say I would keep the task as it is right now. However, I have also added the condition of `item.namespace is defined` and `item.namespace|length` in the when clause, just in case a tnf_config variable is provided without a namespace. You will see it in the next patchset.\n\nTell me what you think about that, just to be sure.",
+      "parentUuid": "aac4caa8_b79137e8",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "27a88709_414dad7f",
         "filename": "plays/dump_ocp_logs.yml",
         "patchSetId": 3
@@ -71,6 +107,24 @@
     },
     {
       "key": {
+        "uuid": "c7b096b5_3efa3eb8",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Nice catch :) done!",
+      "parentUuid": "27a88709_414dad7f",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0c6a620d_55fbbb52",
         "filename": "plays/dump_ocp_logs.yml",
         "patchSetId": 3
@@ -82,6 +136,24 @@
       "writtenOn": "2021-11-24T08:56:38Z",
       "side": 1,
       "message": "Hi Ramon, I see that these scripts were here before and you didn\u0027t introduce them. But is there any particular reason to have them aside written in bash instead of rewriting them in ansible and include them in playbook directly?",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bb637cb0_943b2302",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "This was introduced in this CR: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/22648, to upload cluster logs that may be interesting for troubleshooting. And the reason why it\u0027s using a bash script, it\u0027s because it is following the same approach than in d-o-a here: https://github.com/redhat-cip/dci-openshift-agent/blob/master/plays/get-logs.yml#L50-L55",
+      "parentUuid": "0c6a620d_55fbbb52",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -105,6 +177,24 @@
     },
     {
       "key": {
+        "uuid": "bf98abc3_4adf8849",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Typically, if you want to run a pipeline with the execution of the CNF Cert Suite, you will have to define this variable, so this tnf_config would be overriden then. I have mainly defined this default tnf_config to avoid checkings in the cnf-cert role, in fact, which is the approach that I\u0027ve been following normally, rather than making d-o-a-a fail (that\u0027s why there\u0027s a lot of documentation in the README too).\n\nMaybe, what I can do is to include some \"is defined\" clauses within the cnf-cert role, when iterating over the items of the list and checking the values for namespace and targetpodlabels (which are the ones used in cnf-cert role; the regexp are mainly for the hooks). I will modify the code to do that, in the same way that I\u0027ve done in dump_ocp_logs.yml, for example.\n\nAnd, in case you execute a pipeline and you forget to set tnf_config to the correct values, this default value will be used and nothing will fail, but the CNF Cert Suite, when trying to execute, it will not do anything because no targetpodlabels are defined, so the execution will finish without tnf tests.",
+      "parentUuid": "5a1dcb7a_8fffcd73",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7221f0a3_0303dcc1",
         "filename": "samples/tnf_test_example/hooks/create_namespaces.yml",
         "patchSetId": 3
@@ -122,6 +212,24 @@
     },
     {
       "key": {
+        "uuid": "76856a3b_6fd1a769",
+        "filename": "samples/tnf_test_example/hooks/create_namespaces.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "I am just doing the same as done in the install play, to be aligned: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/plays/install.yml#L3-L17. It is because I experienced cases in the past where d-o-a-a didn\u0027t finish because of a failure and, consequently, it didn\u0027t delete the namespaces and pods created in the hooks. With this, we are reusing them in a new run.",
+      "parentUuid": "7221f0a3_0303dcc1",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "18a334a5_a8629a2a",
         "filename": "samples/tnf_test_example/hooks/create_test_pods.yml",
         "patchSetId": 3
@@ -133,6 +241,24 @@
       "writtenOn": "2021-11-23T23:57:00Z",
       "side": 1,
       "message": "Maybe we don\u0027t need this one either, not quite sure, but it would be worth testing if running the next task twice would get us the same result",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d4f176d1_2b1a5f50",
+        "filename": "samples/tnf_test_example/hooks/create_test_pods.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "As I said in create_namespaces, I remember I had problems in the past if not checking the pods beforehand in case d-o-a-a failed and the namespaces/pods created in the hooks were not removed. With this check, if that\u0027s the case, we avoid creating them again. I saved a lot of time when doing troubleshooting thanks to this, honestly, hehe, so I would say I would maintain it, but I don\u0027t know what you think.",
+      "parentUuid": "18a334a5_a8629a2a",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -174,6 +300,24 @@
     },
     {
       "key": {
+        "uuid": "3191d39a_103ef254",
+        "filename": "samples/tnf_test_example/hooks/delete_namespaces.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Agree, to follow the same approach than done in d-o-a-a plays (e.g. https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/plays/post-run.yml#L25-L32), I will remove the check.",
+      "parentUuid": "380d2b07_d9c7b54e",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "43568755_4e118f96",
         "filename": "samples/tnf_test_example/hooks/install.yml",
         "patchSetId": 3
@@ -191,6 +335,24 @@
     },
     {
       "key": {
+        "uuid": "5e434afc_8a7c1fa7",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "43568755_4e118f96",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d9846c8d_d33122f7",
         "filename": "samples/tnf_test_example/hooks/install.yml",
         "patchSetId": 3
@@ -202,6 +364,24 @@
       "writtenOn": "2021-11-23T23:57:00Z",
       "side": 1,
       "message": "This is interesting, I wonder if the task will load if the loop does not have elements 😮\nI think another way to do this is by only executing when tnf_config has an element, i.e.\nwhen:\n  - tnf_config is defined\n  - tnf_config|length\n\nI also wonder if you want to execute this with dci_openshift_app_ns when the tnf_config does not have any entry",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e76d00ae_81132ea5",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Curiously, the response is that the task is not executed if the list is empty. You can check it in the Gist I referenced in dump_ocp_logs comments: https://gist.github.com/ramperher/877b784e2652e4e6fc6fedb60937b142, if you check the second block, you will see the task that uses a variable that does not exist is not executed because, then, it uses an empty list and it is not iterated.\nSo, in that case, if you find it fine, I would keep the task as it is right now, to follow the same approach in all cases.\n\nRegarding your question about dci_openshift_app_ns, if no tnf_config entry is provided, then the task will not be executed. We don\u0027t need to create dci_openshift_app_ns namespace in a separate task here because it is already done in the plays: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/plays/install.yml#L3-L17, as commented above.\n\nMaybe, what I can do here (and in the rest of the tasks included here in install hook) is to include some checkings for the variables defined on each item of tnf_config, because it\u0027s true it does not make much sense to directly use item.namespace and set a default value in case it does not exist. Maybe it\u0027s better, e.g., to check if namespace exists and if the string has length \u003e 0, and if not, the task will not be called. I will do this for the next patchset.",
+      "parentUuid": "d9846c8d_d33122f7",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -225,6 +405,24 @@
     },
     {
       "key": {
+        "uuid": "d4d96d18_1c42325e",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Note that tnf_config is defined in the cnf-cert role, and the hooks are not executed within the cnf-cert role scope, so in that case, we need to set the default values because the variables are not taking the default values from cnf-cert/defaults/main (I had problem with this in the past and that\u0027s why I am including the defaults here).",
+      "parentUuid": "db601ccf_0c10f276",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6f10e4f1_092c8ff6",
         "filename": "samples/tnf_test_example/hooks/install.yml",
         "patchSetId": 3
@@ -236,6 +434,24 @@
       "writtenOn": "2021-11-24T08:56:38Z",
       "side": 1,
       "message": "it seems like default values are not needed here, since they\u0027re already defined in defaults/main",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e93887f6_c2c658ff",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Same as above.",
+      "parentUuid": "6f10e4f1_092c8ff6",
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -259,6 +475,24 @@
     },
     {
       "key": {
+        "uuid": "e8d259b5_62341e8f",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "Same as above",
+      "parentUuid": "5c656584_84b5f36a",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e0981c8f_835a4451",
         "filename": "samples/tnf_test_example/hooks/teardown.yml",
         "patchSetId": 3
@@ -273,6 +507,24 @@
       "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3f0e9ef3_c1354b2a",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-24T13:04:32Z",
+      "side": 1,
+      "message": "done, also following the same approach that commented in other comments.",
+      "parentUuid": "e0981c8f_835a4451",
+      "revId": "8786ca8e06b5981a8b2dc092c1a9d67fe8dffe2d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
