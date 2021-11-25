@@ -33,6 +33,40 @@
       "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5edce9cf_e8dcea4b",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-25T10:24:01Z",
+      "side": 1,
+      "message": "Hi Ramon, you could probably merge \"Create namespaces if not done before\" and \"Create test pods on each namespace if not done before\" in one block, to not duplicate the same loop and conditions.",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f6237a7_ced877fd",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-11-25T10:24:01Z",
+      "side": 1,
+      "message": "If I got it right, tnf_config is now defined in 6 places:\n- in cnf-cert/default\n- in samples/tnf_test_example/hooks/install\n- in samples/tnf_test_example/hooks/teardown\n- in plays/dump_ocp_logs\n- in the external config example-cnf-pipeline\n- in the external config for the hooks\n\nIt might be very difficult to debug. As Tony suggested above, maybe the simpler way would be to validate this complex variable somewhere at the pre-run or install, to reduce the number of places where tnf_config is defined.",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
