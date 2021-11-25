@@ -16,6 +16,24 @@
       "revId": "d1cbd4a1c97cf05acd5f13262834e682f4df902d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b1b65d6a_be83f58b",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2021-11-25T01:16:12Z",
+      "side": 1,
+      "message": "This will override the ansible.cfg only if the file *hosts* is present in the config_dir.\nBy default, the config_dir is /etc/dci-openshift-app-agent/ but with the config file[1] it can be somewhere else.\nThis is very useful is you want multiple configurations (hooks, settings and inventory) in one git repository.\n\n\n[1] It is the documentation for doa, but is also valid in doaa : https://doc.distributed-ci.io/dci-openshift-agent/#overloading-settings-and-hooks-directories",
+      "parentUuid": "241f6763_f245653e",
+      "revId": "d1cbd4a1c97cf05acd5f13262834e682f4df902d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
