@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "9ed1b269_ddc67482",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-26T14:56:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c10819bf_16a57c75",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e9365cf6_e3b1459c",
         "filename": "plays/dump_ocp_logs.yml",
         "patchSetId": 4
@@ -30,6 +48,24 @@
       "writtenOn": "2021-11-24T18:27:11Z",
       "side": 1,
       "message": "I think one of the downsides of looping an empty list is that while effectively the task is being skipped, it is not displayed in the task that it was skipped. In your example you will see this:\n\nThis task was skipped because the list was empty:\n```\nTASK [Obtain namespaces from tnf_config variable - excepting dci_openshift_app_ns] ***************************************\n```\n\nThis other task was skipped due to a condition not met:\n```\nTASK [Obtain namespaces from tnf_config variable - excepting dci_openshift_app_ns] ***************************************\nskipping: [localhost] \u003d\u003e (item\u003d{\u0027namespace\u0027: \u0027test-cnf\u0027, \u0027targetpodlabels\u0027: [\u0027environment\u003dtest\u0027], \u0027operators_regexp\u0027: \u0027\u0027, \u0027exclude_connectivity_regexp\u0027: \u0027\u0027}) \n\n```\n\nEffectively the result is the same.\n\n\nRegarding the defaults within the task, I wonder if by failing earlier as Tatiana mentioned would be a better approach to make easier to read the tasks where we are adding defaults.\n\nMy thought is that if a variable that is expected is not defined then defaults.yml should provide its value in a sane way. But, if an invalid variable is provided then we check earlier and fail OR skip the related tests (TNF) if it does not meet the requirements, instead of adding these defaults values, wdyt?",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7d199563_a4a786a8",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-26T14:56:23Z",
+      "side": 1,
+      "message": "Oh, you\u0027re right with the output provided in both cases. In that case, I will follow your advice and include the `tnf_config is defined` clause instead.\n\nRegarding the defaults, I will try to follow the second recommendation, to skip tasks in case the variable is not defined correctly. I will include it in my next patchset.",
+      "parentUuid": "e9365cf6_e3b1459c",
       "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "25b024fb_4bc535d9",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-26T14:56:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5edce9cf_e8dcea4b",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f6237a7_ced877fd",
         "filename": "samples/tnf_test_example/hooks/teardown.yml",
         "patchSetId": 4
@@ -64,6 +118,24 @@
       "writtenOn": "2021-11-25T10:24:01Z",
       "side": 1,
       "message": "If I got it right, tnf_config is now defined in 6 places:\n- in cnf-cert/default\n- in samples/tnf_test_example/hooks/install\n- in samples/tnf_test_example/hooks/teardown\n- in plays/dump_ocp_logs\n- in the external config example-cnf-pipeline\n- in the external config for the hooks\n\nIt might be very difficult to debug. As Tony suggested above, maybe the simpler way would be to validate this complex variable somewhere at the pre-run or install, to reduce the number of places where tnf_config is defined.",
+      "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "914e8ef9_c55d696c",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-11-26T14:56:23Z",
+      "side": 1,
+      "message": "Yes, both of you are right. As I told Tony, I will change the default clauses to just check if the variable is defined, and if not defined correctly, the tasks will be skipped.",
+      "parentUuid": "5f6237a7_ced877fd",
       "revId": "bbdb963c882eaa31835a2d6a2e946d83f169671b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
