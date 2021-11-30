@@ -34,6 +34,24 @@
       "revId": "d1cbd4a1c97cf05acd5f13262834e682f4df902d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b595cce5_a61027af",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-11-30T21:58:23Z",
+      "side": 1,
+      "message": "I\u0027m ok with this, I see you only reading ${config_dir}/hosts only when the $prefix is empty, that\u0027s good because if using prefix we could get into conflicts if by change a file name \"hosts\" remains. \n\nI just realized that I never got the need to pass an inventory when running d-o-a-a, I use mostly the settings.yml. I\u0027m curious to know what is your use case to use the inventory?",
+      "parentUuid": "b1b65d6a_be83f58b",
+      "revId": "d1cbd4a1c97cf05acd5f13262834e682f4df902d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
