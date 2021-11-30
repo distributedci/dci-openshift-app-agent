@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e8e4951d_5b311854",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-11-30T21:35:22Z",
+      "side": 1,
+      "message": "👍",
+      "revId": "f081f6c6a7d985e142c980d3dd83d828edd0998a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43fd448c_74af1bbe",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2021-11-30T21:35:22Z",
+      "side": 1,
+      "message": "👍",
+      "revId": "f081f6c6a7d985e142c980d3dd83d828edd0998a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
