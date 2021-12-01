@@ -52,6 +52,24 @@
       "revId": "d1cbd4a1c97cf05acd5f13262834e682f4df902d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ec6efc95_0eaeb27b",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 1
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2021-12-01T02:47:01Z",
+      "side": 1,
+      "message": "In my case the doaa hook needs the same variable than the doa inventory (ex: cluster).\nI can of course put them in the settings, but it is more logical to keep the same structure between doa and doaa.",
+      "parentUuid": "b595cce5_a61027af",
+      "revId": "d1cbd4a1c97cf05acd5f13262834e682f4df902d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
