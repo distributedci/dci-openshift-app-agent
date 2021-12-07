@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eb5dd607_da18d7c4",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-07T21:02:35Z",
+      "side": 1,
+      "message": "Hello Ramón.\n\nIs this a known issue? maybe we need to place it in a new section like \"Components Updates/Upgrades\". \n\nMaybe a bit or rewording: \n - Remove all Ansible packages installed via DNF\n - Remove dci-* packages if already installed\n\n* maybe clarify the nodes that need to be rebooted? I believe this is only for the jumphost.\n* Is it necessary to reboot the nodes before re-installing? or we can reboot at the end?\n \nRegard",
+      "range": {
+        "startLine": 406,
+        "startChar": 2,
+        "endLine": 406,
+        "endChar": 109
+      },
+      "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
