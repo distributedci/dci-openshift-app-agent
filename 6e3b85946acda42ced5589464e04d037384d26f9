@@ -1,0 +1,9 @@
+Verified+1: dci-ci-bot <dci-ci-bot@redhat.com>
+Verified+2: Zuul CI <zuul@softwarefactory-project.io>
+Code-Review+2: Tony Garcia <tonyg@redhat.com>
+Workflow+1: Tatiana Krishtop <tkrishto@redhat.com>
+Submitted-by: Zuul CI <zuul@softwarefactory-project.io>
+Submitted-at: Tue, 07 Dec 2021 15:25:50 +0000
+Reviewed-on: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23349
+Project: dci-openshift-app-agent
+Branch: refs/heads/master
