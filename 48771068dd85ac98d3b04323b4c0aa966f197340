@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "aa95c270_cde62ae1",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2021-12-08T13:54:59Z",
+      "side": 1,
+      "message": "No need for two additional spaces.",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 4
+      },
+      "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "eb5dd607_da18d7c4",
         "filename": "README.md",
         "patchSetId": 1
@@ -19,6 +42,23 @@
         "endLine": 406,
         "endChar": 109
       },
+      "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "468e1e29_4c44570e",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2021-12-08T13:54:59Z",
+      "side": 1,
+      "message": "Period is absent at the end of the sentence.",
       "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
