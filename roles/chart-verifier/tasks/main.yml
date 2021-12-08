@@ -1,0 +1,11 @@
+
+---
+
+- name: Validate we have all the pieces to run in disconnected mode
+  assert:
+    that:
+      - kubeconfig_path is defined
+
+- name: Run tests
+  include_tasks: tests.yml
+...
