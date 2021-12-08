@@ -1,0 +1,15 @@
+
+---
+
+- name: Validate we have all the pieces
+  assert:
+    that:
+      - kubeconfig_path is defined
+
+- name: "Set Logs path"
+  set_fact:
+    logs_dir: "{{ job_logs.path | default ('/tmp')}}"
+
+- name: Run tests
+  include_tasks: tests.yml
+...
