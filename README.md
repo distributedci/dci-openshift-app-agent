@@ -126,17 +126,19 @@ dci\_url                           |                                            
 dci\_components\_by\_query         | []                                                   | Component by query. ['name:4.5.9']
 dci\_component                     | []                                                   | Component by UUID. ['acaf3f29-22bb-4b9f-b5ac-268958a9a67f']
 dci\_previous\_job\_id             | ""                                                   | Previous job UUID
+dci\_chart\_tgz\_url               | undefined                                            | The URL to a Helm chart tgz. For example: https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz. <br>The Helm chart will be deployed on the current OCP cluster.
 provisionhost\_registry            | ""                                                   | Registry to fetch containers that may be used. Mandatory for disconnected environments.
 all\_registries\_creds             | ""                                                   | Path to the pull-secret.txt file with authentication for all the registries that require an authorized access. Must be set both in connected and disconnected environments if there are private registries to use.
 dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | Image that can be to be used on the agent workloads, it needs to be mirrored to a local registry in disconnected environments. The default value is an "ideal" Cloud Native Function that can be used for testing purposes.
+internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns            | "myns"                                               | Default namespace  to deploy workloads in the running cluster.
 dci\_must\_gather\_images          | ["registry.redhat.io/openshift4/ose-must-gather"]    | List of the must-gather images to use when retrieving logs.
 provisioner\_name                  |                                                      | Provisioner address (name or IP) to be accessed for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
 provisioner\_user                  |                                                      | Provisioner username, used to access to the provisioner for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
-|dci_chart_tgz_url                 |undefined                                                              |The URL to an Helm chart tgz. For example: https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz. <br>The Helm chart will be tested using the [Helm Chart Verifier](https://github.com/redhat-certification/chart-verifier).
-|See [Operator Certification (preflight)](roles/preflight/README.md) for details to enable the Operator Certifications tests suite.||
-|See [CNF-cert role](roles/cnf-cert/README.md) for details to enable the Cloud Native Functions (CNF) cert suite||
-|See [Pyxis Role](roles/pyxis/README.md) for details about submiting [preflight](roles/preflight/README.md) certification results||
+|See [Operator Certification (preflight)](roles/preflight/README.md) for details to enable the Operator Certifications tests suite ||
+|See [CNF-cert role](roles/cnf-cert/README.md) for details to enable the Cloud Native Functions (CNF) cert suite                   ||
+|See [chart-verifier role](roles/chart-verifier/README.md) for details to enable the chart-verifier tests                          ||
+|See [Pyxis Role](roles/pyxis/README.md) for details about submiting [preflight](roles/preflight/README.md) certification results  ||
 
 A minimal configuration is required for the DCI OpenShift App Agent to run, before launching the agent, make sure you have the following:
 
@@ -298,22 +300,30 @@ tnf_config:
 For specific details about the features and variables for this test suite see: [CNF-cert role](roles/cnf-cert/README.md) documentation.
 
 ### Helm Chart Verifier
-[Helm Chart Verifier](https://github.com/redhat-certification/chart-verifier) is a test suite that validates the Helm charts deployed by the DCI OpenShift App Agent.
+[Helm Chart Verifier](https://github.com/redhat-certification/chart-verifier) is a test tool that validates Helm charts based on Red Hat recommendations.
 
 An example of how to run the Helm chart verifier tests:
 
 ```console
 $ dci-openshift-app-agent-ctl -s -- -v \
 -e kubeconfig_path=path/to/kubeconfig \
--e @helm_config.yaml
+-e do_chart_verifier=true \
+-e @helm_config.yml
 ```
 
 where the config file looks like this:
 
 ```yaml
 ---
-# helm-config.yaml
-dci_chart_tgz_url: https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz
+dci_charts:
+  -
+    name: mychart1
+    chart: http://xyz/pub/projects/mychart1.tgz
+    chart_values: http://xyz/pub/projects/mychart1.yml
+  -
+    name: mychart2
+    chart: http://xyz/pub/projects/mychart2.tgz
+    chart_values: http://xyz/pub/projects/mychart2.yml
 ```
 
 ## General workflow
