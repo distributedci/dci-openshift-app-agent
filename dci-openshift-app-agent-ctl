@@ -115,8 +115,12 @@ if [ -n "$prefix" ]; then
     if [ -e "$hosts" ]; then
         prefix_args="-i $hosts"
     else
-        echo "Missing $hosts"
-        exit 1
+        if [ -r "${config_dir}/hosts" ]; then
+            prefix_args="-i ${config_dir}/hosts"
+        else
+            echo "Missing $hosts or ${config_dir}/hosts"
+            exit 1
+        fi
     fi
 fi
 
