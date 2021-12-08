@@ -1,0 +1,18 @@
+---
+- name: "Running Chart Verifier"
+  shell:
+    cmd: >
+      podman run --rm
+      {{ cv_image }}
+      verify {% if item.values is defined %} -F {{ item.chart_values }} {% endif %}
+      --disable chart-testing
+      {% if item.flags is defined %}{{ item.flags }}{% endif %}
+      --openshift-version {{ ocp_version_full }}
+      {{ item.chart }}  
+      -o json
+      &> chart_{{ item.name }}-report.json
+  args:
+    chdir: "{{ cv_job_logs.path }}"
+  ignore_errors: true
+  loop: "{{ cv_dci_charts }}"
+...

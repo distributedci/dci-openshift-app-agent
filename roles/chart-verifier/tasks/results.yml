@@ -1,0 +1,8 @@
+---
+- name: "Get chart-verifier results"
+  shell: |
+    jq '.results[]  | select(.outcome == "FAIL") | .' {{ item.name }}-report.json > chart_{{ item.name }}-failed.json
+  args:
+    chdir: "{{ cv_job_logs.path }}"
+  loop: "{{ cv_dci_charts }}"
+...
