@@ -1,0 +1,8 @@
+
+---
+- name: Run tests
+  include_tasks: tests.yml
+
+- name: Get results
+  include_tasks: results.yml
+...
