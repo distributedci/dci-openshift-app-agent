@@ -9,27 +9,42 @@
     - name: Validate helm chart is deployed
       assert:
         that: "{{ helm_list.stdout | from_json }}[0].status == 'deployed'"
+  when:
+    - dci_chart_tgz_url is defined
 
-    - name: Run chart-verifier
-      shell: |
-        podman run --rm quay.io/redhat-certification/chart-verifier verify -o json --openshift-version {{ ocp_version_full }} {{ dci_chart_tgz_url }} 2> chart-verifier-report.json
+- block:
+    - name: "Validate inputs"
+      fail:
+        msg: "Please provide input details for the dci_charts to verify using by defining the dci_charts dictionary"
+      when:
+        - dci_charts is undefined
+        - dci_charts | type_debug != "list"
+
+    - name: "Running Chart Verifier - Connected"
+      shell:
+        cmd: >
+          podman run --rm
+          quay.io/redhat-certification/chart-verifier:1.3.0
+          verify {% if  item.values is defined %} -F {{ item.chart_values }} {% endif %}
+          --disable chart-testing
+          {% if item.flags is defined %}{{ item.flags }}{% endif %}
+          --openshift-version {{ ocp_version_full }}
+          {{ item.chart }}  
+          -o json
+          &> {{ item.name }}-report.json
       args:
         chdir: "{{ job_logs.path }}"
       ignore_errors: true
+      loop: "{{ dci_charts }}"
 
-    - name: Get chart-verifier failed tests
+    - name: "Get chart-verifier failed tests"
       shell: |
-        jq '.results[]  | select(.outcome == "FAIL") | .' chart-verifier-report.json
+        jq '.results[]  | select(.outcome == "FAIL") | .' {{ item.name }}-report.json > {{ item.name }}-failed.json
       args:
         chdir: "{{ job_logs.path }}"
-      register: chart_verifier_failures
-
-    - name: Display chart-verifier failed tests
-      debug:
-        msg: "{{ chart_verifier_failures.stdout }}"
-
+      loop: "{{ dci_charts }}"
   when:
-    - dci_chart_tgz_url is defined
+    - dci_charts is defined
 
 - name: "cnf-cert tests"
   include_role:
