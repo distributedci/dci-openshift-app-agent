@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "11cded4c_2c27940c",
+        "filename": "roles/pyxis/tasks/submit.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2021-12-09T13:39:24Z",
+      "side": 1,
+      "message": "One ansible question: if the fail is triggered (conditions are met), with the \u0027ignore_errors\u0027, expected behavior is to exit the role without crashing the all execution right?",
+      "revId": "6c5388112247532bc65fb3d9447e9b86f2c0eda5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
