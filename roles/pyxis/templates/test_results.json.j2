@@ -1,0 +1,19 @@
+{
+  "_links": {
+    "cert_project": {
+      "href": "{{ pyxis_identifier }}"
+    },
+    "container_image": {
+      "href": "{{ operator.image }}"
+    }
+  },
+  "cert_project": "{{ pyxis_identifier }}",
+  "certification_hash": "{{ preflight_output.certification_hash }}",
+  "image": "{{ operator.image }}",
+  "operator_package_name": "{{ operator.name }}",
+  "org_id": 0,
+  "passed": true,
+  "results": {{ preflight_output.results }},
+  "test_library": {{ preflight_output.test_library }},
+  "version": "{{ operator.version }}"
+}
