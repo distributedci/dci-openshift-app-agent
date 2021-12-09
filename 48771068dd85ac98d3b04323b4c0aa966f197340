@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "987f7994_a1973415",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-09T11:17:32Z",
+      "side": 1,
+      "message": "We need it because, at least as a first approach, this is a subsection of Newer Ansible Versions, so it needs to be indented properly here.",
+      "parentUuid": "aa95c270_cde62ae1",
+      "range": {
+        "startLine": 27,
+        "startChar": 2,
+        "endLine": 27,
+        "endChar": 4
+      },
+      "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "eb5dd607_da18d7c4",
         "filename": "README.md",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2021-12-07T21:02:35Z",
       "side": 1,
       "message": "Hello Ramón.\n\nIs this a known issue? maybe we need to place it in a new section like \"Components Updates/Upgrades\". \n\nMaybe a bit or rewording: \n - Remove all Ansible packages installed via DNF\n - Remove dci-* packages if already installed\n\n* maybe clarify the nodes that need to be rebooted? I believe this is only for the jumphost.\n* Is it necessary to reboot the nodes before re-installing? or we can reboot at the end?\n \nRegard",
+      "range": {
+        "startLine": 406,
+        "startChar": 2,
+        "endLine": 406,
+        "endChar": 109
+      },
+      "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "69ec28ad_88709b7d",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 406,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-09T11:17:32Z",
+      "side": 1,
+      "message": "Hi Beto! I would say we may leave this section within Known issues, due to two reasons:\n\n- firstly, in the Requirements section, we are saying Ansible 2.9 is required, and the cases for newer Ansible versions are covered within the Known issues, and as the upgrade is related to newer Ansible versions, that should be the place, I guess.\n- secondly, more specifically, this comes from a partner\u0027s installation in which Ansible was not working properly because an upgrade was required. And, again, as it is related to newer Ansible versions, I have put it as a subsection of that chapter in the Known issues.\n\nRegarding the other things, I have modified a bit the sentences. Regarding the reboot, I just put what the partner did in the end (which eventually worked). It\u0027s the jumphost the only server that needs to be rebooted, so I will change it. And regarding when to do the reboot, in their case, they did it before reinstalling, and that\u0027s why I am putting it in that way, because this eventually worked in this way",
+      "parentUuid": "eb5dd607_da18d7c4",
       "range": {
         "startLine": 406,
         "startChar": 2,
@@ -62,6 +110,24 @@
       "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1fa5886f_695a04a4",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 411,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-09T11:17:32Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "468e1e29_4c44570e",
+      "revId": "48771068dd85ac98d3b04323b4c0aa966f197340",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
