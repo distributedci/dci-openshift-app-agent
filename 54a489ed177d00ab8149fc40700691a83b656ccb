@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "327bf1a5_66d7bb61",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-09T00:12:33Z",
+      "side": 1,
+      "message": "It would be nice, for complex vars, to have full explanation and an example in a section below and just add a link/anchor to it.",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de9b4d75_f3ed5ea6",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-09T00:12:33Z",
+      "side": 1,
+      "message": "Why do we need cnf-tests images for chart verifier?",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "afce990e_2d76dda5",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-09T00:12:33Z",
+      "side": 1,
+      "message": "I think it may be problems if there\u0027s a leading space between the if clause and the {{ item.flags }}",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93a32686_db64285a",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-09T00:12:33Z",
+      "side": 1,
+      "message": "nit: empty spaces",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
