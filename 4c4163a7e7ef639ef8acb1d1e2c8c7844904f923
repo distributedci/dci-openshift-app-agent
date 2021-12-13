@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df75ae4c_cf738893",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 6
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-13T13:20:32Z",
+      "side": 1,
+      "message": "should it be ${hosts} to follow the same structure as the elif condition and avoid confussions?",
+      "range": {
+        "startLine": 115,
+        "startChar": 23,
+        "endLine": 115,
+        "endChar": 29
+      },
+      "revId": "4c4163a7e7ef639ef8acb1d1e2c8c7844904f923",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e4f9e144_57879bc0",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 6
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-13T13:20:32Z",
+      "side": 1,
+      "message": "Just to understand this. In the current code, `-e @$config` argument is always provided, even providing settings.yml file, but here, it is only provided if no settings are provided, mainly. I guess it is not a problem to remove `-e @$config` for all the cases, is it correct?",
+      "range": {
+        "startLine": 146,
+        "startChar": 64,
+        "endLine": 146,
+        "endChar": 80
+      },
+      "revId": "4c4163a7e7ef639ef8acb1d1e2c8c7844904f923",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
