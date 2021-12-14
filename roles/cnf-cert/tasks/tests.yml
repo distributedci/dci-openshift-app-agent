@@ -10,11 +10,13 @@
     src: templates/tnf_config.yml.j2
     dest: "{{ tnf_git_dir.path }}/test-network-function/test-network-function/tnf_config.yml"
 
+# tnf_daemonset_registry will not be required for the new CNF Cert Suite release, so it can be deleted when having it
 - name: Set tnf_partner_registry variable
   set_fact:
     tnf_partner_registry: "{{ ( provisionhost_registry|length and provisionhost_registry_creds|length ) | ternary(provisionhost_registry, 'quay.io') }}"
     tnf_daemonset_registry: "{{ ( provisionhost_registry|length and provisionhost_registry_creds|length ) | ternary(provisionhost_registry, 'registry.redhat.io') }}"
 
+# REDHAT_RHEL_REGISTRY will not be required for the new CNF Cert Suite release, so it can be deleted when having it
 - name: Run the CNF Test Suite
   shell: |
     set -x
