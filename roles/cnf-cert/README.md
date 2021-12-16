@@ -1,6 +1,6 @@
 # CNF-cert Role
 
-This role encapulates the logic for the [test network function](https://github.com/test-network-function/test-network-function). It is responsible for deploying the tnf network function testing framework and running the tests in DCI. 
+This role encapulates the logic for the [test network function](https://github.com/test-network-function/test-network-function). It is responsible for deploying the tnf network function testing framework and running the tests in DCI.
 
 It is important to label the pods to test with autodiscovery labels before executing the CNF Cert Suite. You can do it manually or programatically. An example of this can be found in [tnf_test_example](https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/samples/tnf_test_example).
 
