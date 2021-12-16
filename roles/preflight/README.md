@@ -1,4 +1,8 @@
-# This role is to run preflight cert suite
+# Preflight cert suite Role
+
+Preflight is a commandline interface for validating if OpenShift operator bundles and containers meet minimum requirements for Red Hat OpenShift Certification.
+
+This role implements the preflight certification process as part of DCI Application Agent.
 
 ## Variables
 
