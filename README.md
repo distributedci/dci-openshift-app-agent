@@ -5,34 +5,40 @@ This agent is expected to be installed in a RHEL8 server (from now on referred a
 
 ## Table of Contents
 
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Launching the agent](#launching-the-agent)
-  - [Running it manually](#running-it-manually)
-  - [Running it as a service](#running-it-as-a-service)
-  - [Using customized tags](#using-customized-tags)
-- [General workflow](#general-workflow)
-- [Hooks](#hooks)
-  - [Pre-run](#pre-run)
-  - [Install](#install)
-  - [Tests](#tests)
-  - [Post-run](#post-run)
-  - [Teardown](#teardown)
-- [Examples](#examples)
-- [Development mode](#development-mode)
-- [Known issues](#known-issues)
-  - [Libvirt Considerations](#libvirt-considerations)
-  - [Newer Ansible Versions](#newer-ansible-versions)
-    - [Upgrading Ansible version](#upgrading-ansible-version)
-  - [Permissions to use Topics](#permissions-to-use-topics)
-  - [Remote access to provisioner](#remote-access-to-provisioner)
-  - [Problems related to UIDs while running containers with podman in localhost](#problems-related-to-uids-while-running-containers-with-podman-in-localhost)
-  - [Old Podman versions](#old-podman-versions)
-- [Proxy Considerations](#proxy-considerations)
-- [Testing a code change](#testing-a-code-change)
-- [License](#license)
-- [Contact](#contact)
+- [DCI OpenShift App Agent](#dci-openshift-app-agent)
+  - [Table of Contents](#table-of-contents)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Using the Test Suites in DCI.](#using-the-test-suites-in-dci)
+    - [Pre-flight tests](#pre-flight-tests)
+    - [TNF Cert Suite](#tnf-cert-suite)
+    - [Helm Chart Verifier](#helm-chart-verifier)
+  - [Launching the agent](#launching-the-agent)
+    - [Running it manually](#running-it-manually)
+    - [Running it as a service](#running-it-as-a-service)
+    - [Using customized tags](#using-customized-tags)
+  - [General workflow](#general-workflow)
+  - [Hooks](#hooks)
+    - [Pre-run](#pre-run)
+    - [Install](#install)
+    - [Tests](#tests)
+    - [Post-run](#post-run)
+    - [Teardown](#teardown)
+  - [Examples](#examples)
+  - [Development mode](#development-mode)
+  - [Known issues](#known-issues)
+    - [Libvirt Considerations](#libvirt-considerations)
+    - [Newer Ansible Versions](#newer-ansible-versions)
+      - [Upgrading Ansible version](#upgrading-ansible-version)
+    - [Permissions to use Topics](#permissions-to-use-topics)
+    - [Remote access to provisioner](#remote-access-to-provisioner)
+    - [Problems related to UIDs while running containers with podman in localhost](#problems-related-to-uids-while-running-containers-with-podman-in-localhost)
+    - [Old Podman versions](#old-podman-versions)
+  - [Proxy Considerations](#proxy-considerations)
+  - [Testing a code change](#testing-a-code-change)
+  - [License](#license)
+  - [Contact](#contact)
 
 ## Requirements
 
@@ -120,37 +126,24 @@ dci\_url                           |                                            
 dci\_components\_by\_query         | []                                                   | Component by query. ['name:4.5.9']
 dci\_component                     | []                                                   | Component by UUID. ['acaf3f29-22bb-4b9f-b5ac-268958a9a67f']
 dci\_previous\_job\_id             | ""                                                   | Previous job UUID
-dci\_chart\_tgz\_url               | undefined                                            | The URL to an Helm chart tgz. For example: https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz
-provisionhost\_registry            | ""                                                   | registry to fetch containers that may be used. Must be set in disconnected environments.
-provisionhost\_registry\_creds     | ""                                                   | path to the pull-secret.txt file to access to the registry. Must be set in disconnected environments.
-dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
-dci\_openshift\_app\_ns            | "myns"                                               | namespace for the workload
+provisionhost\_registry            | ""                                                   | Registry to fetch containers that may be used. Mandatory for disconnected environments.
+provisionhost\_registry\_creds     | ""                                                   | Path to the pull-secret.txt file to access to the registry. Must be set in disconnected environments.
+dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | It is an example of an "ideal" TNF function that can be used to test the TNF suite. For disconnected environments, it needs to be mirrored to a local registry.
+dci\_openshift\_app\_ns            | "myns"                                               | Default namespace  to deploy workloads in the running cluster.
 dci\_must\_gather\_images          | ["registry.redhat.io/openshift4/ose-must-gather"]    | List of the must-gather images to use when retrieving logs.
 provisioner\_name                  |                                                      | Provisioner address (name or IP) to be accessed for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
 provisioner\_user                  |                                                      | Provisioner username, used to access to the provisioner for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
-do\_cnf\_cert                      | false                                                | launch the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
-test\_network\_function\_version   | v3.1.0                                               | CNF Cert Suite version downloaded. The DCI OpenShift App Agent currently supports only the latest stable version, which is v3.1.0. HEAD version (in the main branch) can be also used, but it is not assured a complete compatibility with these latest unstable changes.
-do\_preflight\_tests               | false                                                | Launch the [Preflight Cert Suite](https://github.com/redhat-openshift-ecosystem/openshift-preflight)
-preflight\_version                 | quay.io/opdev/preflight:1.0.6                        | [Version of Preflight Cert Suite to run](https://quay.io/repository/opdev/preflight?tab=tags)
-preflight\_operators\_to\_check    | undefined                                            | List of operators to be checked with Preflight Cert Suite. Please check [example_preflight_config.yaml](roles/preflight/README.md#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
-operator\_sdk\_tool\_path          | undefined                                            | Path to operator-sdk binary, optional. Please check [example_preflight_config.yaml](roles/preflight/README.md#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
-preflight\_namespace               | preflight-testing                                    | Namespace to use for preflight tests
-tnf\_suites                        | "diagnostic access-control networking lifecycle observability platform-alteration operator"                                                                                 | list of space separated [test suites](https://github.com/test-network-function/test-network-function#general-tests).
-tnf\_config                        | (see [this file](roles/cnf-cert/defaults/main.yml), as it is a complex variable)                                                                                 | Complex variable to define the configuration to be applied in CNF Cert Suite. It is composed by a list of items, each of them related to a different namespace (as CNF Cert Suite admits resources deployed in multiples namespaces). The variables that have to be defined on each item are: 1. `namespace`, which is the targeted namespace. 2. `targetpodlabels`, which is a list of autodiscovery labels to be considered by the CNF Cert Suite for pod testing. The format of each element of the list must be one of the following two: <label\_name>=<label\_value> if no prefix is provided (e.g. [environment=test]) or <label\_prefix>/<label\_name>=<label\_value> if a prefix is provided (e.g. [test-network-function.com/environment=test]). Remember to label the pods you want to test with these autodiscovery labels before executing the CNF Cert Suite. You can do it manually or programatically (an example of this can be found in [tnf_test_example](samples/tnf_test_example)). 3. (optional) `operators_regexp`, which is a regexp to select operators to be tested by the CNF Cert Suite (in case of needing it, the code to handle it must be included in the partner's hooks). And 4. (optional) `exclude_connectivity_regexp`, which is a regexp to exclude containers from the connectivity test. When deploying the pods, some code is needed to use this regex, [like in this example](https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/samples/tnf_test_example/hooks/templates/test_deployment.yml.j2).
-tnf\_non\_intrusive\_only          | true                                                 | set it to true if you would like to skip intrusive tests which may disrupt cluster operations. Likewise, to enable intrusive tests, set it to false
-tnf\_run\_cfd\_test                | false                                                | the test suites from [openshift-kni/cnf-feature-deploy](https://github.com/openshift-kni/cnf-features-deploy) can be run prior to the actual CNF certification test execution and the results are incorporated in the same claim file if the following environment variable is set to true
-tnf\_debug\_image                  | quay.io/openshift-release-dev/ocp-v4.0-art-dev@sh... | image to be used for `oc debug` command in CNF Cert Suite
-tnf\_log\_level                    | "debug"                                              | log level used to run the CNF Cert Suite. Possible values can be checked [here](https://github.com/test-network-function/test-network-function#log-level)
-tnf\_postrun\_delete\_resources    | true                                                 | Primarily used for debugging partner deployments when using the CNF Cert Suite. Setting to 'false' will not delete the partner deployment and the debug daemonSet during the postrun.
 
 A minimal configuration is required for the DCI OpenShift App Agent to run, before launching the agent, make sure you have the following:
 
 1. In /etc/dci-openshift-app-agent/settings.yml these variables are required, see their definitions in the table above. You can also define this variables in a different form, see section [Using customized tags](#using-customized-tags) below where a fake `job_info` is created.
+
 ```YAML
 dci_topic:
 dci_components_by_query:
 dci_comment:
 ```
+
 2. The DCI OpenShift App Agent by default runs a series of Ansible playbooks called hooks in phases (see section [Hooks](#hooks)). The default files only contain the string `---` and no actions are performed. The install.yml is missing on purpose, and if you run the agent at this point, you will receive an error. In that case you can choose between one of the following options to proceed:
 
 - Create install.yml file with the string `---` and no actions will be performed at this phase.
@@ -158,6 +151,63 @@ dci_comment:
 - Include dci_config_dir variable in `settings.yml` with the path where the hooks you want to execute are located.
 
 > See section [Examples](#examples) for basic configurations of settings.yml to start using the agent.
+
+## Using the Test Suites in DCI.
+
+DCI App agent has support to execute multiple Test Suites to validate containers, virtual functions, helm charts, and operators. The Test suites are in the form of ansible roles executed during the Red Hat testing phases. The suites help the partners on getting prepared for the Red Hat Certifications or apply actually certify the workload deployed via DCI.
+
+The variables that control the tests execution can be added as part or the settting.yml file (see above).
+
+### Pre-flight tests
+Preflight is a commandline interface for validating if OpenShift operator bundles and containers meet minimum requirements for Red Hat OpenShift Certification.
+
+Example:
+
+```YAML
+  do_preflight_tests: false
+  preflight_version: quay.io/opdev/preflight:1.0.6 
+  preflight_operators_to_check: [ List ]
+  preflight_namespace: preflight-testing
+```
+For specific details about the features for this test suite see: [Preflight role](roles/preflight/README.md) documentation.
+
+### TNF Cert Suite
+It is responsible for deploying the Test Network Function Testing (TNF) and running the corresponding tests.
+
+Example:
+```YAML
+  do_tnf_tests: true
+  test_network_function_version: v3.1.0
+  tnf_suites:
+    - "diagnostic access-control networking lifecycle observability platform-alteration operator"
+  tnf_config:
+    - namespace: test-network-function
+      targetpodlabels:
+        - environment=test
+        - test-network-function.com/environment=test
+      operators_regexp:
+        - "^test-network-function.com/environment=test"
+      exclude_connectivity_regexp:
+        - "^test-network-function.com/environment=test"
+    - namespace: test-network-function
+      targetpodlabels: [environment=test]
+      operators_regexp: ".*"
+      exclude_connectivity_regexp: ".*"
+  tnf_non_intrusive_only: true
+  tnf_run_cfd_test: false
+  tnf_debug_image: quay.io/openshift-release-dev/ocp-v4.0-art-dev@sha
+  tnf_log_level: debug
+  tnf_postrun_delete_resources:
+```
+
+For specific details about the features and variables for this test suite see: [CNF-cert role](roles/cnf-cert/README.md) documentation.
+
+### Helm Chart Verifier
+[Helm Chart Verifier](https://github.com/redhat-certification/chart-verifier) is a test suite that validates the Helm charts deployed by the DCI OpenShift App Agent.
+
+```YAML
+dci_chart_tgz_url: https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz
+```
 
 ## Launching the agent
 
