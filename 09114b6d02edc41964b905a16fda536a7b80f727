@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "ab9da6eb_114d7a69",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-17T23:39:42Z",
+      "side": 1,
+      "message": "I see your concern, but I don\u0027t think those names are internal names per se. The projects (repos) are public and those names are out in the public.\nIf we wanted to be more strictly correct the name should be (for instance preflight) \"openshift-preflight\" but even themselves refer to the tool as \"preflight\" 😄",
+      "parentUuid": "28b76c50_f3400dd2",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "36ab1ebd_c3238532",
         "filename": "README.md",
         "patchSetId": 5
@@ -191,6 +209,40 @@
       "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dd27d5c0_91388dcd",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-17T23:39:42Z",
+      "side": 1,
+      "message": "I\u0027d suggest to explain the acronyms the very first time you mention them, for example you could do instead of \n\u0027[test network function]\u0027 use: \u0027[TNF (test network function)]\u0027 so any other mention of TNF it will be implied that we are referring to it (test nentwork function).\n\nFurther in the same line I\u0027d suggest instead of \u0027tnf network function testing framework\u0027 to use \u0027tnf framework\u0027",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f2afd0db_19788b7f",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-17T23:39:42Z",
+      "side": 1,
+      "message": "I\u0027d suggest instead of:\nIt is important to label the pods to test with autodiscovery labels before executing the CNF Cert Suite.\nto use:\nBefore executing the CNF (Cloud-native network function) Cert Suite, it\u0027s important to label the pods to test using the autodiscovery feature.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     },
     {
       "key": {

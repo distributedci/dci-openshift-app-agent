@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "35238738_1cf0aa8d",
+        "filename": "README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2021-12-17T23:39:42Z",
+      "side": 1,
+      "message": "I think we should at least mention that we are referring here to preflight, e.g. \"[Operator Certification Role (preflight)]\". Otherwise it becomes hard to understand that we are referring to the `roles/preflight` role as no other is named \"operator certification role\" 😋",
+      "revId": "d3626ad860cfc6ec8dd717fecede7523b36c4b03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
