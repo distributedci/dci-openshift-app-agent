@@ -1,0 +1,174 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "227e1c92_a43bb159",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "Probably \"Preflight\" is better, without the dash, at least in RedHat official documentation it\u0027s usually this way.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "36ab1ebd_c3238532",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "You might want to add here a link to the Preflight repository: https://github.com/redhat-openshift-ecosystem/openshift-preflight JIC if the reader is not yet familiar with Preflight Cert Suite.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f49c65c2_9c78a668",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "I\u0027d propose to replace this set of variables by a real command to run preflight tests:\n\n```console\ndci-openshift-app-agent-ctl -s -- -v \\\n-e kubeconfig_path\u003dpath/to/kubeconfig \\\n-e do_preflight_tests\u003dtrue \\\n-e @preflight_config.yaml\n``` \n\nwhere bare minimal config is a list of operators to test\n\n```yaml\n---\n# preflight-config.yaml\npreflight_operators_to_check:\n    -\n    name: \"simple-demo-operator\"\n    version: \"v0.0.3\"\n    image: \"quay.io/opdev/simple-demo-operator-bundle@sha256:eff7f86a54ef2a340dbf739ef955ab50397bef70f26147ed999e989cfc116b79\"\n    index_image: \"quay.io/opdev/simple-demo-operator-catalog:v0.0.3\"\n```\n\nand then refer to role/preflight/README.md for further details.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0db22254_e598ba7d",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "Could we have here a link to TNF repository?",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "df6947d2_d994de59",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 201,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "as above for preflight, instead of a variable set, it would be nice to have ready-to-go ctl command with an example of the config file just below.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "232bcb54_7ff198a8",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 209,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "same as above",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4a1240ee_59561699",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "This is the preflight variable, not required to run CNF.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5ff26425_bbe22b85",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "Probably there is no need in indentation here",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ac23f045_1e48c08d",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "as above, there is no indentation needed unless you\u0027d like to add this just above:\n\n```\n- name: partner-name-pipeline\n  ansible_extravars:\n```",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "671a3af9_ce15eb6e",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-17T15:20:44Z",
+      "side": 1,
+      "message": "I\u0027d say not \"preflight certification process\" but more \"preflight test suite\", because certification \u003d tests + results submission, so the certification process it\u0027s more Preflight + Pyxis.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
