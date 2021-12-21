@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "822d8050_cfac5a37",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Reworded the paragraph, please check",
+      "parentUuid": "dc586169_b433bf8e",
+      "range": {
+        "startLine": 131,
+        "startChar": 0,
+        "endLine": 131,
+        "endChar": 26
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "7bf18fef_7659bbf9",
         "filename": "README.md",
         "patchSetId": 7
@@ -68,6 +92,30 @@
       "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d2570cf4_47fb810c",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7bf18fef_7659bbf9",
+      "range": {
+        "startLine": 137,
+        "startChar": 102,
+        "endLine": 137,
+        "endChar": 113
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -186,6 +234,30 @@
     },
     {
       "key": {
+        "uuid": "bb9a0896_59f74d62",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "dc4607fd_94693a28",
+      "range": {
+        "startLine": 241,
+        "startChar": 155,
+        "endLine": 241,
+        "endChar": 168
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "86af9776_55ba8619",
         "filename": "README.md",
         "patchSetId": 7
@@ -209,6 +281,30 @@
     },
     {
       "key": {
+        "uuid": "24091c8a_2cfb196a",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "86af9776_55ba8619",
+      "range": {
+        "startLine": 257,
+        "startChar": 4,
+        "endLine": 257,
+        "endChar": 5
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2188807d_38bc9e67",
         "filename": "README.md",
         "patchSetId": 7
@@ -220,6 +316,30 @@
       "writtenOn": "2021-12-21T16:06:06Z",
       "side": 1,
       "message": "I would remove it and set \"\" as it was before.",
+      "range": {
+        "startLine": 293,
+        "startChar": 34,
+        "endLine": 293,
+        "endChar": 36
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "27ca15c5_b565babf",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Typo, fixed",
+      "parentUuid": "2188807d_38bc9e67",
       "range": {
         "startLine": 293,
         "startChar": 34,
@@ -255,6 +375,30 @@
     },
     {
       "key": {
+        "uuid": "5abe3eb9_a7eb44f1",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Restored the entry in the main table. Once we have a role for Helm chart verifier will update as in the other roles.",
+      "parentUuid": "8e10ec3e_7b17fc79",
+      "range": {
+        "startLine": 314,
+        "startChar": 0,
+        "endLine": 314,
+        "endChar": 132
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b5acc541_f0fb958f",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 7
@@ -275,6 +419,30 @@
       "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2412c8ac_3e3240f5",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b5acc541_f0fb958f",
+      "range": {
+        "startLine": 12,
+        "startChar": 139,
+        "endLine": 12,
+        "endChar": 149
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -324,6 +492,54 @@
     },
     {
       "key": {
+        "uuid": "98ba76fa_64e60ec4",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "db5d1be2_9ec087ba",
+      "range": {
+        "startLine": 13,
+        "startChar": 37,
+        "endLine": 13,
+        "endChar": 45
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2e9f7229_27a27d32",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fee44084_7293df4a",
+      "range": {
+        "startLine": 13,
+        "startChar": 165,
+        "endLine": 13,
+        "endChar": 171
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "1d44e800_ad6b56ef",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 7
@@ -344,6 +560,30 @@
       "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bd887553_cdea38e3",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1d44e800_ad6b56ef",
+      "range": {
+        "startLine": 14,
+        "startChar": 553,
+        "endLine": 14,
+        "endChar": 554
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -370,6 +610,30 @@
     },
     {
       "key": {
+        "uuid": "1b3184dc_721a39e2",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5b27ef50_04050971",
+      "range": {
+        "startLine": 16,
+        "startChar": 111,
+        "endLine": 16,
+        "endChar": 143
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ce33cbd_039528fd",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 7
@@ -390,6 +654,30 @@
       "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e89fba8e_7a4e6702",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "9ce33cbd_039528fd",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 126
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -439,6 +727,30 @@
     },
     {
       "key": {
+        "uuid": "f333fce3_16a4ccba",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "097552f5_41a133f1",
+      "range": {
+        "startLine": 22,
+        "startChar": 101,
+        "endLine": 22,
+        "endChar": 102
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c76be41c_f96e6480",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 7
@@ -459,6 +771,30 @@
       "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3c01747_52a7d169",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c76be41c_f96e6480",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 15
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -485,6 +821,30 @@
     },
     {
       "key": {
+        "uuid": "102e676c_69b0fe65",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f4d8cd0_6304f284",
+      "range": {
+        "startLine": 40,
+        "startChar": 97,
+        "endLine": 40,
+        "endChar": 98
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "071569d6_502da386",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 7
@@ -508,6 +868,30 @@
     },
     {
       "key": {
+        "uuid": "700f1ae5_413e4c2a",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "071569d6_502da386",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 15
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9bdc5811_15358935",
         "filename": "roles/preflight/README.md",
         "patchSetId": 7
@@ -528,6 +912,30 @@
       "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9158260d_e2f5ad1f",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Yeah, for me was a bit conflicting to try to avoid using project names that may not be relevant for partners, but is difficult because we are making references to them in variables, repo names, etc. Will see how to fix this in future document iterations.",
+      "parentUuid": "9bdc5811_15358935",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 90
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }

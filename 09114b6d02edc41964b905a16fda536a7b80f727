@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "b8a151f9_218af901",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "ok, I added some updates, hope it is more clear now.",
+      "parentUuid": "ab9da6eb_114d7a69",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "36ab1ebd_c3238532",
         "filename": "README.md",
         "patchSetId": 5
@@ -229,6 +247,24 @@
     },
     {
       "key": {
+        "uuid": "843c159f_aa84b92d",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dd27d5c0_91388dcd",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f2afd0db_19788b7f",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 5
@@ -240,6 +276,24 @@
       "writtenOn": "2021-12-17T23:39:42Z",
       "side": 1,
       "message": "I\u0027d suggest instead of:\nIt is important to label the pods to test with autodiscovery labels before executing the CNF Cert Suite.\nto use:\nBefore executing the CNF (Cloud-native network function) Cert Suite, it\u0027s important to label the pods to test using the autodiscovery feature.",
+      "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "107cc568_385f1a84",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2021-12-21T22:49:39Z",
+      "side": 1,
+      "message": "Much better, thanks!",
+      "parentUuid": "f2afd0db_19788b7f",
       "revId": "09114b6d02edc41964b905a16fda536a7b80f727",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
