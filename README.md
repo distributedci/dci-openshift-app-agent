@@ -122,7 +122,7 @@ dci\_component                     | []                                         
 dci\_previous\_job\_id             | ""                                                   | Previous job UUID
 dci\_chart\_tgz\_url               | undefined                                            | The URL to an Helm chart tgz. For example: https://github.com/redhat-certification/chart-verifier/raw/main/pkg/chartverifier/checks/chart-0.1.0-v3.valid.tgz
 provisionhost\_registry            | ""                                                   | registry to fetch containers that may be used. Must be set in disconnected environments.
-provisionhost\_registry\_creds     | ""                                                   | path to the pull-secret.txt file to access to the registry. Must be set in disconnected environments.
+all\_registries\_creds             | ""                                                   | path to the pull-secret.txt file with authentication for the all registries which require an authorized access. Must be set both in connected and disconnected environments if there are private registries to use.
 dci\_openshift\_app\_image         | quay.io/testnetworkfunction/cnf-test-partner:latest  | image to be used for the workload. It can be retrieved from public repositories (i.e. Quay.io) or internal repositories (e.g. for disconnected environments)
 dci\_openshift\_app\_ns            | "myns"                                               | namespace for the workload
 dci\_must\_gather\_images          | ["registry.redhat.io/openshift4/ose-must-gather"]    | List of the must-gather images to use when retrieving logs.
