@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be1f437d_fc2718dc",
+        "filename": "group_vars/all",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T14:21:49Z",
+      "side": 1,
+      "message": "Why not maintaining the same if-else structure to define this variable? In the end, we are pointing to the same variable, I would say.\nMoreover, if this name is changing, README has to be updated too",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 24
+      },
+      "revId": "a251322a13644a4248d3481bb0865c379b4c0898",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
