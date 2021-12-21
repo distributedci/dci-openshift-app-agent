@@ -22,6 +22,30 @@
       "revId": "a251322a13644a4248d3481bb0865c379b4c0898",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "953e8364_74438954",
+        "filename": "group_vars/all",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2021-12-21T16:36:49Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for checking. Sorry for the unclear change description, I updated the readme and commit message.\n\nif-else \"connected-disconnected env\" is not really correct here, because we could have private registries even when working in connected environments.  \n\nConcerning the name change, from provisionhost_registry_creds to all_registries_creds, it\u0027s done to reflect the fact that pull-secret.txt file contains credentials for many registries, not only for one private registry in the disconnected environment.",
+      "parentUuid": "be1f437d_fc2718dc",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 24
+      },
+      "revId": "a251322a13644a4248d3481bb0865c379b4c0898",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
