@@ -1,0 +1,533 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8378f115_c42d6c67",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Tatiana also intends to change this variable in CR 23487 just to make you aware",
+      "range": {
+        "startLine": 130,
+        "startChar": 0,
+        "endLine": 130,
+        "endChar": 30
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc586169_b433bf8e",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "This variable is a bit tricky, because, in theory, it should be the image to be used in the app-agent, but in fact, we are just using it to declare the image to be used for the TNF suite. So, I don\u0027t really know if it is better to declare this variable as it was defined previously, just to avoid mentions to TNF (because, in the end, this variable can take whatever variable, not only the \"ideal\" TNF function, I mean)",
+      "range": {
+        "startLine": 131,
+        "startChar": 0,
+        "endLine": 131,
+        "endChar": 26
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7bf18fef_7659bbf9",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "I would say \"Cert Suite\" instead of \"tests suite\"",
+      "range": {
+        "startLine": 137,
+        "startChar": 102,
+        "endLine": 137,
+        "endChar": 113
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ab1a259c_6b7ef4b0",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Agent, in upper case?",
+      "range": {
+        "startLine": 236,
+        "startChar": 12,
+        "endLine": 236,
+        "endChar": 13
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9cc78419_24ab3f2d",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "certification?",
+      "range": {
+        "startLine": 236,
+        "startChar": 321,
+        "endLine": 236,
+        "endChar": 328
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "732d51be_4096659c",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Ansible, in upper case?",
+      "range": {
+        "startLine": 236,
+        "startChar": 163,
+        "endLine": 236,
+        "endChar": 170
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "38f117fc_fe1e77f2",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 236,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Helm, in upper case?",
+      "range": {
+        "startLine": 236,
+        "startChar": 105,
+        "endLine": 236,
+        "endChar": 109
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dc4607fd_94693a28",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 241,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Still missing here a link to the Preflight repository: https://github.com/redhat-openshift-ecosystem/openshift-preflight",
+      "range": {
+        "startLine": 241,
+        "startChar": 155,
+        "endLine": 241,
+        "endChar": 168
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "86af9776_55ba8619",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "I think the indentation here can be different, like: \n\n```yaml\n---\n# preflight-config.yaml\npreflight_operators_to_check:\n  - name: \"simple-demo-operator\"\n    version: \"v0.0.3\"\n    image: \"quay.io/opdev/simple-demo-operator-bundle@sha256:eff7f86a54ef2a340dbf739ef955ab50397bef70f26147ed999e989cfc116b79\"\n    index_image: \"quay.io/opdev/simple-demo-operator-catalog:v0.0.3\"\n```",
+      "range": {
+        "startLine": 257,
+        "startChar": 4,
+        "endLine": 257,
+        "endChar": 5
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2188807d_38bc9e67",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 293,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "I would remove it and set \"\" as it was before.",
+      "range": {
+        "startLine": 293,
+        "startChar": 34,
+        "endLine": 293,
+        "endChar": 36
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8e10ec3e_7b17fc79",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 314,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Now, there is no references in the README to describe this variable, also because we don\u0027t have a helm-chart role. I would say to include it, maybe not removing the entry in the general table in the README.md",
+      "range": {
+        "startLine": 314,
+        "startChar": 0,
+        "endLine": 314,
+        "endChar": 132
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b5acc541_f0fb958f",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "I would add the link to the available suites, as it was defined previously: [test suites](https://github.com/test-network-function/test-network-function#general-tests).",
+      "range": {
+        "startLine": 12,
+        "startChar": 139,
+        "endLine": 12,
+        "endChar": 149
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fee44084_7293df4a",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "v3.2.0 now",
+      "range": {
+        "startLine": 13,
+        "startChar": 165,
+        "endLine": 13,
+        "endChar": 171
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "db5d1be2_9ec087ba",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Now it is v3.2.0 (you will see it when doing the rebase)",
+      "range": {
+        "startLine": 13,
+        "startChar": 37,
+        "endLine": 13,
+        "endChar": 45
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d44e800_ad6b56ef",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "(optional).",
+      "range": {
+        "startLine": 14,
+        "startChar": 553,
+        "endLine": 14,
+        "endChar": 554
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5b27ef50_04050971",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "link here? [openshift-kni/cnf-feature-deploy](https://github.com/openshift-kni/cnf-features-deploy)",
+      "range": {
+        "startLine": 16,
+        "startChar": 111,
+        "endLine": 16,
+        "endChar": 143
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ce33cbd_039528fd",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "As Tatiana said, this is not needed on cnf-cert, but it is needed in preflight, so can be removed from here",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 17,
+        "endChar": 126
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7017956a_5d4d60f2",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "This is no longer needed (you will see it when doing rebase)",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 145
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "097552f5_41a133f1",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "I would remove this \".\"",
+      "range": {
+        "startLine": 22,
+        "startChar": 101,
+        "endLine": 22,
+        "endChar": 102
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c76be41c_f96e6480",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Same as Tatiana: maybe indentation is not needed here",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 15
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f4d8cd0_6304f284",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "space to be removed",
+      "range": {
+        "startLine": 40,
+        "startChar": 97,
+        "endLine": 40,
+        "endChar": 98
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "071569d6_502da386",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "Same as Tatiana: maybe indentation is not needed here",
+      "range": {
+        "startLine": 45,
+        "startChar": 0,
+        "endLine": 45,
+        "endChar": 15
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9bdc5811_15358935",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-21T16:06:06Z",
+      "side": 1,
+      "message": "same as Tatiana: I\u0027d say not \"preflight certification process\" but more \"preflight test suite\", because certification \u003d tests + results submission, so the certification process it\u0027s more Preflight + Pyxis.",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 90
+      },
+      "revId": "7b916d4c7ee66038c01fd38bf87e7eb48308d49b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
