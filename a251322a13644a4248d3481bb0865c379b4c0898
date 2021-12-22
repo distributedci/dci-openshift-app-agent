@@ -46,6 +46,30 @@
       "revId": "a251322a13644a4248d3481bb0865c379b4c0898",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c1521fd7_7102b9d0",
+        "filename": "group_vars/all",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2021-12-22T11:24:03Z",
+      "side": 1,
+      "message": "It\u0027s okey then. By the way, if we are not going to use provision_cache_store anymore, we should remove it from clusterX-post.yml in inventories repo, e.g. https://github.com/dci-labs/inventories/blob/master/dallas/8nodes/cluster6-post.yml#L12",
+      "parentUuid": "953e8364_74438954",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 24
+      },
+      "revId": "a251322a13644a4248d3481bb0865c379b4c0898",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
