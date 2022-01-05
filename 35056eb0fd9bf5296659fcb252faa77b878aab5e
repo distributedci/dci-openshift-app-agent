@@ -1,0 +1,119 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a5f93380_81d0f97f",
+        "filename": "README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-05T10:09:06Z",
+      "side": 1,
+      "message": "The same as above: do we need it?",
+      "range": {
+        "startLine": 129,
+        "startChar": 0,
+        "endLine": 129,
+        "endChar": 20
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "40ed4a41_d4232785",
+        "filename": "README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-05T10:09:06Z",
+      "side": 1,
+      "message": "is this line added by mistake, maybe?",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 58
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4b8461ea_64538c35",
+        "filename": "plays/tests.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-05T10:09:06Z",
+      "side": 1,
+      "message": "Do we really need this variable with the new dci_charts variable?",
+      "range": {
+        "startLine": 13,
+        "startChar": 6,
+        "endLine": 13,
+        "endChar": 34
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "24a52363_287ac6f5",
+        "filename": "plays/tests.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-05T10:09:06Z",
+      "side": 1,
+      "message": "if the block that contains this task has the condition \"dci_charts is defined\", then this task will never be executed because it has the opposite one. I would move this task outside the block. In that case, a condition like \"dci_charts | type_debug \u003d\u003d \"list\" \" has to be added to the block",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 16,
+        "endChar": 29
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6d582829_0012bb86",
+        "filename": "plays/tests.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-05T10:09:06Z",
+      "side": 1,
+      "message": "I\u0027d prefer to define this kind of information with variables rather than hardcoding them.",
+      "range": {
+        "startLine": 27,
+        "startChar": 54,
+        "endLine": 27,
+        "endChar": 59
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
