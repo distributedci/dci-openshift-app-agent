@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "f351179f_c93bff7c",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-05T00:08:07Z",
+      "side": 1,
+      "message": "ouch, removed it. Thanks",
+      "parentUuid": "de9b4d75_f3ed5ea6",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "afce990e_2d76dda5",
         "filename": "plays/tests.yml",
         "patchSetId": 2
@@ -53,6 +71,24 @@
     },
     {
       "key": {
+        "uuid": "1b6a5d40_c46ff31a",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-05T00:08:07Z",
+      "side": 1,
+      "message": "It only prints a leading space but no issues. And I think it is easier to read.",
+      "parentUuid": "afce990e_2d76dda5",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "93a32686_db64285a",
         "filename": "plays/tests.yml",
         "patchSetId": 2
@@ -64,6 +100,24 @@
       "writtenOn": "2021-12-09T00:12:33Z",
       "side": 1,
       "message": "nit: empty spaces",
+      "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f56cde5_660e938f",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-05T00:08:07Z",
+      "side": 1,
+      "message": "Fixed it",
+      "parentUuid": "93a32686_db64285a",
       "revId": "54a489ed177d00ab8149fc40700691a83b656ccb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
