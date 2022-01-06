@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "345a04e6_67d74807",
+        "filename": "README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 129,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-06T03:13:09Z",
+      "side": 1,
+      "message": "Removed the dup, the other should be to deploy a single chart",
+      "parentUuid": "a5f93380_81d0f97f",
+      "range": {
+        "startLine": 129,
+        "startChar": 0,
+        "endLine": 129,
+        "endChar": 20
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "40ed4a41_d4232785",
         "filename": "README.md",
         "patchSetId": 8
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "3a9fedc3_9aa04fb5",
+        "filename": "README.md",
+        "patchSetId": 8
+      },
+      "lineNbr": 134,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-06T03:13:09Z",
+      "side": 1,
+      "message": "Good catch, my bad... thanks",
+      "parentUuid": "40ed4a41_d4232785",
+      "range": {
+        "startLine": 134,
+        "startChar": 0,
+        "endLine": 134,
+        "endChar": 58
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4b8461ea_64538c35",
         "filename": "plays/tests.yml",
         "patchSetId": 8
@@ -59,6 +107,30 @@
       "writtenOn": "2022-01-05T10:09:06Z",
       "side": 1,
       "message": "Do we really need this variable with the new dci_charts variable?",
+      "range": {
+        "startLine": 13,
+        "startChar": 6,
+        "endLine": 13,
+        "endChar": 34
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af53ee49_fa153ac8",
+        "filename": "plays/tests.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-06T03:13:09Z",
+      "side": 1,
+      "message": "This block is to validate the deployment of single charts, the chart validator does not deploy charts, just executes the tests that do not require deployment on a running cluster.\n\nSo will keep the deployment of the \"ideal\" chart and its simple validation.",
+      "parentUuid": "4b8461ea_64538c35",
       "range": {
         "startLine": 13,
         "startChar": 6,
@@ -91,6 +163,30 @@
       "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ecf1a968_a13634c3",
+        "filename": "plays/tests.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-06T03:13:09Z",
+      "side": 1,
+      "message": "fixed, thanks",
+      "parentUuid": "24a52363_287ac6f5",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 16,
+        "endChar": 29
+      },
+      "revId": "35056eb0fd9bf5296659fcb252faa77b878aab5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
