@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "98534b18_4acd97d5",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "Since this value comes from a pipeline, I\u0027m afraid that it will fail on other pipelines that do not define it, can we set a default value here?",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "402f6ca8_4f93705e",
+        "filename": "plays/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "I think we need a default here so other pipelines don\u0027t fail?",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "faa1a13c_7a1ebcb6",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "I see results.yml has only one task, and that task obtains values from the reports generated in tests.yml, I wonder if it would be worth consolidate them both in a single task file and loop the dci_charts from outside, e.g.\n\ninclude_tasks: tests.yml\nloop: \"{{ dci_charts }}\"\nloop_control:\n  label: \"{{ item.name }}\"",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5f73d530_4d2aecb3",
+        "filename": "roles/chart-verifier/tasks/results.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "I have a bit of conflict with this task file, as is not really a result, is a subset of the original results, maybe it would be worth to rename it to failed reports or failed charts, or something like that?\n\nI\u0027m also thinking since is just one task that this could be included in the tests.yml all wrapped in one loop, I\u0027m including an example in the main.yml",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "09cf1eed_f7bd009a",
+        "filename": "roles/chart-verifier/tasks/results.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "same comment regarding the logs as in tests.yml",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "656d3d8f_f09166df",
+        "filename": "roles/chart-verifier/tasks/results.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "Same suggestion to use label in the loop",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f41881df_6110c9ca",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "This would fail if kubeconfig_path is not defined. Since it comes from the agent we know it will come but this could prevent the role from running on its own",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4cbef240_4f88565c",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "I believe this is coming from a register used in the agent (https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/plays/configure.yml#L8) and not a direct variable containing the directory like in the default (job_logs: /tmp) you\u0027ll likely need to redefine the internal job_logs to use the job_logs.path if already defined",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3f900e8e_fb772e06",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-06T22:11:42Z",
+      "side": 1,
+      "message": "Suggestion, to use:\n\nloop_control:\n       label: \"{{ item.name }}\"\n\nThis reduces the output when iterating through a list of complex elements, and makes it more readable",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
