@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "f43aec3d_74e424e6",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "093ad33b_b638d40c",
+      "range": {
+        "startLine": 5,
+        "startChar": 3,
+        "endLine": 5,
+        "endChar": 12
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ad026d43_228888fb",
         "filename": "roles/chart-verifier/README.md",
         "patchSetId": 23
@@ -45,6 +69,30 @@
       "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e74cb39c_490ca438",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ad026d43_228888fb",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 15
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -94,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "b729f41d_0bba01c2",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "48740991_16136680",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 8
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "82e206b1_db5918fc",
         "filename": "roles/chart-verifier/defaults/main.yml",
         "patchSetId": 23
@@ -108,6 +180,24 @@
       "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e9ae6153_cc8bef96",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "82e206b1_db5918fc",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -128,6 +218,24 @@
     },
     {
       "key": {
+        "uuid": "97b85fb8_8854e68b",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "Will keep the assertion",
+      "parentUuid": "3f159916_244b1990",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8f094cac_5ec7bc3f",
         "filename": "roles/chart-verifier/tasks/main.yml",
         "patchSetId": 23
@@ -145,6 +253,24 @@
     },
     {
       "key": {
+        "uuid": "fd829ce6_435959f1",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8f094cac_5ec7bc3f",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2b34a2be_7fd04053",
         "filename": "roles/chart-verifier/tasks/tests.yml",
         "patchSetId": 23
@@ -159,6 +285,24 @@
       "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "68a4cfe3_8f10023d",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T17:54:55Z",
+      "side": 1,
+      "message": "removed it from default, added assertion",
+      "parentUuid": "2b34a2be_7fd04053",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
