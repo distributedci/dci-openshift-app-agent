@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "237866e8_fefd53f2",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "Added the default to group_vars/all as set in the other tests suites",
+      "parentUuid": "98534b18_4acd97d5",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "402f6ca8_4f93705e",
         "filename": "plays/tests.yml",
         "patchSetId": 18
@@ -33,6 +51,24 @@
       "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "91876f02_de667e70",
+        "filename": "plays/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "defined in group_vars",
+      "parentUuid": "402f6ca8_4f93705e",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "bc1ff58c_439ff46d",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "Agreed to remove the task as it is just generating a report with failed test. We will revisit later if more detailed reports are needed later.",
+      "parentUuid": "faa1a13c_7a1ebcb6",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "5f73d530_4d2aecb3",
         "filename": "roles/chart-verifier/tasks/results.yml",
         "patchSetId": 18
@@ -67,6 +121,24 @@
       "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d30dc00c_ff1a127a",
+        "filename": "roles/chart-verifier/tasks/results.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "it has been removed",
+      "parentUuid": "5f73d530_4d2aecb3",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -87,6 +159,24 @@
     },
     {
       "key": {
+        "uuid": "40010aa1_f91908d3",
+        "filename": "roles/chart-verifier/tasks/results.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "09cf1eed_f7bd009a",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "656d3d8f_f09166df",
         "filename": "roles/chart-verifier/tasks/results.yml",
         "patchSetId": 18
@@ -101,6 +191,24 @@
       "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "451b909f_a9ff9d30",
+        "filename": "roles/chart-verifier/tasks/results.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "656d3d8f_f09166df",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -121,6 +229,24 @@
     },
     {
       "key": {
+        "uuid": "c6e3d3ef_39135f41",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "Added an assertion and defined a default value and documented in the readme. Thanks!",
+      "parentUuid": "f41881df_6110c9ca",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4cbef240_4f88565c",
         "filename": "roles/chart-verifier/tasks/tests.yml",
         "patchSetId": 18
@@ -138,6 +264,24 @@
     },
     {
       "key": {
+        "uuid": "345eefc6_bde61ac9",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "updated the default to use the job_logs variable if defined or set or use /tmp as default",
+      "parentUuid": "4cbef240_4f88565c",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "3f900e8e_fb772e06",
         "filename": "roles/chart-verifier/tasks/tests.yml",
         "patchSetId": 18
@@ -152,6 +296,24 @@
       "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ce45eb4c_c22ed33a",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-07T00:03:51Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f900e8e_fb772e06",
+      "revId": "c5b8bfe5cac16bcf596d312e744b55a3e7b50c58",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
