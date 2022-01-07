@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d2662f48_4edb4fd5",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-07T21:17:51Z",
+      "side": 1,
+      "message": "I don\u0027t think this is used inside the role, it can be removed",
+      "revId": "98e7d18e6cc5d9b0c04fbd00a12236a882eb5645",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
