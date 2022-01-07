@@ -91,6 +91,74 @@
       "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "82e206b1_db5918fc",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-07T16:45:16Z",
+      "side": 1,
+      "message": "did you mean \"{{ ansible_env.HOME }}/.kube/config\" ?",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3f159916_244b1990",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-07T16:45:16Z",
+      "side": 1,
+      "message": "I think this is always going to pass because you defined a default. I\u0027d say if you don\u0027t define a default then assert it, otherwise you don\u0027t need to.",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8f094cac_5ec7bc3f",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-07T16:45:16Z",
+      "side": 1,
+      "message": "since you\u0027re always defining the value here, you can omit the logs_dir in the default file",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2b34a2be_7fd04053",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-07T16:45:16Z",
+      "side": 1,
+      "message": "Sorry I missed this ocp_version_full var, I think this one needs to be added to the assert",
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
     }
   ]
 }
