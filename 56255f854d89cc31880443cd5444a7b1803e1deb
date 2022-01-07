@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "093ad33b_b638d40c",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-07T10:14:37Z",
+      "side": 1,
+      "message": "Missing ocp_version_full in the variables list?",
+      "range": {
+        "startLine": 5,
+        "startChar": 3,
+        "endLine": 5,
+        "endChar": 12
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ad026d43_228888fb",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-07T10:14:37Z",
+      "side": 1,
+      "message": "should be kubeconfig\\_path",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 9,
+        "endChar": 15
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "73bb8d07_848ad3e0",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-07T10:14:37Z",
+      "side": 1,
+      "message": "should be do\\_chart\\_verifier",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 17
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "48740991_16136680",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-07T10:14:37Z",
+      "side": 1,
+      "message": "should be logs\\_dir",
+      "range": {
+        "startLine": 13,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 8
+      },
+      "revId": "56255f854d89cc31880443cd5444a7b1803e1deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
