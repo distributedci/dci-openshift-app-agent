@@ -60,7 +60,10 @@
         podman push \
         --authfile {{ all_registries_creds }} \
         {{ OO_INDEX }}
-  when: dci_disconnected | default(false) | bool
+  when:
+    - dci_disconnected | default(false) | bool
+    - provisionhost_registry|length
+    - all_registries_creds|length
 
 - name: Manage imageContentSourcePolicy
   block:
@@ -87,7 +90,10 @@
     - name: Delay for policy to apply, there is no nodes to reboot anymore since ocp-4.7
       pause:
         minutes: 1
-  when: dci_disconnected | default(false) | bool
+  when:
+    - dci_disconnected | default(false) | bool
+    - provisionhost_registry|length
+    - all_registries_creds|length
 
 - name: Template scorecard config
   template:

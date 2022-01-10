@@ -34,7 +34,10 @@
 
 - name: Manage operator in the disconnected environment
   include_tasks: disconnected_env.yml
-  when: dci_disconnected | default(false) | bool
+  when:
+    - dci_disconnected | default(false) | bool
+    - provisionhost_registry|length
+    - all_registries_creds|length
 
 - name: Create preflight namespace
   k8s:
