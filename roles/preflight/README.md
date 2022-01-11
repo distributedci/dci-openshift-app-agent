@@ -21,6 +21,7 @@ operator\_sdk\_tool\_path          | undefined                                  
 preflight\_test\_certified\_image  | false                                                | Optional. Run preflight tests on already certified images.
 pyxis\_url                         | https://catalog.redhat.com/api/containers/v1         | Optional. Pyxis API.
 preflight\_run\_health\_check      | true                                                 | Optional. Run health check on every container and generate oval reports both in xml and html formats.
+preflight\_get\_async\_logs        | false                                                | Optional. Retrieve cluster state during the execution of Preflight tests.
 
 
 ## Variables to define for each operator in preflight_operators_to_certify
