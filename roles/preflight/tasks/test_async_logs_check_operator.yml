@@ -1,0 +1,10 @@
+---
+- name: "Retrieve logs for {{ operator.name }} each 50 seconds (global Preflight timeout = 180 seconds)"
+  include_task: test_all_logs.yml
+  loop:
+    - 1
+    - 2
+    - 3
+  loop_control:
+    loop_var: attempt
+...
