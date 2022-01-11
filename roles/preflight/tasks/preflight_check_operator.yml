@@ -68,7 +68,85 @@
     {{ preflight_version }}
     check operator
     {{ operator.image }}
+  async: 350
+  poll: 0
   register: preflight_exec
+
+- name: Retrieve simple-demo-operator logs
+  block:
+    - name: Wait 160 seconds
+      pause:
+        seconds: 160
+
+    - name: Get events for simple-demo-operator namespace
+      shell: |
+        {{ oc_tool_path }} get events --namespace simple-demo-operator
+      ignore_errors: true
+
+    - name: Get events for simple-demo-operator-target namespace
+      shell: |
+        {{ oc_tool_path }} get events --namespace simple-demo-operator-target
+      ignore_errors: true
+
+    - name: Get subscription for simple-demo-operator
+      shell: |
+        {{ oc_tool_path }} get subs --namespace simple-demo-operator
+      ignore_errors: true
+
+    - name: Describe subscription for simple-demo-operator
+      shell: |
+        {{ oc_tool_path }} get describe sub simple-demo-operator.v0.0.3 --namespace simple-demo-operator
+      ignore_errors: true
+
+    - name: Get csv for simple-demo-operator
+      shell: |
+        {{ oc_tool_path }} get csv --namespace simple-demo-operator
+      ignore_errors: true
+
+    - name: Describe subscription for simple-demo-operator
+      shell: |
+        {{ oc_tool_path }} describe csv simple-demo-operator.v0.0.3 --namespace simple-demo-operator
+      ignore_errors: true
+
+    - name: Get preflight pods
+      shell: |
+        {{ oc_tool_path }} get pods --namespace simple-demo-operator
+      ignore_errors: true
+
+    - name: Get pod images
+      shell: |
+        {{ oc_tool_path }} get pods --namespace simple-demo-operator -o jsonpath="{.items[*].spec.containers[*].image}"
+      ignore_errors: true
+
+    - name: Retrieve preflight pods in a short form
+      shell: |
+        {{ oc_tool_path }} get pods --namespace simple-demo-operator -o custom-columns=POD:.metadata.name --no-headers
+      register: preflight_pods
+      ignore_errors: true
+
+    - name: Retrieve logs
+      shell: |
+        {{ oc_tool_path }} logs pod/{{ pod_name }} --namespace simple-demo-operator
+      loop: "{{ preflight_pods.stdout.split('\n') }}"
+      loop_control:
+        loop_var: pod_name
+      ignore_errors: true
+
+    - name: Describe all pods
+      shell: |
+        {{ oc_tool_path }} describe pod/{{ pod_name }} --namespace testpmd-operator
+      loop: "{{ preflight_pods.stdout.split('\n') }}"
+      loop_control:
+        loop_var: pod_name
+      ignore_errors: true
+
+- name: Check on preflight execution
+  async_status:
+    jid: "{{ preflight_exec.ansible_job_id }}"
+  register: job_result
+  until: job_result.finished
+  retries: 7
+  delay: 50
   ignore_errors: true
 
 - name: Delete preflight namespace
