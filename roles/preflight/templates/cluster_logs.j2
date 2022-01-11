@@ -1,0 +1,22 @@
+Subscription =============================================================
+{% if preflight_subs.resources %}
+{{ preflight_subs.resources }}
+{% else %}
+{% endif %}
+CSV ======================================================================
+{% if preflight_csv.resources %}
+{{ preflight_csv.resources }}
+{% else %}
+{% endif %}
+Events ===================================================================
+{% if preflight_events.resources %}
+{{ preflight_events.resources }}
+{% else %}
+{% endif %}
+Pods =====================================================================
+{% if preflight_pods.resources %}
+Pod images ===============================================================
+{{ preflight_pods | json_query('resources[*].spec.containers[*].image') }}
+{{ preflight_pods.resources }}
+{% else %}
+{% endif %}
