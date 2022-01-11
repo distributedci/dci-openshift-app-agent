@@ -68,15 +68,44 @@
     {{ preflight_version }}
     check operator
     {{ operator.image }}
+  async: 600
+  poll: 0
   register: preflight_exec
-  ignore_errors: true
 
-- name: Delete preflight namespace
-  k8s:
-    name: "{{ preflight_namespace }}"
-    api_version: v1
-    kind: Namespace
-    state: absent
+- name: Retrieve simple-demo-operator logs
+  block:
+    - name: Retrieve detailed logs
+      include_tasks: retrieve_detailed_logs.yml
+
+    - name: Wait 10 seconds
+      pause:
+        seconds: 10
+
+    - name: Retrieve detailed logs
+      include_tasks: retrieve_detailed_logs.yml
+
+    - name: Wait 60 seconds
+      pause:
+        seconds: 60
+
+    - name: Retrieve detailed logs
+      include_tasks: retrieve_detailed_logs.yml
+
+    - name: Wait 100 seconds
+      pause:
+        seconds: 100
+
+    - name: Retrieve detailed logs
+      include_tasks: retrieve_detailed_logs.yml
+
+- name: Check on preflight execution
+  async_status:
+    jid: "{{ preflight_exec.ansible_job_id }}"
+  register: job_result
+  until: job_result.finished
+  retries: 20
+  delay: 30
+  ignore_errors: true
 
 - name: Upload logs for preflight check operator into DCI
   vars:
@@ -91,4 +120,12 @@
   file:
     path: "{{ preflight_tmp_dir.path }}"
     state: absent
+
+- name: Delete preflight namespace
+  k8s:
+    name: "{{ preflight_namespace }}"
+    api_version: v1
+    kind: Namespace
+    state: absent
 ...
+
