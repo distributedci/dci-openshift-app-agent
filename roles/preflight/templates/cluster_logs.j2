@@ -1,0 +1,10 @@
+Subscription =============================================================
+{{ preflight_subs | json_query('results[*].stdout') | join('\n') }}
+CSV ======================================================================
+{{ preflight_csv | json_query('results[*].stdout') | join('\n') }}
+Events ===================================================================
+{{ preflight_events | json_query('results[*].stdout') | join('\n') }}
+Pods =====================================================================
+{{ preflight_pods | json_query('results[*].stdout') | join('\n') }}
+Pod images ===============================================================
+{{ preflight_pod_images | json_query('results[*].stdout') | join('\n') }}
