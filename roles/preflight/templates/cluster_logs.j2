@@ -1,0 +1,25 @@
+Subscription =============================================================
+{% if preflight_subs is defined and preflight_subs %}
+{{ preflight_subs | json_query('results[*].stdout') | join('\n') }}
+{% else %}
+{% endif %}
+CSV ======================================================================
+{% if preflight_csv is defined and preflight_csv %}
+{{ preflight_csv | json_query('results[*].stdout') | join('\n') }}
+{% else %}
+{% endif %}
+Events ===================================================================
+{% if preflight_events is defined and preflight_events %}
+{{ preflight_events | json_query('results[*].stdout') | join('\n') }}
+{% else %}
+{% endif %}
+Pods =====================================================================
+{% if preflight_pods is defined and preflight_pods %}
+{{ preflight_pods | json_query('results[*].stdout') | join('\n') }}
+{% else %}
+{% endif %}
+Pod images ===============================================================
+{% if preflight_pod_images is defined and preflight_pod_images %}
+{{ preflight_pod_images.stdout }}
+{% else %}
+{% endif %}
