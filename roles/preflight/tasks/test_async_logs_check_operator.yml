@@ -1,0 +1,62 @@
+---
+- name: Retrieve logs each 50 seconds (global Preflight timeout = 180 seconds)
+  block:
+    - name: Get events for operator namespace
+      shell: >
+        {{ oc_tool_path }} get events --namespace {{ operator.name }}
+
+    - name: Get events for target namespace
+      shell: >
+        {{ oc_tool_path }} get events --namespace {{ operator.name }}-target
+
+    - name: Get list of subscriptions for operator namespace
+      shell: >
+        {{ oc_tool_path }} get subs --namespace {{ operator.name }}
+
+    - name: Retrieve installed Subscription
+      k8s_info:
+        api_version: operators.coreos.com/v1alpha1
+        kind: Subscription
+        namespace: "{{ operator.name }}"
+
+    - name: Get csv for operator namespace
+      shell: >
+        {{ oc_tool_path }} get csv --namespace {{ operator.name }}
+
+    - name: Check CSV with k8s_info
+      k8s_info:
+        api_version: operators.coreos.com/v1alpha1
+        kind: ClusterServiceVersion
+        namespace: "{{ operator.name }}"
+
+    - name: Get preflight pods
+      shell: >
+        {{ oc_tool_path }} get pods --namespace {{ operator.name }}
+
+    - name: Get pod images
+      shell: >
+        {{ oc_tool_path }} get pods --namespace {{ operator.name }} -o jsonpath="{.items[*].spec.containers[*].image}"
+
+    - name: Retrieve preflight pods in a short form
+      shell: >
+        {{ oc_tool_path }} get pods --namespace {{ operator.name }} -o custom-columns=POD:.metadata.name --no-headers
+      register: preflight_pods
+
+    - name: Retrieve logs
+      shell: >
+        {{ oc_tool_path }} logs pod/{{ pod_name }} --namespace {{ operator.name }}
+      loop: "{{ preflight_pods.stdout.split('\n') }}"
+      loop_control:
+        loop_var: pod_name
+
+    - name: Describe all pods
+      shell: >
+        {{ oc_tool_path }} describe pod/{{ pod_name }} --namespace {{ operator.name }}
+      loop: "{{ preflight_pods.stdout.split('\n') }}"
+      loop_control:
+        loop_var: pod_name
+  ignore_errors: true
+  retries: 4
+  delay: 50
+
+...
