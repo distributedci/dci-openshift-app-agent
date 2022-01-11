@@ -1,0 +1,67 @@
+---
+- name: Get events for simple-demo-operator namespace
+  shell: >
+    {{ oc_tool_path }} get events --namespace simple-demo-operator
+  ignore_errors: true
+
+- name: Get events for simple-demo-operator-target namespace
+  shell: >
+    {{ oc_tool_path }} get events --namespace simple-demo-operator-target
+  ignore_errors: true
+
+- name: Get list of subscriptions for simple-demo-operator namespace
+  shell: >
+    {{ oc_tool_path }} get subs --namespace simple-demo-operator
+  ignore_errors: true
+
+- name: Retrieve installed Subscription
+  k8s_info:
+    api_version: operators.coreos.com/v1alpha1
+    kind: Subscription
+    namespace: simple-demo-operator
+  ignore_errors: true
+
+- name: Get csv for simple-demo-operator namespace
+  shell: >
+    {{ oc_tool_path }} get csv --namespace simple-demo-operator
+  ignore_errors: true
+
+- name: Check CSV with k8s_info
+  k8s_info:
+    api_version: operators.coreos.com/v1alpha1
+    kind: ClusterServiceVersion
+    namespace: simple-demo-operator
+  ignore_errors: true
+
+- name: Get preflight pods
+  shell: >
+    {{ oc_tool_path }} get pods --namespace simple-demo-operator
+  ignore_errors: true
+
+- name: Get pod images
+  shell: >
+    {{ oc_tool_path }} get pods --namespace simple-demo-operator -o jsonpath="{.items[*].spec.containers[*].image}"
+  ignore_errors: true
+
+- name: Retrieve preflight pods in a short form
+  shell: >
+    {{ oc_tool_path }} get pods --namespace simple-demo-operator -o custom-columns=POD:.metadata.name --no-headers
+  register: preflight_pods
+  ignore_errors: true
+
+- name: Retrieve logs
+  shell: >
+    {{ oc_tool_path }} logs pod/{{ pod_name }} --namespace simple-demo-operator
+  loop: "{{ preflight_pods.stdout.split('\n') }}"
+  loop_control:
+    loop_var: pod_name
+  ignore_errors: true
+
+- name: Describe all pods
+  shell: >
+    {{ oc_tool_path }} describe pod/{{ pod_name }} --namespace simple-demo-operator
+  loop: "{{ preflight_pods.stdout.split('\n') }}"
+  loop_control:
+    loop_var: pod_name
+  ignore_errors: true
+...
