@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1e6678f2_2190e7f8",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-12T13:09:33Z",
+      "side": 1,
+      "message": "Hi Ramon, I believe that it\u0027s harmful addition here. Imagine the situation when dci_disconnected is true but the credentials to private registry are not provided. The behavior before this change: pre-run task will fail as unauthorized access. The behavior if we merge this change: pre-run task will be silently skipped, and we\u0027ll proceed to tests that will be failing with unclear errors.",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "77223b3c_71c757ac",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-12T13:09:33Z",
+      "side": 1,
+      "message": "the same",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "263b0118_53166302",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-12T13:09:33Z",
+      "side": 1,
+      "message": "+1",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "93af291a_a53afb46",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-12T13:09:33Z",
+      "side": 1,
+      "message": "+1",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": true
+    }
+  ]
+}
