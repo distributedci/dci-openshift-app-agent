@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "f5a93fa9_715da849",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-13T18:25:29Z",
+      "side": 1,
+      "message": "Hi Tatiana, I have addressed your proposal. I just included the conditions to have the same checkings in all cases, but how preflight manages failures is slightly different than cnf-cert for example. So, I will keep this in this status and let\u0027s see what people think.",
+      "parentUuid": "1e6678f2_2190e7f8",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "77223b3c_71c757ac",
         "filename": "roles/preflight/tasks/preflight_check_operator.yml",
         "patchSetId": 1
@@ -33,6 +51,24 @@
       "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d36a7b0d_58529dfa",
+        "filename": "roles/preflight/tasks/preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-13T18:25:29Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "77223b3c_71c757ac",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     },
     {
       "key": {
@@ -53,6 +89,24 @@
     },
     {
       "key": {
+        "uuid": "15cc0242_490f4fd5",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-13T18:25:29Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "263b0118_53166302",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "93af291a_a53afb46",
         "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
         "patchSetId": 1
@@ -67,6 +121,24 @@
       "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "328f9ce4_6b07b275",
+        "filename": "roles/preflight/tasks/scorecard_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-13T18:25:29Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "93af291a_a53afb46",
+      "revId": "2331fdc60b6be70c84cf1a185066c3fcb4657a6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0",
+      "unresolved": false
     }
   ]
 }
