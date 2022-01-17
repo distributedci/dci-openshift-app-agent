@@ -9,7 +9,7 @@ This role implements the preflight test suite as part of DCI Application Agent.
 Name                               | Default                                              | Description
 ---------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
 preflight\_version                 | quay.io/opdev/preflight:1.0.6                        | [Version of Preflight Cert Suite to run](https://quay.io/repository/opdev/preflight?tab=tags)
-preflight\_operators\_to\_check    | undefined                                            | List of operators to be checked with Preflight Cert Suite. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
+preflight\_operators\_to\_check    | undefined                                            | List of operators to be checked with Preflight Cert Suite. This variable is mandatory to run Preflight cert suite. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
 operator\_sdk\_tool\_path          | undefined                                            | Path to operator-sdk binary, optional. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
 preflight\_namespace               | preflight-testing                                    | Namespace to use for preflight tests
 submit\_preflight\_to\_pyxis       | false                                                | Should be set to true to submit Preflight results to Pyxis. Please do not forget to provide Pyxis credentials: pyxis\_apikey\_path with Pyxis token (shared for all projects within one client) and pyxis\_identifier (each operator should have its own certification project with the unique identifier).
@@ -45,6 +45,5 @@ Here is the invocation:
 ```console
 dci-openshift-app-agent-ctl -s -- -v \
 -e kubeconfig_path=path/to/kubeconfig \
--e do_preflight_tests=true \
 -e @preflight_config.yaml
 ```
