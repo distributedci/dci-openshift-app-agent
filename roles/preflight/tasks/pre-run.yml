@@ -15,7 +15,7 @@
       set_fact:
         config_images: "{{ preflight_assets.stdout | from_json | json_query('images') | list | unique }}"
 
-- name: Manage scorecard images mirroring
+- name: Manage images mirroring for Preflight
   block:
     - name: Get busybox and ubi images from static file
       set_fact:
