@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab665f19_68ace09d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-18T22:08:49Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for review. The main goal is to update imageContentSourcePolicy only once, to decrease the total job time. \n\nHere is the job where I test one operator: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23637 It takes 26 min: \n- 13s for images mirroring\n- 10 min for updated machine configs to be applied on the nodes\n- 2 min for Preflight tests\n- 10 min for get-logs-from-namespace : Get events from from namespace\n\nHere is the job where I test five operators: https://www.distributed-ci.io/jobs/9f55f63e-ba2c-4b24-80c5-502eee7a8461/jobStates It takes 27 min:\n- 13s for image mirroring\n- Several seconds for updated machine configs to be applied on the nodes\n- 2 min for each operator preflight tests \u003d 10 min in total\n- 10 min for get-logs-from-namespace : Get events from from namespace\n",
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
