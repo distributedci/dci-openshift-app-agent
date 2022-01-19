@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1811b7cb_4aec650e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-19T09:52:50Z",
+      "side": 1,
+      "message": "Just general comments, the change looks nice.\nMoreover, I have a question. I have seen there are some jobs failing in \"Failed at preflight : Wait for updated machine configs to be applied on the nodes\" task. Is it under the scope of this change too? Or may it be reviewed in a separate CR? (I guess the 2nd)",
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8b74387f_d945278f",
@@ -53,6 +70,75 @@
         "startChar": 0,
         "endLine": 7,
         "endChar": 96
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "584cc342_2ca8319d",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-19T09:52:50Z",
+      "side": 1,
+      "message": "I guess this condition is redundant, as it is already done in plays/tests.yml",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 10,
+        "endChar": 47
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88dfd2c1_19d1c03e",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-19T09:52:50Z",
+      "side": 1,
+      "message": "Just to warn you that, if preflight_operators_to_check is not defined, as it is the new condition included in plays/tests.yml, this will not be executed. So operator_sdk_tool_path depends on the presence of preflight_operators_to_check. Is it the expected behaviour?",
+      "range": {
+        "startLine": 30,
+        "startChar": 8,
+        "endLine": 30,
+        "endChar": 41
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bdefcc50_e0a85dad",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-19T09:52:50Z",
+      "side": 1,
+      "message": "What about setting a default value here?",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 28
       },
       "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
