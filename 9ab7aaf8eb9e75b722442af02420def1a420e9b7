@@ -75,6 +75,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "39b71837_bf950d8c",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "Nice tips, thank you!",
+      "parentUuid": "8b74387f_d945278f",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 96
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "584cc342_2ca8319d",
@@ -88,6 +112,30 @@
       "writtenOn": "2022-01-19T09:52:50Z",
       "side": 1,
       "message": "I guess this condition is redundant, as it is already done in plays/tests.yml",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 10,
+        "endChar": 47
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8227760_692743f9",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "true, fixed it!",
+      "parentUuid": "584cc342_2ca8319d",
       "range": {
         "startLine": 10,
         "startChar": 2,
@@ -121,6 +169,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a08176a_b2b15610",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "Yeah, that\u0027s expected. A large part of the Preflight tool is a wrapper of `operator-sdk scorecard` commands. Standalone scorecard tests are here for a while, to retrieve some logs that are for the moment missing on the Preflight side. With each new release of Preflight, I hope to finally delete them, now my hopes are for Preflight release 1.0.7 :)",
+      "parentUuid": "88dfd2c1_19d1c03e",
+      "range": {
+        "startLine": 30,
+        "startChar": 8,
+        "endLine": 30,
+        "endChar": 41
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bdefcc50_e0a85dad",
@@ -134,6 +206,30 @@
       "writtenOn": "2022-01-19T09:52:50Z",
       "side": 1,
       "message": "What about setting a default value here?",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 28
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a475c457_1082fc30",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bdefcc50_e0a85dad",
       "range": {
         "startLine": 37,
         "startChar": 8,
@@ -167,6 +263,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "de0253dc_37df5378",
+        "filename": "roles/preflight/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "done :)",
+      "parentUuid": "b610bf3b_f18d4c38",
+      "range": {
+        "startLine": 67,
+        "startChar": 2,
+        "endLine": 67,
+        "endChar": 10
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3578ce83_b3ebbda3",
@@ -180,6 +300,30 @@
       "writtenOn": "2022-01-19T03:02:57Z",
       "side": 1,
       "message": "Same here",
+      "range": {
+        "startLine": 96,
+        "startChar": 2,
+        "endLine": 96,
+        "endChar": 10
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48a57ea3_9bfef835",
+        "filename": "roles/preflight/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "done :)",
+      "parentUuid": "3578ce83_b3ebbda3",
       "range": {
         "startLine": 96,
         "startChar": 2,

@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de16e2e9_c5e0622f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-19T15:26:47Z",
+      "side": 1,
+      "message": "Hi Pierre and Ramon, thank you for the review!\n\n\u003e Just general comments, the change looks nice.\nMoreover, I have a question. I have seen there are some jobs failing in \"Failed at preflight : Wait for updated machine configs to be applied on the nodes\" task. Is it under the scope of this change too? Or may it be reviewed in a separate CR? (I guess the 2nd)\n\nHi Ramon, no, that\u0027s yet another issue. Here I just redesign to update ICSP only once, the only major change is to have one large catalog image with all bundle images instead of many small catalogs as before.\n\nConcerning \"Failed at preflight : Wait for updated machine configs to be applied on the nodes\" - that\u0027s discussed in ticket 410, and we don\u0027t know the reason yet. ",
+      "revId": "fd15c736ae0dfa021988852e9226078221a7ca03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
