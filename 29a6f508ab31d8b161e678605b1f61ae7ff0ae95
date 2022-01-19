@@ -16,6 +16,24 @@
       "message": "I know this isn\u0027t part of this PR, but it\u0027s confusing.  Is this a cut and paste mistake?  what is previous job?",
       "revId": "29a6f508ab31d8b161e678605b1f61ae7ff0ae95",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6ef13138_c4062552",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-01-19T16:51:38Z",
+      "side": 1,
+      "message": "it is from the ocp job.",
+      "parentUuid": "ec95e13a_4a9da491",
+      "revId": "29a6f508ab31d8b161e678605b1f61ae7ff0ae95",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
