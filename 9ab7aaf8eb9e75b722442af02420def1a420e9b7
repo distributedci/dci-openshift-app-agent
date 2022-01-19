@@ -16,6 +16,92 @@
       "message": "Hello everyone, the change is ready for review. The main goal is to update imageContentSourcePolicy only once, to decrease the total job time. \n\nHere is the job where I test one operator: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23637 It takes 26 min: \n- 13s for images mirroring\n- 10 min for updated machine configs to be applied on the nodes\n- 2 min for Preflight tests\n- 10 min for get-logs-from-namespace : Get events from from namespace\n\nHere is the job where I test five operators: https://www.distributed-ci.io/jobs/9f55f63e-ba2c-4b24-80c5-502eee7a8461/jobStates It takes 27 min:\n- 13s for image mirroring\n- Several seconds for updated machine configs to be applied on the nodes\n- 2 min for each operator preflight tests \u003d 10 min in total\n- 10 min for get-logs-from-namespace : Get events from from namespace\n",
       "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "95ba937a_47926682",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-19T03:02:57Z",
+      "side": 1,
+      "message": "Nice refactor, it\u0027s good for me. I have just some minor comments.",
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b74387f_d945278f",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-19T03:02:57Z",
+      "side": 1,
+      "message": "To avoid useless multiple conversion, I think busybox_images var can be replace by :\n```busybox_images: \"{{ (lookup(\u0027file\u0027, \u0027files/scorecard-busybox-ubi.yaml\u0027) | from_yaml)[\u0027images\u0027] }}\"```\n\nAlso, the \"unique\" filter should rather be apply to preflight_images instead of busybox_images, like that:\n```preflight_images: \"{{ (preflight_assets_images + busybox_images + preflight_bundle_images) | unique }}\"```",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 96
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b610bf3b_f18d4c38",
+        "filename": "roles/preflight/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-19T03:02:57Z",
+      "side": 1,
+      "message": "why not use \u003e 😜",
+      "range": {
+        "startLine": 67,
+        "startChar": 2,
+        "endLine": 67,
+        "endChar": 10
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3578ce83_b3ebbda3",
+        "filename": "roles/preflight/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 96,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-19T03:02:57Z",
+      "side": 1,
+      "message": "Same here",
+      "range": {
+        "startLine": 96,
+        "startChar": 2,
+        "endLine": 96,
+        "endChar": 10
+      },
+      "revId": "9ab7aaf8eb9e75b722442af02420def1a420e9b7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
