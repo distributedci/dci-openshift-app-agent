@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ec95e13a_4a9da491",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 606
+      },
+      "writtenOn": "2022-01-19T16:01:18Z",
+      "side": 1,
+      "message": "I know this isn\u0027t part of this PR, but it\u0027s confusing.  Is this a cut and paste mistake?  what is previous job?",
+      "revId": "29a6f508ab31d8b161e678605b1f61ae7ff0ae95",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
