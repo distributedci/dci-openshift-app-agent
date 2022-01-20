@@ -33,6 +33,23 @@
       "message": "Hello everyone, \n\nfake-cnf tests on the last change are ok (job failed on post-run log upload but Preflight tests are ok): https://www.distributed-ci.io/jobs/e2705485-8e95-4c96-9dff-e115099a9860/jobStates \n\nWaiting for example-cnf job to pass, and then we could merge.",
       "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51af12a6_0ee02bbb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-20T14:48:55Z",
+      "side": 1,
+      "message": "You have my +2, thx Tatiana por taking care of all the changes. Merge it whenever you find it ready.",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
