@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d058a00c_f1aae953",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-20T01:07:45Z",
+      "side": 1,
+      "message": "Hello Tatiana, thanks for working on this. Nice refactor. LGTM. And I see that the specific changes are working in Dallas. ",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
