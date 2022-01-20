@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6c9bf5d_56956f80",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-01-20T14:49:10Z",
+      "side": 1,
+      "message": "it is exported by dci-pipeline as it is defined in the inputs section of the pipeline.",
+      "parentUuid": "68ffdbfe_77211a17",
+      "revId": "29a6f508ab31d8b161e678605b1f61ae7ff0ae95",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ec95e13a_4a9da491",
