@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f763b023_62c1b983",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-20T19:23:42Z",
+      "side": 1,
+      "message": "LGTM.\n\n(The failures in the job are unrelated to this change, are due to the lack of Success status in the job)",
+      "revId": "29a6f508ab31d8b161e678605b1f61ae7ff0ae95",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "68ffdbfe_77211a17",
