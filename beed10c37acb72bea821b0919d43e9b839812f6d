@@ -50,6 +50,40 @@
       "message": "You have my +2, thx Tatiana por taking care of all the changes. Merge it whenever you find it ready.",
       "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "328e680c_05eb1b63",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-20T18:48:53Z",
+      "side": 1,
+      "message": "Seems like in disconnected environments, pre-run is always required, i.e. you won\u0027t be able to run d-o-a-a without pre-run tags.\n\nI\u0027m thinking of a scenario where you would like to run the test multiple times (if that even makes sense 😄) I guess you could define OO_INDEX so you could test against that index. That\u0027s would be the workaround, right?",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d77e8209_8ac958da",
+        "filename": "roles/preflight/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-20T18:48:53Z",
+      "side": 1,
+      "message": "I remember that scorecard was done while some parts in preflight were addressed. Do we still need scorecard or is now preflight taking care of running scorecard properly?",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
