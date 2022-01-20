@@ -16,6 +16,24 @@
       "message": "Thanks for fixing this",
       "revId": "3651ca58897e73b2bec1d8884c3f847c6cb4992d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8df36e80_97c6a44b",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-20T14:00:59Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "44b0af05_bd494417",
+      "revId": "3651ca58897e73b2bec1d8884c3f847c6cb4992d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

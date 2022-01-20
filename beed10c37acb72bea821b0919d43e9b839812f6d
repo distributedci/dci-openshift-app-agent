@@ -16,6 +16,23 @@
       "message": "Hello Tatiana, thanks for working on this. Nice refactor. LGTM. And I see that the specific changes are working in Dallas. ",
       "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19c607a7_3a9e323b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-20T14:00:59Z",
+      "side": 1,
+      "message": "Hello everyone, \n\nfake-cnf tests on the last change are ok (job failed on post-run log upload but Preflight tests are ok): https://www.distributed-ci.io/jobs/e2705485-8e95-4c96-9dff-e115099a9860/jobStates \n\nWaiting for example-cnf job to pass, and then we could merge.",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
