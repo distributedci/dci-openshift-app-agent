@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8a27f5f_5007fc55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-21T14:49:54Z",
+      "side": 1,
+      "message": "Reporting some typos. By the way, aren\u0027t we going to define the proxy vars in d-o-a-a then? (I mean, we will continue doing it in the same way we are doing right now, creating the env vars if required, no?)",
+      "revId": "a1d3aea0d5f149255e4068ad5f66a8b312c5d1db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "91070303_1a10b1dd",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-21T14:49:54Z",
+      "side": 1,
+      "message": "no_proxy (typo)",
+      "range": {
+        "startLine": 12,
+        "startChar": 134,
+        "endLine": 12,
+        "endChar": 141
+      },
+      "revId": "a1d3aea0d5f149255e4068ad5f66a8b312c5d1db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "afd0b428_60a7e61d",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-21T14:49:54Z",
+      "side": 1,
+      "message": "http_proxy (typo)",
+      "range": {
+        "startLine": 12,
+        "startChar": 46,
+        "endLine": 12,
+        "endChar": 56
+      },
+      "revId": "a1d3aea0d5f149255e4068ad5f66a8b312c5d1db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
