@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9466504_7568712f",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-21T11:24:14Z",
+      "side": 1,
+      "message": "Hi Pierre, I created a job on cluster4 to recreate the failure and I was able to see what\u0027s happening. I think the problem is with `dci_gits_to_components` variable, whose default value is \"{{ dci_config_dir }}\". If you check the pipeline, dci_config_dir is a string, not a list, so when applying the operation in the when clause, it fails with the error shown in the jobs: \"Unexpected templating type error occurred on ...: must be str, not list\".\n\nI would say there are two options for fixing this: 1) transform `dci_gits_to_components` from string to list in the code, or 2) change `dci_config_dir` in pipelines to be a list",
+      "revId": "f1bf7e8890370fe47fdf93a78adef33e984f93a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
