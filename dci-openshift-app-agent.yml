@@ -5,6 +5,10 @@
   hosts: jumphost
   tags:
     - kubeconfig
+  environment:
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - block:
         - name: Check kubeconfig
@@ -42,6 +46,10 @@
   tags:
     - job
     - dci
+  environment:
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - name: Read credentials from env vars
       set_fact:
@@ -96,6 +104,9 @@
     - redhat-pre-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - block:
         - name: "Execute pre-run"
@@ -108,6 +119,9 @@
   hosts: jumphost
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tags:
     - pre-run
     - partner-pre-run
@@ -127,6 +141,9 @@
     - running
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - block:
         - name: Set job state - running
@@ -164,6 +181,9 @@
     - redhat-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - block:
         - name: "Execute Red Hat tests"
@@ -195,6 +215,9 @@
     - post-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - block:
         - name: Run the post-run hook
@@ -213,6 +236,9 @@
     - success
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
+    no_proxy: "{{ no_proxy_list }}"
   tasks:
     - name: "Execute the teardown process"
       include_tasks: "{{ dci_config_dir }}/hooks/teardown.yml"
