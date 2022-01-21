@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "55611f2c_9544126e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-21T11:10:28Z",
+      "side": 1,
+      "message": "Hi Tony, thank you for checking. I\u0027m going to merge this as a first iteration but I\u0027d like to discuss why would you like to avoid pre-run step, to better understand the motivation. In the current design, that\u0027s easy to move mirroring to the test step, and maybe we should do it.",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "328e680c_05eb1b63",
@@ -69,6 +86,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba799974_74424728",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-21T11:10:28Z",
+      "side": 1,
+      "message": "Hi Tony, thank you for checking. \n\n\u003e Seems like in disconnected environments, pre-run is always required, i.e. you won\u0027t be able to run d-o-a-a without pre-run tags.\n\nYes, that\u0027s true, that\u0027s the idea - to move all mirroring and the ICSP update in the pre-run, like for the other tests. \n\n\u003e I\u0027m thinking of a scenario where you would like to run the test multiple times (if that even makes sense 😄)\n\nYes, sure, to test multiple operators makes sense, usually, partners have more than one. Currently, if you want to test multiple operators, you list them all in preflight_operators_to_check variable and then the flow goes like this:\n1/ In the disconnected environment, pre-run step generates one large index image that refers to all bundle images to be tested.\n2/ Test step tests the operators in a loop, one by one, with podman run command.\n\n\u003e I\u0027m thinking of a scenario where you would like to run the test multiple times (if that even makes sense 😄) I guess you could define OO_INDEX so you could test against that index. That\u0027s would be the workaround, right?\n\nIf you want to avoid pre-run step, then yes, you could run it once manually - mirror all images, generate index image, define OO_INDEX env variable.",
+      "parentUuid": "328e680c_05eb1b63",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d77e8209_8ac958da",
@@ -82,6 +117,24 @@
       "writtenOn": "2022-01-20T18:48:53Z",
       "side": 1,
       "message": "I remember that scorecard was done while some parts in preflight were addressed. Do we still need scorecard or is now preflight taking care of running scorecard properly?",
+      "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9113fe4d_7c4a0cd7",
+        "filename": "roles/preflight/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-21T11:10:28Z",
+      "side": 1,
+      "message": "We\u0027re moving towards it but not yet :) Three open issues still prevent me from removing the standalone scorecard, I added you in the cc.",
+      "parentUuid": "d77e8209_8ac958da",
       "revId": "beed10c37acb72bea821b0919d43e9b839812f6d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
