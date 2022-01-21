@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a78d4a63_81143cbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-21T11:42:33Z",
+      "side": 1,
+      "message": "Hi Fred, this topic was already commented in the README but using directly the environment variables in the CLI, but it is not possible for jobs scheduled with CI tools like check. The change is fine for me but I would change this entry in the README to talk about defining these variables in the settings.yml file: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/README.md#proxy-considerations",
+      "revId": "c8bcf82108f31d1224af9cfb06c21e5a35d85675",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
