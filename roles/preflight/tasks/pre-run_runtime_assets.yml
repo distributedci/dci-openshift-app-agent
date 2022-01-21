@@ -8,6 +8,9 @@
     {{ preflight_version }}
     runtime-assets
   register: preflight_assets
+  until: not preflight_assets.failed
+  retries: 3
+  delay: 10
 
 - name: Get scorecard config images
   set_fact:
