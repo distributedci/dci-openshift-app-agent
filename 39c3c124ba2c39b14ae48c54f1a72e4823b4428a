@@ -16,6 +16,23 @@
       "message": "Testing the change using the PR in which this feature is included.\n\nExample with empty acceptedKernelTaints worked without problems, tnf_config.yml file is created correctly: https://www.distributed-ci.io/files/6ae7cb03-c72d-4228-88a2-699b065dfb82\n\nIt worked fine, as you can see in the job tested.",
       "revId": "39c3c124ba2c39b14ae48c54f1a72e4823b4428a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb15089f_f08306f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 992
+      },
+      "writtenOn": "2022-01-21T15:29:11Z",
+      "side": 1,
+      "message": "LGTM Thanks!",
+      "revId": "39c3c124ba2c39b14ae48c54f1a72e4823b4428a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
