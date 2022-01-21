@@ -33,6 +33,23 @@
       "message": "Example of result here:\nhttps://www.distributed-ci.io/jobs/479430d0-9cfe-4c40-8a66-fff7a6e39f24/jobStates",
       "revId": "bbd9ad0b5708a4c4135006328b0653cf703024dd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c9db700_ced3613c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-21T12:04:36Z",
+      "side": 1,
+      "message": "LGTM, thanks Pierre for updating this.",
+      "revId": "bbd9ad0b5708a4c4135006328b0653cf703024dd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
