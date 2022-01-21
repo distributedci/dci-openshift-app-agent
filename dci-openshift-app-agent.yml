@@ -7,6 +7,10 @@
     - kubeconfig
   tasks:
     - block:
+        - name: Display proxy settings
+          debug:
+            msg: "http_proxy={{ lookup('env','http_prixy') }} https_proxy={{ lookup('env','https_proxy') }} no_proxy={{ lookup('env','no_prxy') }}"
+
         - name: Check kubeconfig
           include_tasks: 'plays/check_kubeconfig.yml'
 
