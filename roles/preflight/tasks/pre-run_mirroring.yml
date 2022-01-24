@@ -4,7 +4,10 @@
     busybox_images: "{{ (lookup('file', 'files/scorecard-busybox-ubi.yaml') | from_yaml)['images'] }}"
     preflight_bundle_images: "{{ preflight_operators_to_check | map(attribute='bundle_image') | list }}"
   set_fact:
-    preflight_images: "{{ (preflight_assets_images + busybox_images + preflight_bundle_images) | unique }}"
+    # Deactivate mirroring of busybox images as a temporary workaround.
+    # Reason: docker pull limits.
+    # preflight_images: "{{ (preflight_assets_images + busybox_images + preflight_bundle_images) | unique }}"
+    preflight_images: "{{ (preflight_assets_images + preflight_bundle_images) | unique }}"
 
 - name: Mirror preflight images
   shell: >
@@ -16,10 +19,6 @@
     docker://{{ item }}
     docker://{{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
   loop: "{{ preflight_images }}"
-  register: preflight_mirroring
-  until: not preflight_mirroring.failed
-  retries: 3
-  delay: 10
 
 - name: Create a common catalog image for all bundles to be tested in disconnected environment
   block:
