@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a2e2572_c4abb4f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-24T14:33:07Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for the review. \n\nThe problem: retry of the loop task doesn\u0027t work as expected. It doesn\u0027t wait for the whole loop to finish but strangely starts to retry after a few iterations. That caused excessive pull retries and triggered docker.io throttling.\n\nWorkaround solution: to remove retries. ",
+      "revId": "8a1962934d9afd04d6d5f6bdb5d8eb757b1c8c26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
