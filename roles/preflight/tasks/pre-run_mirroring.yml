@@ -16,10 +16,6 @@
     docker://{{ item }}
     docker://{{ provisionhost_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
   loop: "{{ preflight_images }}"
-  register: preflight_mirroring
-  until: not preflight_mirroring.failed
-  retries: 3
-  delay: 10
 
 - name: Create a common catalog image for all bundles to be tested in disconnected environment
   block:
