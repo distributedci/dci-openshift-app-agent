@@ -16,6 +16,23 @@
       "message": "Thx Ramon for your review, I adjusted regarding your comment. ",
       "revId": "9182addcf8f72016c0c10e7f5b50c9d164df00c5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9422b80_baeb51b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-24T12:28:48Z",
+      "side": 1,
+      "message": "I can see, in libvirt and dallas tests, that the behaviour is the expected, so from my side, you have my +2",
+      "revId": "9182addcf8f72016c0c10e7f5b50c9d164df00c5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
