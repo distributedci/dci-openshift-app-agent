@@ -16,6 +16,23 @@
       "message": "Hello everyone, \n\nthe change is ready for the review, it introduces \"preflight check container\" test suite which is used to validate operator bundle images.\nHere you could see the test results in the files prefixed with \"preflight_container\": https://www.distributed-ci.io/jobs/8332604f-a0a8-44ad-a17b-c1293247fe6e/tests  ",
       "revId": "b6313bcb08f42bd158e0df9047e6edc045bcde10",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "335179ef_4dd41b8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-25T15:11:19Z",
+      "side": 1,
+      "message": "The change LGTM, in fact, nothing against it. However, I\u0027d like to comment something. By checking the last job, I saw that no logs are provided in any task. Was it intended for the last test? Can we have a job with all the logs provided for each task to validate the output?",
+      "revId": "b6313bcb08f42bd158e0df9047e6edc045bcde10",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
