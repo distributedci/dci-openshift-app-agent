@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7b3635c_9d8fe71b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-25T10:59:28Z",
+      "side": 1,
+      "message": "The change is working fine in the two tests I made on dallas:\n\n-First one (https://www.distributed-ci.io/jobs/9cca834f-acf0-40ae-9fc8-99e5e5b59b8c/jobStates) intends to test the case in which dci_disconnected is not defined, case that failed in a partner execution (https://www.distributed-ci.io/jobs/86f9a23e-b567-4938-89ba-d1a8b8177991/jobStates#58c15e2e-2719-4f29-903f-ec89f3508923:file11). With this change, it managed to work\n-Second one (https://www.distributed-ci.io/jobs/64de281a-c938-454e-91a6-6b4f98cb7aff/jobStates) tests the correct definition of tnf_partner_registry variable. Now, we are passing again all the tnf tests that have to pass (38 pass, 1 fail, 1 omit)\n\nThis change will fix these problems, it\u0027s ready to be merged",
+      "revId": "fd5fb7d5a8acc2469b190bb805ab0e3a2b27e512",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
