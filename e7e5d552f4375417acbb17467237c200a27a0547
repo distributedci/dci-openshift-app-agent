@@ -16,6 +16,23 @@
       "message": "looks good to me, I\u0027ll add a +2 after the job finish successfully ",
       "revId": "e7e5d552f4375417acbb17467237c200a27a0547",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6cca4211_76636361",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-25T01:53:24Z",
+      "side": 1,
+      "message": "Thx Manny for your futur +2 😊",
+      "revId": "e7e5d552f4375417acbb17467237c200a27a0547",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
