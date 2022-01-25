@@ -33,6 +33,40 @@
       "message": "The change LGTM, in fact, nothing against it. However, I\u0027d like to comment something. By checking the last job, I saw that no logs are provided in any task. Was it intended for the last test? Can we have a job with all the logs provided for each task to validate the output?",
       "revId": "b6313bcb08f42bd158e0df9047e6edc045bcde10",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bba20c50_d0fb4cd9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-25T15:54:09Z",
+      "side": 1,
+      "message": "Good for me ",
+      "revId": "b6313bcb08f42bd158e0df9047e6edc045bcde10",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e430f00a_c3fdce4e",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-01-25T15:54:09Z",
+      "side": 1,
+      "message": "Do you have a reason to use a block here ?",
+      "revId": "b6313bcb08f42bd158e0df9047e6edc045bcde10",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
