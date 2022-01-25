@@ -3,43 +3,6 @@
 `dci-openshift-app-agent` enables Cloud-Native Applications and Operators in OpenShift using Red Hat Distributed CI service.
 This agent is expected to be installed in a RHEL8 server (from now on referred as jumphost) with access to the API of an already deployed OCP cluster.
 
-## Table of Contents
-
-- [DCI OpenShift App Agent](#dci-openshift-app-agent)
-  - [Table of Contents](#table-of-contents)
-  - [Requirements](#requirements)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Launching the agent](#launching-the-agent)
-    - [Running it manually](#running-it-manually)
-    - [Running it as a service](#running-it-as-a-service)
-    - [Using customized tags](#using-customized-tags)
-  - [Enabling the Test Suites in DCI App Agent](#enabling-the-test-suites-in-dci-app-agent)
-    - [Operator Certification tests](#operator-certification-tests)
-    - [Cloud Native Functions (CNF) Certification tests](#cloud-native-functions-cnf-certification-tests)
-    - [Helm Chart Verifier](#helm-chart-verifier)
-  - [General workflow](#general-workflow)
-  - [Hooks](#hooks)
-    - [Pre-run](#pre-run)
-    - [Install](#install)
-    - [Tests](#tests)
-    - [Post-run](#post-run)
-    - [Teardown](#teardown)
-  - [Examples](#examples)
-  - [Development mode](#development-mode)
-  - [Known issues](#known-issues)
-    - [Libvirt Considerations](#libvirt-considerations)
-    - [Newer Ansible Versions](#newer-ansible-versions)
-      - [Upgrading Ansible version](#upgrading-ansible-version)
-    - [Permissions to use Topics](#permissions-to-use-topics)
-    - [Remote access to provisioner](#remote-access-to-provisioner)
-    - [Problems related to UIDs while running containers with podman in localhost](#problems-related-to-uids-while-running-containers-with-podman-in-localhost)
-    - [Old Podman versions](#old-podman-versions)
-  - [Proxy Considerations](#proxy-considerations)
-  - [Testing a code change](#testing-a-code-change)
-  - [License](#license)
-  - [Contact](#contact)
-
 ## Requirements
 
 Before starting make sure the next list of items are covered in the Jumpbox server.
