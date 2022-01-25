@@ -33,6 +33,24 @@
       "message": "LGTM, in the Github PR I proposed to rebase to avoid merge problems with CR 23720. But since there are no conflicts displayed, I think it\u0027s safe to merge. ",
       "revId": "fd5fb7d5a8acc2469b190bb805ab0e3a2b27e512",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af87a2c7_c5ea748b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-25T11:56:49Z",
+      "side": 1,
+      "message": "Thanks Tatiana, in fact, the PR in the inventories repo is not needed (it was just for testing this condition), I have just closed it. I will merge this, which is the important one, thanks!",
+      "parentUuid": "8702bb28_bf21b34c",
+      "revId": "fd5fb7d5a8acc2469b190bb805ab0e3a2b27e512",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
