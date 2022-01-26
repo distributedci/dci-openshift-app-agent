@@ -16,6 +16,184 @@
       "message": "Hello, \n\nIs the current TOC affecting the mkdocs generation? We mainly consume documentation from the GitHub documentation and the TOC is useful there. \n\nThanks",
       "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff7ee071_7b406f83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "I have my concerns about this change, as well as Beto commented.\n\nApart from this, I would like to propose some different changes to make links to certain github resources work in both github repo and https://doc.distributed-ci.io/dci-openshift-app-agent/",
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e06fbe70_4f2f33e2",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "The references used in these rows must be edited in order to make them available thru https://doc.distributed-ci.io/ (i.e, https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/roles/preflight/README.md instead of roles/preflight/README.md)",
+      "range": {
+        "startLine": 101,
+        "startChar": 0,
+        "endLine": 104,
+        "endChar": 133
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "888c1d8f_c6e88ddd",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 228,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 228,
+        "startChar": 79,
+        "endLine": 228,
+        "endChar": 122
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df5f335f_03020d0e",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 230,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 230,
+        "startChar": 123,
+        "endLine": 230,
+        "endChar": 158
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be83b32b_c8f70042",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 233,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 233,
+        "startChar": 4,
+        "endLine": 233,
+        "endChar": 45
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "088fe92a_0b68769e",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 262,
+        "startChar": 79,
+        "endLine": 262,
+        "endChar": 120
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd1aa3c1_498ac716",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 267,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "ditto",
+      "range": {
+        "startLine": 267,
+        "startChar": 3,
+        "endLine": 267,
+        "endChar": 57
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "73710369_04d677fa",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 597,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-26T09:58:37Z",
+      "side": 1,
+      "message": "the same, link to d-o-a-a github repo",
+      "range": {
+        "startLine": 597,
+        "startChar": 33,
+        "endLine": 597,
+        "endChar": 51
+      },
+      "revId": "6d74ba896a47c0343d358e325ccaaa17f5f38bbd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
