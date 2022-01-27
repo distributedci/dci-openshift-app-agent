@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f7ee6fb3_ba17f129",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-27T14:40:13Z",
+      "side": 1,
+      "message": "I have changed the image from docker.io to quay.io to avoid the pull rate issue, and I have also updated the name, please check if it is fine",
+      "parentUuid": "a619a736_f7b45d86",
+      "revId": "9cd6095740a1e1a0130e606be9a5e1608e2bf99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "de07c925_007f2eb3",
         "filename": "samples/basic_example/hooks/pre-run.yml",
         "patchSetId": 1
@@ -31,6 +49,24 @@
       "writtenOn": "2022-01-27T14:33:48Z",
       "side": 1,
       "message": "Likewise, we want to upload it to the right place:\ndocker://{{ provisionhost_registry }}/library/nginx:latest",
+      "revId": "9cd6095740a1e1a0130e606be9a5e1608e2bf99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32f4e81b_aa6eb2a7",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-27T14:40:13Z",
+      "side": 1,
+      "message": "idem",
+      "parentUuid": "de07c925_007f2eb3",
       "revId": "9cd6095740a1e1a0130e606be9a5e1608e2bf99e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

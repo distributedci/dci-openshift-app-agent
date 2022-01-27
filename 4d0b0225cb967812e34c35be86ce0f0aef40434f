@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "987fe780_c8c3d078",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-27T14:40:13Z",
+      "side": 1,
+      "message": "I have definitely changed the image used for fake-cnf to use quay.io instead of docker.io, to avoid pull rate issue that happened to me in the second job tested\n\nApart from this, it works well.",
+      "revId": "4d0b0225cb967812e34c35be86ce0f0aef40434f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
