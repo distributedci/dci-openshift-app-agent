@@ -36,6 +36,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b292ecf5_9f3740fc",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-27T17:37:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f7ee6fb3_ba17f129",
+      "revId": "9cd6095740a1e1a0130e606be9a5e1608e2bf99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "de07c925_007f2eb3",
@@ -67,6 +85,24 @@
       "side": 1,
       "message": "idem",
       "parentUuid": "de07c925_007f2eb3",
+      "revId": "9cd6095740a1e1a0130e606be9a5e1608e2bf99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e409450_6302c125",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-01-27T17:37:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32f4e81b_aa6eb2a7",
       "revId": "9cd6095740a1e1a0130e606be9a5e1608e2bf99e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
