@@ -50,6 +50,42 @@
       "message": "I think that you will also need to change https://github.com/dci-labs/dallas-pipelines/blob/cc75611b9e8b658e916a0891217b71f93a26e5b1/fake-cnf-pipeline.yml#L12 if you change the path where the image is pushed in our registry (/aptible).\n\nThanks",
       "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5220c704_8de53a52",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-28T10:17:27Z",
+      "side": 1,
+      "message": "Hi Beto, yes, this was covered in this PR: https://github.com/dci-labs/dallas-pipelines/pull/211, and as Tony already created https://github.com/dci-labs/dallas-pipelines/pull/158 for the same purpose, I am moving my change to that one.",
+      "parentUuid": "46278524_3f6d9633",
+      "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92a19683_86d95b09",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-28T10:17:27Z",
+      "side": 1,
+      "message": "Well, the job ran fine for fake-cnf case, so I would say it is working fine. For the image you proposed, I cannot copy it with skopeo:\n\n```\n[dciteam@jumphost dci-openshift-agent]$ skopeo copy --authfile /opt/cache/pull-secret.txt --remove-signatures mirror.gcr.io/nginxinc/nginx-unprivileged docker://registry.dfwt5g.lab:4443/nginxinc/nginx-unprivileged\nFATA[0000] Invalid source name mirror.gcr.io/nginxinc/nginx-unprivileged: Invalid image name \"mirror.gcr.io/nginxinc/nginx-unprivileged\", expected colon-separated transport:reference\n```\n\nI think that image is also present in docker.io, but if using that reference, we are again in the same problem related to the pull rate. So, is it fine to leave the aptible image for this simple case? Or may we move to other one? (e.g. any from redhat registry like https://catalog.redhat.com/software/containers/ubi8/nginx-120/6156abfac739c0a4123a86fd)",
+      "parentUuid": "dcd72446_9eec8e16",
+      "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
