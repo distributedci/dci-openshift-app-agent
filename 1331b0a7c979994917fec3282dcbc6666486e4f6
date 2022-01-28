@@ -33,6 +33,24 @@
       "message": "Just curious :) If the previous task failed, I understand that this one would not be executed unless you use a `block` for the previous one and then you include all the tasks you want to execute in case of failure within a `rescue` block, isn\u0027t it? Why following this approach?",
       "revId": "1331b0a7c979994917fec3282dcbc6666486e4f6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b55a1ddb_acb1c639",
+        "filename": "roles/preflight/tasks/pre-run_mcp_wait_and_logs.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-28T13:36:33Z",
+      "side": 1,
+      "message": "Hi @Ramon, thank you for checking. Great idea! Here rescue would not go because I want to retrieve the logs both for success and failure (to compare workers\u0027 allocatable and capacity) but I checked docs and there is an `always` block for such situations.",
+      "parentUuid": "f6cfa212_7f56e2f0",
+      "revId": "1331b0a7c979994917fec3282dcbc6666486e4f6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
