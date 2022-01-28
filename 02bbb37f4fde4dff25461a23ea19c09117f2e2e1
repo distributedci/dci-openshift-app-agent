@@ -86,6 +86,24 @@
       "parentUuid": "dcd72446_9eec8e16",
       "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "93ca5ddd_4ffdf893",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-28T21:48:28Z",
+      "side": 1,
+      "message": "the copy failed because \"docker://\" was missing in the source docker://mirror.gcr.io/nginxinc/nginx-unprivileged.\n\nWe should no have issues with the pull rates in dockerhub now that we are authenticating.",
+      "parentUuid": "92a19683_86d95b09",
+      "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
