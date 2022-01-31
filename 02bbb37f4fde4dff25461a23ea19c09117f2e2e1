@@ -122,6 +122,24 @@
       "parentUuid": "93ca5ddd_4ffdf893",
       "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81aafb0f_df3e9f1d",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-31T17:54:42Z",
+      "side": 1,
+      "message": "Thanks for the update Ramon. \n\nJust a quick note, I think the error above was on the target side (dfwt5g), maybe the pull-secret.txt does not have the credentials for destination registry.\n\nThis should work: \n\nskopeo copy  --tls-verify\u003dfalse  --authfile /opt/cache/cluster5-pull-secret.txt --remove-signatures docker://mirror.gcr.io/nginxinc/nginx-unprivileged --dest-authfile /opt/cache/cluster5-pull-secret.txt docker://registry.dfwt5g.lab:4443/nginxinc/nginx-unprivileged:latest",
+      "parentUuid": "04a92b11_c60f0966",
+      "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

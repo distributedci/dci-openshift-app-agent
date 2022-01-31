@@ -16,6 +16,24 @@
       "message": "\u003e Patch Set 4:\n\u003e \n\u003e SUCCESS https://www.distributed-ci.io/jobs/4f7b931e-a9e2-41a7-aed4-a70efb13cf66/jobStates from https://softwarefactory-project.io/r/#/c/23774/\n\nHi guys, this is the job in which I have correctly tested the latest patchset. I have used \u003cregistry\u003e:5000/library/nginx as dci_openshift_app_image, and I have modified all_registries_creds to point to a file using the dockerhub credentials, to avoid the pull rate issue. Everything worked fine, so I guess this is ready",
       "revId": "dd8e2c406cd651631144822498e726de583d245a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1733fdd5_fba34657",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-31T17:54:42Z",
+      "side": 1,
+      "message": "Good stuff Ramón, this looks good to me. Thanks",
+      "parentUuid": "c0d0a0c1_23faf6c2",
+      "revId": "dd8e2c406cd651631144822498e726de583d245a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
