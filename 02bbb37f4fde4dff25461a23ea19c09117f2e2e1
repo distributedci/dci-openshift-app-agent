@@ -104,6 +104,24 @@
       "parentUuid": "92a19683_86d95b09",
       "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04a92b11_c60f0966",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-31T11:57:12Z",
+      "side": 1,
+      "message": "That\u0027s true, thanks Beto.\n\nIn any case, I tried by including \"docker://\", but failed because we don\u0027t have account on mirror.gcr.io, I thinLk:\n\n```\n$ skopeo copy --authfile /opt/cache/pull-secret.txt --remove-signatures docker://mirror.gcr.io/nginxinc/nginx-unprivileged docker://registry.dfwt5g.lab:4443/nginxinc/nginx-\nunprivileged\nCopying blob 3941d2423ee7 skipped: already exists\nCopying blob e5ae68f74026 skipped: already exists\nCopying blob 8793ed412e0b skipped: already exists\nCopying blob 288a3ef2e576 skipped: already exists\nCopying blob 052722e881c1 skipped: already exists\nCopying blob cbe124eb30cb skipped: already exists\nCopying blob a0feba8c57e0 [--------------------------------------] 0.0b / 0.0b\nCopying config 32e12e28e5 [\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d] 7.8KiB / 7.8KiB\nWriting manifest to image destination\nFATA[0000] writing manifest \"{\\n   \\\"schemaVersion\\\": 2,\\n   \\\"mediaType\\\": \\\"application/vnd.docker.distribution.manifest.v2+json\\\",\\n   \\\"config\\\": {\\n      \\\"mediaType\\\": \\\"application/vnd.docker.container.image.v1+json\\\",\\n      \\\"size\\\": 8030,\\n      \\\"digest\\\": \\\"sha256:32e12e28e5d82987d00e6cfa8eb617f1f5d6e8b42af57e6147f6c8f2ef24481a\\\"\\n   },\\n   \\\"layers\\\": [\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 31370221,\\n         \\\"digest\\\": \\\"sha256:e5ae68f740265288a4888db98d2999a638fdcb6d725f427678814538d253aa4d\\\"\\n      },\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 25347467,\\n         \\\"digest\\\": \\\"sha256:cbe124eb30cbf540eed1dc0a6cc8a623e907d7c07d2861982b7b7cca1b659b5f\\\"\\n      },\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 2753,\\n         \\\"digest\\\": \\\"sha256:3941d2423ee7c7cd7cd460b2fb9e91d49a4749a3da07be8105377757b9cb5489\\\"\\n      },\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 602,\\n         \\\"digest\\\": \\\"sha256:052722e881c1465eb58c9ac2bafc164a254188c9f06bd0933d99757ec992fc00\\\"\\n      },\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 898,\\n         \\\"digest\\\": \\\"sha256:8793ed412e0b33fee10d3b5525a3c8ec68ec79fec46e8c8f46c50ca35781c900\\\"\\n      },\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 672,\\n         \\\"digest\\\": \\\"sha256:288a3ef2e576c10c574d59f015ba3e91820ba82f13ac68406d999b07e2e617ea\\\"\\n      },\\n      {\\n         \\\"mediaType\\\": \\\"application/vnd.docker.image.rootfs.diff.tar.gzip\\\",\\n         \\\"size\\\": 1397,\\n         \\\"digest\\\": \\\"sha256:a0feba8c57e04a976af628ae58d7f4fbf8fa05f9314aad23ff55ad45441a48b1\\\"\\n      }\\n   ]\\n}\": uploading manifest latest to registry.dfwt5g.lab:4443/nginxinc/nginx-unprivileged: unauthorized: access to the requested resource is not authorized\n```\n\nSo, as you have included the new account for dockerhub, I will reuse the same image we were using and changing the path, according to one of the previous comments made in this CR.",
+      "parentUuid": "93ca5ddd_4ffdf893",
+      "revId": "02bbb37f4fde4dff25461a23ea19c09117f2e2e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
