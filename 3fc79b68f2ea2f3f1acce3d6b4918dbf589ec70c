@@ -16,6 +16,23 @@
       "message": "Hello everyone, the change is ready for review. Here I retrieve more logs in the following flow:\n\n1/ Preflight updates ICSP 2/ Task implemented by Beto - wait for MC updates to be applied on the nodes. Sometimes this task fails. Usually, in such a situation one of the nodes is in the NotReady state. 3/ Current CR: retrieve detailed logs about each node, its configs, and events.\n\nThe retrieved information is dumped into cnf-example_mcp_logs.log file:\nhttps://www.distributed-ci.io/jobs/1e949271-116a-4046-9e12-eaedde8b5f77/files ",
       "revId": "3fc79b68f2ea2f3f1acce3d6b4918dbf589ec70c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "360e37ee_d7cd5391",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-31T11:25:48Z",
+      "side": 1,
+      "message": "LGTM from my side, I saw you included the \u0027always\u0027 clause. Thanks Tatiana",
+      "revId": "3fc79b68f2ea2f3f1acce3d6b4918dbf589ec70c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
