@@ -50,6 +50,23 @@
       "message": "it seems zuul is broken right now, we will have to try the recheck after some time",
       "revId": "40d234adeb6620e9d445a5cb1bbb6ded20a3027c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32ae5e0d_696ea2c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-01-31T12:49:17Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "40d234adeb6620e9d445a5cb1bbb6ded20a3027c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
