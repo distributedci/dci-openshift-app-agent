@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cfce942_593f1f60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-31T08:23:58Z",
+      "side": 1,
+      "message": "Hi Beto, thank you for taking care of this. Could you please change the catalog image?",
+      "revId": "d8799137e904f9f1a8b9bb1342563d3ac0df4b2a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "798e8003_336d6ef8",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-31T08:23:58Z",
+      "side": 1,
+      "message": "Hi Beto, could you please change to `index_image: \"quay.io/telcoci/simple-demo-operator-catalog:0.0.3\"` ?",
+      "revId": "d8799137e904f9f1a8b9bb1342563d3ac0df4b2a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebcb2a1a_354adf1c",
+        "filename": "roles/pyxis/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-01-31T08:23:58Z",
+      "side": 1,
+      "message": "same here, should be `index_image: \"quay.io/telcoci/simple-demo-operator-catalog:0.0.3\"`",
+      "revId": "d8799137e904f9f1a8b9bb1342563d3ac0df4b2a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
