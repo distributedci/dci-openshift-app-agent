@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef404054_c17333f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-01-31T19:18:30Z",
+      "side": 1,
+      "message": "Hello Tatiana, thanks for the detail. I have submitted a new patch.",
+      "parentUuid": "028645f7_978bb71e",
+      "revId": "d8799137e904f9f1a8b9bb1342563d3ac0df4b2a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "798e8003_336d6ef8",
