@@ -1,11 +1,8 @@
 ---
 
-- name: "Create a temporary directory for job_logs"
-  ansible.builtin.tempfile:
-    state: directory
-    prefix: dci_logs.
-    state: directory
-  register: job_logs
+- name: "Setup job_logs directory"
+  include_tasks: plays/log-dir.yml
+  when: job_logs is undefined
 
 - name: "cnf-cert pre-run"
   include_role:
