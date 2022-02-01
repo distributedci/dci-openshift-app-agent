@@ -51,6 +51,23 @@
       "message": "recheck",
       "revId": "dd8e2c406cd651631144822498e726de583d245a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e3ed09d_b13e18cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-01T09:45:00Z",
+      "side": 1,
+      "message": "Thanks Beto 😊 I\u0027ll retry the merge when Zuul is working again!",
+      "revId": "dd8e2c406cd651631144822498e726de583d245a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
