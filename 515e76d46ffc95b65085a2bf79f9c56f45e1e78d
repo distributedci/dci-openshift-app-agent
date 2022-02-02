@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b39341ad_0bc1aa0e",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-02T16:50:50Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "479fc0a5_45a1754a",
+      "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7564d18b_bda81904",
@@ -65,6 +83,24 @@
       "writtenOn": "2022-02-02T16:21:01Z",
       "side": 1,
       "message": "ditto",
+      "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c5834b5_4c521721",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-02T16:50:50Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7564d18b_bda81904",
       "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
