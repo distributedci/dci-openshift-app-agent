@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aee635f6_ed72b5a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-02T08:53:42Z",
+      "side": 1,
+      "message": "Doing this because daily job has failed at this point because quay was not accessible. Adding a retry to, at least, try it again some more times",
+      "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
