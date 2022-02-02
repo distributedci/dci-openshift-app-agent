@@ -33,6 +33,40 @@
       "message": "Functionality works fine in the tested job, so it\u0027s ready for review and merge.",
       "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "479fc0a5_45a1754a",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-02T16:21:01Z",
+      "side": 1,
+      "message": "I guess you can do: partner_image_copy is not failed \nThis is consistent with what we have done in other places",
+      "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7564d18b_bda81904",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-02T16:21:01Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "515e76d46ffc95b65085a2bf79f9c56f45e1e78d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
