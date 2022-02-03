@@ -16,6 +16,24 @@
       "message": "\u003e Patch Set 6:\n\u003e \n\u003e FAILURE https://www.distributed-ci.io/jobs/08fb0da0-38fa-4e07-870e-b0562dc18fe1/jobStates from https://softwarefactory-project.io/r/#/c/23841/\n\nSorry for having unscheduled this job, but it was stuck in log gathering tasks. The real failure is \"Push the new index image to the local registry\" , which is happening in all the jobs currently being launched on dallas. We\u0027ll need to fix that before launching new jobs",
       "revId": "6638c10cf7b43c8b289454d7b532cba6fbfb05df",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7654b84a_dedb7c9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-03T21:47:50Z",
+      "side": 1,
+      "message": "Thanks Ramón",
+      "parentUuid": "cc43c576_4f929756",
+      "revId": "6638c10cf7b43c8b289454d7b532cba6fbfb05df",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

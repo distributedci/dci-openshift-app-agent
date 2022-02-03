@@ -16,6 +16,24 @@
       "message": "Hi Beto, just one observation from my side. I think we don\u0027t really need to link f5-bigip-config change to this one, because we usually run BigIP, SPK, etc. with the VCP pipeline rather than using d-o-a-a. But do you think we can try to run BigIP, etc. with d-o-a-a? What\u0027s your opinion? It would be really interesting to avoid redeploying the full cluster each time 😊, but I\u0027m not sure it is possible",
       "revId": "22b4541c43fff3e8e603bc605a3c185081f942be",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ce6b81e_19684e6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-03T21:47:50Z",
+      "side": 1,
+      "message": "Hello Ramón, yeah. I was trying to test the changes in the doa hooks and also the changes in the app agent in one shot running \"check 23841 ocp-4.7-vcp fake-cnf\" on the jumphost.\n\nThat will pull the 3 changes, deploy vpc with the f5/spk changes and also check the dooa stuff. \n\nThanks",
+      "parentUuid": "f6f660cd_e8767fef",
+      "revId": "22b4541c43fff3e8e603bc605a3c185081f942be",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
