@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "0937da5096d44eb8f6d36b8b8aaead99162d22e4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc5828df_a6e9d2c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-03T10:42:30Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for review. \n\nRelease 1.0.8 seems to work fine, simple-demo-operator is 100% green: https://www.distributed-ci.io/files/8f205a8b-057d-466b-ad18-01b837bf40c5 \n\nHere is success job: https://www.distributed-ci.io/jobs/2690ea0b-cf3c-43ae-90a9-162e0915c672/files ",
+      "revId": "0937da5096d44eb8f6d36b8b8aaead99162d22e4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
