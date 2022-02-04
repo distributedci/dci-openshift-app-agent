@@ -33,6 +33,23 @@
       "message": "I see the point, and it is a good idea.\n\nCan we have one log file per component, instead of one per attempt ? \n",
       "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "664015bf_a6c84dfd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-04T23:00:53Z",
+      "side": 1,
+      "message": "Hello Tatiana, \n\nAgree with Pierre about having a single log file per operator or maybe zip the files for each operator. Can we have something to enable it like enable_debug\u003dtrue/false?\n\nI was trying \"ocp cluster-info dump\" https://access.redhat.com/articles/4676051 it collects the information that you need but csv data :(\n\nAlso Tony found this script: https://access.redhat.com/solutions/5496071 that looks very complete. We may add this as an utility script for the agent or the hook that can be executed on demand (asynchronous or synchronous). \n\nThanks\n ",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
