@@ -1,4 +1,11 @@
 ---
+
+# We need to do this at this point because preflight_operators_to_check
+# may have been defined thanks to CNF Cert Suite output.
+- name: Manage images mirroring for Preflight cert suite
+  include_tasks: tests_mirroring.yml
+  when: dci_disconnected | default(false) | bool
+
 # If you want to run preflight tests,
 # preflight_operators_to_check variable should be provided
 # in the config file -e @path/to/preflight_config.yaml
