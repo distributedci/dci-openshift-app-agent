@@ -16,18 +16,28 @@
       path: "{{ job_logs.path }}"
   when: do_cnf_cert|bool
 
+# We need to do this at this point because we will not have
+# claim.json file from CNF Cert Suite before this point.
+- name: Retrieve Preflight operators from CNF output claim.json
+  include_role:
+    name: preflight
+    tasks_from: tests_cnf_sync.yml
+  when:
+    - do_preflight_tests|bool
+    - sync_cnf_and_preflight|bool
+
 - name: Preflight tests
   include_role:
     name: preflight
     tasks_from: tests.yml
-  when: do_preflight_tests|bool 
+  when: do_preflight_tests|bool
 
 - name: Submit Preflight results to Pyxis
   include_role:
     name: pyxis
     tasks_from: submit.yml
   when:
-    - preflight_operators_to_check is defined
+    - do_preflight_tests|bool
     - submit_preflight_to_pyxis | bool
 
 ...
