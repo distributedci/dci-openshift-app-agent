@@ -1,12 +1,25 @@
 ---
+
+# We need to do this at this point because preflight_operators_to_check
+# may have been defined thanks to CNF Cert Suite output.
+- name: Manage images mirroring for Preflight cert suite
+  include_tasks: tests_mirroring.yml
+  when: dci_disconnected | default(false) | bool
+
 # If you want to run preflight tests,
 # preflight_operators_to_check variable should be provided
 # in the config file -e @path/to/preflight_config.yaml
+
+# For checking containers, operator_image variable must be defined
+# for the operators to be tested. If not, it will be omitted.
+# This is because there may be operators autodiscovered by CNF Cert Suite, 
+# and in these operators, operator_image is not defined
 - name: Preflight check operator images with check container one by one
   include_tasks: test_preflight_check_container.yml
   loop: "{{ preflight_operators_to_check }}"
   loop_control:
     loop_var: operator
+  when: operator.operator_image is defined
 
 - name: Preflight check operators one by one
   include_tasks: tests_preflight_check_operator.yml
