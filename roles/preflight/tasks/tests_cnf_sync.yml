@@ -1,0 +1,84 @@
+---
+
+- name: Define preflight_operators_to_check if not present
+  set_fact:
+    preflight_operators_to_check: []
+  when: preflight_operators_to_check is not defined
+
+- name: Parse claim.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', job_logs.path + '/claim.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+
+# We need to do this in this way because it is not trivial to update
+# elements from a list composed by complex elements like the case of
+# preflight_operators_to_check
+- name: Update the operators from preflight_operators_to_check
+  block:
+    - name: Build a new variable to save the updated operators
+      vars:
+        _version: |
+          {%- set ns = namespace(found_version=false) -%}
+          {% for operator_to_update in cnf_operators %}
+          {% if item.name == operator_to_update.name.split('.')[0] %}
+          {{ operator_to_update.Version }}
+          {% set ns.found_version = true %}
+          {% endif %}
+          {% endfor %}
+          {% if not ns.found_version %}
+          {{ item.version }}
+          {% endif %}
+        _bundle_image: |
+          {%- set ns = namespace(found_bundle=false) -%}
+          {% for operator_to_update in cnf_operators %}
+          {% if item.name == operator_to_update.name.split('.')[0] %}
+          {{ operator_to_update.installPlans[0].bundleImage|default('') }}
+          {% set ns.found_bundle = true %}
+          {% endif %}
+          {% endfor %}
+          {% if not ns.found_bundle %}
+          {{ item.bundle_image }}
+          {% endif %}
+        _index_image: |
+          {%- set ns = namespace(found_index=false) -%}
+          {% for operator_to_update in cnf_operators %}
+          {% if item.name == operator_to_update.name.split('.')[0] %}
+          {{ operator_to_update.installPlans[0].indexImage|default('') }}
+          {% set ns.found_index = true %}
+          {% endif %}
+          {% endfor %}
+          {% if not ns.found_index %}
+          {{ item.index_image }}
+          {% endif %}
+      set_fact:
+        updated_preflight_operators_to_check: "{{ updated_preflight_operators_to_check|default([]) +
+          [ item|combine( { 'version'     : _version|from_yaml,
+                            'bundle_image': _bundle_image|from_yaml,
+                            'index_image' : _index_image|from_yaml }) ]
+        }}"
+      loop: "{{ preflight_operators_to_check }}"
+
+    - name: Update preflight_operators_to_check with the updated operators
+      set_fact:
+        preflight_operators_to_check: "{{ updated_preflight_operators_to_check }}"
+
+# operator_image and pyxis_identifier fields will not be created if a new element is included
+# in the list
+- name: Include the operator in preflight_operators_to_check
+  vars:
+    operator_names: "{{ preflight_operators_to_check | map(attribute='name') | list | unique }}"
+  set_fact:
+    preflight_operators_to_check: "{{ preflight_operators_to_check +
+      [ { 'name'         : item.name.split('.')[0],
+          'version'      : item.Version,
+          'bundle_image' : item.installPlans[0].bundleImage|default(''),
+          'index_image'  : item.installPlans[0].indexImage|default('') } ]
+    }}"
+  when: not item.name.split('.')[0] in operator_names
+  loop: "{{ cnf_operators }}"
+
+- name: Print final preflight_operators_to_check variable
+  debug:
+    msg: "{{ preflight_operators_to_check }}"
+...
