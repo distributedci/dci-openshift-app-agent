@@ -14,6 +14,11 @@
     - pyxis_apikey_path is undefined
   ignore_errors: true
 
+# Only submit the results for operators that have defined the
+# pyxis_identifier attribute, else the results will not be sent.
+# This is because pyxis submission could be activated but there may
+# be operators autodiscovered by CNF Cert Suite, and in these operators,
+# pyxis_identifier is not defined
 - name: Submit preflight cert results for each operator
   include_tasks: submit_test_results.yml
   loop: "{{ preflight_operators_to_check }}"
@@ -22,5 +27,6 @@
   when:
     - preflight_operators_to_check is defined
     - pyxis_apikey_path is defined
+    - operator.pyxis_identifier is defined
   ignore_errors: true
 ...

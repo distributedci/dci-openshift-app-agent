@@ -1,8 +1,4 @@
 ---
-- name: Verify that pyxis identifier is provided
-  fail:
-    msg: Impossible to submit preflight results to pyxis. Please provide pyxis_identifier.
-  when: operator.pyxis_identifier is undefined
 
 - name: Retrieve results of the preflight tests
   vars:
