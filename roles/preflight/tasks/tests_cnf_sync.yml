@@ -1,0 +1,48 @@
+---
+
+- name: Define preflight_operators_to_check if not present
+  set_fact:
+    preflight_operators_to_check: []
+  when: preflight_operators_to_check is not defined
+
+# We need to determine if we have to update an operator already defined
+# or if we need to include it to preflight_operators_to_check
+- name: Retrieve operator names
+  set_fact:
+    operator_names: "{{ preflight_operators_to_check | map(attribute='name') | list | unique }}"
+
+- name: Parse claim.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', job_logs.path + '/claim.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+
+
+- name: Update the operator from preflight_operators_to_check
+  set_fact:
+    preflight_operators_to_check: "{{ preflight_operators_to_check|combine(
+      [ { 'name'            : item.name.split('.')[0],
+        'version'         : item.Version,
+          'bundle_image'    : item.installPlans[0].bundleImage|default(''),
+          'index_image'  : item.installPlans[0].indexImage|default('') } ] )
+    }}"
+  when: item.name.split('.')[0] in operator_names
+  loop: "{{ cnf_operators }}"
+
+  # operator_image and pyxis_identifier fields will not be created if a new element is included
+  # in the list
+- name: Include the operator in preflight_operators_to_check
+  set_fact:
+    preflight_operators_to_check: "{{ preflight_operators_to_check +
+      [ { 'name'         : item.name.split('.')[0],
+          'version'      : item.Version,
+          'bundle_image' : item.installPlans[0].bundleImage|default(''),
+          'index_image'  : item.installPlans[0].indexImage|default('') } ]
+    }}"
+  when: not item.name.split('.')[0] in operator_names
+  loop: "{{ cnf_operators }}"
+
+- name: Print final preflight_operators_to_check variable
+  debug:
+    msg: "{{ preflight_operators_to_check }}"
+...
