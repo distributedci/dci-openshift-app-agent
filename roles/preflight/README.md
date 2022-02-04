@@ -8,7 +8,6 @@ This role implements the preflight test suite as part of DCI Application Agent.
 
 Name                               | Default                                              | Description
 ---------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
-do\_preflight\_tests               | false                                                | Trigger to activate the preflight tests
 preflight\_version                 | quay.io/opdev/preflight:1.0.8                        | [Version of Preflight Cert Suite to run](https://quay.io/repository/opdev/preflight?tab=tags)
 preflight\_operators\_to\_check    | undefined                                            | List of operators to be checked with Preflight Cert Suite. This variable is mandatory to run Preflight cert suite. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
 operator\_sdk\_tool\_path          | undefined                                            | Path to operator-sdk binary, optional. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-check) for the example.
@@ -54,7 +53,7 @@ preflight_operators_to_check:
 
 **Mandatory**
 - `preflight_operators_to_check` should be provided to run preflight or operator-sdk tests.
-- `pyxis_apikey_path` and `pyxis_identifier` can be found on connect.redhat.com 
+- `pyxis_apikey_path` and `pyxis_identifier` can be found on connect.redhat.com
 
 **Optional** `operator_sdk_tool_path` should be provided to run operator-sdk scorecard tests.
 Here is the invocation:
