@@ -138,6 +138,8 @@ provisioner\_name                  |                                            
 provisioner\_user                  |                                                      | Provisioner username, used to access to the provisioner for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
 do\_cnf\_cert                      |false                                                 | Enable/Disable the CNF Cert Suite (https://github.com/test-network-function/test-network-function)
 do\_chart\_verifier                | false                                                | Enable/Disable the Chart Verifier
+do\_preflight\_tests               | false                                                | Trigger to activate the preflight tests
+sync\_cnf\_and\_preflight          | false                                                | If true, CNF Cert Suite output (claim.json file) would be used to create the `preflight_operators_to_check` variable needed for preflight tests.
 |See [Operator Certification (preflight)](https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/README.md) for details to enable the Operator Certifications tests suite ||
 |See [CNF-cert role](https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/cnf-cert/README.md) for details to enable the Cloud Native Functions (CNF) cert suite                   ||
 |See [chart-verifier role](https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/chart-verifier/README.md) for details to enable the chart-verifier tests                          ||
@@ -239,6 +241,7 @@ An example of how to run the Operator Certifications tests:
 ```console
 $ dci-openshift-app-agent-ctl -s -- -v \
 -e kubeconfig_path=path/to/kubeconfig \
+-e do_preflight_tests=true \
 -e @preflight_config.yaml
 ```
 where bare minimal config is a list of operators to test:
@@ -247,10 +250,15 @@ where bare minimal config is a list of operators to test:
 ---
 # preflight-config.yaml
 preflight_operators_to_check:
-  - name: "simple-demo-operator"
-    version: "v0.0.3"
-    bundle_image: "quay.io/opdev/simple-demo-operator-bundle@sha256:eff7f86a54ef2a340dbf739ef955ab50397bef70f26147ed999e989cfc116b79"
-    index_image: "quay.io/opdev/simple-demo-operator-catalog:v0.0.3"
+  pyxis_identifier: "PROJECTID"
+  pyxis_apikey_path: "APIKEY_PATH"
+  operators:
+    - name: "simple-demo-operator"
+      version: "0.0.3"
+      bundle_image: "quay.io/telcoci/simple-demo-operator-bundle@sha256:e631c8dc7ab2d1ff67bf2731fd73820cb8e0214f9970d6ab1afca2f089d2fdb9"
+      operator_image: "quay.io/telcoci/simple-demo-operator@sha256:f0bec37686bfc430e58630c3f7873f2f32659d25728dc40ebe06f1d9f30b45d2"
+      index_image: "quay.io/telcoci/simple-demo-operator-catalog:0.0.3"
+      pyxis_identifier: "PROJECTID"
 ```
 
 For specific details about the features and variables for this test suite see: [Preflight role](https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/README.md) documentation.
@@ -265,7 +273,7 @@ An example of how to run the CNF certification tests:
 ```console
 $ dci-openshift-app-agent-ctl -s -- -v \
 -e kubeconfig_path=path/to/kubeconfig \
--e do_tnf_tests=true \
+-e do_cnf_cert=true \
 -e @cnf_config.yaml
 ```
 where the configs file looks like this:
