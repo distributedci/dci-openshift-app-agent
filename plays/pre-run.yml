@@ -97,6 +97,12 @@
   become: true
   when: do_chart_verifier|bool
 
+- name: Retrieve Preflight operators from CNF output claims.json
+  include_role:
+    name: preflight
+    tasks_from: pre-run_cnf_sync.yml
+  when: sync_cnf_and_preflight is defined
+
 - name: Preflight tests
   include_role:
     name: preflight
