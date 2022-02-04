@@ -73,7 +73,7 @@
         definition: "{{ lookup('file', preflight_prerun_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
 
     - name: Wait for updated MC to be applied on the nodes and retrieve logs
-      include_tasks: pre-run_mcp_wait_and_logs.yml
+      include_tasks: tests_mcp_wait_and_logs.yml
 
 - name: Remove tmp dir
   file:
