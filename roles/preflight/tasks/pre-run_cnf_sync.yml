@@ -1,0 +1,19 @@
+---
+- name: Parse claims.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', 'files/claims.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+    preflight_operators_to_check: []
+
+- name: Build operators for Preflight cert suite
+  set_fact:
+    preflight_operators_to_check: "{{ 
+      preflight_operators_to_check + 
+      [ { 'name'         : item.name.split('.')[0], 
+          'version'      : item.Version,
+          'bundle_image' : item.bundleImage.replace('\"', ''),
+          'index_image'  : item.indexImage.replace('\"', '') } ]
+    }}"
+  loop: "{{ cnf_operators }}"
+...
