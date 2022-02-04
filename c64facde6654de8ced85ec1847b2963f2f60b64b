@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80c75ec1_395b1b1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-04T10:32:22Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for review. \n\nThe idea is to retrieve cluster state _during_ Preflight tests execution. This way, it\u0027s easy to debug frequent timeout errors when one of the numerous pods doesn\u0027t start.\n\nThe logs are retrieved three times, with 50 seconds pause in-between. The pause duration is chosen to comply with the global Preflight timeout of 180 seconds.\n\nLog files are in preflight_operator_async_*, here is an example: https://www.distributed-ci.io/files/78786d1a-aa78-40c0-9d94-96d2d2a2d787",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
