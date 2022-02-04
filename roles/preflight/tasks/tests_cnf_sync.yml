@@ -1,0 +1,44 @@
+---
+
+- name: Define preflight_operators_to_check if not present
+  set_fact:
+    preflight_operators_to_check:
+      pyxis_identifier: ""
+      pyxis_apikey_path: ""
+      operators: []
+  when: preflight_operators_to_check is not defined
+
+# Currently using an already generated claim.json file
+- name: Parse claim.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', job_logs.path + '/claim.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+
+- name: Extract preflight_operators_to_check.operators to fill it
+  set_fact:
+    operators_list: "{{ preflight_operators_to_check.operators }}"
+
+# If pyxis_identifier is provided under preflight_operators_to_check,
+# just copy it in the operator item
+- name: Build operators for Preflight cert suite
+  set_fact:
+    operators_list: "{{
+      operators_list +
+      [ { 'name'            : item.name.split('.')[0]|default(''),
+          'version'         : item.Version|default(''),
+          'bundle_image'    : item.installPlans[0].bundleImage|default(''),
+          'operator_image'  : item.installPlans[0].operatorImage|default(''),
+          'index_image'     : item.installPlans[0].indexImage|default(''),
+          'pyxis_identifier': preflight_operators_to_check.pyxis_identifier } ]
+    }}"
+  loop: "{{ cnf_operators }}"
+
+- name: Update preflight_operators_to_check.operators with the complete list
+  set_fact:
+    preflight_operators_to_check: "{{ preflight_operators_to_check|combine({ 'operators': operators_list }) }}"
+
+- name: Print final preflight_operators_to_check variable
+  debug:
+    msg: "{{ preflight_operators_to_check }}"
+...
