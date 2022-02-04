@@ -15,6 +15,12 @@
     tasks_from: post-run.yml
   when: do_cnf_cert|bool
 
+- name: Preflight post-run
+  include_role:
+    name: preflight
+    tasks_from: post-run.yml
+  when: do_preflight_tests|bool
+
 - name: Delete namespace
   k8s:
     api_version: v1
