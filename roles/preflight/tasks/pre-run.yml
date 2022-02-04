@@ -4,7 +4,4 @@
 - name: Run preflight runtime-assets to get scorecard-test image
   include_tasks: pre-run_runtime_assets.yml
 
-- name: Manage images mirroring for Preflight cert suite
-  include_tasks: pre-run_mirroring.yml
-  when: dci_disconnected | default(false) | bool
 ...

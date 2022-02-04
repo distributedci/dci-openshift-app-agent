@@ -101,5 +101,5 @@
   include_role:
     name: preflight
     tasks_from: pre-run.yml
-  when: preflight_operators_to_check is defined
+  when: preflight_operators_to_check is defined or sync_cnf_and_preflight|bool
 ...
