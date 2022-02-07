@@ -50,6 +50,42 @@
       "message": "Hello Tatiana, \n\nAgree with Pierre about having a single log file per operator or maybe zip the files for each operator. Can we have something to enable it like enable_debug\u003dtrue/false?\n\nI was trying \"ocp cluster-info dump\" https://access.redhat.com/articles/4676051 it collects the information that you need but csv data :(\n\nAlso Tony found this script: https://access.redhat.com/solutions/5496071 that looks very complete. We may add this as an utility script for the agent or the hook that can be executed on demand (asynchronous or synchronous). \n\nThanks\n ",
       "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a1501fb_3c94d06a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-07T15:30:16Z",
+      "side": 1,
+      "message": "Hi @Pierre, thank you for the review! As discussed, waiting for your feedback on real-life operators :)",
+      "parentUuid": "8bb0dfd8_1153fee8",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f50556a_5632239b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-07T15:30:16Z",
+      "side": 1,
+      "message": "Hi Beto, thank you for the review.\n\n\u003e Agree with Pierre about having a single log file per operator\n\nWe discussed with Pierre, and I explained that it\u0027s a sort of three snapshots which more or less should reflect three steps of preflight testing:\n- time \u003d 0s, starting Preflight container\n- time \u003d 50s, starting operator-sdk pods and operator pods\n- time \u003d 100s, here we would normally see timeout problems if they\u0027re present\n\nFrom my experience, it\u0027s easier to debug like this. Pierre was going to test on real-life operators, let\u0027s wait for his feedback.\n\n\u003e Can we have something to enable it like enable_debug\u003dtrue/false?\n\nSure, thank you for the idea.\n\n\u003e I was trying \"ocp cluster-info dump\", it collects the information that you need but csv data :(\n\nThe info I collect is an observation of DeployableByOlm steps: subs, csv, operator pods. I\u0027m trying to simplify a debug of partners\u0027 operators, to exclude the need to connect to the cluster. The timeout of preflight tests is 3 min, and there are 6-9 pods that start and then are cleaned up right after the tests. \n\n\u003e Also Tony found this script: https://access.redhat.com/solutions/5496071 that looks very complete. \n\nThis script is for SR-IOV debug, and it\u0027s less interesting to include it here, in the Preflight role. We might want to include it a bit earlier in d-o-a-a, after SR-IOV setup.",
+      "parentUuid": "664015bf_a6c84dfd",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
