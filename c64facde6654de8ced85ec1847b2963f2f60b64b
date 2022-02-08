@@ -86,6 +86,24 @@
       "parentUuid": "664015bf_a6c84dfd",
       "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4908dbae_34bd7062",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-08T19:32:32Z",
+      "side": 1,
+      "message": "Tatiana, thanks for the explanation. Yeah, I was thinking more on converting that script to work for any operator on an specific namespace. Will think if it can be integrated at agent level during the get-logs. \n\nRegards",
+      "parentUuid": "5f50556a_5632239b",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
