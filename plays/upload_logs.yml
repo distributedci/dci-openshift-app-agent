@@ -20,6 +20,8 @@
     - "{{ job_logs.path }}/*.yaml"
     - "{{ job_logs.path }}/*.html"
     - "{{ job_logs.path }}/*.txt"
+    - "{{ job_logs.path }}/*.pcap"
+    - "{{ job_logs.path }}/*.trace"
   tags: [dci]
 
 - name: Upload Junit files to DCI Control Server
