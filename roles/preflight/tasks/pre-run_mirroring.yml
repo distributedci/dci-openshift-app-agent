@@ -37,6 +37,8 @@
     - name: Build index image in temporary preflight directory
       vars:
         preflight_bundle_images: "{{ preflight_operators_to_check | map(attribute='bundle_image') | list | unique }}"
+      environment:
+        - REGISTRY_AUTH_FILE: "{{ partner_creds }}"
       shell:
         cmd: >
           opm index add --pull-tool podman
