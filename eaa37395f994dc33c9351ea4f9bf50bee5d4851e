@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97a44925_8716c7f0",
+        "filename": "group_vars/all",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-11T22:26:56Z",
+      "side": 1,
+      "message": "I don\u0027t think we should define this here and also don\u0027t think the value is the right one as a default.\n\nI think the default value should be a mktemp dir in /var or /var/tmp\n/var/lib/dci-pipeline/upload-errors should be used via the pipelines, wdyt?",
+      "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
