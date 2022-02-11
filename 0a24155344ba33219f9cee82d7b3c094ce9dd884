@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fbf704d_ec3d1d8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-11T16:01:33Z",
+      "side": 1,
+      "message": "Leaving one comments here. And another thing to comment: when I started to think about this topic, I considered to also create an Ansible playbook that performs the upload of the files saved under the dci_local_log_dir directory afterwards. Can it be added as a sample or in a readme for completing the loop?",
+      "revId": "0a24155344ba33219f9cee82d7b3c094ce9dd884",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc9d72ae_f948f574",
+        "filename": "plays/upload_logs.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-11T16:01:33Z",
+      "side": 1,
+      "message": "Do we need to define this variable then? Maybe we can create it in a specific folder with a specific name (e.g. using the DCI job ID?)",
+      "revId": "0a24155344ba33219f9cee82d7b3c094ce9dd884",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
