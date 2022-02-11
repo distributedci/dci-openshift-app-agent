@@ -51,6 +51,24 @@
       "parentUuid": "bc9d72ae_f948f574",
       "revId": "0a24155344ba33219f9cee82d7b3c094ce9dd884",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "882a3e5d_c78e5bbf",
+        "filename": "plays/upload_logs.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-11T21:54:45Z",
+      "side": 1,
+      "message": "dci_local_log_dir is defined in the pipelines. The implementation in DOA was to execute this block only if the var is defined and the rescue es triggered. If the idea is to always run this in case of failure uploading to dci then will add it to defaults.",
+      "parentUuid": "b09a37bb_ccd03006",
+      "revId": "0a24155344ba33219f9cee82d7b3c094ce9dd884",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
