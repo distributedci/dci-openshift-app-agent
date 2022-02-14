@@ -52,6 +52,24 @@
       "parentUuid": "53794dc1_1d4b89ec",
       "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8bd866e0_73fc7d6c",
+        "filename": "group_vars/all",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-14T12:39:36Z",
+      "side": 1,
+      "message": "Here I have some concerns, because /tmp is meant to be a place for temporary files that, in fact, are removed in case of rebooting the server. In theory, the files covered under dci_local_log_dir must be available after a job in case the upload to DCI failed, in order to submit it afterwards. And then, when it is correctly uploaded to DCI, it can be deleted. So, isn\u0027t it better to put it in another place like /var, as Tony said?",
+      "parentUuid": "8448793d_7a6f6f3e",
+      "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
