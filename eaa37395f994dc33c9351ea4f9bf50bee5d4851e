@@ -88,6 +88,24 @@
       "parentUuid": "8bd866e0_73fc7d6c",
       "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "499adaf9_dcd4f2d1",
+        "filename": "group_vars/all",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-15T11:44:05Z",
+      "side": 1,
+      "message": "Was it changed? Because I don\u0027t see the change 😕",
+      "parentUuid": "7555cc32_c84b40f6",
+      "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
