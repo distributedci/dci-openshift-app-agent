@@ -106,6 +106,24 @@
       "parentUuid": "7555cc32_c84b40f6",
       "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6dab6e9e_a03d280e",
+        "filename": "group_vars/all",
+        "patchSetId": 8
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-16T00:31:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "499adaf9_dcd4f2d1",
+      "revId": "eaa37395f994dc33c9351ea4f9bf50bee5d4851e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
