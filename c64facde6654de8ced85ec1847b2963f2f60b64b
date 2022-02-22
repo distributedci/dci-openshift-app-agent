@@ -104,6 +104,40 @@
       "parentUuid": "5f50556a_5632239b",
       "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6643dc5_5fa236c7",
+        "filename": "roles/preflight/tasks/test_async_logs_check_operator.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-02-22T16:53:36Z",
+      "side": 1,
+      "message": "Why do we need this file at all?\nI mean, we include this file from tests_preflight_check_operator.yml and we only use it to include test_all_logs.yml.\nMaybe it\u0027s simpler to run this task from tests_preflight_check_operator.yml.",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8de93b77_2fa3ace1",
+        "filename": "roles/preflight/tasks/test_async_logs_check_operator.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-02-22T16:53:36Z",
+      "side": 1,
+      "message": "I\u0027d suggest setting a loop var name.",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
