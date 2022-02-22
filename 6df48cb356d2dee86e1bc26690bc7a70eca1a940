@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba9041b1_d8bc089a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-02-22T23:10:58Z",
+      "side": 1,
+      "message": "Beto, this looks good to me, but I think we\u0027ll also need to update the dci_must_gather_images var in the pipelines",
+      "revId": "6df48cb356d2dee86e1bc26690bc7a70eca1a940",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
