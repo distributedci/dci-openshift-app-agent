@@ -16,6 +16,23 @@
       "message": "LGTM.\nAt some point we will need to figure a way to only do must-gather with its own timeout 😄",
       "revId": "32c358a2fee87a60386f1806df4d6755d3e98f04",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7114c4f_8c4513fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-22T10:10:51Z",
+      "side": 1,
+      "message": "LGTM, thanks Beto!",
+      "revId": "32c358a2fee87a60386f1806df4d6755d3e98f04",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
