@@ -1,0 +1,6 @@
+---
+- name: "Remove App Agent working directory"
+  file:
+    path: "{{ app_agent_dir.path }}"
+    state: absent
+...

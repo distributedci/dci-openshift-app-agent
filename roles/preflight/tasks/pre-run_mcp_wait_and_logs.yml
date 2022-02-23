@@ -21,22 +21,22 @@
     - name: Then retrieve mcp logs
       shell: |
         echo "oc get mcp =========="
-        {{ oc_tool_path }} get mcp
+        {{ app_agent_dir.path }}/oc get mcp
         echo "oc get mc =========="
-        {{ oc_tool_path }} get mc
+        {{ app_agent_dir.path }}/oc get mc
         echo "oc describe mcp worker =========="
-        {{ oc_tool_path }} describe mcp worker
+        {{ app_agent_dir.path }}/oc describe mcp worker
       register: mcp_logs
 
     - name: Retrieve list of worker nodes
       shell: >
-        {{ oc_tool_path }} get nodes --selector=node-role.kubernetes.io/worker -o custom-columns=NAME:.metadata.name --no-headers
+        {{ app_agent_dir.path }}/oc get nodes --selector=node-role.kubernetes.io/worker -o custom-columns=NAME:.metadata.name --no-headers
       register: worker_nodes
 
     - name: Retrieve worker logs
       shell: |
         echo "oc describe node {{ item }} =========="
-        {{ oc_tool_path }} describe node {{ item }}
+        {{ app_agent_dir.path }}/oc describe node {{ item }}
       loop: "{{ worker_nodes.stdout.split('\n') }}"
       register: mcp_worker_logs
 
