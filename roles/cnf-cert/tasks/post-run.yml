@@ -16,7 +16,7 @@
   - name: Delete the partner deployment
     shell: |
       set -ex
-      {{ oc_tool_path }} delete deployment tnfpartner -n default
+      {{ app_agent_dir.path }}/oc delete deployment tnfpartner -n default
     when: partner_deployment.resources|length > 0
 
   - name: Check if debug daemonset exists
@@ -30,7 +30,7 @@
   - name: Delete the debug daemonSet
     shell: |
       set -ex
-      {{ oc_tool_path }} delete daemonset debug -n default
+      {{ app_agent_dir.path }}/oc delete daemonset debug -n default
     when: debug_daemonset.resources|length > 0
 
   when: tnf_postrun_delete_resources|bool
