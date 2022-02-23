@@ -39,7 +39,7 @@
         preflight_bundle_images: "{{ preflight_operators_to_check | map(attribute='bundle_image') | list | unique }}"
       shell:
         cmd: >
-          opm index add --pull-tool podman
+          {{ app_agent_dir.path }}/opm index add --pull-tool podman
           --bundles {{ ','.join(preflight_bundle_images) }}
           --tag {{ OO_INDEX }}
         chdir: "{{ preflight_prerun_tmp_dir.path }}"
@@ -54,7 +54,7 @@
   block:
     - name: Save catalog mirror to temporary scorecard directory
       shell: >
-        oc adm catalog mirror -a {{ all_registries_creds }}
+        {{ oc_tool_path }} adm catalog mirror -a {{ all_registries_creds }}
         {{ OO_INDEX }} {{ provisionhost_registry }} --to-manifests={{ preflight_prerun_tmp_dir.path }}/tmp_oc
 
     - name: Append to imageContentSourcePolicy
