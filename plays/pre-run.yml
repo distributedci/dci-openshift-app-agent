@@ -6,6 +6,11 @@
     status: "pre-run"
   tags: [dci]
 
+- name: "Define all_registries_creds default value if not provided"
+  set_fact:
+    all_registries_creds: ""
+  when: all_registries_creds is not defined
+
 # Prepare host
 - name: "Configure DCI jumphost"
   include_tasks: configure.yml
