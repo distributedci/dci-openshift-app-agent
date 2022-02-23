@@ -27,6 +27,7 @@
       copy:
         src: "{{ partner_creds }}"
         dest: "{{ preflight_repoconfig }}/config.json"
+      when: partner_creds | default("") | length
 
 - name: "Run preflight check bundle container for {{ operator.name }}"
   shell: >
