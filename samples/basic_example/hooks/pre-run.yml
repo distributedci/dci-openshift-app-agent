@@ -22,4 +22,4 @@
   when:
     - dci_disconnected | default(false) | bool
     - provisionhost_registry|length
-    - all_registries_creds|length
+    - all_registries_creds | default("") | length
