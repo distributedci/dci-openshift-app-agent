@@ -16,6 +16,23 @@
       "message": "In this job, where I removed all_registries_creds variable from the inventory to check if default(\"\") works, we can confirm the behaviour is correct: default(\"\") is taken and mirroring tasks were not executed: https://www.distributed-ci.io/jobs/d7ce8588-9c56-4dff-9203-45602ffa404f/jobStates#b77b1a6b-eaa4-440f-b0c9-c46e52e72448:file26\n\nAnd then, in the last two examples, now using all_registries_creds again and pointing to /opt/cache, we can confirm fake-cnf (https://www.distributed-ci.io/jobs/85b9c9d7-690f-498f-b78b-0d37dd10401a/jobStates#10ba5bd6-5b1d-45e7-830f-5df349d12ff2:file26) and tnf-test-cnf (https://www.distributed-ci.io/jobs/88868c22-c6f0-4ce7-b13a-256a7a0eef39/jobStates#049d6f25-d041-436f-a17d-57381d5abc89:file4) are working fine and the mirror tasks also worked.",
       "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2b33cc6_68836a52",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-02-23T17:25:09Z",
+      "side": 1,
+      "message": "Ramon, thanks for organizing this, I\u0027m just curious if you have a job where the vars in the inventory are not taken because all_registries_creds in the group_vars take precedence? I\u0027m reading the doc[1], and for me the inventory file takes precedence over group_vars, I\u0027m ok to merge this, I\u0027m just not sure if the var is group_vars dir is really a problem.\n\n[1] https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable ",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
