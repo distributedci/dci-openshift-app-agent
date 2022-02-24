@@ -33,6 +33,23 @@
       "message": "Ramon, thanks for organizing this, I\u0027m just curious if you have a job where the vars in the inventory are not taken because all_registries_creds in the group_vars take precedence? I\u0027m reading the doc[1], and for me the inventory file takes precedence over group_vars, I\u0027m ok to merge this, I\u0027m just not sure if the var is group_vars dir is really a problem.\n\n[1] https://docs.ansible.com/ansible/latest/user_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable ",
       "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fffac010_bae82bf5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-24T09:26:18Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for the CR.\n\n\u003e So, if we intend to define all_registries_creds variables only in the inventory\n\nFor the moment, we define all_registries_creds in the pipeline. Why do we plan to change it and move to the inventory? ",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
