@@ -30,6 +30,7 @@
     -e PFLT_LOGFILE=/artifacts/preflight.log
     -e PFLT_LOGLEVEL=trace
     -v {{ preflight_artifacts }}:/artifacts
+    {{ preflight_podman_ca }}
     {{ preflight_version }}
     check container
     {{ operator.bundle_image }}

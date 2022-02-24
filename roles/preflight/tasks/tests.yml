@@ -1,4 +1,10 @@
 ---
+# Use custom certificat for self sign registry
+- name: Get custom ca certificate for preflight
+  include_tasks: prepare_custom_certificate.yml
+  when:
+    - preflight_custom_ca | length != 0
+
 # If you want to run preflight tests,
 # preflight_operators_to_check variable should be provided
 # in the config file -e @path/to/preflight_config.yaml
@@ -33,4 +39,11 @@
   loop_control:
     loop_var: operator
   when: operator_sdk_tool_path is defined
+
+- name: Remove tmp directory
+  file:
+    path: "{{ preflight_ca_tmp_dir.path }}"
+    state: absent
+  when:
+    - preflight_ca_tmp_dir is defined
 ...
