@@ -68,6 +68,59 @@
       "parentUuid": "b2b33cc6_68836a52",
       "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c43ca75_12db684d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-24T11:41:11Z",
+      "side": 1,
+      "message": "Here you have an example Manuel: https://www.distributed-ci.io/jobs/34692b88-0038-4674-8ac4-e079216c9f39/jobStates#7ebcf30b-84a1-4fe0-92a3-1080b06f5a66:file44, in this case, you can see all_registries_creds is empty in case we only define it in the inventories.\n\nI think, taking Ansible docs as base, the inventory variable is in group 4. inventory group_vars/all, with less priority than 5. playbook group_vars/all. I think this because, for the app-agent, we define the inventory vars under all.vars: https://github.com/dci-labs/inventories/blob/master/dallas/8nodes/cluster5-post.yml#L1. Or, according to what Tatiana shared, our case would be \"inventory file specificgroup:vars (‘groups_inventory’)\", which also has less priority than group_vars/all",
+      "parentUuid": "040b7a80_e0521adf",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d46c7742_cfc77f28",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-24T11:41:11Z",
+      "side": 1,
+      "message": "Resolving questions. Moreover, although this change may be related to https://softwarefactory-project.io/r/c/dci-openshift-agent/+/24113, https://github.com/dci-labs/dallas-pipelines/pull/249 and https://github.com/dci-labs/inventories/pull/81, this can be safely merged if we agree.",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12838d0b_faba258b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-24T11:41:11Z",
+      "side": 1,
+      "message": "Already discussed it, it is because of https://github.com/dci-labs/dallas-pipelines/pull/249 and https://github.com/dci-labs/inventories/pull/81. The idea is to avoid having the same variable in two different places. And if the registry_creds depends on the pull-secret and the pull-secret is different for each cluster, then we can better obtain the info from the inventories rather than from the pipelines.",
+      "parentUuid": "fffac010_bae82bf5",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
