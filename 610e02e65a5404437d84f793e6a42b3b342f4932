@@ -50,6 +50,24 @@
       "message": "Hi Ramon, thank you for the CR.\n\n\u003e So, if we intend to define all_registries_creds variables only in the inventory\n\nFor the moment, we define all_registries_creds in the pipeline. Why do we plan to change it and move to the inventory? ",
       "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "040b7a80_e0521adf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-24T11:27:46Z",
+      "side": 1,
+      "message": "Hi Manuel, not sure, look at this post: https://medium.com/opsops/changing-variable-precedence-in-ansible-a86c0c8373d7 and this docs link: https://docs.ansible.com/ansible/latest/reference_appendices/config.html#variable-precedence",
+      "parentUuid": "b2b33cc6_68836a52",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
