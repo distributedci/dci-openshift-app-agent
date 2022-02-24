@@ -65,6 +65,7 @@
     -e PFLT_SCORECARD_IMAGE={{ preflight_assets_images[0] }}
     -v {{ preflight_kubeconfig }}/kubeconfig:/kubeconfig
     -v {{ preflight_artifacts }}:/artifacts
+    {{ preflight_podman_ca }}
     {{ preflight_version }}
     check operator
     {{ operator.bundle_image }}
