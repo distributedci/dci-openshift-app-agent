@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72ea59da_b7a86aa1",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-25T14:25:35Z",
+      "side": 1,
+      "message": "I see your point but this path is static and will not changed, it is a part of red hat system for years.",
+      "parentUuid": "7afe2447_3e87f057",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d01b3710_5fdbe763",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-02-25T11:36:04Z",
       "side": 1,
       "message": "It seems like the job failed because preflight_custom_ca was not defined in the pipeline file https://www.distributed-ci.io/jobs/7035fbfa-be03-40ef-b569-4a1034dd40eb/jobStates#e2ec84b7-94a8-429b-9de3-f1729ed7a59e:file12",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5e3bd96_cc01023e",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-25T14:25:35Z",
+      "side": 1,
+      "message": "Interesting, I am checking this point.",
+      "parentUuid": "d01b3710_5fdbe763",
       "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +105,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "066d23cd_68cc4e1d",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-25T14:25:35Z",
+      "side": 1,
+      "message": "if custom ca is not defined we don\u0027t want to mount something :)",
+      "parentUuid": "5f065cd9_bebabbfd",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8ccad474_76029d29",
@@ -82,6 +136,24 @@
       "writtenOn": "2022-02-25T11:36:04Z",
       "side": 1,
       "message": "This probably could be moved in pre-run.yml, at the very end",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba7b5157_75adabbc",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-25T14:25:35Z",
+      "side": 1,
+      "message": "Good idea !",
+      "parentUuid": "8ccad474_76029d29",
       "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

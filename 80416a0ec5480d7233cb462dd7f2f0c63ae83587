@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4def1c9_c73f023a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-25T14:25:35Z",
+      "side": 1,
+      "message": "I just rebased the patch from master and apply changes suggested by @Tatiana",
+      "revId": "80416a0ec5480d7233cb462dd7f2f0c63ae83587",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
