@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34b4355c_cf021762",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-25T11:36:04Z",
+      "side": 1,
+      "message": "Hi Pierre, thank you for fixing that, it\u0027s really cool to have this solved so fast! :) \nI\u0027ve added some minor comments below.",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7afe2447_3e87f057",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-25T11:36:04Z",
+      "side": 1,
+      "message": "Hi Pierre, we could probably put /etc/pki/tls/certs/ca-bundle.trust.crt in the variable in roles/preflight/defaults/main.yml, to have all config centralized in one place:\n\nca_path_in_container: /etc/pki/tls/certs/ca-bundle.trust.crt",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d01b3710_5fdbe763",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-25T11:36:04Z",
+      "side": 1,
+      "message": "It seems like the job failed because preflight_custom_ca was not defined in the pipeline file https://www.distributed-ci.io/jobs/7035fbfa-be03-40ef-b569-4a1034dd40eb/jobStates#e2ec84b7-94a8-429b-9de3-f1729ed7a59e:file12",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f065cd9_bebabbfd",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-25T11:36:04Z",
+      "side": 1,
+      "message": "I\u0027d say something like this would ease the read `-v {{ preflight_ca_tmp_dir.path }}/ca.crt:{{ ca_path_in_container }}`, but up to you to decide :)",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ccad474_76029d29",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-25T11:36:04Z",
+      "side": 1,
+      "message": "This probably could be moved in pre-run.yml, at the very end",
+      "revId": "bc929d0a75ebc3f8924a19d72a8ae1ae5bb43099",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
