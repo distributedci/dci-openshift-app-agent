@@ -37,6 +37,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "f7dff7e8_95e5c47b",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-25T18:38:42Z",
+      "side": 1,
+      "message": "lol, do it twice just in case. Thanks!",
+      "parentUuid": "7859c573_23a747c8",
+      "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "5a84343c_291dd4ae",
         "filename": "plays/scripts/get-logs",
         "patchSetId": 9
@@ -65,6 +83,24 @@
       "writtenOn": "2022-02-25T10:06:42Z",
       "side": 1,
       "message": "If we have already defined opm_tool_path in plays/check_kubeconfig, why don\u0027t we use it here?",
+      "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a27dea3d_782abf49",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-25T18:38:42Z",
+      "side": 1,
+      "message": "Missed add in the commit. Thanks!",
+      "parentUuid": "7bb74d58_8ebcff2e",
       "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
