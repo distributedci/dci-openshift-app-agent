@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9230c59c_63824a0e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-02-25T03:31:53Z",
+      "side": 1,
+      "message": "Cool stuff Beto, just one minor thing for now,",
+      "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7859c573_23a747c8",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-02-25T03:31:53Z",
+      "side": 1,
+      "message": "Unless my eyes are betraying me now, I think this task is the same as above in line 43 isn\u0027t? :P",
+      "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a84343c_291dd4ae",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 9
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-02-25T03:31:53Z",
+      "side": 1,
+      "message": "I think here is the only place where oc command deserved to remain without the pull path, just saying, not a problem at all.",
+      "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
