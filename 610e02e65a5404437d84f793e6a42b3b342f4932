@@ -121,6 +121,23 @@
       "parentUuid": "fffac010_bae82bf5",
       "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6e7a1a5_0d9468b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-02-25T03:23:10Z",
+      "side": 1,
+      "message": "@Ramon @Tatiana, thanks for the explanation and examples, I had troubles identifying the groups in the ansible doc. Now is clear.",
+      "revId": "610e02e65a5404437d84f793e6a42b3b342f4932",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
