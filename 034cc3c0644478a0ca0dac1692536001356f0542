@@ -50,6 +50,23 @@
       "message": "I think here is the only place where oc command deserved to remain without the pull path, just saying, not a problem at all.",
       "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bb74d58_8ebcff2e",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-02-25T10:06:42Z",
+      "side": 1,
+      "message": "If we have already defined opm_tool_path in plays/check_kubeconfig, why don\u0027t we use it here?",
+      "revId": "034cc3c0644478a0ca0dac1692536001356f0542",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
