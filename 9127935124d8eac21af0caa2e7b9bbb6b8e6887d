@@ -16,6 +16,23 @@
       "message": "lgtm",
       "revId": "9127935124d8eac21af0caa2e7b9bbb6b8e6887d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e385f7ce_b5ee1615",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-25T09:04:33Z",
+      "side": 1,
+      "message": "Preflight tests are passing in Dallas, simple-demo-operator from the private registry is 100% green: https://www.distributed-ci.io/jobs/cb2927d1-3c0d-4d4e-a275-be3220ccf9c2/files\n\nPyxis submission is failing but that\u0027s a non-related issue for another investigation.\n\nThank you for testing in NM Pierre :) \n",
+      "revId": "9127935124d8eac21af0caa2e7b9bbb6b8e6887d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
