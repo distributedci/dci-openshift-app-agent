@@ -16,6 +16,23 @@
       "message": "check dallas -p core ocp-4.9-vanilla-core fake-cnf",
       "revId": "0bf9eb9fb8999da41d4a9bcf06dbe992e45596ac",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "059b2a83_4aac593d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-02-26T21:53:04Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "0bf9eb9fb8999da41d4a9bcf06dbe992e45596ac",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
