@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "926e3562_05c8ef99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-28T14:03:52Z",
+      "side": 1,
+      "message": "Thanks Nacho for your review, it is really appreciated 😊",
+      "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "33b4ee67_d63dd465",
@@ -31,6 +48,24 @@
       "writtenOn": "2022-02-28T13:55:19Z",
       "side": 1,
       "message": "I\u0027m pretty sure there is no actual risk here but want to double check.\nThe preflight_podman_auth variable is defined in the prepare_json_authentication tasks file which is only run if the variable partner_creds is defined and not empty, as included in the pre-run file.\nIs the variable partner_creds mandatory so we know preflight_podman_auth will always be defined or are we risking a variable undefined error here?",
+      "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0fc5655_f875884e",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-28T14:03:52Z",
+      "side": 1,
+      "message": "The partner_creds option is not mandatory. If the operator is stored in public registry, this variable is not needed.\n\nYou right if partner_creds is not set, preflight_podman_auth will empty.\nThe podman command works with or without the variable.\n\nThe pre-rune do the mirroring, so we assume it needs credential.",
+      "parentUuid": "33b4ee67_d63dd465",
       "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
