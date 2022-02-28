@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "05023713_2d631f57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-28T14:50:01Z",
+      "side": 1,
+      "message": "Hi @Pierre, I realized that CR https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23996 makes partner_creds variable to be mandatory.\n\nIt was designed to make things working for private registries, both in connected and disconnected env, and I didn\u0027t really assessed the consequences. ",
+      "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "33b4ee67_d63dd465",
@@ -66,6 +83,24 @@
       "side": 1,
       "message": "The partner_creds option is not mandatory. If the operator is stored in public registry, this variable is not needed.\n\nYou right if partner_creds is not set, preflight_podman_auth will empty.\nThe podman command works with or without the variable.\n\nThe pre-rune do the mirroring, so we assume it needs credential.",
       "parentUuid": "33b4ee67_d63dd465",
+      "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef8b5d2a_30a0c43c",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-02-28T14:50:01Z",
+      "side": 1,
+      "message": "@Pierre, actually here is a trick. In the disconnected environment, for the tools like opm or scopeo we need to provide credentials both for the private registry and for the local registry, in one authfile. For that, I chose partner_creds, CR https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23996, and all preflight role now depends on it. \n\nSo it seems like partner_creds is not optional anymore.\n\nI\u0027m not sure if it was a good design decision though.",
+      "parentUuid": "d0fc5655_f875884e",
       "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
