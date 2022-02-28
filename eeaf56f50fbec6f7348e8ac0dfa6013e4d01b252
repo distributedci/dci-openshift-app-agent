@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79730cdd_1d0d0002",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "The change looks good so far. I just have a lot of questions in the get-log script 😄",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6096261a_b83e4422",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "nit: 2021-2022",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9dc350e3_c247b9db",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "This needs to be updated to reflect that a 3rd arg is possible",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c94ed650_8f21d752",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "should we use type -P instead? one advantage I found over command is not printing aliases that may deceive you later, i.e. command -v could print out an alias and exit 0 but the output won\u0027t be useful to run it later, type -P will not use alias and will exit 1",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a8025c5e_0c361718",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "exit 1?",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "91d65045_28ea916f",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "type vs command",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c91347c_7c50da19",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-02-28T23:10:10Z",
+      "side": 1,
+      "message": "Hmm, this path is expected to be in the provisioner or the jumphost? because the tasks that extract the clients are running in the jumphost (https://softwarefactory-project.io/r/plugins/gitiles/dci-openshift-app-agent/+/refs/changes/17/24117/12/dci-openshift-app-agent.yml#5)\nAnd $rem is connecting to the provisioner (https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117/12/plays/dump_ocp_logs.yml#40)",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
