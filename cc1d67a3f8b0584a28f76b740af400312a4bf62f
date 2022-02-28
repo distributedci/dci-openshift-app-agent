@@ -107,6 +107,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b5a2e930_e1c30f1c",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-02-28T15:30:25Z",
+      "side": 1,
+      "message": "Yes, in disconnected we need partner_creds to mirror.\n\nThis patch is more for connected environment with public registry :)",
+      "parentUuid": "ef8b5d2a_30a0c43c",
+      "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "58e7e9d0_86b6518c",
         "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
         "patchSetId": 1
