@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "afdb7b84_169d1353",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-28T23:35:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6096261a_b83e4422",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9dc350e3_c247b9db",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-02-28T23:10:10Z",
       "side": 1,
       "message": "This needs to be updated to reflect that a 3rd arg is possible",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ebeceb2f_6ccc3335",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-28T23:35:36Z",
+      "side": 1,
+      "message": "Actually the 3rd parameter is only used when called from ansible and we mainly control that. Added just a note to the message. For a user calling the script directly should be transparent the 3rd parameter as will try to ose the one in the path.",
+      "parentUuid": "9dc350e3_c247b9db",
       "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +105,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0d4fb6e_508b7d6c",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-28T23:35:36Z",
+      "side": 1,
+      "message": "type wins... less typing",
+      "parentUuid": "c94ed650_8f21d752",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8025c5e_0c361718",
@@ -82,6 +136,24 @@
       "writtenOn": "2022-02-28T23:10:10Z",
       "side": 1,
       "message": "exit 1?",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "935bfc32_dc7cefb8",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-28T23:35:36Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8025c5e_0c361718",
       "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -103,6 +175,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "05bcb611_5e35d5ee",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-28T23:35:36Z",
+      "side": 1,
+      "message": "type wins... less typing",
+      "parentUuid": "91d65045_28ea916f",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c91347c_7c50da19",
@@ -116,6 +206,24 @@
       "writtenOn": "2022-02-28T23:10:10Z",
       "side": 1,
       "message": "Hmm, this path is expected to be in the provisioner or the jumphost? because the tasks that extract the clients are running in the jumphost (https://softwarefactory-project.io/r/plugins/gitiles/dci-openshift-app-agent/+/refs/changes/17/24117/12/dci-openshift-app-agent.yml#5)\nAnd $rem is connecting to the provisioner (https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117/12/plays/dump_ocp_logs.yml#40)",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "577d30a1_d4e2a92c",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-02-28T23:35:36Z",
+      "side": 1,
+      "message": "Yeah, the script mixes things in the provisioner and the jumphost. Need to confirm with a run how it behaves.",
+      "parentUuid": "6c91347c_7c50da19",
       "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
