@@ -1,4 +1,8 @@
 ---
+- name: Download preflight binary if necessary
+  include_tasks: pre-run_get_preflight.yml
+  when: preflight_binary_version | length != 0
+
 # This task is used both in connected and disconnected env
 # to retrieve scorecard-test image to run independent scorecard tests later on
 - name: Run preflight runtime-assets to get scorecard-test image

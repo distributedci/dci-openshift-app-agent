@@ -28,7 +28,9 @@
         src: "{{ partner_creds }}"
         dest: "{{ preflight_repoconfig }}/config.json"
 
-- name: "Run preflight check bundle container for {{ operator.name }}"
+- name: "Run preflight check bundle container for {{ operator.name }} with podman"
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
   shell: >
     podman run
     -it
@@ -46,7 +48,27 @@
     {{ preflight_podman_ca }}
     {{ preflight_version }}
     check container
-    {{ operator.bundle_image }}
+    {{ operator.operator_image }}
+    --certification-project-id {{ operator.pyxis_identifier }}
+    --pyxis-api-token {{ pyxis_apikey }}
+  when: preflight_binary_version | length == 0
+
+- name: "Run preflight check container for {{ operator.name }}"
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+  shell: >
+    cd {{ preflight_container_tmp_dir.path }};
+    DOCKER_CONFIG={{ preflight_repoconfig }}
+    PFLT_JUNIT=true
+    PFLT_ARTIFACTS={{ preflight_artifacts }}
+    PFLT_LOGFILE={{ preflight_artifacts }}/preflight.log
+    PFLT_LOGLEVEL=trace
+    /opt/cache/preflight/{{ preflight_binary_version }}/preflight
+    check container
+    {{ operator.operator_image }}
+    --certification-project-id {{ operator.pyxis_identifier }}
+    --pyxis-api-token {{ pyxis_apikey }}
+  when: preflight_binary_version | length != 0
 
 - name: Upload logs for preflight check container into DCI
   vars:

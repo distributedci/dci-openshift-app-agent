@@ -1,0 +1,20 @@
+- name: Check if commands were extracted
+  stat:
+    path: "/opt/cache/preflight/{{ preflight_binary_version}}"
+    get_checksum: no
+  register: preflight_dir
+
+- name: Create preflight directory if not exists
+  file:
+    path: "/opt/cache/preflight/{{ preflight_binary_version}}"
+    state: directory
+    recurse: yes
+  become: true
+
+- name: Download preflight if not exists
+  get_url:
+    url: "https://github.com/redhat-openshift-ecosystem/openshift-preflight/releases/download/{{ preflight_binary_version}}/preflight-linux-amd64"
+    dest: "/opt/cache/preflight/{{ preflight_binary_version}}/preflight"
+    mode: "0755"
+  become: true
+  when: not preflight_dir.stat.exists
