@@ -29,6 +29,8 @@
         dest: "{{ preflight_repoconfig }}/config.json"
 
 - name: "Run preflight check bundle container for {{ operator.name }}"
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
   shell: >
     podman run
     -it
@@ -46,7 +48,9 @@
     {{ preflight_podman_ca }}
     {{ preflight_version }}
     check container
-    {{ operator.bundle_image }}
+    {{ operator.operator_image }}
+    --certification-project-id {{ operator.pyxis_identifier }}
+    --pyxis-api-token {{ pyxis_apikey }}
 
 - name: Upload logs for preflight check container into DCI
   vars:
