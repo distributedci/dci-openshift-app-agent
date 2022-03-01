@@ -8,4 +8,11 @@
   set_fact:
     preflight_podman_auth:
       "-v {{ preflight_tmp_dir.path }}/config.json:/opt/config.json"
+  when: not preflight_use_binary | bool
+
+- name: Update preflight_podman_auth variable for preflight command
+  set_fact:
+    preflight_podman_auth:
+      "--docker-config {{ preflight_tmp_dir.path }}/config.json"
+  when: preflight_use_binary | bool
 ...
