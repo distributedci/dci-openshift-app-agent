@@ -1,4 +1,11 @@
 ---
+- name: Download preflight binary if necessary
+  vars:
+    preflight_binary_version: "{{ preflight_version.split(':')[-1] }}"
+    preflight_binary_dir: "/opt/cache/preflight/{{ preflight_version }}"
+  include_tasks: pre-run_get_preflight_binary.yml
+  when: preflight_use_binary | bool
+
 # This task is used both in connected and disconnected env
 # to retrieve scorecard-test image to run independent scorecard tests later on
 - name: Run preflight runtime-assets to get scorecard-test image
