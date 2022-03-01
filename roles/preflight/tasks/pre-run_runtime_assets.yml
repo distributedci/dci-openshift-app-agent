@@ -5,6 +5,7 @@
     -it
     --rm
     --pull=always
+    -e PFLT_LOGLEVEL=error
     {{ preflight_version }}
     runtime-assets
   register: preflight_assets

@@ -55,6 +55,8 @@
     - OPENSHIFT_AUTH: "{{ partner_creds }}"
     - OO_BUNDLE: "{{ operator.bundle_image }}"
     - OO_INDEX: "{{ OO_INDEX }}"
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
   shell: >
     podman run
     -it
@@ -78,6 +80,8 @@
     {{ preflight_version }}
     check operator
     {{ operator.bundle_image }}
+    --certification-project-id {{ operator.pyxis_identifier }}
+    --pyxis-api-token {{ pyxis_apikey }}
   register: preflight_exec
   ignore_errors: true
 
@@ -101,5 +105,4 @@
     api_version: v1
     kind: Namespace
     state: absent
-
 ...
