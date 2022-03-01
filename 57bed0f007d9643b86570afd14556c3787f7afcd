@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2aee5809_be8f8205",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-01T14:40:46Z",
+      "side": 1,
+      "message": "Although partner_creds is only defined for example-cnf and does not require its definition in the inventories, I\u0027d prefer to do the same for both all_registries_creds and partner_creds variables to have a consistency, anyway we can discuss about this.",
+      "revId": "57bed0f007d9643b86570afd14556c3787f7afcd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
