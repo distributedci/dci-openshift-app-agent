@@ -28,7 +28,9 @@
         src: "{{ partner_creds }}"
         dest: "{{ preflight_repoconfig }}/config.json"
 
-- name: "Run preflight check bundle container for {{ operator.name }}"
+- name: "Run preflight check bundle container for {{ operator.name }} with podman"
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
   shell: >
     podman run
     -it
@@ -46,7 +48,34 @@
     {{ preflight_podman_ca }}
     {{ preflight_version }}
     check container
-    {{ operator.bundle_image }}
+    {{ operator.operator_image }}
+    --certification-project-id {{ operator.pyxis_identifier }}
+    --pyxis-api-token {{ pyxis_apikey }}
+  when: not preflight_use_binary | bool
+
+- name: "Run preflight check container for {{ operator.name }}"
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+    preflight_binary_path: "/opt/cache/preflight/{{ preflight_version.split(':')[-1] }}/preflight"
+  # --submit option could not be used because of broken Pyxis APIs
+  # The release to fix that is expected on 08/03/2022
+  shell: >
+    cd {{ preflight_container_tmp_dir.path }};
+    DOCKER_CONFIG={{ preflight_repoconfig }}
+    PFLT_JUNIT=true
+    PFLT_ARTIFACTS={{ preflight_artifacts }}
+    PFLT_LOGFILE={{ preflight_artifacts }}/preflight.log
+    PFLT_LOGLEVEL=trace
+    preflight_binary_path
+    check container
+    {{ operator.operator_image }}
+    --certification-project-id {{ operator.pyxis_identifier }}
+    --pyxis-api-token {{ pyxis_apikey }}
+    --docker-config {{ preflight_repoconfig }}/config.json
+  # Preflight binary 1.1.0-alpha2 requires to run as sudo.
+  # That should be removed in the next release.
+  become: true
+  when: preflight_use_binary | bool
 
 - name: Upload logs for preflight check container into DCI
   vars:
