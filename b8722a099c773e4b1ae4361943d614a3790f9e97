@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef74e881_d788e5e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-02T12:05:48Z",
+      "side": 1,
+      "message": "In the two previous tests, both fake-cnf and tnf-test-cnf pipelines are working, now using pullsecret file from DCI job instead of all_registries_creds for mirroring stuff.\nI\u0027ve scheduled an OCP vanilla job to confirm d-o-a also works, I\u0027ve done it in the pipeline PR",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
