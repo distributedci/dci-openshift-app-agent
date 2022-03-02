@@ -33,6 +33,23 @@
       "message": "Hi Ramon, yesterday we discussed that partner_creds will still be defined in the pipelines. Since the pipeline vars have priority over playbook/group_vars, I\u0027d think there is no need in changing it. @Tony, wdyt? ",
       "revId": "6ec31feef1c53ba84dd486a22dc43426d074d840",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fe1fbe2_be8df9e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-02T08:40:44Z",
+      "side": 1,
+      "message": "I\u0027ll abandon this to propose the new update in a new, clean change",
+      "revId": "6ec31feef1c53ba84dd486a22dc43426d074d840",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
