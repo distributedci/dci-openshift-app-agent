@@ -16,6 +16,24 @@
       "message": "In this job, I tested the pullsecret retrieved from the DCI job and the Mirror must-gather task failed: https://www.distributed-ci.io/jobs/33475ebe-7354-4efb-9d05-8be3739b654d/jobStates#91ee2e3d-1354-46cf-9949-a8e3bee778cb:file13, am I missing something to be included?",
       "revId": "3f66c3cfca8406c8c56a9159c0658aeeaadf4756",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0df736f7_f79c8a22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-02T10:36:09Z",
+      "side": 1,
+      "message": "Oh, silly question, I just need to create a file with that content rather than using it, I\u0027ll recheck",
+      "parentUuid": "5d62215a_a539ba51",
+      "revId": "3f66c3cfca8406c8c56a9159c0658aeeaadf4756",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
