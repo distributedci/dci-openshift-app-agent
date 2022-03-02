@@ -15,7 +15,7 @@
   - name: Copy operator bundle image
     shell: |
       set -ex
-      skopeo copy --authfile {{ partner_creds }} --remove-signatures \
+      skopeo copy --authfile {{ pullsecret_tmp_file }} --remove-signatures \
       docker://{{ tnf_operator_to_install.operator_bundle }} \
       docker://{{ provisionhost_registry }}/{{ '/'.join(tnf_operator_to_install.operator_bundle.split('@')[0].split('/')[1:]) }}
 
@@ -29,7 +29,7 @@
     block:
       - name: Build catalog image in temporary directory
         environment:
-          - REGISTRY_AUTH_FILE: "{{ partner_creds }}"
+          - REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
         shell: |
           {{ opm_tool_path }} index add --pull-tool podman \
           --bundles {{ tnf_operator_to_install.operator_bundle }} \
@@ -39,7 +39,7 @@
 
       - name: Push catalog image into local registry
         shell: |
-          podman push --authfile {{ partner_creds }} {{ tnf_operator_to_install.operator_catalog }}
+          podman push --authfile {{ pullsecret_tmp_file }} {{ tnf_operator_to_install.operator_catalog }}
         args:
           chdir: "{{ tnf_test_example_prerun_tmp_dir.path }}"
 
@@ -47,7 +47,7 @@
     block:
       - name: Save catalog mirror into temporary directory
         shell: |
-          {{ oc_tool_path }} adm catalog mirror -a {{ partner_creds }} \
+          {{ oc_tool_path }} adm catalog mirror -a {{ pullsecret_tmp_file }} \
           {{ tnf_operator_to_install.operator_catalog }} {{ provisionhost_registry }} --to-manifests={{ tnf_test_example_prerun_tmp_dir.path }}/tmp_oc
 
       - name: Apply ImageContentSourcePolicy
