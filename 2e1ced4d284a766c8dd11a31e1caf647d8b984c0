@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e6b0581_d29ee87d",
+        "filename": "group_vars/all",
+        "patchSetId": 7
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-02T08:30:46Z",
+      "side": 0,
+      "message": "We discussed yesterday that partner_creds will be defined for the moment only in the pipelines. So I\u0027d think this variable could stay.",
+      "revId": "2e1ced4d284a766c8dd11a31e1caf647d8b984c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
