@@ -30,7 +30,7 @@
 - name: Mirror must-gather images for offline mode
   command:
     cmd: >
-      skopeo copy --remove-signatures --all --authfile {{ all_registries_creds }}
+      skopeo copy --remove-signatures --all --authfile {{ provision_cache_store }}/app-agent-pull-secret.txt
       --dest-tls-verify=false docker://{{ item }}
       docker://{{ provisionhost_registry }}/{{ item | regex_replace('^[^/]*/', '') }}
   register: skopeo_copy
@@ -42,7 +42,6 @@
   when:
     - dci_disconnected | default(false) | bool
     - provisionhost_registry|length
-    - all_registries_creds|length
 
 - name: "Copy helm to /usr/local/bin/"
   get_url:
