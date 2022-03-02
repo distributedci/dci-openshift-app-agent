@@ -34,6 +34,23 @@
       "parentUuid": "5d62215a_a539ba51",
       "revId": "3f66c3cfca8406c8c56a9159c0658aeeaadf4756",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "13bd0765_395f45d1",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-03-02T10:47:47Z",
+      "side": 1,
+      "message": "all_registries_creds was a file that was containing all login information,  but the way pullsecret is defined is directly those information itself, which mess up the syntax of the skopeo cmd",
+      "revId": "3f66c3cfca8406c8c56a9159c0658aeeaadf4756",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
