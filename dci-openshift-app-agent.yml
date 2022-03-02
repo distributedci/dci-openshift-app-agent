@@ -97,8 +97,14 @@
     - name: 'Set DCI tags for the current job'
       dci_job:
         id: '{{ job_id }}'
-        tags: '{{ dci_tags + dci_workarounds }}'
+        tags: '{{ dci_tags }}'
       when: dci_tags[0] is defined
+
+    - name: 'Set DCI workaround tags for the current job'
+      dci_job:
+        id: '{{ job_id }}'
+        tags: '{{ dci_workarounds }}'
+      when: dci_workarounds[0] is defined
 
     # Keep in sync with test-runner parsing from d-o-a
     - name: UI URL
