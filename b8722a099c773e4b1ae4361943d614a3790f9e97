@@ -16,6 +16,193 @@
       "message": "In the two previous tests, both fake-cnf and tnf-test-cnf pipelines are working, now using pullsecret file from DCI job instead of all_registries_creds for mirroring stuff.\nI\u0027ve scheduled an OCP vanilla job to confirm d-o-a also works, I\u0027ve done it in the pipeline PR",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4896cc72_d161c93b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "I\u0027d like to see what others think about tmp file vs /opt/cache. Let me know if any point needs clarification. Thanks!",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd2003b5_a25448be",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "I think we can save the use of this var by using tmp file for the secrets in disconnected env",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc6487cc_9339b3d4",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "partner_creds not only includes creds for their registries, it also contains the creds for the local registry.\n\nI\u0027m not sure I understand the note 😮. Could you please explain what\u0027s the note about? 😊",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b65732a_cc739169",
+        "filename": "group_vars/all",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "Could we save the secrets in a temp dir, instead of storing the secrets in /opt/cache and then clean at the end?",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "536b4014_258cd41e",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "I don\u0027t think we need a way to include more secrets, we have partner\u0027s for that, we just need those provided by the job data for must-gather at this point.",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f22b7e86_9f35696f",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "I think we could use a tmp file here",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1c15bae8_884f3738",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "Here we will need to use both creds, pullsecrets to pull and partner\u0027s creds to push, e.g.\n\n--src-authfile {{ pullsecret_file }}\n--dst-authfile {{ partner_creds }}",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c2d3276_51db80fa",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "I don´t think we need creds for pulling here, but only to push into the local repo, then partner_creds are needed, e.g.\n\n--dest-authfile {{ partner_creds }}",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "39712b9f_5105ea5a",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9949aa9e_9aa9cfd4",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "since provisionhost_registry is defined based on the conditions of dci_disconnected, you could simply do:\n\n\"{{ ( provisionhost_registry|length ) | ternary(provisionhost_registry, \u0027quay.io\u0027) }}\"",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f992127_0b9eea79",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T19:02:28Z",
+      "side": 1,
+      "message": "The partner_creds are needed in here as those are used to push to the local registry, e.g.\n\n--dst-authfile {{ partner_creds }}\n\nThe job worked because those creds are cached, but the creds you used does not have them:\n\n\u003c/opt/cache/app-agent-pull-secret.txt  jq \u0027.auths.\"registry.dfwt5g.lab:4443\" | length\u0027\n0\n\nvs\n\n$ \u003c/var/lib/dci/service-configs/pull-secrets/partner_config.json jq \u0027.auths.\"registry.dfwt5g.lab:4443\" | length\u0027\n2",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
