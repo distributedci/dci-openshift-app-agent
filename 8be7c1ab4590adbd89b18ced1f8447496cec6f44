@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "786af1bd_54f31b74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-03-03T10:08:51Z",
+      "side": 1,
+      "message": "We don\u0027t need this patch. To add tags on the command line, you have to do it like this:\n\n```\ndci-openshift-app-agent-ctl -s -- -e \"{\u0027dci_tags\u0027: [\u0027mvnr-cucp\u0027]}\"\n```",
+      "revId": "8be7c1ab4590adbd89b18ced1f8447496cec6f44",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
