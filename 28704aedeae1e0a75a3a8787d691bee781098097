@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04df3e62_48afcd5b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-03T14:15:11Z",
+      "side": 1,
+      "message": "@Tatiana, I will need your help here. The thing is, I successfully deployed the simple-demo-operator CSV, but the pods deployed by the operator couldn\u0027t become available because of trying to pull images from quay (and we are on disconnected):\n\n```\nEvents:\n  Type     Reason          Age   From               Message\n  ----     ------          ----  ----               -------\n  Normal   Scheduled       63s   default-scheduler  Successfully assigned test-cnf/simple-demo-operator-controller-manager-67db5b8b98-mw5lb to worker-0                                                           \n  Normal   AddedInterface  61s   multus             Add eth0 [10.128.2.84/23]\n  Normal   Pulling         61s   kubelet            Pulling image \"gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c\"                                    \n  Warning  Failed          1s    kubelet            Failed to pull image \"gcr.io/kubebuilder/kube-rbac-proxy@sha256:db06cc4c084dd0253134f156dddaaf53ef1c3fb3cc809e5d81711baa4029ea4c\": rpc error: code \u003d Unknown desc \u003d error pinging docker registry gcr.io: Get \"https://gcr.io/v2/\": dial tcp 142.250.115.82:443: i/o timeout                                                                                                     \n  Warning  Failed          1s    kubelet            Error: ErrImagePull\n  Normal   Pulling         1s    kubelet            Pulling image \"quay.io/opdev/simple-demo-operator@sha256:25ca9cb1f3dc7b8ce0aba4d3383cac20f5f5a1298fbbfde4a6adab7b1000cb0e\" \n```\n\nSo, consequently, the CSV was not in succeeded status. For the moment, I\u0027ve omitted that check to continue testing, but I will need to fix this. Do you know if I am missing something?",
+      "revId": "28704aedeae1e0a75a3a8787d691bee781098097",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
