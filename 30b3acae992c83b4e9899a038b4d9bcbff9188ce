@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff1c7b5d_c4dcc96b",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-03-03T18:19:50Z",
+      "side": 1,
+      "message": "not really as there is already a dci_topic",
+      "parentUuid": "3fb31bbd_5db14798",
+      "revId": "30b3acae992c83b4e9899a038b4d9bcbff9188ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0bf867b2_819fbbf3",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-03-03T15:39:59Z",
       "side": 1,
       "message": "in the depending patch you can directly return the [\"topics\"][0] to simplify this part",
+      "revId": "30b3acae992c83b4e9899a038b4d9bcbff9188ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4021eeee_35a9e47d",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-03-03T18:19:50Z",
+      "side": 1,
+      "message": "no because we could lookup OCP-* in the search.",
+      "parentUuid": "0bf867b2_819fbbf3",
       "revId": "30b3acae992c83b4e9899a038b4d9bcbff9188ce",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
