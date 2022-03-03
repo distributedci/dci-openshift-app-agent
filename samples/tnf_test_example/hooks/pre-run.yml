@@ -8,3 +8,49 @@
     - python3-openshift
     - python3-pyyaml
   become: true
+
+- name: Copy operator bundle image
+  shell: |
+    set -ex
+    skopeo copy --authfile {{ partner_creds }} --remove-signatures \
+    docker://quay.io/telcoci/simple-demo-operator-bundle:0.0.3 \
+    docker://{{ provisionhost_registry }}/telcoci/simple-demo-operator-bundle:0.0.3
+  when:
+    - dci_disconnected | default(false) | bool
+    - provisionhost_registry|length
+    - partner_creds|length
+
+# Following the same approach done in preflight
+- name: Create a common catalog image for simple-demo-operator bundle to be tested in disconnected environment
+  block:
+    - name: Create temporary directory
+      tempfile:
+        state: directory
+        prefix: tnf_test_example_prerun_tmp_dir.
+      register: tnf_test_example_prerun_tmp_dir
+
+    - name: Build catalog image in temporary directory
+      environment:
+        - REGISTRY_AUTH_FILE: "{{ partner_creds }}"
+      shell: |
+        opm index add --pull-tool podman \
+        --bundles {{ operator_bundle }} \
+        --tag {{ operator_catalog }}
+      args:
+        chdir: "{{ tnf_test_example_prerun_tmp_dir.path }}"
+
+    - name: Push catalog image into local registry
+      shell: |
+        podman push --authfile {{ partner_creds }} {{ operator_catalog }}
+    
+    - name: Remove temporary directory
+      file:
+        path: "{{ tnf_test_example_prerun_tmp_dir.path }}"
+        state: absent
+  when:
+    - dci_disconnected | default(false) | bool
+    - partner_creds|length
+    - operator_bundle is defined
+    - operator_bundle|length
+    - operator_catalog is defined
+    - operator_catalog|length
