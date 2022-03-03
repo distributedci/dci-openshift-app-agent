@@ -54,6 +54,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "663503e7_db1bf4f6",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-03T22:48:36Z",
+      "side": 1,
+      "message": "yes, if we go for the temp location makes sense",
+      "parentUuid": "fd2003b5_a25448be",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "cc6487cc_9339b3d4",
         "filename": "README.md",
         "patchSetId": 4
@@ -82,6 +100,24 @@
       "writtenOn": "2022-03-03T19:02:28Z",
       "side": 1,
       "message": "Could we save the secrets in a temp dir, instead of storing the secrets in /opt/cache and then clean at the end?",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87d36ac6_ae5029be",
+        "filename": "group_vars/all",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-03T22:48:36Z",
+      "side": 1,
+      "message": "if we leave this in /opt/cache in our labs it works because our partner creds are the same, but assuming they are different per cluster then we\u0027ll start having conflicts because we are using the same name for the app-agent-pull-secret.txt \n\nOn the other hand the cleaning is always a good idea, assuming this could be used by a partner, but then we definitely need a temp location to avoid multiple jobs can affect each other. If a partner it\u0027s serious about security of data at rest, then this cleaning will be ideal. I vote for the cleaning in temp location.",
+      "parentUuid": "6b65732a_cc739169",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -201,6 +237,24 @@
       "writtenOn": "2022-03-03T19:02:28Z",
       "side": 1,
       "message": "The partner_creds are needed in here as those are used to push to the local registry, e.g.\n\n--dst-authfile {{ partner_creds }}\n\nThe job worked because those creds are cached, but the creds you used does not have them:\n\n\u003c/opt/cache/app-agent-pull-secret.txt  jq \u0027.auths.\"registry.dfwt5g.lab:4443\" | length\u0027\n0\n\nvs\n\n$ \u003c/var/lib/dci/service-configs/pull-secrets/partner_config.json jq \u0027.auths.\"registry.dfwt5g.lab:4443\" | length\u0027\n2",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a6f597ca_90161ba5",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-03T22:48:36Z",
+      "side": 1,
+      "message": "interesting about the cache thing, Beto mentioned too the other day, it\u0027s good and bad :) at the same time.",
+      "parentUuid": "6f992127_0b9eea79",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
