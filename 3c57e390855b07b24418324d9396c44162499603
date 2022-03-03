@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7209098c_dff257a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-03-03T13:32:00Z",
+      "side": 1,
+      "message": "I just have one question for my correct understanding ",
+      "revId": "3c57e390855b07b24418324d9396c44162499603",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "30bf0074_27f9a0f5",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-03-03T13:32:00Z",
+      "side": 1,
+      "message": "If this list contains more than one topic, it means there is a bug somewhere right?",
+      "revId": "3c57e390855b07b24418324d9396c44162499603",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
