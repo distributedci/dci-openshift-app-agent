@@ -65,7 +65,7 @@
     # Schedule a new job only if not passed via dci-pipeline
     - name: "Schedule a new job"
       dci_job:
-        components: "{{ dci_components + [ocp_component_id] | default([ocp_component_id]) }}"
+        components: "{{ ocp_component_id is defined | ternary(dci_components + [ocp_component_id], dci_components) }}"
         components_by_query: "{{ dci_components_by_query | default([]) }}"
         topic: "{{ dci_topic }}"
         comment: "{{ dci_comment | default('') }}"
