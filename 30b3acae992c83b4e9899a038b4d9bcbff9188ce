@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fb31bbd_5db14798",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2022-03-03T15:39:59Z",
+      "side": 1,
+      "message": "s/dci_topics/dci_topic",
+      "revId": "30b3acae992c83b4e9899a038b4d9bcbff9188ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0bf867b2_819fbbf3",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2022-03-03T15:39:59Z",
+      "side": 1,
+      "message": "in the depending patch you can directly return the [\"topics\"][0] to simplify this part",
+      "revId": "30b3acae992c83b4e9899a038b4d9bcbff9188ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
