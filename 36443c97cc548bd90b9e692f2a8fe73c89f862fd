@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "089953c7_a7ef42ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-03T23:53:50Z",
+      "side": 1,
+      "message": "This is the equivalent of 24158 in d-o-a, which is a good way to use local registry images when the public registry is not available. 👍",
+      "revId": "36443c97cc548bd90b9e692f2a8fe73c89f862fd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
