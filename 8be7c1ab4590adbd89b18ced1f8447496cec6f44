@@ -33,6 +33,23 @@
       "message": "I ran more tests in CILAB-479, even when using the correct json format, dci_job module doesn\u0027t like it, I see two options: either we find a way to convert the list in json to a format the dci_job accept it (\"key:value\" which I\u0027m not sure it\u0027s a standard dictionary, \"key\":\"value\"), or with this patch we can allow Mavenir to continue passing tags they way they do, without any changes in their side. wdyt Fred?",
       "revId": "8be7c1ab4590adbd89b18ced1f8447496cec6f44",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "adedb44f_13ad1ebb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-03T21:19:46Z",
+      "side": 1,
+      "message": "Just closing the loop, Fred helped to identify the problem of how I was passing the variables in my tests, before the integration of dci_workarounds we could pass pretty much anything to the dci_tags, because we were not joining variables, now only works with dci_tags is a json list.",
+      "revId": "8be7c1ab4590adbd89b18ced1f8447496cec6f44",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
