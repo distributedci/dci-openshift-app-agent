@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff77da57_3a6013aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-04T09:53:51Z",
+      "side": 1,
+      "message": "@Tatiana, I finally managed to fix the problem I commented yesterday, it was because I was missing the usage of imageContentSourcePolicy, sorry for the false alarm 😕\n\nAnyway, in the two last reported jobs, we can see the operator is installed fine and that the operator test suite is passed successfully, so it\u0027s ready for review.\n\nMoreover, I\u0027ve tested https://github.com/test-network-function/test-network-function/pull/612 and it\u0027s also working, we have the desired output in the claim.json file to be used later on for preflight:\n\n```\n...\n        \"operators\": [\n          {\n            \"Org\": \"simple-demo-operator-catalog\",\n            \"Version\": \"v0.0.3\",\n            \"bundleImage\": \"quay.io/telcoci/simple-demo-operator-bundle@sha256:e631c8dc7ab2d1ff67bf2731fd73820cb8e0214f9970d6ab1afca2f089d2fdb9\",\n            \"indexImage\": \"registry.dfwt5g.lab:4443/testnetworkfunction/simple-demo-operator-catalog-disconnected:0.0.3\",\n            \"name\": \"simple-demo-operator.v0.0.3\",\n            \"namespace\": \"test-cnf\",\n            \"packag\": \"simple-demo-operator.v0.0.3\",\n            \"subscriptionName\": \"simple-demo-operator-subscription\",\n            \"tests\": [\n              \"OPERATOR_STATUS\"\n            ]\n          }\n        ],\n...\n```",
+      "revId": "8a302975bec9fb0d4f49f01494c76ca652b844ed",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
