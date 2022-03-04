@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b143ca7_71677c24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-04T21:34:59Z",
+      "side": 1,
+      "message": "Thanks for the comments, I will pull back on the changes to the get-logs scripts as it runs on the provisioner and we are the only ones that should have control on what is installed there.",
+      "revId": "2871a47a5853c97a8cca76fe371c38ddeba0e423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
