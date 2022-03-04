@@ -16,6 +16,57 @@
       "message": "Thanks for the comments, I will pull back on the changes to the get-logs scripts as it runs on the provisioner and we are the only ones that should have control on what is installed there.",
       "revId": "2871a47a5853c97a8cca76fe371c38ddeba0e423",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22041b02_60aa157a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-04T22:02:43Z",
+      "side": 1,
+      "message": "Two minor changes and should be good to be merged",
+      "revId": "2871a47a5853c97a8cca76fe371c38ddeba0e423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "901f1384_2917247c",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-04T22:02:43Z",
+      "side": 1,
+      "message": "nit: overrided -\u003e overridden",
+      "revId": "2871a47a5853c97a8cca76fe371c38ddeba0e423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d5c415c_b3fdc9ab",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 22
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-04T22:02:43Z",
+      "side": 1,
+      "message": "No need to remove the initial year, just add the continuation, as it was created in 2021 but still modified in 2022, then, leave 2021-2022 as a range 😊\n\nOhh wait, since at the end nothing was changed in this script, then just leave the date alone, this file is should not be modified.",
+      "revId": "2871a47a5853c97a8cca76fe371c38ddeba0e423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
