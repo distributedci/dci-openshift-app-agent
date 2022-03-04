@@ -226,6 +226,24 @@
       "parentUuid": "6c91347c_7c50da19",
       "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6475ba4_221dd4c2",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 12
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-04T22:31:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "577d30a1_d4e2a92c",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

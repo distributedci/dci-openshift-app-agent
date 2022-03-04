@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1688bd32_d92b26ec",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-04T22:31:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "901f1384_2917247c",
+      "revId": "2871a47a5853c97a8cca76fe371c38ddeba0e423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8d5c415c_b3fdc9ab",
