@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9863f864_72cfa166",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-04T15:24:25Z",
+      "side": 1,
+      "message": "Hi guys, thanks for your comments. I\u0027m afraid that, by following your suggestions, I will duplicate what Beto is doing on https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117. I\u0027ll talk to him to check if I can include some of his changes in my CR (e.g. the creation of a temp directory, the usage of teardown plays, etc.) to unblock this CR, or if I should wait for him to finish and then, when merging his CR, I can do a rebase and then reuse the tmp directory and all that stuff. For the moment, I\u0027ll put a -1 here.",
+      "revId": "f46302060adf24123766289826bc7869bf217630",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
