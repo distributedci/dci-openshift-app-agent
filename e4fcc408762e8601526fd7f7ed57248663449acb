@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23a21c91_502a68fe",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 606
+      },
+      "writtenOn": "2022-03-07T16:01:06Z",
+      "side": 1,
+      "message": "why not just expand the conditions in both paths?\n - job_info.job is not defined\n - job_info.job.id is not defined",
+      "revId": "e4fcc408762e8601526fd7f7ed57248663449acb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d5228e52_77dfff72",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 606
+      },
+      "writtenOn": "2022-03-07T16:01:06Z",
+      "side": 1,
+      "message": "- job_info.job is defined\n - job_info.job.id is defined",
+      "revId": "e4fcc408762e8601526fd7f7ed57248663449acb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
