@@ -86,6 +86,23 @@
       "message": "Hi Ramon, yes, since it\u0027s a bug, I\u0027d prefer to fix it asap.",
       "revId": "a6b4d41951bf31689c5be1513f1dfca0fdcca058",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f909f378_2ef1f086",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-07T14:30:20Z",
+      "side": 1,
+      "message": "Ramon, I observed this issue too last Friday, thanks for submitting a quick fix. ",
+      "revId": "a6b4d41951bf31689c5be1513f1dfca0fdcca058",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
