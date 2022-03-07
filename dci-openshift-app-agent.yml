@@ -38,8 +38,10 @@
           when: job_info is not defined
 
         - name: Fail properly
+          vars:
+            review_message: "{{ ( job_info.job is defined and job_info.job.id is defined ) | ternary(', review the log at: https://www.distributed-ci.io/jobs/' + job_info.job.id + '/jobStates', '') }}"
           fail:
-            msg: "Error: Something went wrong, review the log at: https://www.distributed-ci.io/jobs/{{ job_info.job.id }}/jobStates"
+            msg: "Error: Something went wrong {{ review_message }}"
           when: job_info is defined
 
 # Step 0b : initial step
@@ -185,8 +187,10 @@
           include_tasks: plays/failure.yml
 
         - name: Fail properly
+          vars:
+            review_message: "{{ ( job_info is defined and job_info.job is defined and job_info.job.id is defined ) | ternary(', review the log at: https://www.distributed-ci.io/jobs/' + job_info.job.id + '/jobStates', '') }}"
           fail:
-            msg: "Failure: Something went wrong, review the log at: https://www.distributed-ci.io/jobs/{{ job_info.job.id }}/jobStates"
+            msg: "Failure: Something went wrong {{ review_message }}"
 
 # Step 3 : "testing" step
 - name: "Execute Red Hat tests step"
