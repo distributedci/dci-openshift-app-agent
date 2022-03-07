@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "95c25ff7_388384ce",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 0,
+      "message": "Why are we not deleting this tmp dir?",
+      "revId": "fe77fc75208ebcd16b9622f969bc380d7e64133e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

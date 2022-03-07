@@ -16,6 +16,142 @@
       "message": "check dallas ocp-4.8-vanilla example-cnf",
       "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fafdae58_cc06f54a",
+        "filename": "roles/preflight/tasks/post-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "Maybe this is best in teardown?\n\n(btw, teardown is fairly new, probably newer than this change 😄)",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37ebe7b5_b66a8dad",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "nit: Copy kubeconfig file into tmp config directory",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f70ecb2f_073a7d9b",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "nit: you can omit the comparison, `partner_creds | length` is equivalent",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "233dfbea_fa3f84d0",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "Suggestion: Create temporary (container) preflight artifacts directory",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48b1f1a0_cb02ee85",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "See my comment in the operator",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbbf2bee_0763a652",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "Suggestion: Create temporary (operator) preflight artifacts directory",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f34ce7c_1da4feaa",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "Why is this changing to /opt? I see below that you\u0027re providing a kubeconfig file directly in /kubeconfig",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3eb61fd9_4c716e3b",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T22:59:10Z",
+      "side": 1,
+      "message": "I liked you are reusing a variable for container and operator, but looking at this line it\u0027s not clear what its value.\n\nHaving -v in here at least gives you a hint that we\u0027re expecting a volume/path here, but also being able to see where that path is going to be mounted/used in the container is helpful, wondering if it we should leave :/opt/config.json as well, wdyt?",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
