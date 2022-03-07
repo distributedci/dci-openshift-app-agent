@@ -16,6 +16,23 @@
       "message": "Hi all, let me explain the story behind this.\n\nRodrigo, from Solutions Team, while testing d-o-a-a for Ericsson CloudRAN, experienced two errors after checking with the latest d-o-a-a changes, including this CR from Beto: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117:\n\n- He has failures because provision_cache_store was not defined, so we need a default value\n- In his case, in check_kubeconfig, `oc` executable was not already catched, so all the logic to copy the executables in provision_cache_store was triggered. But, when moving to the last task, \"Set client paths\", it was not executed (https://www.distributed-ci.io/jobs/446efacc-cf3d-4246-ac33-d71004f4741c/jobStates#3ac99d00-b892-4d85-9e8d-f76f2689872a:file29), and then he has a failure in this task: https://www.distributed-ci.io/jobs/446efacc-cf3d-4246-ac33-d71004f4741c/jobStates#081e6e9e-47ed-46a5-8eab-0fe46ccdf764:file11. In fact, we don\u0027t need conditions in \"Set client paths\", it can be safely executed without conditions because, in the end, the client paths will be there in all cases",
       "revId": "a6b4d41951bf31689c5be1513f1dfca0fdcca058",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54eaff85_c8a39aec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-07T13:11:46Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for the fix. Could you please add one more line to fix a misprint from the same CR? \nhttps://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117/24/roles/preflight/tasks/tests_scorecard_check_operator.yml \n\n{{ oc_tool_path }} image extract {{ operator.bundle_image }} --confirm -a {{ all_registries_creds }}\nshould be replaced with \n{{ oc_tool_path }} image extract {{ operator.bundle_image }} --confirm -a {{ partner_creds }}",
+      "revId": "a6b4d41951bf31689c5be1513f1dfca0fdcca058",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
