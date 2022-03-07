@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "45e266e7_848127a8",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T16:08:42Z",
+      "side": 1,
+      "message": "I\u0027ve removed the first \"Fail properly\" to leave just one with the custom message. The conditions are under the variable: if they are defined, then the URL will be embedded in the error message, else not. Do you think it is fine?\n\nAnd I\u0027ve also included job_info is defined in the condition because it may happen that the job fails before creating the job_info variable (if dci tag is set), then it would not be created and the check would fail",
+      "parentUuid": "23a21c91_502a68fe",
+      "revId": "e4fcc408762e8601526fd7f7ed57248663449acb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d5228e52_77dfff72",
         "filename": "dci-openshift-app-agent.yml",
         "patchSetId": 1
@@ -31,6 +49,24 @@
       "writtenOn": "2022-03-07T16:01:06Z",
       "side": 1,
       "message": "- job_info.job is defined\n - job_info.job.id is defined",
+      "revId": "e4fcc408762e8601526fd7f7ed57248663449acb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "068db3a6_41a6dbc4",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T16:08:42Z",
+      "side": 1,
+      "message": "answered in the response for the other comment",
+      "parentUuid": "d5228e52_77dfff72",
       "revId": "e4fcc408762e8601526fd7f7ed57248663449acb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
