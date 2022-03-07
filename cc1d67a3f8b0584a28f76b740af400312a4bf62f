@@ -137,6 +137,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdc7fbf6_b9385422",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-07T11:22:13Z",
+      "side": 1,
+      "message": "Check operator failed: https://www.distributed-ci.io/jobs/a4b5b600-c0c3-4984-b115-41289a959137/jobStates#707ef3c7-b014-4b65-bac4-1396c1faacbb:file99\n\nThe command failed to run, and we have no log files. I didn\u0027t investigate the details, just setting -1 to not merge.",
+      "revId": "cc1d67a3f8b0584a28f76b740af400312a4bf62f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "33b4ee67_d63dd465",
