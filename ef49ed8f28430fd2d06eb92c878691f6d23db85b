@@ -16,6 +16,23 @@
       "message": "lgtm 😊",
       "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cad6fc1_b9eec66b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T19:52:31Z",
+      "side": 1,
+      "message": "https://www.distributed-ci.io/jobs/32ab524e-b94d-41f1-9c29-15b29d75fe95/jobStates\n\nIt failed because the variable operator.operator_image is now mandatory.",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
