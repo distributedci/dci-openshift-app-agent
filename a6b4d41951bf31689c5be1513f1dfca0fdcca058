@@ -33,6 +33,24 @@
       "message": "Hi Ramon, thank you for the fix. Could you please add one more line to fix a misprint from the same CR? \nhttps://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117/24/roles/preflight/tasks/tests_scorecard_check_operator.yml \n\n{{ oc_tool_path }} image extract {{ operator.bundle_image }} --confirm -a {{ all_registries_creds }}\nshould be replaced with \n{{ oc_tool_path }} image extract {{ operator.bundle_image }} --confirm -a {{ partner_creds }}",
       "revId": "a6b4d41951bf31689c5be1513f1dfca0fdcca058",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07160aba_6a5d70dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T13:33:49Z",
+      "side": 1,
+      "message": "Hi Tatiana, I\u0027ve already included this change in https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24180, as it is related to pullsecrets, do you think we need to move it here too?",
+      "parentUuid": "54eaff85_c8a39aec",
+      "revId": "a6b4d41951bf31689c5be1513f1dfca0fdcca058",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
