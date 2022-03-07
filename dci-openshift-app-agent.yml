@@ -31,16 +31,23 @@
         - name: "Execute the error process"
           include_tasks: plays/error.yml
 
-        # The error may happen before creating the job_info variable, so we have to set a different error message in that case
+        # The error may happen before creating the job_info variable, or it may not be
+        # used because dci tag is not enabled in the job, so we have to set a different 
+        # error message in that case
         - name: Fail properly
           fail:
             msg: "Error: Something went wrong before creating the job"
-          when: job_info is not defined
+          when: >
+            job_info is undefined or
+            job_info.job is undefined or
+            job_info.job.id is undefined
 
+        # Use dci tag to avoid problems with job_info.job.id, which would be undefined
+        # if dci tag is not enabled
         - name: Fail properly
           fail:
             msg: "Error: Something went wrong, review the log at: https://www.distributed-ci.io/jobs/{{ job_info.job.id }}/jobStates"
-          when: job_info is defined
+          tags: [dci]
 
 # Step 0b : initial step
 - name: "Execute initial step"
@@ -184,9 +191,22 @@
         - name: "Execute the failure process"
           include_tasks: plays/failure.yml
 
+        # The failure may have happened in a job with dci tag disabled,
+        # so we have to set a different error message in that case
+        - name: Fail properly
+          fail:
+            msg: "Failure: Something went wrong"
+          when: >
+            job_info is undefined or
+            job_info.job is undefined or
+            job_info.job.id is undefined
+
+        # Use dci tag to avoid problems with job_info.job.id, which would be undefined
+        # if dci tag is not enabled
         - name: Fail properly
           fail:
             msg: "Failure: Something went wrong, review the log at: https://www.distributed-ci.io/jobs/{{ job_info.job.id }}/jobStates"
+          tags: [dci]
 
 # Step 3 : "testing" step
 - name: "Execute Red Hat tests step"
