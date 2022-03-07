@@ -216,24 +216,16 @@ Possible tags are:
 As the `KUBECONFIG` is read from the `kubeconfig` tasks, this tag should always be included.
 
 The `dci` tag can be used to skip all DCI calls else the `job` tag is
-mandatory to initialize all the DCI specifics. You will need to
-provide a fake `job_info` variable in a `myvars.yml` file like this:
-
-```YAML
-job_id: fake-id
-job_info:
-  job:
-    components:
-    - name: 1.0.0
-      type: my-component
-```
-
-and then call the agent like this:
+mandatory to initialize all the DCI specifics. If you do not want to interact with DCI, you
+just need to call the agent like this:
 
 ```ShellSession
 # su - dci-openshift-app-agent
-$ dci-openshift-app-agent-ctl -s -- --skip-tags dci -e @myvars.yml
+$ dci-openshift-app-agent-ctl -s -- --skip-tags dci
 ```
+
+In this way, no `job_info` variable will be created, but it is not needed as the tasks that make
+use of it are skipped.
 
 ## Enabling the Test Suites in DCI App Agent
 
