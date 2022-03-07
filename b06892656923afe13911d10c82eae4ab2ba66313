@@ -16,6 +16,23 @@
       "message": "Thanks for the feedback! I\u0027ve rebased the change taking into account Beto\u0027s last submission and I have resolved all the comments, leaving opened some of them to continue discussing, I\u0027ll start to do some tests now",
       "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "59c76373_1a3c8e99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T12:31:30Z",
+      "side": 1,
+      "message": "The execution is working fine with the last changes. In theory, don\u0027t pay attention at all to the last job tested (tnf-test-cnf pipeline), where no CNF Cert Suite tests were executed, probably because of the inconsistent state in which cluster4 is currently. I will try to test it again in cluster5/6 to confirm it\u0027s not a problem.",
+      "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
