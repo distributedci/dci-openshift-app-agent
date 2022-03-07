@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f29be14_a47145a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "@Tony I hope I resolve all your points in The patchset 3 😜",
+      "revId": "6c3cf858518a33d5d86b9ee78c999c17cb633151",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

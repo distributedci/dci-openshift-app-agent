@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "64ae8294_1d4dc8f4",
+        "filename": "roles/preflight/tasks/post-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fafdae58_cc06f54a",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37ebe7b5_b66a8dad",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-03-07T22:59:10Z",
       "side": 1,
       "message": "nit: Copy kubeconfig file into tmp config directory",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f66f6212_53c29aa4",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "37ebe7b5_b66a8dad",
       "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +105,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d328ea09_f547c02e",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f70ecb2f_073a7d9b",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "233dfbea_fa3f84d0",
@@ -82,6 +136,24 @@
       "writtenOn": "2022-03-07T22:59:10Z",
       "side": 1,
       "message": "Suggestion: Create temporary (container) preflight artifacts directory",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b6fcdd8_080381bc",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "233dfbea_fa3f84d0",
       "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -103,6 +175,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "80bd4e76_fd680cd4",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "48b1f1a0_cb02ee85",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dbbf2bee_0763a652",
@@ -116,6 +206,24 @@
       "writtenOn": "2022-03-07T22:59:10Z",
       "side": 1,
       "message": "Suggestion: Create temporary (operator) preflight artifacts directory",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a2a63ec_cc19da28",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dbbf2bee_0763a652",
       "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -137,6 +245,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "db7a0e7e_7b429546",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f34ce7c_1da4feaa",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3eb61fd9_4c716e3b",
@@ -150,6 +276,24 @@
       "writtenOn": "2022-03-07T22:59:10Z",
       "side": 1,
       "message": "I liked you are reusing a variable for container and operator, but looking at this line it\u0027s not clear what its value.\n\nHaving -v in here at least gives you a hint that we\u0027re expecting a volume/path here, but also being able to see where that path is going to be mounted/used in the container is helpful, wondering if it we should leave :/opt/config.json as well, wdyt?",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df051a87_251232e7",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 1,
+      "message": "I see your point.\nThese mounts are optional, we don\u0027t need to mount CA if we are not providing custom CA, same for authentication.\nIf we try to execute podman -v without source you will have a wonderful : \"Error: host directory cannot be empty\"",
+      "parentUuid": "3eb61fd9_4c716e3b",
       "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

@@ -16,6 +16,24 @@
       "message": "Why are we not deleting this tmp dir?",
       "revId": "fe77fc75208ebcd16b9622f969bc380d7e64133e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bf0e399_66604418",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-07T23:29:08Z",
+      "side": 0,
+      "message": "We moved this task in the post-run (in teardown now ^^)",
+      "parentUuid": "95c25ff7_388384ce",
+      "revId": "fe77fc75208ebcd16b9622f969bc380d7e64133e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
