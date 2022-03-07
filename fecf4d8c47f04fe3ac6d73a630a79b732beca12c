@@ -16,6 +16,23 @@
       "message": "LGTM - Thanks",
       "revId": "fecf4d8c47f04fe3ac6d73a630a79b732beca12c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0f2392b3_b2329a87",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T23:52:15Z",
+      "side": 1,
+      "message": "I think the first failed task should remain as it gives info about the lack of job_info, this one could be modified to fail only when one of the other expected keys are missing:\n\n  when: \u003e\n    job_info is undefined or\n    job_info.job is undefined or\n    job_info.job.id is undefined\n\nThe 2nd task could remain as well and this time it will be guarantee that those values are in place, wdyt?",
+      "revId": "fecf4d8c47f04fe3ac6d73a630a79b732beca12c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
