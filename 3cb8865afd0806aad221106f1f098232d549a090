@@ -16,6 +16,23 @@
       "message": "I\u0027ve included the change proposed by Tatiana, can you review it again to merge it asap? thanks!!",
       "revId": "3cb8865afd0806aad221106f1f098232d549a090",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc520147_7d832238",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-07T14:47:44Z",
+      "side": 1,
+      "message": "thank you @Ramon!",
+      "revId": "3cb8865afd0806aad221106f1f098232d549a090",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
