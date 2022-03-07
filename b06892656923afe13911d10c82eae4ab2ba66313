@@ -50,6 +50,23 @@
       "message": "\u003e Patch Set 8:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/d2b2c41f-c52c-420b-a2a9-a05d89f2bc65/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/249\n\nConfirming CNF Cert Suite is executed correctly with this final job, it is completely executed and the logs are reported. Do not pay attention to the results of the certification, it\u0027s probably because I ran the job while some MCP checks were being done in the OCP cluster, so that it may have become unstable for a while, making some tnf tests to fail, but they must pass in a normal execution.",
       "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ec5836d0_5257ccee",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T20:09:39Z",
+      "side": 1,
+      "message": "The concern I have is that pullsecret_tmp_file does not contain local registry creds, does it?\n\nMy understanding is, *if* we\u0027re disconnected we need a local registry, the creds for the local registry is in partner_creds. Therefore, partner_creds is *required* when in a disconnected mode.\n\n- partner_creds in a connected mode is truly optional, when defined it contains just private registry creds (partners)\n- partner_creds in a disconnected mode is *not* optional, but it must have at least local registry creds and optionally have private registry creds (partners)\n\nPlease correct me if I\u0027m wrong here.\n\ncc: Tatiana",
+      "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
