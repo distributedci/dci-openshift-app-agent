@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93a6cf16_1ca7f9b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "Thanks for the feedback! I\u0027ve rebased the change taking into account Beto\u0027s last submission and I have resolved all the comments, leaving opened some of them to continue discussing, I\u0027ll start to do some tests now",
+      "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

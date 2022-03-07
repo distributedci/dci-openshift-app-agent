@@ -70,6 +70,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b4ae949_40a23e9f",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 130,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "663503e7_db1bf4f6",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cc6487cc_9339b3d4",
@@ -83,6 +101,24 @@
       "writtenOn": "2022-03-03T19:02:28Z",
       "side": 1,
       "message": "partner_creds not only includes creds for their registries, it also contains the creds for the local registry.\n\nI\u0027m not sure I understand the note 😮. Could you please explain what\u0027s the note about? 😊",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "21cbb590_1b404eff",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "I\u0027ve changed this a little bit, I\u0027ve removed the second part of the note because it does not apply now.",
+      "parentUuid": "cc6487cc_9339b3d4",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -122,6 +158,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5351e536_76ea81a1",
+        "filename": "group_vars/all",
+        "patchSetId": 4
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "yes, we can save the secrets in a temporary location rather than in cache, I will handle it\n\nby the way, we need to define here provision_cache_store, because it\u0027s being used in d-o-a-a since this change was merged: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24117, in fact some people has reported me that they needed to define the variable in order to make d-o-a-a jobs pass. I will also maintain in the README the entry for provision_cache_store. But I will do it in a separate change, as it is not needed here.",
+      "parentUuid": "87d36ac6_ae5029be",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "536b4014_258cd41e",
@@ -139,6 +193,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "41561ea5_a3e0cbb3",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "okey, removing \"| combine(openshift_secret | default({}), recursive\u003dTrue)\". I\u0027ve just put it because it was how it is defined in d-o-a, but yes, it\u0027s not needed here",
+      "parentUuid": "536b4014_258cd41e",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f22b7e86_9f35696f",
@@ -152,6 +224,24 @@
       "writtenOn": "2022-03-03T19:02:28Z",
       "side": 1,
       "message": "I think we could use a tmp file here",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75d529f5_73532d79",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f22b7e86_9f35696f",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -175,6 +265,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "83cc4e1f_8440eb1f",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "What I am going to do is include the creds to be used by skopeo in the define_pullsecret.yml file, because it may happen that partner_creds is not provided, then we still need to use the pullsecret_file as unique authfile. Do you think it\u0027s fine in that way?",
+      "parentUuid": "1c15bae8_884f3738",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4c2d3276_51db80fa",
         "filename": "roles/cnf-cert/tasks/save-images.yml",
         "patchSetId": 4
@@ -186,6 +294,24 @@
       "writtenOn": "2022-03-03T19:02:28Z",
       "side": 1,
       "message": "I don´t think we need creds for pulling here, but only to push into the local repo, then partner_creds are needed, e.g.\n\n--dest-authfile {{ partner_creds }}",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a43250d_f1ba5f42",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "I\u0027ve put the same than in must-gather mirroring, because it may happen, again, that partner_creds is not set",
+      "parentUuid": "4c2d3276_51db80fa",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -207,6 +333,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7c653d9_9551190d",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "39712b9f_5105ea5a",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9949aa9e_9aa9cfd4",
@@ -220,6 +364,24 @@
       "writtenOn": "2022-03-03T19:02:28Z",
       "side": 1,
       "message": "since provisionhost_registry is defined based on the conditions of dci_disconnected, you could simply do:\n\n\"{{ ( provisionhost_registry|length ) | ternary(provisionhost_registry, \u0027quay.io\u0027) }}\"",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7caf7ed4_aab08500",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "good catch :)",
+      "parentUuid": "9949aa9e_9aa9cfd4",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -255,6 +417,24 @@
       "side": 1,
       "message": "interesting about the cache thing, Beto mentioned too the other day, it\u0027s good and bad :) at the same time.",
       "parentUuid": "6f992127_0b9eea79",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eaf55dca_4ae7f0ca",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T09:48:52Z",
+      "side": 1,
+      "message": "I will do the same than in the other cases, because again, by default, partner_creds is an empty value. So, in that case, if partner_creds is not provided, it is supposed that pull_secret file should have the creds to access to the registries.",
+      "parentUuid": "a6f597ca_90161ba5",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
