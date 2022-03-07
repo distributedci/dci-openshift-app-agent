@@ -33,6 +33,23 @@
       "message": "The execution is working fine with the last changes. In theory, don\u0027t pay attention at all to the last job tested (tnf-test-cnf pipeline), where no CNF Cert Suite tests were executed, probably because of the inconsistent state in which cluster4 is currently. I will try to test it again in cluster5/6 to confirm it\u0027s not a problem.",
       "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0a63c29_814411fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-07T13:10:43Z",
+      "side": 1,
+      "message": "\u003e Patch Set 8:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/d2b2c41f-c52c-420b-a2a9-a05d89f2bc65/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/249\n\nConfirming CNF Cert Suite is executed correctly with this final job, it is completely executed and the logs are reported. Do not pay attention to the results of the certification, it\u0027s probably because I ran the job while some MCP checks were being done in the OCP cluster, so that it may have become unstable for a while, making some tnf tests to fail, but they must pass in a normal execution.",
+      "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
