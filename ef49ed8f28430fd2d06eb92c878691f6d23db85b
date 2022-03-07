@@ -33,6 +33,74 @@
       "message": "https://www.distributed-ci.io/jobs/32ab524e-b94d-41f1-9c29-15b29d75fe95/jobStates\n\nIt failed because the variable operator.operator_image is now mandatory.",
       "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e3f546e_3ad1683d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T21:34:59Z",
+      "side": 1,
+      "message": "My review is mostly question to understand the requirements of the change 😜",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee2ab9fd_690a918c",
+        "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T21:34:59Z",
+      "side": 1,
+      "message": "Why is the dir required to belong to root?",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d793a5dd_55db1677",
+        "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T21:34:59Z",
+      "side": 1,
+      "message": "Same question, I see there\u0027s a limitation with preflight binary that needs to run as root, but not sure if the binary needs to belong to root as well",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8777ee6_a3bd5484",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-07T21:34:59Z",
+      "side": 1,
+      "message": "Why the two options (container vs binary)?",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
