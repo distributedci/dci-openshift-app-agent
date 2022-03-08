@@ -51,6 +51,24 @@
       "parentUuid": "c423dc00_5499b92a",
       "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3da5a85e_cbf7fff6",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 606
+      },
+      "writtenOn": "2022-03-08T20:32:08Z",
+      "side": 1,
+      "message": "forehead smack.  Yes.  I lost the forest from the tress.\n\nBut I think the or may cause problems..  I think even if job_info is undefined it will still try and see if job_info.job is undefined, etc..  which I think will throw an error.\n\nwhen:\n - job_info is undefined\n - job_info.job is undefined\n - job_info.job.id is undefined\n\nI believe it will stop checkinhg at the first one that is undefined which I believe is what we want.\n\nOr am I missing something?",
+      "parentUuid": "a03d7145_ca56623e",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
