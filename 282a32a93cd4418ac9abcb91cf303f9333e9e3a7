@@ -16,6 +16,23 @@
       "message": "Here is the current state of the tests.\n\n1/ Check container mostly works. To verify:\n- I currently run Preflight binary without sudo. It\u0027s not recommended by Preflight but helps to avoid follow-up problems with logs upload. I\u0027m running additional tests to ensure that everything\u0027s fine.\n- ansible_user is not defined when d-o-a-a is running in the isolated way (with kubeconfig) on the top of the already installed cluster.\n- Submission to Pyxis was supposed to start working today. It didn\u0027t, will work on it later.\n\n2/ Check operator doesn\u0027t work - we should have 2/4 for testpmd but continue to have 1/4. Running tests on other operators.",
       "revId": "282a32a93cd4418ac9abcb91cf303f9333e9e3a7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5630b3b1_c9c0e12b",
+        "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T12:17:38Z",
+      "side": 1,
+      "message": "The current approach verifies the presence of preflight binary, without checking the version. In the situation when we already have an old preflight binary, the new one would not be pulled.\n\nThe way I\u0027d like to fix that is to pull preflight binary each time, and not in /opt/cache but in tmp preflight folder. This tmp folder is introduced in 24145, so let\u0027s merge it first, once the tests would pass.",
+      "revId": "282a32a93cd4418ac9abcb91cf303f9333e9e3a7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
