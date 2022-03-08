@@ -67,6 +67,24 @@
       "message": "The concern I have is that pullsecret_tmp_file does not contain local registry creds, does it?\n\nMy understanding is, *if* we\u0027re disconnected we need a local registry, the creds for the local registry is in partner_creds. Therefore, partner_creds is *required* when in a disconnected mode.\n\n- partner_creds in a connected mode is truly optional, when defined it contains just private registry creds (partners)\n- partner_creds in a disconnected mode is *not* optional, but it must have at least local registry creds and optionally have private registry creds (partners)\n\nPlease correct me if I\u0027m wrong here.\n\ncc: Tatiana",
       "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05c75ada_9dd76107",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-08T10:38:51Z",
+      "side": 1,
+      "message": "As far as I can see, pullsecret_tmp_file does not have the local registry creds, it just has what it can be extracted from the DCI job.\n\nI have reformulated the whole thing, also updating the README, because I think the comment is not the most appropriate one (I\u0027ve also put a reference to dci_disconnected, because I have not seen it defined in the docs). \n\nI think you are right with your comment. Anyway, I think the skopeo_copy_authfiles, according to how we are defining the other implied variables, is correct, because partner_creds *is not mandatory* and the default value is \"\", in fact. So, we need to check its value in order to use it or not when running skopeo.\n\nOf course, we have the risk of not setting partner_creds variable, then leveraging on pullsecret_tmp_file, and being on a disconnected environment, so that pullsecret_tmp_file will not have the reference to the local registry. But for these cases, I guess the clarification I have added in this patchset should be enough.\n\nAt least in our pipelines, I managed to define partner_creds in all d-o-a-a pipelines, so we will not have this problem.\n\nDo you think it is fine now?",
+      "parentUuid": "ec5836d0_5257ccee",
+      "revId": "b06892656923afe13911d10c82eae4ab2ba66313",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
