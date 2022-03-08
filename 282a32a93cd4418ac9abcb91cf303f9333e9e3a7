@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4d4b0012_0f252648",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-08T13:03:22Z",
+      "side": 1,
+      "message": "1/ \n- I also did some test without sudo, it works well.\n- ansible_user is define statically in /usr/share/dci-openshift-app-agent/ansible.cfg\n- 🙏",
+      "parentUuid": "2508aa7e_1d4cf364",
+      "revId": "282a32a93cd4418ac9abcb91cf303f9333e9e3a7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5630b3b1_c9c0e12b",
         "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
         "patchSetId": 12
@@ -31,6 +49,24 @@
       "writtenOn": "2022-03-08T12:17:38Z",
       "side": 1,
       "message": "The current approach verifies the presence of preflight binary, without checking the version. In the situation when we already have an old preflight binary, the new one would not be pulled.\n\nThe way I\u0027d like to fix that is to pull preflight binary each time, and not in /opt/cache but in tmp preflight folder. This tmp folder is introduced in 24145, so let\u0027s merge it first, once the tests would pass.",
+      "revId": "282a32a93cd4418ac9abcb91cf303f9333e9e3a7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ed2127b3_c441a3d0",
+        "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-08T13:03:22Z",
+      "side": 1,
+      "message": "The preflight_binary_dir variable contains the version of the preflight binary. So it will download every new preflight binary.",
+      "parentUuid": "5630b3b1_c9c0e12b",
       "revId": "282a32a93cd4418ac9abcb91cf303f9333e9e3a7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
