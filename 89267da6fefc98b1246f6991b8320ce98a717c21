@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c743eafb_defa3409",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-08T01:06:22Z",
+      "side": 1,
+      "message": "Hello Piere, \n\nI have a question regarding this. \n\nHow will pre-flight be executed without podman?\n\nI have some concerns about updating the host CA bundles with certs with the custom CA certificates. Is not possible to pass a temporary trust bundle during the run? or maybe we can try removing them from the system bundle after the test?\n\nThanks!",
+      "revId": "89267da6fefc98b1246f6991b8320ce98a717c21",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c0bd4ebb_1b78949a",
         "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
         "patchSetId": 1
