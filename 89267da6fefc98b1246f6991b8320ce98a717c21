@@ -34,6 +34,24 @@
       "parentUuid": "c0bd4ebb_1b78949a",
       "revId": "89267da6fefc98b1246f6991b8320ce98a717c21",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "83ca4f1d_1f20bfa2",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T00:37:31Z",
+      "side": 1,
+      "message": "Ah! my bad, I thought preflight_custom_ca was the cabundle.\n\nWhere is the preflight_custom_ca defined?\n\n\nWith all that clarified, I believe these two tasks should not be in preflight, but earlier in the agent, perhaps pre-run?, because these changes to the jumphost are global. Preflight is not the only part that talks to the registry, wdyt?",
+      "parentUuid": "10e134e3_1d219fd9",
+      "revId": "89267da6fefc98b1246f6991b8320ce98a717c21",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
