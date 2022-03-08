@@ -33,6 +33,24 @@
       "message": "I think the first failed task should remain as it gives info about the lack of job_info, this one could be modified to fail only when one of the other expected keys are missing:\n\n  when: \u003e\n    job_info is undefined or\n    job_info.job is undefined or\n    job_info.job.id is undefined\n\nThe 2nd task could remain as well and this time it will be guarantee that those values are in place, wdyt?",
       "revId": "fecf4d8c47f04fe3ac6d73a630a79b732beca12c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f6eb9c1_b1b7bb3c",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-08T08:53:54Z",
+      "side": 1,
+      "message": "Thanks for catching this, Tony. Definitely, I\u0027ll move to your approach, because I\u0027ve seen that the ternary is not working as expected when any variable is undefined, because the ternary evaluates all the variables included, even though they are supposed to be undefined. So, I\u0027ll use one task to fail in case any of them is undefined, as you proposed, and the other one, I\u0027ll put the dci tag on it, instead of setting conditions. In theory, with the dci tag, we should ensure that job_info.job.id is provided. Is it fine with that approach?",
+      "parentUuid": "0f2392b3_b2329a87",
+      "revId": "fecf4d8c47f04fe3ac6d73a630a79b732beca12c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
