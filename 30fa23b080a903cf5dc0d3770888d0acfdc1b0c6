@@ -16,6 +16,23 @@
       "message": "LGTM, let\u0027s make sure it\u0027s tested in both cases",
       "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c423dc00_5499b92a",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 606
+      },
+      "writtenOn": "2022-03-08T18:31:16Z",
+      "side": 1,
+      "message": "This is fine, but I just want to point out that you don\u0027t need the or statements..\n\nIf job_info is undefined then everything else will be undefined as well.",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
