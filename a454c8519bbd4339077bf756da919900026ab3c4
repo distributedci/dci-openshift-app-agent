@@ -296,6 +296,24 @@
       "parentUuid": "3eb61fd9_4c716e3b",
       "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "739cd475_f1c8e0b3",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T01:15:01Z",
+      "side": 1,
+      "message": "Aha!, now it makes sense 😊 thanks for the clarification!",
+      "parentUuid": "df051a87_251232e7",
+      "revId": "a454c8519bbd4339077bf756da919900026ab3c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
