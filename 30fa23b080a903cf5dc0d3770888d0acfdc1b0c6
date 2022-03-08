@@ -33,6 +33,24 @@
       "message": "This is fine, but I just want to point out that you don\u0027t need the or statements..\n\nIf job_info is undefined then everything else will be undefined as well.",
       "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a03d7145_ca56623e",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T20:19:01Z",
+      "side": 1,
+      "message": "I think the problem that Ramón is trying to solve is when job_info is defined but id is missing\n\nNot sure when this case could occur, but looking at the docs[1] it seems like we have the id at a different level and not under job_info_.job. Please correct me if I\u0027m wrong here\n\n[1] https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/README.md?plain\u003d1#L224-L229",
+      "parentUuid": "c423dc00_5499b92a",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
