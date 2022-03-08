@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88113735_1f0e26ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for the CR, I added some comments.",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f24e51d3_1aa2d32a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "Since operator_catalog is defined in the pipeline, we probably could define the default value in defaults.",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "14eef641_1b5e7eb4",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "Hi Ramon, to set the fact operator_csv_name looks like overkill because it\u0027s used only in the next k8s_info task.\n\nMaybe you could set a variable in the scope of this task:\nvars:\n  operator_csv_name: \"simple-demo-operator.v{{ operator_version|default(\u00270.0.3\u0027) }}\"",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e66d4752_fcc1913b",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "could we use less shell and more ansible here?",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0bd4839d_7fc5230e",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "Maybe instead of hardcoding `simple-demo-operator-bundle` here, we could include it into the pipeline as a variable.",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dde44f22_f668f992",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "I see that Beto is using everywhere {{ opm_tool_path }} instead of opm",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b33d78d_ae22d22d",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "From Preflight daily tests, we could see that ICSP modification triggers the whole MCP story, and sometimes we need a workaround like the one you marked with BZ in doa. \n\nIn Preflight we\u0027re currently using the simpler version: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/tasks/pre-run_mirroring.yml#L77 and it\u0027s sometimes not enough. \n\nHere is an example of today\u0027s job failed on this MCP step because of worker-0 SchedulingDisabled: https://www.distributed-ci.io/jobs/cc348f42-98cc-4939-93b4-3fadea022674/jobStates#cb7320d9-9919-445e-959c-2a63afdb1aaa:file60",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2806bc28_3a7f64f5",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T20:11:16Z",
+      "side": 1,
+      "message": "Since we have these five conditions everywhere, we could probably group them under one variable at the very beginning.",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
