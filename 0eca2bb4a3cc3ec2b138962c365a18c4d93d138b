@@ -16,6 +16,23 @@
       "message": "Rebased from master",
       "revId": "0eca2bb4a3cc3ec2b138962c365a18c4d93d138b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cab0d7d4_d3a8c9d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T17:53:14Z",
+      "side": 1,
+      "message": "Thanks for all the clarifications Pierre, let\u0027s get it tested and make sure the cert is really gone 😊",
+      "revId": "0eca2bb4a3cc3ec2b138962c365a18c4d93d138b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
