@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be753da3_f15d18c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-08T19:27:28Z",
+      "side": 1,
+      "message": "- Check container is fine, there is no regression.\n- @Pierre, the download of preflight binary is trimmed as we agreed.\n- CR is not yet tested on operators from private registries.\n- We have a regression for the check operator tests. Good job: https://www.distributed-ci.io/jobs/85fdd862-e845-4291-bf87-03ecbc732eb6/tests vs bad job: https://www.distributed-ci.io/jobs/745e7534-84d8-4629-9ba5-e1113ef8c759/tests The issue is \"fatal error to run operator-sdk scorecard\".\n\nOverall, I would prefer not to merge like this.\n",
+      "revId": "1e558cf66f3ceb2683bdd0694b86a5f14c12fedb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
