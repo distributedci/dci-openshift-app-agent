@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b478a9b2_a9cb6d1c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T18:02:33Z",
+      "side": 1,
+      "message": "LGTM, let\u0027s make sure it\u0027s tested in both cases",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
