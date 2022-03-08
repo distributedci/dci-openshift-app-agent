@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dca3fa09_1574625e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T00:01:01Z",
+      "side": 1,
+      "message": "LGTM, I\u0027ll change to +2 once the new patchset is tested.",
+      "revId": "eda870d4f34831185f761bf3b74e6ecb84e2c98b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

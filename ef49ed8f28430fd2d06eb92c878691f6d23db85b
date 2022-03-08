@@ -104,6 +104,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1b58574_51336bb1",
+        "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T00:01:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f4aeb21_dfbec92b",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d793a5dd_55db1677",
@@ -139,6 +157,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "719b194e_f1fd7b2a",
+        "filename": "roles/preflight/tasks/pre-run_get_preflight_binary.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T00:01:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3869bf02_05397f52",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e8777ee6_a3bd5484",
@@ -170,6 +206,24 @@
       "side": 1,
       "message": "The next version of preflight(1.1.0) must be executed with the binary, before (1.0.8) the recommendation was on podman.\nThe compatibility with podman will come back in the next releases 😊",
       "parentUuid": "e8777ee6_a3bd5484",
+      "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "115435a6_4aa0119e",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-08T00:01:01Z",
+      "side": 1,
+      "message": "oh my 😕, thanks for the info",
+      "parentUuid": "3b43310d_908dd11e",
       "revId": "ef49ed8f28430fd2d06eb92c878691f6d23db85b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
