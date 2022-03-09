@@ -18,6 +18,15 @@
 
 - name: "Run preflight check container on operator image for {{ operator.name }} with podman"
   block:
+    - name: Build environement variable for podman
+      set_fact:
+        preflight_podman_env: |-
+          -e {{ operator.env.keys() |
+          zip(operator.env.values()) |
+          map('join', '=') |
+          join(' -e ') }}
+      when: operator.env is defined
+
     - name: "Run preflight check container on operator image for {{ operator.name }} with podman"
       shell: >
         podman run
@@ -33,6 +42,7 @@
         -e PFLT_LOGLEVEL=trace
         -v {{ preflight_container_artifacts.path }}:/artifacts
         {{ preflight_podman_auth }}
+        {{ preflight_podman_env | default() }}
         {{ preflight_podman_ca }}
         {{ preflight_image }}
         check container
@@ -56,9 +66,19 @@
   # --submit option could not be used because of broken Pyxis APIs
   # The release to fix that is expected on 08/03/2022
   block:
+    - name: Build environement variable for Binary
+      set_fact:
+        preflight_binary_env: |-
+          export {{ operator.env.keys() |
+          zip(operator.env.values()) |
+          map('join', '=') |
+          join('; export ') }};
+      when: operator.env is defined
+
     - name: "Run preflight check container on operator image for {{ operator.name }} with preflight binary"
       shell: >
         cd {{ preflight_container_artifacts.path }};
+        {{ preflight_binary_env | default() }}
         {{ preflight_docker_config_env }}
         PFLT_JUNIT=true
         PFLT_ARTIFACTS={{ preflight_container_artifacts.path }}
