@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25c064a2_f934834a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T14:37:59Z",
+      "side": 1,
+      "message": "\u003e Patch Set 18:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/fae4977b-ab8b-4261-a75b-60752d7a6416/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/267\n\nCurrent code is working using the current code from https://softwarefactory-project.io/r/c/dci-openshift-agent/+/24275 (patchset 2). When that change and 24276 are merged, this can be merged too. ",
+      "revId": "6fbbc3beb85846a4f6479217ff534046ad193e1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
