@@ -105,6 +105,24 @@
       "parentUuid": "2acc3182_8b45b037",
       "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "44eaea92_ae2bee9a",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 606
+      },
+      "writtenOn": "2022-03-09T13:25:41Z",
+      "side": 1,
+      "message": "My apologies Ramon.  Sorry for the extra back and forth but I do appreciate both of you working through the issue and making sure the logic is sound.  It always confuses me when negating the logic you need to switch from AND to OR.  I guess I was still thinking is defined instead of is undefined.  Thanks again.",
+      "parentUuid": "482fd53e_19a04bc1",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
