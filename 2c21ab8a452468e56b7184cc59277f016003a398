@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22452139_bf12643e",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T13:09:50Z",
+      "side": 1,
+      "message": "dci_cluster_configs_dir variable needs to be defined too:\n\n```\ndci_cluster_configs_dir: \"{{ kubeconfig_path | replace(\u0027/kubeconfig\u0027, \u0027\u0027) }}\"\n```\n\nNote that, in d-o-a, that variable refers to both kubeconfig and oc, and in d-o-a-a, we have a different variable for each case, but under kubeconfig_path (without kubeconfig in the string), we can reach both. I think we need to harmonize the way of calling oc in d-o-a too, to avoid these dependencies.",
+      "revId": "2c21ab8a452468e56b7184cc59277f016003a398",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
