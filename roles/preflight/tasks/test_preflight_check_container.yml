@@ -5,6 +5,15 @@
     prefix: preflight_container_artifacts.
   register: preflight_container_artifacts
 
+    - name: Build environement variable for podman
+      set_fact:
+        preflight_podman_env: |
+          -e {{ operator.env.keys() |
+          zip(operator.env.values()) | 
+          map('join', '=') |
+          join(' -e ') }}
+      when: operator.env is defined
+
 - name: "Run preflight check bundle container for {{ operator.name }}"
   shell: >
     podman run
@@ -20,6 +29,7 @@
     -e PFLT_LOGLEVEL=trace
     -v {{ preflight_container_artifacts.path }}:/artifacts
     {{ preflight_podman_auth}}
+    {{ preflight_podman_env | default() | trim }}
     {{ preflight_podman_ca }}
     {{ preflight_version }}
     check container
