@@ -16,6 +16,24 @@
       "message": "Hello Ramón, \n\nI may be a bit late to this. I was thinking about why not having just a single file with credentials (dci_pull_secret + partner_creds if exists). Just to avoid having to have separate files for push, pull, etc. If the partner_creds is specific about the images, namespaces, or repos then specific credentials can be used for each image(s). So the same file can be used for pull/push according the needs.\n\nhttps://man.archlinux.org/man/community/containers-common/containers-auth.json.5.en",
       "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f68521e_c5d20eb0",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T15:01:43Z",
+      "side": 1,
+      "message": "Hi Beto, thanks for the advice. I\u0027d prefer to discuss this in the daily, maybe, because that approach would require to make several changes in the code and I\u0027d prefer to align everybody on this before applying any change. I\u0027ll comment this on the daily.",
+      "parentUuid": "a7fe4c01_f32cb969",
+      "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
