@@ -52,6 +52,24 @@
       "parentUuid": "7f68521e_c5d20eb0",
       "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8aae599a_cb0ba04c",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T16:07:26Z",
+      "side": 1,
+      "message": "I\u0027ll do this tomorrow, we agreed on generating that new file.\n\nHowever, the question now is: should we have only one creds file and use it in all places? or should we create that file BUT maintaining partner_creds usage whenever is used? (e.g. preflight).\n\nI think we can use one single file for everything and that\u0027s all. It would not be a problem to have the content from DCI job pullsecret even though it is not used according to the reference provided by Beto. The only thing is that partner_creds \"would not be used\" as the source pullsecret file, but we will rely on the new file generated, but if you agree on this, let\u0027s do that.",
+      "parentUuid": "97e6b003_94f45b2b",
+      "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
