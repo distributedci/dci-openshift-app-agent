@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "117a9021_e7752c78",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-09T21:27:01Z",
+      "side": 1,
+      "message": "David, I tested this, you can see the job logs from the link the dci-ci-bot provided in previous comment, but we cannot see the output of d-o-a-a-ctl when it runs the find, so I ran a few tests in my lab with your change and I see the following:\n\n+ find /tmp/dci-openshift-app-agent.Ph4wd -name \u0027*.xml\u0027 -maxdepth 1 -type f -exec sh -c \u0027 \\\n                dcictl job-upload-file \\\n                    --name $(basename $1 .xml) \\\n                    --path $1 \\\n                    --mime application/junit $2 \\\n                \u0027 _ \u0027{}\u0027 dab41ba1-77cf-4818-a673-ce06ace92e3a \u0027;\u0027\nfind: warning: you have specified the -maxdepth option after a non-option argument -name, but options are not positional (-maxdepth affects tests specified before it as well as those specified after it).  Please specify options before other arguments.\n\nSo I think you need to place the -maxdepth before the -name, I tested like this and looks much better",
+      "revId": "8eacef5afb0eb42fd7992671dc488788126838dc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
