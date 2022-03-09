@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f259d759_856acf7a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "We can have the case in which we call tnf_test_example with dci-openshift-app-agent-ctl, so we cannot rely on the pipelines in that way. So yes, agree on defining always a default value just in case.\nHowever, as these are variables very related to the samples, I\u0027d prefer not to define them in the general \"defaults\" folder in d-o-a-a (group/vars or cnf-cert role), and I\u0027ve been seeing that, in the case of these samples (which make use of hooks), there are no \"defaults\" folders to define default values. Consequently, this way of defining the default value in the same line in which the variable is used. In fact, it is a technique that is already present in tnf_test_example (e.g. https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/samples/tnf_test_example/hooks/templates/test_deployment.yml.j2#L31) and other examples like basic_example (e.g. https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/samples/basic_example/hooks/install.yml#L16).\nSo, if you don\u0027t mind, I\u0027d prefer to keep this same approach in this case, otherwise we should change the other reference to default values in the other cases too (maybe can be addressed in a new change). What do you think?",
+      "parentUuid": "f24e51d3_1aa2d32a",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "14eef641_1b5e7eb4",
         "filename": "samples/tnf_test_example/hooks/install.yml",
         "patchSetId": 7
@@ -48,6 +66,24 @@
       "writtenOn": "2022-03-08T20:11:16Z",
       "side": 1,
       "message": "Hi Ramon, to set the fact operator_csv_name looks like overkill because it\u0027s used only in the next k8s_info task.\n\nMaybe you could set a variable in the scope of this task:\nvars:\n  operator_csv_name: \"simple-demo-operator.v{{ operator_version|default(\u00270.0.3\u0027) }}\"",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5aafe620_0be42dda",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "14eef641_1b5e7eb4",
       "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -71,6 +107,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fd049dc1_4da741bb",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "In fact, this code is the same that is done in example-cnf here: https://github.com/dci-labs/example-cnf-config/blob/master/testpmd/hooks/roles/apply-cnf-cert-config/tasks/install.yml#L34-L54, I\u0027m just reusing the same here.\nI\u0027d say we can improve this in a new change, because when I propose this code for example-cnf, I didn\u0027t find a better way of doing this with Ansible, as we needed to link InstallPlan and ClusterServiceVersion somehow and using `oc` was really easy to do. Maybe we can rely on the future code to share roles between agents.",
+      "parentUuid": "e66d4752_fcc1913b",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0bd4839d_7fc5230e",
         "filename": "samples/tnf_test_example/hooks/pre-run.yml",
         "patchSetId": 7
@@ -82,6 +136,24 @@
       "writtenOn": "2022-03-08T20:11:16Z",
       "side": 1,
       "message": "Maybe instead of hardcoding `simple-demo-operator-bundle` here, we could include it into the pipeline as a variable.",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fe6aec2_c5def265",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "Sure, I can change it. I\u0027ve finally followed what you do here in preflight: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/tasks/pre-run_mirroring.yml#L22, to reuse operator_bundle variable.",
+      "parentUuid": "0bd4839d_7fc5230e",
       "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -103,6 +175,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "30252a64_69eed25c",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "Yes, I did this change before merging Beto\u0027s one using opm_tool_path, I\u0027ll change it.",
+      "parentUuid": "dde44f22_f668f992",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6b33d78d_ae22d22d",
@@ -120,6 +210,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "da05f454_cbec2d88",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "Yes, I\u0027ve been reading a bit about ICSM and MCP and it\u0027s true that it should be checked, so what I am going to do is to follow your approach from https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24115 to use the common, shared path from https://softwarefactory-project.io/r/c/dci-openshift-agent/+/24275, and let\u0027s see how it goes",
+      "parentUuid": "6b33d78d_ae22d22d",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2806bc28_3a7f64f5",
@@ -133,6 +241,24 @@
       "writtenOn": "2022-03-08T20:11:16Z",
       "side": 1,
       "message": "Since we have these five conditions everywhere, we could probably group them under one variable at the very beginning.",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6c857ac_10dd091b",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T10:20:25Z",
+      "side": 1,
+      "message": "The check is not exactly the same in the three cases, because the second one relies on, for example, operator_bundle. What I am going to do is include all this code in a block and just call it when all conditions are met, because for example, right now, we are creating and deleting the temp directory and it may not be used in case of connected environment. I think it\u0027s better now.",
+      "parentUuid": "2806bc28_3a7f64f5",
       "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
