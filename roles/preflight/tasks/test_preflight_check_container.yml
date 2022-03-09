@@ -18,6 +18,15 @@
 
 - name: "Run preflight check container on operator image for {{ operator.name }} with podman"
   block:
+    - name: Build environement variable for podman
+      set_fact:
+        preflight_podman_env: |-
+          -e {{ operator.env.keys() |
+          zip(operator.env.values()) |
+          map('join', '=') |
+          join(' -e ') }}
+      when: operator.env is defined
+
     - name: "Run preflight check container on operator image for {{ operator.name }} with podman"
       shell: >
         podman run
@@ -33,6 +42,7 @@
         -e PFLT_LOGLEVEL=trace
         -v {{ preflight_container_artifacts.path }}:/artifacts
         {{ preflight_podman_auth }}
+        {{ preflight_podman_env | default() }}
         {{ preflight_podman_ca }}
         {{ preflight_image }}
         check container
@@ -70,6 +80,7 @@
         {{ pyxis_auth | default() }}
         {{ preflight_podman_auth_for_binary }}
       register: preflight_container_output
+      environment: "{{ operator.env | default() }}"
       no_log: true
       when: preflight_binary | length > 0
   rescue:
