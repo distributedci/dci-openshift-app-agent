@@ -87,6 +87,24 @@
       "parentUuid": "3da5a85e_cbf7fff6",
       "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "482fd53e_19a04bc1",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-09T12:28:03Z",
+      "side": 1,
+      "message": "Mmmm I\u0027ve been doing local tests and, by using AND instead of OR, we will not have the desired behavior. We obtained it with OR, in fact.\n\nI\u0027ve gathered all the tests in this Gist: https://gist.github.com/ramperher/53198407de65c5c2b0fc8591eafae1fa\n\nIf you take a look to the code, as Tony said, what we want to do is to execute \"Fail properly\" without using the DCI job ID when:\n- we have an error that happens before creating the job_info variable (which happened in the past and that\u0027s why we currently have two tasks for handling the error)\n- we don\u0027t have a DCI job ID because we are skipping [dci] tag when we run d-o-a-a\n\nSo, in the first case, it is clear that job_info, job_info.job and job_info.job.id are undefined, so both AND and OR checks will offer the same result. However, in the second case, it may happen that job_info is defined in the settings, as commented by Jennifer Chen in Distributed CI google channel last Monday:\n\n\"Thanks for the info. If there is a way I can use this feature for now with\n```\n[dci-openshift-app-agent@infra4 hooks]$ cat /etc/dci-openshift-app-agent/no-dci.yml\njob_id: fake-id\njob_info:\n  job:\n    components:\n    - name: 1.3.9\n      type: my-component\n```\n\"\n\nAnd in that eventual case, job_info and job_info.job are defined, but job_info.job.id is not defined.\n\nIf that work was made in order to pass the condition on the d-o-a-a job (so, we will never have the case of job_info defined but id undefined), then yes, we can go on with the AND approach, but if not, it\u0027s better to leave the OR there.\n\nAnd of course, if we allow that behavior, we also need to do the same check for the failure message (below), as proposed in the change.\n\nBy the way, with the shared gist, you\u0027ll have all the tests that check that this workflow works, just in case we decide on leaving OR - so we don\u0027t need to test nothing more, I guess, because it\u0027s a feature which is hard to test",
+      "parentUuid": "2acc3182_8b45b037",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
