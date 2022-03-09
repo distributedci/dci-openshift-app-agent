@@ -34,6 +34,24 @@
       "parentUuid": "a7fe4c01_f32cb969",
       "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97e6b003_94f45b2b",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-09T15:21:50Z",
+      "side": 1,
+      "message": "\u003e I was thinking about why not having just a single file with credentials (dci_pull_secret + partner_creds if exists)\n\nHi Beto, thank you for finding that, that could simplify our life a lot. I\u0027d vote for doing as you propose.",
+      "parentUuid": "7f68521e_c5d20eb0",
+      "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
