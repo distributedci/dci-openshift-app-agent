@@ -69,6 +69,24 @@
       "parentUuid": "3de3b6b4_5da644e0",
       "revId": "f9202e669a0e0b27285ebc69b28e03a1ff376eda",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9899caeb_81d8cf25",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-10T14:54:59Z",
+      "side": 1,
+      "message": "I see each partner does it differently, Casa uses d-o-a and Mavenir use d-o-o-a user to run the agent. We in Dallas use dciteam :P, should we create the dir with a particular user that we know is present in all deployments (becoming sudo)? this will impact the uncompress tasks too, and maybe others. And in Dallas /opt/cache is used by d-o-a too, but d-o-a does not create it, SNO uses it too, and sets the ansible-user. So I wonder if we should use a diff path for d-o-a-a. I\u0027ll think about this, but any opinions are welcome.",
+      "parentUuid": "142698f2_cf0b09eb",
+      "revId": "f9202e669a0e0b27285ebc69b28e03a1ff376eda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
