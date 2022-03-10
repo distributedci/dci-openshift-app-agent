@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f895569_5f381ef6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-10T11:14:37Z",
+      "side": 1,
+      "message": "In the previous tested job, the wait-mcp seems to be working, so I\u0027d say this is ready to be merged: https://www.distributed-ci.io/jobs/f1e068a0-654d-4eed-b394-d5db4f15cea0/jobStates#3c6ab647-54f9-48be-b950-59b1657e65c5:file53",
+      "revId": "2c21ab8a452468e56b7184cc59277f016003a398",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "22452139_bf12643e",
