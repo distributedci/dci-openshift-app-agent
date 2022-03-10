@@ -141,6 +141,24 @@
       "parentUuid": "44eaea92_ae2bee9a",
       "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f143c02c_73994d96",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-10T10:05:24Z",
+      "side": 1,
+      "message": "I have finally found why it is defined job_info in the settings when we skip dci tag, and it is because of this subchapter of the README: https://github.com/redhat-cip/dci-openshift-app-agent#using-customized-tags\n\nHowever, I fear this comment is outdated, because it was included the 5th May 2021, almost 1 year ago, and d-o-a-a has changed a lot since that date.\n\nSo, let me propose something:\n\n- I will simplify the first check, only putting that `job_info is not defined`, as it was previously\n- I will leave the second check as it is, with the dci tag, then it would not be run if dci tag is skipped\n- I will change the README to remove the references about defining job_info variable if dci tag is skipped.\n\nThat would clarify (and simplify) everything, I think.\n\nI\u0027ve run a test skipping dci tag and it passed (you can see it above this comment, but you will not see anything on DCI as the tasks related to dci were skipped), so it seems it\u0027s not a problem not to define job_info.\n\nDo you think it is fine?\n\nI\u0027ll add @Fred too because he was the one who put the comment in the README one year ago, to confirm it\u0027s fine.",
+      "parentUuid": "c70453d3_d691b6af",
+      "revId": "30fa23b080a903cf5dc0d3770888d0acfdc1b0c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
