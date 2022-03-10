@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5b7985e_32a91d95",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-10T21:26:29Z",
+      "side": 1,
+      "message": "FYI, I had to kill the job, because it was stuck for 3 hours getting the logs of the example-cnf job. You can see in the logs OCP job went fine, and the example-cnf job was mostly ok too, just the log upload failed in the post-run. I see in the job we passed example-cnf:ansible_extravars\u003dprovisioner_user:\"\" I think that is related to the issue, when I checked the processes running, I saw this, and it looks like it\u0027s missing the username on the ssh connection:\n \ndciteam   876967  0.0  0.0  12724  3060 pts/83   S+   12:44   0:00 /bin/sh -c KUBECONFIG\u003d/var/lib/dci-pipeline/example-cnf/9c89f07f-0a6f-44c1-98f5-8f8d60595d96/inputs/kubeconfig DCI_MUST_GATHER_IMAGES\u003dregistry.redhat.io/openshift4/ose-must-gather /home/dciteam/.ansible/tmp/ansible-tmp-1646937850.3969624-876952-91887161930411/get-logs \"\"\"@provisioner.cluster5.dfwt5g.lab\" \"/tmp/dci_logs.gyv4y9oo\" \u0026\u0026 sleep 0\n",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ad1484f4_7fda3293",
