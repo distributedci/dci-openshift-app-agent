@@ -16,6 +16,57 @@
       "message": "Answering open comments.",
       "revId": "ed25f80defa32b35c382a957a8b7688302042744",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05cdb441_bd7de29c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-03-10T11:02:39Z",
+      "side": 1,
+      "message": "a few comments but LGTM.",
+      "revId": "ed25f80defa32b35c382a957a8b7688302042744",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2cf77037_5d0a4003",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 218,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-03-10T11:02:39Z",
+      "side": 1,
+      "message": "we should state something like \"if you cannot do the DCI calls\" because I don\u0027t want this to be the normal way to proceed.",
+      "revId": "ed25f80defa32b35c382a957a8b7688302042744",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcc540b8_7938c22f",
+        "filename": "README.md",
+        "patchSetId": 7
+      },
+      "lineNbr": 227,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-03-10T11:02:39Z",
+      "side": 1,
+      "message": "we don\u0027t really need this paragraph imo.",
+      "revId": "ed25f80defa32b35c382a957a8b7688302042744",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
