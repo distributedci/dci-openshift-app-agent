@@ -70,6 +70,24 @@
       "parentUuid": "97e6b003_94f45b2b",
       "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "392fe406_35ff2369",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-10T15:20:44Z",
+      "side": 1,
+      "message": "I\u0027ve included this, tell me what you think about the new code. Also, I\u0027ve used the new pullsecret file in all the places in which we need credentials, to harmonize everything.",
+      "parentUuid": "8aae599a_cb0ba04c",
+      "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
