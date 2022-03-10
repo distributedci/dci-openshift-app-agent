@@ -33,6 +33,57 @@
       "message": "check dallas ocp-4.9-vanilla example-cnf openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] example-cnf:ansible_extravars\u003dprovisioner_user:\"\"",
       "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "867e6942_26c74adb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-10T16:39:11Z",
+      "side": 1,
+      "message": "Helll Ramón, \nThanks for this change and accepting the change in behavior. Just a couple of minor comments. \nThaks!",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad1484f4_7fda3293",
+        "filename": "README.md",
+        "patchSetId": 15
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-10T16:39:11Z",
+      "side": 1,
+      "message": "Can we add a link to https://man.archlinux.org/man/community/containers-common/containers-auth.json.5.en saying that those are examples about how the files should be formatted? \nThanks",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "87ce9699_c17928d8",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-10T16:39:11Z",
+      "side": 1,
+      "message": "May we need to validate that the path provided exists? Just to avoid a typo in the path?",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
