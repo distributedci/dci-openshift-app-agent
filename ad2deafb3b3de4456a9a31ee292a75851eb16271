@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b057e1d_8dd9e436",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-10T16:16:57Z",
+      "side": 1,
+      "message": "\u003e Patch Set 15:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/8d40d700-f720-462a-b528-0fed279124b0/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/249\n\nConfirming tnf-test-cnf pipeline is working fine.",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
