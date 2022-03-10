@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bac23d00_fab16f2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-10T15:49:08Z",
+      "side": 1,
+      "message": "I\u0027ll wait for the DCI job I launched this morning befo",
+      "revId": "8beea185d13ba187d844c83c1fd244922b8fc75d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
