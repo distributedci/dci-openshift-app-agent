@@ -87,6 +87,24 @@
       "parentUuid": "142698f2_cf0b09eb",
       "revId": "f9202e669a0e0b27285ebc69b28e03a1ff376eda",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d6080b4_ccbb0cb4",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-10T15:09:46Z",
+      "side": 1,
+      "message": "ansible_user (with doaa-ctl) is not taken the user used to executed the command but the remote_user defined in /usr/share/dci-openshift-app-agent/ansible.cfg\nWhich is by default kni.",
+      "parentUuid": "9899caeb_81d8cf25",
+      "revId": "f9202e669a0e0b27285ebc69b28e03a1ff376eda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
