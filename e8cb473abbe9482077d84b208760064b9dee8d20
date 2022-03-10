@@ -53,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2caee220_04b5fe4a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-10T11:48:07Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f259d759_856acf7a",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "14eef641_1b5e7eb4",
@@ -119,6 +137,24 @@
       "side": 1,
       "message": "In fact, this code is the same that is done in example-cnf here: https://github.com/dci-labs/example-cnf-config/blob/master/testpmd/hooks/roles/apply-cnf-cert-config/tasks/install.yml#L34-L54, I\u0027m just reusing the same here.\nI\u0027d say we can improve this in a new change, because when I propose this code for example-cnf, I didn\u0027t find a better way of doing this with Ansible, as we needed to link InstallPlan and ClusterServiceVersion somehow and using `oc` was really easy to do. Maybe we can rely on the future code to share roles between agents.",
       "parentUuid": "e66d4752_fcc1913b",
+      "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3815b975_0c0db67a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-10T11:48:07Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fd049dc1_4da741bb",
       "revId": "e8cb473abbe9482077d84b208760064b9dee8d20",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
