@@ -16,6 +16,23 @@
       "message": "David, I\u0027m testing this, last errors are not related to your change, it seems I cannot find a running cluster that works fine.",
       "revId": "93a531b00f9028e4c786e76f97125601983b4915",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f69104f_27aae86a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-10T22:22:13Z",
+      "side": 1,
+      "message": "David, this looks better, I finally managed to test it in our Dallas labs, although in the dashboard logs we cannot see the results, so I manually pulled your PR and test it in my lab, so far looks goo: https://www.distributed-ci.io/jobs/143fc4de-6563-42d3-bbc6-7d93d410942a/jobStates\n\n+ find /tmp/dci-openshift-app-agent.KqYMt -maxdepth 1 -name \u0027*.xml\u0027 -type f -exec sh -c \u0027 \\\n                dcictl job-upload-file \\\n                    --name $(basename $1 .xml) \\\n                    --path $1 \\\n                    --mime application/junit $2 \\\n                \u0027 _ \u0027{}\u0027 143fc4de-6563-42d3-bbc6-7d93d410942a \u0027;\u0027\n+--------------------------------------+--------------------------------------------+--------+--------------------------------------+-------------+------+-------------------+------+--------------------------------------+---------+\n|                  id                  |                    name                    | state  |                job_id                | jobstate_id | md5  |        mime       | size |               team_id                | test_id |\n+--------------------------------------+--------------------------------------------+--------+--------------------------------------+-------------+------+-------------------+------+--------------------------------------+---------+\n| b79b3006-8f1d-45b5-a222-74278b24952c | dci-openshift-app-agent-1646950414.4547474 | active | 143fc4de-6563-42d3-bbc6-7d93d410942a |     None    | None | application/junit | 221  | 47513c50-d5a5-4d93-a63f-f6545a3313fc |   None  |\n+--------------------------------------+--------------------------------------------+--------+--------------------------------------+-------------+------+-------------------+------+--------------------------------------+---------+",
+      "revId": "93a531b00f9028e4c786e76f97125601983b4915",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
