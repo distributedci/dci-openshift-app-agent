@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8eb1262d_54f77cf2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-10T16:22:32Z",
+      "side": 1,
+      "message": "The idea is to activate the new pre-release as an option that is deactivated by default. Two tests are needed:\n- To test default situation: https://www.distributed-ci.io/jobs/78f59f16-8c58-4405-895f-0b5c63b5bca9/jobStates\n- [todo] To test pre-release-test situation with `preflight_use_binary: false` and `preflight_version: quay.io/opdev/preflight:1.1.0.alpha2` defined in the pipeline ",
+      "revId": "e07f59819badbdddf00c7e8b0a995945218a6510",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
