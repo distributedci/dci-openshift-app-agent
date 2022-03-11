@@ -123,6 +123,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba3bd390_9dd00ce5",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:54:22Z",
+      "side": 1,
+      "message": "At this point, I\u0027ll mark this as solved.",
+      "parentUuid": "21cbb590_1b404eff",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6b65732a_cc739169",
@@ -281,6 +299,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "93b9c5c1_18bc667d",
+        "filename": "plays/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:54:22Z",
+      "side": 1,
+      "message": "With the usage of a single pullsecret file, this is no longer needed",
+      "parentUuid": "83cc4e1f_8440eb1f",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4c2d3276_51db80fa",
@@ -312,6 +348,24 @@
       "side": 1,
       "message": "I\u0027ve put the same than in must-gather mirroring, because it may happen, again, that partner_creds is not set",
       "parentUuid": "4c2d3276_51db80fa",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b7c172a_3ae65460",
+        "filename": "roles/cnf-cert/tasks/save-images.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:54:22Z",
+      "side": 1,
+      "message": "With the usage of a single pullsecret file, this is no longer needed",
+      "parentUuid": "7a43250d_f1ba5f42",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -435,6 +489,24 @@
       "side": 1,
       "message": "I will do the same than in the other cases, because again, by default, partner_creds is an empty value. So, in that case, if partner_creds is not provided, it is supposed that pull_secret file should have the creds to access to the registries.",
       "parentUuid": "a6f597ca_90161ba5",
+      "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a97a4b15_27cc0673",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:54:22Z",
+      "side": 1,
+      "message": "With the usage of a single pullsecret file, this is no longer needed",
+      "parentUuid": "eaf55dca_4ae7f0ca",
       "revId": "b8722a099c773e4b1ae4361943d614a3790f9e97",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

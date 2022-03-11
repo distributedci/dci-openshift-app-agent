@@ -88,6 +88,24 @@
       "parentUuid": "8aae599a_cb0ba04c",
       "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "757d4491_2d659289",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:54:22Z",
+      "side": 1,
+      "message": "This is solved at this point",
+      "parentUuid": "392fe406_35ff2369",
+      "revId": "28e99bfe493a8bd4b90b0564bd7d5e36184239b8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
