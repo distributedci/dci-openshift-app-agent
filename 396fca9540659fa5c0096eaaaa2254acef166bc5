@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6222c0a_76088f38",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T09:21:31Z",
+      "side": 1,
+      "message": "\u003e Patch Set 17:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/a4f2fcef-fd4f-41e0-b9b4-67916c816ff4/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/249\n\nNew check of partner_creds is working fine, so it would be all for the moment.",
+      "revId": "396fca9540659fa5c0096eaaaa2254acef166bc5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
