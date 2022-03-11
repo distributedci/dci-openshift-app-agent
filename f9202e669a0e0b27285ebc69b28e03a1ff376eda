@@ -86,6 +86,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "46e58040_b024ace0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-11T03:37:11Z",
+      "side": 1,
+      "message": "It is already merged, but I think that if the dir has 755 and the binaries there have 755 too... those binaries can be executed by any user.",
+      "revId": "f9202e669a0e0b27285ebc69b28e03a1ff376eda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "84aad3b8_e9572752",
