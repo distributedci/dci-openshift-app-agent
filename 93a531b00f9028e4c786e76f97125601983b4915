@@ -50,6 +50,24 @@
       "message": "I think a simple approach would be:\n\nfor junit_file in ${OUTPUT_DIR}/*.xml; do\n[...]\ndone;\n\nglob expansion should do the right thing here, instead of relying on the output of ls/find/whatever else",
       "revId": "93a531b00f9028e4c786e76f97125601983b4915",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "142350dc_2ca4c6b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-11T15:17:27Z",
+      "side": 1,
+      "message": "True, I\u0027m ok with either option, I\u0027ll leave David decide, this is his first contribution to d-o-a-a :)",
+      "parentUuid": "9ba5f807_33eebbd0",
+      "revId": "93a531b00f9028e4c786e76f97125601983b4915",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
