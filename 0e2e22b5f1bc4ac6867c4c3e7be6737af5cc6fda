@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cbfee23f_acb65a26",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T09:34:16Z",
+      "side": 0,
+      "message": "Just for curiosity, why don\u0027t we need here to copy the operator bundle image in the private registry? Wouldn\u0027t we still need it for disconnected environments?",
+      "revId": "0e2e22b5f1bc4ac6867c4c3e7be6737af5cc6fda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
