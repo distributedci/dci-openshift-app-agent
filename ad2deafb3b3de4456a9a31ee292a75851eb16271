@@ -69,6 +69,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "386ce8a0_c0434967",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:52:47Z",
+      "side": 1,
+      "message": "Oh, it was my fault, I usually omit provisioner_user in tnf-test-cnf to avoid getting logs and speedup testing, now I see it\u0027s not working at all with example-cnf.\nBut yes, I\u0027ve checked the log and all the job has worked fine, so the behavior is correct. We don\u0027t need to test example-cnf anymore in this change then.",
+      "parentUuid": "a5b7985e_32a91d95",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ad1484f4_7fda3293",
@@ -86,6 +104,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "94d353a6_49d8acfc",
+        "filename": "README.md",
+        "patchSetId": 15
+      },
+      "lineNbr": 132,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:52:47Z",
+      "side": 1,
+      "message": "Sure!",
+      "parentUuid": "ad1484f4_7fda3293",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "87ce9699_c17928d8",
@@ -99,6 +135,24 @@
       "writtenOn": "2022-03-10T16:39:11Z",
       "side": 1,
       "message": "May we need to validate that the path provided exists? Just to avoid a typo in the path?",
+      "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e745074_bdcbf3ce",
+        "filename": "plays/define_pullsecret.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-11T08:52:47Z",
+      "side": 1,
+      "message": "I\u0027ve included the check, thanks!",
+      "parentUuid": "87ce9699_c17928d8",
       "revId": "ad2deafb3b3de4456a9a31ee292a75851eb16271",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
