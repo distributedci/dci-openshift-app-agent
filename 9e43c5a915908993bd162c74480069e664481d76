@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef501058_41113522",
+        "filename": "roles/preflight/tasks/prepare_json_authentication.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-11T14:19:14Z",
+      "side": 1,
+      "message": "This may be one of the cases where we will need to use the partner_creds and not the the merged file with dci_pull_secrets.",
+      "revId": "9e43c5a915908993bd162c74480069e664481d76",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
