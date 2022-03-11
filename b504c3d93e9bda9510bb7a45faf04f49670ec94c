@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01d25d8a_07d1787a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 29
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-11T13:49:47Z",
+      "side": 1,
+      "message": "Tested:\n- 1.0.8: everything is fine: https://www.distributed-ci.io/jobs/fc2e8b31-d774-4f92-b9e5-640095cd67f9/jobStates\n- 1.1.0-alpha2: https://www.distributed-ci.io/jobs/aca67b22-91fe-4ea3-a9d6-71c07165a0d6/jobStates#034e9d12-9641-470e-97f6-fca61f6aaecd:file44 \n  -- Check container is ok, exit status\u003d1 because of the sudo issue. It will be fixed in the next alpha-release, so I simply ignore it.\n  -- Check operator has a regression on DeployableByOlm test, to be fixed later.\n\nI believe we\u0027re good to merge now.",
+      "revId": "b504c3d93e9bda9510bb7a45faf04f49670ec94c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
