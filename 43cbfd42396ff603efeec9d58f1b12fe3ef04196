@@ -85,6 +85,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "fa7e9bea_2db218c1",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T23:32:43Z",
+      "side": 1,
+      "message": "I\u0027m still unsure on the reason behind not using cluster_name. I can only think in the predictability of the name. In any case, I\u0027ve changed to generate a random file 😊",
+      "parentUuid": "6d83cd57_48b01660",
+      "range": {
+        "startLine": 5,
+        "startChar": 47,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ee53d975_29f62886",
         "filename": "plays/pullsecrets.yml",
         "patchSetId": 18

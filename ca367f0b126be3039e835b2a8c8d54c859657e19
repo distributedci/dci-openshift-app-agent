@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "591511d1_8d93cd73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T23:32:43Z",
+      "side": 1,
+      "message": "The merge of 24302 caused a merge conflict, I\u0027ve rebased and resolved, I\u0027ve included the comments in there as they were not included.  We should be good now 😜",
+      "revId": "ca367f0b126be3039e835b2a8c8d54c859657e19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
