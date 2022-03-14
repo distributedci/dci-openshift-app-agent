@@ -61,6 +61,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6d83cd57_48b01660",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T17:13:26Z",
+      "side": 1,
+      "message": "I\u0027m sorry, I must missed that part, is there any particular reason why to avoid the cluster name? I see it\u0027s defined in the check_kubeconfig.yml, the var must be available",
+      "parentUuid": "871f4d0d_5520db8a",
+      "range": {
+        "startLine": 5,
+        "startChar": 47,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ee53d975_29f62886",
         "filename": "plays/pullsecrets.yml",
         "patchSetId": 18
@@ -72,6 +96,30 @@
       "writtenOn": "2022-03-14T09:08:53Z",
       "side": 1,
       "message": "partner_pullsecrets is only created if partner_creds|length is true, but what happens if this is not true? This case was covered in the previous patchset and here we would need to contemplate it too.",
+      "range": {
+        "startLine": 16,
+        "startChar": 47,
+        "endLine": 16,
+        "endChar": 66
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1bb3a44_0fef9ba0",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T17:13:26Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee53d975_29f62886",
       "range": {
         "startLine": 16,
         "startChar": 47,
@@ -95,6 +143,30 @@
       "writtenOn": "2022-03-14T09:08:53Z",
       "side": 1,
       "message": "Where is this template located? And is this task really required? (as we have the next task in which pullsecret_tmp_file is correctly filled)",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 42
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "59299760_4b840c6c",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T17:13:26Z",
+      "side": 1,
+      "message": "My bad, initially I used a template, but later moved to use the file directly, I\u0027ve removed this part",
+      "parentUuid": "c4f807a4_bea74288",
       "range": {
         "startLine": 21,
         "startChar": 8,
