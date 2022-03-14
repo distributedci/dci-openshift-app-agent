@@ -16,6 +16,74 @@
       "message": "With the last test, I think it\u0027s fine. You have my ACK",
       "revId": "5684b126410361cc282963e11b3bdcd505c47ec5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a27181d_6da73b4a",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T23:01:16Z",
+      "side": 1,
+      "message": "Do we need a block for a single task?",
+      "revId": "5684b126410361cc282963e11b3bdcd505c47ec5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e14f296_8fb33347",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T23:01:16Z",
+      "side": 1,
+      "message": "I like what you did in line 32, can we define these via environment?",
+      "revId": "5684b126410361cc282963e11b3bdcd505c47ec5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "232ff1b7_70566931",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T23:01:16Z",
+      "side": 1,
+      "message": "likewise, although I know this is not working, but we expect the opm team will support this eventually.",
+      "revId": "5684b126410361cc282963e11b3bdcd505c47ec5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d37c1aa_a14c3188",
+        "filename": "samples/tnf_test_example/hooks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-14T23:01:16Z",
+      "side": 1,
+      "message": "template? We haven\u0027t switched to use collections (fully) yet",
+      "revId": "5684b126410361cc282963e11b3bdcd505c47ec5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
