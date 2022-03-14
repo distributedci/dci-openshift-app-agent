@@ -123,6 +123,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "04b3a59a_1f8d9a13",
+        "filename": "roles/preflight/tasks/test_async_logs_check_operator.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-14T16:30:10Z",
+      "side": 1,
+      "message": "Hi Nacho, that\u0027s to loop blocks of code in Ansible https://ericsysmin.com/2019/06/20/how-to-loop-blocks-of-code-in-ansible/",
+      "parentUuid": "f6643dc5_5fa236c7",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8de93b77_2fa3ace1",
@@ -136,6 +154,24 @@
       "writtenOn": "2022-02-22T16:53:36Z",
       "side": 1,
       "message": "I\u0027d suggest setting a loop var name.",
+      "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aec2383b_578e52e7",
+        "filename": "roles/preflight/tasks/test_async_logs_check_operator.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-14T16:30:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8de93b77_2fa3ace1",
       "revId": "c64facde6654de8ced85ec1847b2963f2f60b64b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
