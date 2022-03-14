@@ -68,6 +68,24 @@
       "parentUuid": "9ba5f807_33eebbd0",
       "revId": "93a531b00f9028e4c786e76f97125601983b4915",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc209498_6d107466",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-03-14T14:32:26Z",
+      "side": 1,
+      "message": "@Jorge Gallegos, it produces the same error on my shell:\n```\n~/wip » for i in *.xml; do echo \"$i\"; done \nzsh: no matches found: *.xml\n```\nGlob expansion is not POSIXly:\n https://unix.stackexchange.com/questions/298301/how-to-check-if-a-glob-has-an-expansion\n \nThe `find` way doesn\u0027t have an explicit cycle at all, which looks better in code. It uploads files in parallel, which could take less time. The cycle uploads synchronically.",
+      "parentUuid": "142350dc_2ca4c6b8",
+      "revId": "93a531b00f9028e4c786e76f97125601983b4915",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
