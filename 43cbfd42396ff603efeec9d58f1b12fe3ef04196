@@ -16,6 +16,93 @@
       "message": "I had multiple comments, so I decided to push the changes myself, hope you don\u0027t mind!\n\nI hope the changes are easy to understand, I\u0027ve simplified the merging of creds and the most important piece is the preservation of an order (more specific to less specific) when having a similar registry.\n\nIn the previous patchsets the expected creds were in place because quay.io from partner creds were used instead of the ones provided by the job. But if we had more specific registry paths like quay.io/telcoci, then it wouldn\u0027t work. This patchset takes care of that, having multiple ns/orgs end up in something like:\n\n- quay.io/telcoci/sub\n- quay.io/telcoci\n- quay.io",
       "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54d2db15_a0013c4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 18
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-14T09:08:53Z",
+      "side": 1,
+      "message": "Hi Tony, I like the new way in which the pullsecret file is created, however I have some questions with regards to the new changes in pullsecrets.yml file. Please find them below.",
+      "parentUuid": "03791ce7_69fb4f36",
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "871f4d0d_5520db8a",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-14T09:08:53Z",
+      "side": 1,
+      "message": "My only concern here is that we already agreed that we would not use the cluster name to build the secrets file name. Isn\u0027t it better to use pullsecret_tmp_file as it was created in the previous patchset, just using a temp file created randomly? (bad thing that it would require to use pullsecret_tmp_file.path to refer to the file path, but it would avoid the usage of the cluster name)",
+      "range": {
+        "startLine": 5,
+        "startChar": 47,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee53d975_29f62886",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-14T09:08:53Z",
+      "side": 1,
+      "message": "partner_pullsecrets is only created if partner_creds|length is true, but what happens if this is not true? This case was covered in the previous patchset and here we would need to contemplate it too.",
+      "range": {
+        "startLine": 16,
+        "startChar": 47,
+        "endLine": 16,
+        "endChar": 66
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c4f807a4_bea74288",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-14T09:08:53Z",
+      "side": 1,
+      "message": "Where is this template located? And is this task really required? (as we have the next task in which pullsecret_tmp_file is correctly filled)",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 42
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
