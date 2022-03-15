@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "175526d4_f45700a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-15T10:38:51Z",
+      "side": 1,
+      "message": "I\u0027ve fixed a minor bug on pullsecrets.yml, and I\u0027ll recheck. I\u0027ve been testing locally the code and it\u0027s weird because it\u0027s like the content is not copied in pullsecret_tmp_file, I\u0027ll check it now.",
+      "revId": "172d045dba394d56ed5e4580b00ece5d68cd9963",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

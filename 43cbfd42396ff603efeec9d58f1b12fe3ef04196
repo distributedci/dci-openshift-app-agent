@@ -107,6 +107,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "aeae1947_62ef6492",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-15T10:38:51Z",
+      "side": 1,
+      "message": "Yes, mainly because the predictability. It\u0027s fine for me with the current format :)",
+      "parentUuid": "fa7e9bea_2db218c1",
+      "range": {
+        "startLine": 5,
+        "startChar": 47,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ee53d975_29f62886",
@@ -191,6 +215,30 @@
       "side": 1,
       "message": "My bad, initially I used a template, but later moved to use the file directly, I\u0027ve removed this part",
       "parentUuid": "c4f807a4_bea74288",
+      "range": {
+        "startLine": 21,
+        "startChar": 8,
+        "endLine": 21,
+        "endChar": 42
+      },
+      "revId": "43cbfd42396ff603efeec9d58f1b12fe3ef04196",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "144ccf6a_1b110385",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 18
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-15T10:38:51Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "59299760_4b840c6c",
       "range": {
         "startLine": 21,
         "startChar": 8,
