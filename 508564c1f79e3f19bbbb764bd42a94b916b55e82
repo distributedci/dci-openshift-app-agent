@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b2b8436a_13c8b14e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-15T15:56:09Z",
+      "side": 1,
+      "message": "Let\u0027s merge since it\u0027s validated already in NM. ",
+      "revId": "508564c1f79e3f19bbbb764bd42a94b916b55e82",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
