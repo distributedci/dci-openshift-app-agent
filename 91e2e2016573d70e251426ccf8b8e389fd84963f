@@ -16,6 +16,24 @@
       "message": "Is really the issue the \\n in the file? or is the multi-line in pyxis_auth adding it? \nYou can trim the \\n added by yaml with: pyxis_auth: \u003e-",
       "revId": "91e2e2016573d70e251426ccf8b8e389fd84963f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b2b72fb_ca95e329",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-15T15:52:04Z",
+      "side": 1,
+      "message": "Good catch !",
+      "parentUuid": "2b578662_17a2db9c",
+      "revId": "91e2e2016573d70e251426ccf8b8e389fd84963f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
