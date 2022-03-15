@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.8-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] example-cnf",
       "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd724e8b_1067e9fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-15T12:01:19Z",
+      "side": 1,
+      "message": "I guess we\u0027d need to update example-cnf pipeline to include this variable, don\u0027t we? Because I\u0027ve not seen that change.",
+      "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
