@@ -33,6 +33,23 @@
       "message": "I\u0027ll try example-cnf in the meanwhile, but I\u0027d say this is ready to be merged after checking that tnf-test-cnf is passing",
       "revId": "f39a004702550e441a1ac93b4250d75f6649b06a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e833ea99_3b4ba430",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-15T13:44:52Z",
+      "side": 1,
+      "message": "\u003e Patch Set 26:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/83d644f9-679c-454f-8740-b803d9bfb181/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/249\n\nexample-cnf also passed, so I\u0027d say all the possible tests have been done at this point 😊",
+      "revId": "f39a004702550e441a1ac93b4250d75f6649b06a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
