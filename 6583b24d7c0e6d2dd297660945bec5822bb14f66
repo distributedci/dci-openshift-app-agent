@@ -51,6 +51,23 @@
       "parentUuid": "dd724e8b_1067e9fd",
       "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3397fadc_8aeab95d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-15T17:07:34Z",
+      "side": 1,
+      "message": "check dallas ocp-4.8-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] example-cnf example-cnf:ansible_extravars\u003ddo_preflight_tests:true",
+      "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
