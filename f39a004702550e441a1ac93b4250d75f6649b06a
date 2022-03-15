@@ -67,6 +67,41 @@
       "message": "recheck",
       "revId": "f39a004702550e441a1ac93b4250d75f6649b06a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0b9a180_52f0dd98",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-15T15:04:43Z",
+      "side": 1,
+      "message": "👍",
+      "parentUuid": "e833ea99_3b4ba430",
+      "revId": "f39a004702550e441a1ac93b4250d75f6649b06a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16ac3c82_c58343bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-15T15:04:43Z",
+      "side": 1,
+      "message": "I\u0027ll +2 once we have a +1 from libvirt. \nThanks for all the effort in here Ramón!",
+      "revId": "f39a004702550e441a1ac93b4250d75f6649b06a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
