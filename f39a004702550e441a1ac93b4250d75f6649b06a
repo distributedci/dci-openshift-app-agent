@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35c4c314_d9b1112a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-15T11:21:13Z",
+      "side": 1,
+      "message": "I\u0027ve also fixed one bug in pullsecrets.yml regarding the destination folder to include the pullsecret_tmp_file, it was missed the \"{{ }}\", now it should be fine, doing some tests now.",
+      "revId": "f39a004702550e441a1ac93b4250d75f6649b06a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
