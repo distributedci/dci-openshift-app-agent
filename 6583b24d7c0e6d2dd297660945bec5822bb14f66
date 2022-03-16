@@ -68,6 +68,23 @@
       "message": "check dallas ocp-4.8-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] example-cnf example-cnf:ansible_extravars\u003ddo_preflight_tests:true",
       "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b72af45d_1163149a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-16T08:40:16Z",
+      "side": 1,
+      "message": "Hi Pierre, thank you for introducing that. Here are two minor comments:\n\n1/ I noticed that roles/preflight/teardown.yml is not called in plays/post-run.yml or in plays/teardown.yml Normally, we should call it there, under do_preflight_tests variable as well.\n\n2/ In the job, we see an access problem to the private registry on quay.io: https://www.distributed-ci.io/jobs/5158622e-8bde-4d5d-aff1-bda998218aed/jobStates#9ef68398-4aeb-4a93-a90a-223aced65cde:file138\n\n```\ntime\u003d\"2022-03-15T23:10:24Z\" level\u003dinfo msg\u003d\"target image: quay.io/telcoci/simple-demo-operator-bundle@sha256:e631c8dc7ab2d1ff67bf2731fd73820cb8e0214f9970d6ab1afca2f089d2fdb9\"\ntime\u003d\"2022-03-15T23:10:24Z\" level\u003dinfo msg\u003d\"pulling image from target registry\"\ntime\u003d\"2022-03-15T23:10:25Z\" level\u003dfatal msg\u003d\"failed to pull remote container: GET https://quay.io/v2/telcoci/simple-demo-operator-bundle/manifests/sha256:e631c8dc7ab2d1ff67bf2731fd73820cb8e0214f9970d6ab1afca2f089d2fdb9: UNAUTHORIZED: access to the requested resource is not authorized; map[]\"\n```\nThat should not be related to your change though, probably some new pull-secret changes.\n\nSince everything is already tested, I\u0027m ok to merge as is and fix the remaining issues later on.",
+      "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
