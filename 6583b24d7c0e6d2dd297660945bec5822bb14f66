@@ -102,6 +102,24 @@
       "message": "The change should be fine, it has already a +2. By the way, I am also including the preflight trigger in this change because I need it: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23923, I guess your change will be merged before, so that I will do a rebase on CR23923, but just to making you aware of this",
       "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cdf04de8_268326e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-16T12:30:52Z",
+      "side": 1,
+      "message": "Hi Tania, thx for your review 😊\n\n1/ it is done by the main play:\nhttps://github.com/redhat-cip/dci-openshift-app-agent/blob/master/dci-openshift-app-agent.yml#L280",
+      "parentUuid": "b72af45d_1163149a",
+      "revId": "6583b24d7c0e6d2dd297660945bec5822bb14f66",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
