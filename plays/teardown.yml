@@ -3,4 +3,4 @@
   file:
     path: "{{ pullsecret_tmp_file }}"
     state: absent
-  when: pullsecret_tmp_file is defined
+  when: false
