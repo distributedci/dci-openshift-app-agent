@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70853c62_5bf6137e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-16T11:46:40Z",
+      "side": 1,
+      "message": "This change is ready for review, but I don\u0027t have the ownership of the change, @Tatiana can you set the change to Active?",
+      "revId": "bd9fc71434eea82fb38d820d080bde04cdec758d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
