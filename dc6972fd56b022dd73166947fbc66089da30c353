@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "427aaa04_e9638696",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-17T10:28:12Z",
+      "side": 1,
+      "message": "Hi everyone, \n\nthis CR is to fix the issue with Preflight authentication introduced in 24180. The problem is with Preflight, which uses Crane under the hood. The Crane does not support multiple creds in the same registry. \n\nAs a long-term fix, we opened an issue in Preflight: https://github.com/redhat-openshift-ecosystem/openshift-preflight/issues/495 Concerning the short-term fix, we have to use partner_creds for the preflight role. \n",
+      "revId": "dc6972fd56b022dd73166947fbc66089da30c353",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
