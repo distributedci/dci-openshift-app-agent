@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30b8ab15_c0fced34",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-17T09:25:40Z",
+      "side": 1,
+      "message": "This change is needed because of this change in dallas-pipelines: https://github.com/dci-labs/dallas-pipelines/pull/281, now \"v\" is included in operator_version, so it needs to be deleted in tnf_test_example.",
+      "revId": "e40f720f510f1b195a6684a42737051b50ef2e4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
