@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4b2d1d5_33ee83ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-17T13:24:24Z",
+      "side": 1,
+      "message": "Previous jobs failed because I forgot to pull dallas-pipelines repo on dallas, now I did it and the last job passed, doing another job on OCP 4.7 to confirm the other workflow.",
+      "revId": "c353d89339988316b0b3b237c97650550d3eb499",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
