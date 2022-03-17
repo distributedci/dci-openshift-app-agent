@@ -67,14 +67,14 @@
 
 - name: Wait until simple-demo-operator CSV is succeeded
   vars:
-    operator_csv_name: "{{ tnf_operator_to_install.operator_name|default('simple_demo_operator') }}.v{{ tnf_operator_to_install.operator_version|default('0.0.3') }}"
+    operator_csv_name: "{{ tnf_operator_to_install.operator_name|default('simple_demo_operator') }}.{{ tnf_operator_to_install.operator_version|default('v0.0.3') }}"
   k8s_info:
     api: operators.coreos.com/v1alpha1
     namespace: "{{ operator_ns }}"
     kind: ClusterServiceVersion
     name: "{{ operator_csv_name }}"
   register: csv
-  retries: 30
+  retries: 60
   delay: 5
   until:
     - "csv.resources|length == 1"
