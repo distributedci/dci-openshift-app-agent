@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fbccf2e_6888a23b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-17T17:34:50Z",
+      "side": 1,
+      "message": "I its working on:\n - 4.7: https://www.distributed-ci.io/jobs/f3690938-ce76-437d-8cb6-f27500c8bd10/jobStates\n - 4.9: https://www.distributed-ci.io/jobs/c8373d4c-49a5-4c2f-ab4b-367ef70a62fe/jobStates\n\nChanges in pull secrets should not affect 4.9+ because opm render do not use the env variables.",
+      "revId": "2b5761cb2fa027d5c761af23f334788da1836774",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
