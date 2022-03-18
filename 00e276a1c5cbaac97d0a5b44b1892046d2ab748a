@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3eae6dd2_2dbb58a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-18T09:00:04Z",
+      "side": 1,
+      "message": "\u003e Patch Set 20:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/28b6c45e-e50c-4178-855f-fbb6209ee8bc/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/220\n\nSuccessfully testing preflight on tnf-test-cnf pipeline, creating preflight_operators_to_check on the fly based on CNF Cert Suite execution. I will now test example-cnf in order to verify that the results are the same (because, in that case, preflight_operators_to_check will only be updated, not including new operators to the list)",
+      "revId": "00e276a1c5cbaac97d0a5b44b1892046d2ab748a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
