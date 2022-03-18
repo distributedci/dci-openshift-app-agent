@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6f13efc_e0c8c2ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 21
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-18T09:59:32Z",
+      "side": 1,
+      "message": "\u003e Patch Set 21:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/ba30429e-a571-4857-8d82-b9b957107a7f/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/220\n\nexample-cnf also worked, so the change is ready for review",
+      "revId": "bd10553f85bbdddd9af2bd0a4d3c001594251780",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
