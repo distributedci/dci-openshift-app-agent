@@ -33,6 +33,23 @@
       "message": "Thanks for all the clarifications Pierre, let\u0027s get it tested and make sure the cert is really gone 😊",
       "revId": "0eca2bb4a3cc3ec2b138962c365a18c4d93d138b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef58778b_eaa70290",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-18T20:39:15Z",
+      "side": 1,
+      "message": "Pierre, in the last job I do not see the trusted ca Copy/Update from this PR 😕\nMaybe preflight_custom_ca was not defined?",
+      "revId": "0eca2bb4a3cc3ec2b138962c365a18c4d93d138b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
