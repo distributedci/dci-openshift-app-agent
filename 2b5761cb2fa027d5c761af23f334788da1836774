@@ -16,6 +16,46 @@
       "message": "I its working on:\n - 4.7: https://www.distributed-ci.io/jobs/f3690938-ce76-437d-8cb6-f27500c8bd10/jobStates\n - 4.9: https://www.distributed-ci.io/jobs/c8373d4c-49a5-4c2f-ab4b-367ef70a62fe/jobStates\n\nChanges in pull secrets should not affect 4.9+ because opm render do not use the env variables.",
       "revId": "2b5761cb2fa027d5c761af23f334788da1836774",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4971a8dc_6dae5edb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-18T08:56:26Z",
+      "side": 1,
+      "message": "Change looks nice, just one minor comment from my side before approving",
+      "revId": "2b5761cb2fa027d5c761af23f334788da1836774",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8bb1ad8_0b9d790d",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-18T08:56:26Z",
+      "side": 1,
+      "message": "Do we need a double {{ }} here?",
+      "range": {
+        "startLine": 95,
+        "startChar": 15,
+        "endLine": 95,
+        "endChar": 40
+      },
+      "revId": "2b5761cb2fa027d5c761af23f334788da1836774",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
