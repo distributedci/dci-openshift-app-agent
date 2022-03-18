@@ -16,6 +16,40 @@
       "message": "\u003e Patch Set 21:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/ba30429e-a571-4857-8d82-b9b957107a7f/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/220\n\nexample-cnf also worked, so the change is ready for review",
       "revId": "bd10553f85bbdddd9af2bd0a4d3c001594251780",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f79fc88_1a9b1c11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 21
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-18T22:37:12Z",
+      "side": 1,
+      "message": "Cool stuff, I used to provide preflight_operators_to_check variable for Casa, but I had the misery to find all the variables of each operator. 😎",
+      "revId": "bd10553f85bbdddd9af2bd0a4d3c001594251780",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dabcd5ea_6a099bc8",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 21
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-03-18T22:37:12Z",
+      "side": 1,
+      "message": "just, if you can remove this trailing-space :)",
+      "revId": "bd10553f85bbdddd9af2bd0a4d3c001594251780",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
