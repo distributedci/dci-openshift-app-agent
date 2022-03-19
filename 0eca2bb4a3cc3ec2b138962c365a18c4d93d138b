@@ -50,6 +50,24 @@
       "message": "Pierre, in the last job I do not see the trusted ca Copy/Update from this PR 😕\nMaybe preflight_custom_ca was not defined?",
       "revId": "0eca2bb4a3cc3ec2b138962c365a18c4d93d138b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81fff5b1_d08349f9",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-19T20:03:20Z",
+      "side": 1,
+      "message": "You right is was not. I didn\u0027t test in Dallas because we need to store some operators in a self sign registry.\nI tested this change in the NM lab.",
+      "parentUuid": "ef58778b_eaa70290",
+      "revId": "0eca2bb4a3cc3ec2b138962c365a18c4d93d138b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
