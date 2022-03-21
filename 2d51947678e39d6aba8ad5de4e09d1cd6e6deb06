@@ -71,6 +71,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "bc5ea26f_67cbd996",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-21T20:36:22Z",
+      "side": 1,
+      "message": "Hello Tatiana, I think I found the issue. Some bundles from example-cnf have defined \"alpha\" as default channel. When I am adding them to a new index it is done as \"stable\", so the information is conflicting between the bundle and the index. \n\nI need to investigate how to explore a bundle to extract its default channel and use it during the re-indexing or the default channel will need to be specified by the partner 😞\n\nI need to investigate how to explore a bundle to extract its default channel and use it during the re-indexing or the default channel will need to be specified by the partner :(\n\nhttps://github.com/rh-nfv-int/testpmd-lb-operator/blob/master/Makefile\n\nGood catch, thanks!",
+      "parentUuid": "3af23ce9_cab74813",
+      "revId": "2d51947678e39d6aba8ad5de4e09d1cd6e6deb06",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1fe42592_d2866a6b",
         "filename": "roles/preflight/files/disconnected-catalog.Dockerfile",
         "patchSetId": 11
