@@ -35,6 +35,41 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cfa398f_ceab0a9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "Thanks Tatiana for the feedback. I think we need to discuss about this in a specific call, just to agree on everything. Let\u0027s check it tomorrow.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4599df8_03565a1f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "Hi Tatiana, it was done, in fact, in this job: https://www.distributed-ci.io/jobs/28b6c45e-e50c-4178-855f-fbb6209ee8bc/jobStates. In tnf-test-cnf pipeline, preflight_operators_to_check is not defined and it is created on the fly according to what is read from CNF Cert Suite. Is it enough with this? Or should we test something more?",
+      "parentUuid": "74f57309_f74db500",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0d07d6bf_2fc5aabf",
@@ -48,6 +83,24 @@
       "writtenOn": "2022-03-21T16:00:23Z",
       "side": 1,
       "message": "These are not mandatory for the current GA 1.0.8",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45bfdb22_a087ceab",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "I can move it to the **Optional** section, although I think this should be addressed in a separate change, as it is not related at all to the purpose of this change. Should it be done then in a separate change? Or here? What do you think?",
+      "parentUuid": "0d07d6bf_2fc5aabf",
       "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -71,6 +124,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b20be522_513de9f1",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "I thought we already discussed why. In fact, in the first patchset that you submitted to this change, the move of mirroring task from pre-run to tests stage was already defined.\nThe reason why we are doing this is because it may happen that preflight_operators_to_check is not defined and we created it based on the results of CNF Cert Suite. But CNF Cert Suite is executed in the tests stage; so, if we are on disconnected environments and we need to do mirroring based on what we are capturing from CNF Cert Suite, we need to do the preflight mirroring after CNF Cert Suite is executed. That\u0027s why is moved.\nAnd I guess it would not imply more execution time, because we are executing exactly the same mirroring task but in a different stage.\n\nThis comment is also related to the two next comments, in which you comment that preflight pre-run may be executed after CNF Cert Suite execution. Maybe we can rediscuss this in order to improve the workflow and to clarify all the doubts.",
+      "parentUuid": "85b4395d_1aaf540e",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dbf7e3ff_4758be4a",
         "filename": "roles/preflight/tasks/tests.yml",
         "patchSetId": 22
@@ -82,6 +153,24 @@
       "writtenOn": "2022-03-21T16:00:23Z",
       "side": 1,
       "message": "Probably the good solution would be to isolate preflight role, and run preflight/pre-run.yml after cnf-tests/test.yml, to avoid the performance impact.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96681cce_08dc477a",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "ditto, we may rediscuss the whole thing to find a proper solution",
+      "parentUuid": "dbf7e3ff_4758be4a",
       "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -105,6 +194,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "b78cbebc_49ab43ad",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "ditto, we may rediscuss the whole thing to find a proper solution",
+      "parentUuid": "28b1d5eb_fc15c9ac",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "bd030018_9c1c8a62",
         "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
         "patchSetId": 22
@@ -116,6 +223,24 @@
       "writtenOn": "2022-03-21T16:00:23Z",
       "side": 1,
       "message": "thenew -\u003e the new",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4bcd8616_59042072",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "I\u0027ll not fix this yet because this code may be removed in case we don\u0027t need to update operators.",
+      "parentUuid": "bd030018_9c1c8a62",
       "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -139,6 +264,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "23997688_357e5590",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "Also, I\u0027ll not do this yet because this code may be deleted because we don\u0027t want to update operators.",
+      "parentUuid": "8427db97_fb6878b6",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "00d38b9e_3f06f0b6",
         "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
         "patchSetId": 22
@@ -156,6 +299,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "43a0845e_73252281",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "If we don\u0027t want to update the already defined operators, then we can delete this code for sure. Let\u0027s review this.",
+      "parentUuid": "00d38b9e_3f06f0b6",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d3d21778_c6ae2bd4",
         "filename": "roles/pyxis/tasks/submit.yml",
         "patchSetId": 22
@@ -167,6 +328,24 @@
       "writtenOn": "2022-03-21T16:00:23Z",
       "side": 1,
       "message": "I believe that this is a bad change but doesn\u0027t really matter since this role is not working anymore.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd9e20f3_1cdab091",
+        "filename": "roles/pyxis/tasks/submit.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T18:22:44Z",
+      "side": 1,
+      "message": "This is also as a consequence of having the possibility of adding new operators to preflight_operators_to_check. As pyxis_identifier is not defined for them, this task would fail. But in the same way as in the other cases, let\u0027s check it.",
+      "parentUuid": "d3d21778_c6ae2bd4",
       "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
