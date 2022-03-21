@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3af23ce9_cab74813",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T13:20:22Z",
+      "side": 1,
+      "message": "Hi Beto, \n\n4.7, everything works: https://www.distributed-ci.io/jobs/249d33eb-e7d5-461b-88b2-e794a25a021f/tests\n\n4.9, there is a regression, for most operators DeployableByOLM check does not pass anymore: https://www.distributed-ci.io/jobs/bbfd9cbc-876a-4a23-9c98-1087c4da58f2/tests   \nI\u0027d like to check that we have no image pull errors in the files preflight.log",
+      "revId": "2d51947678e39d6aba8ad5de4e09d1cd6e6deb06",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1fe42592_d2866a6b",
