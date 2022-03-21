@@ -16,6 +16,57 @@
       "message": "check dallas ocp-4.7-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] example-cnf",
       "revId": "2d51947678e39d6aba8ad5de4e09d1cd6e6deb06",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a93d85b_6c703f58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T08:58:31Z",
+      "side": 1,
+      "message": "Hi Beto, thank you for the change! \nIn 4.7, it works perfectly: https://www.distributed-ci.io/jobs/249d33eb-e7d5-461b-88b2-e794a25a021f/tests \n\nIn 4.9, the operator tests for simple-demo-operator were not run: https://www.distributed-ci.io/jobs/c8373d4c-49a5-4c2f-ab4b-367ef70a62fe/tests but that should a left-over from pull-secret error that is now fixed on the master branch. I\u0027m going to re-run 4.9 job. \n",
+      "revId": "2d51947678e39d6aba8ad5de4e09d1cd6e6deb06",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1fe42592_d2866a6b",
+        "filename": "roles/preflight/files/disconnected-catalog.Dockerfile",
+        "patchSetId": 11
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T08:58:31Z",
+      "side": 1,
+      "message": "Should we add /bin/grpc_health_probe as well then?",
+      "revId": "2d51947678e39d6aba8ad5de4e09d1cd6e6deb06",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b699037_b949efdd",
+        "filename": "roles/preflight/tasks/pre-run_mirroring.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T08:58:31Z",
+      "side": 1,
+      "message": "seems like a forgotten comment :)",
+      "revId": "2d51947678e39d6aba8ad5de4e09d1cd6e6deb06",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
