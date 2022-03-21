@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "83bad74d_19f0348e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T07:50:05Z",
+      "side": 1,
+      "message": "Change looks nice, do you have an example to show the killed status? And also, can it be also introduced in dci-openshift-agent?",
+      "revId": "b54d1f6adcae0884fa39fda62e3dd2118258f8cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
