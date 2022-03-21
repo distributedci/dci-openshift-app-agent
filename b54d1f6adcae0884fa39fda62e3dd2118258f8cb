@@ -16,6 +16,24 @@
       "message": "Change looks nice, do you have an example to show the killed status? And also, can it be also introduced in dci-openshift-agent?",
       "revId": "b54d1f6adcae0884fa39fda62e3dd2118258f8cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "119d8101_3553ee2d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-21T12:22:25Z",
+      "side": 1,
+      "message": "Here an example: \nhttps://www.distributed-ci.io/jobs/f935065a-0d22-432b-8eaa-15d3f80a8bc9/jobStates\n\nYes, it will be integrate at dci-openshift-agent, I would like before to finalize the depends-on (https://softwarefactory-project.io/r/c/python-dciclient/+/24334)",
+      "parentUuid": "83bad74d_19f0348e",
+      "revId": "b54d1f6adcae0884fa39fda62e3dd2118258f8cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
