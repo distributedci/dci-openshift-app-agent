@@ -34,6 +34,23 @@
       "parentUuid": "83bad74d_19f0348e",
       "revId": "b54d1f6adcae0884fa39fda62e3dd2118258f8cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e855d2d6_2bf4b180",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 1
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-21T13:24:07Z",
+      "side": 1,
+      "message": "I have not realized that doaa does not require python-dciclient, which means dcictl may not be installed. I also see this is not the first time we introduce dcictl, we did previously to upload jobs.\n\nWe likely need to add python-dciclient as a depedency",
+      "revId": "b54d1f6adcae0884fa39fda62e3dd2118258f8cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
