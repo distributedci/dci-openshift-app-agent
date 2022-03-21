@@ -16,6 +16,159 @@
       "message": "Thanks Manuel for the review! Now I think it\u0027s ready for merge",
       "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f57309_f74db500",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "Hi Ramon, let\u0027s run the tests when preflight_operators_to_check is empty, and check the job output in this situation. I believe that we\u0027re missing some steps here.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0d07d6bf_2fc5aabf",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "These are not mandatory for the current GA 1.0.8",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "85b4395d_1aaf540e",
+        "filename": "roles/preflight/tasks/pre-run.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "What is the reason to remove mirroring from the pre-run step? \n\nSome history - before we mirrored each operator separately just before the execution because it\u0027s easy. That was really bad for the performance and together with Beto we did the whole redesign in https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23637/ to improve the execution time. We moved from 50 min to 10 min for the preflight tests.\n\nI\u0027d prefer not to move back to 50 min :)",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbf7e3ff_4758be4a",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "Probably the good solution would be to isolate preflight role, and run preflight/pre-run.yml after cnf-tests/test.yml, to avoid the performance impact.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28b1d5eb_fc15c9ac",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "I believe that this is a bad way to handle things - all needed conditions should be verified before the execution, on the pre-run step, and fail with the clear error if something is missing.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bd030018_9c1c8a62",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "thenew -\u003e the new",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8427db97_fb6878b6",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "It would be nice to move all this into a template.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00d38b9e_3f06f0b6",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "In this step, you loop around all the operators defined in preflight_operators_to_check and change \"version\", \"bundle_image\" and \"index_image\" for them. \n\nThe initial idea, as I got it, was to add new operators into preflight_operators_to_check from example-cnf tests, but not to rewrite the operators already defined by the partners.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3d21778_c6ae2bd4",
+        "filename": "roles/pyxis/tasks/submit.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-21T16:00:23Z",
+      "side": 1,
+      "message": "I believe that this is a bad change but doesn\u0027t really matter since this role is not working anymore.",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
