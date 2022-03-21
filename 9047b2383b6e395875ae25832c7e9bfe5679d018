@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72415b3c_0f505b50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T07:37:27Z",
+      "side": 1,
+      "message": "Thanks Manuel for the review! Now I think it\u0027s ready for merge",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

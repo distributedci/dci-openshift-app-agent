@@ -50,6 +50,24 @@
       "message": "just, if you can remove this trailing-space :)",
       "revId": "bd10553f85bbdddd9af2bd0a4d3c001594251780",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b2d0d45_70c4850a",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 21
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-21T07:37:27Z",
+      "side": 1,
+      "message": "Sure!",
+      "parentUuid": "dabcd5ea_6a099bc8",
+      "revId": "bd10553f85bbdddd9af2bd0a4d3c001594251780",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
