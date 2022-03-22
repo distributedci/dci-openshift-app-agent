@@ -16,6 +16,40 @@
       "message": "OK - Tested with 1.0.8 (preflight_image and preflight_binary were not defined in the pipeline): \nhttps://www.distributed-ci.io/jobs/9b7d282f-0d72-49fa-a357-c4ed8dbe8fba/tests\n\nOK - Tested with 1.1.0-alpha2 (defined preflight_image and preflight_binary to be pointing to 1.1.0-alpha2 version): https://www.distributed-ci.io/jobs/e8a7e5b3-421a-48c7-be3f-521e01ef334d/tests\n\nWe could now safely merge, and then define preflight_image and preflight_binary in cron.sh to fix the daily example-cnf in ocp-4.8.",
       "revId": "0f7c5e77c4c7b03004dd9b35184be030d7f036ab",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2b948af_30d46d61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-22T07:39:17Z",
+      "side": 1,
+      "message": "Change looks nice for me, only one proposal to update the README",
+      "revId": "0f7c5e77c4c7b03004dd9b35184be030d7f036ab",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67e04f33_124a7179",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-22T07:39:17Z",
+      "side": 1,
+      "message": "Can you also introduce this information in the README? I guess you can also introduce here the change you proposed me in my CR here: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23923/22/roles/preflight/README.md#56, then doing everything in this change.",
+      "revId": "0f7c5e77c4c7b03004dd9b35184be030d7f036ab",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
