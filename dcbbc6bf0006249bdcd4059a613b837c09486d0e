@@ -33,6 +33,23 @@
       "message": "I see that example-cnf operators are passing now the test for DeployableByOLM.   https://www.distributed-ci.io/jobs/e5689f65-e4ec-4f35-ae37-d933dd1eb547/tests \n\nNot sure if the other tests have the expected results.",
       "revId": "dcbbc6bf0006249bdcd4059a613b837c09486d0e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d7962a3_6feaff04",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-22T07:47:07Z",
+      "side": 1,
+      "message": "From my side, it looks fine. Leaving just a +1 in case somebody more wants to check",
+      "revId": "dcbbc6bf0006249bdcd4059a613b837c09486d0e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
