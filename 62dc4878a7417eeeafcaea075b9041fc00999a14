@@ -16,6 +16,24 @@
       "message": "There is already a trap function that is capturing any interruption. Add your logic in the finish function instead.",
       "revId": "62dc4878a7417eeeafcaea075b9041fc00999a14",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "691b6e8d_9bb9f415",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-22T18:02:14Z",
+      "side": 1,
+      "message": "I didn\u0027t find a way to get the signal in a bash function. I tried with the $? variable without success.\nBut we can have multiple traps.\n\nIn the last patchset:\n- The function interrupt will be executed if the user stop the ctl with ctrl+c or if a signterm is sent.\n- The function finish is always executed.",
+      "parentUuid": "0851f6a4_df1d9614",
+      "revId": "62dc4878a7417eeeafcaea075b9041fc00999a14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
