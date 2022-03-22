@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f97f046d_18e58754",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-22T19:25:29Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/ca2486d8-1ca2-4bed-a128-54c80d81243a/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/24384/\n\nUnfortunately I had to kill the job because I forgot to reserve a cluster and a new debug job was launched in the same cluster I was using. However, if you check the log, you will see preflight tasks are called correctly, so in theory it is working.",
+      "revId": "fa50a729f3249797853293b591c32f1771ea46ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
