@@ -177,6 +177,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "9d5352d4_10cb352b",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-22T01:31:17Z",
+      "side": 1,
+      "message": "IMHO, having preflight designed to work similary to a hook causes high coupling with the agent and low flexibility. The role should have a single entry point that defines all the required parameters. Maybe some of that also applies to the CNF role.",
+      "parentUuid": "96681cce_08dc477a",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "28b1d5eb_fc15c9ac",
         "filename": "roles/preflight/tasks/tests.yml",
         "patchSetId": 22
@@ -206,6 +224,24 @@
       "side": 1,
       "message": "ditto, we may rediscuss the whole thing to find a proper solution",
       "parentUuid": "28b1d5eb_fc15c9ac",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bdd28481_5cd6a7cf",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-22T01:31:17Z",
+      "side": 1,
+      "message": "Appending operators to an already defined or not defined list seems like complicating things. This is only for the integration of 2 tools. I suppose that additional integrations will be more painful. +1 for having the roles integrated, with a single entry point. If cnf-cert needs to call pre-flight it should have the list of requirements and invoke the role. Anyone needing to use it just provide the list with requirements and done.\n\nThanks!",
+      "parentUuid": "b78cbebc_49ab43ad",
       "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
