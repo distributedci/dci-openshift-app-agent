@@ -50,6 +50,24 @@
       "message": "Can you also introduce this information in the README? I guess you can also introduce here the change you proposed me in my CR here: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23923/22/roles/preflight/README.md#56, then doing everything in this change.",
       "revId": "0f7c5e77c4c7b03004dd9b35184be030d7f036ab",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5bc96441_3f1eca75",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-22T16:26:48Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "67e04f33_124a7179",
+      "revId": "0f7c5e77c4c7b03004dd9b35184be030d7f036ab",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
