@@ -50,6 +50,41 @@
       "message": "From my side, it looks fine. Leaving just a +1 in case somebody more wants to check",
       "revId": "dcbbc6bf0006249bdcd4059a613b837c09486d0e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7086f40b_aeaa0fb3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-22T09:44:56Z",
+      "side": 1,
+      "message": "Thank you Beto, really nice fix for the channel issue!\n\nThe tests are back to their normal state in 4.9, I still have most of operators to be not-completely-green. The most important test is DeployableByOlm, all the rest are more or less bundle structure checks.",
+      "revId": "dcbbc6bf0006249bdcd4059a613b837c09486d0e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d99734a_805c33e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-22T09:44:56Z",
+      "side": 1,
+      "message": "Thank you Beto, everything works as before now.",
+      "parentUuid": "c63296e7_2b1da42b",
+      "revId": "dcbbc6bf0006249bdcd4059a613b837c09486d0e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
