@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e802387_83a2b252",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-23T13:06:13Z",
+      "side": 1,
+      "message": "LGTM, I\u0027ll change to +2 after running in libvirt",
+      "revId": "6c4e2558b6bead501379c26062f47524f344e48d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
