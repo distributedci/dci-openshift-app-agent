@@ -12,8 +12,10 @@
     pyxis_auth: >-
       --certification-project-id {{ operator.pyxis_identifier }}
       --pyxis-api-token {{ pyxis_apikey }}
-  when:
-    - preflight_image.split(':')[-1] != "1.0.8"
+  # Pyxis credentials are required _for tests_
+  # starting from 1.1.0-* pre-releases (require preflight_binary variable).
+  # TODO: fix the condition when release 1.1.0 would become GA if needed.
+  when: preflight_binary is defined
   no_log: true
 
 - name: "Run preflight check container on operator image for {{ operator.name }} with podman"
@@ -36,15 +38,20 @@
         {{ preflight_podman_ca }}
         {{ preflight_image }}
         check container
-        {{ operator.operator_image }}
+        {{ current_operator_image }}
         {{ pyxis_auth | default() }}
       register: preflight_container_output
-      no_log: true
+      # TODO: re-enable back, deactivating for the tests
+      # no_log: true
+      loop: "{{ operator.operator_images }}"
+      loop_control:
+        loop_var: current_operator_image
       when: preflight_binary | length == 0
-  rescue:
-    - name: Print stderr of the previous command
-      debug:
-        msg: "{{ preflight_container_output.stderr }}"
+  # TODO: ansible rescue doesn't work with loops correctly
+  # rescue:
+  #   - name: Print stderr of the previous command
+  #     debug:
+  #       msg: "{{ preflight_container_output.stderr }}"
 
 # Preflight 1.0.8 requires to use podman run.
 # Preflight 1.1.0-alpha2 requires to use binary because some container tests fail.
@@ -66,16 +73,21 @@
         PFLT_LOGLEVEL=trace
         {{ preflight_binary_dir }}/preflight
         check container
-        {{ operator.operator_image }}
+        {{ current_operator_image }}
         {{ pyxis_auth | default() }}
         {{ preflight_podman_auth_for_binary }}
       register: preflight_container_output
-      no_log: true
+      # TODO: re-enable back, deactivating for the tests
+      # no_log: true
+      loop: "{{ operator.operator_images }}"
+      loop_control:
+        loop_var: current_operator_image
       when: preflight_binary | length > 0
-  rescue:
-    - name: Print stderr of the previous command
-      debug:
-        msg: "{{ preflight_container_output.stderr }}"
+  # TODO: ansible rescue doesn't work with loops correctly
+  # rescue:
+  #   - name: Print stderr of the previous command
+  #     debug:
+  #       msg: "{{ preflight_container_output.stderr }}"
 
 - name: Upload logs for preflight check container into DCI
   vars:
@@ -90,5 +102,4 @@
   file:
     path: "{{ preflight_container_artifacts.path }}"
     state: absent
-
 ...
