@@ -16,6 +16,41 @@
       "message": "now we need to do the same find in the dci-openshift-agent",
       "revId": "c4991d962c585a8920a8231fc3286e19acfab7cf",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cac2c41b_7d6f4033",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-23T13:04:30Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "426a4048_6f447aeb",
+      "revId": "c4991d962c585a8920a8231fc3286e19acfab7cf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa0a7918_58a74b91",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-03-23T13:04:30Z",
+      "side": 1,
+      "message": "Done here:\nhttps://softwarefactory-project.io/r/c/dci-openshift-agent/+/24392",
+      "revId": "c4991d962c585a8920a8231fc3286e19acfab7cf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
