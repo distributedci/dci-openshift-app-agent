@@ -25,7 +25,7 @@
 # At this time env var REGISTRY_AUTH_FILE is ignored by opm, only $HOME/.docker/config.json is supported
 - name: "Render bundle for {{ operator.name }}"
   environment:
-    - REGISTRY_AUTH_FILE: "{{ partner_creds }}"
+    - DOCKER_CONFIG: "{{ preflight_docker_config_env }}"
   shell: |
     {{ opm_tool_path }} render {{ operator.bundle_image }} \
     --output=yaml >> {{ preflight_prerun_tmp_dir.path }}/disconnected-catalog/index.yml
