@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22058d2b_91d7c0b9",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-23T00:28:39Z",
+      "side": 1,
+      "message": "Can we rename it to main? and import all role not just the tasks from it in plays/tests.yml",
+      "revId": "b04c221d94c8b6ff3c06f3d20d08cb9e6d306df5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
