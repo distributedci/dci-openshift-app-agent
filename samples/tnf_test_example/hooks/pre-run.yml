@@ -58,7 +58,7 @@
 
           - name: "Render Operator bundle"
             environment:
-              - REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file}}"
+              - DOCKER_CONFIG: "{{ preflight_docker_config_env }}"
             shell: |
               {{ opm_tool_path }} render {{ tnf_operator_to_install.operator_bundle }} \
               --output=yaml >> {{ tnf_test_example_prerun_tmp_dir.path }}/{{ tnf_operator_to_install.operator_name }}-index/index.yml
