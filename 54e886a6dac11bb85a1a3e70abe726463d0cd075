@@ -16,6 +16,23 @@
       "message": "Sorry, I had to kill libvirt test because it was stuck on libvirt_destroy playbook prior to run the libvirt test, I am trying to check what\u0027s happening there.",
       "revId": "54e886a6dac11bb85a1a3e70abe726463d0cd075",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a27b9cb_7eb8a320",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-23T16:48:10Z",
+      "side": 1,
+      "message": "It seems that the problem with libvirt is fixed after unscheduling this change, so I\u0027ll do recheck to add it, just in case it was needed",
+      "revId": "54e886a6dac11bb85a1a3e70abe726463d0cd075",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
