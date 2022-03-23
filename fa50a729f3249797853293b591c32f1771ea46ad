@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 1:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/ca2486d8-1ca2-4bed-a128-54c80d81243a/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/24384/\n\nUnfortunately I had to kill the job because I forgot to reserve a cluster and a new debug job was launched in the same cluster I was using. However, if you check the log, you will see preflight tasks are called correctly, so in theory it is working.",
       "revId": "fa50a729f3249797853293b591c32f1771ea46ad",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f44a9422_7d725b27",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-23T00:02:59Z",
+      "side": 1,
+      "message": "Thanks, Ramón\n\nMaybe we can rename this file to main.yml and in https://github.com/redhat-cip/dci-openshift-app-agent/blob/5e7eba0d9b29bb71986b90a9b3f3c9e026229b63/plays/tests.yml#L22 just include the role and not tasks from a file?",
+      "revId": "fa50a729f3249797853293b591c32f1771ea46ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
