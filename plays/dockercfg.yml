@@ -1,0 +1,17 @@
+---
+- name: "Temp directory for docker credentials"
+  tempfile:
+    state: directory
+    prefix: dci_app_agent.
+    mode: 0700
+  register: docker_tmp_dir
+
+- name: "Copy partner creds to temp directory"
+  copy:
+    src: "{{ partner_creds }}"
+    dest: "{{ docker_tmp_dir.path }}/config.json"
+    mode: 0600
+
+- name: "Set docker config"
+  set_fact:
+    docker_config: "{{ docker_tmp_dir.path }}/config.json"

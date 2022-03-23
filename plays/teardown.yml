@@ -4,3 +4,11 @@
     path: "{{ pullsecret_tmp_file }}"
     state: absent
   when: pullsecret_tmp_file is defined
+
+- name: "Delete temporary directory for docker creds"
+  file:
+    path: "{{ docker_tmp_dir.path }}"
+    state: absent
+  when:
+    - docker_tmp_dir is defined
+    - "'gh-operator-framework-operator-registry-919' in dci_workarounds"
