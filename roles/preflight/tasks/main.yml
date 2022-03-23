@@ -1,4 +1,17 @@
 ---
+# If you want to run preflight tests,
+# preflight_operators_to_certify variable should be provided
+# in the config file -e @path/to/preflight_config.yaml
+- name: Create empty list of operators to check
+  set_fact:
+    preflight_operators_to_check: []
+
+- name: Get preflight operators metadata
+  include_tasks: operator-metadata.yml
+  loop: "{{ preflight_operators_to_certify }}"
+  loop_control:
+    loop_var: operator
+
 - name: Create tmp directory for custom configurations and preflight binary
   tempfile:
     state: directory
@@ -35,9 +48,6 @@
   include_tasks: prepare_json_authentication.yml
   when: partner_creds | length
 
-# If you want to run preflight tests,
-# preflight_operators_to_check variable should be provided
-# in the config file -e @path/to/preflight_config.yaml
 - name: Preflight check operator images with check container one by one
   include_tasks: test_preflight_check_container.yml
   loop: "{{ preflight_operators_to_check }}"
