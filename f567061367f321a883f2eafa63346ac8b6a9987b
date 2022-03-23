@@ -16,6 +16,24 @@
       "message": "stable?",
       "revId": "f567061367f321a883f2eafa63346ac8b6a9987b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e3d7951_c759b79e",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-23T20:00:37Z",
+      "side": 1,
+      "message": "😮",
+      "parentUuid": "e1051110_e85e5055",
+      "revId": "f567061367f321a883f2eafa63346ac8b6a9987b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
