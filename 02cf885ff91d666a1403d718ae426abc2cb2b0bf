@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43ab3dfd_78964f85",
+        "filename": "plays/dockercfg.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-23T23:24:11Z",
+      "side": 1,
+      "message": "The DOCKER_CONFIG path should be set to the directory that contains the config.json. It will append automatically the config.json and will end up having {{ docker_tmp_dir.path }}/config.json/config.json",
+      "revId": "02cf885ff91d666a1403d718ae426abc2cb2b0bf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
