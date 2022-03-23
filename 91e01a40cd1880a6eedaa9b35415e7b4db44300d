@@ -16,6 +16,40 @@
       "message": "recheck",
       "revId": "91e01a40cd1880a6eedaa9b35415e7b4db44300d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d451d6f_facad06e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-23T16:12:13Z",
+      "side": 1,
+      "message": "Thank you Ramon! LGTM, I\u0027ll put +2 once the tests are OK.",
+      "revId": "91e01a40cd1880a6eedaa9b35415e7b4db44300d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad514a0b_e87851ee",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-23T16:12:13Z",
+      "side": 1,
+      "message": "trailing space :)",
+      "revId": "91e01a40cd1880a6eedaa9b35415e7b4db44300d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
