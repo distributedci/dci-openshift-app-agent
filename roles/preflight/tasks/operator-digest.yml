@@ -1,0 +1,22 @@
+---
+- name: "Append operator image when using a digest"
+  set_fact:
+    digest_images: "{{ digest_images + [ image ] }}"
+  when: image | regex_search("@sha256:")
+
+- name: "Obtain digest and append to the digest images"
+  block:
+    - name: "Get digests from images"
+      environment:
+        - REGISTRY_AUTH_FILE: "{{ partner_creds }}"
+      shell: >
+        skopeo inspect docker://{{ image }} | jq -r '.Digest'
+      register: image_digest
+
+    - name: "Append image digest to the list of operator images with digests"
+      vars:
+        tagless_image: "{{ image | regex_search('^(.+/.+):.+$', '\\1') | join('') }}"
+      set_fact:
+        digest_images: "{{ digest_images + [ tagless_image + '@' + image_digest.stdout ] }}"
+  when:
+    - image | regex_search('.*@sha256:.*') == none
