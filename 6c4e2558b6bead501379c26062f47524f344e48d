@@ -16,6 +16,23 @@
       "message": "LGTM, I\u0027ll change to +2 after running in libvirt",
       "revId": "6c4e2558b6bead501379c26062f47524f344e48d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f6a238f_b12dbb4f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-23T15:11:16Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "6c4e2558b6bead501379c26062f47524f344e48d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
