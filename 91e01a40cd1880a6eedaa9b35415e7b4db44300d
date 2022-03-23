@@ -50,6 +50,24 @@
       "message": "trailing space :)",
       "revId": "91e01a40cd1880a6eedaa9b35415e7b4db44300d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "875c9e2c_787f47f1",
+        "filename": "plays/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-23T16:16:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ad514a0b_e87851ee",
+      "revId": "91e01a40cd1880a6eedaa9b35415e7b4db44300d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
