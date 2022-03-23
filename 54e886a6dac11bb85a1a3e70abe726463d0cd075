@@ -33,6 +33,23 @@
       "message": "It seems that the problem with libvirt is fixed after unscheduling this change, so I\u0027ll do recheck to add it, just in case it was needed",
       "revId": "54e886a6dac11bb85a1a3e70abe726463d0cd075",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9a4e0a7_dd4d2ebd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-23T16:48:15Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "54e886a6dac11bb85a1a3e70abe726463d0cd075",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
