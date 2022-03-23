@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1a3375a_b3fc75a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-23T14:06:24Z",
+      "side": 1,
+      "message": "I think we are already doing this, preflight_operators_to_check is only used, in fact, in preflight and pyxis roles, and there\u0027s only a reference in tests play because pyxis is only executed if preflight_operators_to_check is defined. So, I guess we don\u0027t need to make any change in that sense, and the same applies for CNF Cert Suite.",
+      "parentUuid": "9066e105_f2d49518",
+      "revId": "fa50a729f3249797853293b591c32f1771ea46ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f44a9422_7d725b27",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-03-23T00:02:59Z",
       "side": 1,
       "message": "Thanks, Ramón\n\nMaybe we can rename this file to main.yml and in https://github.com/redhat-cip/dci-openshift-app-agent/blob/5e7eba0d9b29bb71986b90a9b3f3c9e026229b63/plays/tests.yml#L22 just include the role and not tasks from a file?",
+      "revId": "fa50a729f3249797853293b591c32f1771ea46ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a8da24c_8651f5d8",
+        "filename": "roles/preflight/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-23T14:06:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f44a9422_7d725b27",
       "revId": "fa50a729f3249797853293b591c32f1771ea46ad",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
