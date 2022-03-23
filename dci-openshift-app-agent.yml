@@ -111,6 +111,12 @@
       include_tasks: 'plays/pullsecrets.yml'
       when: dci_disconnected | default(false) | bool
 
+    - name: "Use DOCKER_CONFIG when using parter credentials"
+      include_tasks: "plays/dockercfg.yml"
+      when:
+        - partner_creds | length
+        - "'gh-operator-framework-operator-registry-919' in dci_workarounds"
+
     # Keep in sync with test-runner parsing from d-o-a
     - name: UI URL
       debug:
