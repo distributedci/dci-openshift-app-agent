@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1d62ce5_30ed453f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-24T13:02:50Z",
+      "side": 1,
+      "message": "Replaced undefined docker_config by partner_creds, testing.",
+      "revId": "28c750d98a17931db8ef3479153d3cd4b7859f63",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
