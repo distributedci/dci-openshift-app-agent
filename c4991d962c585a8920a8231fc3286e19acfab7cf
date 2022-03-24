@@ -51,6 +51,23 @@
       "message": "Done here:\nhttps://softwarefactory-project.io/r/c/dci-openshift-agent/+/24392",
       "revId": "c4991d962c585a8920a8231fc3286e19acfab7cf",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5518125_3ce600c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-24T07:40:17Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "c4991d962c585a8920a8231fc3286e19acfab7cf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
