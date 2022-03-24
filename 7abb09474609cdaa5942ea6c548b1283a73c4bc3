@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f31295de_3dcc9efb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-24T12:31:36Z",
+      "side": 1,
+      "message": "We have to create preflight_operators_to_check before running mirroring task. Fixed that, testing: https://www.distributed-ci.io/jobs/12acef7d-8fe9-465f-ab94-dfd16c574e6e/jobStates ",
+      "revId": "7abb09474609cdaa5942ea6c548b1283a73c4bc3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
