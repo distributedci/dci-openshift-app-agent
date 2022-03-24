@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9262cebc_0abf9aec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-24T11:05:16Z",
+      "side": 1,
+      "message": "I rebased CR and test it with the new minimal config on fake-cnf: https://www.distributed-ci.io/jobs/63cec532-e665-482f-9ba3-5f2b7fc9980b/jobStates ",
+      "revId": "6b6128d65e4a102a5db50320932a35258f5a7b70",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
