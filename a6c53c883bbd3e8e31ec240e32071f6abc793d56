@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35fbb2b1_ed23aaca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-24T07:55:26Z",
+      "side": 1,
+      "message": "Thanks for this Tony! By the way, do we need to change the opm render logic to make use of this docker_config variable?",
+      "revId": "a6c53c883bbd3e8e31ec240e32071f6abc793d56",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
