@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ac97c70a_aeb15c9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-24T07:49:44Z",
+      "side": 1,
+      "message": "Do we have some examples for this operator.env variable in order to update the preflight README regarding preflight_operators_to_check structure?",
+      "revId": "e3bc7890803fa13b3d6fd3a7f245464e068ab9cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
