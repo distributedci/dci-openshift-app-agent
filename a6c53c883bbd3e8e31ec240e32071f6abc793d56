@@ -34,6 +34,24 @@
       "parentUuid": "35fbb2b1_ed23aaca",
       "revId": "a6c53c883bbd3e8e31ec240e32071f6abc793d56",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "041bdf5c_9c92dc51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-24T15:22:20Z",
+      "side": 1,
+      "message": "Cool! LGTM, feel free to merge it if you need this change for that CR",
+      "parentUuid": "2b37014a_909f7469",
+      "revId": "a6c53c883bbd3e8e31ec240e32071f6abc793d56",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
