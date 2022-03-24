@@ -16,6 +16,24 @@
       "message": "Thanks for this Tony! By the way, do we need to change the opm render logic to make use of this docker_config variable?",
       "revId": "a6c53c883bbd3e8e31ec240e32071f6abc793d56",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b37014a_909f7469",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-24T12:57:47Z",
+      "side": 1,
+      "message": "Yes is in c 24388, which depends on this change 😊",
+      "parentUuid": "35fbb2b1_ed23aaca",
+      "revId": "a6c53c883bbd3e8e31ec240e32071f6abc793d56",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
