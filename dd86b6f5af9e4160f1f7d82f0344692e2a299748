@@ -52,6 +52,24 @@
       "parentUuid": "5aa71b7e_3174e51b",
       "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5eafbf58_35d7efc1",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-25T00:46:28Z",
+      "side": 1,
+      "message": "Python string.find method returns -1 when it cannot find the requested substring.\n\nOtherwise it returns the index where the string was found. https://docs.python.org/2/library/string.html",
+      "parentUuid": "702f0421_db022dd6",
+      "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
