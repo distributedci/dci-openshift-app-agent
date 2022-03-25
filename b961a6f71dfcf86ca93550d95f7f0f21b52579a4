@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76ddbc64_2c821d73",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-25T00:02:51Z",
+      "side": 1,
+      "message": "This will not be required, Tatiana showed me that preflight is doing something similar internally, so we will use those temp credentials used in there to be used in opm render.",
+      "revId": "b961a6f71dfcf86ca93550d95f7f0f21b52579a4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
