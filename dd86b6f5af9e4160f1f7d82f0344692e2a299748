@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1398df05_bad990e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-25T02:29:55Z",
+      "side": 1,
+      "message": "Job confirming that nothing was broken:\n - https://www.distributed-ci.io/jobs/fcb0a579-3cad-47d6-aa75-58b7b6d68cbd/jobStates\nJob were creds are not valid for the repo and morroring do not succeed\n - https://www.distributed-ci.io/jobs/e71cf2eb-6e35-4813-bc62-53e2bc0489dd/jobStates#8104b44d-66fe-4ea5-a15c-806fd3652f6f:file33",
+      "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2d745eed_6cfaf087",
