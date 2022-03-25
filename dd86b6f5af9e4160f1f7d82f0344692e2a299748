@@ -34,6 +34,24 @@
       "parentUuid": "2d745eed_6cfaf087",
       "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "702f0421_db022dd6",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-25T00:36:20Z",
+      "side": 1,
+      "message": "Got it, thanks for the clarification\n\nRegarding the comparison, can you help me understand what find is doing? if `error:` is *not* found would that produce a -1? or a 0? not sure if find is counting or what",
+      "parentUuid": "5aa71b7e_3174e51b",
+      "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
