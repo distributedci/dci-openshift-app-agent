@@ -26,18 +26,7 @@
   - name: Create a common catalog image for simple-demo-operator bundle to be tested in disconnected environment
     block:
 
-      - name: Create a catalog for simple-demo-operator < 4.9
-        environment:
-          - REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file}}"
-        shell: |
-          {{ opm_tool_path }} index add --pull-tool podman \
-          --bundles {{ tnf_operator_to_install.operator_bundle }} \
-          --tag {{ catalog_path }}:{{ tnf_operator_to_install.operator_version }}
-        args:
-          chdir: "{{ tnf_test_example_prerun_tmp_dir.path }}"
-        when: ocp_version_min | int < 9
-
-      - name: Create a catalog for simple-demo-operator >= 4.9 (FBC)
+      - name: Create a catalog for simple-demo-operator
         block:
 
           - name: "Create index directory"
@@ -94,8 +83,6 @@
               -t {{ catalog_path }}:{{ tnf_operator_to_install.operator_version }}
             args:
               chdir: "{{ tnf_test_example_prerun_tmp_dir.path }}"
-
-        when: ocp_version_min | int >= 9
 
   - name: Push catalog image into local registry
     shell: |

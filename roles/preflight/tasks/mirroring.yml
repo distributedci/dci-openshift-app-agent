@@ -36,20 +36,7 @@
     prefix: preflight_prerun_tmp_dir.
   register: preflight_prerun_tmp_dir
 
-- name: Build index image in temporary preflight directory < 4.9
-  vars:
-    preflight_bundle_images: "{{ preflight_operators_to_check | map(attribute='bundle_image') | list | unique }}"
-  environment:
-    - REGISTRY_AUTH_FILE: "{{ partner_creds }}"
-  shell:
-    cmd: >
-      {{ opm_tool_path }} index add --pull-tool podman
-      --bundles {{ ','.join(preflight_bundle_images) }}
-      --tag {{ OO_INDEX }}
-    chdir: "{{ preflight_prerun_tmp_dir.path }}"
-  when: ocp_version_min | int < 9
-
-- name: Build index image in temporary preflight directory >= 4.9 (FBC)
+- name: Build index image in temporary preflight directory
   block:
     - name: "Create index directory"
       file:
@@ -86,8 +73,6 @@
       args:
         chdir: "{{ preflight_prerun_tmp_dir.path }}"
 
-  when: ocp_version_min | int >= 9
-
 - name: Push index image into local registry
   shell: >
     podman push
@@ -116,7 +101,7 @@
       set_fact:
         OO_INDEX: "{{ provisionhost_registry }}/preflight/disconnected-catalog@{{ catalog_sha.stdout }}"
 
-    - name: Save catalog manifests to temporary scorecard directory
+    - name: Save catalog manifests and mirror images
       shell: >
         {{ oc_tool_path }} adm catalog mirror -a {{ partner_creds }}
         {{ OO_INDEX }} {{ provisionhost_registry }} --to-manifests={{ preflight_prerun_tmp_dir.path }}/tmp_oc
