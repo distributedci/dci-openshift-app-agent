@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0ba8a05_f73b9a54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-25T00:52:49Z",
+      "side": 1,
+      "message": "LGTM, let\u0027s get it tested",
+      "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2d745eed_6cfaf087",
@@ -68,6 +85,24 @@
       "side": 1,
       "message": "Python string.find method returns -1 when it cannot find the requested substring.\n\nOtherwise it returns the index where the string was found. https://docs.python.org/2/library/string.html",
       "parentUuid": "702f0421_db022dd6",
+      "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52db9860_311a5103",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-25T00:52:49Z",
+      "side": 1,
+      "message": "Thanks!",
+      "parentUuid": "5eafbf58_35d7efc1",
       "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
