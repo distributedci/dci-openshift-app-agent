@@ -16,6 +16,24 @@
       "message": "😮 I tend not to like when we rely on messages of the tool as those messages could change over time. I assume we\u0027re doing this because if an image fails while mirroring and the exit code is not changing?",
       "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5aa71b7e_3174e51b",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-25T00:13:43Z",
+      "side": 1,
+      "message": "yeah, the exit code is always 0",
+      "parentUuid": "2d745eed_6cfaf087",
+      "revId": "dd86b6f5af9e4160f1f7d82f0344692e2a299748",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
