@@ -16,6 +16,23 @@
       "message": "Current status:\n\nFor the latest GA 1.0.8 everything seems to be working in Dallas: https://www.distributed-ci.io/jobs/c1def01d-2c71-4961-b2b8-dffe50d18bbe/tests \n\nTODO:\n1/ Test on the latest pre-release 1.1.0-beta5\n2/ Test in the connected environment where we probably should provide an index image \n",
       "revId": "0aa5f243932f8ffa3fd2c540a5839f2ea7da0050",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f382fb2d_29eca50d",
+        "filename": "roles/preflight/tasks/add-operator.yml",
+        "patchSetId": 24
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-03-28T16:21:49Z",
+      "side": 1,
+      "message": "I don\u0027t think we need preflight_docker_config_env in here because opm init does not connect to any repo. It only creates a yaml with the settings passed",
+      "revId": "0aa5f243932f8ffa3fd2c540a5839f2ea7da0050",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
