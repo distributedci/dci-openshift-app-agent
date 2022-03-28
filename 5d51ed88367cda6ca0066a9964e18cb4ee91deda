@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a9e9bd4_323da316",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-28T06:47:54Z",
+      "side": 1,
+      "message": "One minor detail: you also need to change the d-o-a-a README because preflight_operators_to_check is also mentioned there, you have to change it to use the new preflight_operators_to_certify: https://github.com/redhat-cip/dci-openshift-app-agent#operator-certification-tests",
+      "revId": "5d51ed88367cda6ca0066a9964e18cb4ee91deda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "70ecf772_a81cfc96",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-28T06:47:54Z",
+      "side": 1,
+      "message": "certificate",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 23
+      },
+      "revId": "5d51ed88367cda6ca0066a9964e18cb4ee91deda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
