@@ -39,6 +39,30 @@
       },
       "revId": "5d51ed88367cda6ca0066a9964e18cb4ee91deda",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6e702ca_f043a681",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-28T09:46:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "70ecf772_a81cfc96",
+      "range": {
+        "startLine": 24,
+        "startChar": 13,
+        "endLine": 24,
+        "endChar": 23
+      },
+      "revId": "5d51ed88367cda6ca0066a9964e18cb4ee91deda",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
