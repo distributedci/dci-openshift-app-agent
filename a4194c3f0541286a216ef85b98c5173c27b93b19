@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e846a7d_fba27997",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 25
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Hi Beto, yes, there are still some issues pending on the Preflight side and sometimes we need these tests to debug. \n\nHere is a description of this variable in the readme:\nhttps://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/README.md#L34",
+      "parentUuid": "e7a15ade_f54a5eae",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9a1e7a89_9c88a61c",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-03-29T01:13:25Z",
       "side": 1,
       "message": "Can we set the file permissions?",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "425dcf31_6d7c3ccb",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9a1e7a89_9c88a61c",
       "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +105,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5981019d_7259a8b0",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "48654639_c30347ae",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aa8b69d2_557acb8c",
@@ -82,6 +136,24 @@
       "writtenOn": "2022-03-29T01:13:25Z",
       "side": 1,
       "message": "Maybe you can remove this reference.",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84a6bac6_ca7c0783",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "aa8b69d2_557acb8c",
       "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -103,6 +175,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0146528_657aaabf",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Hi Beto, I do use three different tmp dirs here, to separate permanent config and tmp logs files which should be removed after each test:\n\n- preflight_tmp_dir stores the config that should survive during all the tests: certificate, docker config, kubeconfig etc\n\n- preflight_container_artifacts stores logs files for each test. Since the log files have the same names each time, it\u0027s important to create and destroy this folder for each image.\n\n- preflight_operator_artifacts - again tmp log files.\n\n\u003e I see multiple tmp directories created by pre-flight and we are missing their deletion during the teardown or if the job fails.  \n\u003e The teardown.yml file in this role is not executed anymore.\n\nYes, that\u0027s a regression we introduced in 24384. With Tony, we discussed that we would fix it later but let\u0027s do it now then :) I moved the deletion of artifacts folders in `always` blocks, to have them deleted even when the current test is failing. teardown.yml is now included in main.yml \n\nThank you for this comment, Beto!",
+      "parentUuid": "47bb0377_fad74702",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "016c1f86_a27e7e41",
@@ -120,6 +210,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d57c011_965baf97",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_podman.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "ditto",
+      "parentUuid": "016c1f86_a27e7e41",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5c983caf_621d18bd",
@@ -133,6 +241,24 @@
       "writtenOn": "2022-03-29T01:13:25Z",
       "side": 1,
       "message": "There is a warning in https://www.distributed-ci.io/jobs/c1def01d-2c71-4961-b2b8-dffe50d18bbe/jobStates#c45bb254-bdec-4901-a0ff-49ccaf1206db:file129 about this not been a TTY. You can get rid of the warning removing \"-it\"",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e281f987_bfb183ed",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_podman.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c983caf_621d18bd",
       "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

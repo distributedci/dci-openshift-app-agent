@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e36561c6_2f43513e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 28
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T08:54:45Z",
+      "side": 1,
+      "message": "Hi Beto, thank you for the comments, I ensured the tmp folders to be deleted.\n\nTony, thank you for great test setup! I fixed a minor typo in the arguments: do_preflight_testsrr -\u003e do_preflight_tests, let\u0027s wait for the new libvirt tests. ",
+      "revId": "b38d13966fedc68d2dfdfe1e6d6281895b738067",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
