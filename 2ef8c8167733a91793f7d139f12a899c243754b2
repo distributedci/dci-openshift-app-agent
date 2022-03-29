@@ -16,6 +16,23 @@
       "message": "LGTM, waiting for a test to check how it behaves",
       "revId": "2ef8c8167733a91793f7d139f12a899c243754b2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04458b27_42932cc2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 32
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-29T14:53:08Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "2ef8c8167733a91793f7d139f12a899c243754b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
