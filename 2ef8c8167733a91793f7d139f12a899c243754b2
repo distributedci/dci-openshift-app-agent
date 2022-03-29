@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a4f93b5_cc70f5f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 32
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-29T13:36:28Z",
+      "side": 1,
+      "message": "LGTM, waiting for a test to check how it behaves",
+      "revId": "2ef8c8167733a91793f7d139f12a899c243754b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
