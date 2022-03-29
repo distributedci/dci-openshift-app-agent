@@ -33,6 +33,24 @@
       "message": "I don\u0027t think we need preflight_docker_config_env in here because opm init does not connect to any repo. It only creates a yaml with the settings passed",
       "revId": "0aa5f243932f8ffa3fd2c540a5839f2ea7da0050",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f0a6608_a4dc1066",
+        "filename": "roles/preflight/tasks/add-operator.yml",
+        "patchSetId": 24
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "yep, it is not needed",
+      "parentUuid": "f382fb2d_29eca50d",
+      "revId": "0aa5f243932f8ffa3fd2c540a5839f2ea7da0050",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

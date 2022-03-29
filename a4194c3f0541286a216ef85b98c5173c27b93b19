@@ -1,0 +1,140 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcae7379_6140f3c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "Good stuff, good work on reducing the inputs for the tests. Just added some minor comments. \nThanks!",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7a15ade_f54a5eae",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 25
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "I do not see in example_preflight_config.yaml, how to use operator_sdk_tool_path. Is that still needed?",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a1e7a89_9c88a61c",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "Can we set the file permissions?",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "48654639_c30347ae",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "Maybe this documentation reference is not needed.",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa8b69d2_557acb8c",
+        "filename": "roles/preflight/tasks/test_preflight_check_container.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "Maybe you can remove this reference.",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47bb0377_fad74702",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "is it possible to use preflight_tmp_dir declared in main? Something like  {{ preflight_tmp_dir.path }}/contaner_artifacts  \n\nI see multiple tmp directories created by pre-flight and we are missing their deletion during the teardown or if the job fails.  \n\nThe teardown.yml file in this role is not executed anymore.",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "016c1f86_a27e7e41",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_podman.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "is it possible to re-use the preflight_tmp_dir?",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c983caf_621d18bd",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_podman.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-03-29T01:13:25Z",
+      "side": 1,
+      "message": "There is a warning in https://www.distributed-ci.io/jobs/c1def01d-2c71-4961-b2b8-dffe50d18bbe/jobStates#c45bb254-bdec-4901-a0ff-49ccaf1206db:file129 about this not been a TTY. You can get rid of the warning removing \"-it\"",
+      "revId": "a4194c3f0541286a216ef85b98c5173c27b93b19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
