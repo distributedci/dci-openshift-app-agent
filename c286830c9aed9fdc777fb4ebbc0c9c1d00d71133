@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3df56a83_bd5a3fdc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 35
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-30T13:15:05Z",
+      "side": 1,
+      "message": "Added Depends-On: 24462 to debug what does Zuul pass to dci-check-change as a change description.",
+      "revId": "c286830c9aed9fdc777fb4ebbc0c9c1d00d71133",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
