@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5945db44_215870a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 33
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-03-30T06:45:21Z",
+      "side": 1,
+      "message": "It looks like preflight_operators_to_certify is not being set properly in the libvirt job, maybe because it is not catching properly the variable due to the [], {} and so on? If you check the logs in hv2 for that job, you will see d-o-a-a is using the following:\n\n```\n+ setsid /var/lib/dci-openshift-agent/gerrit/24388-0fa21ded801c2544ad1ed2d1b30649ff/dci-openshift-app-agent/dci-openshift-app-agent-ctl -s -d -v -- -v -e dci_name\u003dlibvirt -e dci_configuration\u003dvirt -e \u0027{\"dev_gits\n_to_components\":[\"/var/lib/dci-openshift-agent/gerrit/24388-0fa21ded801c2544ad1ed2d1b30649ff/dci-openshift-app-agent\",]}\u0027 -e dci_previous_job_id\u003da26eb5ab-98f2-4b6c-9423-5cf7b7923ec4 -e \u0027{\"dci_url\": \"https://soft\nwarefactory-project.io/r/#/c/24388/\", \"dci_tags\": [\"debug\", \"gerrit:dci-openshift-app-agent-24388\", \"pipeline-id:vpool.2294\"]}\u0027 -e dci_config_dir\u003d/var/lib/dci-openshift-agent/gerrit/24388-0fa21ded801c2544ad1ed2d\n1b30649ff/dci-openshift-app-agent/samples/basic_example -e dci_name\u003dbasic_example -e \u0027\u0027\\\u0027\u0027{\"preflight_operators_to_certify\":[{\"bundle_image\":\"quay.io/rh-nfv-int/testpmd-operator-bundle@sha256:5e28f883faacefa8471\n04ebba1a1a22ee897b7576f0af6b8253c68b5c8f42815\",\"index_image\":\"quay.io/rh-nfv-int/nfv-example-cnf-catalog:v0.2.9\",\"pyxis_identifier\":\"61a64ad87a3f492d8b755778\"},{\"bundle_image\":\"quay.io/rh-nfv-int/testpmd-lb-oper\nator-bundle@sha256:c26bd5bd75b3ad970597e0f628ede9d79c5417ea65de03e1a0e0752db8c3320c\",\"index_image\":\"quay.io/rh-nfv-int/nfv-example-cnf-catalog:v0.2.9\",\"pyxis_identifier\":\"61a64ad87a3f492d8b755778\"},{\"bundle_imag\ne\":\"quay.io/rh-nfv-int/trex-operator-bundle@sha256:12b0cfe22acd3ff4b2c2f1497e4068e06b44e0ca71d0519f131d5f4158e03e82\",\"index_image\":\"quay.io/rh-nfv-int/nfv-example-cnf-catalog:v0.2.9\",\"pyxis_identifier\":\"61a64ad8\n7a3f492d8b755778\"},{\"bundle_image\":\"quay.io/rh-nfv-int/cnf-app-mac-operator-bundle@sha256:e5b8697136baa78bd1fa841c45adc3b539f8e853238ac8a33feeef67f70d3468\",\"index_image\":\"quay.io/rh-nfv-int/nfv-example-cnf-catal\nog:v0.2.9\",\"pyxis_identifier\":\"61a64ad87a3f492d8b755778\"},{\"bundle_image\":\"quay.io/telcoci/simple-demo-operator-bundle@sha256:e631c8dc7ab2d1ff67bf2731fd73820cb8e0214f9970d6ab1afca2f089d2fdb9\",\"index_image\":\"quay\n.io/telcoci/simple-demo-operator-catalog:v0.0.3\",\"pyxis_identifier\":\"61a64ad87a3f492d8b755778\"}]}\u0027\\\u0027\u0027\u0027 -e do_preflight_tests\u003dtrue\n```\n\nSo, it looks like dci-check-change needs to be changed a little bit to enable this kind of complex variables, I fear... this is an issue that I observed in the past but it seems not to be solved yet.",
+      "revId": "f1b900c824f91dfdd45053b356393739b9b2faed",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
