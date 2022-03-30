@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2bb2a5a_4ca0fcb3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 34
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-03-30T09:49:46Z",
+      "side": 1,
+      "message": "Hi Ramon and Tony, concerning libvirt tests:\n\n1/ Test-Args-Hints: -e {\"preflight-operators_to_certify\":[body]}\n--\u003e doesn\u0027t work, Zuul complains\n\n2/ Test-Args-Hints: -e \u0027{\"preflight-operators_to_certify\":[body]}\u0027\n--\u003e Zuul ok, dci-check-change ok, but then dci-openshift-app-agent-ctl ignores the following call\n \n\u003e -e \u0027\u0027\\\u0027\u0027{\"preflight_operators_to_certify\":[body]}\u0027\\\u0027\u0027\u0027\n\n3/ Test-Args-Hints: -e \"{\\\"preflight-operators_to_certify\\\":[body]}\"\n--\u003e That\u0027s the last idea I have here, testing.\n\nIf that wouldn\u0027t work, we would have to debug the exact content of bash variables $DESC and $OPTS. $OPTS contains the results of parsing for Test-Args-Hints section: https://github.com/redhat-cip/dci-openshift-agent/blob/86a86d418178875cac445747782a5b304f960ab8/dci-check-change#L199-L204",
+      "revId": "c6693c5dea827f470ef696afbf93174ae4524320",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
