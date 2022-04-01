@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee25b1c3_d28ce35d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 45
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-01T10:11:32Z",
+      "side": 1,
+      "message": "Current test summary:\n\n1/ Dallas + GA 1.0.8 \u003d OK https://www.distributed-ci.io/jobs/4d35669d-c810-4563-a13f-9c397d99682c/tests\nThere is a minor regression in DeployableByOlm test for simple-demo-operator.\nThat\u0027s because the operator image is not mirrored for simple-demo-operator:v.0.0.5, and could be fixed later.\n\n\n2/ Dallas + 1.1.0-beta6 \u003d KO https://www.distributed-ci.io/jobs/bdf62d9e-6995-4025-9cfe-6e081ac28abc/tests\n[To open an issue] Operator tests were failing because of Preflight regression concerning podman run: \"open /artifacts/results.json: permission denied\"\n[To fix on our side + to open an issue] Simple-demo-operator and mac-operator are to be included back to the tests, with `ignore_errors: true` after the check container\n\n\n3/ Libvirt + GA 1.0.8 \u003d OK https://www.distributed-ci.io/jobs/47cccb43-b999-42bd-92b5-efebf60be239/tests\nMostly ok, some minor regressions to be checked but nothing serious.\n\n\n4/ Libvirt + 1.1.0-beta6 \u003d KO https://www.distributed-ci.io/jobs/30bb8758-e1bd-404a-827e-107f572fae3e/jobStates\nNot-related to the change failure\n\n\nWe discussed with Fred that our current strategy is never break GA (Dallas + libvirt). Pre-release is already broken, so it could be fixed later, and we could merge this change.",
+      "revId": "5130df632d10d8b8d0bccf086cf1096f312a4cb0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
