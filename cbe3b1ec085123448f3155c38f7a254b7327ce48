@@ -16,6 +16,23 @@
       "message": "From my side, it looks fine. I\u0027ll vote when moving this to Active and having also a tnf-test-cnf job on dallas running and working.",
       "revId": "cbe3b1ec085123448f3155c38f7a254b7327ce48",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d56a0b81_17676c9b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-04-01T21:30:01Z",
+      "side": 1,
+      "message": "Sorry, I was confusing fakecnf with tnf-test-cnf. Need a job with ocp \u003e\u003d4.9",
+      "revId": "cbe3b1ec085123448f3155c38f7a254b7327ce48",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
