@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8e3c719_8fd27607",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-01T10:11:47Z",
+      "side": 1,
+      "message": "Thank you very much Tony for starting this. Should we need a Depends-On clause to include the dependency with 24476?\nBy the way, if you need help with the update for preflight, cnf-cert and other samples like tnf_test_example, don\u0027t hesitate to contact me",
+      "revId": "13e41a3cf287900b11d0af06beecf3c51390fbe9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
