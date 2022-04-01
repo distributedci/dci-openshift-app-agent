@@ -34,6 +34,24 @@
       "parentUuid": "ee25b1c3_d28ce35d",
       "revId": "5130df632d10d8b8d0bccf086cf1096f312a4cb0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1e52eca_618d4145",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 45
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-01T13:55:09Z",
+      "side": 1,
+      "message": "2/ Tony, the job is green but all `check operator` tests failed as `open /artifacts/results.json: permission denied `: https://www.distributed-ci.io/jobs/bdf62d9e-6995-4025-9cfe-6e081ac28abc/jobStates#5544e7db-4fe5-47f1-98bf-b75b30452d9b:file106 \n\nThat\u0027s because of regression, introduced in preflight pre-release 1.1.0-beta6 (1.1.0-beta5 was ok). There is a slack discussion concerning the issue.",
+      "parentUuid": "23633cbc_02a4e87d",
+      "revId": "5130df632d10d8b8d0bccf086cf1096f312a4cb0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
