@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5152ecd_e4c5a8dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 47
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-01T14:13:15Z",
+      "side": 1,
+      "message": "pyxis_identifier is now mandatory, even for 1.0.8. Added it and re-running the tests.",
+      "revId": "876f993a9c283f1cc9f8c3f476506eae865e4cf5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
