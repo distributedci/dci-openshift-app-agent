@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70f89d5c_e6c413c8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-01T11:23:39Z",
+      "side": 1,
+      "message": "From my side, it looks fine. I\u0027ll vote when moving this to Active and having also a tnf-test-cnf job on dallas running and working.",
+      "revId": "cbe3b1ec085123448f3155c38f7a254b7327ce48",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
