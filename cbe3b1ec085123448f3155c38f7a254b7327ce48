@@ -50,6 +50,23 @@
       "message": "Validated in 4.10: https://www.distributed-ci.io/jobs/9042c6a4-5ca9-429e-ab2f-5dd62723ca01/jobStates#23afa68d-8ba4-45a1-b639-62d69f037247:file26",
       "revId": "cbe3b1ec085123448f3155c38f7a254b7327ce48",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6e930ba_97446950",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-04-02T01:59:52Z",
+      "side": 1,
+      "message": "Thanks Beto! 👍",
+      "revId": "cbe3b1ec085123448f3155c38f7a254b7327ce48",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
