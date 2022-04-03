@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f4b085d_fbcf2a81",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-04-03T23:50:15Z",
+      "side": 1,
+      "message": "check dallas ocp-4.10-vanilla fake-cnf",
+      "revId": "cc9bf6e3fff1ddf3b568b3351174e65d7dccbf9e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
