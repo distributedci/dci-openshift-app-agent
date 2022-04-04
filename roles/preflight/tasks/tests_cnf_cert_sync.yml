@@ -1,0 +1,30 @@
+---
+
+- name: Define preflight_operators_to_check if not present
+  set_fact:
+    preflight_operators_to_check: []
+  when: preflight_operators_to_check is not defined
+
+- name: Parse claim.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', job_logs.path + '/claim.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+
+# pyxis_identifier field will not be created if a new element is included
+# in the list
+- name: Include new operators in preflight_operators_to_check
+  vars:
+    operator_names: "{{ preflight_operators_to_check | map(attribute='name') | list | unique }}"
+  set_fact:
+    preflight_operators_to_check: "{{ preflight_operators_to_check +
+      [ { 'bundle_image' : item.installPlans[0].bundleImage|default(''),
+          'index_image'  : item.installPlans[0].indexImage|default('') } ]
+    }}"
+  when: not item.name.split('.')[0] in operator_names
+  loop: "{{ cnf_operators }}"
+
+- name: Print final preflight_operators_to_check variable
+  debug:
+    msg: "{{ preflight_operators_to_check }}"
+...
