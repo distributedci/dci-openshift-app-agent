@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3851ebd2_e48b47ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-04T18:18:41Z",
+      "side": 1,
+      "message": "FYI this is the new change that replaces https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/23923",
+      "revId": "73a728ab8c252ba0296d904fa9215e6438863077",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
