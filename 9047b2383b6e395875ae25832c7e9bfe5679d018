@@ -87,6 +87,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "92440cf1_08cd0807",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-04T17:36:09Z",
+      "side": 1,
+      "message": "It\u0027s being a mess for me to try to rebase this change. I will create a new one using current master branch as base to do all the update in an easier way. @Tatiana can you abandon this change? Because I\u0027m not the owner of the change, I cannot do it",
+      "revId": "9047b2383b6e395875ae25832c7e9bfe5679d018",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0d07d6bf_2fc5aabf",
