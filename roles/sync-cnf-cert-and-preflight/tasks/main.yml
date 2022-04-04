@@ -1,0 +1,19 @@
+---
+
+- name: Parse claim.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', job_logs.path + '/claim.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+
+# Doing this in order to avoid problems with loop-when conditions.
+- name: Update preflight_operators_to_certify variable in a separated task
+  vars:
+    operator_bundles: "{{ preflight_operators_to_certify | map(attribute='bundle_image') | list | unique }}"
+  include_tasks: update_preflight_variable.yml
+  loop: "{{ cnf_operators }}"
+
+- name: Print final preflight_operators_to_certify variable
+  debug:
+    msg: "{{ preflight_operators_to_certify }}"
+...
