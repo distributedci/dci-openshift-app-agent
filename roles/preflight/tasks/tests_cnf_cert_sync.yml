@@ -1,0 +1,31 @@
+---
+
+- name: Define preflight_operators_to_certify if not present
+  set_fact:
+    preflight_operators_to_certify: []
+  when: preflight_operators_to_certify is not defined
+
+- name: Parse claim.json
+  vars:
+    cnf_operators_file: "{{ lookup('file', job_logs.path + '/claim.json') | from_json }}"
+  set_fact:
+    cnf_operators: "{{ cnf_operators_file | json_query('claim.configurations.testTarget.operators') }}"
+
+# pyxis_identifier field will be set to '' for new operators included
+# in preflight_operators_to_certify
+- name: Include new operators in preflight_operators_to_certify
+  vars:
+    operator_names: "{{ preflight_operators_to_certify | map(attribute='name') | list | unique }}"
+  set_fact:
+    preflight_operators_to_certify: "{{ preflight_operators_to_certify +
+      [ { 'bundle_image'    : item.installPlans[0].bundleImage|default(''),
+          'index_image'     : item.installPlans[0].indexImage|default(''),
+          'pyxis_identifier': '' } ]
+    }}"
+  when: not item.name.split('.')[0] in operator_names
+  loop: "{{ cnf_operators }}"
+
+- name: Print final preflight_operators_to_certify variable
+  debug:
+    msg: "{{ preflight_operators_to_certify }}"
+...
