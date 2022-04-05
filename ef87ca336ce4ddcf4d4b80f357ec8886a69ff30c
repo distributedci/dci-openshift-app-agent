@@ -16,6 +16,23 @@
       "message": "The change is working fine in tnf-test-cnf pipeline, where we are creating the preflight_operators_to_certify from scratch.\n\nHowever, I am having difficulties to run example-cnf because of the usual failures we have. What I am going to do is to run a fresh OCP 4.9 vanilla job on cluster5 and then run example-cnf on top on it, to check if it works. But I guess it should work, because we are not creating anything new in preflight_operators_to_certify for that case. Anyway, I will wait for that result to confirm everything.",
       "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "466feacd_28f5cbd6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-05T11:26:11Z",
+      "side": 1,
+      "message": "example-cnf passed too, so the change is ready to be merged if you think it is fine",
+      "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
