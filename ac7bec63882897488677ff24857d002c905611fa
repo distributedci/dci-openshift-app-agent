@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74822ac3_e89408fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-06T16:41:52Z",
+      "side": 1,
+      "message": "Thanks @Tatiana for the feedback. As discussed, I\u0027ve also included some Hints in order to test it in connected environments too, let\u0027s see how it goes, I\u0027ll retest tnf-test-cnf with this. I\u0027ll not test example-cnf because we have already checked that this change does not affect to its behavior.",
+      "revId": "ac7bec63882897488677ff24857d002c905611fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

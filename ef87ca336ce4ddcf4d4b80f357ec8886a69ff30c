@@ -69,6 +69,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f3b4643_fbb7aab6",
+        "filename": "README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 251,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-06T16:41:52Z",
+      "side": 1,
+      "message": "I catched it in the previous CR and I left it, I can move it to a new CR",
+      "parentUuid": "c73324ac_856ead7e",
+      "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9f53070e_b0b21d23",
@@ -86,6 +104,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccb9e703_715223f3",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-06T16:41:52Z",
+      "side": 1,
+      "message": "As discussed, I didn\u0027t see you included the teardown call in the tests stage, I\u0027ll delete this",
+      "parentUuid": "9f53070e_b0b21d23",
+      "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8657b7ee_9adcb693",
@@ -99,6 +135,24 @@
       "writtenOn": "2022-04-05T16:04:17Z",
       "side": 1,
       "message": "WDYT about creating the third role, something like cnf_preflight_sync, and adding all the related playbooks there?",
+      "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea4a7174_ec5830e3",
+        "filename": "plays/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-06T16:41:52Z",
+      "side": 1,
+      "message": "Sure, doing this now",
+      "parentUuid": "8657b7ee_9adcb693",
       "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -122,6 +176,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a4193f1d_56192862",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-06T16:41:52Z",
+      "side": 1,
+      "message": "Yes, this is a thing I didn\u0027t know how to handle, but I think we can do the following.\nAs pyxis_identifier variable is defined in pyxis role (https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/pyxis/README.md), we can reuse that variable for this case (I mean, not linked to preflight_operators_to_certify, but using a generic pyxis_identifier variable in the same way it is defined in the readme). I will define it in the tnf-test-cnf pipeline, which is the case where we create preflight_operators_to_certify from scratch, and using the same id you are using for example-cnf and preflight pipelines.\nWhat do you think?",
+      "parentUuid": "e69deb8c_110704c8",
+      "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b4637cbe_9a19cbb1",
         "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
         "patchSetId": 3
@@ -133,6 +205,24 @@
       "writtenOn": "2022-04-05T16:04:17Z",
       "side": 1,
       "message": "Just to understand - why do we need this last condition?",
+      "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b64e73_204ca869",
+        "filename": "roles/preflight/tasks/tests_cnf_cert_sync.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-06T16:41:52Z",
+      "side": 1,
+      "message": "This is to avoid including operators to preflight_operators_to_certify that are already present on preflight_operators_to_certify, e.g. if we defined the variable beforehand and we just want to include in the list the new operators captured by CNF Cert Suite (as agreed).",
+      "parentUuid": "b4637cbe_9a19cbb1",
       "revId": "ef87ca336ce4ddcf4d4b80f357ec8886a69ff30c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
