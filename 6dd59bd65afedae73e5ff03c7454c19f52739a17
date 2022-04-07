@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e22d2b3_1331ef51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-07T16:31:09Z",
+      "side": 1,
+      "message": "Issue related to Mavenir, to be more precise.",
+      "revId": "6dd59bd65afedae73e5ff03c7454c19f52739a17",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
