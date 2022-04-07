@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf8575c8_627b4957",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-07T18:32:11Z",
+      "side": 1,
+      "message": "Libvirt job passed fine! So this is ready for merging",
+      "revId": "2cfbb68b68054bf3f69f435594b67ef32a0b28f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
