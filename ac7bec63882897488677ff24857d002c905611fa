@@ -50,6 +50,24 @@
       "message": "Oh, seems that I forgot to include some variables related to preflight check container for passing libvirt, I\u0027ll retest later on.",
       "revId": "ac7bec63882897488677ff24857d002c905611fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5822f4c_bccbe9fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-07T14:32:14Z",
+      "side": 1,
+      "message": "The failure was because preflight_podman_auth variable was missed: https://www.distributed-ci.io/jobs/aed85fb1-f252-4fd6-88bf-d00befc13048/jobStates#e98e3199-57f4-4535-9aa6-1e0895ae2d68:file67. I could check that we are not giving a default value to that variable in preflight_check_container_podman and we need it because this variable is not defined in connected environments. I\u0027ve fixed it and, with this, libvirt job should pass. I\u0027ll not retest on dallas because there are no differences between the previous patchset and this in terms of functionality.",
+      "parentUuid": "7a75e129_699d6f44",
+      "revId": "ac7bec63882897488677ff24857d002c905611fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
