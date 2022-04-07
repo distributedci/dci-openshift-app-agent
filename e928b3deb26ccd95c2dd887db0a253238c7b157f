@@ -16,6 +16,23 @@
       "message": "I think instead of adding a rescue we could use the opm that was pulled already.\n\nHonestly, we could always use the stable opm even for different versions and it may be beneficial, in contrast with oc, opm is used mostly as the tool to handle the disconnected bits, i.e. no direct interaction with the cluster.\n\nI rather use stable opm on all versions than add this rescue for only few months, as 4.6 EOL is Oct 2022.\n\nThoughts?",
       "revId": "e928b3deb26ccd95c2dd887db0a253238c7b157f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d458651_a66ff93f",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 171,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-04-07T17:09:53Z",
+      "side": 1,
+      "message": "I think we are already overriding the stable version of OPM at the end of this play. https://github.com/redhat-cip/dci-openshift-app-agent/blob/9c01e19a058411a06621047ecb983ca5239116b2/plays/check_kubeconfig.yml#L191 \n\nMaybe they do not have and updated version of the app agent package",
+      "revId": "e928b3deb26ccd95c2dd887db0a253238c7b157f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
