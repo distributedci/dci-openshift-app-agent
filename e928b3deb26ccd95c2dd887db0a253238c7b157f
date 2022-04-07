@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a2932753_75a9dc98",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 170,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-04-07T17:10:40Z",
+      "side": 1,
+      "message": "Actually we do this already 😄 so is going to be quite easy to simple not download opm again 😜\n\nI\u0027ll send the change in a bit",
+      "parentUuid": "27342f92_0e197cfb",
+      "revId": "e928b3deb26ccd95c2dd887db0a253238c7b157f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "7d458651_a66ff93f",
         "filename": "plays/check_kubeconfig.yml",
         "patchSetId": 2
