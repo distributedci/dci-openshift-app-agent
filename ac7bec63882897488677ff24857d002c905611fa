@@ -33,6 +33,23 @@
       "message": "dallas job worked fine, let\u0027s see what happens on libvirt",
       "revId": "ac7bec63882897488677ff24857d002c905611fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a75e129_699d6f44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-07T11:12:17Z",
+      "side": 1,
+      "message": "Oh, seems that I forgot to include some variables related to preflight check container for passing libvirt, I\u0027ll retest later on.",
+      "revId": "ac7bec63882897488677ff24857d002c905611fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
