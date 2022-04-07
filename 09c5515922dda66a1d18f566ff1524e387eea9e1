@@ -33,6 +33,24 @@
       "message": "Yep, it\u0027s simpler in this way, thanks Tony! In my change, I just left opm in ocp_clients just in case it was needed, but if not, we can go on with this",
       "revId": "09c5515922dda66a1d18f566ff1524e387eea9e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6e81b58_fc514034",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-04-07T18:09:37Z",
+      "side": 1,
+      "message": "I think is best to remove it, since we are 1 always downloading stable and 2 using it from that point forward. Whatever opm version downloaded is not used at all",
+      "parentUuid": "0dd9d7ff_0b4b7f63",
+      "revId": "09c5515922dda66a1d18f566ff1524e387eea9e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
