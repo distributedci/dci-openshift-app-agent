@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8ba841f_79cd2293",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-08T08:34:42Z",
+      "side": 1,
+      "message": "Change is working fine and it\u0027s ready for merging. This does not affect to the connected environment, so libvirt test will work anyway.",
+      "revId": "e181e3a09d08f881e38cc9b5298dd401c42aa6b0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
