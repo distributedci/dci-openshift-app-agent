@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cca9d86_2aa334d9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-08T16:12:29Z",
+      "side": 1,
+      "message": "Hi guys, I don\u0027t know if you can help me with this while I am on PTO next week, but I\u0027ve been trying a lot of ways of fixing the problem I am having but without success. Let me explain myself.\n\nI\u0027ve created this change in dallas-pipelines (https://github.com/dci-labs/dallas-pipelines/pull/311) just to test some conditions we may have in the future, e.g.: we have preflight_operators_to_certify already defined, but we autodiscover some new operators in CNF Cert Suite that has to be appended to that list.\n\nAnd if we check all the \"successful\" jobs until now, we will see that the logic is working fine. In the last tested job, for example, here: https://www.distributed-ci.io/jobs/003600cb-d9c0-41af-b5e2-5a0ad6456a4b/jobStates/#5c294b2f-0de9-4147-b313-8aa5ac9821da:file50, we can see preflight_operators_to_certify contains the operator defined in the pipeline and the operator autodiscovered in the CNF Cert Suite.\n\nHowever, in the next step, I print the current value of preflight_operators_to_certify, and magic: https://www.distributed-ci.io/jobs/003600cb-d9c0-41af-b5e2-5a0ad6456a4b/jobStates/#5c294b2f-0de9-4147-b313-8aa5ac9821da:file51, the one appended in the previous step dissapeared! And the same happens with example-cnf, in which 4 operators were autodiscovered and in theory they were appended to the list, but when printing again the list in the next task, these 4 operators dissapeared too.\n\nIf any of you can take a look to this during my absence next week, I\u0027ll really appreciate that. If not, I will continue after my return. Thanks!\n",
+      "revId": "dd5fef717bf375c4b4a7bf07317b652323435b47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
