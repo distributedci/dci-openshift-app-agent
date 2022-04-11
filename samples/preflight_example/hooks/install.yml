@@ -1,0 +1,13 @@
+---
+# Clone a code of preflight main branch 
+# into folder {{ preflight_source_dir }}
+- name: Clone Preflight main branch
+  vars:
+    preflight_repo: "https://github.com/redhat-openshift-ecosystem/openshift-preflight.git"
+    preflight_branch: "main"
+  git:
+    repo: "{{ preflight_repo }}"
+    dest: "{{ preflight_source_dir.path }}"
+    version: "{{ preflight_branch }}"
+    single_branch: yes
+...
