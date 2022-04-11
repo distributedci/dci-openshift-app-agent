@@ -7,8 +7,7 @@
     pyxis_auth: >-
       --certification-project-id {{ operator.pyxis_identifier }}
       --pyxis-api-token {{ pyxis_apikey }}
-  # Pyxis credentials are required for _tests_
-  # starting from 1.1.0-* pre-releases (require preflight_binary variable).
+  # Pyxis credentials are required only when running with --submit option.
   # TODO: fix the condition when release 1.1.0 would become GA if needed.
   when: preflight_binary | length > 0
   no_log: true
