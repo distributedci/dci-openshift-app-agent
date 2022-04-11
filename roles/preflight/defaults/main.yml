@@ -9,6 +9,8 @@
 # The next Preflight release will require to use podman run again.
 preflight_binary: ""
 preflight_image: quay.io/opdev/preflight:1.0.8
+# This namespace will be used by Preflight tool
+# during check operator tests
 preflight_namespace: preflight-testing
 preflight_custom_ca: ""
 preflight_podman_ca: ""
