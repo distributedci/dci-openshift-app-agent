@@ -1,0 +1,15 @@
+---
+# Clone a code of preflight branch to be tested
+# into folder {{ preflight_source_dir }}
+- name: Set Preflight repo and branch to be used
+  set_fact:
+    preflight_repo: "https://github.com/redhat-openshift-ecosystem/openshift-preflight.git"
+    preflight_branch: "main"
+
+- name: Clone Preflight branch to be tested
+  git:
+    repo: "{{ preflight_repo }}"
+    dest: "{{ preflight_source_dir.path }}"
+    version: "{{ preflight_branch }}"
+    single_branch: yes
+...
