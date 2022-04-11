@@ -1,0 +1,23 @@
+---
+# This playbook takes a code of Preflight main branch
+# cloned at install step in the folder {{ preflight_source_dir }}
+# and builds preflight podman image and preflight binary
+# to be used later on during the Preflight tests execution
+- name: Set preflight_image to be used later for Preflight tests
+  set_fact:
+    preflight_image: "{{ provisionhost_registry }}/preflight:{{ preflight_branch }}"
+
+- name: Build Preflight image
+  shell:
+    cmd: >
+      podman build -t {{ preflight_image }} .
+    chdir: "{{ preflight_source_dir.path }}"
+
+- name: Call preflight to ensure that the image build is ok
+  shell:
+    cmd: >
+      podman run --rm {{ preflight_image }} --version
+    chdir: "{{ path_to_preflight.path }}"
+
+# TODO: build preflight binary using Go 1.17
+...
