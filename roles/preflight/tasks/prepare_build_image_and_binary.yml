@@ -1,0 +1,30 @@
+---
+# Clone a code of preflight branch to be tested
+# into folder {{ preflight_source_dir }}
+- name: Clone Preflight branch to be tested
+  git:
+    repo: "{{ preflight_repo }}"
+    dest: "{{ preflight_source_dir.path }}"
+    version: "{{ preflight_branch }}"
+    single_branch: yes
+
+# Build preflight podman image and preflight binary
+# to be used later on during the Preflight tests execution
+- name: Set preflight_image to be used later for Preflight tests
+  set_fact:
+    preflight_image: "{{ provisionhost_registry }}/preflight:{{ preflight_branch }}"
+
+- name: Build Preflight image
+  shell:
+    cmd: >
+      podman build -t {{ preflight_image }} .
+    chdir: "{{ preflight_source_dir.path }}"
+
+- name: Call preflight to ensure that the image build is ok
+  shell:
+    cmd: >
+      podman run --rm {{ preflight_image }} --version
+    chdir: "{{ path_to_preflight.path }}"
+
+# TODO: build preflight binary using Go 1.17
+...
