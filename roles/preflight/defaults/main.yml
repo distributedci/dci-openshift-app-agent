@@ -9,6 +9,14 @@
 # The next Preflight release will require to use podman run again.
 preflight_binary: ""
 preflight_image: quay.io/opdev/preflight:1.0.8
+# Use the next three variables if instead of using ready image and binary
+# you would prefer to take a defined Preflight branch and build image and
+# binary out of this branch.
+preflight_build_image_and_binary: true
+preflight_repo: "https://github.com/redhat-openshift-ecosystem/openshift-preflight.git"
+preflight_branch: "main"
+# This namespace will be used by Preflight tool
+# during check operator tests
 preflight_namespace: preflight-testing
 preflight_custom_ca: ""
 preflight_podman_ca: ""
