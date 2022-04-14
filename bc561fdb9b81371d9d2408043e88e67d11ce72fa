@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38b21935_cd06d504",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-14T07:45:41Z",
+      "side": 1,
+      "message": "When setting build_preflight_image_and_binary\u003dtrue, both image and binary are built on the fly and correctly used for tests: https://www.distributed-ci.io/jobs/ac8a98ab-d8d0-49e3-967d-844b927a598c/jobStates \n\nCurrent problem: adding PR from preflight repo in depends-on or build-depends somehow makes the \"success\" job that does not execute any tests (i.e. does not take any variables from preflight pipeline in the account). The only problem I found is this one, investigating: https://www.distributed-ci.io/jobs/ddbb1df9-50ef-49df-8866-12d005facd54/jobStates#23501114-d97f-46dc-80c1-55acf3bf4761:file2  \n\n",
+      "revId": "bc561fdb9b81371d9d2408043e88e67d11ce72fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
