@@ -16,6 +16,23 @@
       "message": "check workload preflight",
       "revId": "d7ee96ccd3c3b8abb6f31a553e74ee3bdd229869",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e000636_c5e9da89",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-15T07:35:11Z",
+      "side": 1,
+      "message": "Success workload job for patchset 31: https://www.distributed-ci.io/jobs/4b5aedbf-b6af-4831-a7ca-6cb3faba2a84/jobStates",
+      "revId": "d7ee96ccd3c3b8abb6f31a553e74ee3bdd229869",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
