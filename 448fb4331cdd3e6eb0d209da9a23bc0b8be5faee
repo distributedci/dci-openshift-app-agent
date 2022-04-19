@@ -16,6 +16,23 @@
       "message": "The issue is that I deleted by mistake a piece of Pierre\u0027s code. The fix is working, preflight binary is now downloaded fine: https://www.distributed-ci.io/jobs/9e51aa0c-a2b6-415a-9d73-774f8cc5e869/jobStates#bc9cc5ad-4330-4d28-8087-6806fd07dbff:file16 ",
       "revId": "448fb4331cdd3e6eb0d209da9a23bc0b8be5faee",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f9aa8a6_fe6044a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-04-19T12:02:46Z",
+      "side": 1,
+      "message": "Thx Tania",
+      "revId": "448fb4331cdd3e6eb0d209da9a23bc0b8be5faee",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
