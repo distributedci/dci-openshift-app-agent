@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "084632ed_a84ea4da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-19T09:03:38Z",
+      "side": 1,
+      "message": "Hi guys, as explained in CILAB-364, this change is ready for merging, all the tests that were proposed have passed excepting the one in tnf-test-cnf using two different versions of simple-demo-operator, but the failure is not related to this feature, it is related to mirroring, so I\u0027d propose to fix it in a separate change if we really want to do that.",
+      "revId": "8874bb12f1c503f4d7ad970c1a67b20c84f44e93",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
