@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "529c2670_8b426ad0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-04-20T21:59:14Z",
+      "side": 1,
+      "message": "A newer change is in place: 24641",
+      "revId": "603cc10d5e2ba50631ed13c7f48fcc66eddd8cce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "23f57472_2cec7f17",
