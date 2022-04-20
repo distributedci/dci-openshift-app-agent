@@ -16,6 +16,23 @@
       "message": "Hi guys, as explained in CILAB-364, this change is ready for merging, all the tests that were proposed have passed excepting the one in tnf-test-cnf using two different versions of simple-demo-operator, but the failure is not related to this feature, it is related to mirroring, so I\u0027d propose to fix it in a separate change if we really want to do that.",
       "revId": "8874bb12f1c503f4d7ad970c1a67b20c84f44e93",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12d23cae_27e011ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-20T12:58:54Z",
+      "side": 1,
+      "message": "Hi Ramon, I checked all the tests that were run:\n- [OK] If preflight_operators_to_certify is empty\n- [OK] If preflight_operators_to_certify only contains the operators, that are not present in claims.json\n- [KO] If the same operators are present both in preflight_operators_to_certify and claims.json. It\u0027s not only the mirroring issue but also how we append both lists without defining any merge strategy: `preflight_operators_to_certify + preflight_operators_from_cnf_cert`.\n\nFor me, it\u0027s fine to merge like this and deal with overlap issues later on. I\u0027d propose to update the readme and maybe the commit message, to clearly state that the sync would only work when preflight_operators_to_certify does not contain any operators tested by CNF. ",
+      "revId": "8874bb12f1c503f4d7ad970c1a67b20c84f44e93",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
