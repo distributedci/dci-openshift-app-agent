@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4505dade_caf07c64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-20T06:53:33Z",
+      "side": 1,
+      "message": "Thanks Manuel! Making the change for the pipelines here too: https://github.com/dci-labs/dallas-pipelines/pull/323",
+      "revId": "4ea8d6f49152d4654b85d93dc28a4439f2bde04e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
