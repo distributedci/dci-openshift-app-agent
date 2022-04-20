@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f452e167_d2a721b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-20T16:21:12Z",
+      "side": 1,
+      "message": "I\u0027ve created the README for this role and updated a little bit the commit message, I think now it is ready.",
+      "revId": "4d62f18e7a870ade02a5d283f34067bcbed42b0d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
