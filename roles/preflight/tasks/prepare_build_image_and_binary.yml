@@ -10,6 +10,16 @@
   set_fact:
     preflight_branch: "{{ preflight_branch_name.stdout }}"
 
+- name: Display latest commits
+  shell:
+    cmd: >
+      git log
+    chdir: "{{ preflight_source_dir }}"
+
+- name: Debug source folder location
+  debug:
+    msg: "{{ preflight_source_dir }}"
+
 - name: Copy read-only source folder to set 0755 mode
   copy:
     src: "{{ preflight_source_dir }}/"
