@@ -16,6 +16,23 @@
       "message": "From my side it\u0027s fine, but I\u0027d wait for more opinions in order to confirm this.",
       "revId": "431c7d69b27a26bb078f397bbdab44cadc27b006",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "db334000_c839b822",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-22T09:22:39Z",
+      "side": 1,
+      "message": "The idea is to have the 15-minute job https://www.distributed-ci.io/jobs/0328658a-5513-462e-9336-aacff8f9c645/jobStates instead of the one-hour job: https://www.distributed-ci.io/jobs/e06a3f3b-8c1e-4288-a881-caab427423f1/jobStates by reducing the wait time for MCP from 1h to 5 min.",
+      "revId": "431c7d69b27a26bb078f397bbdab44cadc27b006",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
