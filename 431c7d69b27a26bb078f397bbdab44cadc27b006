@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a889bad_a7b7fc8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-04-22T08:54:19Z",
+      "side": 1,
+      "message": "From my side it\u0027s fine, but I\u0027d wait for more opinions in order to confirm this.",
+      "revId": "431c7d69b27a26bb078f397bbdab44cadc27b006",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
