@@ -50,6 +50,23 @@
       "message": "Hi Tatiana, does this change affect to other pipelines different than preflight, such as tnf-test-cnf or example-cnf? Just to make sure we are not breaking anything there",
       "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7deb2975_da2e92ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-26T09:01:23Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
