@@ -67,6 +67,24 @@
       "message": "recheck",
       "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a9ac25e_697405fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-26T09:02:27Z",
+      "side": 1,
+      "message": "Hi Ramon, no, the job has success status, we\u0027re not breaking anything.",
+      "parentUuid": "0a7236f8_833ca39e",
+      "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
