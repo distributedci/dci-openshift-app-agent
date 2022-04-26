@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.10-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] preflight",
       "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30025845_20b74f35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-26T08:34:40Z",
+      "side": 1,
+      "message": "The change was tested:\n\n- In NM (kudos to Pierre): there is no difference with 1.0.8: https://www.distributed-ci.io/jobs/444c8327-a747-4fb4-822e-f7815aa8833a/tests \n- In Dallas: https://www.distributed-ci.io/jobs/1765c87f-e1c9-45ed-806d-e3d50e768384/tests The tests are running fine but there is a known regression in DeployableByOlm. This regression is to be investigated in a separate story.",
+      "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
