@@ -119,6 +119,40 @@
       "message": "recheck",
       "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "577373e7_fa6cc55e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-04-26T13:47:18Z",
+      "side": 1,
+      "message": "Just a small comment from the documentation. Not a blocker for the merge, though.",
+      "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2ef7b01c_77b94db7",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-04-26T13:47:18Z",
+      "side": 1,
+      "message": "I\u0027m not so familiar with preflight, but I take we\u0027re moving to 1.1.0 as the default, right?\nI guess that includes updating this piece of documentation.\n\nActually, I don\u0027t see the variable preflight_version being used anywhere in the role. It looks like preflight_version is the old name for preflight_image, and needs being updated here.",
+      "revId": "fac5aec3e0f6492b5b88ae152dcfa2111ecc1ef6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
