@@ -16,6 +16,23 @@
       "message": "Do we have some examples for this operator.env variable in order to update the preflight README regarding preflight_operators_to_check structure?",
       "revId": "e3bc7890803fa13b3d6fd3a7f245464e068ab9cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79c187fe_084bf7de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-04-27T18:31:22Z",
+      "side": 1,
+      "message": "I am putting this change in standby, the preflight test \"isrunnable\" was removed.\nI don\u0027t close it yet, the test maybe reintegrate preflight in the next releases. ",
+      "revId": "e3bc7890803fa13b3d6fd3a7f245464e068ab9cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
