@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29514926_0e8d565d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-28T14:29:42Z",
+      "side": 1,
+      "message": "The idea is to fail check operator tests if the results-junit.xml file was not generated, like here: https://www.distributed-ci.io/jobs/960ad924-8404-4d89-b45b-81a23be4d505/jobStates#2590f59b-c27b-4bb7-8353-537d8c60e275:file87 \nUsually, that means that tests drastically failed at the very beginning.\n\nThe tests are ongoing here, the job should fail on \"Fail if junit file is absent\": https://www.distributed-ci.io/jobs/14eb6163-bc69-4ea7-88b7-da387d49258b/jobStates ",
+      "revId": "807f283a2b7153e7860808af98180ed14e79a0af",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
