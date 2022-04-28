@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cba3f7c9_4188dfe8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-04-28T21:19:15Z",
+      "side": 1,
+      "message": "That\u0027s sort of urgent fix - we need it to be merged before Preflight team would merge #588, in order not to break our CI tests in Preflight repository.\n\nThis PR tries to address two issues seen in this job: https://www.distributed-ci.io/jobs/960ad924-8404-4d89-b45b-81a23be4d505/jobStates#2590f59b-c27b-4bb7-8353-537d8c60e275:file87\n- Podman auth was changed for check operator tests in Preflight PR #588.\n- Job should fail if result-junit.xml file wasn\u0027t generated - that usually means major disaster during preflight run.\n\nBoth issues are fixed:\n- Here we see that auth is back to be fine: https://www.distributed-ci.io/jobs/7a30fdcd-4dff-4412-a1fc-cb31fd8d7bd7/jobStates#85482d64-cf62-4941-8781-9b053089ad79:file87\n- Here we don\u0027t have auth fix, and we see that check of junit file presence works fine: https://www.distributed-ci.io/jobs/3672e008-c3f5-479f-975a-545e1d94c070/jobStates#5e76cd61-5c6e-414b-a550-7951a1442873:file92",
+      "revId": "71fec6f300037d3908f3eab8fcd7e6fe2fb970a1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
