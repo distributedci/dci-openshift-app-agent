@@ -70,4 +70,17 @@
     api_version: v1
     kind: Namespace
     state: absent
+
+- name: Check the presence of junit file with test results
+  vars:
+    preflight_junit: "{{ job_logs.path }}/preflight_operator_{{ operator.name }}_{{ operator.version }}_results-junit.xml"
+  stat: "{{ preflight_junit }}"
+  register: preflight_junit_exists
+
+- name: Fail if junit file is absent
+  vars:
+    preflight_junit: "{{ job_logs.path }}/preflight_operator_{{ operator.name }}_{{ operator.version }}_results-junit.xml"
+  fail:
+    msg: "results-junit file is absent, it seems like the tests failed: {{ preflight_junit }}"
+  when: not preflight_junit_exists.stat.exists
 ...
