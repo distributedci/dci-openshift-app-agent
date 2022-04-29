@@ -25,12 +25,12 @@
 
 - name: Build Preflight image
   shell:
-    cmd: |
-      podman build . \
-      -t {{ preflight_image }} \
-      --build-arg=release_tag={{ preflight_branch }}
-      podman push \
-      --authfile {{ partner_creds }} \
+    cmd: >
+      podman build .
+      -t {{ preflight_image }}
+      --build-arg=release_tag={{ preflight_branch }} &&
+      podman push
+      --authfile {{ partner_creds }}
       {{ preflight_image }}
     chdir: "{{ preflight_tmp_dir.path }}/preflight-source"
 
@@ -45,13 +45,13 @@
 
 - name: Build Preflight binary
   shell:
-    cmd: |
-      podman build . \
-      -t {{ preflight_builder_image }} \
-      -f Dockerfile_builder
-      podman cp \
-      $(podman create --rm {{ preflight_builder_image }}):/go/src/preflight/preflight \
-      ./preflight
+    cmd: >
+      podman build .
+      -t {{ preflight_builder_image }}
+      -f Dockerfile_builder &&
+      podman cp
+      $(podman create --rm {{ preflight_builder_image }}):/go/src/preflight/preflight
+      ./preflight &&
       chmod +x preflight
     chdir: "{{ preflight_tmp_dir.path }}/preflight-source"
 
