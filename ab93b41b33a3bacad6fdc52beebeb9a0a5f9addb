@@ -16,6 +16,23 @@
       "message": "check workload preflight-green",
       "revId": "ab93b41b33a3bacad6fdc52beebeb9a0a5f9addb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "395c871b_029428fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-05-03T01:07:29Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "ab93b41b33a3bacad6fdc52beebeb9a0a5f9addb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
