@@ -9,3 +9,15 @@
   file:
     path: "{{ opm_tmp_dir.path }}"
     state: absent
+
+- name: "Run common logging process"
+  include_tasks: common_logging.yml
+
+- name: Delete namespace
+  k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ dci_openshift_app_ns }}"
+    state: absent
+  when:
+    - dci_teardown
