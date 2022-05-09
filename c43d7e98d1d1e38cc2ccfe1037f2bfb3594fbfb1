@@ -16,6 +16,24 @@
       "message": "With the extraction of the logging from the teardown, there\u0027s no need to change the order of the teardown, right?",
       "revId": "c43d7e98d1d1e38cc2ccfe1037f2bfb3594fbfb1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8e3b630_6a4832eb",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-09T17:46:35Z",
+      "side": 1,
+      "message": "True, I\u0027ve changed it again",
+      "parentUuid": "c5e94593_10f26c31",
+      "revId": "c43d7e98d1d1e38cc2ccfe1037f2bfb3594fbfb1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
