@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3fc3957_20031991",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-05-09T15:51:35Z",
+      "side": 1,
+      "message": "I think you\u0027re right on the purpose of this change, I think the purpose of teardown is to destroy anything that was created for testing purposes. IMO, logging is not part of that.\nWould you consider taking the logging out of the teardown and just add it as the first action to do in the rescue sections?",
+      "revId": "ce4802d6691de4addafa937a0a2aef0d041ee73b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
