@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad149f43_7049ca51",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-09T13:42:17Z",
+      "side": 1,
+      "message": "Tests in Dallas are ok: https://www.distributed-ci.io/jobs/66aa3810-9825-4247-a9ea-69987cb09c5e/jobStates\n\nTrying to fix libvirt tests.",
+      "revId": "1f39dc56277b7d25e9abfa3400d106035f6d9deb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
