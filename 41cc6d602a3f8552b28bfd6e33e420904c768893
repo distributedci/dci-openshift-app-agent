@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b07414dc_a68ae091",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-09T19:31:17Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "70ab43d0_5dcdb92f",
+      "revId": "41cc6d602a3f8552b28bfd6e33e420904c768893",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5ea2cbdd_5ce8eea5",
@@ -35,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "908b72c8_ae2a20a2",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 199,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-09T19:31:17Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5ea2cbdd_5ce8eea5",
+      "revId": "41cc6d602a3f8552b28bfd6e33e420904c768893",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0b35ce8c_8dcb6212",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-05-09T18:56:33Z",
       "side": 1,
       "message": "ditto",
+      "revId": "41cc6d602a3f8552b28bfd6e33e420904c768893",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a2dacf86_55c0ed60",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 300,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-09T19:31:17Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0b35ce8c_8dcb6212",
       "revId": "41cc6d602a3f8552b28bfd6e33e420904c768893",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
