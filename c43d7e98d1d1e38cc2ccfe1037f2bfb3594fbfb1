@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5e94593_10f26c31",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-05-09T17:26:31Z",
+      "side": 1,
+      "message": "With the extraction of the logging from the teardown, there\u0027s no need to change the order of the teardown, right?",
+      "revId": "c43d7e98d1d1e38cc2ccfe1037f2bfb3594fbfb1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
