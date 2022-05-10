@@ -39,6 +39,30 @@
       },
       "revId": "827c2e8c6150c5fedcd1f03276b4beaa1f68ccc2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1d3da842_d0fc2157",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 186,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-10T14:31:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0b1300f7_13be93ba",
+      "range": {
+        "startLine": 186,
+        "startChar": 43,
+        "endLine": 186,
+        "endChar": 47
+      },
+      "revId": "827c2e8c6150c5fedcd1f03276b4beaa1f68ccc2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
