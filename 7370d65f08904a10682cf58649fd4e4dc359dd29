@@ -16,6 +16,41 @@
       "message": "Should we keep the original execution.log now that we have the tarball?",
       "revId": "7370d65f08904a10682cf58649fd4e4dc359dd29",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "83390d8d_c1115609",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-10T16:00:36Z",
+      "side": 1,
+      "message": "I would prefer to leave it because, at least from my point of view, it is quicker to check the results by looking at execution.log through the DCI GUI. If using the tar.gz file, you need to download it.\n\nThis change intends to solve the problem in which execution.log is not uploaded to DCI, which is happening for some partners. In that case, they should have the tar.gz file to see the results of the execution.",
+      "parentUuid": "1d0014c2_5d1178b1",
+      "revId": "7370d65f08904a10682cf58649fd4e4dc359dd29",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ada9a9f7_7259777d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-10T16:00:36Z",
+      "side": 1,
+      "message": "\u003e Patch Set 2:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/9170f9cf-51e5-470b-b9a3-f8280e18e286/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/24841/\n\nDon\u0027t know why this is marked as failure, if you see the log, it has passed and the tar.gz file is uploaded correctly.",
+      "revId": "7370d65f08904a10682cf58649fd4e4dc359dd29",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
