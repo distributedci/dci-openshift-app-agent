@@ -51,6 +51,24 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/9170f9cf-51e5-470b-b9a3-f8280e18e286/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/24841/\n\nDon\u0027t know why this is marked as failure, if you see the log, it has passed and the tar.gz file is uploaded correctly.",
       "revId": "7370d65f08904a10682cf58649fd4e4dc359dd29",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2782da1e_dfc40776",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-05-10T16:04:16Z",
+      "side": 1,
+      "message": "It is a big file. It doesn\u0027t work well in browser. I downloaded the file anyway.",
+      "parentUuid": "83390d8d_c1115609",
+      "revId": "7370d65f08904a10682cf58649fd4e4dc359dd29",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
