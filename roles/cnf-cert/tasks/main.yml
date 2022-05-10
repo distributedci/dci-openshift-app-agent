@@ -180,4 +180,10 @@
   args:
     chdir: "{{ tnf_git_dir.path }}/test-network-function"
 
+- name: Compress execution.log file
+  archive:
+    path: "{{ tnf_tempdir.path }}/execution.log"
+    dest: "{{ tnf_tempdir.path }}/execution.tar.gz"
+    format: gz
+
 ...
