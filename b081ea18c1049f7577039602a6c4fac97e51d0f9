@@ -84,6 +84,23 @@
       "message": "One minor observation from my side, the rest looks fine",
       "revId": "b081ea18c1049f7577039602a6c4fac97e51d0f9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b2fc2d3_83a01360",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-05-16T13:26:55Z",
+      "side": 1,
+      "message": "This task will display the api-token right? Should we enable the \u0027no_log\u0027 option or is it fine to display this token?",
+      "revId": "b081ea18c1049f7577039602a6c4fac97e51d0f9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
