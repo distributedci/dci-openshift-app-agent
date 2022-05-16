@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "998cbe8b_3423e017",
+        "filename": "plays/tests.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-16T12:06:17Z",
+      "side": 0,
+      "message": "Should this role be also removed from dci-openshift-app-agent?",
+      "range": {
+        "startLine": 34,
+        "startChar": 10,
+        "endLine": 34,
+        "endChar": 15
+      },
+      "revId": "5aa35f0b8303d5c85b02e97b891533b39e8f8e98",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
