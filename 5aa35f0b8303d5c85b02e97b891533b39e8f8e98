@@ -22,6 +22,30 @@
       },
       "revId": "5aa35f0b8303d5c85b02e97b891533b39e8f8e98",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5bcb18c3_3c936777",
+        "filename": "plays/tests.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-16T12:31:54Z",
+      "side": 0,
+      "message": "Hi Ramon, no, this role will be used to submit the `check operator` results to Pyxis. \n\nIt\u0027s a bit of a mess by design:\n- check container tests have their out-of-box submission. I integrate it into this CR.\n- check operator tests require an external submission. They will be submitted using roles/pyxis. Currently, it\u0027s not working because Pyxis API was changed, and I temporarily deactivated its invocation.",
+      "parentUuid": "998cbe8b_3423e017",
+      "range": {
+        "startLine": 34,
+        "startChar": 10,
+        "endLine": 34,
+        "endChar": 15
+      },
+      "revId": "5aa35f0b8303d5c85b02e97b891533b39e8f8e98",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
