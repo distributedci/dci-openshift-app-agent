@@ -46,6 +46,30 @@
       },
       "revId": "5aa35f0b8303d5c85b02e97b891533b39e8f8e98",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92731644_b1fa229f",
+        "filename": "plays/tests.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-16T12:40:07Z",
+      "side": 0,
+      "message": "Okey, understood, thanks!",
+      "parentUuid": "5bcb18c3_3c936777",
+      "range": {
+        "startLine": 34,
+        "startChar": 10,
+        "endLine": 34,
+        "endChar": 15
+      },
+      "revId": "5aa35f0b8303d5c85b02e97b891533b39e8f8e98",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
