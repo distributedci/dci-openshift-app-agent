@@ -33,6 +33,23 @@
       "message": "Looks good to me.  I\u0027ll post this link to the rest of the squad to look at too.",
       "revId": "d239de51be117998eb42377176fc822619de0742",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "33448b01_1cfaaae2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-05-20T02:49:28Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "d239de51be117998eb42377176fc822619de0742",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
