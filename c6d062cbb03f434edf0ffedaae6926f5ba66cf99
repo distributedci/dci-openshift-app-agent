@@ -33,6 +33,23 @@
       "message": "Tests are OK:\n- disconnected env: https://www.distributed-ci.io/jobs/42372270-16bd-4381-b47b-514e89866306/tests\n- connected env: https://www.distributed-ci.io/jobs/90cdd864-80b3-4aa5-9606-5ae5bd71f597/jobStates\n\nReady to be merged.",
       "revId": "c6d062cbb03f434edf0ffedaae6926f5ba66cf99",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "caea8017_6fa47f47",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-23T10:14:48Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "c6d062cbb03f434edf0ffedaae6926f5ba66cf99",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
