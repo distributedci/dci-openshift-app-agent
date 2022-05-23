@@ -50,6 +50,23 @@
       "message": "recheck",
       "revId": "d239de51be117998eb42377176fc822619de0742",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9449b67_058b3619",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-23T09:47:46Z",
+      "side": 1,
+      "message": "LGTM, Dallas job is passing: https://www.distributed-ci.io/jobs/5f50692e-421e-474b-85bf-4fbe2233a5e0/jobStates ",
+      "revId": "d239de51be117998eb42377176fc822619de0742",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
