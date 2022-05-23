@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.10-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] preflight",
       "revId": "c6d062cbb03f434edf0ffedaae6926f5ba66cf99",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53aa4889_6f0f7771",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-23T08:17:53Z",
+      "side": 1,
+      "message": "Tests are OK:\n- disconnected env: https://www.distributed-ci.io/jobs/42372270-16bd-4381-b47b-514e89866306/tests\n- connected env: https://www.distributed-ci.io/jobs/90cdd864-80b3-4aa5-9606-5ae5bd71f597/jobStates\n\nReady to be merged.",
+      "revId": "c6d062cbb03f434edf0ffedaae6926f5ba66cf99",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
