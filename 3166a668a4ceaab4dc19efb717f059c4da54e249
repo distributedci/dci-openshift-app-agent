@@ -16,6 +16,23 @@
       "message": "Don\u0027t know why the DCI jobs were marked as failure, but they passed, in fact:\n\nv3.3.3 - https://www.distributed-ci.io/jobs/1cdcf204-dcff-43e6-ad57-aec8eec0a9c1/jobStates\nv4.0.0 - https://www.distributed-ci.io/jobs/76c7fedc-9edb-4196-af9c-27bcfc3da2ff/jobStates\n\nThis is ready to be merged",
       "revId": "3166a668a4ceaab4dc19efb717f059c4da54e249",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84453f8b_d3373182",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 992
+      },
+      "writtenOn": "2022-05-24T16:13:01Z",
+      "side": 1,
+      "message": "Looks good.  Forces them to either use v3.3.3 or \u003e\u003d4.0.0. ",
+      "revId": "3166a668a4ceaab4dc19efb717f059c4da54e249",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
