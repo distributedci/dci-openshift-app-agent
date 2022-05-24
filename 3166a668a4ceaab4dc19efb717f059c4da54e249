@@ -67,6 +67,24 @@
       "message": "Is this fact only set when using specifically v3.3.3? or should be defined in any version v3.x.x ?",
       "revId": "3166a668a4ceaab4dc19efb717f059c4da54e249",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "234b0f0e_8cf8cab7",
+        "filename": "roles/sync-cnf-cert-and-preflight/tasks/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-24T17:23:44Z",
+      "side": 1,
+      "message": "Yes, it needs to be v3.3.3 because this feature was not included in previous versions like v3.3.2, etc. Of course, when removing backwards compatibility to only use v4.x.x, the whole task will be removed",
+      "parentUuid": "5ad850c8_1fb75fa9",
+      "revId": "3166a668a4ceaab4dc19efb717f059c4da54e249",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
