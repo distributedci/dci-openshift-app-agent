@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee70df1d_30d9fe10",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-25T08:51:29Z",
+      "side": 1,
+      "message": "This one looks fine. I\u0027d like to include a couple of things:\n-Can we redefine the docs (README) to redirect to d-o-a common-role to see the info related to the three variables X_X_to_components we are using? (if the approach commented in comments is finally followed)\n-Can we do a quick test on dci-openshift-app-agent over an already running cluster to verify this works? (we\u0027ll need to locate the common-role in /var/lib/dci, I guess, for this test)",
+      "revId": "434ad197ccd236742d8efcd9388485dca5a5ea30",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
