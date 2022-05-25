@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32e0e1c2_fd4757b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-25T17:21:06Z",
+      "side": 1,
+      "message": "Again, tested jobs are working on dallas, they have passed, even though it said FAILURE",
+      "revId": "4c8bb8b7ac3ace96fa8103c0ad76e900a78125fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
