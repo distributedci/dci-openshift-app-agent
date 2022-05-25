@@ -16,6 +16,24 @@
       "message": "This one looks fine. I\u0027d like to include a couple of things:\n-Can we redefine the docs (README) to redirect to d-o-a common-role to see the info related to the three variables X_X_to_components we are using? (if the approach commented in comments is finally followed)\n-Can we do a quick test on dci-openshift-app-agent over an already running cluster to verify this works? (we\u0027ll need to locate the common-role in /var/lib/dci, I guess, for this test)",
       "revId": "434ad197ccd236742d8efcd9388485dca5a5ea30",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67f79fc7_8d9ff6a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-05-25T13:37:04Z",
+      "side": 1,
+      "message": "Ramon, sure I\u0027ll include a note in the README to point to the new role README in the common-roles.\nAlso yes, I can run a test in a running cluster too, the new role once merged and packed in the RPM will go to /usr/share/dci/roles/ in the ansible controller node, but I think we can validate results in a running cluster without merging, as we depend on 25101, and it seems it\u0027s pulling the role from common-roles in that PR. I can see the components I passed in the d-o-a-a job:  https://www.distributed-ci.io/jobs/6326032e-7f9b-4d81-9c43-c9239f44ccf7/jobStates",
+      "parentUuid": "ee70df1d_30d9fe10",
+      "revId": "434ad197ccd236742d8efcd9388485dca5a5ea30",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
