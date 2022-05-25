@@ -16,6 +16,23 @@
       "message": "tests are finally ok: https://www.distributed-ci.io/jobs/70a51b45-bc9a-409d-818c-e76356d534a2/jobStates#b0038229-3d05-4e26-bb60-59b4f269f848:file48 ",
       "revId": "5d9546aad51b3fc66409c49567e41312c6bfadaa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbf45f92_5826c1db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-25T11:54:51Z",
+      "side": 1,
+      "message": "Thanks Tatiana!",
+      "revId": "5d9546aad51b3fc66409c49567e41312c6bfadaa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
