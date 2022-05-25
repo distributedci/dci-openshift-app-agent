@@ -16,6 +16,23 @@
       "message": "Thanks Tatiana for catching this, I forgot to include this condition because we were on a hurry yesterday with the partners",
       "revId": "2fd543923b3960bd36488c01ff05210d0daeb990",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f45e4ba2_97750c1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-25T08:48:42Z",
+      "side": 1,
+      "message": "Tested fix, it worked: https://www.distributed-ci.io/jobs/4e6807ff-8fb4-42c4-9bdf-0e08af7a0be7/jobStates#ea802d33-f6f7-4d86-a375-20e9b0549e2d:file48 \n\nThe overall job failed because claims.json was empty but that\u0027s another unrelated problem.",
+      "revId": "2fd543923b3960bd36488c01ff05210d0daeb990",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
