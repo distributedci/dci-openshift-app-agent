@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a249f52_ede84b22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-25T08:14:36Z",
+      "side": 1,
+      "message": "Thanks Tatiana for catching this, I forgot to include this condition because we were on a hurry yesterday with the partners",
+      "revId": "2fd543923b3960bd36488c01ff05210d0daeb990",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
