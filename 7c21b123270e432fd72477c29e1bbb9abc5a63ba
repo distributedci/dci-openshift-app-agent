@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ae85df0_8909623a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-26T10:57:31Z",
+      "side": 1,
+      "message": "After validating it is working on dallas:\n\n-v4.0.0: https://www.distributed-ci.io/jobs/3b73e3f4-04f3-4ce0-b9b9-3076c9055bed/jobStates\n-HEAD: https://www.distributed-ci.io/jobs/ef605a2e-5922-4d24-b0ce-4b85a7f9a530/jobStates\n\nI will continue testing on libvirt (with the config provided in the commit msg, mimic-ing the tnf-test-cnf pipeline) and also testing example-cnf (v4.0.0 and HEAD).",
+      "revId": "7c21b123270e432fd72477c29e1bbb9abc5a63ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
