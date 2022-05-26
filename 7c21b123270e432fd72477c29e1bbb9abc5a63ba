@@ -16,6 +16,23 @@
       "message": "After validating it is working on dallas:\n\n-v4.0.0: https://www.distributed-ci.io/jobs/3b73e3f4-04f3-4ce0-b9b9-3076c9055bed/jobStates\n-HEAD: https://www.distributed-ci.io/jobs/ef605a2e-5922-4d24-b0ce-4b85a7f9a530/jobStates\n\nI will continue testing on libvirt (with the config provided in the commit msg, mimic-ing the tnf-test-cnf pipeline) and also testing example-cnf (v4.0.0 and HEAD).",
       "revId": "7c21b123270e432fd72477c29e1bbb9abc5a63ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da21e59b_55c4e280",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-26T13:57:34Z",
+      "side": 1,
+      "message": "Working in example-cnf too:\n\n-v4.0.0: https://www.distributed-ci.io/jobs/a5a056a5-25f4-4ad5-b296-06f31dbdab9f/jobStates/\n-HEAD: https://www.distributed-ci.io/jobs/ce3feb2c-83a3-4cc0-86ff-47a5a0af3b78/jobStates/\n\nAnd with the new patchset, it should pass the libvirt job. In any case, CNF Cert Suite execution passed as well: https://www.distributed-ci.io/jobs/9b6b01ef-15cc-432b-8dab-f2dc0d41e371/jobStates",
+      "revId": "7c21b123270e432fd72477c29e1bbb9abc5a63ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
