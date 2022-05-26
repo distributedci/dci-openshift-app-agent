@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2c20799_87f604dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-26T09:59:38Z",
+      "side": 1,
+      "message": "LGTM, I\u0027ve seen everything is fine in the d-o-a-a libvirt job",
+      "revId": "45ace8b4a48356c974f2017c38f015880c669885",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
