@@ -155,6 +155,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "10b76887_de436a71",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-30T08:52:25Z",
+      "side": 1,
+      "message": "Hi Ramon, good for me, let\u0027s merge",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "38f8c174_055f7e27",
