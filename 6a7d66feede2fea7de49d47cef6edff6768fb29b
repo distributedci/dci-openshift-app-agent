@@ -120,6 +120,41 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e17b8e2_675f765f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-30T08:42:45Z",
+      "side": 1,
+      "message": "Hi Tatiana, you were looking at HEAD branch when checking the disconnected environment test results. With v4.0.0, the results are exactly the same than in connected environment: https://www.distributed-ci.io/jobs/3b73e3f4-04f3-4ce0-b9b9-3076c9055bed/jobStates\n\nIn the case of the HEAD branch, there are a lot of failures currently, this is a thing I am reviewing with CNF Cert Suite team right now",
+      "parentUuid": "418e430f_9a8cd5f8",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc49bf12_a229fc63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-30T08:42:45Z",
+      "side": 1,
+      "message": "Thanks Tatiana for the feedback, I\u0027ve answered you and I\u0027ll wait some minutes in case you want to reply back. If not, I\u0027ll merge this before lunch",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "38f8c174_055f7e27",
@@ -137,6 +172,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5a7c6f8_c96df5fc",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-30T08:42:45Z",
+      "side": 1,
+      "message": "it is not needed, we can leave it in this way and if we need to add something in the future (in the same way than for acceptedKernelTaints), we can add it in a separate change.",
+      "parentUuid": "38f8c174_055f7e27",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6ca5efa5_345f5237",
@@ -150,6 +203,24 @@
       "writtenOn": "2022-05-30T08:21:48Z",
       "side": 1,
       "message": "what do you think about defining the version in the role\u0027s defaults?",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9cbc0a2d_bdd682e5",
+        "filename": "roles/sync-cnf-cert-and-preflight/tasks/main.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-30T08:42:45Z",
+      "side": 1,
+      "message": "I\u0027d prefer not to do it, because these conditions are there in order to guarantee backwards compatibility. When the only partner still using v3.3.3 is moved to v4.0.0, I\u0027ll delete all this code, so I\u0027d prefer to modify the less tasks possible, that\u0027s why I just put the default there",
+      "parentUuid": "6ca5efa5_345f5237",
       "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
