@@ -101,6 +101,57 @@
       "message": "recheck",
       "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "418e430f_9a8cd5f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-30T08:21:48Z",
+      "side": 1,
+      "message": "Hi Ramon,\n\nI see that the tests in the connected environment are quite green 35 OK / 7 skipped / 4 KO: https://www.distributed-ci.io/jobs/0d42547a-8162-453f-b132-574a4f1fc607/jobStates\n\nIn disconnected it seems to be less perfect though: 17 OK / 15 skipped / 15 KO\nhttps://www.distributed-ci.io/jobs/ce3feb2c-83a3-4cc0-86ff-47a5a0af3b78/jobStates\nIs it related to some mirroring issues, or just the set of operators to test is different? ",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "38f8c174_055f7e27",
+        "filename": "roles/cnf-cert/templates/tnf_config.yml.j2",
+        "patchSetId": 4
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-30T08:21:48Z",
+      "side": 1,
+      "message": "should we add here some value, like \"true\" or \"yes\"?",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ca5efa5_345f5237",
+        "filename": "roles/sync-cnf-cert-and-preflight/tasks/main.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-05-30T08:21:48Z",
+      "side": 1,
+      "message": "what do you think about defining the version in the role\u0027s defaults?",
+      "revId": "6a7d66feede2fea7de49d47cef6edff6768fb29b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
