@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7ff8728_f0fe063f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-05-31T23:02:17Z",
+      "side": 1,
+      "message": "This failed because the new rpm was not installed on the jumphost 😞",
+      "revId": "e9d581af6da02af15356b1ce4996b3d9b9a421b9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
