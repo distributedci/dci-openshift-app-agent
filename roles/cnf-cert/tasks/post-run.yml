@@ -1,38 +1,36 @@
 ---
-
 # Deleting resources created by the CNF Cert Suite to support the execution
 # Namespace not deleted here, even if being the same used for cnf-cert. To be deleted in partner hooks
 - name: Clean CNF Cert Suite resources
   block:
+    - name: Check if debug daemonset exists
+      community.kubernetes.k8s_info:
+        api_version: v1
+        kind: DaemonSet
+        name: debug
+        namespace: default
+      register: debug_daemonset
 
-  - name: Check if debug daemonset exists
-    k8s_info:
-      api_version: v1
-      kind: DaemonSet
-      name: debug
-      namespace: default
-    register: debug_daemonset
+    - name: Delete the debug daemonSet
+      shell: |
+        set -ex
+        {{ oc_tool_path }} delete daemonset debug -n default
+      when: debug_daemonset.resources|length > 0
 
-  - name: Delete the debug daemonSet
-    shell: |
-      set -ex
-      {{ oc_tool_path }} delete daemonset debug -n default
-    when: debug_daemonset.resources|length > 0
+    - name: Check if tnf default namespace exists
+      community.kubernetes.k8s_info:
+        api_version: v1
+        kind: Namespace
+        name: tnf
+      register: tnf_namespace
 
-  - name: Check if tnf default namespace exists
-    k8s_info:
-      api_version: v1
-      kind: Namespace
-      name: tnf
-    register: tnf_namespace
-
-  - name: Delete tnf namespace
-    k8s:
-      api_version: v1
-      kind: Namespace
-      name: tnf
-      state: absent
-    when: tnf_namespace.resources|length > 0
+    - name: Delete tnf namespace
+      community.kubernetes.k8s:
+        api_version: v1
+        kind: Namespace
+        name: tnf
+        state: absent
+      when: tnf_namespace.resources|length > 0
 
   when: tnf_postrun_delete_resources|bool
 
@@ -46,5 +44,3 @@
   when:
     - tnf_git_dir is defined
     - tnf_git_dir.path is defined
-
-...

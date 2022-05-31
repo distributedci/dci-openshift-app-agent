@@ -14,7 +14,7 @@
   when: not dci_disconnected | default(false) | bool
 
 - name: Create preflight namespace
-  k8s:
+  community.kubernetes.k8s:
     name: "{{ preflight_namespace }}"
     api_version: v1
     kind: Namespace
@@ -81,7 +81,7 @@
     state: absent
 
 - name: Delete preflight namespace
-  k8s:
+  community.kubernetes.k8s:
     name: "{{ preflight_namespace }}"
     api_version: v1
     kind: Namespace
@@ -100,4 +100,3 @@
   fail:
     msg: "results-junit file is absent, it seems like the tests failed: {{ preflight_junit }}"
   when: not preflight_junit_exists.stat.exists
-...
