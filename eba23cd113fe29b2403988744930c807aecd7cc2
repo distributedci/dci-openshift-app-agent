@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "869b1874_0b2dc155",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-31T09:34:34Z",
+      "side": 1,
+      "message": "I\u0027m quite interested to have it tested with tnf-test-cnf, I\u0027ll be checking your tests!\nIf it works, maybe we can move this approach to example-cnf too, because we are doing more or less the same there",
+      "revId": "eba23cd113fe29b2403988744930c807aecd7cc2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18f07151_467d872b",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-05-31T09:34:34Z",
+      "side": 1,
+      "message": "should be subscriptionName?",
+      "range": {
+        "startLine": 71,
+        "startChar": 21,
+        "endLine": 71,
+        "endChar": 36
+      },
+      "revId": "eba23cd113fe29b2403988744930c807aecd7cc2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
