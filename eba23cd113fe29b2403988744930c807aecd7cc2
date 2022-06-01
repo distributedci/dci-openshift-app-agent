@@ -39,6 +39,30 @@
       },
       "revId": "eba23cd113fe29b2403988744930c807aecd7cc2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38de15fa_61151c8a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-01T21:33:55Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "18f07151_467d872b",
+      "range": {
+        "startLine": 71,
+        "startChar": 21,
+        "endLine": 71,
+        "endChar": 36
+      },
+      "revId": "eba23cd113fe29b2403988744930c807aecd7cc2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
