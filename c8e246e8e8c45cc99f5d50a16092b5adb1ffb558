@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df251690_652e5c8d",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-01T21:17:27Z",
+      "side": 1,
+      "message": "retries needs until condition otherwise it will happen only once[0]\n\n[0] https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html#retrying-a-task-until-a-condition-is-met",
+      "revId": "c8e246e8e8c45cc99f5d50a16092b5adb1ffb558",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b0d5776_d1a8c863",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-01T21:17:27Z",
+      "side": 1,
+      "message": "retries.. until",
+      "revId": "c8e246e8e8c45cc99f5d50a16092b5adb1ffb558",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97d077eb_9794c6d6",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-01T21:17:27Z",
+      "side": 1,
+      "message": "This is not the same as example-cnf, we can remove the comment",
+      "revId": "c8e246e8e8c45cc99f5d50a16092b5adb1ffb558",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
