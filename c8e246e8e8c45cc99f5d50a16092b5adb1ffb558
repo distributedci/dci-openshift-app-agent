@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f368bf42_6ca1a31a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-01T21:33:10Z",
+      "side": 1,
+      "message": "Thanks, no need to retry here.",
+      "parentUuid": "df251690_652e5c8d",
+      "revId": "c8e246e8e8c45cc99f5d50a16092b5adb1ffb558",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6b0d5776_d1a8c863",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-06-01T21:17:27Z",
       "side": 1,
       "message": "retries.. until",
+      "revId": "c8e246e8e8c45cc99f5d50a16092b5adb1ffb558",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b5847aba_10946484",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-01T21:33:10Z",
+      "side": 1,
+      "message": "Thanks, no need to retry here.",
+      "parentUuid": "6b0d5776_d1a8c863",
       "revId": "c8e246e8e8c45cc99f5d50a16092b5adb1ffb558",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
