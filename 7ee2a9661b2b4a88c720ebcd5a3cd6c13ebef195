@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88632a29_636c60b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-01T10:45:15Z",
+      "side": 1,
+      "message": "The change is fine for me, but I\u0027ll wait for some more opinions before merging",
+      "revId": "7ee2a9661b2b4a88c720ebcd5a3cd6c13ebef195",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
