@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.7-vcp example-cnf",
       "revId": "aa6a00525cd9610f67ff606d685a6651fd035fc1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49a3f0b6_052d6233",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-01T15:53:11Z",
+      "side": 1,
+      "message": "Hi Tony, do we somehow have different versions? I\u0027m trying to understand, from requirements it seems like we import a community version already\n\n```\n---\ncollections:\n  - name: community.kubernetes\n    version: 0.11.0\n```",
+      "revId": "aa6a00525cd9610f67ff606d685a6651fd035fc1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
