@@ -28,11 +28,10 @@
     check container
     {{ current_operator_image }}
     {{ preflight_podman_auth_for_binary | default('') }}
-    {{ pyxis_auth_container | default('') }}
   register: preflight_container_output
   # Compared to GA, a non-0 exit code is only returned on preflight issues and not check failures
   ignore_errors: true
-  no_log: true
+  # no_log: true
 
 - name: Upload logs for preflight check container into DCI
   vars:
