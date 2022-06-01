@@ -33,6 +33,24 @@
       "message": "Hi Tony, do we somehow have different versions? I\u0027m trying to understand, from requirements it seems like we import a community version already\n\n```\n---\ncollections:\n  - name: community.kubernetes\n    version: 0.11.0\n```",
       "revId": "aa6a00525cd9610f67ff606d685a6651fd035fc1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc379b06_95f33420",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-01T19:01:52Z",
+      "side": 1,
+      "message": "Great point Tatiana!\n\nSome of the requirements are outdated, some others are used as examples, and some others are ignored. The app-agent already has a dependency on the community kubernetes collection: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/dci-openshift-app-agent.spec#L23\n\nThe RPM version is 1.1.1. Then we don\u0027t need those requirements.yml, IMO we need to document them better in the README, as the only ones installed afaik are the ones coming in tests/requirements.yml the rest are ignored.",
+      "parentUuid": "49a3f0b6_052d6233",
+      "revId": "aa6a00525cd9610f67ff606d685a6651fd035fc1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
