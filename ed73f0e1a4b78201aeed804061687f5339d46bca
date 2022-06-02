@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "17d52fcf_b4a459b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-02T19:11:27Z",
+      "side": 1,
+      "message": "I talked with Tony about this role in DOAA today with Tony, we should remove it and just use the one that is already shared in DOA.\n\nThere is already a dependency between the RPM, so no need to have them duplicated.",
+      "revId": "ed73f0e1a4b78201aeed804061687f5339d46bca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
