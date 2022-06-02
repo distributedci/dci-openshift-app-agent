@@ -51,6 +51,24 @@
       "parentUuid": "49a3f0b6_052d6233",
       "revId": "aa6a00525cd9610f67ff606d685a6651fd035fc1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2840e015_62aba831",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-02T13:20:21Z",
+      "side": 1,
+      "message": "Thank you for the clarifications, Tony.\n\n\u003e Then we don\u0027t need those requirements.yml, IMO we need to document them better in the README, as the only ones installed afaik are the ones coming in tests/requirements.yml the rest are ignored.\n\nLet\u0027s delete all these requirements.yml as well then?",
+      "parentUuid": "dc379b06_95f33420",
+      "revId": "aa6a00525cd9610f67ff606d685a6651fd035fc1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
