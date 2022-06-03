@@ -50,6 +50,23 @@
       "message": "check dallas ocp-4.8-vanilla  openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] openshift-vanilla:ansible_extravars\u003ddci_gits_to_components:[/tmp/community.cockroachdb/]",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "462007d5_5c24650d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-03T08:43:26Z",
+      "side": 1,
+      "message": "Hi all, I don\u0027t know if we should do it. In fact, Manuel already removed it in this change: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25102, but recreated the role on the app-agent in this change: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25149, because there are some partners that don\u0027t have dci-openshift-agent installed, so that they cannot use the common roles exposes there and all the d-o-a-a jobs failed because of that.\nI don\u0027t know if there\u0027s a proper solution rather than duplicating the role as it is right now, but maybe we should discuss about this before merging this, because this change will cause some partners to have their jobs failed.",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
