@@ -50,6 +50,23 @@
       "message": "Need one more review to merge Preflight documentation.",
       "revId": "cdac066e1cc05dc0546f81d8644acf5a85326892",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c3c379b_0202f1ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-03T08:46:03Z",
+      "side": 1,
+      "message": "You have my vote, Tatiana, if needed, I just put +1 in case sb more wants to check, but as I said, from my side it\u0027s fine to merge",
+      "revId": "cdac066e1cc05dc0546f81d8644acf5a85326892",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
