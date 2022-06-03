@@ -102,6 +102,24 @@
       "parentUuid": "24df5f64_b3476f78",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71495068_654e58d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-03T14:34:20Z",
+      "side": 1,
+      "message": "In latest version of the d-o-a-a, d-o-a package is required anyway",
+      "parentUuid": "1514b38a_c43cfb0b",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
