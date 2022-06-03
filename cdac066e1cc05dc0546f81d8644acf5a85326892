@@ -67,6 +67,23 @@
       "message": "You have my vote, Tatiana, if needed, I just put +1 in case sb more wants to check, but as I said, from my side it\u0027s fine to merge",
       "revId": "cdac066e1cc05dc0546f81d8644acf5a85326892",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b56eb508_1b00d38b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-03T09:05:11Z",
+      "side": 1,
+      "message": "thank you Ramon, I\u0027ll merge, it\u0027s a documentation and can do no harm.",
+      "revId": "cdac066e1cc05dc0546f81d8644acf5a85326892",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
