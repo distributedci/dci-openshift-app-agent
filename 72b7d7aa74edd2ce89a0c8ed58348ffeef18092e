@@ -84,6 +84,24 @@
       "message": "Thx Ramon for the warning 😊\n\nAs Beto said doa is require during the doaa rpm installation:\nhttps://github.com/redhat-cip/dci-openshift-app-agent/commit/3bba1819e053c93a7b164241b7ce92d7b85d60f7\n",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1514b38a_c43cfb0b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-03T13:41:10Z",
+      "side": 1,
+      "message": "I think the affected partner installed d-o-a-a before that date, so that d-o-a was not installed. Should we propose them to install d-o-a?\nI\u0027m in favour of avoiding duplicates, but I\u0027d prefer not to break partners execution, at least during the weekend",
+      "parentUuid": "24df5f64_b3476f78",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
