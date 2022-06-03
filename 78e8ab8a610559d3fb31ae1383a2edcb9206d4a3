@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80b55431_a44d04d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-03T15:05:38Z",
+      "side": 1,
+      "message": "The submission is working, you could retrieve the uploaded test results by sending a GET curl query: \n\n`curl -X \u0027GET\u0027 \\  \u0027https://catalog.redhat.com/api/containers/v1/projects/certification/id/627cff0ec046d839a3e95a5c/test-results?page_size\u003d100\u0026page\u003d0\u0027 \\\n  -H \u0027accept: application/json\u0027 \\\n  -H \u0027X-API-KEY: XXXX\u0027` \u003c-- take the key for testpmd-operator from preflight-pipeline",
+      "revId": "78e8ab8a610559d3fb31ae1383a2edcb9206d4a3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
