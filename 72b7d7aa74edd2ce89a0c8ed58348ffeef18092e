@@ -138,6 +138,24 @@
       "parentUuid": "71495068_654e58d2",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9270691_70ff0eec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-06T17:43:26Z",
+      "side": 1,
+      "message": "Last week when I asked about this my understanding was that from now on we are going to force d-o-a as a rpm dependency of d-o-a-a, that means yes, we are going to insist partners to install it. And I think it\u0027s a good idea, we are adding re-usable roles that we use mostly, but little by little partners can benefit from those if we guide them carefully.",
+      "parentUuid": "53fd4f4c_33c0b0a5",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
