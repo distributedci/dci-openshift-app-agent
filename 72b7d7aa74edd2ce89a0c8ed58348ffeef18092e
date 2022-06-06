@@ -191,6 +191,23 @@
       "parentUuid": "d9270691_70ff0eec",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dac1fea2_14b387cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-06-06T18:04:06Z",
+      "side": 1,
+      "message": "Thx guys for all your reviews !",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
