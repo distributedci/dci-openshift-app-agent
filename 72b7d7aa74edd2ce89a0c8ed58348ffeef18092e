@@ -120,6 +120,24 @@
       "parentUuid": "1514b38a_c43cfb0b",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53fd4f4c_33c0b0a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-06T15:38:06Z",
+      "side": 1,
+      "message": "Just to retake this CR, @Pierre, because I forgot to talk about this in the daily (sorry for that). Should we insist partners on installing d-o-a to have the common roles? In that case, we can merge this change. Maybe we can discuss about this tomorrow in the daily?",
+      "parentUuid": "71495068_654e58d2",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
