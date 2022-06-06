@@ -16,6 +16,23 @@
       "message": "I re-run the tests after the cosmetic changes.\n\nThe submission is working, you could retrieve the uploaded test results by sending a GET query: \n\n`curl -X \u0027GET\u0027 \\  \u0027https://catalog.redhat.com/api/containers/v1/projects/certification/id/627cff0ec046d839a3e95a5c/test-results?page_size\u003d100\u0026page\u003d0\u0027 \\\n-H \u0027accept: application/json\u0027 \\\n-H \u0027X-API-KEY: XXXX\u0027` \u003c-- pyxis token is stored in pyxis_apikey_path (preflight-pipeline)",
       "revId": "2e98accde1e9ef33ac3da45dd6d928c44420c171",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71f412e4_12689d7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-06T17:08:02Z",
+      "side": 1,
+      "message": "LGTM, thanks Tatiana!",
+      "revId": "2e98accde1e9ef33ac3da45dd6d928c44420c171",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
