@@ -208,6 +208,24 @@
       "message": "Thx guys for all your reviews !",
       "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68f82a93_1e9f36c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-06T18:09:15Z",
+      "side": 1,
+      "message": "Our recommendation is to update on a daily basis, *if* they are following our recommendation then d-o-a should be installed because of the dependency that was added back in Mar.\nI think we need to insist in the upgrade otherwise fixed issues won\u0027t be solved nor added features will be included, and for doaa there\u0027s a lot of changes in preflight",
+      "parentUuid": "53fd4f4c_33c0b0a5",
+      "revId": "72b7d7aa74edd2ce89a0c8ed58348ffeef18092e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
