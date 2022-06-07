@@ -23,4 +23,24 @@
     status_code: 201
     timeout: 120
   no_log: true
+
+- name: Send GET query
+  uri:
+    url: "{{ pyxis_url }}/{{ operator.pyxis_operator_identifier }}/test-results"
+    method: GET
+    headers:
+      X-API-KEY: "{{ pyxis_apikey }}"
+  register: preflight_submission
+
+- name: Verify that submission happened less than five minutes ago
+  vars:
+    submission_event: "{{ preflight_submission | json_query('json.data[-1].last_update_date') }}"
+    submission_time: "{{ submission_event[:19] }}"
+    current_time: "{{ ansible_date_time.iso8601[:19] }}"
+    time_diff: "{{ ( current_time | to_datetime('%Y-%m-%dT%H:%M:%S')
+                - submission_time | to_datetime('%Y-%m-%dT%H:%M:%S') )
+                .total_seconds() // 60 }}"
+  fail:
+    msg: "It seems like Pyxis submission for check operator failed"
+  when: time_diff | int >= 5
 ...
