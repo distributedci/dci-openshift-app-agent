@@ -33,6 +33,23 @@
       "message": "thx Tony!",
       "revId": "26ed91128c22e84e16c4bed3dddc0d5259dda0d7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2719945a_0f41188d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-07T11:00:32Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "26ed91128c22e84e16c4bed3dddc0d5259dda0d7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
