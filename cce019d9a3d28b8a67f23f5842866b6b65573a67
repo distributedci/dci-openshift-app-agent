@@ -33,6 +33,23 @@
       "message": "Tests are working as expected: \n\n1/ Check container: \nExit code \u003d 0 even for the container check with failed tests:\nhttps://www.distributed-ci.io/jobs/1702d47e-f0de-4eed-b05c-fe17ab167fe0/jobStates#317993d9-27e7-4c22-a5a6-1e6735dcfb42:file139\n\n2/ Check operator:\nThe freshness of Pyxis submission is validated ok:\nhttps://www.distributed-ci.io/jobs/1702d47e-f0de-4eed-b05c-fe17ab167fe0/jobStates#317993d9-27e7-4c22-a5a6-1e6735dcfb42:file164",
       "revId": "cce019d9a3d28b8a67f23f5842866b6b65573a67",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b18907e3_3f5811a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-08T11:50:43Z",
+      "side": 1,
+      "message": "Tests are working as expected: \n\n1/ Check container: \nExit code \u003d 0 even for the container check with failed tests:\nhttps://www.distributed-ci.io/jobs/1702d47e-f0de-4eed-b05c-fe17ab167fe0/jobStates#317993d9-27e7-4c22-a5a6-1e6735dcfb42:file139\n\n2/ Check operator:\nThe freshness of Pyxis submission is validated ok:\nhttps://www.distributed-ci.io/jobs/1702d47e-f0de-4eed-b05c-fe17ab167fe0/jobStates#317993d9-27e7-4c22-a5a6-1e6735dcfb42:file164",
+      "revId": "cce019d9a3d28b8a67f23f5842866b6b65573a67",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
