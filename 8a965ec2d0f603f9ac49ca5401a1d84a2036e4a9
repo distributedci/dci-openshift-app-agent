@@ -16,6 +16,23 @@
       "message": "I am displaying the log tmp to help the troubleshooting",
       "revId": "8a965ec2d0f603f9ac49ca5401a1d84a2036e4a9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8223c961_e5571fe7",
+        "filename": "roles/pyxis/templates/artifact_info.json.j2",
+        "patchSetId": 2
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-09T13:44:55Z",
+      "side": 1,
+      "message": "I believe that Pyxis team would prefer to have preflight.log as a filename",
+      "revId": "8a965ec2d0f603f9ac49ca5401a1d84a2036e4a9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
