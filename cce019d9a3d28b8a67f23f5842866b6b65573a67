@@ -84,6 +84,24 @@
       "message": "I see the TZ for the last_update_date in pyxis is UTC (\"2022-06-08T09:40:56.689000+00:00\")\n\nSeems like the ansible_date_time is using the TZ of the host, so it could be misleading, e.g.\n\n    ansible localhost -m setup -a \u0027filter\u003dansible_date_time\u0027 | grep tz\n            \"tz\": \"CDT\",\n            \"tz_offset\": \"-0500\",\n\n\nNot sure if we will need to grab the TZ as well and then do the conversion, wdyt?",
       "revId": "cce019d9a3d28b8a67f23f5842866b6b65573a67",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aaca2c0e_d516ce9f",
+        "filename": "roles/pyxis/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-09T14:02:48Z",
+      "side": 1,
+      "message": "Thank you for the catch, Tony!\nI\u0027m testing the fix now.",
+      "parentUuid": "273010b5_c8d7bfff",
+      "revId": "cce019d9a3d28b8a67f23f5842866b6b65573a67",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
