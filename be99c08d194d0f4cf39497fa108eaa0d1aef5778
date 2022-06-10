@@ -16,6 +16,23 @@
       "message": "I am testing your change",
       "revId": "be99c08d194d0f4cf39497fa108eaa0d1aef5778",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "acd9341f_3a78afa7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-10T16:11:43Z",
+      "side": 1,
+      "message": "Hi Pierre, I tested in Dallas, and it seems working:\n\n- For testpmd and testpmd-lb we define pyxis_container_identifier and the logs are hidden:\n\ntestpmd: https://www.distributed-ci.io/jobs/51757303-b242-4c7c-b5c9-5986ab93fa08/jobStates#cf566485-8098-4db8-a8de-83ea81382f9b:file107\n\ntestpmd-lb: https://www.distributed-ci.io/jobs/51757303-b242-4c7c-b5c9-5986ab93fa08/jobStates#cf566485-8098-4db8-a8de-83ea81382f9b:file115\n\n- For trex and simple-demo, pyxis_container_identifier is not defined are the logs are displayed fine:\n\ntrex: https://www.distributed-ci.io/jobs/51757303-b242-4c7c-b5c9-5986ab93fa08/jobStates#cf566485-8098-4db8-a8de-83ea81382f9b:file123\n\nsimple-demo: https://www.distributed-ci.io/jobs/51757303-b242-4c7c-b5c9-5986ab93fa08/jobStates#cf566485-8098-4db8-a8de-83ea81382f9b:file131",
+      "revId": "be99c08d194d0f4cf39497fa108eaa0d1aef5778",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
