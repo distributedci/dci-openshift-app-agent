@@ -1,0 +1,20 @@
+---
+- name: "Create tmp tool directory"
+  tempfile:
+    state: directory
+  register: cv_tool_dir
+
+- name: "Download helm binaries"
+  vars:
+    helm_ver: "{{ helm_version | default('3.9.0') }}"
+  unarchive:
+    src: https://get.helm.sh/helm-v{{ helm_ver }}-linux-amd64.tar.gz
+    dest: "{{ cv_tool_dir.path }}"
+    extra_opts:
+      - linux-amd64/helm
+      - --strip-components=1
+    remote_src: true
+
+- name: "Set helm path"
+  set_fact:
+    helm_tool_path: "{{ cv_tool_dir.path }}/helm"
