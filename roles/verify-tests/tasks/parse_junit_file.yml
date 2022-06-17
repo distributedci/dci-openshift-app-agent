@@ -1,0 +1,32 @@
+---
+- name: Verify the presence of requested JUnit file in the log folder
+  vars:
+    junit_filename: "{{ job_logs.path }}/{{ t.filename }}"
+  stat:
+    path: "{{ junit_filename }}"
+  register: junit_file
+
+- name: Fail if requested JUnit file is not present
+  fail:
+    msg: "Could not verify test results: {{ t.filename }} is not present"
+  when: not junit_file.stat.exists
+
+- name: Get json content
+  vars:
+    junit_filename: "{{ job_logs.path }}/{{ t.filename }}"
+  set_fact:
+    json_content: "{{ lookup('file', junit_filename) | xml2json | replace('@', '') }}"
+
+- name: Retrieve test cases
+  vars:
+    jquery: "testsuites.testsuite.testcase[*].{testcase: name, passed: failure == null}"
+  set_fact:
+    actual_results: "{{ json_content | json_query(jquery) }}"
+
+- name: "Ensure that all test results are as expected for {{ t.filename }}"
+  vars:
+    expectation_failed: "{{ t.expected_results | difference(actual_results) }}"
+  fail:
+    msg: "The following expectations failed: {{ expectation_failed }}"
+  when: expectation_failed | length > 0
+...
