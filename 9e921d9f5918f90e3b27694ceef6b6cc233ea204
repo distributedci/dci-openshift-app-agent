@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e6609110_4ef552a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-17T16:03:31Z",
+      "side": 1,
+      "message": "Here is how it currently works: https://www.distributed-ci.io/jobs/be1461e4-e657-4a4c-bbf6-fe37c3f4885e/jobStates \nThe verification will fail if the expected results are _not in_ the actual results.\n\nThere is no obligation to list all the test cases. If we list one, only one will be verified. \nIf we check the current example: there are eight test cases, three expectations were listed, only one failed, and the error is showing this failed one.\n\nWe already could merge this CR as a first step to prevent Preflight test suite regressions, like the one I discovered today. \n\nNext steps: to list each test by name is not a good idea, we have some test suites with thousand of tests. Probably, instead of the test case name, we could use regex, but I have no idea how to code that nicely.\n\n",
+      "revId": "9e921d9f5918f90e3b27694ceef6b6cc233ea204",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
