@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6058e0ed_8842d24a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-17T15:57:43Z",
+      "side": 1,
+      "message": "This looks good to me, let get it merged and I will do integrated tests with what is in https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25276 in a test pipeline\n\nThanks",
+      "revId": "8e9237480b424c30ddd2f058c7ab21a638decd0a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
