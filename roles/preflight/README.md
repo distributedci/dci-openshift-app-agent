@@ -17,6 +17,7 @@ pyxis\_apikey\_path                | undefined                                  
 preflight\_custom\_ca              | undefined                                            | Optional. Path of custom ca.crt. Used to test operator stored in a self signed registry
 preflight\_source\_dir             | undefined                                            | Optional. If this variable is defined, the Preflight role would use this folder to generate preflight image and binary and then use them during Preflight tests execution. That would overwrite predefined preflight_image and preflight_binary (if any).
 operator\_sdk\_tool\_path          | undefined                                            | Optional. Path to operator-sdk binary, optional. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-certify) for the example.
+preflight\_test\_certified\_image  | false                                                | If set to true, images that have been already certified will be tested again (expect the ones from the official Red Hat registry)
 
 ## Variables to define for each operator in preflight_operators_to_certify
 
