@@ -5,6 +5,13 @@
     prefix: preflight_container_artifacts.
   register: preflight_container_artifacts
 
+- name: Reset variable for certification
+  set_fact:
+    already_certified: false
+
+- name: check if container has already been certified
+  include_tasks: check_if_container_certified.yml
+
 - name: Set pyxis auth and submission for check container
   vars:
     pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
@@ -12,7 +19,9 @@
     pyxis_auth_container: >-
       --certification-project-id {{ operator.pyxis_container_identifier }}
       --pyxis-api-token {{ pyxis_apikey }}
+      {% if not already_certified %}
       --submit
+      {% endif %}
   when: operator.pyxis_container_identifier is defined
   no_log: true
 
