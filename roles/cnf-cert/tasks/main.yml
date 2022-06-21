@@ -185,7 +185,7 @@
     -i $TNF_IMAGE \
     -t {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \
     -o {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \
-    -f {{ tnf_suites }} &> {{ test_network_function_project_name }}/execution.log
+    -f {{ tnf_suites }} -l '!online' &> {{ test_network_function_project_name }}/execution.log
 
     cp {{ test_network_function_project_name }}/*.xml {{ tnf_tempdir.path }}
     cp {{ test_network_function_project_name }}/*.json {{ tnf_tempdir.path }}
