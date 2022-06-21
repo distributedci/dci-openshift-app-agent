@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb06ddde_6300629f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-21T09:57:52Z",
+      "side": 1,
+      "message": "The first step (without regex for test names) is ready to be merged.\n\n- Here is how I\u0027d like to use this dev right now to secure Preflight tests: https://www.distributed-ci.io/jobs/0f5980f7-ec0b-4355-afee-34a3f527ce90/jobStates#65e2c00a-4b59-422f-a1c5-501585107ef9:file7\n\n- Here is an example of what the verification failure looks like: https://www.distributed-ci.io/jobs/be1461e4-e657-4a4c-bbf6-fe37c3f4885e/jobStates#db7f9274-1364-441a-b3e3-237ea9cb880a:file9 ",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
