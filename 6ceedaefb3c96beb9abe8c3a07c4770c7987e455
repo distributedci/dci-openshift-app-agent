@@ -67,6 +67,23 @@
       "message": "I forgot to mention, it might be a good idea to document something about this, maybe a dedicated section in the readme or somewhere else. Thanks.  ",
       "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b54bad7a_e2e286be",
+        "filename": "roles/verify-tests/filter_plugins/xml2json.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-21T14:29:52Z",
+      "side": 1,
+      "message": "Sorry for the dummy question: what is the value of adding this functions instead of using  jinja filters? are they not powerful enough?",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
