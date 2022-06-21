@@ -24,7 +24,7 @@
 
 - name: Publishing artifact to Pyxis
   uri:
-    url: "{{ pyxis_url }}/{{ operator.pyxis_operator_identifier }}/artifacts"
+    url: "{{ pyxis_url }}/projects/certification/id/{{ operator.pyxis_operator_identifier }}/artifacts"
     method: POST
     headers:
       X-API-KEY: "{{ pyxis_apikey }}"
@@ -37,7 +37,7 @@
 
 - name: Submit Test result to Pyxis
   uri:
-    url: "{{ pyxis_url }}/{{ operator.pyxis_operator_identifier }}/test-results"
+    url: "{{ pyxis_url }}/projects/certification/id/{{ operator.pyxis_operator_identifier }}/test-results"
     method: POST
     headers:
       X-API-KEY: "{{ pyxis_apikey }}"
@@ -49,7 +49,7 @@
 
 - name: Send GET query
   uri:
-    url: "{{ pyxis_url }}/{{ operator.pyxis_operator_identifier }}/test-results"
+    url: "{{ pyxis_url }}/projects/certification/id/{{ operator.pyxis_operator_identifier }}/test-results"
     method: GET
     headers:
       X-API-KEY: "{{ pyxis_apikey }}"
