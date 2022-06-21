@@ -33,6 +33,23 @@
       "message": "I think it is a nice starting point to include this kind of functionality, I really like this, thanks Tatiana!",
       "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca5cbc39_8ea85e19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-21T13:22:41Z",
+      "side": 1,
+      "message": "Yes, I talked with Tatiana about this, it\u0027s a very good start, then we can add regex functionality and discuss if is worth it to generate the template with the files and tests to validate.",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
