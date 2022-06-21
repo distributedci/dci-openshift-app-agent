@@ -1,0 +1,31 @@
+---
+- name: Reset variable for certification
+  set_fact:
+    already_certified: false
+
+- name: "Get Image digest"
+  set_fact:
+    image_id: "{{ current_operator_image.split('@')[1] }}"
+
+- name: "Check with the API if {{ current_operator_image }} is already certified"
+  uri:
+    url: "{{ pyxis_url }}/images?include=data.image_id&include=data.docker_image_id&include=data.certified&filter=docker_image_id%3D%3D%22{{ image_id }}%22&page_size=1&page=0"
+    method: GET
+    headers:
+      X-API-KEY: "{{ pyxis_apikey }}"
+      accept: application/json
+    status_code: 200
+    timeout: 120
+  register: pyxis_image_info
+  retries: 5
+  delay: 4
+  until: pyxis_image_info.status >= 200
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+
+- name: "Set the variable if the image is already certified"
+  set_fact:
+    already_certified: true
+  when:
+    - pyxis_image_info.json.data[0] is defined
+    - pyxis_image_info.json.data[0].certified == true
