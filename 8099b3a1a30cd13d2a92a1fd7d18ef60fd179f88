@@ -16,6 +16,23 @@
       "message": "This doesn\u0027t need to be tested, as we test HEAD branch on the daily jobs and it is working fine. Ready for merging.",
       "revId": "8099b3a1a30cd13d2a92a1fd7d18ef60fd179f88",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53a0e0da_b45d77f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-21T17:42:32Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "8099b3a1a30cd13d2a92a1fd7d18ef60fd179f88",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
