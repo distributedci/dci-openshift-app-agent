@@ -50,6 +50,23 @@
       "message": "Yes, I talked with Tatiana about this, it\u0027s a very good start, then we can add regex functionality and discuss if is worth it to generate the template with the files and tests to validate.",
       "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3a0dd47_30185788",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-21T13:24:56Z",
+      "side": 1,
+      "message": "I forgot to mention, it might be a good idea to document something about this, maybe a dedicated section in the readme or somewhere else. Thanks.  ",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
