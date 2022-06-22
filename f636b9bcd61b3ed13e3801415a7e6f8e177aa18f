@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00864503_11377591",
+        "filename": "README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T17:43:52Z",
+      "side": 1,
+      "message": "typo: confuguration -\u003e configuration",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9b6eb30_b8257f93",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T17:43:52Z",
+      "side": 1,
+      "message": "To avoid adding a dependency with job_logs in the role I think it would be good to pass  the variable from here, e.g.\n\n   vars:\n     junit_dirname: \"{{ job_logs.path }}\"",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "78a07d17_808f24f6",
+        "filename": "roles/verify-tests/README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T17:43:52Z",
+      "side": 1,
+      "message": "This is more for my understanding than anything else, would be there cases where an expected result is False? It seems to me like tests are meant to be passed, but I may not be right about it.\n\nIn case the tests are always expected to be true, it may be possible to avoid the passed status and have only the list of tests that are required to pass, wdyt?",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "69d8053a_af9e8385",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T17:43:52Z",
+      "side": 1,
+      "message": "Here you could use the junit_dirname instead of job_logs.path and that way there will be no dependency with that var",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92e41125_c14d1a02",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T17:43:52Z",
+      "side": 1,
+      "message": "nit: You could save this task and define all the vars in the following task, see my next comment",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "447951bb_ffab4205",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T17:43:52Z",
+      "side": 1,
+      "message": "nit: Here you could define the vars from above:\n\n    junit_filename: \"{{ job_logs.path }}/{{ t.filename }}\"\n    json_content: \"{{ lookup(\u0027file\u0027, junit_filename) | xml2json | replace(\u0027@\u0027, \u0027\u0027) }}\"",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
