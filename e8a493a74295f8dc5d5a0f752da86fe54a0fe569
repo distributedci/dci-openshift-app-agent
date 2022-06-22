@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd47e023_846a1dee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:23:21Z",
+      "side": 1,
+      "message": "Hi Charles, I see \"503 service unavailable\" in the job. Maybe it makes sense first to test with the swagger, to ensure that the query is correct and authentication is ok?",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8327fe11_1a8142ac",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:23:21Z",
+      "side": 1,
+      "message": "Hi Charles, are we sure that the current_operator_image always contains the digest? I mean, if we\u0027re in the connected environment and provide the bundle image by tag, would it work? You could test preflight on libvrit like this, using Test-Args-Hints: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24888",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b23c0954_77b50dd7",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:23:21Z",
+      "side": 1,
+      "message": "do we need no_log: true here? Maybe later on, when the debug is done already",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3292a670_b8b19ffd",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:23:21Z",
+      "side": 1,
+      "message": "this could be moved into check_if_container_certified.yml",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37a0c755_27e066f5",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:23:21Z",
+      "side": 1,
+      "message": "pyxis_auth_container is needed only for the submission. So it makes sense to move the condition into `when` part.",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
