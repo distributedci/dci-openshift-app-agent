@@ -11,38 +11,16 @@
 - name: "Get tools"
   include_tasks: get-tools.yml
 
-- name: "Mirror chart images"
-  include_tasks: mirror-chart-images.yml
-  when: dci_disconnected | default(false) | bool
+## Temporary disabled, failing with images with the images 
+## with format like rhscl/mongodb-36-rhel7:1-65
+# - name: "Mirror chart images"
+#   include_tasks: mirror-chart-images.yml
+#   when: dci_disconnected | default(false) | bool
 
 - name: "Create working directory"
   tempfile:
     state: directory
   register: work_dir
-
-- name: "Set workdir path"
-  set_fact:
-    work_dir: "{{ work_dir.path }}"
-
-- name: "Get GH cli release details"
-  uri:
-    url: "https://api.github.com/repos/cli/cli/releases/latest"
-    body_format: json
-  register: gh_release
-  until: gh_release.status == 200
-  retries: 5
-
-- name: "Set latest GH version"
-  set_fact:
-    gh_version: "{{ gh_release.json.tag_name
-      | regex_replace('^v?(.*)$', '\\1') }}"
-
-- name: "Unarchive GH release tarball"
-  unarchive:
-    src: "https://github.com/cli/cli/releases/download/v{{ gh_version }}/gh_{{ gh_version }}_linux_amd64.tar.gz"
-    dest: "{{ work_dir }}"
-    remote_src: yes
-    extra_opts: [--strip-components=2]
 
 - name: "Set Logs path"
   set_fact:

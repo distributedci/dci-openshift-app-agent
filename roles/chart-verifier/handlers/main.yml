@@ -3,3 +3,9 @@
   file:
     state: absent
     path: "{{ cv_tool_dir.path }}"
+
+- name: "Delete work_dir directory"
+  file:
+    state: absent
+    path: "{{ work_dir }}"
+...

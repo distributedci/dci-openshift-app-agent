@@ -3,17 +3,13 @@
 This role is to execute the [chart-verifier](https://github.com/redhat-certification/chart-verifier) tool as part of the DCI App Agent.
 
 ## Variables
-
+ 
 Name                               | Default                                              | Description
 ---------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
 kubeconfig\_path                   | undefined                                            | Path to the kubeconfig file
 ocp\_version\_full                 | undefined                                            | OCP version
 chart\_verifier\_image             | quay.io/redhat-certification/chart-verifier:1.3.0    | Chart Verifier Image
-<<<<<<< HEAD
-dci\_charts                        | See defaults/main.yml                                | A list of charts with additional parameters to be used during testing. Example:<br><br>dci_charts: <br>&nbsp;&nbsp;&nbsp; -<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: "<RELEASE_NAME>"<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chart_file: "http://xyz/chart.tgz" (required) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values_file: "http://xyz/values.yaml" (optional) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; install: true\|false (required). Installs and verify the chart on the the OCP cluster. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  flags: (optional). [See helm-chart-checks](https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-checks.md) for available flags.
-logs\_dir                          | /tmp                                                | Directory to store the tests results.
-=======
-dci\_charts                        | See defaults/main.yml                                | A list of charts with additional parameters to be used during testing. Example:<br><br>dci_charts: <br>&nbsp;&nbsp;&nbsp; -<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chart_file: "http://xyz/chart.tgz" (required) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values_file: "http://xyz/values.yaml" (optional) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; install: true\|false (required). Installs and verify the chart on the the OCP cluster. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  flags: (optional). [See helm-chart-checks](https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-checks.mds) for available flags <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; classification: Directory on the target repository (partner\|redhat\|community) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; labels: Labels for the OWNERS file <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; submit_results: Creates a fork in the target_repository if all the test are PASS .
+dci\_charts                        | See defaults/main.yml                                | A list of charts with additional parameters to be used during testing. Example:<br><br>dci_charts: <br>&nbsp;&nbsp;&nbsp; -<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; chart_file: "http://xyz/chart.tgz" (required) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; values_file: "http://xyz/values.yaml" (optional) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; install: true\|false (required). Installs and verify the chart on the the OCP cluster. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  flags: (optional). [See helm-chart-checks](https://github.com/redhat-certification/chart-verifier/blob/main/docs/helm-chart-checks.md) for available flags <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; classification: Directory on the target repository (partner\|redhat\|community) <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; labels: Labels for the OWNERS file <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; submit_results: Creates a fork in the target_repository if all the test are PASS .
 logs\_dir                          | /tmp                                                 | Directory to store the tests results.
 github\_token\_path                | undefined                                            | GitHub token to be used to push the chart and the results to the [openshift-charts/charts](https://github.com/openshift-helm-charts/charts/) repository.
 target\_repository                 | openshift-charts/charts                              | Target repository to push the chart and the results files.
@@ -21,7 +17,6 @@ submit\_results                    | false                                      
 partner\_name                      | undefined                                            | Partner name to be used in the PR title.
 enable\_sandbox                    | true                                                 | Enable the sandbox environment. This submit the PR to the sandbox_repository ( betoredhat/charts) instead of openshift-helm-charts/charts.
 sandbox_repository                 | betoredhat/charts                                    | Target repository to submit the PR to.
->>>>>>> 0bdc1c5 (Adding PR support - initial)
 
 ### Chart requirements and installation
 
@@ -31,11 +26,7 @@ The chart report will show timeout errors if any of the images or files are not 
 
 In DCI, the namespaces defined and created by {{ dci_openshift_app_ns }} variable can be used to deploy chart. The chart will removed after the test verification is complete.
 
-<<<<<<< HEAD
-### Results
-=======
 ### Results in DCI UI
->>>>>>> 0bdc1c5 (Adding PR support - initial)
 
 Once the test is completed, the results will be stored the job_logs directory. If the tests are executed by DCI, the results will be stored in the DCI job files section.
 

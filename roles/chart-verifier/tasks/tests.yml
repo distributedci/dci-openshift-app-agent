@@ -1,5 +1,9 @@
 ---
 
+- name: "Create a work_dir"
+  set_fact:
+    work_dir: "{{ work_dir.path }}"
+
 - name: "Set target repository"
   set_fact:
     target_repository: "{{ ( enable_sandbox | bool ) | ternary(sandbox_repository, 'openshift-helm-charts/charts') }}"
