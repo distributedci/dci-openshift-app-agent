@@ -88,6 +88,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "cfa769c7_40bbae7f",
+        "filename": "group_vars/all",
+        "patchSetId": 9
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 405
+      },
+      "writtenOn": "2022-06-22T09:48:01Z",
+      "side": 1,
+      "message": "Do you need tests_to_verify: [] here ?",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 22
+      },
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b54bad7a_e2e286be",
         "filename": "roles/verify-tests/filter_plugins/xml2json.py",
         "patchSetId": 9
