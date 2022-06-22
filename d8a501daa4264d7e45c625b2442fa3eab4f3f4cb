@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0269b4e9_e746643b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-06-22T13:40:58Z",
+      "side": 1,
+      "message": "I added retries to avoid that:\nhttps://www.distributed-ci.io/jobs/66369980-dc9d-4941-a02a-e5cd6e83f58c/jobStates#77982959-4b1c-4aa6-acea-8fa3fab7652f:file31 ",
+      "revId": "d8a501daa4264d7e45c625b2442fa3eab4f3f4cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
