@@ -86,6 +86,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "97bdc2d1_41a09853",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 405
+      },
+      "writtenOn": "2022-06-22T09:53:51Z",
+      "side": 1,
+      "message": "tests_to_verify and do_verify_tests can be simplified using tests_to_verify only.\nif tests_to_verify is defined and not empty then you can run include the playbook.\nWhat is the format of tests_to_verify ?\narray of string?",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cfa769c7_40bbae7f",
