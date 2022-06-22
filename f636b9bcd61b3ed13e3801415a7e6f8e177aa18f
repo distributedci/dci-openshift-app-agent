@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb2a4818_314fd62b",
+        "filename": "README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:10:43Z",
+      "side": 1,
+      "message": "nice catch, thanks!",
+      "parentUuid": "00864503_11377591",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9b6eb30_b8257f93",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-06-22T17:43:52Z",
       "side": 1,
       "message": "To avoid adding a dependency with job_logs in the role I think it would be good to pass  the variable from here, e.g.\n\n   vars:\n     junit_dirname: \"{{ job_logs.path }}\"",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe638b0d_16b01cb3",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:10:43Z",
+      "side": 1,
+      "message": "well, I would not go for it, I believe that it would complicate the code understanding a bit.",
+      "parentUuid": "f9b6eb30_b8257f93",
       "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -52,6 +88,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9bdf0cad_8a83c01e",
+        "filename": "roles/verify-tests/README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:10:43Z",
+      "side": 1,
+      "message": "\u003e would be there cases where an expected result is False? In case the tests are always expected to be true, it may be possible to avoid the passed status and have only the list of tests that are required to pass, wdyt?\n\ntbh, I don\u0027t know, probably we could even have True/False/Skipped, not sure. Concerning Preflight - we could have some use cases that we expect to fail, like non-UBI images. Fred wanted to verify failed test cases but I don\u0027t remember what was the use case.\n\nI like the idea to simplify the configuration though, we could do that in the next iteration.",
+      "parentUuid": "78a07d17_808f24f6",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "69d8053a_af9e8385",
@@ -65,6 +119,24 @@
       "writtenOn": "2022-06-22T17:43:52Z",
       "side": 1,
       "message": "Here you could use the junit_dirname instead of job_logs.path and that way there will be no dependency with that var",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7984a5f0_d1974b6b",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:10:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "69d8053a_af9e8385",
       "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -86,6 +158,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0f15704_f84ea7da",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:10:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "92e41125_c14d1a02",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "447951bb_ffab4205",
@@ -99,6 +189,24 @@
       "writtenOn": "2022-06-22T17:43:52Z",
       "side": 1,
       "message": "nit: Here you could define the vars from above:\n\n    junit_filename: \"{{ job_logs.path }}/{{ t.filename }}\"\n    json_content: \"{{ lookup(\u0027file\u0027, junit_filename) | xml2json | replace(\u0027@\u0027, \u0027\u0027) }}\"",
+      "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77d23cf1_851fd700",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T21:10:43Z",
+      "side": 1,
+      "message": "thanks for the idea, Tony, I like it!",
+      "parentUuid": "447951bb_ffab4205",
       "revId": "f636b9bcd61b3ed13e3801415a7e6f8e177aa18f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
