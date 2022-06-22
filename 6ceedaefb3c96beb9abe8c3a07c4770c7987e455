@@ -103,6 +103,42 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c75ce451_889b09c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T11:30:00Z",
+      "side": 1,
+      "message": "Thanks Fred, I added the documentation.",
+      "parentUuid": "68dcd7a6_d42b32f6",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68aa24c1_398e29e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T11:30:00Z",
+      "side": 1,
+      "message": "\u003e tests_to_verify and do_verify_tests can be simplified using tests_to_verify only.\nif tests_to_verify is defined and not empty then you can run include the playbook.\n\nThanks for the tip Guillaume, I did that. \n\n\u003e What is the format of tests_to_verify ?\narray of string?\n\nYes, it\u0027s a complex array: filename + list of expected results for that file. I added the documentation.",
+      "parentUuid": "97bdc2d1_41a09853",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cfa769c7_40bbae7f",
@@ -139,6 +175,24 @@
       "writtenOn": "2022-06-21T14:29:52Z",
       "side": 1,
       "message": "Sorry for the dummy question: what is the value of adding this functions instead of using  jinja filters? are they not powerful enough?",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6bc8073_9f75171d",
+        "filename": "roles/verify-tests/filter_plugins/xml2json.py",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T11:30:00Z",
+      "side": 1,
+      "message": "There is no such filter available officially. I also tried to use the ansible xml module, but it does not provide all the needed functionality.",
+      "parentUuid": "b54bad7a_e2e286be",
       "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

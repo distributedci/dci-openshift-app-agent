@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60537fad_9271e496",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-22T11:30:00Z",
+      "side": 1,
+      "message": "Thank you everyone for checking. I\u0027ve added the documentation, and simplified the variables as proposed by Guillaume. The tests are ongoing.",
+      "revId": "ca08c14261014a41229408e35dc7f86e31facd5f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
