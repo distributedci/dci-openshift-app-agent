@@ -24,6 +24,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e297ec0_81603e97",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T17:21:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "86848ae5_840e5483",
+      "range": {
+        "startLine": 14,
+        "startChar": 37,
+        "endLine": 14,
+        "endChar": 46
+      },
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "46112ae3_68b5ed58",
@@ -37,6 +61,30 @@
       "writtenOn": "2022-06-22T10:25:39Z",
       "side": 1,
       "message": "it is not defined in defaults/main.yml, should it be defined?",
+      "range": {
+        "startLine": 16,
+        "startChar": 37,
+        "endLine": 16,
+        "endChar": 42
+      },
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d9d8d45_e2b0af72",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T17:21:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "46112ae3_68b5ed58",
       "range": {
         "startLine": 16,
         "startChar": 37,
@@ -70,6 +118,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e5ab40b_4fd08c33",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T17:21:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b7a95249_c9b8cc20",
+      "range": {
+        "startLine": 15,
+        "startChar": 41,
+        "endLine": 15,
+        "endChar": 42
+      },
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "769b9661_698a19b8",
@@ -83,6 +155,30 @@
       "writtenOn": "2022-06-22T10:25:39Z",
       "side": 1,
       "message": "I\u0027m wondering what would happen if an external user wants to test chart-verifier with dci-openshift-app-agent, shouldn\u0027t that user have a specific github account for that? Because here we are using directly dcicertbot.",
+      "range": {
+        "startLine": 121,
+        "startChar": 0,
+        "endLine": 122,
+        "endChar": 37
+      },
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc28c379_159092e9",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T17:21:28Z",
+      "side": 1,
+      "message": "For this one, I can get the username using the information from gh status, but unfortunately, to get the email using the API, the user must allow public access to it. I will add it as a required variable.",
+      "parentUuid": "769b9661_698a19b8",
       "range": {
         "startLine": 121,
         "startChar": 0,
@@ -129,6 +225,30 @@
       "writtenOn": "2022-06-22T10:25:39Z",
       "side": 1,
       "message": "currently, it has a default value in fact, so is this useless? or should we avoid defining the github_token_path variable",
+      "range": {
+        "startLine": 77,
+        "startChar": 6,
+        "endLine": 77,
+        "endChar": 34
+      },
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7be99ee9_1f8c5fc7",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T17:21:28Z",
+      "side": 1,
+      "message": "set as mandatory without a default value",
+      "parentUuid": "e59db760_3b820a03",
       "range": {
         "startLine": 77,
         "startChar": 6,
