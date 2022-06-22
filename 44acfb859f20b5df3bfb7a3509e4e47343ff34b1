@@ -1,0 +1,225 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a897cd90_0743e7f1",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "nit: telcoci@redhat.com",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "974e848b_c9c0e12a",
+        "filename": "roles/chart-verifier/tasks/get-tools.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "nit: \"Set GH version\"",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0414a5f8_a45056ac",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "Can we remove the enable_sandbox flag? and enable when sandbox_repository is defined?",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7010a56_20e4b672",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "😎",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d4de9632_4c45ce0e",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "I think we need to do this in multiple steps\n1. Fork\n2. Sync\n3. Clone",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0245eee_1ac2b4ac",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "Suggestion:\n\n    shell:\n      cmd: \"{{ gh_tool_path }} user --jq .login\"",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1a27a3c_8d04ddf0",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "This could be moved up after the Fork",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2cb41603_08ea7354",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "The git config needs to be done here, before the commit, otherwise it may be used from a different place.\n\n    git config user.email {{ partner_email }}\n    git config user.name {{ github_username }}",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d76e77b_386b4382",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "This can be removed",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bfd717e_f76db251",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5cb510e0_ca94e130",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "IMO, this task is best as a handler",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7b8337b9_90eb66b6",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "likewise, this is best as a handler IMO",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5870f9f_cca8d21c",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-22T22:15:34Z",
+      "side": 1,
+      "message": "I think enable_sandbox is not needed, see my comment about it above",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
