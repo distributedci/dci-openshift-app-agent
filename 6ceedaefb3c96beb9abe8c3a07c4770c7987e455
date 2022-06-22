@@ -69,6 +69,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "68dcd7a6_d42b32f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-06-22T09:45:04Z",
+      "side": 1,
+      "message": "We need some documentation explaining the new variables.",
+      "revId": "6ceedaefb3c96beb9abe8c3a07c4770c7987e455",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b54bad7a_e2e286be",
