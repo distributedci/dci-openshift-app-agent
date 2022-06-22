@@ -112,6 +112,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a87695a_91f7fbb0",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b0ba333_800ac3cc",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd19a1d7_bb39093b",
@@ -125,6 +143,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "ditto",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "158b0962_ba60b712",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd19a1d7_bb39093b",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -146,6 +182,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6144983c_a99bddc4",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5e45dcb7_d411f367",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "207a7cdb_02144109",
@@ -159,6 +213,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "See my comment regarding classification down below",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9a7d863_b52361f5",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "already removed. Thanks",
+      "parentUuid": "207a7cdb_02144109",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -180,6 +252,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4786ece_6e0194c2",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "60eba947_39213d24",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "095cd70f_bc6dc21e",
@@ -193,6 +283,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "I like the option of a sandox repo for testing, but I think we shouldn\u0027t provide a default value",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c0d94e7_c74192b9",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "095cd70f_bc6dc21e",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -214,6 +322,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c16ffb4_16bd7d0a",
+        "filename": "roles/chart-verifier/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "20f8414f_6e555519",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2e3bdce1_495dedd2",
@@ -231,6 +357,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0404422a_6ad163d3",
+        "filename": "roles/chart-verifier/tasks/get-tools.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e3bdce1_495dedd2",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7ff7fbf8_142c28ca",
@@ -244,6 +388,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "nit: multi-line, i.e.\n\n    extra_opts:\n      - --strip-components\u003d2",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88f32dd9_5d78098d",
+        "filename": "roles/chart-verifier/tasks/get-tools.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7ff7fbf8_142c28ca",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -282,6 +444,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "27994d1a_4ab9bd6a",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e99c3be_0b087549",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "96c82fc7_b879f084",
@@ -295,6 +475,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "suggestion: \n\n    label: \"{{ chart.chart_file | basename }}\"",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b4d4c65_d84628ae",
+        "filename": "roles/chart-verifier/tasks/mirror-chart-images.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "96c82fc7_b879f084",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -501,6 +699,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "36197b9c_95a660e8",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "good stuff, thanks",
+      "parentUuid": "14b4e2db_ec6c75ad",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4f5fc977_98d1e919",
@@ -514,6 +730,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "suggestion:\n\n   shell:\n     cmd: \u003e\n     grep -c FAIL \u003c({{ yq_tool_path }} e \"..|.outcome? | select(.)\" report.yaml)",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b180f36d_2f89e2a6",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f5fc977_98d1e919",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -578,6 +812,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "Correct me if I\u0027m wrong, but we allow 1 failure since the \"valid\" chart is currently not valid?\n\nIf so, can we add a comment in here stating that, because at some point we want to make it \u003d\u003d 0",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "628b17d3_8dcfb583",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T20:55:10Z",
+      "side": 1,
+      "message": "Yeah, I have it currently set to 1 in order to continue doing testing because the valid chart is actually not valid. Will update the chart to make it pass and set this condition to the correct value.",
+      "parentUuid": "cc3b9699_7b3cdfae",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
