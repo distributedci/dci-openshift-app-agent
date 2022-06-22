@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "97718a66_b57d2909",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a897cd90_0743e7f1",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "974e848b_c9c0e12a",
@@ -35,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b5c1bbc_98676cb1",
+        "filename": "roles/chart-verifier/tasks/get-tools.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "974e848b_c9c0e12a",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0414a5f8_a45056ac",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-06-22T22:15:34Z",
       "side": 1,
       "message": "Can we remove the enable_sandbox flag? and enable when sandbox_repository is defined?",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da870102_c6e86258",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0414a5f8_a45056ac",
       "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -86,6 +140,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1af8ffe9_c8f3e088",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d4de9632_4c45ce0e",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d0245eee_1ac2b4ac",
@@ -99,6 +171,24 @@
       "writtenOn": "2022-06-22T22:15:34Z",
       "side": 1,
       "message": "Suggestion:\n\n    shell:\n      cmd: \"{{ gh_tool_path }} user --jq .login\"",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e7418a1_abb61615",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "gh user is not a valid command",
+      "parentUuid": "d0245eee_1ac2b4ac",
       "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -120,6 +210,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "95ecb975_c0fdedc9",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1a27a3c_8d04ddf0",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2cb41603_08ea7354",
@@ -133,6 +241,24 @@
       "writtenOn": "2022-06-22T22:15:34Z",
       "side": 1,
       "message": "The git config needs to be done here, before the commit, otherwise it may be used from a different place.\n\n    git config user.email {{ partner_email }}\n    git config user.name {{ github_username }}",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45f0caaf_a76d3da0",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2cb41603_08ea7354",
       "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -154,6 +280,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc34a8c8_f1b052f6",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7d76e77b_386b4382",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7bfd717e_f76db251",
@@ -167,6 +311,24 @@
       "writtenOn": "2022-06-22T22:15:34Z",
       "side": 1,
       "message": "ditto",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d34bbac7_47cc32e1",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 122,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-22T23:58:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7bfd717e_f76db251",
       "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
