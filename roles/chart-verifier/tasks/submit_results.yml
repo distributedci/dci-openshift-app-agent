@@ -1,0 +1,144 @@
+
+---
+
+- name: "Login to Github"
+  shell: "{{ gh_tool_path }} auth login --with-token < {{ github_token_path }}"
+  args:
+    chdir: "{{ work_dir }}"
+  register: gh_login
+  failed_when: gh_login.rc != 0
+
+- name: "Set local branch name"
+  set_fact:
+    local_branch: "{{ chart_name }}_{{ ansible_date_time.iso8601_basic }}"
+
+- name: "Generate a one time use SSH key"
+  openssh_keypair:
+    path: "{{ work_dir }}/ssh_key"
+    type: ed25519
+    state: present
+    force: no
+
+- name: "Read public key file contents"
+  set_fact:
+    public_key: "{{ lookup('file', '{{ work_dir }}/ssh_key.pub' ) }}"
+
+- name: "Add ssh-key to Github"
+  shell: "{{ gh_tool_path }} api -X POST user/keys -f key='{{ public_key }}'"
+  register: gh_add_response
+  args:
+    chdir: "{{ work_dir }}"
+
+- name: "Get the SSK key ID"
+  set_fact:
+    key_id: "{{ ( gh_add_response.stdout | from_json ).id }}"
+
+- name: "Fork the {{ target_repository }} for Helm {{ chart_name }}"
+  shell: "{{ gh_tool_path }} repo fork {{ target_repository }} --clone"
+  args:
+    chdir: "{{ work_dir }}"
+  register: gh_fork
+  failed_when: gh_fork.rc != 0
+
+- name: "Get GitHub status details"
+  shell:
+    "{{ gh_tool_path }} auth status 2>&1 | grep Logged | awk -F'as ' '{print $2}' | cut -d' ' -f1"
+  register: github_status
+  args:
+    chdir: "{{ work_dir }}/charts/charts"
+
+- name: "Get the GitHub username"
+  set_fact:
+    github_username: "{{ github_status.stdout }}"
+
+- name: "Sync the {{ target_repository }} fork"
+  shell: "{{ gh_tool_path }} repo sync {{ github_username }}/charts --force"
+  args:
+    chdir: "{{ work_dir }}"
+  register: gh_fork_sync
+  failed_when: gh_fork_sync.rc != 0
+
+- name: "Set chart path"
+  vars:
+    partner: "{{  partner_name | replace(' ','_') }}"
+  set_fact:
+    chart_path: "{{ work_dir }}/charts/charts/partners/{{ partner }}/{{ chart_name }}/{{ chart_version }}/"
+
+- name: "Check if chart_path already exists"
+  vars:
+    partner: "{{  partner_name | replace(' ','_') }}"
+  stat:
+    path: "{{ work_dir }}/charts/charts/partners/{{ partner }}/{{ chart_name }}/{{ chart_version }}/"
+  register: chart_dir
+
+# - name: "Fail if chart is already in the repository"
+#   fail:
+#     msg: "There is a chart already in the repository for this version"
+#   when: chart_dir.stat.exists
+
+- name: "Git create a local branch"
+  shell: "git checkout -b {{ local_branch }}"
+  args:
+    chdir: "{{ work_dir }}/charts/charts"
+
+- name: "Create target directory on the repository"
+  file:
+    state: directory
+    force: true
+    path: "{{ chart_path }}"
+
+- name: "Copy the report to the target directory"
+  copy:
+    src: "{{ work_dir }}/report.yaml"
+    dest: "{{ chart_path }}"
+    remote_src: yes
+  delegate_to: localhost
+
+- name: "Copy the chart tarball to the target directory"
+  get_url:
+    url: "{{ chart.chart_file }}"
+    dest: "{{ chart_path }}"
+    mode: u=rwx,g=rx,o=rx
+
+- name: "Add the OWNERS file"
+  vars:
+    partner: "{{  partner_name | replace(' ','_') }}"
+  template:
+    src: OWNERS.j2
+    dest: "{{ work_dir }}/charts/charts/partners/{{ partner }}/OWNERS"
+
+- name: "Git add chart_file and report.yaml to the repository"
+  shell: |
+    git add .
+    git commit -m 'Added {{ chart_name }}_{{ chart_version }}'
+  args:
+    chdir: "{{ work_dir }}/charts/charts"
+
+- name: "Push branch to the forked repository"
+  shell: |
+    eval "$(ssh-agent)"
+    ssh-add {{ work_dir }}/ssh_key
+    git config user.email {{ partner_email }}
+    git config user.name {{ github_username }}
+    git push -u origin {{ local_branch }}
+    {{ gh_tool_path }} pr create \
+    --title "Adding chart {{ chart_name }} from {{ partner_name }}" \
+    --body "Adding chart {{ chart_name }} from {{ partner_name }}" \
+    --repo {{ target_repository }}
+  args:
+    chdir: "{{ work_dir }}/charts/charts"
+
+- name: "Delete one time use key from Github"
+  shell: "{{ gh_tool_path }} api -X DELETE user/keys/{{ key_id }}"
+  register: gh_add_response
+  ignore_errors: true
+  args:
+    chdir: "{{ work_dir }}"
+  notify:
+    - "Delete work_dir directory"
+
+- name: "GH logout"
+  shell: "{{ gh_tool_path }} auth logout --hostname github.com"
+  args:
+    chdir: "{{ work_dir }}"
+...
