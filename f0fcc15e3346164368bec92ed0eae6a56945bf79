@@ -16,6 +16,91 @@
       "message": "Thanks for the feedback",
       "revId": "f0fcc15e3346164368bec92ed0eae6a56945bf79",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a78148ff_1639fae4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T03:01:50Z",
+      "side": 1,
+      "message": "Thanks for all the effort in here, I think I have few more requests.",
+      "revId": "f0fcc15e3346164368bec92ed0eae6a56945bf79",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c6ead32_38f9b49e",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T03:01:50Z",
+      "side": 1,
+      "message": "Sorry, the correct cmd is \"{{ gh_tool_path }} api user --jq .login\"",
+      "revId": "f0fcc15e3346164368bec92ed0eae6a56945bf79",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e9e0d29_17e5d7d2",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 115,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T03:01:50Z",
+      "side": 1,
+      "message": "nit:\n\n    shell:\n      cmd: |",
+      "revId": "f0fcc15e3346164368bec92ed0eae6a56945bf79",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ee4308a_60bf9d5e",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T03:01:50Z",
+      "side": 1,
+      "message": "nit: \"Push branch and create PR to the forked repository\"",
+      "revId": "f0fcc15e3346164368bec92ed0eae6a56945bf79",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e76cf41e_bc074008",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T03:01:50Z",
+      "side": 1,
+      "message": "I think is valid to simply use:\n\n    target_repository: \"{{ sandbox_repository | default(\u0027openshift-helm-charts/charts\u0027) }}\"\n\nIf the variable is defined is because is expected to use a valid repo, otherwise it will fail",
+      "revId": "f0fcc15e3346164368bec92ed0eae6a56945bf79",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
