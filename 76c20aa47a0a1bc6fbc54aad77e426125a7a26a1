@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "640a92aa_c21db7c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-23T13:20:59Z",
+      "side": 1,
+      "message": "@Tatiana, check is failing because of the check verify that submission happened less than five minutes ago. Do you think the submit was not done properly?",
+      "revId": "76c20aa47a0a1bc6fbc54aad77e426125a7a26a1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
