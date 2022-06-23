@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "be396acd_b808859e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-23T08:50:44Z",
+      "side": 1,
+      "message": "I have, it\u0027s just Pyxis API is super unstable, I have reworked the retry condition",
+      "parentUuid": "bd47e023_846a1dee",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8327fe11_1a8142ac",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-06-22T21:23:21Z",
       "side": 1,
       "message": "Hi Charles, are we sure that the current_operator_image always contains the digest? I mean, if we\u0027re in the connected environment and provide the bundle image by tag, would it work? You could test preflight on libvrit like this, using Test-Args-Hints: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/24888",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9e91b0b_45e610a2",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-23T08:50:44Z",
+      "side": 1,
+      "message": "good catch",
+      "parentUuid": "8327fe11_1a8142ac",
       "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -52,6 +88,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fb645f5_9dedb2f0",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-23T08:50:44Z",
+      "side": 1,
+      "message": "I have added it at the beginning, I will add it again when it\u0027s done",
+      "parentUuid": "b23c0954_77b50dd7",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3292a670_b8b19ffd",
@@ -69,6 +123,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "760e5713_1e361a8a",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-23T08:50:44Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3292a670_b8b19ffd",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37a0c755_27e066f5",
@@ -82,6 +154,24 @@
       "writtenOn": "2022-06-22T21:23:21Z",
       "side": 1,
       "message": "pyxis_auth_container is needed only for the submission. So it makes sense to move the condition into `when` part.",
+      "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8d01930_0787c3ee",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-23T08:50:44Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "37a0c755_27e066f5",
       "revId": "e8a493a74295f8dc5d5a0f752da86fe54a0fe569",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
