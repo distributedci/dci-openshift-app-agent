@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "7dc6b9740a69d383954e9350b11788d658c3c4ce",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2dd119a1_a8f66fad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-23T18:15:11Z",
+      "side": 1,
+      "message": "Thanks Ramon, just for the record from what I see this PR fixes:\n- lifecycle-readiness\n- lifecycle-liveiness\n- observability-termination-policy\nAnd this is skipped\n- affiliated-certification-operator-is-certified",
+      "revId": "7dc6b9740a69d383954e9350b11788d658c3c4ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
