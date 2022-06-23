@@ -673,6 +673,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "977d4c47_a3865756",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T21:10:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e323eb06_c3ab716d",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "045f34eb_7cb631f3",
@@ -686,6 +704,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "This can be combined with the one setting the chart desc, see below",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "755e172a_3da8660e",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T21:10:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "045f34eb_7cb631f3",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -707,6 +743,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2516d31_e2b54cae",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T21:10:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "222d7cf6_7ec45889",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a8131510_c92cf6dd",
@@ -720,6 +774,24 @@
       "writtenOn": "2022-06-22T19:28:09Z",
       "side": 1,
       "message": "This one could be removed",
+      "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ee5347d_140b0948",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T21:10:50Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a8131510_c92cf6dd",
       "revId": "3a482827b59374b8b0582d6d22f0ddfd5b87a1cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },

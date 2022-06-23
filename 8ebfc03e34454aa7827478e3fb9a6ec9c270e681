@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fbdb3dd_12fc2408",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-23T21:10:50Z",
+      "side": 1,
+      "message": "LGTM, let\u0027s get it tested 😎",
+      "revId": "8ebfc03e34454aa7827478e3fb9a6ec9c270e681",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
