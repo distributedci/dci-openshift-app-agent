@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1744f214_abc53599",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-24T11:03:50Z",
+      "side": 1,
+      "message": "Hi Charles, thank you! I\u0027ve added two minor notes, and I believe we also need a variable to continue to test already certified images, for example, to continue to run Preflight CI on simple-demo-operator. Something like: `test_certified: true`",
+      "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f3e96ab_6c4db835",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-24T11:03:50Z",
+      "side": 1,
+      "message": "I\u0027ve checked the logs, pyxis apikey is not in-there (headers are not displayed), so we disclose nothing. Maybe it makes sense to remove no_log here.",
+      "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "927a3853_42553791",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-24T11:03:50Z",
+      "side": 1,
+      "message": "If the image is provided by tag, we could retrieve the digest with `podman inspect --authfile \u003cauthfile\u003e docker://\u003cimage\u003e | jq -r \u0027.Digest\u0027`.\n\nI believe it\u0027s better to retrieve the digest instead of discarding images by tags.",
+      "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
