@@ -16,6 +16,24 @@
       "message": "@Tatiana, check is failing because of the check verify that submission happened less than five minutes ago. Do you think the submit was not done properly?",
       "revId": "76c20aa47a0a1bc6fbc54aad77e426125a7a26a1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dec6d8f7_10e056ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-24T08:08:34Z",
+      "side": 1,
+      "message": "Hi Charles, tbh I didn\u0027t have time to investigate. \n\nFrom the logs:\ncurrent_time_utc: 2022-06-23 10:30:26\nsubmission_utc: 2022-06-22 02:18:11\n\nThere are too possible issues:\n1/ Pyxis returns 201 but the submission was not actually done\n2/ To verify, I retrieve the very last entry in the list of submissions and get its timestamp. If there is something not standard with GET query - pagination or submissions are not ordered by the time, that it could fail as well. \n\nConcerning your CR, it seems working, we could probably merge and immediately test on one of the partners.",
+      "parentUuid": "640a92aa_c21db7c7",
+      "revId": "76c20aa47a0a1bc6fbc54aad77e426125a7a26a1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
