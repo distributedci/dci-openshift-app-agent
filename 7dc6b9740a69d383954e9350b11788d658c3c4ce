@@ -50,6 +50,24 @@
       "message": "Thanks Ramon, just for the record from what I see this PR fixes:\n- lifecycle-readiness\n- lifecycle-liveiness\n- observability-termination-policy\nAnd this is skipped\n- affiliated-certification-operator-is-certified",
       "revId": "7dc6b9740a69d383954e9350b11788d658c3c4ce",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9d92122_b3a29fe0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-24T07:01:45Z",
+      "side": 1,
+      "message": "Yes, exactly. In fact, affiliated-certification-operator-is-certified should be always skipped according to the test suites we execute, but there\u0027s a bug on tnf that executes it even though it is not declared, this is a thing that needs to be fixed in a separate PR on tnf repo, but for the moment, it\u0027s fine to skip it.",
+      "parentUuid": "2dd119a1_a8f66fad",
+      "revId": "7dc6b9740a69d383954e9350b11788d658c3c4ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
