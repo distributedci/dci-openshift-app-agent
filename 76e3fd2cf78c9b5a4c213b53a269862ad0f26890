@@ -103,6 +103,24 @@
       "parentUuid": "927a3853_42553791",
       "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18f9866e_0aa6202e",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-24T13:47:57Z",
+      "side": 1,
+      "message": "sorry, my comment was for the line just above `- \u0027\"sha256\" in image_id\u0027`",
+      "parentUuid": "9c91cb1a_1b57ac1f",
+      "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
