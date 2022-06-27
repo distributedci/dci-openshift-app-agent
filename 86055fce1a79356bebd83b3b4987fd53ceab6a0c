@@ -41,6 +41,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "22081e4b_1eae579a",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-27T12:49:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "63cfcde8_1a47c845",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 30
+      },
+      "revId": "86055fce1a79356bebd83b3b4987fd53ceab6a0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4f4dd880_b72e626c",
