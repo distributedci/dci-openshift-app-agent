@@ -16,6 +16,23 @@
       "message": "LGTM",
       "revId": "f6392bcf575b179698c7e6e30661329e7e1a90be",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92f5d780_cf37b7b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-27T17:17:38Z",
+      "side": 1,
+      "message": "Thanks Tatiana, I agree that this should be fine with the 201 status.",
+      "revId": "f6392bcf575b179698c7e6e30661329e7e1a90be",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
