@@ -121,6 +121,24 @@
       "parentUuid": "9c91cb1a_1b57ac1f",
       "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03999c77_501adae6",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-27T09:05:30Z",
+      "side": 1,
+      "message": "I am trying but first, getting the digest of an image without pulling it is not easy, and then if the image is not provided by a sha but with a tag, it will fail at some point.\nDo you really think more flexibility here is useful?",
+      "parentUuid": "18f9866e_0aa6202e",
+      "revId": "76e3fd2cf78c9b5a4c213b53a269862ad0f26890",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
