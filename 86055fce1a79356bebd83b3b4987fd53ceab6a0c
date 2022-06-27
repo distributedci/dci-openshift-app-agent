@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a75d5254_722c00ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-27T12:13:10Z",
+      "side": 1,
+      "message": "minor comments in terms of documentation, for the rest, I\u0027ve seen that is mostly fine",
+      "revId": "86055fce1a79356bebd83b3b4987fd53ceab6a0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63cfcde8_1a47c845",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-27T12:13:10Z",
+      "side": 1,
+      "message": "Need to escape the underscores in this way: preflight\\_test\\_certified\\_image",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 30
+      },
+      "revId": "86055fce1a79356bebd83b3b4987fd53ceab6a0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f4dd880_b72e626c",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-06-27T12:13:10Z",
+      "side": 1,
+      "message": "Should be added to the README?",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 9
+      },
+      "revId": "86055fce1a79356bebd83b3b4987fd53ceab6a0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
