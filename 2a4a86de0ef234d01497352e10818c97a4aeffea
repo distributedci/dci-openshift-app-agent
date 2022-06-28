@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a997a10_552a42a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-28T13:42:23Z",
+      "side": 1,
+      "message": "I believe that the initial idea was _not to test_ (and not to submit) already certified containers, to avoid the red tests for non-ubi-based stuff in the partners\u0027 test results. \n\nDid you change the idea? I\u0027m trying to understand what is the goal here. ",
+      "revId": "2a4a86de0ef234d01497352e10818c97a4aeffea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a04e3ae_c426702c",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-28T13:42:23Z",
+      "side": 1,
+      "message": "Hi Charles, so the main logic is to run the tests but to skip Pyxis submission if the container is already certified? \n\nThen probably it would be nice to trim some naming towards skip_submission_for_certified:\n\n- CR name: skiping container certification if the image is already certified  \u003c-- you only skip the submission part\n- variable name: preflight_test_certified_image  \u003c-- tests are executed anyway, only the submission is skipped",
+      "revId": "2a4a86de0ef234d01497352e10818c97a4aeffea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
