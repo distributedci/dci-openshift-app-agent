@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4651bd69_390643c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-06-28T18:39:00Z",
+      "side": 1,
+      "message": "I think also here is very transparent the use of the common role, from my side looks good.",
+      "revId": "4b8cb98eb13e589970b5a09d786cd64b9df73fac",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
