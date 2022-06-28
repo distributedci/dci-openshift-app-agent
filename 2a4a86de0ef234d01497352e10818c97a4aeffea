@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f9d3d76_392e5edc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-28T13:50:55Z",
+      "side": 1,
+      "message": "Thank you for the feedback, I think I will add the condition to skip the tests",
+      "revId": "2a4a86de0ef234d01497352e10818c97a4aeffea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5a04e3ae_c426702c",
@@ -31,6 +48,24 @@
       "writtenOn": "2022-06-28T13:42:23Z",
       "side": 1,
       "message": "Hi Charles, so the main logic is to run the tests but to skip Pyxis submission if the container is already certified? \n\nThen probably it would be nice to trim some naming towards skip_submission_for_certified:\n\n- CR name: skiping container certification if the image is already certified  \u003c-- you only skip the submission part\n- variable name: preflight_test_certified_image  \u003c-- tests are executed anyway, only the submission is skipped",
+      "revId": "2a4a86de0ef234d01497352e10818c97a4aeffea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e223d2f5_0fe7c48f",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-28T13:50:55Z",
+      "side": 1,
+      "message": "I though we wanted to execute the tests anyway but it is easy to skip the test if we want.\nAlso, it only affect the method with check container binary, I don\u0027t know if we should cover the podman case.",
+      "parentUuid": "5a04e3ae_c426702c",
       "revId": "2a4a86de0ef234d01497352e10818c97a4aeffea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
