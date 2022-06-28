@@ -32,7 +32,7 @@
   register: preflight_container_output
   # do not display logs
   # if preflight invocation contains --submit option
-  no_log: "{{ pyxis_auth_container is defined and pyxis_auth_container | length > 0 }}"
+  # no_log: "{{ pyxis_auth_container is defined and pyxis_auth_container | length > 0 }}"
 
 - name: Upload logs for preflight check container into DCI
   vars:
