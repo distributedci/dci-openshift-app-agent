@@ -86,6 +86,30 @@
       },
       "revId": "86055fce1a79356bebd83b3b4987fd53ceab6a0c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30f4215e_6405a67c",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-06-29T08:00:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4f4dd880_b72e626c",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 9
+      },
+      "revId": "86055fce1a79356bebd83b3b4987fd53ceab6a0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
