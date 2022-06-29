@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d86b511f_c771ec29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-29T07:39:45Z",
+      "side": 1,
+      "message": "Hi Charles, let\u0027s test both in connected and disconnected environment, both with preflight\\_test\\_certified\\_image\u003dtrue and \u003dfalse. Just to ensure that we\u0027re not going to break anything. Probably we have to add preflight\\_test\\_certified\\_image\u003dtrue by default into preflight and preflight-green pipelines, wdyt?",
+      "revId": "d44101fe24345b2f2bcc512466f8c1b9ee3ab46d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05d40cfb_f3c73c12",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-29T07:39:45Z",
+      "side": 1,
+      "message": "Let\u0027s maybe add a debug message at the end of this file, \"the tests for the {{ }} will not be run because it is already certified and \"preflight\\_test\\_certified\\_image is set to false\"",
+      "revId": "d44101fe24345b2f2bcc512466f8c1b9ee3ab46d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ce38116_3f8371da",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-29T07:39:45Z",
+      "side": 1,
+      "message": "I believe we could add the condition `when: not preflight_test_certified_image` right here, instead of using it in the nested file",
+      "revId": "d44101fe24345b2f2bcc512466f8c1b9ee3ab46d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f5dcfe9_12772bfc",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-29T07:39:45Z",
+      "side": 1,
+      "message": "it\u0027s possible to simplify a bit: `when: not already_certified | default(false)` and hence remove this variable from defaults",
+      "revId": "d44101fe24345b2f2bcc512466f8c1b9ee3ab46d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
