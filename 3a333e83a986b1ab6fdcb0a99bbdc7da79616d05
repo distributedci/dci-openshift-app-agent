@@ -16,6 +16,23 @@
       "message": "LGTM",
       "revId": "3a333e83a986b1ab6fdcb0a99bbdc7da79616d05",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcbc19f9_84b41717",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-30T15:22:55Z",
+      "side": 1,
+      "message": "Hi Tony, let\u0027s merge it to avoid conflicts, I also modify preflight/readme in the upcoming dev.",
+      "revId": "3a333e83a986b1ab6fdcb0a99bbdc7da79616d05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
