@@ -84,6 +84,57 @@
       "message": "Hi Charles, did you test with preflight_test_certified_image\u003dtrue? I mean, I\u0027d prefer to test it better, but if you\u0027re in a hurry to merge, that\u0027s fine, we could always revert it if needed.",
       "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a56f768_42fb51ce",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 17
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-30T17:45:37Z",
+      "side": 1,
+      "message": "Please add preflight_test_certified_image documentation in here",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "117e0a36_cf971feb",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-30T17:45:37Z",
+      "side": 1,
+      "message": "The name of this variable is a bit confusing. I assume you\u0027re trying to get the repo+image name OR you\u0027re trying to get just the repository name?\n\nFor the latter, you will need to look at the first \u0027/\u0027 instead of \u0027@\u0027 as there\u0027s no guarantee that the current_operator_image will have an \u0027@\u0027, right?\n\nSplitting by the first `/`  (assuming a registry is passed) should be more accurate, examples:\n\n- myregistry.com/some-org/some-sub-org/image\n- another.registry.example.com:4443/some-org/image\n\nregistries would be:\n\n- myregistry.com\n- another.registry.example.com:4443",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "15a88bdd_cb69cd2c",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-06-30T17:45:37Z",
+      "side": 1,
+      "message": "Suggestion to make it multiline:\n\n    url:\n      \"{{ pyxis_url }}/images?\\\n      include\u003ddata.image_id\u0026\\\n      include\u003ddata.docker_image_id\u0026\\\n      include\u003ddata.certified\u0026\\\n      filter\u003ddocker_image_id%3D%3D%22{{ image_id }}%22\u0026\\\n      page_size\u003d1\u0026page\u003d0\"",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
