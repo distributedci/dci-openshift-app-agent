@@ -350,6 +350,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f51f55c_43f94eb4",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-30T00:29:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5cb510e0_ca94e130",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7b8337b9_90eb66b6",
@@ -367,6 +385,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "64309851_04192ab1",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-30T00:29:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "7b8337b9_90eb66b6",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5870f9f_cca8d21c",
@@ -380,6 +416,24 @@
       "writtenOn": "2022-06-22T22:15:34Z",
       "side": 1,
       "message": "I think enable_sandbox is not needed, see my comment about it above",
+      "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8a6f9a1_5e9bdca5",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-06-30T00:29:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e5870f9f_cca8d21c",
       "revId": "44acfb859f20b5df3bfb7a3509e4e47343ff34b1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
