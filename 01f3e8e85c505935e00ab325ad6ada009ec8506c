@@ -67,6 +67,23 @@
       "message": "I find the change fine and working on SNO, but I\u0027ll leave +2 for Tatiana for the moment to confirm it\u0027s fine, thanks Charles!",
       "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b2d7b8e_784cd3e5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-06-30T16:44:55Z",
+      "side": 1,
+      "message": "Hi Charles, did you test with preflight_test_certified_image\u003dtrue? I mean, I\u0027d prefer to test it better, but if you\u0027re in a hurry to merge, that\u0027s fine, we could always revert it if needed.",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
