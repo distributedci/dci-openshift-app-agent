@@ -33,6 +33,24 @@
       "message": "Looking at the failure in the CI job, it seems these preflight tasks are not run.\nTo me it looks like the file extension en \"tests_containers_only\" is missing.",
       "revId": "9576a14f791992d3ad4e17bb6a38e170e1a35c9f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3e8c18f_a9780e50",
+        "filename": "plays/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-04T10:40:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "13a88210_51df93a7",
+      "revId": "9576a14f791992d3ad4e17bb6a38e170e1a35c9f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
