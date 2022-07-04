@@ -114,6 +114,52 @@
       },
       "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "92435663_365264c6",
+        "filename": "roles/preflight/tasks/tests_containers_only.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-04T12:26:49Z",
+      "side": 1,
+      "message": "It should be replaced by current_operator_image",
+      "range": {
+        "startLine": 19,
+        "startChar": 68,
+        "endLine": 19,
+        "endChar": 76
+      },
+      "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "573acbe9_068acf4d",
+        "filename": "roles/preflight/tasks/tests_containers_only.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-04T12:26:49Z",
+      "side": 1,
+      "message": "I don\u0027t get this split with \u0027@\u0027\nAfter split(\u0027:\u0027)[0] you should get the name you are looking for without a \u0027@\u0027",
+      "range": {
+        "startLine": 25,
+        "startChar": 72,
+        "endLine": 25,
+        "endChar": 85
+      },
+      "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
