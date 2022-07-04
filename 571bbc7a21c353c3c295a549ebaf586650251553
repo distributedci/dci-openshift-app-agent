@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "989671c7_c8005b07",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-04T10:23:31Z",
+      "side": 1,
+      "message": "Also, do you expect to test this on libvirt to confirm it works in connected environments?",
+      "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5606b1f1_1d18646c",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 161,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-04T10:23:31Z",
+      "side": 1,
+      "message": "Is this needed for operator certification? Now that I\u0027m reading this change, I\u0027ve seen this is used in container certification, but also in operators?",
+      "range": {
+        "startLine": 161,
+        "startChar": 0,
+        "endLine": 161,
+        "endChar": 56
+      },
+      "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00691083_1870eca1",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 203,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-04T10:23:31Z",
+      "side": 1,
+      "message": "Same",
+      "range": {
+        "startLine": 203,
+        "startChar": 0,
+        "endLine": 203,
+        "endChar": 56
+      },
+      "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
