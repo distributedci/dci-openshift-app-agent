@@ -105,6 +105,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0165f6da_e9917b09",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 17
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-04T07:02:54Z",
+      "side": 1,
+      "message": "? Are you talking about the line 20?",
+      "parentUuid": "1a56f768_42fb51ce",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "117e0a36_cf971feb",
         "filename": "roles/preflight/tasks/check_if_container_certified.yml",
         "patchSetId": 17
@@ -122,6 +140,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d2a35565_037aba0b",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-04T07:02:54Z",
+      "side": 1,
+      "message": "I think there is guarantee on the \u0027@\u0027 but anyway I get your point. I will change the variable name.",
+      "parentUuid": "117e0a36_cf971feb",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "15a88bdd_cb69cd2c",
         "filename": "roles/preflight/tasks/check_if_container_certified.yml",
         "patchSetId": 17
@@ -133,6 +169,24 @@
       "writtenOn": "2022-06-30T17:45:37Z",
       "side": 1,
       "message": "Suggestion to make it multiline:\n\n    url:\n      \"{{ pyxis_url }}/images?\\\n      include\u003ddata.image_id\u0026\\\n      include\u003ddata.docker_image_id\u0026\\\n      include\u003ddata.certified\u0026\\\n      filter\u003ddocker_image_id%3D%3D%22{{ image_id }}%22\u0026\\\n      page_size\u003d1\u0026page\u003d0\"",
+      "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a0306d3_e9036c0b",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-04T07:02:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "15a88bdd_cb69cd2c",
       "revId": "01f3e8e85c505935e00ab325ad6ada009ec8506c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
