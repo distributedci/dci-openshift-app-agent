@@ -53,6 +53,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "212e625c_c51cbc32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-04T10:46:21Z",
+      "side": 1,
+      "message": "Okey, understood, I supposed it was an urgent change. If you need to merge it, you have my ACK, even though you don\u0027t adress the changes I commented in the README.",
+      "revId": "571bbc7a21c353c3c295a549ebaf586650251553",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5606b1f1_1d18646c",
