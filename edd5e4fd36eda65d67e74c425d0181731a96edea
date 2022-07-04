@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "550d344a_a18b15ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-04T10:31:36Z",
+      "side": 1,
+      "message": "I have some concerns with the current status of chart-verifier and also the scope of this change. My impression is that the current role is executing, by default, a specific example that is hardcoded in the role. Isn\u0027t it better to move all this to a sample, like tnf_test_example, and run it as a hook? Then, have the general chart-verifier role logic that applies for all the cases that can be tested, but having the specific example separated in hooks. What do you think?",
+      "revId": "edd5e4fd36eda65d67e74c425d0181731a96edea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
