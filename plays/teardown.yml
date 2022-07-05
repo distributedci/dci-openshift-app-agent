@@ -5,15 +5,21 @@
     state: absent
   when: pullsecret_tmp_file is defined
 
+- name: "Disable OCP internal Registry"
+  include_tasks: plays/disable-ocp-registry.yml
+  when:
+    - ocp_registry_user is defined
+
 - name: "Remove client tmp directory"
   file:
     path: "{{ client_tmp_dir.path }}"
     state: absent
   when: client_tmp_dir is defined
-
+  
 - name: Delete namespace
   community.kubernetes.k8s:
     api_version: v1
     kind: Namespace
     name: "{{ dci_openshift_app_ns }}"
     state: absent
+...
