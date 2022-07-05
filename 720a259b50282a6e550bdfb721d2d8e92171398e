@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1442971_688fde84",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T09:11:08Z",
+      "side": 1,
+      "message": "Hi Charles, tested the fix with the skopeo installation, it didn\u0027t fix the issue: https://www.distributed-ci.io/jobs/e46ab024-b511-4dc8-b8aa-afebeefca728/jobStates#1dc26b41-dafb-4249-a903-6eea5c6731ec:file22 ",
+      "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "336ced36_599749d7",
