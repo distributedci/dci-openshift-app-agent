@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "719c9a1b_47e430c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T10:13:03Z",
+      "side": 1,
+      "message": "hi Charles, we\u0027re using open registry that does not require any credentials, there is no need in partner_creds here",
+      "parentUuid": "e5444159_68c2232a",
+      "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "336ced36_599749d7",
