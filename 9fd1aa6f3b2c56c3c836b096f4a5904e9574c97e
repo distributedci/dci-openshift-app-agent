@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "363aadca_76578b93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-05T09:36:41Z",
+      "side": 1,
+      "message": "Yes, good catch, I\u0027ll take notes to create a change to remove these unneeded bool conversions and for the moment I\u0027ll merge this, thanks!",
+      "parentUuid": "85675542_71fdcde1",
+      "revId": "9fd1aa6f3b2c56c3c836b096f4a5904e9574c97e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "191ee128_7efc7994",
