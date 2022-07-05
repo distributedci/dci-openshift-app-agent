@@ -33,6 +33,40 @@
       "message": "Hi guys, can someone of you take a look to this change to finally approve it? It\u0027s a very simple one, I\u0027d really appreciate it :) thank you in advance!",
       "revId": "9fd1aa6f3b2c56c3c836b096f4a5904e9574c97e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85675542_71fdcde1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T07:43:32Z",
+      "side": 1,
+      "message": "Hi Ramon, just a minor note but feel free to ignore it - I see you used an excessive `| bool` several times already, so maybe a follow-up CR to trim them all. ",
+      "revId": "9fd1aa6f3b2c56c3c836b096f4a5904e9574c97e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "191ee128_7efc7994",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 208,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T07:43:32Z",
+      "side": 1,
+      "message": "Hi Ramon, from the documentation: `exists` is boolean: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/stat_module.html#return-stat/exists\n\nso `not claim_json_present.stat.exists` should be enough",
+      "revId": "9fd1aa6f3b2c56c3c836b096f4a5904e9574c97e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
