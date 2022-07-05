@@ -1,0 +1,37 @@
+---
+
+- name: "Logout from the registry"
+  shell: |
+    podman logout {{ registry_route.resources[0].status.ingress[0].host }}
+  when:
+    - registry_route is defined
+
+- name: "Disable the OCP registry"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: imageregistry.operator.openshift.io/v1
+      kind: Config
+      metadata:
+        name: cluster
+      spec:
+        managementState: "Removed"
+
+- name: "Get the DCI registry IdP provider index"
+  shell: |
+    {{ oc_tool_path }} get oauth cluster -o json  | jq '.spec.identityProviders | map(.name == "dci-http-idp") | index(true)'
+  register: idp_index
+
+- name: "Remove the DCI registry IdP provider"
+  shell: |
+    {{ oc_tool_path }} patch oauth cluster --type=json -p="[{'op': 'remove', 'path': '/spec/identityProviders/{{ idp_index.stdout }}'}]"
+  when:
+    - idp_index.stdout | length > 0
+    - idp_index.stdout != "null"
+
+- name: "Remove the backend dci-registry-secret"
+  community.kubernetes.k8s:
+    state: absent
+    kind: Secret
+    name: dci-registry-secret
+    namespace: openshift-config
+...
