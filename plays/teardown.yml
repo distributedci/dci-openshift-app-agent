@@ -16,3 +16,16 @@
     kind: Namespace
     name: "{{ dci_openshift_app_ns }}"
     state: absent
+
+# - name: "Disable OCP internal Registry"
+#   include_tasks: plays/disable-ocp-registry.yml
+#   when:
+#     - ocp_registry_user is defined
+
+- name: "Remove opm creds_dir"
+  file:
+    path: "{{ creds_dir }}"
+    state: absent
+
+
+...
