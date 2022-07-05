@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5444159_68c2232a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-05T09:42:00Z",
+      "side": 1,
+      "message": "It fails because the image is not accessible without authentification, I\u0027ll add the support of partner_creds variable",
+      "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "336ced36_599749d7",
