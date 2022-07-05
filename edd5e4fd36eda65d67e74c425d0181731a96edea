@@ -34,6 +34,24 @@
       "parentUuid": "550d344a_a18b15ee",
       "revId": "edd5e4fd36eda65d67e74c425d0181731a96edea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb7a7609_f6d280c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-05T07:11:00Z",
+      "side": 1,
+      "message": "Okey, understood then, I wasn\u0027t aware of that complexity, thanks!",
+      "parentUuid": "9bcfc5a1_1a9f3cc0",
+      "revId": "edd5e4fd36eda65d67e74c425d0181731a96edea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71a6c999_77bfa6a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-05T07:11:00Z",
+      "side": 1,
+      "message": "just a minor comment before continuing testing it, which I think it would be the only remaining part to be done before merging (I mean, testing the whole change we have).",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a47138c_1dd458ad",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-05T07:11:00Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 31,
+        "startChar": 7,
+        "endLine": 31,
+        "endChar": 8
+      },
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
