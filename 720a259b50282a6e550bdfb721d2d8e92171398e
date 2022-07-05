@@ -33,6 +33,24 @@
       "message": "Hi Charles, I believe it\u0027s better to move in the pre-run",
       "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43fac9b8_7fcb2ac4",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-05T09:00:42Z",
+      "side": 1,
+      "message": "? Which pre-run? skopeo is only used in this role, it is better to let it in the role",
+      "parentUuid": "336ced36_599749d7",
+      "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
