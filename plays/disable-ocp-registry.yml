@@ -1,0 +1,122 @@
+---
+
+- name: "Logout from the registry"
+  shell: |
+    podman logout {{ registry_route.resources[0].status.ingress[0].host }}
+  when:
+    - registry_route is defined
+  ignore_errors: true
+
+- name: "Rollback storage image-registry storage configs"
+  shell: >
+    {{ oc_tool_path }} patch configs.imageregistry.operator.openshift.io cluster
+    --type merge
+    --patch '{"spec": {"storage": { "emptyDir": null }}}'
+
+- name: "Set the OCP registry as Removed"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: imageregistry.operator.openshift.io/v1
+      kind: Config
+      metadata:
+        name: cluster
+      spec:
+        managementState: "Removed"
+
+- name: "Get the DCI registry IdP provider index"
+  shell: >
+    set -o pipefail &&
+    {{ oc_tool_path }} get oauth cluster -o json
+    | jq '.spec.identityProviders
+    | map(.name == "dci-http-idp") | index(true)'
+  register: idp_index
+
+- name: "Remove the DCI registry IdP provider"
+  shell: >
+    {{ oc_tool_path }} patch oauth cluster
+    --type=json
+    -p="[{'op': 'remove', 'path': '/spec/identityProviders/{{ idp_index.stdout }}'}]"
+  when:
+    - idp_index.stdout | length > 0
+    - idp_index.stdout != "null"
+
+- name: "Remove the backend dci-registry-secret"
+  community.kubernetes.k8s:
+    state: absent
+    kind: Secret
+    name: dci-registry-secret
+    namespace: openshift-config
+
+- name: "Revoke registry-editor permissions to ocp_registry_user"
+  community.kubernetes.k8s:
+    api_version: rbac.authorization.k8s.io/v1
+    state: absent
+    kind: ClusterRoleBinding
+    name: editor-ocp_registry_user
+
+- name: "Remove the ocp_registry_user"
+  community.kubernetes.k8s:
+    state: absent
+    kind: User
+    name: ocp_registry_user
+
+- name: "Remove the ocp_registry_user identity"
+  community.kubernetes.k8s:
+    api_version: user.openshift.io/v1
+    state: absent
+    kind: Identity
+    name: "dci-http-idp:ocp_registry_user"
+
+- name: "Remove the dci-registry CAs"
+  community.kubernetes.k8s:
+    state: absent
+    kind: ConfigMap
+    name: dci-registry-cas
+    namespace: openshift-config
+
+- name: "Encoding the old pull_secrets file"
+  slurp:
+    src: "{{ creds_dir }}/pull_secret.bak"
+  register: dci_pull_secret
+  ignore_errors: true
+
+- name: "Restore the previous general pullsecret"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: v1
+      kind: Secret
+      metadata:
+        name: pull-secret
+        namespace: openshift-config
+      data:
+        .dockerconfigjson: "{{ dci_pull_secret.content }}"
+      type: kubernetes.io/dockerconfigjson
+  ignore_errors: true
+
+- name: "Remove the insecure registries"
+  shell: >
+    {{ oc_tool_path }} patch image.config.openshift.io/cluster
+    --type=json
+    -p="[{'op': 'remove', 'path': '/spec/registrySources'}]"
+  ignore_errors: true
+
+- name: "Remove the additionTrustedCA"
+  shell: >
+    {{ oc_tool_path }} patch image.config.openshift.io/cluster
+    --type=json
+    -p="[{'op': 'remove', 'path': '/spec/additionalTrustedCA'}]"
+  ignore_errors: true
+
+- name: "Pause for Machine Config to be rendered"
+  pause:
+    seconds: 60
+
+- name: "Wait for MCP status"
+  include_role:
+    name: check-resource
+  vars:
+    resource_to_check: "MachineConfigPool"
+    check_wait_retries: 540
+    check_wait_delay: 15
+    check_reason: "Reboot to disable insecure registries on nodes"
+...
