@@ -139,6 +139,7 @@ dci\_openshift\_app\_ns            | "myns"                                     
 dci\_must\_gather\_images          | ["registry.redhat.io/openshift4/ose-must-gather"]    | List of the must-gather images to use when retrieving logs.
 provisioner\_name                  |                                                      | Provisioner address (name or IP) to be accessed for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
 provisioner\_user                  |                                                      | Provisioner username, used to access to the provisioner for retrieving logs with must-gather images. If not defined, logs will not be retrieved.
+enable\_ocp\_registry              |false                                                 | Enable/Disable the internal OCP images registry
 do\_cnf\_cert                      |false                                                 | Enable/Disable the CNF Cert Suite (<https://github.com/test-network-function/cnf-certification-test>)
 do\_chart\_verifier                | false                                                | Enable/Disable the Chart Verifier
 do\_preflight\_tests               | false                                                | Trigger to activate the preflight tests
@@ -236,6 +237,35 @@ $ dci-openshift-app-agent-ctl -s -- --skip-tags dci
 The DCI App Agent has support to execute multiple test suites to validate containers, virtual functions, Helm charts, and operators. The suites are in the form of Ansible roles executed during the Red Hat testing phases. The suites help the partners on getting prepared for the Red Hat Certifications or actually run the certification process on the the workloads deployed via DCI.
 
 The variables that control the tests execution can be added as part or the `settting.yml` file (see above).
+
+### Enabling the local OCP images registry
+
+Some test suites may require a local registry to load/pull container images, only in cases where there is no local registry to push the images under certication the internal registry can be useful.
+
+The openshift-app-agent supports enabling the OCP integrated registry on the current cluster and configure it with ephemeral storage. Please note that all the images are lost if you restart the registry. Also it is important to notice that enabling the internal registry will configure the cluster nodes to be able to pull from the internal registry endpoint, this requires changes applied via Maching Configs that will execute a cluster nodes rolling restart,  causing some delays or pods distruption depending on the cluster size. The usage of this configuration is not recommended for production environments.
+
+If `enable_ocp_registry` is set to true, the registry endpoint will be exposed via the default cluster route, something like: default-route-openshift-image-registry.apps.<cluster_name>.<domain> and the service endoint image-registry.openshift-image-registry.svc:5000.
+
+The registry will be disabled as part of the teardown phase of the agent, but the following variables related to the registry can be used during workloads deployments.
+
+ocp_registry_user: The user to be used to access the registry.
+ocp_registry_user_token: The token used to authenticate to the registry.
+ocp_registry_endpoint: The endpoint of the registry.
+
+
+Login to the registry:
+```ShellSession
+$ podman login -u ocp_registry_user -p <ocp_registry_user_token> --tls-verify=false $HOST
+```
+
+How to pull/tag/push images to the registry that can be used later by the test suites:
+```ShellSession
+$ podman pull name.io/image
+$ podman tag name.io/image $OCP_REGISTRY/<project>/image:latest
+$ podman push $OCP_REGISTRY/<project>/image:latest
+```
+
+The proper DNS resolution should be in place in order to allow the registry to be reached from outside the cluster and the provisioner node.
 
 ### Operator Certification tests
 
