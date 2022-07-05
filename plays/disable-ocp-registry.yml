@@ -1,0 +1,59 @@
+---
+
+- name: "Logout from the registry"
+  shell: |
+    podman logout {{ registry_route.resources[0].status.ingress[0].host }}
+  when:
+    - registry_route is defined
+
+- name: "Rollback storage image-registry storage configs"
+  shell: >
+    {{ oc_tool_path }} patch configs.imageregistry.operator.openshift.io cluster
+    --type merge
+    --patch '{"spec":{"storage":{"emptyDir":null}}}'
+
+- name: "Set the OCP registry as Removed"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: imageregistry.operator.openshift.io/v1
+      kind: Config
+      metadata:
+        name: cluster
+      spec:
+        managementState: "Removed"
+
+- name: "Get the DCI registry IdP provider index"
+  shell: >
+    set -o pipefail &&
+    {{ oc_tool_path }} get oauth cluster -o json
+    | jq '.spec.identityProviders
+    | map(.name == "dci-http-idp") | index(true)'
+  register: idp_index
+
+- name: "Remove the DCI registry IdP provider"
+  shell: |
+    {{ oc_tool_path }} patch oauth cluster --type=json -p="[{'op': 'remove', 'path': '/spec/identityProviders/{{ idp_index.stdout }}'}]"
+  when:
+    - idp_index.stdout | length > 0
+    - idp_index.stdout != "null"
+
+- name: "Remove the backend dci-registry-secret"
+  community.kubernetes.k8s:
+    state: absent
+    kind: Secret
+    name: dci-registry-secret
+    namespace: openshift-config
+
+- name: "Revoke registry-editor permissions to ocp_registry_user"
+  community.kubernetes.k8s:
+    api_version: rbac.authorization.k8s.io/v1
+    state: absent
+    kind: ClusterRoleBinding
+    name: editor-ocp_registry_user
+
+- name: "Remove the ocp_registry_user"
+  community.kubernetes.k8s:
+    state: absent
+    kind: User
+    name: ocp_registry_user
+...
