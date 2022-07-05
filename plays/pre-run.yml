@@ -28,4 +28,8 @@
     - dci_disconnected | default(false) | bool
     - provisionhost_registry|length
 
+- name: Set pullsecret file for disconnected environments
+  include_tasks: enable-ocp-registry.yml
+  when: enable_ocp_registry | default(false) | bool
+
 ...
