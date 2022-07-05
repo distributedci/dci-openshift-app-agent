@@ -1,0 +1,51 @@
+---
+
+- name: "Enable ephemeral storage for OCP registry"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: imageregistry.operator.openshift.io/v1
+      kind: Config
+      metadata:
+        name: cluster
+      spec:
+        storage:
+          emptyDir: {}
+
+- name: "Enable the OCP registry"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: imageregistry.operator.openshift.io/v1
+      kind: Config
+      metadata: 
+        name: cluster
+      spec:
+        managementState: "Managed"
+
+- name: "Expose the registry via default route"
+  community.kubernetes.k8s:
+    definition:
+      apiVersion: imageregistry.operator.openshift.io/v1
+      kind: Config
+      metadata: 
+        name: cluster
+      spec:
+        defaultRoute: true
+
+- name: "Get the registry route"
+  community.kubernetes.k8s_info:
+    api: route.openshift.io/v1
+    kind: Route
+    name: default-route
+    namespace: openshift-image-registry
+  register: registry_route
+
+- name: "Set ocp_registry"
+  set_fact:
+    ocp_registry: "{{ registry_route.resources[0].status.ingress[0].host }}"
+  when:
+    - registry_route.resources[0].status.ingress[0].host | regex_search('default-route')
+
+- name: "Registry Login Information"
+  debug:
+    msg: "use 'podman login -u $(oc whoami) -p $(oc whoami -t) --tls-verify=false {{ registry_route.resources[0].status.ingress[0].host }}' to login to the registry"
+...
