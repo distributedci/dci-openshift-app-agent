@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "462e2ddf_6d17cd07",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-05T18:17:38Z",
+      "side": 1,
+      "message": "yeah, sounds good",
+      "parentUuid": "57911a68_2765e35b",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9ecb5be5_d2262dcd",
@@ -65,6 +83,24 @@
       "writtenOn": "2022-07-05T12:44:53Z",
       "side": 1,
       "message": "Hi Beto, if we\u0027re running with `submit_results: false`, do we need to define sandbox_repository? I didn\u0027t find it in the table of variables for this role and not sure if it is mandatory or not.",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb40d689_ae7b7cd7",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-05T18:17:38Z",
+      "side": 1,
+      "message": "submit_results will create the PR on the target repository, it could be the the sandbox if defined or the official openshift repo. Having submit_results: false will just make the test results available in DCI or the log_dir. I think it is better to rename the variable to create_pr. \n\nThanks",
+      "parentUuid": "9ecb5be5_d2262dcd",
       "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -88,6 +124,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "398b913e_6af8a354",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-05T18:17:38Z",
+      "side": 1,
+      "message": "good idea!",
+      "parentUuid": "44fd6a1a_ac290bb2",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "405de9f5_dbeef497",
         "filename": "roles/chart-verifier/README.md",
         "patchSetId": 22
@@ -99,6 +153,24 @@
       "writtenOn": "2022-07-05T12:44:53Z",
       "side": 1,
       "message": "typo: need to be",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "afe735ae_b51ff0ae",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-05T18:17:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "405de9f5_dbeef497",
       "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -120,6 +192,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "08a34ca8_5c14d62f",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-05T18:17:38Z",
+      "side": 1,
+      "message": "It is used in the handlers to remove the one time use SSH key",
+      "parentUuid": "d71759b0_5829b657",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "28118613_0d7fdd1b",
@@ -133,6 +223,24 @@
       "writtenOn": "2022-07-05T12:44:53Z",
       "side": 1,
       "message": "minor thing: would you like to use insertafter parameter to ensure the line position in the file? https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html#parameter-insertafter",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90b50e8f_40445b44",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-05T18:17:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "28118613_0d7fdd1b",
       "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
