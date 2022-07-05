@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7036657_d892d80b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T09:22:28Z",
+      "side": 1,
+      "message": "Tests are ok:\n\n- disconnected (dallas): https://www.distributed-ci.io/jobs/469c83ad-2b59-4fcc-a965-f115310c66cd/tests\n- connected (bos2): https://www.distributed-ci.io/jobs/6f6e07a9-71c4-4f9e-b086-3665f8b630ec/tests\n\nReady for the merge",
+      "revId": "7a6ca9ccb975bf57ab5e575d04582cb4ffdf7e9b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
