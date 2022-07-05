@@ -18,6 +18,125 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8210c4e_dc54312c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "Hi Beto, great CR, thank you! I asked some questions and added some suggestions, but mostly looks perfect.",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "57911a68_2765e35b",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "Hi Beto, I believe a good idea would be to set `submit_results\u003dfalse` to force partners to be concious of their submit choice.",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9ecb5be5_d2262dcd",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "Hi Beto, if we\u0027re running with `submit_results: false`, do we need to define sandbox_repository? I didn\u0027t find it in the table of variables for this role and not sure if it is mandatory or not.",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "44fd6a1a_ac290bb2",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "Could you please add some comments on what is optional and what is mandatory here? To copy-paste config and then decide.",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "405de9f5_dbeef497",
+        "filename": "roles/chart-verifier/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 164,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "typo: need to be",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d71759b0_5829b657",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "Hi Beto, I may be mistaken but it seems like this key is generated and then never used",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "28118613_0d7fdd1b",
+        "filename": "roles/chart-verifier/tasks/submit_results.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 146,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-05T12:44:53Z",
+      "side": 1,
+      "message": "minor thing: would you like to use insertafter parameter to ensure the line position in the file? https://docs.ansible.com/ansible/latest/collections/ansible/builtin/lineinfile_module.html#parameter-insertafter",
+      "revId": "dff66eec76d0a1959a62731a5982aed14dbce920",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5a47138c_1dd458ad",
