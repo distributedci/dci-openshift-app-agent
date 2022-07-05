@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/faebf133-d10b-4733-a0a0-ef23283146d8/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/25433/\n\nCheck is working fine, so if tnf did not finish correctly, like in this job: https://www.distributed-ci.io/jobs/1583f54f-406e-4745-9afd-3b99cf7927fb/files, the new task created will make the job fail. You can see in that example that claim.json is not present within the log files.",
       "revId": "9fd1aa6f3b2c56c3c836b096f4a5904e9574c97e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73f09105_32f2cea4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-05T06:34:06Z",
+      "side": 1,
+      "message": "Hi guys, can someone of you take a look to this change to finally approve it? It\u0027s a very simple one, I\u0027d really appreciate it :) thank you in advance!",
+      "revId": "9fd1aa6f3b2c56c3c836b096f4a5904e9574c97e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
