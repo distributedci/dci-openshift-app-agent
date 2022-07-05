@@ -27,4 +27,28 @@
   when:
     - dci_disconnected | default(false) | bool
     - provisionhost_registry|length
+
+- name: "Get the OCP registry details"
+  community.kubernetes.k8s_info:
+    api: imageregistry.operator.openshift.io/v1
+    kind: Config
+    name: cluster
+  register: registry_status
+
+- name: "Get registry state"
+  set_fact:
+    registry_status: "{{ registry_status.resources[0].spec.managementState }}"
+
+- name: "The internal registry is already configured"
+  fail:
+    msg: "The internal registry is already configured, refusing to configure it again"
+  when:
+    - registry_status == "Managed"
+    - enable_ocp_registry | default(false) | bool
+
+- name: "Enable the OCP internal Registry"
+  include_tasks: plays/enable-ocp-registry.yml
+  when:
+    - enable_ocp_registry | default(false) | bool
+    - registry_status == "Removed"
 ...
