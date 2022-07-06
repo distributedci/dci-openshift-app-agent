@@ -16,6 +16,86 @@
       "message": "LGTM, thank you Beto!",
       "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e26a900_4112fdeb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-06T08:08:09Z",
+      "side": 1,
+      "message": "Impressive CR @Beto! I have added minor suggestions but you can merge it :)",
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b58c18b_9f09e419",
+        "filename": "roles/chart-verifier/tasks/create_pr.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-06T08:08:09Z",
+      "side": 1,
+      "message": "Why don\u0027t you use this instead to generate a string: https://docs.ansible.com/ansible/latest/collections/community/general/random_string_lookup.html",
+      "range": {
+        "startLine": 25,
+        "startChar": 47,
+        "endLine": 25,
+        "endChar": 55
+      },
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1cdeffd2_2d29eeb4",
+        "filename": "roles/chart-verifier/tasks/create_pr.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-06T08:08:09Z",
+      "side": 1,
+      "message": "When the hipster type of key becomes the standard :P",
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "59e78738_3236ba34",
+        "filename": "roles/chart-verifier/tasks/create_pr.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-06T08:08:09Z",
+      "side": 1,
+      "message": "Could it be a good idea of referencing the DCI job URL or \"{{ job_id }}\" in the body instead?",
+      "range": {
+        "startLine": 131,
+        "startChar": 0,
+        "endLine": 131,
+        "endChar": 70
+      },
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
