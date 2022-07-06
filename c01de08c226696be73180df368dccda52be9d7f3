@@ -1,6 +1,46 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf691bf3_ef517e0a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-06T11:19:10Z",
+      "side": 1,
+      "message": "Same as Pierre, and from the libvirt job, nothing has been broken, so I\u0027m fine to go on with this change after fixing these minor issues",
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcc40e49_8262fdd9",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-06T11:19:10Z",
+      "side": 1,
+      "message": "The component that enables the registry is dci-openshift-agent, not dci-openshift-app-agent, doesn\u0027t it?",
+      "range": {
+        "startLine": 243,
+        "startChar": 81,
+        "endLine": 243,
+        "endChar": 100
+      },
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c41b4e7_41f4d25f",
