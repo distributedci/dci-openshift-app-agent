@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c41b4e7_41f4d25f",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-06T02:02:12Z",
+      "side": 1,
+      "message": "😮",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 16
+      },
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80fe688f_1f41a029",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-06T02:02:12Z",
+      "side": 1,
+      "message": "Where do you use this fact ? 😊",
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
