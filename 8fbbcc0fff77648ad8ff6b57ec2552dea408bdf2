@@ -16,6 +16,40 @@
       "message": "it\u0027s fine for me, but I leave the full confirmation to others with more knowledge about this topic",
       "revId": "8fbbcc0fff77648ad8ff6b57ec2552dea408bdf2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d5bcb17_75e7f91a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-06T14:29:41Z",
+      "side": 1,
+      "message": "Hi Charles, you still have to add a fix for the open-access registry, I did a debug and provided a solution in the comments. \n\nYou could ping Pierre to test it more easily - Pierre has a direct access to his partner lab + open-access registry in-there.\n\nThanks!",
+      "revId": "8fbbcc0fff77648ad8ff6b57ec2552dea408bdf2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b76ed2c4_11c84c89",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-06T14:29:41Z",
+      "side": 1,
+      "message": "Hi Charles, it seems like by default `skopeo inspect` expects to get credentials. What\u0027s why your fix is failing for open-access internal registry of our partner: https://www.distributed-ci.io/jobs/e46ab024-b511-4dc8-b8aa-afebeefca728/jobStates#1dc26b41-dafb-4249-a903-6eea5c6731ec:file22\n\nIt is required to manage both open-access and creds-access situations here, to have it working for all the partners. Currently, you only targetting the access-with-credentials situation.\n\nThe way to fix it would be to check if partner_creds is present, and if yes, to use --authfile. And if not, to use `--no-creds`.",
+      "revId": "8fbbcc0fff77648ad8ff6b57ec2552dea408bdf2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
