@@ -43,6 +43,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "38e158ba_ff50ae3d",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T17:37:18Z",
+      "side": 1,
+      "message": "it is a cluster operator installed by during dci-openshift-agent but it is marked as removed and will be enabled by the app-agent. Let me re-verbiage the sentence.",
+      "parentUuid": "fcc40e49_8262fdd9",
+      "range": {
+        "startLine": 243,
+        "startChar": 81,
+        "endLine": 243,
+        "endChar": 100
+      },
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "8c41b4e7_41f4d25f",
         "filename": "plays/enable-ocp-registry.yml",
         "patchSetId": 2
@@ -54,6 +78,30 @@
       "writtenOn": "2022-07-06T02:02:12Z",
       "side": 1,
       "message": "😮",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 16
+      },
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec82cc37_d65b6105",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T17:37:18Z",
+      "side": 1,
+      "message": "😞",
+      "parentUuid": "8c41b4e7_41f4d25f",
       "range": {
         "startLine": 8,
         "startChar": 15,
@@ -94,6 +142,24 @@
       "writtenOn": "2022-07-06T17:35:21Z",
       "side": 1,
       "message": "The idea is to have this in a variable to use it later... preflight, CNF, etc.\n\nBut since this is disabled, it does not hurt to have it ready when is enabled",
+      "parentUuid": "80fe688f_1f41a029",
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea54ca79_460942a1",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T17:37:18Z",
+      "side": 1,
+      "message": "The plan is that if this variable is set and the partner allows us to use it (something like: `use_ocp_registry`), we can have a task to add the images required for pre-flight.",
       "parentUuid": "80fe688f_1f41a029",
       "revId": "c01de08c226696be73180df368dccda52be9d7f3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
