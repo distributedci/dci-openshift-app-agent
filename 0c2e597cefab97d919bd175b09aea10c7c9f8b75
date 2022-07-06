@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fca915a0_1d6cd86c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T16:06:23Z",
+      "side": 1,
+      "message": "Thanks all for the reviews and feedback",
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1b58c18b_9f09e419",
@@ -48,6 +65,30 @@
       "writtenOn": "2022-07-06T08:08:09Z",
       "side": 1,
       "message": "Why don\u0027t you use this instead to generate a string: https://docs.ansible.com/ansible/latest/collections/community/general/random_string_lookup.html",
+      "range": {
+        "startLine": 25,
+        "startChar": 47,
+        "endLine": 25,
+        "endChar": 55
+      },
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b4174f5_f3a6b3ce",
+        "filename": "roles/chart-verifier/tasks/create_pr.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T16:06:23Z",
+      "side": 1,
+      "message": "Will check this for the next change. Thanks for the suggestion, wasn\u0027t aware of this.",
+      "parentUuid": "1b58c18b_9f09e419",
       "range": {
         "startLine": 25,
         "startChar": 47,
@@ -75,6 +116,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6355760a_f2e2a216",
+        "filename": "roles/chart-verifier/tasks/create_pr.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T16:06:23Z",
+      "side": 1,
+      "message": "if you can\u0027t beat them, join them  😊",
+      "parentUuid": "1cdeffd2_2d29eeb4",
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "59e78738_3236ba34",
@@ -88,6 +147,30 @@
       "writtenOn": "2022-07-06T08:08:09Z",
       "side": 1,
       "message": "Could it be a good idea of referencing the DCI job URL or \"{{ job_id }}\" in the body instead?",
+      "range": {
+        "startLine": 131,
+        "startChar": 0,
+        "endLine": 131,
+        "endChar": 70
+      },
+      "revId": "0c2e597cefab97d919bd175b09aea10c7c9f8b75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfc39520_957ef7e9",
+        "filename": "roles/chart-verifier/tasks/create_pr.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 131,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-06T16:06:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "59e78738_3236ba34",
       "range": {
         "startLine": 131,
         "startChar": 0,
