@@ -50,6 +50,24 @@
       "message": "Hi Charles, it seems like by default `skopeo inspect` expects to get credentials. What\u0027s why your fix is failing for open-access internal registry of our partner: https://www.distributed-ci.io/jobs/e46ab024-b511-4dc8-b8aa-afebeefca728/jobStates#1dc26b41-dafb-4249-a903-6eea5c6731ec:file22\n\nIt is required to manage both open-access and creds-access situations here, to have it working for all the partners. Currently, you only targetting the access-with-credentials situation.\n\nThe way to fix it would be to check if partner_creds is present, and if yes, to use --authfile. And if not, to use `--no-creds`.",
       "revId": "8fbbcc0fff77648ad8ff6b57ec2552dea408bdf2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eb6cd294_ac5e2d4f",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-06T14:36:17Z",
+      "side": 1,
+      "message": "Oh! I did not know this skopeo option was needed. Now everything makes sense. Let me update the CR.",
+      "parentUuid": "b76ed2c4_11c84c89",
+      "revId": "8fbbcc0fff77648ad8ff6b57ec2552dea408bdf2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
