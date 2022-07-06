@@ -79,6 +79,24 @@
       "message": "Where do you use this fact ? 😊",
       "revId": "c01de08c226696be73180df368dccda52be9d7f3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e95605c0_b89eb4af",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-06T17:35:21Z",
+      "side": 1,
+      "message": "The idea is to have this in a variable to use it later... preflight, CNF, etc.\n\nBut since this is disabled, it does not hurt to have it ready when is enabled",
+      "parentUuid": "80fe688f_1f41a029",
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
