@@ -5,9 +5,16 @@
     prefix: preflight_container_artifacts.
   register: preflight_container_artifacts
 
-- name: check if container has already been certified
-  include_tasks: check_if_container_certified.yml
+- name: Check if container has already been certified
+  include_tasks: test_check_if_container_certified.yml
   when: not preflight_test_certified_image
+
+- name: Create certification project if required
+  include_role:
+    name: create-certification-project
+  when:
+    - create_cert_projects | default(false)
+    - operator.pyxis_container_identifier is not defined or operator.pyxis_container_identifier | length == 0
 
 - name: Set pyxis auth and submission for check container
   vars:
