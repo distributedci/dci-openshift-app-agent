@@ -16,6 +16,40 @@
       "message": "Hi Tatiana,\n\nThe code looks OK for me save for my comments below.\n\nI\u0027m not sure if this CR is ready for review or still a work in progress.\n\nIn any case, do you happen to have a dci job that creates a project?",
       "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "793b757a_ec7c5cfa",
+        "filename": "roles/create-certification-project/templates/create_project.json.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-07T13:30:10Z",
+      "side": 1,
+      "message": "Is the role limited to created certification project for container? Because it is not clear in the CR",
+      "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc0f841d_10579118",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-07T13:30:10Z",
+      "side": 1,
+      "message": "I think you should remove the \u0027main\u0027 in the name file because it is bit confusing",
+      "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
