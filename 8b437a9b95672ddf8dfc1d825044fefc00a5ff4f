@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9815b9bb_c418f31b",
+        "filename": "roles/pyxis/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-07-07T13:10:54Z",
+      "side": 0,
+      "message": "Did you remove the \"no_log: true\" for testing purposes, or is this the final version of the code?",
+      "revId": "8b437a9b95672ddf8dfc1d825044fefc00a5ff4f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3916b9c_aa774212",
+        "filename": "roles/pyxis/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-07-07T13:10:54Z",
+      "side": 0,
+      "message": "idem",
+      "revId": "8b437a9b95672ddf8dfc1d825044fefc00a5ff4f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

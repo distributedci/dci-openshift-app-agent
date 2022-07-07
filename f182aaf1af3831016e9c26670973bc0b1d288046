@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "197aadcc_e5f8aa12",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-07-07T13:10:54Z",
+      "side": 1,
+      "message": "Hi Tatiana,\n\nThe code looks OK for me save for my comments below.\n\nI\u0027m not sure if this CR is ready for review or still a work in progress.\n\nIn any case, do you happen to have a dci job that creates a project?",
+      "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
