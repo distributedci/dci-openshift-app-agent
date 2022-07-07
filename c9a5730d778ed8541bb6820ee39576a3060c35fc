@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa871507_5687c571",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-07T16:04:47Z",
+      "side": 1,
+      "message": "Code works e2e: https://www.distributed-ci.io/jobs/419c786f-668d-4a24-b789-776560c07709/jobStates\n\n1/ Create a certification project if pyxis_container_identifier is not provided\n2/ Run preflight tests\n3/ Submit the results in the newly created project\n\nThe fully automated project creation + test results submission could be checked here: https://connect.redhat.com/projects/62c6fcde36bb25d9666545ab/images/62c6fd08993748ec52f658a9/scan-results \n\nI still have to update the readme that it\u0027s for container certification, but the code itself is ready for review.",
+      "revId": "c9a5730d778ed8541bb6820ee39576a3060c35fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
