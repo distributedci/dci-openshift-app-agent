@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1bd2fd4e_9da04d77",
+        "filename": "roles/pyxis/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-07T13:48:50Z",
+      "side": 0,
+      "message": "Hi Nacho, I think I\u0027m going to keep it like this, the headers are not displayed in the ansible output for uri module: https://www.distributed-ci.io/jobs/46032f30-dc73-45de-9d04-5d1291fa9149/jobStates#9c54fbf4-3231-491b-9147-6b0a0a1045f3:file34 and hence there is no security risk and no need for no_log in-here",
+      "parentUuid": "9815b9bb_c418f31b",
+      "revId": "8b437a9b95672ddf8dfc1d825044fefc00a5ff4f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c3916b9c_aa774212",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-07-07T13:10:54Z",
       "side": 0,
       "message": "idem",
+      "revId": "8b437a9b95672ddf8dfc1d825044fefc00a5ff4f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb3d68a7_ac78f964",
+        "filename": "roles/pyxis/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-07T13:48:50Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "c3916b9c_aa774212",
       "revId": "8b437a9b95672ddf8dfc1d825044fefc00a5ff4f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

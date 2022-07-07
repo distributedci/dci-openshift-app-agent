@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "99259b2f_fc7e105d",
+        "filename": "roles/create-certification-project/templates/create_project.json.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-07T13:48:50Z",
+      "side": 1,
+      "message": "nice catch, thanks, I\u0027ll update the docs!",
+      "parentUuid": "793b757a_ec7c5cfa",
+      "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fc0f841d_10579118",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-07-07T13:30:10Z",
       "side": 1,
       "message": "I think you should remove the \u0027main\u0027 in the name file because it is bit confusing",
+      "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a98befc_18ec4111",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-07T13:48:50Z",
+      "side": 1,
+      "message": "Hi Charles, that\u0027s a second entry point, so the naming conventions are correct here.",
+      "parentUuid": "fc0f841d_10579118",
       "revId": "f182aaf1af3831016e9c26670973bc0b1d288046",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

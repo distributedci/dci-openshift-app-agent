@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c01f9452_441a0bcd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-07T13:48:50Z",
+      "side": 1,
+      "message": "Hi Nacho and Charles, thank you for the reviews! I\u0027m still testing, there is a problem with the scope of variables: the new project is created, but the results are not yet submitted to it properly. I\u0027ll update the message once it would work e2e. ",
+      "revId": "7991dd1cea3226e52b455d855f54ca663de4fddc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
