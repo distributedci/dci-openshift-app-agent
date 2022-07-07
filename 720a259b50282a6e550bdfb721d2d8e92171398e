@@ -103,6 +103,24 @@
       "parentUuid": "336ced36_599749d7",
       "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c3adbfd9_75f7c183",
+        "filename": "roles/preflight/tasks/check_if_container_certified.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-07-07T13:37:08Z",
+      "side": 1,
+      "message": "IMO, skopeo should be a dependency of the agent. Either a hard dependency declared in the RPM or a soft dependency listed in the documentation or part of the jumpbox installer.\n\nCurrently the jumpbox installer only installs skopeo in case of disconnected environments, but we can change that if skopeo is a default too.",
+      "parentUuid": "43fac9b8_7fcb2ac4",
+      "revId": "720a259b50282a6e550bdfb721d2d8e92171398e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
