@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8cf1479_deba1e2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-07T09:28:53Z",
+      "side": 1,
+      "message": "Something seems not to be working in the libvirt job, \"Set ocp_registry\" task didn\u0027t work: https://www.distributed-ci.io/jobs/28a217cb-65a3-4c7d-829e-a1590b3ed9bb/jobStates#390b1c9c-0560-4e06-939e-ceb9e56fe207:file38, previous task did not return anything.",
+      "revId": "4d5a2a236ce16149e743b46c7cb13a961bd4c013",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9b8bab8_bc8c67c2",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-07T09:28:53Z",
+      "side": 1,
+      "message": "May we add some documentation regarding this variable? E.g. to say that, if `enable_ocp_registry` is true, you can use later on the `ocp_registry` variable to refer to this registry.",
+      "range": {
+        "startLine": 44,
+        "startChar": 4,
+        "endLine": 44,
+        "endChar": 16
+      },
+      "revId": "4d5a2a236ce16149e743b46c7cb13a961bd4c013",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

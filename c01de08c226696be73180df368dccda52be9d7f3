@@ -65,6 +65,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "106e4833_4d9987da",
+        "filename": "README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-07T09:28:53Z",
+      "side": 1,
+      "message": "Now it\u0027s fine, thanks!",
+      "parentUuid": "38e158ba_ff50ae3d",
+      "range": {
+        "startLine": 243,
+        "startChar": 81,
+        "endLine": 243,
+        "endChar": 100
+      },
+      "revId": "c01de08c226696be73180df368dccda52be9d7f3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c41b4e7_41f4d25f",
