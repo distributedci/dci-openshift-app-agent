@@ -9,11 +9,15 @@
     state: directory
     recurse: yes
 
+# Using uri instead of get_url due to this bug:
+# https://github.com/ansible/ansible/issues/68843
 - name: Download preflight
-  get_url:
-    url: "{{ preflight_binary }}"
-    dest: "{{ preflight_binary_dir }}/preflight"
+  uri:
+    url: {{ preflight_binary }}
+    dest: {{ preflight_binary_dir }}/preflight
     mode: "0755"
+    return_content: true
+    follow_redirects: true
   register: preflight_file
   retries: 3
   delay: 10
