@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a298346_bb0faa89",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-07-08T08:13:04Z",
+      "side": 1,
+      "message": "Great work Tatiana!\nI\u0027m sure our partner will be really happy with this.",
+      "revId": "5ee8d6c55ccab619b746a63083b43536294f9278",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
