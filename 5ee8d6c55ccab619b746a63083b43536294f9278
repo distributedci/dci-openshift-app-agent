@@ -16,6 +16,23 @@
       "message": "Great work Tatiana!\nI\u0027m sure our partner will be really happy with this.",
       "revId": "5ee8d6c55ccab619b746a63083b43536294f9278",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "391a9aac_b80414de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-08T08:15:42Z",
+      "side": 1,
+      "message": "Hi Nacho and Charles,\n\nCode works e2e: https://www.distributed-ci.io/jobs/419c786f-668d-4a24-b789-776560c07709/jobStates\n\n1/ Create a certification project if pyxis_container_identifier is not provided\n2/ Run preflight tests\n3/ Submit the results in the newly created project\n\nThe fully automated project creation + test results submission could be checked here: https://connect.redhat.com/projects/62c6fcde36bb25d9666545ab/images/62c6fd08993748ec52f658a9/scan-results ",
+      "revId": "5ee8d6c55ccab619b746a63083b43536294f9278",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
