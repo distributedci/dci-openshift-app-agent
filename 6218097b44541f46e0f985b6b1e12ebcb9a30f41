@@ -16,6 +16,23 @@
       "message": "lol sob 😂",
       "revId": "6218097b44541f46e0f985b6b1e12ebcb9a30f41",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a95b590_f6a6bd9d",
+        "filename": "roles/preflight/tasks/prepare_download_preflight_binary.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-11T17:23:11Z",
+      "side": 1,
+      "message": "Ouch, this is sad 😞\n\nBut instead of shell let\u0027s use uri:\n\n    uri: \u003e\n      url: {{ preflight_binary }}\n      dest: {{ preflight_binary_dir }}/preflight\n      mode: \"0755\"\n      return_content: true\n      follow_redirects: true",
+      "revId": "6218097b44541f46e0f985b6b1e12ebcb9a30f41",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
