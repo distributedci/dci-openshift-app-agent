@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "d0e16abc0c5485a0ae599ef7270b8cac3f4ef627",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "212a0031_be841fb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-12T12:20:16Z",
+      "side": 1,
+      "message": "Hi Tony, thanks for trying to find a cleaner solution !\nI tried to use URI, and I had exactly the same issue. \nWe are not alone in this situation: \nhttps://github.com/metal3-io/metal3-dev-env/pull/1020",
+      "revId": "d0e16abc0c5485a0ae599ef7270b8cac3f4ef627",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
