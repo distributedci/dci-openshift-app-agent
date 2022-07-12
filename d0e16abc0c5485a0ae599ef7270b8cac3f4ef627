@@ -50,6 +50,41 @@
       "message": "Hi Tony, thanks for trying to find a cleaner solution !\nI tried to use URI, and I had exactly the same issue. \nWe are not alone in this situation: \nhttps://github.com/metal3-io/metal3-dev-env/pull/1020",
       "revId": "d0e16abc0c5485a0ae599ef7270b8cac3f4ef627",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c57a1dbc_6dd5a125",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-12T16:50:52Z",
+      "side": 1,
+      "message": "Is the problem the 206? or something different? you mentioned you\u0027ve been seeing this issue behind a proxy, so I wonder if the issue is that. Because I\u0027m unable to reproduce the issue: https://gist.github.com/tonyskapunk/deaa123b170de93166d63b0ccf19eb77",
+      "parentUuid": "212a0031_be841fb2",
+      "revId": "d0e16abc0c5485a0ae599ef7270b8cac3f4ef627",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b2a2685a_91909a6f",
+        "filename": "roles/preflight/tasks/prepare_download_preflight_binary.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-12T16:50:52Z",
+      "side": 1,
+      "message": "btw, this is wrong, and needs to be removed 😢",
+      "revId": "d0e16abc0c5485a0ae599ef7270b8cac3f4ef627",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
