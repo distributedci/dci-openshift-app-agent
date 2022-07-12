@@ -16,6 +16,23 @@
       "message": "lgtm",
       "revId": "39e890061c0fb7c2bdd21b8aaa64e04596c52656",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a189062_81543b24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-12T08:22:50Z",
+      "side": 1,
+      "message": "Hi Charles, LGTM, just a minor note about how to write a great commit message: https://initialcommit.com/blog/git-commit-messages-best-practices#general-commit-message-guidelines ",
+      "revId": "39e890061c0fb7c2bdd21b8aaa64e04596c52656",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
