@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a82ade4_c5c0c4ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-12T21:18:49Z",
+      "side": 1,
+      "message": "I\u0027ve reverted my changes, seems like the only way to go is with wget to continue transmitting packets",
+      "revId": "598dde508cdbf562de9cbc9b12a9313c38ffdf9b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
