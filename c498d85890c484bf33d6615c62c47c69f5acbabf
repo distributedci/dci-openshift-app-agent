@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bccdf7ea_1e3f5b38",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-13T09:09:50Z",
+      "side": 1,
+      "message": "I think we can start testing it again on libvirt :)",
+      "revId": "c498d85890c484bf33d6615c62c47c69f5acbabf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb7928d7_fa34c977",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-13T09:09:50Z",
+      "side": 1,
+      "message": "It looks like Zuul is complaining about this line:\n\nvar-spacing: Variables should have spaces before and after: {{ creds_dir}}/yq\nplays/enable-ocp-registry.yml:86 Task/Handler: Get yq",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 91,
+        "endChar": 29
+      },
+      "revId": "c498d85890c484bf33d6615c62c47c69f5acbabf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
