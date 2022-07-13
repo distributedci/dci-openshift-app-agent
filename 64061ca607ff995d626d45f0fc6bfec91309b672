@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "058390a6_844c870f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-13T17:43:51Z",
+      "side": 1,
+      "message": "Set as active to check how it behaves in libvirt. Still need allow worker nodes to pull from this",
+      "revId": "64061ca607ff995d626d45f0fc6bfec91309b672",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
