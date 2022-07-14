@@ -67,6 +67,29 @@
       "message": "Here an example to use k8s_info module instead of command 😊\nNeed to be adapted of course.\n\n```\n   - community.kubernetes.k8s_info:\n       kind: ConfigMap\n       namespace: kube-system\n     register: confcluster\n\n   - set_fact:\n       clustername: |-\n         {{ (( confcluster.resources[1].data\n         | from_yaml )[\u0027install-config\u0027]\n         | from_yaml )[\u0027metadata\u0027][\u0027name\u0027] }}\n```",
       "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e60a0b1_ba96b77e",
+        "filename": "plays/teardown.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-14T08:00:16Z",
+      "side": 1,
+      "message": "I\u0027ll add here a when condition to do the task if client_tmp_dir is defined, as the job may fail before executing the task that creates this variable",
+      "range": {
+        "startLine": 9,
+        "startChar": 2,
+        "endLine": 9,
+        "endChar": 6
+      },
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
