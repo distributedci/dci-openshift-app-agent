@@ -16,6 +16,57 @@
       "message": "Thanks LGTM",
       "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "632e2a62_b4aeee8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-14T02:00:35Z",
+      "side": 1,
+      "message": "Thx Tony, it simplify a lot ! \nI just have 2 comments about command module usage 😋 \nI put examples tested on my laptop© ",
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9a9de05_26ea8574",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-14T02:00:35Z",
+      "side": 1,
+      "message": "Here an example to use k8s_info module instead of command 😊\nNeed to be adapted of course.\n\n```\n- community.kubernetes.k8s_info:\n    api: config.openshift.io/v1\n    kind: ClusterVersion\n  register: cluster\n\n- name: \"Print current version\"\n  vars:\n    - status_query: \"conditions[?type\u003d\u003d\u0027Available\u0027].message\"\n  debug:\n    msg: \"{{ cluster.resources[0].status | json_query(status_query) }}\"\n```",
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9e6ecdf_401d929d",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-14T02:00:35Z",
+      "side": 1,
+      "message": "Here an example to use k8s_info module instead of command 😊\nNeed to be adapted of course.\n\n```\n   - community.kubernetes.k8s_info:\n       kind: ConfigMap\n       namespace: kube-system\n     register: confcluster\n\n   - set_fact:\n       clustername: |-\n         {{ (( confcluster.resources[1].data\n         | from_yaml )[\u0027install-config\u0027]\n         | from_yaml )[\u0027metadata\u0027][\u0027name\u0027] }}\n```",
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
