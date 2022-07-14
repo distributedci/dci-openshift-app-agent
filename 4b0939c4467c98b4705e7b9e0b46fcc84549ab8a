@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3cadf897_c84b9763",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-14T21:58:43Z",
+      "side": 1,
+      "message": "Thanks for the examples, they were quite helpful. I had to tweak them to take into consideration cases like upgrades. ClusterVersion holds all the versions a cluster has gone through.\n\nThere\u0027s one caveat though. With this change if a cluster is not healthy (i.e. not \"Completed\") then it will likely fail. I guess is good in some way as the app-agent is expected to run in a healthy cluster, right! 😊",
+      "parentUuid": "632e2a62_b4aeee8e",
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9a9de05_26ea8574",
@@ -69,6 +87,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d8d59a9_6cd9d5c7",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-14T21:58:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e9e6ecdf_401d929d",
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4e60a0b1_ba96b77e",
@@ -82,6 +118,30 @@
       "writtenOn": "2022-07-14T08:00:16Z",
       "side": 1,
       "message": "I\u0027ll add here a when condition to do the task if client_tmp_dir is defined, as the job may fail before executing the task that creates this variable",
+      "range": {
+        "startLine": 9,
+        "startChar": 2,
+        "endLine": 9,
+        "endChar": 6
+      },
+      "revId": "4b0939c4467c98b4705e7b9e0b46fcc84549ab8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85c11c15_f7ae21c1",
+        "filename": "plays/teardown.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-14T21:58:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4e60a0b1_ba96b77e",
       "range": {
         "startLine": 9,
         "startChar": 2,
