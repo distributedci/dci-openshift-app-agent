@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "703baabe_24aa1410",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-15T17:57:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0777c39c_9c49df10",
+      "revId": "8e78ef8332e69b4937166c61bc4ffbc6d628ba52",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dacb93ea_30da0177",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-07-15T07:09:41Z",
       "side": 1,
       "message": "As we don\u0027t use oc bin to get the version of the cluster but  community.kubernetes.k8s_info, why can we just download the version of the client which matches the cluster? It may be a bit overkill but at least it ensures compatibility 😊",
+      "revId": "8e78ef8332e69b4937166c61bc4ffbc6d628ba52",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d923ed6_caabc62e",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-15T17:57:03Z",
+      "side": 1,
+      "message": "This is a great point, the thing is, we use oc for functionality that is not part of the k8s api, e.g. mirroring of catalogs, extracting images, among others.\n\nThe mirroring functionality is limited in \"older\" versions of ocp, e.g. 4.8 does not support mirroring of FBC, *but* a FBC is supported in the cluster works because is its functionality is backward compatible. The problem is not the catalog itself, but the tool that mirrors the images inside the catalog.\n\nThis change solves that by using always a stable oc version.",
+      "parentUuid": "dacb93ea_30da0177",
       "revId": "8e78ef8332e69b4937166c61bc4ffbc6d628ba52",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
