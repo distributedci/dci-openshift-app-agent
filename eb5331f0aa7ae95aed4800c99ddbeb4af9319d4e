@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a860225_9a0a31fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-15T02:43:09Z",
+      "side": 1,
+      "message": "Nice job Beto, I just add comments about the some command/shell tasks 😋",
+      "revId": "eb5331f0aa7ae95aed4800c99ddbeb4af9319d4e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f7a8a9c4_717700b1",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 141,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-15T02:43:09Z",
+      "side": 1,
+      "message": "You can get the apiurl with something like that:\n```\n   - community.kubernetes.k8s_info:\n       api_version: config.openshift.io/v1\n       kind: Infrastructure\n       name: cluster\n     register: infrafact\n\n   - debug:\n       msg: \"{{ infrafact.resources[0].status.apiServerURL }}\"\n\n```",
+      "revId": "eb5331f0aa7ae95aed4800c99ddbeb4af9319d4e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02868639_a6ce3006",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 200,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-15T02:43:09Z",
+      "side": 1,
+      "message": "can be replace with k8s module 😊",
+      "revId": "eb5331f0aa7ae95aed4800c99ddbeb4af9319d4e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1562bf7_5253f014",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 243,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-15T02:43:09Z",
+      "side": 1,
+      "message": "can be replace with k8s module 😊",
+      "revId": "eb5331f0aa7ae95aed4800c99ddbeb4af9319d4e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efe504e3_f52bcadc",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 17
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-07-15T02:43:09Z",
+      "side": 1,
+      "message": "can be replace with k8s module 😊",
+      "revId": "eb5331f0aa7ae95aed4800c99ddbeb4af9319d4e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
