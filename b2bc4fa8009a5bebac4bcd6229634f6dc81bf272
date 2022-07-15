@@ -16,6 +16,23 @@
       "message": "An example of how the change works: https://www.distributed-ci.io/jobs/5d41c6b1-46fb-44d1-9b31-ddc086ab9ee4/jobStates#fe87ec93-fa73-4c1b-b857-d2e053434dcb:file7 \n\nConfig:\n\u003e     tests_to_verify:\n      - filename: \"preflight_container_simple-demo-operator_0.0.6_kube-rbac-proxy_results-junit.xml\"\n        expected_results:\n          - testcase: \"[a-zA-Z]+\"\n            passed: True\n          - testcase: \u0027Has\\w+Tag\u0027\n            passed: True\n          - testcase: LayerCountAcceptable\n            passed: True\n          - testcase: RunAsNonRoot\n            passed: True\n      - filename: \"preflight_container_simple-demo-operator_0.0.6_simple-demo-operator_results-junit.xml\"\n        expected_results:\n          - testcase: \"[a-zA-Z]+\"\n            passed: True\n          - testcase: HasUniqueTag\n            passed: True\n          - testcase: \"Has*\"\n            passed: True\n          - testcase: LayerCountAcceptable\n            passed: True\n          - testcase: \"Run[a-zA-Z]{5}Root\"\n            passed: True\n          - testcase: BasedOnUbi\n            passed: True\n      - filename: \"preflight_operator_simple-demo-operator_0.0.6_results-junit.xml\"\n        expected_results:\n          - testcase: \"[a-zA-Z0-9]+\"\n            passed: True",
       "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "298228af_3c457b5f",
+        "filename": "roles/verify-tests/filter_plugins/regex_diff.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-15T22:20:13Z",
+      "side": 1,
+      "message": "Should we validate testcase exists? if it does not it will fail with a type error, it could be fixed in line with:\n\n    x.get(\u0027testcase\u0027) or \u0027\u0027\n\nThe caveat is that \u0027\u0027 will match any test case in the 2nd list 😄 but we can set it to something else if we don\u0027t want that",
+      "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
