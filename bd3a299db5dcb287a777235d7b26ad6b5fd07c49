@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74561246_b161f958",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T15:31:19Z",
+      "side": 1,
+      "message": "@Pierre, do you foresee any issue if we switch to unarchive instead of wget?",
+      "revId": "bd3a299db5dcb287a777235d7b26ad6b5fd07c49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
