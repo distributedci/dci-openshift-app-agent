@@ -1,0 +1,34 @@
+---
+- name: Install openscap-utils
+  package:
+    name: "openscap-utils"
+    state: present
+  become: true
+
+- name: Download health check requirements
+  shell:
+    cmd: |
+      wget -O - \
+      https://www.redhat.com/security/data/oval/v2/RHEL{{ rhel_version }}/rhel-{{ rhel_version }}.oval.xml.bz2 \
+      | bzip2 --decompress > rhel-{{ rhel_version }}.oval.xml
+      podman pull \
+      {% if partner_creds is defined %} \
+      --authfile {{ partner_creds }} \
+      {% endif %} \
+      {{ current_operator_image }}
+  args:
+    chdir: "{{ preflight_container_artifacts.path }}"
+  become: true
+  register: health_check
+
+- name: Run health check
+  shell:
+    cmd: >
+      oscap-podman {{ health_check.stdout }} oval eval
+      --results oval-report.xml
+      --report oval-report.html
+      rhel-{{ preflight_rhel_version }}.oval.xml
+  args:
+    chdir: "{{ preflight_container_artifacts.path }}"
+  become: true
+...
