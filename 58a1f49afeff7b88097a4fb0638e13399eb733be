@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "58a1f49afeff7b88097a4fb0638e13399eb733be",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01020a80_b7ed0df2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T15:36:44Z",
+      "side": 1,
+      "message": "Something is up with BOS2, the doaa job is not being executed and the libvirt is completing correctly",
+      "revId": "58a1f49afeff7b88097a4fb0638e13399eb733be",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
