@@ -33,6 +33,24 @@
       "message": "Should we validate testcase exists? if it does not it will fail with a type error, it could be fixed in line with:\n\n    x.get(\u0027testcase\u0027) or \u0027\u0027\n\nThe caveat is that \u0027\u0027 will match any test case in the 2nd list 😄 but we can set it to something else if we don\u0027t want that",
       "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc18ef46_b4a3e6af",
+        "filename": "roles/verify-tests/filter_plugins/regex_diff.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-18T06:21:17Z",
+      "side": 1,
+      "message": "Hi Tony, thanks for checking! `a` is a list of expected results that we provide in the settings.yml, and it\u0027s supposed to be correct. But that made me think that I should add a more detailed readme.",
+      "parentUuid": "298228af_3c457b5f",
+      "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
