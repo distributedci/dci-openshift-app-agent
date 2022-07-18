@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4834882c_c9dfde95",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T14:25:57Z",
+      "side": 1,
+      "message": "This is a great functionality!",
+      "revId": "344dc5eed4e1056209a3dec06c7ef6fbaa581e83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e732c0d9_49650cec",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T14:25:57Z",
+      "side": 1,
+      "message": "We could use split this task and use unarchive for the first command",
+      "revId": "344dc5eed4e1056209a3dec06c7ef6fbaa581e83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d371bb8a_f1ce75a3",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T14:25:57Z",
+      "side": 1,
+      "message": "should be this one rhel_version instead?",
+      "revId": "344dc5eed4e1056209a3dec06c7ef6fbaa581e83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
