@@ -1,0 +1,58 @@
+---
+- name: Install openscap-utils
+  package:
+    name: "openscap-utils"
+    state: present
+  become: true
+
+- name: Retrieve RHEL version
+  shell:
+    awk -F"[. ]{1,1}" '{print $6}' /etc/redhat-release
+  register: rhel_version_output
+
+- name: Set RHEL version
+  set_fact:
+    rhel_version: "{{ rhel_version_output.stdout }}"
+
+- name: Download health check requirements
+  get_url:
+    url: https://www.redhat.com/security/data/oval/v2/RHEL{{ rhel_version }}/rhel-{{ rhel_version }}.oval.xml.bz2
+    dest: "{{ preflight_container_artifacts.path }}"
+  become: true
+
+- name: Unarchive the file
+  unarchive:
+    src: "{{ preflight_container_artifacts.path }}/rhel-{{ rhel_version }}.oval.xml.bz2"
+    dest: "{{ preflight_container_artifacts.path }}/rhel-{{ rhel_version }}.oval.xml"
+  become: true
+
+- name: Get the image available for the root user
+  shell:
+    cmd: >
+      podman pull
+      {% if partner_creds is defined %}
+      --authfile {{ partner_creds }}
+      {% endif %}
+      {{ current_operator_image }}
+  become: true
+  register: health_check
+
+- name: Run health check
+  shell:
+    cmd: >
+      oscap-podman {{ health_check.stdout }} oval eval
+      --results oval-report.xml
+      --report oval-report.html
+      rhel-{{ rhel_version }}.oval.xml
+  args:
+    chdir: "{{ preflight_container_artifacts.path }}"
+  become: true
+
+- name: Remove garbage files
+  file:
+    path: "{{ item }}"
+    state: absent
+  with_items:
+    - "{{ preflight_container_artifacts.path }}/rhel-{{ rhel_version }}.oval.xml.bz2"
+    - "{{ preflight_container_artifacts.path }}/rhel-{{ rhel_version }}.oval.xml"
+...
