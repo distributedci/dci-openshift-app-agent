@@ -50,6 +50,23 @@
       "message": "Something is up with BOS2, the doaa job is not being executed and the libvirt is completing correctly",
       "revId": "58a1f49afeff7b88097a4fb0638e13399eb733be",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed2fb8f2_914c5f32",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T15:54:35Z",
+      "side": 1,
+      "message": "The task failed as it wasn\u0027t able to create a job due to permissions:\n\n    TASK [Schedule a new job] *****************************\n    fatal: [jumphost]: FAILED! \u003d\u003e {\"changed\": false, \"msg\": \"HTTP Error Code 403|404: Not found or not enough permissions on topic OCP-4.10.23 ({\\\"_meta\\\":{\\\"count\\\":0},\\\"topics\\\":[]}\\n)\"}\n\nrecheck",
+      "revId": "58a1f49afeff7b88097a4fb0638e13399eb733be",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
