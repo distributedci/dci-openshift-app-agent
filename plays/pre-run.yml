@@ -27,4 +27,11 @@
   when:
     - dci_disconnected | default(false) | bool
     - provisionhost_registry|length
+
+- name: "Enable a local registry"
+  include_role:
+    name: local-registry
+  when:
+    - enable_local_registry | default(false) | bool
+
 ...
