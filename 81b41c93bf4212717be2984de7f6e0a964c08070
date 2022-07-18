@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b26e51b_b6ea179c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-18T13:10:02Z",
+      "side": 1,
+      "message": "Hi Nacho and Pierre, \n\nI added a health check to run by default on every container. It generates both oval-report.xml and oval-report.html reports. \n\nUnfortunately, xml report is not in the junit format, but that\u0027s what the tool oscap-podman generates. \n\nHere is an example of the job: https://www.distributed-ci.io/jobs/6481533f-e860-4873-8a1c-3d00fdbd41a1/files\noval-report.xml and oval-report.html are generated for every container.",
+      "revId": "81b41c93bf4212717be2984de7f6e0a964c08070",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
