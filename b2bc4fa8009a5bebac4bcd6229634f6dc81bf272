@@ -51,6 +51,24 @@
       "parentUuid": "298228af_3c457b5f",
       "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "971a9547_803664e1",
+        "filename": "roles/verify-tests/filter_plugins/regex_diff.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-18T23:26:46Z",
+      "side": 1,
+      "message": "I agree, as long as we have a couple of examples and the requirements in the docs we should be fine here",
+      "parentUuid": "fc18ef46_b4a3e6af",
+      "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
