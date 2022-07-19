@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50ec270a_810c697d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T15:18:23Z",
+      "side": 1,
+      "message": "Looks fine! Thanks Tatiana, for sure I\u0027ll include this for CNF Cert Suite when merged. Just one minor comment but you can merge if you find it not interesting, it\u0027s just for clarification purposes.",
+      "revId": "42081162b4381e91255ad79c418fcb18aaaeebcd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e7f1d273_828b4e60",
+        "filename": "roles/verify-tests/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T15:18:23Z",
+      "side": 1,
+      "message": "Super minor question: It doesn\u0027t mind if this has double quotes (like the other regex in the example) instead of single quotes?",
+      "range": {
+        "startLine": 19,
+        "startChar": 18,
+        "endLine": 19,
+        "endChar": 29
+      },
+      "revId": "42081162b4381e91255ad79c418fcb18aaaeebcd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
