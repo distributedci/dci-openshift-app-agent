@@ -33,6 +33,24 @@
       "message": "Thx Tania for this new feature !\nI saw rhel8 is fixed, can we create a variable to specify the version of the OS ?",
       "revId": "81b41c93bf4212717be2984de7f6e0a964c08070",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90fcccb4_b5bcecbb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T09:36:31Z",
+      "side": 1,
+      "message": "Hi Pierre, nice catch, thank you! I added some code to retrieve RHEL version during the execution.",
+      "parentUuid": "9736973f_97d59d84",
+      "revId": "81b41c93bf4212717be2984de7f6e0a964c08070",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

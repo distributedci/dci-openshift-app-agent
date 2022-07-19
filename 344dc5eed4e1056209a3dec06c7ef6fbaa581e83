@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fb470d2_40ac3443",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T09:36:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e732c0d9_49650cec",
+      "revId": "344dc5eed4e1056209a3dec06c7ef6fbaa581e83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d371bb8a_f1ce75a3",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-07-18T14:25:57Z",
       "side": 1,
       "message": "should be this one rhel_version instead?",
+      "revId": "344dc5eed4e1056209a3dec06c7ef6fbaa581e83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd74ffd8_0a909e8a",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T09:36:31Z",
+      "side": 1,
+      "message": "yes, thanks for catching that!",
+      "parentUuid": "d371bb8a_f1ce75a3",
       "revId": "344dc5eed4e1056209a3dec06c7ef6fbaa581e83",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

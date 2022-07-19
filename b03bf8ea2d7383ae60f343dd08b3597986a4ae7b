@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad7c1d54_7cb2f2f5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T09:36:31Z",
+      "side": 1,
+      "message": "Hi Tony and Pierre, thank you for the review, I trimmed the code following your ideas and applied everything except unarchive. It seems to require _archived_ files, so foo.tar.bz2 is ok but foo.bz2 is not, \"it\u0027s only compressed, technically, it\u0027s not archived\" :))  \n\nTests in Dallas are ok: https://www.distributed-ci.io/jobs/12ecb10a-aa0d-40a4-8c81-6a0e6ce68452/jobStates \n\nFile oval-report.html is a visual representation that could be checked in a browser and oval-report.xml is something that I\u0027d like to submit to Pyxis. The API for that does not exist yet but we\u0027ll discuss it. \n\nSide note: unfortunately, oval-report.xml is not in a JUnit format and we don\u0027t have a nice representation in DCI UI.",
+      "revId": "b03bf8ea2d7383ae60f343dd08b3597986a4ae7b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

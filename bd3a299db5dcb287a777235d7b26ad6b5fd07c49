@@ -34,6 +34,24 @@
       "parentUuid": "74561246_b161f958",
       "revId": "bd3a299db5dcb287a777235d7b26ad6b5fd07c49",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "715708b9_46c3e7c5",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T09:36:31Z",
+      "side": 1,
+      "message": "Thank you, Tony and Pierre. I split this block into download and podman parts. \n\nI couldn\u0027t use unarchive ansible module though because files like foo.bz2 are not supported - technically, they are not archived, they are only compressed. Only files like foo.tar.bz2 are supported. https://github.com/ansible/community/wiki/Module:-unarchive",
+      "parentUuid": "dec98ab0_bc1816d5",
+      "revId": "bd3a299db5dcb287a777235d7b26ad6b5fd07c49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
