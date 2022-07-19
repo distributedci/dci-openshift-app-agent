@@ -97,6 +97,30 @@
       },
       "revId": "b03bf8ea2d7383ae60f343dd08b3597986a4ae7b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb31fb73_21d7a1c1",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T15:20:59Z",
+      "side": 1,
+      "message": "Okey, understood, thanks!",
+      "parentUuid": "a362f6b6_ee4ead5f",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 0
+      },
+      "revId": "b03bf8ea2d7383ae60f343dd08b3597986a4ae7b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
