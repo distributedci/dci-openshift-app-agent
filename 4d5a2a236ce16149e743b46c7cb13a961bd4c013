@@ -116,6 +116,30 @@
       },
       "revId": "4d5a2a236ce16149e743b46c7cb13a961bd4c013",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53b432b7_7e922453",
+        "filename": "plays/enable-ocp-registry.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-19T01:14:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b02d781b_3f719b24",
+      "range": {
+        "startLine": 44,
+        "startChar": 4,
+        "endLine": 44,
+        "endChar": 16
+      },
+      "revId": "4d5a2a236ce16149e743b46c7cb13a961bd4c013",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
