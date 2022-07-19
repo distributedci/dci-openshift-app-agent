@@ -16,6 +16,115 @@
       "message": "- This is working now:\n - The change will reboot the nodes in order to allow them to pull from the new registry\n - I confirmed that I can push images from and external computer into the registry and that the image can be used to create a deployment\n - The registry and related artifacts are destroyed during the teardown (this should complete or running it again on the same cluster will fail)\n - The nodes are rebooted again during the teardown to disable the new registry\n - Nodes are reboot completes after aprox 10 mins.\n* We should move this outside the app agent",
       "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bc42f51_5c934fd5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 34
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T13:59:24Z",
+      "side": 1,
+      "message": "Some comments for improving the README.\n\nAlso, I am wondering if these changes -\u003e https://softwarefactory-project.io/r/c/dci-openshift-agent/+/25537 and https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25538 intend to replace this change.",
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f83abbc_bcb803eb",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T13:59:24Z",
+      "side": 1,
+      "message": "typo: endpoint",
+      "range": {
+        "startLine": 247,
+        "startChar": 210,
+        "endLine": 247,
+        "endChar": 217
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f7d4381_9e23ad96",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T13:59:24Z",
+      "side": 1,
+      "message": "typo: workloads\u0027",
+      "range": {
+        "startLine": 249,
+        "startChar": 145,
+        "endLine": 249,
+        "endChar": 154
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0612b8e_2584a115",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T13:59:24Z",
+      "side": 1,
+      "message": "I think variables can be included within `...`, e.g. \n\n`ocp_registry_user`: The user to be used to access the registry.",
+      "range": {
+        "startLine": 251,
+        "startChar": 0,
+        "endLine": 253,
+        "endChar": 52
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8cdbd55b_e9c2d87e",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-19T13:59:24Z",
+      "side": 1,
+      "message": "Value example for this variable?",
+      "range": {
+        "startLine": 263,
+        "startChar": 28,
+        "endLine": 263,
+        "endChar": 40
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
