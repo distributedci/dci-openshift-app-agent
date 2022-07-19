@@ -1,0 +1,157 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5a4531a_c0ac76eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "It looks great, I think we can change some of the manual commands to modules 😜",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a809e4c2_e0939bf4",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "typo: \n    In order to execute the playbook the following requirements must be available:",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a64faefc_10853b70",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "You should be able to do this task and the following one, both using k8s module:\n\n    community.kubernetes.k8s:\n      definition:\n        apiVersion: operator.openshift.io/v1\n        kind: Config\n        metadata:\n          name: cluster\n        spec:\n          storage:\n            emptyDir: null\n          managementState: \"Removed\"",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a940490b_1e96b8dd",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "I have no idea how to find an index of a matching key 😞",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c225f93a_b0580738",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "maybe this helps with this and the following task?:\n\n    community.kubernetes.k8s:\n      definition:\n        apiVersion: config.openshift.io/v1\n        kind: Image\n        metadata:\n          name: cluster\n        spec:\n          registrySources: null\n          additionalTrustedCA: null",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a9572328_433ca61a",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "I think this could be translated to use k8s module, if merge does not work directly then it will require a k8s_info then merge manually and then apply it",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3a491a13_6a1384a7",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "If the file is a yaml you can read directly with:\n\n    set_fact:\n      ocp_kubeconfig: \"{{ lookup(\u0027template\u0027, kubeconfig_ocp_registry) | from_yaml }}\"\n\nYou will still need to get to its value with ocp_kubeconfig.users[0].user.token",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "771aa527_3214b8c0",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "I *think*  the ingress CAs are in the namespace as CMs:\n\noc -n openshift-ingress-operator get cm\nNAME                       DATA   AGE\nkube-root-ca.crt           1      48d\nopenshift-service-ca.crt   1      48d\ntrusted-ca                 1      48d",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c1b2ade_68a46cfe",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T22:55:47Z",
+      "side": 1,
+      "message": "It could be possible to use k8s module using src: to read from files instead of a definition",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
