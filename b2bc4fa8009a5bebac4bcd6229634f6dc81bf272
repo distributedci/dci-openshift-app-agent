@@ -69,6 +69,24 @@
       "parentUuid": "fc18ef46_b4a3e6af",
       "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "384e4b72_97be76f3",
+        "filename": "roles/verify-tests/filter_plugins/regex_diff.py",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T12:55:49Z",
+      "side": 1,
+      "message": "Hi Tony, thank you! The docs are updated :)",
+      "parentUuid": "971a9547_803664e1",
+      "revId": "b2bc4fa8009a5bebac4bcd6229634f6dc81bf272",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
