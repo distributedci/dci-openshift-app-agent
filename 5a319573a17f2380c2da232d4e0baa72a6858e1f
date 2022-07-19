@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "65cb8df3_282184aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 34
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-19T18:08:57Z",
+      "side": 1,
+      "message": "This changes will be moved as a separated artifact.",
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4f83abbc_bcb803eb",
@@ -48,6 +65,30 @@
       "writtenOn": "2022-07-19T13:59:24Z",
       "side": 1,
       "message": "typo: endpoint",
+      "range": {
+        "startLine": 247,
+        "startChar": 210,
+        "endLine": 247,
+        "endChar": 217
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "237e31c1_96c22b00",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 247,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-19T18:08:57Z",
+      "side": 1,
+      "message": "Thanks, will address on the new CR",
+      "parentUuid": "4f83abbc_bcb803eb",
       "range": {
         "startLine": 247,
         "startChar": 210,
@@ -81,6 +122,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "71ed0745_dbd2d431",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 249,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-19T18:08:57Z",
+      "side": 1,
+      "message": "Thanks, will address on the new CR",
+      "parentUuid": "4f7d4381_9e23ad96",
+      "range": {
+        "startLine": 249,
+        "startChar": 145,
+        "endLine": 249,
+        "endChar": 154
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b0612b8e_2584a115",
@@ -104,6 +169,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "01dd7bf4_b289c14a",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 253,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-19T18:08:57Z",
+      "side": 1,
+      "message": "Thanks, will address on the new CR",
+      "parentUuid": "b0612b8e_2584a115",
+      "range": {
+        "startLine": 251,
+        "startChar": 0,
+        "endLine": 253,
+        "endChar": 52
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8cdbd55b_e9c2d87e",
@@ -117,6 +206,30 @@
       "writtenOn": "2022-07-19T13:59:24Z",
       "side": 1,
       "message": "Value example for this variable?",
+      "range": {
+        "startLine": 263,
+        "startChar": 28,
+        "endLine": 263,
+        "endChar": 40
+      },
+      "revId": "5a319573a17f2380c2da232d4e0baa72a6858e1f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2737780a_2221702e",
+        "filename": "README.md",
+        "patchSetId": 34
+      },
+      "lineNbr": 263,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-19T18:08:57Z",
+      "side": 1,
+      "message": "Thanks, will address on the new CR. Will refactor this part",
+      "parentUuid": "8cdbd55b_e9c2d87e",
       "range": {
         "startLine": 263,
         "startChar": 28,
