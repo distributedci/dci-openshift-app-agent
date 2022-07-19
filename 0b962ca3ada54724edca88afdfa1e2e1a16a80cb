@@ -16,6 +16,24 @@
       "message": "Hi Tony, one question, do this change replace Beto\u0027s change in https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25460? Or is this an independent change?",
       "revId": "0b962ca3ada54724edca88afdfa1e2e1a16a80cb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a822f31f_e8101a64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T15:31:17Z",
+      "side": 1,
+      "message": "Is an alternative, likely both will stay in place",
+      "parentUuid": "81da2071_e169bc43",
+      "revId": "0b962ca3ada54724edca88afdfa1e2e1a16a80cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
