@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62be89bb_5edd0ac4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T17:10:07Z",
+      "side": 1,
+      "message": "My last patchset added an explicit use of single quotes for the regex in the docs, it\u0027s good to merge for me. Thanks Tatiana!",
+      "revId": "3d38ccd41be3899d64c8514d190fe27d91d191cd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
