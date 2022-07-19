@@ -52,6 +52,57 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "85dabdd9_afb3e62b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T16:31:47Z",
+      "side": 1,
+      "message": "One small change and we can merge it afterwards 😎",
+      "revId": "b03bf8ea2d7383ae60f343dd08b3597986a4ae7b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4dec8736_7fbbe915",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T16:31:47Z",
+      "side": 1,
+      "message": "No need to extract the version nor set a new fact.\n\nAnsible gets it in a fact: ansible_distribution_major_version",
+      "revId": "b03bf8ea2d7383ae60f343dd08b3597986a4ae7b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b3ca8e20_11f0bd1e",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-19T16:31:47Z",
+      "side": 1,
+      "message": "Instead of rhel_version use ansible facts:\n\n    ansible_distribution_major_version",
+      "revId": "b03bf8ea2d7383ae60f343dd08b3597986a4ae7b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4ff20f7b_4cad842b",
