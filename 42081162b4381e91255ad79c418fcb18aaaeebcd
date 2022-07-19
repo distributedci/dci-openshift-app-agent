@@ -39,6 +39,30 @@
       },
       "revId": "42081162b4381e91255ad79c418fcb18aaaeebcd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "673bf17e_be90a0d0",
+        "filename": "roles/verify-tests/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-19T15:37:10Z",
+      "side": 1,
+      "message": "Nice catch Ramon, we just discussed that with Tony. The idea is to go with single quotes everywhere - I just re-tested and it works fine.\nDouble quotes don\u0027t work for regex with \\, like \"\\w\"",
+      "parentUuid": "e7f1d273_828b4e60",
+      "range": {
+        "startLine": 19,
+        "startChar": 18,
+        "endLine": 19,
+        "endChar": 29
+      },
+      "revId": "42081162b4381e91255ad79c418fcb18aaaeebcd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
