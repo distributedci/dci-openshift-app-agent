@@ -146,6 +146,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2b990bf_76da8677",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T17:19:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "754ee25e_0c533f64",
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "74ac7cf1_7495ba98",
@@ -183,6 +201,30 @@
       "side": 1,
       "message": "As an utility it should be fine to not use the other roles, at least for now 😄 Using common-roles implies modifying the ansible.cfg to load them, for now it should be easy to run utilities if needed.",
       "parentUuid": "74ac7cf1_7495ba98",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 82,
+        "endChar": 29
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e245408_679e2415",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T17:19:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "bb11cc26_c48c4605",
       "range": {
         "startLine": 82,
         "startChar": 0,
@@ -253,6 +295,30 @@
       "writtenOn": "2022-07-20T11:54:27Z",
       "side": 1,
       "message": "same, shouldn\u0027t we use check-resource common role?",
+      "range": {
+        "startLine": 272,
+        "startChar": 0,
+        "endLine": 272,
+        "endChar": 23
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76147425_ce8eaa0e",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T17:19:40Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b36a6a03_ad163ff5",
       "range": {
         "startLine": 272,
         "startChar": 0,
