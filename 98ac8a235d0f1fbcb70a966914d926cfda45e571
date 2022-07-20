@@ -16,6 +16,24 @@
       "message": "LGTM!, now the question is, how do we test this 🤓 to validate it\u0027s working",
       "revId": "98ac8a235d0f1fbcb70a966914d926cfda45e571",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf726b35_32119060",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T22:29:37Z",
+      "side": 1,
+      "message": "Created gist with the tests and run results:\n\nhttps://gist.github.com/betoredhat/fd0f064251bff18a2f539af9a2779553",
+      "parentUuid": "84f5254f_4bb149bb",
+      "revId": "98ac8a235d0f1fbcb70a966914d926cfda45e571",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
