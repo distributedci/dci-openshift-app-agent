@@ -16,6 +16,138 @@
       "message": "Thanks for the feedback, updated and tested accordingly. All still looks good",
       "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4a01d6b_f98b7ef9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-20T11:54:27Z",
+      "side": 1,
+      "message": "I like the idea of having this change defined in a separate folder, rather than integrated in d-o-a-a logic. Here are some comments.",
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12c2f89b_f53b1515",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-20T11:54:27Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 7,
+        "startChar": 326,
+        "endLine": 7,
+        "endChar": 327
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1bb5e8dd_9d6cee07",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-20T11:54:27Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 20,
+        "startChar": 201,
+        "endLine": 20,
+        "endChar": 202
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74ac7cf1_7495ba98",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-20T11:54:27Z",
+      "side": 1,
+      "message": "Shouldn\u0027t we use the check-resource common role?",
+      "range": {
+        "startLine": 82,
+        "startChar": 0,
+        "endLine": 82,
+        "endChar": 29
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1c41f28_5c1e8a07",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-20T11:54:27Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 74,
+        "startChar": 30,
+        "endLine": 74,
+        "endChar": 31
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b36a6a03_ad163ff5",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 272,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-07-20T11:54:27Z",
+      "side": 1,
+      "message": "same, shouldn\u0027t we use check-resource common role?",
+      "range": {
+        "startLine": 272,
+        "startChar": 0,
+        "endLine": 272,
+        "endChar": 23
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
