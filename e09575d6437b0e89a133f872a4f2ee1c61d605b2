@@ -58,6 +58,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7beef387_90eba030",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T16:12:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "12c2f89b_f53b1515",
+      "range": {
+        "startLine": 7,
+        "startChar": 326,
+        "endLine": 7,
+        "endChar": 327
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1bb5e8dd_9d6cee07",
@@ -71,6 +95,30 @@
       "writtenOn": "2022-07-20T11:54:27Z",
       "side": 1,
       "message": "whitespace",
+      "range": {
+        "startLine": 20,
+        "startChar": 201,
+        "endLine": 20,
+        "endChar": 202
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "263c5447_4401bb64",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T16:12:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1bb5e8dd_9d6cee07",
       "range": {
         "startLine": 20,
         "startChar": 201,
@@ -117,6 +165,30 @@
       "writtenOn": "2022-07-20T11:54:27Z",
       "side": 1,
       "message": "whitespace",
+      "range": {
+        "startLine": 74,
+        "startChar": 30,
+        "endLine": 74,
+        "endChar": 31
+      },
+      "revId": "e09575d6437b0e89a133f872a4f2ee1c61d605b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5207f04d_8524b570",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T16:12:16Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e1c41f28_5c1e8a07",
       "range": {
         "startLine": 74,
         "startChar": 30,
