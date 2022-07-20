@@ -34,6 +34,23 @@
       "parentUuid": "84f5254f_4bb149bb",
       "revId": "98ac8a235d0f1fbcb70a966914d926cfda45e571",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "123aa77a_1e68ec97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-20T23:28:41Z",
+      "side": 1,
+      "message": "Thanks Beto, LGTM!",
+      "revId": "98ac8a235d0f1fbcb70a966914d926cfda45e571",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
