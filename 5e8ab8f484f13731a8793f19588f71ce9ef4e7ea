@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f1a49bd_74850018",
+        "filename": "utilities/internal-registry/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a809e4c2_e0939bf4",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a64faefc_10853b70",
@@ -52,6 +70,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5dbe20d4_14de7ce8",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a64faefc_10853b70",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a940490b_1e96b8dd",
@@ -65,6 +101,24 @@
       "writtenOn": "2022-07-19T22:55:47Z",
       "side": 1,
       "message": "I have no idea how to find an index of a matching key 😞",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9befa937_717608e2",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a940490b_1e96b8dd",
       "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -88,6 +142,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a7ba36cb_426fe2f4",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "Not sure if affect other settings changed by the cluster owner. Let see if this patch only those 2 fields.",
+      "parentUuid": "c225f93a_b0580738",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "a9572328_433ca61a",
         "filename": "utilities/internal-registry/enable-ocp-registry.yml",
         "patchSetId": 4
@@ -99,6 +171,24 @@
       "writtenOn": "2022-07-19T22:55:47Z",
       "side": 1,
       "message": "I think this could be translated to use k8s module, if merge does not work directly then it will require a k8s_info then merge manually and then apply it",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "207878bf_00523273",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "I think this one is a complicated one because we need to append the IDP without affecting what is currently in place. Patching just overrides all the previous backends and access to the cluster get lost.\n\nAlso do not want to touch other annotations, settings in place.",
+      "parentUuid": "a9572328_433ca61a",
       "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -120,6 +210,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "91599312_880f4b50",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 169,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3a491a13_6a1384a7",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "771aa527_3214b8c0",
@@ -137,6 +245,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "df3387af_6c8718b7",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "I checked those and no one match with the one obtained from the route.\n\nConfirmed that the CAs tasks are not needed. Adding the endpoints to the insecure registry list will do the job",
+      "parentUuid": "771aa527_3214b8c0",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c1b2ade_68a46cfe",
@@ -150,6 +276,24 @@
       "writtenOn": "2022-07-19T22:55:47Z",
       "side": 1,
       "message": "It could be possible to use k8s module using src: to read from files instead of a definition",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb341eaf_11afeb69",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:12Z",
+      "side": 1,
+      "message": "Confirmed that the CAs tasks are not needed. Adding the endpoints to the insecure registry list will do the job",
+      "parentUuid": "6c1b2ade_68a46cfe",
       "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
