@@ -33,6 +33,23 @@
       "message": "👍",
       "revId": "dcabe4385bb854c045bd7410e42d5a018a8e0ab3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c8caad2_b8bd2e63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-07-20T18:18:46Z",
+      "side": 1,
+      "message": "The example-cnf job failed for another reason, the job was scheduled and cluster info retrieved correctly https://www.distributed-ci.io/jobs/f8d038fb-54eb-4e93-85f2-54cd6a4f5961/jobStates#773aada0-01f3-4af0-96a8-e8c83d276794:file11",
+      "revId": "dcabe4385bb854c045bd7410e42d5a018a8e0ab3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
