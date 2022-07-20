@@ -211,6 +211,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5adeb6f1_9d476473",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-20T16:19:05Z",
+      "side": 1,
+      "message": "👌",
+      "parentUuid": "207878bf_00523273",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3a491a13_6a1384a7",
@@ -281,6 +299,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "72cf8eb7_a4143dab",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-20T16:19:05Z",
+      "side": 1,
+      "message": "👍",
+      "parentUuid": "df3387af_6c8718b7",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c1b2ade_68a46cfe",
@@ -312,6 +348,24 @@
       "side": 1,
       "message": "Confirmed that the CAs tasks are not needed. Adding the endpoints to the insecure registry list will do the job",
       "parentUuid": "6c1b2ade_68a46cfe",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "129a466f_c4639600",
+        "filename": "utilities/internal-registry/enable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-20T16:19:05Z",
+      "side": 1,
+      "message": "👍",
+      "parentUuid": "cb341eaf_11afeb69",
       "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
