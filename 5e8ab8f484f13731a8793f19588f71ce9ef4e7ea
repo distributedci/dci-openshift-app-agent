@@ -158,6 +158,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ca281ac_c99d2d8a",
+        "filename": "utilities/internal-registry/disable-ocp-registry.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-07-20T02:13:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a7ba36cb_426fe2f4",
+      "revId": "5e8ab8f484f13731a8793f19588f71ce9ef4e7ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a9572328_433ca61a",
