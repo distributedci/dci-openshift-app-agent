@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ee5523c_232b5b2e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-22T13:11:31Z",
+      "side": 1,
+      "message": "Moving to the latest Preflight GA, it changes nothing except fixing a minor bug when working with private images from docker.io.\n\nTests are ok: https://www.distributed-ci.io/jobs/9a643045-4aab-420f-80a9-20bb4c7ad63a/jobStates \n",
+      "revId": "8ef57c481673d54a3d614f33bd59963d0c9e4cfa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
