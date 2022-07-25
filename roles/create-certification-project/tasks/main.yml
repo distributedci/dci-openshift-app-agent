@@ -6,13 +6,14 @@
 - name: Create certification project
   vars:
     pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+    template_filename: "templates/create_project_{{ project_type }}.json.j2"
   uri:
     url: "{{ create_project_url }}"
     method: POST
     headers:
       X-API-KEY: "{{ pyxis_apikey }}"
     body_format: json
-    body: "{{ lookup('template', 'templates/create_project.json.j2') }}"
+    body: "{{ lookup('template', template_filename) }}"
     status_code: 201
     timeout: 120
   register: cert_project_output
