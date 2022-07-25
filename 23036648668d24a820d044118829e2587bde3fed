@@ -33,6 +33,23 @@
       "message": "LGTM, but I\u0027d encourage you to open an issue in preflight to see how feasible would be to have this functionality (retries) in their API calls",
       "revId": "23036648668d24a820d044118829e2587bde3fed",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81a279a2_593840c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-07-25T22:00:38Z",
+      "side": 1,
+      "message": "Thanks, I\u0027ll follow up with preflight team about the retries",
+      "revId": "23036648668d24a820d044118829e2587bde3fed",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
