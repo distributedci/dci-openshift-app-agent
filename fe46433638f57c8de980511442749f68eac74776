@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "77c234e2_44bb9357",
+        "filename": "roles/create-certification-project/templates/create_project_operator.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-25T12:07:36Z",
+      "side": 1,
+      "message": "Hi Charles, sorry for the not-wip-change, I\u0027m still testing the abstraction structure, the operator functionality is not yet here.",
+      "parentUuid": "40500159_e7de721f",
+      "revId": "fe46433638f57c8de980511442749f68eac74776",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "33de562d_a0dc9cf8",
         "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
         "patchSetId": 1
