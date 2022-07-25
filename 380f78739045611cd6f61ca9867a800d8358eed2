@@ -16,6 +16,23 @@
       "message": "Hi Fred, I\u0027m testing the change here: https://www.distributed-ci.io/jobs/c407868c-410c-41c2-bcc6-bc50df95b068/jobStates ",
       "revId": "380f78739045611cd6f61ca9867a800d8358eed2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "09b9c71b_ec23f5c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-25T10:57:50Z",
+      "side": 1,
+      "message": "Hi Fred, I ran two tests:\n\n1/ the results are not as expected: https://www.distributed-ci.io/jobs/c407868c-410c-41c2-bcc6-bc50df95b068/jobStates\n2/ the results are fine: https://www.distributed-ci.io/jobs/8ead428b-8e11-49d1-a34e-49d79c58b0ec/jobStates\n\nEverything seems to be perfect.",
+      "revId": "380f78739045611cd6f61ca9867a800d8358eed2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
