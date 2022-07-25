@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec4a56d0_34ed4ff3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-25T15:28:42Z",
+      "side": 1,
+      "message": "Hi Charles and Nacho,\n\nthe dev is ready for review.\nHere I test with the following config\n\n\u003e     preflight_operators_to_certify:\n      - bundle_image: \"quay.io/rh-nfv-int/testpmd-operator-bundle@sha256:5e28f883faacefa847104ebba1a1a22ee897b7576f0af6b8253c68b5c8f42815\"\n        index_image: \"quay.io/rh-nfv-int/nfv-example-cnf-catalog:v0.2.9\"\n        pyxis_container_identifier: \"627bd764462eebef8a7ad477\"\n        pyxis_operator_identifier: \"627cff0ec046d839a3e95a5c\"\n      - bundle_image: \"quay.io/rh-nfv-int/cnf-app-mac-operator-bundle@sha256:e5b8697136baa78bd1fa841c45adc3b539f8e853238ac8a33feeef67f70d3468\"\n        index_image: \"quay.io/rh-nfv-int/nfv-example-cnf-catalog:v0.2.9\"\n      - bundle_image: \"quay.io/telcoci/simple-demo-operator-bundle@sha256:6cfbca9b14a51143cfc5d0d56494e7f26ad1cd3e662eedd2bcbebf207af59c86\" #v0.0.6\n        index_image: \"quay.io/telcoci/simple-demo-operator-catalog:v0.0.6\"\n    create_cert_projects: true\n    preflight_containers_to_certify:\n      - container_image: \"quay.io/rh-nfv-int/testpmd-lb-operator@sha256:339096a68f09eb42aa9bb8d72bf1d958fe14a15c93fb850e27ce18208fed23ed\"\n        pyxis_container_identifier: \"627be35fc9c98afb4c2e83ea\"\n      - container_image: \"quay.io/rh-nfv-int/trex-operator@sha256:ad258f677adde25b65eea18140f92184962a6257ff5c4537f594882acd964dd4\"\n\nand that creates me container projects if pyxis_container_identifier is not defined, and operator project if pyxis_operator_identifier is not defined. The preflight results are then automatically pushed into created projects.\n\nAll created/updated projects could be checked in FredCo. \n\nFor Charles: here is an operator project with all test cases passing: https://connect.redhat.com/projects/62dea11e2ddfb926fe8df5d4/overview \nThe only missing piece is an automated PR creation.\n",
+      "revId": "a32790e34d620feb39ef7ba4e42b3e819ebc070f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
