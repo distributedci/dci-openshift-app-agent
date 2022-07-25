@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ea8d965_ab3f13d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-25T10:21:26Z",
+      "side": 1,
+      "message": "Hi Fred, I\u0027m testing the change here: https://www.distributed-ci.io/jobs/c407868c-410c-41c2-bcc6-bc50df95b068/jobStates ",
+      "revId": "380f78739045611cd6f61ca9867a800d8358eed2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
