@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40500159_e7de721f",
+        "filename": "roles/create-certification-project/templates/create_project_operator.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-25T11:54:08Z",
+      "side": 1,
+      "message": "Looks like this file is not pushed properly ^^\u0027",
+      "revId": "fe46433638f57c8de980511442749f68eac74776",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "33de562d_a0dc9cf8",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-25T11:54:08Z",
+      "side": 1,
+      "message": "why do you unset this variable?",
+      "revId": "fe46433638f57c8de980511442749f68eac74776",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
