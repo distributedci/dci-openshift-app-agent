@@ -16,6 +16,23 @@
       "message": "Thx Manny, lgtm !",
       "revId": "23036648668d24a820d044118829e2587bde3fed",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bdaadde_5a94c6d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-07-25T18:08:25Z",
+      "side": 1,
+      "message": "LGTM, but I\u0027d encourage you to open an issue in preflight to see how feasible would be to have this functionality (retries) in their API calls",
+      "revId": "23036648668d24a820d044118829e2587bde3fed",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
