@@ -7,13 +7,12 @@
   with_items:
       - kubeconfig_path
       - ocp_version_full
-      - partner_name
-      - partner_email
-      - github_token_path
       - dci_charts
 
 - name: "Get tools"
-  include_tasks: get-tools.yml
+  include_role:
+    name: create-pr
+    tasks_from: get-tools.yml
 
 ## Temporary disabled, failing with images
 ## with format like rhscl/mongodb-36-rhel7:1-65
