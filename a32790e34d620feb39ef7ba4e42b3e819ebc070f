@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "85060237_1060c80b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-26T12:16:12Z",
+      "side": 1,
+      "message": "Hi Charles, thanks for checking, I replied where I could :) ",
+      "revId": "a32790e34d620feb39ef7ba4e42b3e819ebc070f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8ef33492_675e201b",
@@ -52,6 +69,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "30f44d55_fd3bef99",
+        "filename": "roles/create-certification-project/templates/create_project_operator.json.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-26T12:16:12Z",
+      "side": 1,
+      "message": "no, out of curiosity I tested three options right now: \"\"hosted_registry\": false\", \"\"hosted_registry\": true\", and absent line - they all create identical projects, and for sure, there is no documentation :(",
+      "parentUuid": "8ef33492_675e201b",
+      "revId": "a32790e34d620feb39ef7ba4e42b3e819ebc070f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3d8ddd2a_77564b61",
@@ -65,6 +100,24 @@
       "writtenOn": "2022-07-26T08:55:23Z",
       "side": 1,
       "message": "do you know what this field mean?",
+      "revId": "a32790e34d620feb39ef7ba4e42b3e819ebc070f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "069d5bfb_470f0915",
+        "filename": "roles/create-certification-project/templates/create_project_operator.json.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-26T12:16:12Z",
+      "side": 1,
+      "message": "It could be \"connect\" or \"marketplace\" for operators. Somehow it\u0027s called \"external\" for containers :D",
+      "parentUuid": "3d8ddd2a_77564b61",
       "revId": "a32790e34d620feb39ef7ba4e42b3e819ebc070f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
