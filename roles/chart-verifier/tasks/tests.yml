@@ -102,7 +102,13 @@
   failed_when: "cv_fail_count.rc not in [ 0, 1 ]"
 
 - name: "Submit CV and create pull request"
-  include_tasks: create_pr.yml
+  include_role:
+    name: create-pr
+  vars:
+    product_name: "{{ chart_name }}"
+    product_version: "{{ chart_version }}"
+    fork_name: "charts"
+    work_dir: "{{ work_dir }}"
   when:
     - chart.create_pr | default(false) | bool
     - cv_fail_count.stdout | int == 0
