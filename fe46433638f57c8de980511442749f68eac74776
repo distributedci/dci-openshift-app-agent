@@ -36,6 +36,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9758cdc3_edf3ffbc",
+        "filename": "roles/create-certification-project/templates/create_project_operator.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-26T08:55:30Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "77c234e2_44bb9357",
+      "revId": "fe46433638f57c8de980511442749f68eac74776",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "33de562d_a0dc9cf8",
@@ -49,6 +67,24 @@
       "writtenOn": "2022-07-25T11:54:08Z",
       "side": 1,
       "message": "why do you unset this variable?",
+      "revId": "fe46433638f57c8de980511442749f68eac74776",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec43bfcc_49420a4b",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-26T08:55:30Z",
+      "side": 1,
+      "message": "Hi Charles, that\u0027s to avoid it being occasionally reused by the next container.",
+      "parentUuid": "33de562d_a0dc9cf8",
       "revId": "fe46433638f57c8de980511442749f68eac74776",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
