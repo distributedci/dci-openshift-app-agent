@@ -86,6 +86,16 @@
     msg: "results-junit file is absent, it seems like the tests failed: {{ preflight_junit }}"
   when: not preflight_junit_exists.stat.exists
 
+- name: "Create a PR for certification"
+  include_role:
+    name: create-pr
+  vars:
+    product_name: "{{ operator.name }}"
+    product_version: "{{ operator.version }}"
+    fork_name: "certified-operator"
+    work_dir: "{{ preflight_operator_artifacts.path }}"
+  when: operator.create_pr | default(false) | bool
+
 - name: "Submit the results to Pyxis for {{ operator.name }}"
   include_role:
     name: pyxis
