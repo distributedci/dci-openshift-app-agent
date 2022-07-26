@@ -62,11 +62,6 @@
   with_fileglob:
     - "{{ preflight_operator_artifacts.path }}/*"
 
-- name: Remove tmp dir
-  file:
-    path: "{{ preflight_operator_artifacts.path }}"
-    state: absent
-
 - name: Delete preflight namespace
   community.kubernetes.k8s:
     name: "{{ preflight_namespace }}"
@@ -104,10 +99,31 @@
     - operator.pyxis_operator_identifier is defined
     - operator.pyxis_operator_identifier | length > 0
 
+- name: "Set target repository"
+  set_fact:
+    target_repository: "{{ operator.target_repository | default('capolrik/certified-operators') }}"
+  when: operator.create_pr | default(false) | bool
+
+- name: "Create a PR for certification"
+  include_role:
+    name: create-pr
+  vars:
+    product_name: "{{ operator.name }}"
+    product_version: "{{ operator.version }}"
+    fork_name: "certified-operator-{{ operator.name }}-{{ operator.version }}"
+    work_dir: "{{ preflight_operator_artifacts.path }}"
+    certified_for_versions: "{{ operator.certified_versions }}"
+  when: operator.create_pr | default(false) | bool
+
 - name: "Submit the results to Pyxis for {{ operator.name }}"
   include_role:
     name: pyxis
   when:
     - cert_project_id is defined
     - cert_project_id | length > 0
+
+- name: Remove tmp dir
+  file:
+    path: "{{ preflight_operator_artifacts.path }}"
+    state: absent
 ...
