@@ -62,11 +62,6 @@
   with_fileglob:
     - "{{ preflight_operator_artifacts.path }}/*"
 
-- name: Remove tmp dir
-  file:
-    path: "{{ preflight_operator_artifacts.path }}"
-    state: absent
-
 - name: Delete preflight namespace
   community.kubernetes.k8s:
     name: "{{ preflight_namespace }}"
@@ -108,6 +103,29 @@
   include_role:
     name: pyxis
   when:
-    - cert_project_id is defined
-    - cert_project_id | length > 0
+    - cert_project_id | default('') | length
+
+- name: Create certification PR
+  block:
+    - name: Set target repository
+      # TODO: should this be a separate fact?
+      set_fact:
+        target_repository: "{{ sandbox_repository | default('redhat-openshift-ecosystem/certified-operators') }}"
+
+    - name: Create a PR for certification
+      include_role:
+        name: create-pr
+      vars:
+        product_name: "{{ operator.name }}"
+        product_version: "{{ operator.version }}"
+        fork_name: "certified-operator-{{ operator.name }}-{{ operator.version }}"
+        work_dir: "{{ preflight_operator_artifacts.path }}"
+  # TODO: why do we define create_pr for operator?
+  # it's better to define globally
+  when: operator.create_pr | default(false) | bool
+
+- name: Remove tmp dir
+  file:
+    path: "{{ preflight_operator_artifacts.path }}"
+    state: absent
 ...
