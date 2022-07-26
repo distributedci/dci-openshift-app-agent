@@ -31,6 +31,7 @@ bundle\_image                      | undefined                                  
 index\_image                       | undefined                                            | Optional for connected environments and mandatory for disconnected.
 pyxis\_container\_identifier       | undefined                                            | Optional. To get this identifier, please create a project of type "Container Image project" at connect.redhat.com. Set this project identifier to submit Preflight `check container` results to Pyxis and connect.redhat.com. This identifier is unique for each container. If you have to certify multiple containers please create multiple projects. Please do not forget to provide Pyxis credentials: pyxis\_apikey\_path with Pyxis token (shared for all projects within one client).
 pyxis\_operator\_identifier        | undefined                                            | Optional. This variable should be defined for each operator. To get this identifier, please create a project of type "Operator Bundle Image project" at connect.redhat.com. Set this project identifier to submit Preflight `check operator` results to Pyxis and connect.redhat.com. This identifier is unique for each operator. If you have to certify multiple operators please create multiple projects. Please do not forget to provide Pyxis credentials: pyxis\_apikey\_path with Pyxis token (shared for all projects within one client).
+create\_pr                         | false                                                | Will create a PR in redhat-openshift-ecosystem/certified-operators GH project, needed in the certification workflow
 
 ## Two modes of certification
 
@@ -169,6 +170,8 @@ The idea is use one of them.
       # It's an id of your Operator Bundle Image
       # https://connect.redhat.com/projects/my_nice_container_id
       pyxis_operator_identifier: "my_nice_operator_id"
+      # Enabling the automatic PR creation for certification
+      create_pr: true
 
   # Optional; provide it when you need to submit test results.
   # This token is shared between all your projects.
