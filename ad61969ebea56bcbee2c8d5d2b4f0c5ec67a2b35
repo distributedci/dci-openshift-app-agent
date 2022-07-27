@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "382cc6eb_144acda8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-07-27T15:09:31Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for review.\n\nTested everything in disconnected env:\n\n- Private registry + Pyxis submission into the existing project: https://www.distributed-ci.io/jobs/9cf64672-ffeb-40c4-878a-2ba4d782222d/jobStates \n\n- Public registry + Pyxis submission into the existing projects / or no submission if no cert projects: https://www.distributed-ci.io/jobs/d2e9ae4d-7d71-4584-a9b9-7f507faf708d/jobStates\n\n- Mode with automated creation of projects + Pyxis submission: https://www.distributed-ci.io/jobs/4e22b81c-5147-4cfb-a844-4c1bea802415/jobStates\n\nNext step: going to test in connected env.",
+      "revId": "ad61969ebea56bcbee2c8d5d2b4f0c5ec67a2b35",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
