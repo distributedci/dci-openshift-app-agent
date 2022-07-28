@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "1066972a75859ee3e5da4d9a9791542e972774aa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5e22615_0e4c0ad7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-07-28T09:02:43Z",
+      "side": 1,
+      "message": "Looks fine to me! Thanks Tania :)",
+      "revId": "1066972a75859ee3e5da4d9a9791542e972774aa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
