@@ -1,0 +1,136 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ee7c145_93342a24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T12:36:38Z",
+      "side": 1,
+      "message": "really impressive change, thanks Charles! some comments from my side",
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97dfda8b_57eaefea",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T12:36:38Z",
+      "side": 1,
+      "message": "This would be only executed when `chart.create_pr | default(false) | bool`, wouldn\u0027t it?",
+      "range": {
+        "startLine": 14,
+        "startChar": 3,
+        "endLine": 14,
+        "endChar": 19
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37360cf4_c08c5dd4",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T12:36:38Z",
+      "side": 1,
+      "message": "typo: Pull Request",
+      "range": {
+        "startLine": 2,
+        "startChar": 55,
+        "endLine": 2,
+        "endChar": 59
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c060ccf_57be0095",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T12:36:38Z",
+      "side": 1,
+      "message": "We are passing here from ## to ####",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 18
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43078a5b_b9683c33",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T12:36:38Z",
+      "side": 1,
+      "message": "have",
+      "range": {
+        "startLine": 25,
+        "startChar": 18,
+        "endLine": 25,
+        "endChar": 21
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba4d8e65_14443c79",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T12:36:38Z",
+      "side": 1,
+      "message": "is it better to have a link here, maybe?",
+      "range": {
+        "startLine": 29,
+        "startChar": 10,
+        "endLine": 29,
+        "endChar": 16
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
