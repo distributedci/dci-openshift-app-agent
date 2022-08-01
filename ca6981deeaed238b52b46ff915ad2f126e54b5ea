@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "418154c1_c0fa5619",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-01T13:58:20Z",
+      "side": 1,
+      "message": "The commit that corresponds to v4.0.2 was already tested in daily jobs and it was working, so it can be safely merged: https://www.distributed-ci.io/jobs/d1cc1e78-450f-493b-86dd-3dbdee346576/jobStates",
+      "revId": "ca6981deeaed238b52b46ff915ad2f126e54b5ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
