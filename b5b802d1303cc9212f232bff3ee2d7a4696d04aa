@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7e6be82_18d489bc",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b03aed8d_10f11d8a",
+      "revId": "b5b802d1303cc9212f232bff3ee2d7a4696d04aa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fdbf5582_2f1913d9",
@@ -35,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "74049f5e_cdc24b42",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fdbf5582_2f1913d9",
+      "revId": "b5b802d1303cc9212f232bff3ee2d7a4696d04aa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "acaa6a12_e0a658c1",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-07-29T13:19:04Z",
       "side": 1,
       "message": "what would happen if we need to open many PRs at once, let\u0027s say, for 20 operators? Would that work? I see that the fork name is fixed.",
+      "revId": "b5b802d1303cc9212f232bff3ee2d7a4696d04aa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc96fc13_fc4aa8ce",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 113,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "acaa6a12_e0a658c1",
       "revId": "b5b802d1303cc9212f232bff3ee2d7a4696d04aa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8537227e_d6a7e57b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Thank you for the reviews, I am pushing an update with the changes, tests are still ongoing",
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "97dfda8b_57eaefea",
@@ -31,6 +48,30 @@
       "writtenOn": "2022-08-01T12:36:38Z",
       "side": 1,
       "message": "This would be only executed when `chart.create_pr | default(false) | bool`, wouldn\u0027t it?",
+      "range": {
+        "startLine": 14,
+        "startChar": 3,
+        "endLine": 14,
+        "endChar": 19
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "16194596_b8fda3c3",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Hum not exactly. I have used the same get-tools.yml file for both roles but at the end it is not useful and make the thing more confusing.\nI have created an extra task file for that.",
+      "parentUuid": "97dfda8b_57eaefea",
       "range": {
         "startLine": 14,
         "startChar": 3,
@@ -64,6 +105,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3692ae59_f299178b",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "37360cf4_c08c5dd4",
+      "range": {
+        "startLine": 2,
+        "startChar": 55,
+        "endLine": 2,
+        "endChar": 59
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5c060ccf_57be0095",
@@ -77,6 +142,30 @@
       "writtenOn": "2022-08-01T12:36:38Z",
       "side": 1,
       "message": "We are passing here from ## to ####",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 18
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08beeba2_5794e90d",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5c060ccf_57be0095",
       "range": {
         "startLine": 24,
         "startChar": 0,
@@ -110,6 +199,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c761e108_85a82d99",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "43078a5b_b9683c33",
+      "range": {
+        "startLine": 25,
+        "startChar": 18,
+        "endLine": 25,
+        "endChar": 21
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ba4d8e65_14443c79",
@@ -123,6 +236,30 @@
       "writtenOn": "2022-08-01T12:36:38Z",
       "side": 1,
       "message": "is it better to have a link here, maybe?",
+      "range": {
+        "startLine": 29,
+        "startChar": 10,
+        "endLine": 29,
+        "endChar": 16
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8c21790f_9406c767",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 6
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-01T13:16:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ba4d8e65_14443c79",
       "range": {
         "startLine": 29,
         "startChar": 10,
