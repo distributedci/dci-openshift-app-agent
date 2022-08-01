@@ -50,6 +50,24 @@
       "message": "Also, @Tatiana, I guess you will need to modify the pipelines that are defining this variable to remove it too, won\u0027t you? These are probably example-cnf, tnf-test-cnf and preflight pipelines",
       "revId": "8193d39aa643b564d19e5d77fdffa796062fe1f2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e41a3599_f7b07249",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-01T13:24:01Z",
+      "side": 1,
+      "message": "yes, good point, thank you Ramon!",
+      "parentUuid": "84a759bb_e4b65e43",
+      "revId": "8193d39aa643b564d19e5d77fdffa796062fe1f2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
