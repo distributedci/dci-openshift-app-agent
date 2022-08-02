@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e0cf9a0_e610f5f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-02T14:54:33Z",
+      "side": 1,
+      "message": "Charles, I think BOS2 has launched correctly the job :) just for your info",
+      "revId": "3e9b6192c0f2c55f172712e71f613baff30785db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
