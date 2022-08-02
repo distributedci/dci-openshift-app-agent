@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea1815b8_fb8d4517",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-02T13:26:35Z",
+      "side": 1,
+      "message": "Great work here.\n\nI have a few comments. Most of them are only typos, but the ones regarding your username being hardcoded look like must fix to me.",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d55a421f_1753e946",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-02T13:26:35Z",
+      "side": 1,
+      "message": "I take this relates to Tatiana\u0027s work to automate the project creation.\nThis point may be misleading wince the agent is also capable of creating the project itself.",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "579cad38_e5258b01",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-02T13:26:35Z",
+      "side": 1,
+      "message": "Not so important, but I\u0027m no longer used to seen this kind of format instead of plain yaml for the module parameters.",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e3f0afe7_b89bf260",
+        "filename": "roles/create-pr/tasks/main.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-02T13:26:35Z",
+      "side": 1,
+      "message": "not so important: SSH instead of SSK",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2d45580_05eaa20c",
+        "filename": "roles/create-pr/tasks/main.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-02T13:26:35Z",
+      "side": 1,
+      "message": "I have the feeling this is wrong. Isn\u0027t this your personal user name?",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e579b15_e68df2dd",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-02T13:26:35Z",
+      "side": 1,
+      "message": "Same comment here. I take your username will be replaced with something else when the PR is ready to merge (?).",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
