@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2642dd6_4bf0b875",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-02T09:33:03Z",
+      "side": 1,
+      "message": "Some more minor feedback from my side.",
+      "revId": "ff25e2a34f47284b02da8ac46a175885ba968634",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "daf81d37_8dfa3cac",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-02T09:33:03Z",
+      "side": 1,
+      "message": "and now have instead of haVE, hehe :)",
+      "range": {
+        "startLine": 25,
+        "startChar": 18,
+        "endLine": 25,
+        "endChar": 22
+      },
+      "revId": "ff25e2a34f47284b02da8ac46a175885ba968634",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "399e797a_cb1d39d6",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 175,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-02T09:33:03Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 175,
+        "startChar": 60,
+        "endLine": 175,
+        "endChar": 61
+      },
+      "revId": "ff25e2a34f47284b02da8ac46a175885ba968634",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

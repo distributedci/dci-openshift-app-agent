@@ -82,6 +82,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f52c9689_6c8365a1",
+        "filename": "roles/chart-verifier/tasks/main.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-02T09:33:03Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "16194596_b8fda3c3",
+      "range": {
+        "startLine": 14,
+        "startChar": 3,
+        "endLine": 14,
+        "endChar": 19
+      },
+      "revId": "70fa5106fe123c6c011f81d483850f9436ca1464",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37360cf4_c08c5dd4",
