@@ -1,4 +1,13 @@
 ---
+- name: Validate parameters for check operator run
+  assert:
+    that:
+      - operator.bundle_image is defined
+      - operator.name is defined
+      - operator.version is defined
+    fail_msg: "Cannot run preflight check operator: automatically generated config is missing"
+    success_msg: "All required parameters are ok, proceeding to run preflight check operator"
+
 - name: Create temporary (operator) preflight artifacts directory
   tempfile:
     state: directory
@@ -20,38 +29,30 @@
     kind: Namespace
     state: present
 
+- name: Template config.yaml with Preflight setup
+  template:
+    src: templates/operator_config.yaml.j2
+    dest: "{{ preflight_operator_artifacts.path }}/config.yaml"
+
 - name: "Run preflight check operator tests for {{ operator.name }}"
-  environment:
-    - OPENSHIFT_AUTH: "{{ partner_creds }}"
-    - OO_BUNDLE: "{{ operator.bundle_image }}"
-    - OO_INDEX: "{{ OO_INDEX }}"
   shell: >
     podman run
     --rm
     --pull=always
     --privileged
-    -e PFLT_JUNIT=true
-    -e PFLT_ARTIFACTS=/artifacts
-    -e PFLT_LOGFILE=/artifacts/preflight.log
-    -e PFLT_LOGLEVEL=trace
-    -e DOCKER_CONFIG=/opt
-    {{ preflight_PFLT_dockerconfig | default('') }}
     -e KUBECONFIG=/kubeconfig
-    -e PFLT_INDEXIMAGE={{ OO_INDEX }}
-    -e PFLT_NAMESPACE={{ preflight_namespace }}
-    -e PFLT_SERVICEACCOUNT=default
-    -e PFLT_SCORECARD_IMAGE={{ preflight_assets_images[0] }}
     -v {{ preflight_tmp_dir.path }}/kubeconfig:/kubeconfig
     -v {{ preflight_operator_artifacts.path }}:/artifacts
-    {{ preflight_podman_auth | default('') }}
+    -v {{ preflight_operator_artifacts.path }}/config.yaml:/usr/local/bin/config.yaml
+    {% if partner_creds | length %}
+    -v {{ preflight_tmp_dir.path }}/config.json:/opt/config.json
+    {% endif %}
     {{ preflight_podman_ca }}
     {{ preflight_image }}
     check operator
     {{ operator.bundle_image }}
-  register: preflight_exec
-  retries: 6
-  delay: 10
-  ignore_errors: true
+  args:
+    chdir: "{{ preflight_operator_artifacts.path }}"
 
 - name: Upload logs for preflight check operator into DCI
   vars:

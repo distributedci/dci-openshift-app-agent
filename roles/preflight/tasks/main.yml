@@ -18,8 +18,10 @@
         mode: "0644"
 
     # Use authentication file for private registry
-    - name: Set authentication for registry access
-      include_tasks: prepare_json_authentication.yml
+    - name: Copy authentication config
+      copy:
+        src: "{{ partner_creds }}"
+        dest: "{{ preflight_tmp_dir.path }}/config.json"
       when: partner_creds | length
 
     # Use custom certificate for self sign registry
@@ -62,13 +64,14 @@
       include_tasks: mirroring.yml
       when: dci_disconnected | default(false) | bool
 
-    # The main tests
+    # Preflight check container tests
     - name: Check container - Preflight check operator images with check container one by one
       include_tasks: test_preflight_check_container.yml
       loop: "{{ preflight_operators_to_check }}"
       loop_control:
         loop_var: operator
 
+    # Preflight check operator tests
     - name: Check operator - Preflight check operators one by one
       include_tasks: tests_preflight_check_operator.yml
       loop: "{{ preflight_operators_to_check }}"
