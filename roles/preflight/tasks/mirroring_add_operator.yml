@@ -22,7 +22,9 @@
 # https://github.com/operator-framework/operator-registry/issues/919
 - name: "Render bundle for {{ operator.name }}"
   shell: >
-    {{ preflight_docker_config_env }}
+    {% if partner_creds | length %}
+    DOCKER_CONFIG={{ preflight_tmp_dir.path }}
+    {% endif %}
     {{ opm_tool_path }} render {{ operator.bundle_image }}
     --output=yaml >> {{ preflight_prerun_tmp_dir.path }}/disconnected-catalog/index.yml
 
