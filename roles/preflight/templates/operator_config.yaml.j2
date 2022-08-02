@@ -1,0 +1,12 @@
+{% if partner_creds | length %}
+dockerConfig: {{ preflight_tmp_dir.path }}/config.json
+{% endif %}
+loglevel: trace
+logfile: {{ preflight_operator_artifacts.path }}/preflight.log
+artifacts: {{ preflight_operator_artifacts.path }}
+junit: true
+namespace: {{ preflight_namespace }}
+serviceaccount: default
+scorecard_image: {{ preflight_assets_images[0] }}
+scorecard_wait_time: 100
+indeximage: {{ OO_INDEX }}
