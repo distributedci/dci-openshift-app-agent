@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "77cdfff0_3753d358",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-03T15:42:57Z",
+      "side": 1,
+      "message": "I will link the doc of the other role :)",
+      "parentUuid": "d55a421f_1753e946",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "579cad38_e5258b01",
         "filename": "roles/create-pr/tasks/bundle_operator.yml",
         "patchSetId": 12
@@ -48,6 +66,24 @@
       "writtenOn": "2022-08-02T13:26:35Z",
       "side": 1,
       "message": "Not so important, but I\u0027m no longer used to seen this kind of format instead of plain yaml for the module parameters.",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ecc9ff3_89c58946",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-03T15:42:57Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "579cad38_e5258b01",
       "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -65,6 +101,24 @@
       "writtenOn": "2022-08-02T13:26:35Z",
       "side": 1,
       "message": "not so important: SSH instead of SSK",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37df82ce_8cd678b0",
+        "filename": "roles/create-pr/tasks/main.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-03T15:42:57Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e3f0afe7_b89bf260",
       "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -99,6 +153,24 @@
       "writtenOn": "2022-08-02T13:26:35Z",
       "side": 1,
       "message": "Same comment here. I take your username will be replaced with something else when the PR is ready to merge (?).",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8af2ea79_1367c3f3",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-03T15:42:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3e579b15_e68df2dd",
       "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
