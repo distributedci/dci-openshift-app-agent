@@ -59,13 +59,27 @@
     with_items: "{{ list_sh_scripts.files }}"
 
   # We need to check the SHA in this way, because extract-dependencies changes the
-  # commit id when creating the new branch based on the PR, but the original id
-  # is saved in .git/ORIG_HEAD file.
-  - name: Retrieve commit SHA from the downloaded repo
+  # commit id when creating the new branch based on the PR if new PRs are merged in the
+  # so that the original id is saved in .git/ORIG_HEAD file. Else, we can find it in the
+  # location called `.git/refs/heads/prXXX`
+  - name: "Check if .git/ORIG_HEAD file exists"
+    stat:
+      path: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/.git/ORIG_HEAD"
+    register: orig_head_file
+
+  - name: Retrieve commit SHA from the downloaded repo - from ORIG_HEAD
+    shell: cat .git/ORIG_HEAD
+    register: tnf_repo_info
+    args:
+      chdir: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}"
+    when: orig_head_file.stat.exists
+
+  - name: Retrieve commit SHA from the downloaded repo - from refs
     shell: cat .git/refs/heads/$(git rev-parse --abbrev-ref HEAD)
     register: tnf_repo_info
     args:
       chdir: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}"
+    when: not orig_head_file.stat.exists
 
   - name: Create variable with tnf version name
     set_fact:
@@ -81,7 +95,8 @@
       set -x
       podman build -t {{ tnf_image }} \
       --build-arg TNF_VERSION={{ tnf_version_image }} \
-      --build-arg TNF_SRC_URL={{ test_network_function_repo }} .
+      --build-arg TNF_SRC_URL=https://github.com/test-network-function/cnf-certification-test \
+      --build-arg OPENSHIFT_VERSION={{ ocp_version_full }} .
     args:
       chdir: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}"
 
