@@ -33,6 +33,23 @@
       "message": "Hi Charles, PR is failing because of the naming convention, they expect something like `operator my-operator (3.2.1)`. \n\nDocs: https://github.com/redhat-openshift-ecosystem/certification-releases/blob/main/4.9/ga/troubleshooting.md#validate-pr-title \n\nPR: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1064",
       "revId": "5c10c99d563b621c10bf4f769f0a691cc32031a6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "140d99f9_1e3c0ea8",
+        "filename": "roles/create-pr/templates/annotations.yaml.j2",
+        "patchSetId": 25
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T13:15:43Z",
+      "side": 1,
+      "message": "I believe that this file should not be generated, it should be provided as a part of the operator, and all we need is to retrieve it and fail if it\u0027s not present. Here is an example: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1068/files",
+      "revId": "5c10c99d563b621c10bf4f769f0a691cc32031a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
