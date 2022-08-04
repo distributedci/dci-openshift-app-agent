@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "196a0318_bae459aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T08:03:28Z",
+      "side": 1,
+      "message": "And one more question - I see that some operators are only providing ci.yaml, no manifests, no metadata, for example, here: https://github.com/redhat-openshift-ecosystem/certified-operators/tree/main/operators/ibm-mongodb-operator-app \n\nWhy do we provide manifests and metadata? Maybe it\u0027s only for marketplaces and in general, this option is not needed? ",
+      "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7e9415f5_c20b689c",
