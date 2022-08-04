@@ -140,6 +140,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e90a51f5_2ea15977",
+        "filename": "roles/create-pr/tasks/main.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-04T06:39:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e2d45580_05eaa20c",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3e579b15_e68df2dd",
