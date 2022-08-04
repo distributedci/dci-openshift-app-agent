@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccca759d_45c71f11",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 28
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T15:53:35Z",
+      "side": 1,
+      "message": "Current situation: PR is opened: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1069 but failing submission-validation \n\n- The folder structure should be fixed\n- annotations.yaml ideally should be retrieved from the bundle\n\nI\u0027ll continue to work on the CR while Charles is on PTO",
+      "revId": "d755852229dbfc08e9416ca7877024f7537848de",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
