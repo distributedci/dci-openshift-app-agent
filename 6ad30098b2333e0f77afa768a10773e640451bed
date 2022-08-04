@@ -16,6 +16,24 @@
       "message": "Hi Charles, I believe that annotations.yaml should be retrieved from the bundle image, and not provided separately as a path in the file system.\n\nHere is an example for simple-demo-operator: https://github.com/opdev/simple-demo-operator/tree/main/bundle/metadata \n\nHere are the docs: https://sdk.operatorframework.io/docs/cli/operator-sdk_generate_bundle/",
       "revId": "6ad30098b2333e0f77afa768a10773e640451bed",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f5cb896_56151526",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 27
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-04T14:33:32Z",
+      "side": 1,
+      "message": "No because it is impossible to sort the annotations that have been added manually from the ones that have been generated.\nIn fact, the partners have annotation file somewhere but this one requires specific values anyway, so it makes sense the partner provide it",
+      "parentUuid": "5bfb6454_975eb095",
+      "revId": "6ad30098b2333e0f77afa768a10773e640451bed",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
