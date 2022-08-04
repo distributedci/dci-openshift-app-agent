@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f24fbcf_4b2020fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T10:17:00Z",
+      "side": 1,
+      "message": "Hi Charles, thank you, looking forward to using your development! What would happen if we set an option to create a PR and execute this two times in a row?",
+      "revId": "5c10c99d563b621c10bf4f769f0a691cc32031a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2e03ef7c_f26ea649",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T10:17:00Z",
+      "side": 1,
+      "message": "Hi Charles, PR is failing because of the naming convention, they expect something like `operator my-operator (3.2.1)`. \n\nDocs: https://github.com/redhat-openshift-ecosystem/certification-releases/blob/main/4.9/ga/troubleshooting.md#validate-pr-title \n\nPR: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1064",
+      "revId": "5c10c99d563b621c10bf4f769f0a691cc32031a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
