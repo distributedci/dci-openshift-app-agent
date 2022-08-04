@@ -18,6 +18,40 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e02ed15e_4f7d5784",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T08:01:01Z",
+      "side": 1,
+      "message": "Hi Charles, thank you, looking forward to using your development! What would happen if we set an option to create a PR and execute this two times in a row? ",
+      "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e9415f5_c20b689c",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-04T08:01:01Z",
+      "side": 1,
+      "message": "Hi Charles, quick question - how the project is linked to PR? In the ci.yaml config file with the certification project ID?",
+      "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1521d809_7a2eacf6",
