@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1392bc7b_120161ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-04T08:25:37Z",
+      "side": 1,
+      "message": "I don\u0027t know how this operator has been certified, I think it is an error or an old project. Manifests and metadata are needed by the gateway to get certified.",
+      "parentUuid": "196a0318_bae459aa",
+      "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7e9415f5_c20b689c",
@@ -82,6 +100,24 @@
       "writtenOn": "2022-08-04T06:54:18Z",
       "side": 1,
       "message": "Not so important, but I guess the proper phrasing would be \"Needed to specify on...\"",
+      "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c16a5af9_b7d8f159",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 177,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-04T08:25:37Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1521d809_7a2eacf6",
       "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
