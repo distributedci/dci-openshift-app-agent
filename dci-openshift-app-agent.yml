@@ -65,7 +65,7 @@
         dci_api_secret="{{ lookup('env','DCI_API_SECRET') }}"
         dci_cs_url="{{ lookup('env','DCI_CS_URL') }}"
         dci_ui_url="{{ lookup('env','DCI_UI_URL') | default('https://www.distributed-ci.io', True) }}"
-      no_log: true
+#      no_log: true
 
     # Add the ocp component when called from dci-pipeline
     - name: Attach ocp component to the job
@@ -85,6 +85,7 @@
         name: "{{ dci_name | default('') }}"
         configuration: "{{ dci_configuration | default('') }}"
         previous_job_id: "{{ dci_previous_job_id | default('') }}"
+        pipeline_id: "{{ dci_pipeline_id | default('') }}"
       register: job_info
       when: job_info is not defined
 
