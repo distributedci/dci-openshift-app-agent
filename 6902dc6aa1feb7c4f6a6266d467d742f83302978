@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "885ec396_4086b046",
+        "filename": "group_vars/all",
+        "patchSetId": 6
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-08T11:37:59Z",
+      "side": 1,
+      "message": "I guess `dci_name: null` is missed here",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 23
+      },
+      "revId": "6902dc6aa1feb7c4f6a6266d467d742f83302978",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
