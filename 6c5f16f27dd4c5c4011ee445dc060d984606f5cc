@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "6c5f16f27dd4c5c4011ee445dc060d984606f5cc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69f68f21_9812aaae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-08T11:16:40Z",
+      "side": 1,
+      "message": "\u003e Patch Set 8:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/8ce96e71-dd43-478a-b204-545d5ba509fd/jobStates\n\u003e  from https://github.com/test-network-function/cnf-certification-test/pull/402\n\nThis change is ready for merging. Almost all the tnf unit tests that are currently failing are now passing. The job is failing because there\u0027s one tnf unit test that is still failing, but it is a new one that should be fixed with this change: https://github.com/test-network-function/cnf-certification-test/pull/407, so it\u0027s not related to d-o-a-a.",
+      "revId": "6c5f16f27dd4c5c4011ee445dc060d984606f5cc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
