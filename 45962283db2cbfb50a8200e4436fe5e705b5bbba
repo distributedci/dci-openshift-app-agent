@@ -34,6 +34,24 @@
       "parentUuid": "7dd732bc_e9b6910a",
       "revId": "45962283db2cbfb50a8200e4436fe5e705b5bbba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90aa533f_66094c92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2022-08-08T18:06:07Z",
+      "side": 1,
+      "message": "We are fixing the CI on dci-ansible to get the dependency merged, it will be more simpler for you to test it after.",
+      "parentUuid": "70ca2fe5_74d81bf1",
+      "revId": "45962283db2cbfb50a8200e4436fe5e705b5bbba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
