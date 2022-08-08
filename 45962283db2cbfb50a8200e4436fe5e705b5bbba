@@ -16,6 +16,24 @@
       "message": "change looks fine, can we test it on dallas?",
       "revId": "45962283db2cbfb50a8200e4436fe5e705b5bbba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70ca2fe5_74d81bf1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-08-08T12:51:29Z",
+      "side": 1,
+      "message": "I actually tried to test it in dallas, but I\u0027m getting the following error:\n\nProcessing line \u0027Depends-On: https://softwarefactory-project.io/r/c/dci-ansible/+/25755\u0027\n+ egrep -iq \u0027https://github.com/.*/pull\u0027\n++ sed -e \u0027s@\\s*\\(build-depends\\|depends-on\\):\\s*\\(.*\\)\\s*@\\2@i\u0027\n+ changeid\u003dhttps://softwarefactory-project.io/r/c/dci-ansible/+/25755\n+ \u0027[\u0027 -n https://softwarefactory-project.io/r/c/dci-ansible/+/25755 \u0027]\u0027\n+ curl -s \u0027https://softwarefactory-project.io/r/changes/https://softwarefactory-project.io/r/c/dci-ansible/+/25755?o\u003dCURRENT_REVISION\u0027\n+ tail -n +2\n/var/lib/dci/pipelines/bin/extract-dependencies: line 73: https://softwarefactory-project.io/r/c/dci-ansible/+/25755.json: No such file or directory\n(23) Failed writing body\n\nI suspect dci-ci-bot is getting the same, that\u0027s why we do not see the job run in libvirt. I\u0027ll take a closer look",
+      "parentUuid": "7dd732bc_e9b6910a",
+      "revId": "45962283db2cbfb50a8200e4436fe5e705b5bbba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
