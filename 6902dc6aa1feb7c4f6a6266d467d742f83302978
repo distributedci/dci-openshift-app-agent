@@ -22,6 +22,30 @@
       },
       "revId": "6902dc6aa1feb7c4f6a6266d467d742f83302978",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c4a6c454_941b481a",
+        "filename": "group_vars/all",
+        "patchSetId": 6
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-08T11:39:23Z",
+      "side": 1,
+      "message": "Also, regarding this kind of definition, may it be a problem to have these variables defined as null and don\u0027t have a check on dci-openshift-app-agent.yml that controls the values these variables can have?",
+      "parentUuid": "885ec396_4086b046",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 23
+      },
+      "revId": "6902dc6aa1feb7c4f6a6266d467d742f83302978",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
