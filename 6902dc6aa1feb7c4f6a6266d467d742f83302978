@@ -46,6 +46,30 @@
       },
       "revId": "6902dc6aa1feb7c4f6a6266d467d742f83302978",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7fa343d_a012c6e1",
+        "filename": "group_vars/all",
+        "patchSetId": 6
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-08-08T11:54:57Z",
+      "side": 1,
+      "message": "dci_name is defined at the beginning of the file.",
+      "parentUuid": "c4a6c454_941b481a",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 23
+      },
+      "revId": "6902dc6aa1feb7c4f6a6266d467d742f83302978",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
