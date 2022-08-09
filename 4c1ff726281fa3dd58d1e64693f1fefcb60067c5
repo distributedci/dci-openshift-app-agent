@@ -155,6 +155,24 @@
       "parentUuid": "13488bec_4f1d370b",
       "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66e5d86e_bff05ad3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2022-08-09T12:09:37Z",
+      "side": 1,
+      "message": "@Tatiana: I found the nasty culprit and made a fix: https://softwarefactory-project.io/r/c/dci-ansible/+/25770\n\nThe issue was because of this orange testcase the parsing failed. Now both issues should be fixed with this patch. Could you give it a try once the patch get merged.",
+      "parentUuid": "5826b114_2c55801d",
+      "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
