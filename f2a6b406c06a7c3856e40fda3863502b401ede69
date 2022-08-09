@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64b5387d_23a01d76",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-09T11:31:36Z",
+      "side": 1,
+      "message": "Hi guys, can someone of you check this change to finally merge it? I need it to continue fixing CILAB-721. I promise it\u0027s quick to check",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
