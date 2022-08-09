@@ -67,6 +67,23 @@
       "message": "I think there are some network issues in BOS2, in the last 4 jobs we got all kind of failures pulling repos from gihub, images from quay, and its random, not seeing it in Dallas, I\u0027ll wait a little bit before retrying, ",
       "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15a09518_059ba316",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-08-09T02:23:49Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
