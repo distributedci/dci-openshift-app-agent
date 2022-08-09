@@ -137,6 +137,24 @@
       "parentUuid": "728670f7_94c7db8b",
       "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5826b114_2c55801d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-09T12:02:15Z",
+      "side": 1,
+      "message": "@Yassine, thank you for checking, yes, lolipop.junit.xml is displayed correctly, I re-run the tests: https://www.distributed-ci.io/jobs/85dd7d9c-1eda-4078-b60c-c780878c332e/jobStates\n\nAnother issue (not sure if that\u0027s an issue or a feature):\nFor simple-demo we have 977 green tests + 1 orange test and hence if we submit this report to exception approval, we will be rejected. The requirement for the \"A\" health status is 100% green. Currently, the orange test is displayed as OK but probably it would be better to display it as KO to avoid partners\u0027 confusion.",
+      "parentUuid": "13488bec_4f1d370b",
+      "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
