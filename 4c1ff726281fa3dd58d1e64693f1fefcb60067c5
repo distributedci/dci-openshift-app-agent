@@ -84,6 +84,23 @@
       "message": "recheck",
       "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "23d953a6_dccc11a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-09T08:38:09Z",
+      "side": 1,
+      "message": "Hi Yassine, thank you for the change! Tested it on the operator with two containers: https://www.distributed-ci.io/jobs/2982a994-98db-4399-8308-68a5547257a0/tests \n\n1/ [OK] preflight_container_simple-demo-operator_0.0.6_kube-rbac-proxy_oval-report.junit.xml displays 978 tests as in the html report\n\n2/ [KO] preflight_container_simple-demo-operator_0.0.6_simple-demo-operator_oval-report.junit.xml shows 9 tests instead of 978 in the html report: preflight_container_simple-demo-operator_0.0.6_simple-demo-operator_oval-report.html",
+      "revId": "4c1ff726281fa3dd58d1e64693f1fefcb60067c5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
