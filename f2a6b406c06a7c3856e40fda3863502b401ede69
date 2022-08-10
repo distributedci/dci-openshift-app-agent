@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "80a24ad4_ab55ab46",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-10T07:46:54Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for the change, just a minor syntax fix.",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bf8981d5_3db49f52",
@@ -48,6 +65,23 @@
       "writtenOn": "2022-08-09T21:08:44Z",
       "side": 1,
       "message": "I got a little bit confused here, at the end of the: line \"if new PRs are merged in the\" and next line starts with \"so that the original id\" maybe some punctuation is missing or extra words are used? :)",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a85dbf2d_13e0e583",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-10T07:46:54Z",
+      "side": 1,
+      "message": "Hi Ramon, minor issue: we could use a block for the next four tasks, and share the condition instead of copy-pasting it.",
       "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
