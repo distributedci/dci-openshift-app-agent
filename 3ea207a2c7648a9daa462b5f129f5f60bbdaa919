@@ -16,6 +16,23 @@
       "message": "Thanks for the reviews! I\u0027ve addressed all these points. I\u0027ll try to test it with a tnf change to validate it is working fine.",
       "revId": "3ea207a2c7648a9daa462b5f129f5f60bbdaa919",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22fe9ea8_75ee03f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-10T13:31:20Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "3ea207a2c7648a9daa462b5f129f5f60bbdaa919",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
