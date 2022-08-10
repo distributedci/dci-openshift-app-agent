@@ -69,6 +69,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "71ea9d2f_8b64af40",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-10T11:46:19Z",
+      "side": 1,
+      "message": "Thanks! That\u0027s true, I\u0027ve rewritten the whole story.",
+      "parentUuid": "bf8981d5_3db49f52",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a85dbf2d_13e0e583",
@@ -82,6 +100,24 @@
       "writtenOn": "2022-08-10T07:46:54Z",
       "side": 1,
       "message": "Hi Ramon, minor issue: we could use a block for the next four tasks, and share the condition instead of copy-pasting it.",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7883b2c_f497b69a",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-10T11:46:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a85dbf2d_13e0e583",
       "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -103,6 +139,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "80e5bc70_3a5adfdd",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-10T11:46:19Z",
+      "side": 1,
+      "message": "The problem is that, when a PR from cnf-certification-test repo is being tested, test_network_function_repo changes its value to the file path in which we are cloning the repo when testing the change in dallas. That\u0027s why we do this: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/cnf-cert/tasks/main.yml#L32-L35\nAnd this TNF_SRC_URL always needs an URL, to it\u0027s better to keep it fixed.\nIn fact, if you check the history of debug jobs launched, you will see some of them were failing because of this.",
+      "parentUuid": "7d6bd9e1_be27cde4",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "99600e8d_f01b8d77",
@@ -120,6 +174,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "858bf769_483d8515",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-10T11:46:19Z",
+      "side": 1,
+      "message": "Same than before, test_network_function_repo changes its value to be a file path when testing a PR from tnf. So we have to use a fixed value.",
+      "parentUuid": "99600e8d_f01b8d77",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fbd13211_33b899e9",
@@ -133,6 +205,24 @@
       "writtenOn": "2022-08-09T21:08:44Z",
       "side": 1,
       "message": "Is this right? I do not think it would do any harm to create the resource quota, I just think 1000 cpu cores across all pods is quite high, specially if the pod limit is 10 :P",
+      "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "270a6956_c1ec3ba3",
+        "filename": "samples/tnf_test_example/hooks/templates/resource_quota.yml.j2",
+        "patchSetId": 9
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-10T11:46:19Z",
+      "side": 1,
+      "message": "I just copied if from https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-target/resource-quota.yaml, this resource-quota is just to pass a particular tnf unit test that requires the presence of resource quotas in the pods under tests. So the values used here don\u0027t really matter, I think.",
+      "parentUuid": "fbd13211_33b899e9",
       "revId": "f2a6b406c06a7c3856e40fda3863502b401ede69",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
