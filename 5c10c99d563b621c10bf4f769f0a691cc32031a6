@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c55d44a_1aefe6af",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-17T07:58:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2e03ef7c_f26ea649",
+      "revId": "5c10c99d563b621c10bf4f769f0a691cc32031a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "140d99f9_1e3c0ea8",

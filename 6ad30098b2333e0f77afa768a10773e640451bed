@@ -34,6 +34,24 @@
       "parentUuid": "5bfb6454_975eb095",
       "revId": "6ad30098b2333e0f77afa768a10773e640451bed",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35faa25d_0e4b5d13",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 27
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-17T07:58:39Z",
+      "side": 1,
+      "message": "I finally used `podman cp` to retrieve the annotations",
+      "parentUuid": "2f5cb896_56151526",
+      "revId": "6ad30098b2333e0f77afa768a10773e640451bed",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
