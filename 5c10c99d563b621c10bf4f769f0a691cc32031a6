@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "88b75a07_2f329da0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-17T10:26:12Z",
+      "side": 1,
+      "message": "tested: that will open two different PRs",
+      "parentUuid": "2f24fbcf_4b2020fa",
+      "revId": "5c10c99d563b621c10bf4f769f0a691cc32031a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2e03ef7c_f26ea649",
