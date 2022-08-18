@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d85b6b37_a2d53de3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 42
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-18T13:28:26Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for review.\n\nHere is the PR that was automatically open: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1136\n\nAs the last step, I\u0027m going to make the verification of the annotation file to be blocking: https://www.distributed-ci.io/jobs/dd22ce80-2160-45c7-b1e9-1eccf15538c5/jobStates#aab9fe5c-4caf-4cc0-b01f-19cfa842b824:file139 ",
+      "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
