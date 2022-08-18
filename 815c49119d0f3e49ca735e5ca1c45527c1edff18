@@ -16,6 +16,40 @@
       "message": "Same change than https://softwarefactory-project.io/r/c/dci-openshift-agent/+/25836, but for the app-agent.",
       "revId": "815c49119d0f3e49ca735e5ca1c45527c1edff18",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a43e464_522ec78c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-08-18T16:33:32Z",
+      "side": 1,
+      "message": "I have the same question as in the doa change, is it ok to use cluster? do think anything else would be more suitable? Either one works for me",
+      "revId": "815c49119d0f3e49ca735e5ca1c45527c1edff18",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d41dc80b_038b19f4",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-08-18T16:33:32Z",
+      "side": 1,
+      "message": "You can omit this comment, the conditional takes care of only setting when it is defined",
+      "revId": "815c49119d0f3e49ca735e5ca1c45527c1edff18",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
