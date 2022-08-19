@@ -16,6 +16,46 @@
       "message": "Hello everyone, the change is ready for review.\n\nHere is the PR that was automatically open: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1136\n\nAs the last step, I\u0027m going to make the verification of the annotation file to be blocking: https://www.distributed-ci.io/jobs/dd22ce80-2160-45c7-b1e9-1eccf15538c5/jobStates#aab9fe5c-4caf-4cc0-b01f-19cfa842b824:file139 ",
       "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e81eac19_57562a5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 42
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-19T08:09:01Z",
+      "side": 1,
+      "message": "One minor comment from my side, comparing with the current code, but the change looks really fine, thanks Tatiana for taking care",
+      "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c70fb293_5f1be232",
+        "filename": "roles/create-pr/tasks/helm_chart_verifier.yml",
+        "patchSetId": 42
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-19T08:09:01Z",
+      "side": 1,
+      "message": "Where is `chart_path` defined? In the previous `roles/chart-verifier/tasks/create_pr.yml`, this variable was created:\n\n```\n- name: \"Set chart path\"\n  vars:\n    partner: \"{{  partner_name | replace(\u0027 \u0027,\u0027_\u0027) }}\"\n  set_fact:\n    chart_path: \"{{ work_dir }}/charts/charts/partners/{{ partner }}/{{ chart_name }}/{{ chart_version }}/\"\n```\n\n but here I cannot see it.",
+      "range": {
+        "startLine": 23,
+        "startChar": 14,
+        "endLine": 23,
+        "endChar": 24
+      },
+      "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
