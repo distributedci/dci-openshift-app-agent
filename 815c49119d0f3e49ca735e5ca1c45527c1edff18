@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f962fbe6_309ed00c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-19T08:12:38Z",
+      "side": 1,
+      "message": "As I said, I think it\u0027s fine to use \"cluster\", we can go on with it.",
+      "parentUuid": "1a43e464_522ec78c",
+      "revId": "815c49119d0f3e49ca735e5ca1c45527c1edff18",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d41dc80b_038b19f4",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-08-18T16:33:32Z",
       "side": 1,
       "message": "You can omit this comment, the conditional takes care of only setting when it is defined",
+      "revId": "815c49119d0f3e49ca735e5ca1c45527c1edff18",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "641f6d5a_0bc04668",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 117,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-19T08:12:38Z",
+      "side": 1,
+      "message": "Okey, I\u0027ll remove it, it was just to clarify where this variable is defined, but that\u0027s okey to omit it.",
+      "parentUuid": "d41dc80b_038b19f4",
       "revId": "815c49119d0f3e49ca735e5ca1c45527c1edff18",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
