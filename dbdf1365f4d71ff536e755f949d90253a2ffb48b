@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "286e4f20_add4f256",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 44
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-22T07:30:04Z",
+      "side": 1,
+      "message": "Hi Charles, I trimmed the formatting + retrieved annotations.yaml + fixed the error with the cert_project_id retrieval. The change is tested on certified-operators part.\n\nThe idea was to wait for Beto to be back from holidays to test the chart-verifier part. Since you\u0027re back from holidays, I let you deal with that, welcome back and thank you! \n\n",
+      "revId": "dbdf1365f4d71ff536e755f949d90253a2ffb48b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

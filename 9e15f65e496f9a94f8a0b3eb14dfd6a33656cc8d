@@ -87,6 +87,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f9e5887_ee4ba92c",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-22T07:30:04Z",
+      "side": 1,
+      "message": "replying my own question - yes, the link is in the ci.yaml",
+      "parentUuid": "7e9415f5_c20b689c",
+      "revId": "9e15f65e496f9a94f8a0b3eb14dfd6a33656cc8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1521d809_7a2eacf6",
