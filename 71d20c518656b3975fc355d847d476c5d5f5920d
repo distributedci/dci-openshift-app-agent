@@ -56,6 +56,30 @@
       },
       "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a229258b_6b4f4140",
+        "filename": "roles/create-pr/tasks/helm_chart_verifier.yml",
+        "patchSetId": 42
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-22T07:02:43Z",
+      "side": 1,
+      "message": "Good catch! this var is indeed missing! let me add this",
+      "parentUuid": "c70fb293_5f1be232",
+      "range": {
+        "startLine": 23,
+        "startChar": 14,
+        "endLine": 23,
+        "endChar": 24
+      },
+      "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
