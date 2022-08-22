@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79d87f37_4ef54cc6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 46
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-22T10:39:12Z",
+      "side": 1,
+      "message": "Hey Charles, it seems like you occasionally reverted my changes in the documentation.\n\nHere is your diff:\nhttps://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25609/44..46 \n\nHere are the changes that would be nice to restore: \nhttps://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25609/43..44\n\nThank you!",
+      "revId": "e0fdd0400c0bb5b69d2fc293696075fe6e9099b4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
