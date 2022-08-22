@@ -16,6 +16,23 @@
       "message": "This comes from CILAB-748, there you can see the full story. I\u0027ve changed default_channel occurences in d-o-a-a to avoid further conflicts (now they are happening in tnf_test_example)",
       "revId": "809be1f480ac70b2cbe2043ea8b9742ce8043750",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ff98673_8cc198da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-22T14:01:59Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "809be1f480ac70b2cbe2043ea8b9742ce8043750",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
