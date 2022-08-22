@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "809be1f480ac70b2cbe2043ea8b9742ce8043750",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "afa853b1_12b2c716",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-22T14:22:07Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/03e11def-d11a-402d-870c-a3c0645b1e61/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/25887/\n\nThis change is working fine here, olm-operator task is executed correctly and the job is just failing because one tnf unit test failed (and this is because cluster10 has a taint, so it\u0027ll not happen in 8nodes clusters)\n\nBecause of that, I tried with tnf-test-cnf-green pipeline, whose result was this:\n\n\u003e Patch Set 1:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/b8713c37-e16c-4e5a-9448-40f83baaf320/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/25887/\n\nAnd here, the job failed in the same task that is fixed here, but it is because we are not using the tnf_test_example code from the change. I have updated dallas-pipelines repo to fix that: https://github.com/dci-labs/dallas-pipelines/pull/446/files\n\n-\n\nSo, summing up, the change is ready for merging.",
+      "revId": "809be1f480ac70b2cbe2043ea8b9742ce8043750",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
