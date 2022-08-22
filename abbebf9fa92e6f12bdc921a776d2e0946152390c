@@ -16,6 +16,23 @@
       "message": "Change is tested ok and ready to be merged: https://www.distributed-ci.io/jobs/64536e58-6fd3-4026-b40e-5275efd5a67f/jobStates \n\nThe diff between 1.3.4 and 1.4.0 is the deactivation of the \"already certified container\" on the Preflight side.",
       "revId": "abbebf9fa92e6f12bdc921a776d2e0946152390c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "565a98ce_56a50a75",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-22T12:45:29Z",
+      "side": 1,
+      "message": "thank you Ramon!",
+      "revId": "abbebf9fa92e6f12bdc921a776d2e0946152390c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
