@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ed4946e_aa4f6e30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-08-23T23:38:41Z",
+      "side": 1,
+      "message": "Thanks Beto, I see images are deleted\n- preflight: https://www.distributed-ci.io/jobs/c8f5606b-f263-4b6f-aac0-7c760edf4a86/jobStates#f04d8d2c-bfe9-403a-b023-3318832a3fb3:file194\n- CNF: https://www.distributed-ci.io/jobs/c8f5606b-f263-4b6f-aac0-7c760edf4a86/jobStates#414f25f6-cc56-41ce-b528-55238a13c75e:file6",
+      "revId": "0d45642c0926116ddabb3de16dda6096bf842da4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
