@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8fd8775_41074a96",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-23T17:37:56Z",
+      "side": 1,
+      "message": "Just a minor suggestion: Maybe you can remove \"failure\" from the name.",
+      "range": {
+        "startLine": 91,
+        "startChar": 43,
+        "endLine": 91,
+        "endChar": 51
+      },
+      "revId": "a2be78052edc1cbad3034c9db10ab27a9d519806",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
