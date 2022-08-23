@@ -16,6 +16,87 @@
       "message": "The change is ready for review.\n\nThe variable preflight_get_async_logs is optional and set to false by default.\n- preflight_get_async_logs\u003dfalse: the example of async logs: https://www.distributed-ci.io/files/f5fb9e6b-3faa-4bf8-a79d-cc28a10358e0\n- preflight_get_async_logs\u003dtrue: no async logs: https://www.distributed-ci.io/jobs/ab8a774a-64fa-4736-a926-0f3bc9b9e269/jobStates \n",
       "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4715befe_f838c2a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-23T10:00:19Z",
+      "side": 1,
+      "message": "I suppose you mean the opposite; first example is with variable set to true, and the second one is set to false",
+      "parentUuid": "ed4c2b29_d2d07a68",
+      "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4764c31_7f7bef94",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-23T10:00:19Z",
+      "side": 1,
+      "message": "Some comments from my side",
+      "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "822c8f25_011c5ede",
+        "filename": "roles/preflight/tasks/test_async_logs_check_operator.yml",
+        "patchSetId": 31
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-23T10:00:19Z",
+      "side": 1,
+      "message": "the logs are retrieved each 50 seconds 3 times, so around 150 seconds. If preflight timeout is 180 seconds, it seems to be fine, but then we can see that the async limit for preflight check operator test is 600 seconds. Should we put less there?",
+      "range": {
+        "startLine": 2,
+        "startChar": 47,
+        "endLine": 2,
+        "endChar": 62
+      },
+      "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "31684c69_f56ec075",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 31
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-23T10:00:19Z",
+      "side": 1,
+      "message": "What is async is the execution of check operator, and not the log retrieval, isn\u0027t it?",
+      "range": {
+        "startLine": 55,
+        "startChar": 17,
+        "endLine": 55,
+        "endChar": 28
+      },
+      "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
