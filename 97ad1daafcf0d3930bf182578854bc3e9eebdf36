@@ -53,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "522c0589_2a354400",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 12
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-23T13:38:58Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "77cdfff0_3753d358",
+      "revId": "97ad1daafcf0d3930bf182578854bc3e9eebdf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "579cad38_e5258b01",
