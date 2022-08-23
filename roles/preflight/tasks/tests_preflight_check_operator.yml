@@ -74,6 +74,21 @@
     kind: Namespace
     state: absent
 
+- block:
+    - name: Wait for namespace to be destroyed
+      shell: "{{ oc_tool_path }} get namespace {{ preflight_namespace }}"
+      register: preflight_namespace_presence
+      until: preflight_namespace_presence.stdout.find("NotFound") != -1
+      retries: 30
+      delay: 10
+  rescue:
+    - name: Print hanging resources
+      shell: "{{ oc_tool_path }} get all -n {{ preflight_namespace }}"
+
+    - name: Impossible to destroy namespace failure
+      fail:
+        msg: "Impossible to destroy namespace {{ preflight_namespace }}"
+
 - name: Check the presence of junit file with test results
   vars:
     preflight_junit: "{{ job_logs.path }}/preflight_operator_{{ operator.name }}_{{ operator.version }}_results-junit.xml"
