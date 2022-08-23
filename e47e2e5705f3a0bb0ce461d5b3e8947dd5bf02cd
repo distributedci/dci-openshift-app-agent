@@ -46,6 +46,30 @@
       },
       "revId": "e47e2e5705f3a0bb0ce461d5b3e8947dd5bf02cd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5f94048a_a1ed9231",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-23T10:23:20Z",
+      "side": 1,
+      "message": "Yes, I mean, to check if the namespace is deleted with k8s_info here instead of using shell. Is k8s_info passing in that case?",
+      "parentUuid": "9eb5c1c9_7be4afc9",
+      "range": {
+        "startLine": 79,
+        "startChar": 6,
+        "endLine": 79,
+        "endChar": 11
+      },
+      "revId": "e47e2e5705f3a0bb0ce461d5b3e8947dd5bf02cd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
