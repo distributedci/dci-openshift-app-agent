@@ -22,6 +22,30 @@
       },
       "revId": "e47e2e5705f3a0bb0ce461d5b3e8947dd5bf02cd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9eb5c1c9_7be4afc9",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-23T10:19:38Z",
+      "side": 1,
+      "message": "Hi Ramon, yes, just above, lines 70-75. The namespace is stuck in the \"Terminating\" state because of some hanging resources but the k8s module moves forward.",
+      "parentUuid": "3ddf0fd9_eea9a8d5",
+      "range": {
+        "startLine": 79,
+        "startChar": 6,
+        "endLine": 79,
+        "endChar": 11
+      },
+      "revId": "e47e2e5705f3a0bb0ce461d5b3e8947dd5bf02cd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
