@@ -16,6 +16,23 @@
       "message": "Hello Ramon and Beto,\n\nThe change fixed Keysight\u0027s problem with stuck namespace, here is the green job: https://www.distributed-ci.io/jobs/9ff4487c-1751-40f6-9598-c301cf1cebeb/jobStates \n\nI also had to delete `pull\u003dalways` and retries because of quay.io throttling (got the same error twice in a row): https://www.distributed-ci.io/jobs/772f4e70-c715-42b4-b8cc-3672cb81c6ea/jobStates#866124b5-ab09-4fb5-a095-31d2de12e088:file1324 \n\n@Ramon, I used k8s_info as you suggested, thank you.\n@Beto, The comment is fixed, it\u0027s true that additional \"failure\" wasn\u0027t needed here :) \n\nThank you! ",
       "revId": "a6cf43d662b5475be3282645cba3a1d1080efe0c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70357bfa_36bf4cb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-24T12:07:31Z",
+      "side": 1,
+      "message": "Thanks Tatiana!",
+      "revId": "a6cf43d662b5475be3282645cba3a1d1080efe0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
