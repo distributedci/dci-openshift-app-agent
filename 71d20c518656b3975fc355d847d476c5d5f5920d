@@ -80,6 +80,30 @@
       },
       "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2672cc7f_4b59b7aa",
+        "filename": "roles/create-pr/tasks/helm_chart_verifier.yml",
+        "patchSetId": 42
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-25T07:46:36Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a229258b_6b4f4140",
+      "range": {
+        "startLine": 23,
+        "startChar": 14,
+        "endLine": 23,
+        "endChar": 24
+      },
+      "revId": "71d20c518656b3975fc355d847d476c5d5f5920d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

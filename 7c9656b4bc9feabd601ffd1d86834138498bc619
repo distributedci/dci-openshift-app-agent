@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df628a50_c58742f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 60
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-25T07:46:36Z",
+      "side": 1,
+      "message": "I\u0027ll close one comment that is supposed to be already done.",
+      "revId": "7c9656b4bc9feabd601ffd1d86834138498bc619",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
