@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "29e5256c_b0a981e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-08-25T16:49:10Z",
+      "side": 1,
+      "message": "To only remove when it is created and not all the time. Which is the behavior reported in CILAB-755",
+      "parentUuid": "8e2e75b6_7353b812",
+      "revId": "f081b4b792934e015718e4a1c0a1092da1c9e8c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ba20b54a_a95dcd7e",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-08-25T15:02:31Z",
       "side": 1,
       "message": "The image is required for at least a couple of tasks later (extract the binary). If you remove it here, those may be failing.\n\nLet\u0027s see a test in Dallas. Thanks",
+      "revId": "f081b4b792934e015718e4a1c0a1092da1c9e8c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "842f6eb0_a81ab493",
+        "filename": "roles/preflight/tasks/prepare_build_image_and_binary.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-08-25T16:49:10Z",
+      "side": 1,
+      "message": "It will not be removed right after the task, but at the end of the play[0] so it should be enough 😄 let\u0027s test!\n\n[0] https://docs.ansible.com/ansible/latest/user_guide/playbooks_handlers.html#controlling-when-handlers-run",
+      "parentUuid": "ba20b54a_a95dcd7e",
       "revId": "f081b4b792934e015718e4a1c0a1092da1c9e8c0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
