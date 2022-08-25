@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e2e75b6_7353b812",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-08-25T13:47:48Z",
+      "side": 1,
+      "message": "Hey Tony,\n\nThe change looks OK to me so I\u0027m giving it my +2.\n\nIn any case, just for my education, why do we prefer to have the image removal as a handler instead of part of the teardown?",
+      "revId": "f081b4b792934e015718e4a1c0a1092da1c9e8c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
