@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a4abb41_75f10d3e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 64
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-25T10:58:01Z",
+      "side": 1,
+      "message": "This CR is ready for review! Both Helm chart and operator have been tested, I am running a final test on libvirt for the operator just to be sure.",
+      "revId": "97861896a84a8a88cb0fe9a76c488a6b5420ca78",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
