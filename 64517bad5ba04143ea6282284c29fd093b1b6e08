@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41b57436_3bd3e4ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 65
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-25T18:50:25Z",
+      "side": 1,
+      "message": "Charles, nice change! thanks. \n\nJust some minor suggestions.",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "331bb7a2_ece22d99",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 65
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-25T18:50:25Z",
+      "side": 1,
+      "message": "I see that for the operators you added the product_name and version to fully qualify the fork name and avoid collisions, could you please do the same here?",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52f9f62b_6b9b6fb7",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-25T18:50:25Z",
+      "side": 1,
+      "message": "I think that we should keep the information of this doc very generic, and at the same level of details for both the 2 tools that use it.",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e4a642f_76ffc428",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-25T18:50:25Z",
+      "side": 1,
+      "message": "I believe this can be moved to pre-flight role.",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a0febb36_66a7b6e1",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-25T18:50:25Z",
+      "side": 1,
+      "message": "I think that this also should be part of the pre-flight documentation. The logic the extract the the annotation files and validate things for the cert maybe can be performed in the pre-flight role too. But may be on another iteration we can do that.",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "328d6428_df12aba8",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-08-25T18:50:25Z",
+      "side": 1,
+      "message": "Maybe remove the title and just add a reference to both cert suites READMEs:\n\nCheck the [chart-verifier README](../roles/chart-verifier/README.md) \nand [README](../roles/preflight/README.md) for additional details.",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
