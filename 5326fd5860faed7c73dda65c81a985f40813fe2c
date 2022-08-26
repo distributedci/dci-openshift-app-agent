@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82ba258a_f3a4977c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 68
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-08-26T15:29:50Z",
+      "side": 1,
+      "message": "re-testing, I think we fixed the network in BOS while this job had already started\nrecheck",
+      "revId": "5326fd5860faed7c73dda65c81a985f40813fe2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
