@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f0c81f0_c39a52f3",
+        "filename": "roles/chart-verifier/tasks/tests.yml",
+        "patchSetId": 65
+      },
+      "lineNbr": 108,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-26T09:17:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "331bb7a2_ece22d99",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "52f9f62b_6b9b6fb7",
@@ -69,6 +87,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b1e7ef9_5bb3ee91",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-26T09:17:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7e4a642f_76ffc428",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a0febb36_66a7b6e1",
@@ -86,6 +122,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e88f5ca5_67c8ddcb",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-26T09:17:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a0febb36_66a7b6e1",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "328d6428_df12aba8",
@@ -99,6 +153,24 @@
       "writtenOn": "2022-08-25T18:50:25Z",
       "side": 1,
       "message": "Maybe remove the title and just add a reference to both cert suites READMEs:\n\nCheck the [chart-verifier README](../roles/chart-verifier/README.md) \nand [README](../roles/preflight/README.md) for additional details.",
+      "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de072934_2e8e535c",
+        "filename": "roles/create-pr/README.md",
+        "patchSetId": 65
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-26T09:17:31Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "328d6428_df12aba8",
       "revId": "64517bad5ba04143ea6282284c29fd093b1b6e08",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

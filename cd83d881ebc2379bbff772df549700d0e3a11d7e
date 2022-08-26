@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8f1fd22_79244f5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 66
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-08-26T09:17:31Z",
+      "side": 1,
+      "message": "Thanks for the review, I have added the changes to avoid collisions for name of forks.",
+      "revId": "cd83d881ebc2379bbff772df549700d0e3a11d7e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
