@@ -16,6 +16,23 @@
       "message": "re-testing, I think we fixed the network in BOS while this job had already started\nrecheck",
       "revId": "5326fd5860faed7c73dda65c81a985f40813fe2c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "23821858_d03dd42b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 68
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-08-26T17:08:34Z",
+      "side": 1,
+      "message": "deployment job is working fine, now the problem is in the basic_example job.",
+      "revId": "5326fd5860faed7c73dda65c81a985f40813fe2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
