@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c12240e2_f8161fc4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 69
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-29T07:44:17Z",
+      "side": 1,
+      "message": "Hi Charles, what do we miss to merge, is there any technical problem with helm-chart-verifier part? I\u0027d like to use this functionality with the partners, and PR for the certified-operators was tested ok ten days ago.",
+      "revId": "2a3a587285dcda6a18ee61726fffe1082bb967b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "70788265_34c2a4ad",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 69
+      },
+      "lineNbr": 238,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-08-29T07:44:17Z",
+      "side": 1,
+      "message": "Hi Charles, I believe this part of documentation could be removed, we do not build the bundle out of DCI. What about keeping only line 258?",
+      "revId": "2a3a587285dcda6a18ee61726fffe1082bb967b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
