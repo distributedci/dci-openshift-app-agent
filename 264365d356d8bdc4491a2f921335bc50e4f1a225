@@ -16,6 +16,23 @@
       "message": "I still need to test it in dallas, I\u0027ll do it on Monday. Last tests didn\u0027t test the teardown in fact.",
       "revId": "264365d356d8bdc4491a2f921335bc50e4f1a225",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "911ef900_fe774d2d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-08-29T12:09:37Z",
+      "side": 1,
+      "message": "Tested in dallas, in cluster10 (using check_workload), under different conditions:\n\n- tnf v4.0.2 successful job - https://www.distributed-ci.io/jobs/c19c166e-641e-4b9d-b238-1fa4c758d3fd/jobStates#88b9766a-cb22-47ab-ac2c-2155591b0971:file53 - image is not deleted because it is the latest stable version\n- tnf HEAD successful job - https://www.distributed-ci.io/jobs/3532821b-09ff-4239-88cd-d60c01960850/jobStates#08a18ca4-02d9-4230-982a-85e355034527:file53 - image is deleted because it is not the latest stable branch\n- tnf HEAD failed job - https://www.distributed-ci.io/jobs/6fd29276-a29c-4a73-9ae1-7aa2144c315e/jobStates#7e8f7ba7-24e0-4baf-a5f6-f4dbb9143fdb:file122 - same as before, checking that it also works when having a failed job",
+      "revId": "264365d356d8bdc4491a2f921335bc50e4f1a225",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
