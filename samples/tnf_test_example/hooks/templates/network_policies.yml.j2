@@ -1,0 +1,44 @@
+apiVersion: v1
+kind: List
+items:
+{% if targetpodlabels|length %}
+{% for label in targetpodlabels %}
+  - apiVersion: networking.k8s.io/v1
+    kind: NetworkPolicy
+    metadata:
+      name: default-deny-egress-{{ label|regex_replace('=', '-') }}
+    spec:
+      podSelector:
+        matchLabels:
+          {{ label|regex_replace('=', ': ') }}
+      policyTypes:
+        - Egress
+  - apiVersion: networking.k8s.io/v1
+    kind: NetworkPolicy
+    metadata:
+      name: default-deny-ingress-{{ label|regex_replace('=', '-') }}
+    spec:
+      podSelector:
+        matchLabels:
+          {{ label|regex_replace('=', ': ') }}
+      policyTypes:
+        - Ingress
+  - kind: NetworkPolicy
+    apiVersion: networking.k8s.io/v1
+    metadata:
+      name: intra-namespace-{{ label|regex_replace('=', '-') }}
+    spec:
+      podSelector:
+        matchLabels:
+          {{ label|regex_replace('=', ': ') }}
+      ingress:
+        - from:
+            - namespaceSelector:
+                matchLabels:
+                  kubernetes.io/metadata.name: {{ app_ns }}
+      egress:
+        - to:
+            - namespaceSelector:
+                matchLabels:
+                  kubernetes.io/metadata.name: {{ app_ns }}
+{% endfor %}
