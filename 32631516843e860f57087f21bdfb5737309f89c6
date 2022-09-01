@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e64d2da_a792b3a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-01T15:12:32Z",
+      "side": 1,
+      "message": "Change is ready for review.\n\n\u003e - SUCCESS https://www.distributed-ci.io/jobs/cf743016-9f4a-4e59-8435-a31c4c111728/jobStates\n\u003e  from https://github.com/test-network-function/cnf-certification-test/pull/423\n\nIn this job, we can see the network policies are installed correctly and make the networking-policy and networking-icmp-connectivity tests to pass.",
+      "revId": "32631516843e860f57087f21bdfb5737309f89c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
