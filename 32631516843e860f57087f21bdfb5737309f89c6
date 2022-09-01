@@ -16,6 +16,23 @@
       "message": "Change is ready for review.\n\n\u003e - SUCCESS https://www.distributed-ci.io/jobs/cf743016-9f4a-4e59-8435-a31c4c111728/jobStates\n\u003e  from https://github.com/test-network-function/cnf-certification-test/pull/423\n\nIn this job, we can see the network policies are installed correctly and make the networking-policy and networking-icmp-connectivity tests to pass.",
       "revId": "32631516843e860f57087f21bdfb5737309f89c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ff1d434_2b7af19b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-01T15:14:49Z",
+      "side": 1,
+      "message": "Hi guys, including you here just in case you can take a look to this change during your day today, so that this change can be merged before the daily jobs, else tnf-test-cnf daily job in OCP 4.8 using HEAD version will fail tomorrow for sure.",
+      "revId": "32631516843e860f57087f21bdfb5737309f89c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
