@@ -33,6 +33,23 @@
       "message": "Hi guys, including you here just in case you can take a look to this change during your day today, so that this change can be merged before the daily jobs, else tnf-test-cnf daily job in OCP 4.8 using HEAD version will fail tomorrow for sure.",
       "revId": "32631516843e860f57087f21bdfb5737309f89c6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "806ce5f0_602819ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-01T19:21:42Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "32631516843e860f57087f21bdfb5737309f89c6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
