@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/d3b6ab3b-d0fa-4989-bf4d-63a1de508878/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/26020/\n\nConfirming it\u0027s working fine in dallas.",
       "revId": "748ff443c2bf93ad67e928c838fe756dabaf1fd7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3057d3b_fb2e9563",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-02T17:44:00Z",
+      "side": 1,
+      "message": "LGTM, thanks!",
+      "revId": "748ff443c2bf93ad67e928c838fe756dabaf1fd7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
