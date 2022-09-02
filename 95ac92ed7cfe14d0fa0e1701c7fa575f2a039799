@@ -16,6 +16,23 @@
       "message": "It\u0027s fine for me, but I\u0027ll let other people vote too",
       "revId": "95ac92ed7cfe14d0fa0e1701c7fa575f2a039799",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f963b47_574137a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-02T19:02:26Z",
+      "side": 1,
+      "message": "@Jorge, thanks for fixing it, just to fully understand this: if we start the service, it\u0027s like launching a job? and then service stops?",
+      "revId": "95ac92ed7cfe14d0fa0e1701c7fa575f2a039799",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
