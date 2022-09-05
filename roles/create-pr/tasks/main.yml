@@ -10,7 +10,7 @@
       - github_token_path
       - target_repository
       - work_dir
-      - partner_name
+      #- partner_name
       - partner_email
 
 - name: Validate that cert_project_id is provided
