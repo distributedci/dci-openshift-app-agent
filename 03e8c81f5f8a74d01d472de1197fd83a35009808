@@ -33,6 +33,23 @@
       "message": "Hi guys, would you mind to take a look to this change? I need to merge it to continue testing other tnf features. I promise it is quick to check. Thanks in advance :)",
       "revId": "03e8c81f5f8a74d01d472de1197fd83a35009808",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "53b49c81_e5287d8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-09-05T07:54:26Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "03e8c81f5f8a74d01d472de1197fd83a35009808",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
