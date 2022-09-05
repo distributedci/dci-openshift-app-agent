@@ -10,6 +10,7 @@ tnf_suites: "access-control networking lifecycle observability platform-alterati
 tnf_config:
   - namespace: "{{ dci_openshift_app_ns }}"
     targetpodlabels: []
+    target_crds: []
     operators_regexp: ""
     exclude_connectivity_regexp: ""
 accepted_kernel_taints: []
