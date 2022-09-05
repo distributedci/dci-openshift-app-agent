@@ -8,30 +8,30 @@ This role implements the preflight test suite as part of DCI Application Agent.
 
 Name                               | Default                                              | Description
 ---------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
-do\_preflight\_tests               | false                                                | Mandatory. Trigger to activate the preflight tests.
-preflight\_operators\_to\_certify  | undefined                                            | Mandatory for end-to-end operator certification. List of operators to be checked for certification with Preflight Cert Suite. Please check [example_preflight_config.yaml](#operator-end-to-end-certification) for the example.
-preflight\_containers\_to\_certify  | undefined                                            | Mandatory for standalone container certification. List of containers to be checked for certification with Preflight Cert Suite. Please check [example_preflight_config.yaml](#certification-of-standalone-containers) for the example.
-preflight\_binary                  | <https://github.com/redhat-openshift-ecosystem/openshift-preflight/releases/download/1.4.0/preflight-linux-amd64>              | Optional. [Version of Preflight Cert Suite to run check container cert suite](https://quay.io/repository/opdev/preflight?tab=tags)
-preflight\_image                   | quay.io/opdev/preflight:1.4.0                                  | Optional. [Version of Preflight Cert Suite to run check operator cert suite](https://quay.io/repository/opdev/preflight?tab=tags)
-preflight\_namespace               | preflight-testing                                    | Optional. Namespace to use for preflight tests
-pyxis\_apikey\_path                | undefined                                            | Optional. This is a path to file that contains partner's token. Parner should generate this token in connect.redhat.com. The token is shared for all projects within one partner.
-preflight\_custom\_ca              | undefined                                            | Optional. Path of custom ca.crt. Used to test operator stored in a self signed registry
-preflight\_source\_dir             | undefined                                            | Optional. If this variable is defined, the Preflight role would use this folder to generate preflight image and binary and then use them during Preflight tests execution. That would overwrite predefined preflight_image and preflight_binary (if any).
-operator\_sdk\_tool\_path          | undefined                                            | Optional. Path to operator-sdk binary, optional. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-certify) for the example.
-preflight\_test\_certified\_image  | false                                                | Optional. Run preflight tests on already certified images.
-pyxis\_url                         | https://catalog.redhat.com/api/containers/v1         | Optional. Pyxis API.
-preflight\_run\_health\_check      | true                                                 | Optional. Run health check on every container and generate oval reports both in xml and html formats.
+do_preflight_tests               | false                                                | Mandatory. Trigger to activate the preflight tests.
+preflight_operators_to_certify  | undefined                                            | Mandatory for end-to-end operator certification. List of operators to be checked for certification with Preflight Cert Suite. Please check [example_preflight_config.yaml](#operator-end-to-end-certification) for the example.
+preflight_containers_to_certify  | undefined                                            | Mandatory for standalone container certification. List of containers to be checked for certification with Preflight Cert Suite. Please check [example_preflight_config.yaml](#certification-of-standalone-containers) for the example.
+preflight_binary                  | <https://github.com/redhat-openshift-ecosystem/openshift-preflight/releases/download/1.4.0/preflight-linux-amd64>              | Optional. [Version of Preflight Cert Suite to run check container cert suite](https://quay.io/repository/opdev/preflight?tab=tags)
+preflight_image                   | quay.io/opdev/preflight:1.4.0                                  | Optional. [Version of Preflight Cert Suite to run check operator cert suite](https://quay.io/repository/opdev/preflight?tab=tags)
+preflight_namespace               | preflight-testing                                    | Optional. Namespace to use for preflight tests
+pyxis_apikey_path                | undefined                                            | Optional. This is a path to file that contains partner's token. Parner should generate this token in connect.redhat.com. The token is shared for all projects within one partner.
+preflight_custom_ca              | undefined                                            | Optional. Path of custom ca.crt. Used to test operator stored in a self signed registry
+preflight_source_dir             | undefined                                            | Optional. If this variable is defined, the Preflight role would use this folder to generate preflight image and binary and then use them during Preflight tests execution. That would overwrite predefined preflight_image and preflight_binary (if any).
+operator_sdk_tool_path          | undefined                                            | Optional. Path to operator-sdk binary, optional. Please check [example_preflight_config.yaml](#example-of-config-file-to-define-a-list-of-operators-to-certify) for the example.
+preflight_test_certified_image  | false                                                | Optional. Run preflight tests on already certified images.
+pyxis_url                         | https://catalog.redhat.com/api/containers/v1         | Optional. Pyxis API.
+preflight_run_health_check      | true                                                 | Optional. Run health check on every container and generate oval reports both in xml and html formats.
 
 
 ## Variables to define for each operator in preflight_operators_to_certify
 
 Name                               | Default                                              | Description
 ---------------------------------- | ---------------------------------------------------- | -------------------------------------------------------------
-bundle\_image                      | undefined                                            | Mandatory. In the connected environment, the image could be provided by tag. In the disconnected, you have to provide the image by digest.
-index\_image                       | undefined                                            | Optional for connected environments and mandatory for disconnected.
-pyxis\_container\_identifier       | undefined                                            | Optional. To get this identifier, please create a project of type "Container Image project" at connect.redhat.com. Set this project identifier to submit Preflight `check container` results to Pyxis and connect.redhat.com. This identifier is unique for each container. If you have to certify multiple containers please create multiple projects. Please do not forget to provide Pyxis credentials: pyxis\_apikey\_path with Pyxis token (shared for all projects within one client).
-pyxis\_operator\_identifier        | undefined                                            | Optional. This variable should be defined for each operator. To get this identifier, please create a project of type "Operator Bundle Image project" at connect.redhat.com. Set this project identifier to submit Preflight `check operator` results to Pyxis and connect.redhat.com. This identifier is unique for each operator. If you have to certify multiple operators please create multiple projects. Please do not forget to provide Pyxis credentials: pyxis\_apikey\_path with Pyxis token (shared for all projects within one client).
-create\_pr                         | false                                                | Will create a PR in redhat-openshift-ecosystem/certified-operators GH project, needed in the certification workflow
+bundle_image                      | undefined                                            | Mandatory. In the connected environment, the image could be provided by tag. In the disconnected, you have to provide the image by digest.
+index_image                       | undefined                                            | Optional for connected environments and mandatory for disconnected.
+pyxis_container_identifier       | undefined                                            | Optional. To get this identifier, please create a project of type "Container Image project" at connect.redhat.com. Set this project identifier to submit Preflight `check container` results to Pyxis and connect.redhat.com. This identifier is unique for each container. If you have to certify multiple containers please create multiple projects. Please do not forget to provide Pyxis credentials: pyxis_apikey_path with Pyxis token (shared for all projects within one client).
+pyxis_operator_identifier        | undefined                                            | Optional. This variable should be defined for each operator. To get this identifier, please create a project of type "Operator Bundle Image project" at connect.redhat.com. Set this project identifier to submit Preflight `check operator` results to Pyxis and connect.redhat.com. This identifier is unique for each operator. If you have to certify multiple operators please create multiple projects. Please do not forget to provide Pyxis credentials: pyxis_apikey_path with Pyxis token (shared for all projects within one client).
+create_pr                         | false                                                | Will create a PR in redhat-openshift-ecosystem/certified-operators GH project, needed in the certification workflow
 
 ## Two modes of certification
 
@@ -228,34 +228,6 @@ The idea is use one of them.
     ```Shell
     dci-openshift-app-agent-ctl -s -- -v
     ```
-## Creating PR for operator bundle certification
-Requirements needed for operator bundle are the following:
-
-1. A project in [Red Hat Partner Connect](https://connect.redhat.com/) must be created for each operator to be tested. Check the role [create-certification-project](roles/create-certification-project/README.md) to create it via this agent.
-2. The Github user used when creating the fork must be added to the Project on connect.redhat.com following [these instructions from the certification project](https://github.com/redhat-openshift-ecosystem/certification-releases/blob/main/4.9/ga/troubleshooting.md#submission-validation)
-3. The operator bundle image must be provided (it should already be done by the preflight).
-
-### Annotations file
-See [this documentation about annotations for bundle operator](https://github.com/operator-framework/operator-registry/blob/v1.12.6/docs/design/operator-bundle.md#bundle-annotations). Pyxis is also requesting a specific annotation on which the openshift version the bundle is intended to run.
-Here is an example of one annotations.yaml from a bundle:
-```yaml
-annotations:
-  # Pyxis annotations.
-  com.redhat.openshift.versions: "v4.7-v4.10"
-
-  # Core bundle annotations.
-  operators.operatorframework.io.bundle.mediatype.v1: registry+v1
-  operators.operatorframework.io.bundle.manifests.v1: manifests/
-  operators.operatorframework.io.bundle.metadata.v1: metadata/
-  operators.operatorframework.io.bundle.package.v1: "my-great-operator"
-  operators.operatorframework.io.bundle.channels.v1: stable
-  operators.operatorframework.io.bundle.channel.default.v1: stable
-
-  # Annotations for testing.
-  operators.operatorframework.io.test.mediatype.v1: scorecard+v1
-  operators.operatorframework.io.test.config.v1: tests/scorecard/
-```
-Note that if 'com.redhat.openshift.version' annotation is missing, the role will fail.
 
 ## Preflight CI
 
