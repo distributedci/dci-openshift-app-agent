@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd187882_6a02e5a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-05T13:25:40Z",
+      "side": 1,
+      "message": "Change is ready for review, tested with tnf-test-cnf-green pipeline (SUCCESS job) and tnf-test-cnf pipeline (latest FAILED job, but because it was run in cluster10 and there it is failing if any tnf test is failing, and there are taints there that cause the tnf unit test related to kernel taints to fail, but not affecting to the normal performance).",
+      "revId": "259dcfa6a75ac6d105f51eb5ff57873a7a58e499",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
