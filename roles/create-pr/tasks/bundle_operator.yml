@@ -79,14 +79,12 @@
     dest: "{{ work_dir }}/{{ fork_name }}/operators/{{ product_name }}/ci.yaml"
 
 - name: "Git add new operator files to the repository"
-  vars:
-    partner: "{{  partner_name | replace(' ','_') }}"
   shell:
     cmd: |
-     git config user.email {{ partner_email }}
-     git config user.name {{ github_username }}
-     git add operators/{{ product_name }}
-     git commit -m 'Added {{ product_name }} version {{ product_version }}'
+      git config user.email {{ partner_email }}
+      git config user.name {{ github_username }}
+      git add operators/{{ product_name }}
+      git commit -m 'Added {{ product_name }} version {{ product_version }}'
   args:
     chdir: "{{ work_dir }}/{{ fork_name }}"
 
