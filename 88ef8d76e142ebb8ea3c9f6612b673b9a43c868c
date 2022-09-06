@@ -16,6 +16,24 @@
       "message": "Looks good to me, however from the doc I see that if we do not pass -f then the tnf will run in \u0027diagnostic\u0027 mode. In this mode, no test case will run[1], but I see the tests run, so I\u0027m not really seen any difference in specifying or not the -f :/ \n\n[1]https://github.com/test-network-function/cnf-certification-test#run-the-tests",
       "revId": "88ef8d76e142ebb8ea3c9f6612b673b9a43c868c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddf51a87_a65c2abe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-06T18:30:31Z",
+      "side": 1,
+      "message": "Hi Manuel, thanks for reviewing it, the `-f` is appended to the call to run-tnf-container.yml, it is included in the change:\n\n```\n    ./run-tnf-container.sh -k {{ kubeconfig_path }} \\\n    -i $TNF_IMAGE \\\n    -t {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \\\n    -o {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \\\n    -f $TNF_SUITES \u0026\u003e {{ test_network_function_project_name }}/execution.log\n```\n\nI did the change to include the `-f` in `tnf_suites` variable because it is cleaner for us and more adaptable, but it has been requested to return back to the previous code, which was to hardcode `-f`. We\u0027ll discuss tomorrow with certification team about a solution to avoid hardcoding `-f` and to satisfy their requirements too, but for the moment, best option is to return to what we had previously. I hope I had clarified everything.",
+      "parentUuid": "175ef409_c5f5d486",
+      "revId": "88ef8d76e142ebb8ea3c9f6612b673b9a43c868c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
