@@ -372,7 +372,7 @@ To use these samples, you need to include the variable `dci_config_dir` with the
     dci_openshift_app_ns: testns
     dci_config_dir: /var/lib/dci-openshift-app-agent/samples/tnf_test_example
     dci_openshift_app_image: quay.io/testnetworkfunction/cnf-test-partner:latest
-    tnf_suites: "diagnostic access-control networking lifecycle observability platform-alteration"
+    tnf_suites: "-f diagnostic access-control networking lifecycle observability platform-alteration"
     tnf_config:
       - namespace: testns
         targetpodlabels: [test-network-function/environment=testing]
