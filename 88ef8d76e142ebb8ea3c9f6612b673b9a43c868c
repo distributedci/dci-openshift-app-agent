@@ -51,6 +51,24 @@
       "message": "recheck",
       "revId": "88ef8d76e142ebb8ea3c9f6612b673b9a43c868c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "beec666c_cd8d4845",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-06T18:36:09Z",
+      "side": 1,
+      "message": "Thanks for the clarification Ramon.\nAlso, not sure why the previous job failed during the deployment, and the job URL was not pasted, but here it is. Let\u0027s wait for the retry you triggered.\nhttps://www.distributed-ci.io/jobs/6bf7793f-f208-41dd-a4c7-ebbbd3035350/jobStates#3bd1c5ae-ea57-4dd1-bdf6-e2feb354831a:file235",
+      "parentUuid": "ddf51a87_a65c2abe",
+      "revId": "88ef8d76e142ebb8ea3c9f6612b673b9a43c868c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
