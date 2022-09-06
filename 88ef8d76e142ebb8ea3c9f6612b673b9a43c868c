@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "175ef409_c5f5d486",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-06T17:07:13Z",
+      "side": 1,
+      "message": "Looks good to me, however from the doc I see that if we do not pass -f then the tnf will run in \u0027diagnostic\u0027 mode. In this mode, no test case will run[1], but I see the tests run, so I\u0027m not really seen any difference in specifying or not the -f :/ \n\n[1]https://github.com/test-network-function/cnf-certification-test#run-the-tests",
+      "revId": "88ef8d76e142ebb8ea3c9f6612b673b9a43c868c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
