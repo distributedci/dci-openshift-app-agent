@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76d652e0_a8f985ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-06T08:52:25Z",
+      "side": 1,
+      "message": "Hi Ramon, LGTM, just some minor suggestions. I\u0027ve seen that you have a depending PR in the CNF repo, so adding here +2 JIC if you need to merge asap.",
+      "revId": "ae54f6d469fc12a3378d5d78d0bd6030e9791a2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "236e5555_90f9a344",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-06T08:52:25Z",
+      "side": 1,
+      "message": "Do you delete this namespace after the tests? \nI liked how Tony did that in another role with the help of handlers: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/25934",
+      "revId": "ae54f6d469fc12a3378d5d78d0bd6030e9791a2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e9feaea_1f8b477c",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-06T08:52:25Z",
+      "side": 1,
+      "message": "Hi Ramon, it\u0027s possible to do a bit shorter:\n\n\u003e\n    - tnf_config | default(\u0027\u0027) | length\n    - pods_in_same_ns.namespace | default(\u0027\u0027) | length\n    - pods_in_same_ns.targetpodlabels | default(\u0027\u0027) is iterable\n    - pods_in_same_ns.target_crds | default(\u0027\u0027) is iterable",
+      "revId": "ae54f6d469fc12a3378d5d78d0bd6030e9791a2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
