@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "140da865_5d04008a",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-06T09:39:43Z",
+      "side": 1,
+      "message": "Yes, the namespaces are deleted in the teardown hook in tnf_test_example, so it\u0027s covered.",
+      "parentUuid": "236e5555_90f9a344",
+      "revId": "ae54f6d469fc12a3378d5d78d0bd6030e9791a2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7e9feaea_1f8b477c",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-09-06T08:52:25Z",
       "side": 1,
       "message": "Hi Ramon, it\u0027s possible to do a bit shorter:\n\n\u003e\n    - tnf_config | default(\u0027\u0027) | length\n    - pods_in_same_ns.namespace | default(\u0027\u0027) | length\n    - pods_in_same_ns.targetpodlabels | default(\u0027\u0027) is iterable\n    - pods_in_same_ns.target_crds | default(\u0027\u0027) is iterable",
+      "revId": "ae54f6d469fc12a3378d5d78d0bd6030e9791a2c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5fee4cf_55fea96d",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-06T09:39:43Z",
+      "side": 1,
+      "message": "I\u0027d prefer to keep the current structure for the moment to merge this change and continue including new features regarding tnf, even though it\u0027s a bit larger, but I\u0027ll take notes about this to probably do it in a future refactor of the tnf_test_example hooks, in a new patch, thanks!",
+      "parentUuid": "7e9feaea_1f8b477c",
       "revId": "ae54f6d469fc12a3378d5d78d0bd6030e9791a2c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
