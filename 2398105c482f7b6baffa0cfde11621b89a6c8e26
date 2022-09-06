@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ffe2b4d_22bdb818",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-06T16:09:58Z",
+      "side": 1,
+      "message": "Change is ready for review, validated that the test suite is passing in dallas - cluster10",
+      "revId": "2398105c482f7b6baffa0cfde11621b89a6c8e26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
