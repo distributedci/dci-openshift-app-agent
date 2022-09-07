@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7ab945d_f6e25c35",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-07T08:58:14Z",
+      "side": 1,
+      "message": "Adding you Manuel, as it\u0027s related to yesterday\u0027s change and to the partners\u0027 activity we are involved in",
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
