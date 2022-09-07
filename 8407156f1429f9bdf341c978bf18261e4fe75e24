@@ -80,6 +80,30 @@
       },
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6712be1_21785b14",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-09-07T14:05:20Z",
+      "side": 1,
+      "message": "Right, it is still confused, -f and -s are not TNF suites, use local variables with appropriate names, do not export them. Or just add {{ ( tnf_skip_suites|length ) | ternary(\u0027-s \u0027 + tnf_skip_suites, \u0027\u0027) }} to the command with separators.",
+      "parentUuid": "c7a801a3_c767d0ba",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
