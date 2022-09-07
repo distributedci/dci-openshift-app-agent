@@ -193,6 +193,8 @@
 - name: Run the CNF Test Suite
   vars:
     tnf_partner_registry: "{{ ( provisionhost_registry|length ) | ternary(provisionhost_registry, 'quay.io') }}"
+    tnf_suites_to_execute: "{{ ( tnf_suites|length ) | ternary('-f ' + tnf_suites, '') }}"
+    tnf_suites_to_skip: "{{ ( tnf_skip_suites|length ) | ternary('-s ' + tnf_skip_suites, '') }}"
   shell: |
     set -x
 
@@ -204,13 +206,14 @@
     export TNF_LOG_LEVEL={{ tnf_log_level }}
     export TNF_PARTNER_REPO={{ tnf_partner_registry }}/testnetworkfunction
     export TNF_IMAGE={{ tnf_image }}
-    export TNF_SUITES='{{ tnf_suites }}'
+    export TNF_SUITES='{{ tnf_suites_to_execute }}'
+    export TNF_SKIP_SUITES='{{ tnf_suites_to_skip }}'
 
     ./run-tnf-container.sh -k {{ kubeconfig_path }} \
     -i $TNF_IMAGE \
     -t {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \
     -o {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \
-    -f $TNF_SUITES &> {{ test_network_function_project_name }}/execution.log
+    $TNF_SUITES $TNF_SKIP_SUITES &> {{ test_network_function_project_name }}/execution.log
 
     cp {{ test_network_function_project_name }}/*.xml {{ tnf_tempdir.path }}
     cp {{ test_network_function_project_name }}/*.json {{ tnf_tempdir.path }}
