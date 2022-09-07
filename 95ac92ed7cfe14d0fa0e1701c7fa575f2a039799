@@ -33,6 +33,24 @@
       "message": "@Jorge, thanks for fixing it, just to fully understand this: if we start the service, it\u0027s like launching a job? and then service stops?",
       "revId": "95ac92ed7cfe14d0fa0e1701c7fa575f2a039799",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ecc8760_0b2ec076",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2022-09-07T17:33:29Z",
+      "side": 1,
+      "message": "Correct, ocp agent has something similar, but we don\u0027t push this too hard on partners, it\u0027s been broken for who knows how long.",
+      "parentUuid": "0f963b47_574137a9",
+      "revId": "95ac92ed7cfe14d0fa0e1701c7fa575f2a039799",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
