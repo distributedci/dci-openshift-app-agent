@@ -152,6 +152,30 @@
       },
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e437d70c_ead85ed2",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-09-07T14:21:31Z",
+      "side": 1,
+      "message": "the local variable names are not good, exporting them is not good. it is command line parameters of the script, i wouldn\u0027t use local variables in this case.",
+      "parentUuid": "fb5c4226_f5f6f4a2",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
