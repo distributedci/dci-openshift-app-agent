@@ -33,6 +33,29 @@
       "message": "Change is working fine, the tests that must be executed are executed, and the tests that have to be skipped are skipped.\nWaiting for libvirt test to confirm it there too",
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24b54c7e_d580a8b6",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-09-07T11:59:23Z",
+      "side": 1,
+      "message": "`-f` and `-s` are still needed. Right?",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
