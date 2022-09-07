@@ -200,6 +200,30 @@
       },
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af8897a6_bc2f4187",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-09-07T14:28:19Z",
+      "side": 1,
+      "message": "export TNF_SUITES\u003d\u0027{{ tnf_suites }}\u0027\n    export TNF_SKIP_SUITES\u003d\u0027{{ tnf_skip_suites }}\u0027\n\n    ./run-tnf-container.sh -k {{ kubeconfig_path }} \\\n    -i $TNF_IMAGE \\\n    -t {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \\\n    -o {{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }} \\\n    {{ ( provisionhost_registry|length ) | ternary(provisionhost_registry, \u0027quay.io\u0027) }} \\\n {{ ( tnf_skip_suites|length ) | ternary(\u0027-s \u0027 + tnf_skip_suites, \u0027\u0027) }} \\\n \u0026\u003e {{ test_network_function_project_name }}/execution.log",
+      "parentUuid": "c2fb4561_b2c75b98",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
