@@ -16,6 +16,23 @@
       "message": "Change is ready for review again, I\u0027ve addressed the issue commented by David and I am testing the changes, they should be working.",
       "revId": "1d7917e057025eef9a486f5186ec049e55a12459",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1be0bdb2_1e3c8e2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-07T18:52:05Z",
+      "side": 1,
+      "message": "looks good to me, just waiting for libvirt job to finish to confirm",
+      "revId": "1d7917e057025eef9a486f5186ec049e55a12459",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
