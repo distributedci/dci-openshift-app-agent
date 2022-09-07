@@ -224,6 +224,30 @@
       },
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29c5db99_197ca914",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-07T14:35:45Z",
+      "side": 1,
+      "message": "David, with this approach, we will have problems when testing labels in the near future. We are using, at the end of the command, this \u0027\u0026\u003e\u0027, and label specification needs to include characters like \u0027,\u0027 or \u0027\u0026\u0027. I\u0027ve already tested it and, as I\u0027ve said, it was not working. That\u0027s why I moved to variables to specify the suites, and as labels will need it, to do everything in the same way, also the suites under -f and -s are defined in the same way too. I don\u0027t know if I have explained the problem properly.",
+      "parentUuid": "af8897a6_bc2f4187",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
