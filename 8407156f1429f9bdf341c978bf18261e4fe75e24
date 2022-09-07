@@ -176,6 +176,30 @@
       },
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2fb4561_b2c75b98",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-07T14:23:56Z",
+      "side": 1,
+      "message": "Let\u0027s discuss about this in the meeting, because, honestly, I don\u0027t know what can be done if I don\u0027t use variables there.",
+      "parentUuid": "e437d70c_ead85ed2",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
