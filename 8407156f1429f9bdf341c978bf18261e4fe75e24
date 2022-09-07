@@ -128,6 +128,30 @@
       },
       "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb5c4226_f5f6f4a2",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 216,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-07T14:08:16Z",
+      "side": 1,
+      "message": "Oh, I\u0027ve just commented at the same time than you, David. I\u0027m using exported variables because I\u0027ve experimented conflicts when testing labels (https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/26040). So, to have everything in the same format, I\u0027ve just done the same for all cases (-f/-s here, -l in the aforementioned change)",
+      "parentUuid": "e7ff7be7_c76645cf",
+      "range": {
+        "startLine": 216,
+        "startChar": 1,
+        "endLine": 216,
+        "endChar": 3
+      },
+      "revId": "8407156f1429f9bdf341c978bf18261e4fe75e24",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
