@@ -16,6 +16,24 @@
       "message": "Wouldn\u0027t be better to use whatever storage is available instead?\nOr if no storage is available then install local-storage?\nOr, always use a local-storage regardless of storage availability",
       "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d5ed6049_e77c5196",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-08T15:54:14Z",
+      "side": 1,
+      "message": "Thanks Tony, yes, I have to familiarize a little bit with this... I\u0027ll mark this change in work in progress to continue working on it because I was not able to link the PVC I created to the PVs. I need some more time.",
+      "parentUuid": "7439d875_acb4df6b",
+      "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
