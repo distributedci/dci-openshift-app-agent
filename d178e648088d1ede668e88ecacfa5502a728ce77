@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "33980e5b_fcc27deb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-08T21:56:48Z",
+      "side": 1,
+      "message": "Hello Ramón, using local storage should not be trivial,in order to use local storage you will need to prepare in advance the workers with the volumes, partition that will be available for the pods and also deploy the local-storage operator to discover the local volumes and make them available for the pods.\n\nAs Tony commented, it will be good to check for the default storage class or for a SC provided by the user. In Dallas unfortunately, we can only test with Trident but in bos2 if you enable ocs and local_storage you will be able to test.\n\nWould be good to check with Manuel if we can have OCS with an external backed or an alternative to trident.\n\nThanks!",
+      "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7439d875_acb4df6b",
