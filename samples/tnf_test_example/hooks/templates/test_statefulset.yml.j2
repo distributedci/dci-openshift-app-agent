@@ -37,11 +37,11 @@ spec:
               containerPort: 8080
           resources:
             requests:
-              memory: 256Mi
-              cpu: 0.10
+              memory: 512Mi
+              cpu: 1000m
             limits:
               memory: 512Mi
-              cpu: 0.25
+              cpu: 1000m
           lifecycle:
             preStop:
               exec:
