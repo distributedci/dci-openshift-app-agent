@@ -50,6 +50,23 @@
       "message": "recheck",
       "revId": "1d7917e057025eef9a486f5186ec049e55a12459",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "071663b1_d0a5de7e",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 211,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2022-09-08T12:38:13Z",
+      "side": 1,
+      "message": "Very cool!",
+      "revId": "1d7917e057025eef9a486f5186ec049e55a12459",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
