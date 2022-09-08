@@ -16,6 +16,29 @@
     - item.namespace != dci_openshift_app_ns
   loop: "{{ tnf_config }}"
 
+- name: Delete local volumes created
+  include_tasks: delete_local_volumes.yml
+  vars:
+    app_ns: "{{ pods_in_same_ns.namespace }}"
+  when:
+    - tnf_config is defined
+    - tnf_config|length
+    - pods_in_same_ns.namespace is defined
+    - pods_in_same_ns.namespace|length
+  loop: "{{ tnf_config }}"
+  loop_control:
+    loop_var: pods_in_same_ns
+
+- name: Delete local-storage StorageClass
+  community.kubernetes.k8s:
+    api_version: storage.k8s.io/v1
+    name: local-storage
+    kind: StorageClass
+    state: absent
+    wait: yes
+    wait_sleep: 5
+    wait_timeout: 120
+
 - name: Delete simple-demo-operator-catalog
   community.kubernetes.k8s:
     state: absent
