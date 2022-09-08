@@ -16,6 +16,17 @@
     - item.namespace != dci_openshift_app_ns
   loop: "{{ tnf_config }}"
 
+- name: Delete local-storage StorageClass if it was created before
+  community.kubernetes.k8s:
+    api_version: storage.k8s.io/v1
+    name: local-storage
+    kind: StorageClass
+    state: absent
+    wait: yes
+    wait_sleep: 5
+    wait_timeout: 120
+  when: volume_provisioner|default("local") == 'local'
+
 - name: Delete simple-demo-operator-catalog
   community.kubernetes.k8s:
     state: absent
