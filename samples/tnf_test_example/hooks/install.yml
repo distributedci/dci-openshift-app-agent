@@ -1,4 +1,35 @@
 ---
+# Check if trident resources are present, so that we can create a persistent volume
+# with trident provisioner. Else, we will use local resources to deploy the volume.
+- name: Check if default-trident-storage StorageClass exists
+  community.kubernetes.k8s_info:
+    api_version: storage.k8s.io/v1
+    kind: StorageClass
+    name: default-trident-storage
+  register: storage_class_check
+
+- name: Check if trident namespace exists
+  community.kubernetes.k8s_info:
+    kind: Namespace
+    name: trident
+  register: trident_namespace_check
+
+- name: Set volume_provisioner fact
+  set_fact:
+    volume_provisioner: "{{ ( storage_class_check.resources|length and trident_namespace_check.resources|length ) | ternary('trident', 'local') }}"
+
+- name: Create local-storage StorageClass if trident is not installed
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: storage.k8s.io/v1
+      kind: StorageClass
+      metadata:
+        name: local-storage
+      provisioner: kubernetes.io/no-provisioner
+      volumeBindingMode: WaitForFirstConsumer
+  when: volume_provisioner == 'local'
+
 # If the namespace is dci_openshift_app_ns, its creation is handled in
 # d-o-a-a plays, so we do not need to do that here.
 # exclude_connectivity_regexp is not checked because it is optional.

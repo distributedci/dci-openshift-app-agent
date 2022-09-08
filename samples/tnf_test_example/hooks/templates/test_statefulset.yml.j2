@@ -85,3 +85,14 @@ spec:
                     values:
                       - test
               topologyKey: "kubernetes.io/hostname"
+  volumeClaimTemplates:
+  - metadata:
+      name: volume-claim-{{ app_ns }}
+      namespace: {{ app_ns }}
+    spec:
+      accessModes:
+        - ReadWriteOnce
+      resources:
+        requests:
+          storage: 10Mi
+      storageClassName: default-trident-storage
