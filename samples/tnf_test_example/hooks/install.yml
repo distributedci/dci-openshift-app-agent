@@ -1,4 +1,35 @@
 ---
+# Check if trident resources are present, so that we can create a persistent volume
+# with trident provisioner. Else, we will use local resources to deploy the volume.
+- name: Check if default-trident-storage StorageClass exists
+  community.kubernetes.k8s_info:
+    api_version: storage.k8s.io/v1
+    kind: StorageClass
+    name: default-trident-storage
+  register: storage_class_check
+
+- name: Check if trident namespace exists
+  community.kubernetes.k8s_info:
+    kind: Namespace
+    name: trident
+  register: trident_namespace_check
+
+- name: Set volume_provisioner fact
+  set_fact:
+    volume_provisioner: "{{ ( storage_class_check.resources|length and trident_namespace_check.resources|length ) | ternary('trident', 'local') }}"
+
+- name: Create local-storage StorageClass if trident is not installed
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: storage.k8s.io/v1
+      kind: StorageClass
+      metadata:
+        name: local-storage
+      provisioner: kubernetes.io/no-provisioner
+      volumeBindingMode: WaitForFirstConsumer
+  when: volume_provisioner == 'local'
+
 # If the namespace is dci_openshift_app_ns, its creation is handled in
 # d-o-a-a plays, so we do not need to do that here.
 # exclude_connectivity_regexp is not checked because it is optional.
@@ -30,66 +61,71 @@
     - tnf_config is defined
     - tnf_config|length
 
-# Install the operator in test-cnf namespace
-- name: Set operator_ns variable
-  set_fact:
-    operator_ns: "{{ tnf_config[0].namespace|default('test-cnf') }}"
+- name: Operator tasks
+  block:
+    # Install the operator in test-cnf namespace
+    - name: Set operator_ns variable
+      set_fact:
+        operator_ns: "{{ tnf_config[0].namespace|default('test-cnf') }}"
 
-- name: Create CatalogSource for simple-demo-operator
-  community.kubernetes.k8s:
-    state: present
-    definition:
-      apiVersion: operators.coreos.com/v1alpha1
-      kind: CatalogSource
-      metadata:
-        name: simple-demo-operator-catalog
-        namespace: openshift-marketplace
-      spec:
-        sourceType: grpc
-        image: "{{ catalog_path | default('quay.io/opdev/simple-demo-operator-catalog:v0.0.6') }}"
-        displayName: Simple Demo Operator
-        updateStrategy:
-          registryPoll:
-            interval: 30m
+    - name: Create CatalogSource for simple-demo-operator
+      community.kubernetes.k8s:
+        state: present
+        definition:
+          apiVersion: operators.coreos.com/v1alpha1
+          kind: CatalogSource
+          metadata:
+            name: simple-demo-operator-catalog
+            namespace: openshift-marketplace
+          spec:
+            sourceType: grpc
+            image: "{{ catalog_path | default('quay.io/opdev/simple-demo-operator-catalog:v0.0.6') }}"
+            displayName: Simple Demo Operator
+            updateStrategy:
+              registryPoll:
+                interval: 30m
 
-- name: "deploy-operators : Install simple-demo-operator"
-  include_role:
-    name: olm-operator
-  vars:
-    operator: "{{ tnf_operator_to_install.operator_name | default('simple-demo-operator') }}"
-    source: "{{ tnf_operator_to_install.operator_name | default('simple-demo-operator') }}-catalog"
-    namespace: "{{ operator_ns }}"
-    operator_group_spec:
-      targetNamespaces:
-        - "{{ operator_ns }}"
-
-- name: "Get current subscription"
-  community.kubernetes.k8s_info:
-    api: operators.coreos.com/v1alpha1
-    kind: Subscription
-    namespace: "{{ operator_ns }}"
-    name: "{{ tnf_operator_to_install.operator_name | default('simple-demo-operator') }}"
-  register: current_subscription
-
-- name: "Get Installed CSV and subscription name"
-  vars:
-    subs_details: >
-      resources[*].{ subscriptionName: metadata.name,
-        installedCSV: status.installedCSV
-      }
-  set_fact:
-    subscription: "{{ current_subscription | json_query(subs_details) | first }}"
-
-- name: "Update CSVs with autodiscovery labels/annotations to execute test suites"
-  community.kubernetes.k8s:
-    definition:
-      apiVersion: operators.coreos.com/v1alpha1
-      kind: ClusterServiceVersion
-      metadata:
-        name: "{{ subscription.installedCSV }}"
+    - name: "deploy-operators : Install simple-demo-operator"
+      include_role:
+        name: olm-operator
+      vars:
+        operator: "{{ tnf_operator_to_install.operator_name | default('simple-demo-operator') }}"
+        source: "{{ tnf_operator_to_install.operator_name | default('simple-demo-operator') }}-catalog"
         namespace: "{{ operator_ns }}"
-        labels:
-          test-network-function.com/operator: target
-        annotations:
-          test-network-function.com/operator_tests: "['OPERATOR_STATUS']"
-          test-network-function.com/subscription_name: "{{ subscription.subscriptionName }}"
+        operator_group_spec:
+          targetNamespaces:
+            - "{{ operator_ns }}"
+
+    - name: "Get current subscription"
+      community.kubernetes.k8s_info:
+        api: operators.coreos.com/v1alpha1
+        kind: Subscription
+        namespace: "{{ operator_ns }}"
+        name: "{{ tnf_operator_to_install.operator_name | default('simple-demo-operator') }}"
+      register: current_subscription
+
+    - name: "Get Installed CSV and subscription name"
+      vars:
+        subs_details: >
+          resources[*].{ subscriptionName: metadata.name,
+            installedCSV: status.installedCSV
+          }
+      set_fact:
+        subscription: "{{ current_subscription | json_query(subs_details) | first }}"
+
+    - name: "Update CSVs with autodiscovery labels/annotations to execute test suites"
+      community.kubernetes.k8s:
+        definition:
+          apiVersion: operators.coreos.com/v1alpha1
+          kind: ClusterServiceVersion
+          metadata:
+            name: "{{ subscription.installedCSV }}"
+            namespace: "{{ operator_ns }}"
+            labels:
+              test-network-function.com/operator: target
+            annotations:
+              test-network-function.com/operator_tests: "['OPERATOR_STATUS']"
+              test-network-function.com/subscription_name: "{{ subscription.subscriptionName }}"
+  when:
+    - tnf_operator_to_install is defined
+    - tnf_operator_to_install.operator_name is defined
