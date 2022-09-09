@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1070d448_464bb145",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T13:47:53Z",
+      "side": 1,
+      "message": "Thanks for the comments, for the moment I\u0027m just testing here, when the change is ready for review, I\u0027ll let you know",
+      "revId": "ec1b983b45ad4cc500fdea49e13a349a10addafa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

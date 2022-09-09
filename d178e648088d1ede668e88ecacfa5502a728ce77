@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d952b37a_0b73ce5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T13:47:53Z",
+      "side": 1,
+      "message": "Hi Beto, I wanted a quick solution to test on daily jobs, currently we don\u0027t activate OCS or local storage operator on vanilla jobs, that\u0027s why I thought on using local PVs and PVCs (in theory it is possible by creating the resources beforehand), or using trident if the previous daily job executed was VCP. I\u0027m still trying to figure out how to do this... if not, maybe I\u0027ll have to turn on local storage operator in one of the vanilla pipelines to test it there",
+      "parentUuid": "33980e5b_fcc27deb",
+      "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "710ec39f_1ac02283",
