@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 7:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/2919b2a8-44c0-48e6-b2ba-e946e31f259d/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/26054/\n\nThe lifecycle-cpu-isolation test is now passing thanks to the modifications included, but it\u0027s making lifecycle-pod-scheduling test to fail. I\u0027ve reported this to CNF Cert Suite team in this issue: https://github.com/test-network-function/cnf-certification-test/issues/497, I\u0027ll wait for their response before continuing with this.",
       "revId": "302dd778d8dc76d44d0b2e97d827f113cfeaa8c5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "30e563e0_9efdf5ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T16:29:16Z",
+      "side": 1,
+      "message": "This patch on cnf-certification-test repo has fixed the issue I\u0027ve reported in my last comment: https://github.com/test-network-function/cnf-certification-test/pull/498, but now the test called lifecycle-pod-scheduling is being skipped. I\u0027ll check on Monday if there\u0027s any way of making both tests to pass.",
+      "revId": "302dd778d8dc76d44d0b2e97d827f113cfeaa8c5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
