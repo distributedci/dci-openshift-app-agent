@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5598c4f5_de908994",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T16:26:54Z",
+      "side": 1,
+      "message": "Change is ready for review. As I was advancing, the main purpose of this change is to test a tnf test related to volumes, so I have just included the quickest option possible to deploy volumes without needing extra operators and so on. I have already validated that the tnf test is passing, so the change is working fine. I\u0027ll test now on libvirt to see how it goes.",
+      "revId": "4f1b3cb767834e2a3d5e1769716780556c180a0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

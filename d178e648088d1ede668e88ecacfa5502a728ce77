@@ -71,6 +71,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "44b1e860_81ef9ec7",
+        "filename": "samples/tnf_test_example/hooks/create_local_volumes.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T16:26:54Z",
+      "side": 1,
+      "message": "In this case, I\u0027ve just created manually the PVs and linked them to the PVCs, to have the simplest example possible without depending on any extra operators, as I said. So here, as the PVC is not created yet, it is enough to check if the PV is Available, then when creating the PVC, we check the Bound status.",
+      "parentUuid": "fa17b2b7_43156485",
+      "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7439d875_acb4df6b",
@@ -102,6 +120,24 @@
       "side": 1,
       "message": "Thanks Tony, yes, I have to familiarize a little bit with this... I\u0027ll mark this change in work in progress to continue working on it because I was not able to link the PVC I created to the PVs. I need some more time.",
       "parentUuid": "7439d875_acb4df6b",
+      "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7564501d_682486aa",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T16:26:54Z",
+      "side": 1,
+      "message": "I\u0027ve finally always used local-storage, I\u0027ll close this.",
+      "parentUuid": "d5ed6049_e77c5196",
       "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
