@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa17b2b7_43156485",
+        "filename": "samples/tnf_test_example/hooks/create_local_volumes.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-09T00:42:04Z",
+      "side": 1,
+      "message": "nevermind, this is a PV. Usually you create a PVC that will take care of creating the PV for you.",
+      "parentUuid": "710ec39f_1ac02283",
+      "revId": "d178e648088d1ede668e88ecacfa5502a728ce77",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7439d875_acb4df6b",
