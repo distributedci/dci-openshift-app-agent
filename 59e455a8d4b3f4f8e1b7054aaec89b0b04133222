@@ -50,6 +50,24 @@
       "message": "Does this means that if we do not set the suites to test, then by default all these would be used? even affiliated-certification-container-is-certified ?\nI guess if tnf_certified_container_info is null then, the tests of the affiliated-certification-container-is-certified suite won\u0027t be executed?",
       "revId": "59e455a8d4b3f4f8e1b7054aaec89b0b04133222",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71b34f5f_9ee53654",
+        "filename": "roles/cnf-cert/defaults/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-09T16:10:56Z",
+      "side": 1,
+      "message": "Yes, that\u0027s it. In the case of affiliated-certification-container-is-certified, it depends on the following field in tnf_config.yml file: `certifiedcontainerinfo`. If it\u0027s not filled (e.g. when tnf_certified_container_info is empty), then the affiliated-certification test is executed but skipped because there are no container images to check. I am enabling this here by default because, with this change, we are including the automation in tnf_config.yml.j2 to fill this info, but there are other affiliated-certification tests that are still not checked, that\u0027s why I\u0027ve just included that single test instead of the whole affiliated-certification suite. I hope I\u0027ve clarified your questios :)",
+      "parentUuid": "f366af1c_ac9fde72",
+      "revId": "59e455a8d4b3f4f8e1b7054aaec89b0b04133222",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
