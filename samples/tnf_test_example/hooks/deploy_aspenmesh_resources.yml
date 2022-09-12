@@ -1,0 +1,61 @@
+---
+# leaving it here for the moment but this file may be deleted in a next patchset
+- name: Create Service for test pods
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: v1
+      kind: Service
+      namespace: "{{ app_ns }}"
+      metadata:
+        name: test
+        labels:
+          app: test
+      spec:
+        ports:
+        - name: http-probe
+          port: 28080
+          targetPort: 8080
+        selector:
+          app: test
+
+- name: Create Gateway
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: networking.istio.io/v1alpha3
+      kind: Gateway
+      namespace: "{{ app_ns }}"
+      metadata:
+        name: test-gateway
+      spec:
+        selector:
+          istio: ingressgateway
+        servers:
+        - port:
+            number: 8080
+            name: http
+            protocol: HTTP
+          hosts:
+          - "*"
+
+- name: Create VirtualService
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      apiVersion: networking.istio.io/v1alpha3
+      kind: VirtualService
+      namespace: "{{ app_ns }}"
+      metadata:
+        name: test
+      spec:
+        hosts:
+        - "*"
+        gateways:
+        - test-gateway
+        http:
+        - route:
+          - destination:
+              host: test
+              port:
+                number: 28080
