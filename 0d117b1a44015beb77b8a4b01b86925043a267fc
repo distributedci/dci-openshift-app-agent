@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2cc3241e_83e8a87a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-12T13:01:23Z",
+      "side": 1,
+      "message": "Change is ready for review. Last test in dallas shows that the expected behaviour has been achieved, according to what it is documented in the commit message.",
+      "revId": "0d117b1a44015beb77b8a4b01b86925043a267fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
