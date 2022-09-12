@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7f12a67d_04abf778",
+        "filename": "samples/tnf_test_example/hooks/check_aspenmesh.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-09-12T20:26:53Z",
+      "side": 1,
+      "message": "Having istio CR does not guarantee that a ns is using mesh\nWould be useful to check instead, if the ns is using it i.e. checking the ns labels?\n\nhttps://istio.io/latest/docs/setup/additional-setup/sidecar-injection/#automatic-sidecar-injection",
+      "revId": "4cb35d316ed673393e54b4707d0f2f5ff5d12a3f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2c14e56_cf4e8f8f",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-09-12T20:26:53Z",
+      "side": 1,
+      "message": "Are the tests focused only in AM or are they expecting service mesh?\nWhat would happen in the case of someone using  Red Hat OpenShift Service Mesh?",
+      "revId": "4cb35d316ed673393e54b4707d0f2f5ff5d12a3f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
