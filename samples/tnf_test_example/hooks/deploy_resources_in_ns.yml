@@ -8,6 +8,10 @@
     name: "{{ app_ns }}"
     state: present
 
+- name: Configure Aspenmesh for namespace
+  include_tasks: configure_aspenmesh_for_ns.yml
+  when: am_installed | default(false) | bool
+
 - name: Create ResourceQuotas for namespace
   community.kubernetes.k8s:
     state: present
@@ -17,6 +21,10 @@
   community.kubernetes.k8s:
     state: present
     definition: "{{ lookup('template', 'templates/test_statefulset.yml.j2') | from_yaml }}"
+
+- name: Deploy Aspenmesh resources in namespace
+  include_tasks: deploy_aspenmesh_resources.yml
+  when: am_installed | default(false) | bool
 
 - name: Wait until all test pods are running
   community.kubernetes.k8s_info:
