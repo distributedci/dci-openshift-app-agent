@@ -1,4 +1,20 @@
 ---
+# Check if Aspenmesh is currently deployed to check if we can use service-mesh capabilities in
+# the pods under test.
+- name: Check Aspenmesh Helm charts
+  community.kubernetes.helm_info:
+    name: "{{ am_chart }}"
+    release_namespace: "{{ (am_chart == 'istio-cni') | ternary('kube-system', 'istio-system') }}"
+  loop:
+    - "istio-cni"
+    - "istio-egress"
+    - "istio-ingress"
+    - "istio-init"
+    - "istiod"
+  loop_control:
+    loop_var: am_chart
+  register: am_chart_check
+
 # If the namespace is dci_openshift_app_ns, its creation is handled in
 # d-o-a-a plays, so we do not need to do that here.
 # exclude_connectivity_regexp is not checked because it is optional.
