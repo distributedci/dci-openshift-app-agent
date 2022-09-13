@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ae41d3a_bf956877",
+        "filename": "samples/tnf_test_example/hooks/check_aspenmesh.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T08:31:13Z",
+      "side": 1,
+      "message": "Hi Tony, I know it, I\u0027ve just starting the change and this part will only check if AM/istio is installed in the cluster, then I will do all the checks you were commenting in a further patchset. I\u0027ll specify that I don\u0027t expect comments for the moment till having everything ready.",
+      "parentUuid": "7f12a67d_04abf778",
+      "revId": "4cb35d316ed673393e54b4707d0f2f5ff5d12a3f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d2c14e56_cf4e8f8f",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-09-12T20:26:53Z",
       "side": 1,
       "message": "Are the tests focused only in AM or are they expecting service mesh?\nWhat would happen in the case of someone using  Red Hat OpenShift Service Mesh?",
+      "revId": "4cb35d316ed673393e54b4707d0f2f5ff5d12a3f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa76fc53_730debe9",
+        "filename": "samples/tnf_test_example/hooks/install.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T08:31:13Z",
+      "side": 1,
+      "message": "This is just an example to test the service-mesh tnf test, to validate that it works as expected, so here it will be used aspenmesh as an example.\nIn fact, I am checking that AM is installed because this test will only be run in clusters with AM installed; so, in clusters with VCP deployed. If not deployed, service-mesh tnf test will be skipped.",
+      "parentUuid": "d2c14e56_cf4e8f8f",
       "revId": "4cb35d316ed673393e54b4707d0f2f5ff5d12a3f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
