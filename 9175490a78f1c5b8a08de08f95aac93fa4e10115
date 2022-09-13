@@ -84,6 +84,24 @@
       "message": "Ramon, good work here, just one questions before I add a +2, from the commit it reads that the main purpose is to execute lifecycle-persistent-volume-reclaim-policy test, but in the last tnf job, I do not see such test in the results, does it has a diff name? or I\u0027m missing something? Thanks",
       "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ebba6ac_95c21637",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T13:31:51Z",
+      "side": 1,
+      "message": "Thanks Manuel! It was executed in the job I ran on dallas: https://www.distributed-ci.io/jobs/939f49da-eabf-4274-9516-e1de11848258/tests, the test called lifecycle-persistent-volume-reclaim-policy is there.\n\nIn the libvirt job in BOS2, I\u0027ve seen that it is not present because I was running v4.0.2 version instead of HEAD (because the test is a new one and it\u0027s only available when running HEAD), it was my fault.\n\nI can re-run the libvirt job to check it there, anyway it should pass, I\u0027ve seen the installation and decomission of the PVs are fine.",
+      "parentUuid": "84c922d0_d4d6ced8",
+      "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
