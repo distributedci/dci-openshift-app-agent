@@ -67,6 +67,23 @@
       "message": "Thanks Beto! I need a +2 to merge it, also including Charles and Manuel, in case somebody more can check the change to approve it. Thanks in advance!",
       "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84c922d0_d4d6ced8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-13T13:22:43Z",
+      "side": 1,
+      "message": "Ramon, good work here, just one questions before I add a +2, from the commit it reads that the main purpose is to execute lifecycle-persistent-volume-reclaim-policy test, but in the last tnf job, I do not see such test in the results, does it has a diff name? or I\u0027m missing something? Thanks",
+      "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
