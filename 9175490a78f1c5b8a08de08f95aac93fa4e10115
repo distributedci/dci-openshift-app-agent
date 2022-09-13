@@ -50,6 +50,23 @@
       "message": "Good that local storage worked. LGTM",
       "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e601c0e4_3a1ec4f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T08:43:07Z",
+      "side": 1,
+      "message": "Thanks Beto! I need a +2 to merge it, also including Charles and Manuel, in case somebody more can check the change to approve it. Thanks in advance!",
+      "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
