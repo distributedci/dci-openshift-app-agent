@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e36442d_d4bdc439",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T17:32:26Z",
+      "side": 1,
+      "message": "Change is ready for review, however I will put workflow -1 because I need a response on this issue before considering the merge of this change: https://github.com/test-network-function/cnf-certification-test/issues/505. There are some tnf tests that are now failing because of adding a new container to the pod (istio-proxy one), and then it may be possible that some tnf unit tests have to be redefined to be passed.",
+      "revId": "911ee61cd04e4e7f1918bf2ed90695d7559a065c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
