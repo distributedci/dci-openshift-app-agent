@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdc2252a_1a87bb9c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T13:44:30Z",
+      "side": 1,
+      "message": "Thanks Beto for the review! However, I had to include changes in the README, so that the +2 has been removed. I\u0027ll run also a libvirt job to check everything is fine (it should). If you can review it again after that, it would be great!",
+      "revId": "483f877c82e7ced1962d97cb269f608d0b868daa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
