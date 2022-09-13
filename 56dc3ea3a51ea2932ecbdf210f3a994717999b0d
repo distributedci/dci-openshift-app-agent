@@ -16,6 +16,23 @@
       "message": "The Libvirt test is enough for this little patch.\nReady for review!",
       "revId": "56dc3ea3a51ea2932ecbdf210f3a994717999b0d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8beda9e_18b50427",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T08:41:25Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "56dc3ea3a51ea2932ecbdf210f3a994717999b0d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
