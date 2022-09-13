@@ -50,6 +50,24 @@
       "message": "I see the lifecycle-persistent-volume-reclaim-policy test passed in job https://www.distributed-ci.io/jobs/591874f6-5ff7-4c9c-9883-971f80117866/tests (dallas), but it failed in the last libvirt tnf test, I guess is another of those tests where we need to pass specific flags/hints to test right?\nAnyways looks good to me!",
       "revId": "0d117b1a44015beb77b8a4b01b86925043a267fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a010b8e_4dff0fbd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-13T14:09:52Z",
+      "side": 1,
+      "message": "hmm yes, it\u0027s failing because this test needs runtimeClassName in guaranteed QoS pods to pass, and it is available on dallas daily jobs because it\u0027s linked to the performance profile we create. But on libvirt it is not present the runtimeClassName resource, so that it is not linked to the pods, so that the test fails because of that:\n```\npod: test-0 ns: production-cnf has been found to not have runtimeClassName specified.\npod: test-1 ns: production-cnf has been found to not have runtimeClassName specified.\n```\nSo, yes, we can say the failed test is expected on libvirt because we are missing a resource that is usually created automatically thanks to the performance profile we apply on dallas, so we can accept it. I\u0027ll merge the change, consequently",
+      "parentUuid": "0e356b0b_8447893f",
+      "revId": "0d117b1a44015beb77b8a4b01b86925043a267fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
