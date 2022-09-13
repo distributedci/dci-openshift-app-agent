@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ca7ec79_178d3856",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-13T02:25:10Z",
+      "side": 1,
+      "message": "Good that local storage worked. LGTM",
+      "revId": "9175490a78f1c5b8a08de08f95aac93fa4e10115",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
