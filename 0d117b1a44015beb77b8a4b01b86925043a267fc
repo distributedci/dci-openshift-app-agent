@@ -33,6 +33,23 @@
       "message": "Hi guys, sorry for the noise, but can anybody of you take a look to the change to approve it? It\u0027s quick to check :) thanks!!",
       "revId": "0d117b1a44015beb77b8a4b01b86925043a267fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e356b0b_8447893f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-13T13:47:34Z",
+      "side": 1,
+      "message": "I see the lifecycle-persistent-volume-reclaim-policy test passed in job https://www.distributed-ci.io/jobs/591874f6-5ff7-4c9c-9883-971f80117866/tests (dallas), but it failed in the last libvirt tnf test, I guess is another of those tests where we need to pass specific flags/hints to test right?\nAnyways looks good to me!",
+      "revId": "0d117b1a44015beb77b8a4b01b86925043a267fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
