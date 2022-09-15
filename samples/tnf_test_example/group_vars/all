@@ -1,0 +1,7 @@
+---
+
+tnf_helm_chart_to_install:
+  chart_url: https://github.com/openshift-helm-charts/charts/releases/download/fredco-samplechart-0.1.3/fredco-samplechart-0.1.3.tgz
+  image_repository: registry.access.redhat.com/ubi8/nginx-118
+
+...

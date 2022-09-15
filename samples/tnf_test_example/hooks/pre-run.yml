@@ -9,6 +9,19 @@
     - python3-pyyaml
   become: true
 
+- name: "Mirror images in disconnected environments"
+  include_role:
+    name: mirror_images
+  vars:
+    images:
+      - quay.io/testnetworkfunction/cnf-test-partner:latest
+      - "{{ tnf_helm_chart_to_install.image_repository }}"
+    local_registry: "{{ provisionhost_registry }}"
+    authfile: "{{ pullsecret_tmp_file }}"
+  when:
+    - dci_disconnected | default(false) | bool
+    - provisionhost_registry|length
+
 # Following the same scope than in preflight for preparing the operator in disconnected environments
 - name: Preparing the operator in disconnected environments
   block:
