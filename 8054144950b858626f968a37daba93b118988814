@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b7c6300_44c0e083",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-15T16:39:36Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/576a1bd5-7d80-444c-accb-6a1827a14ca8/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/26127/\n\nChange is ready for review. Now, both lifecycle-deployment-scaling and lifecycle-statefulset-scaling tests are passing (before, lifecycle-deployment-scaling was omitted because there were not deployments to test)",
+      "revId": "8054144950b858626f968a37daba93b118988814",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
