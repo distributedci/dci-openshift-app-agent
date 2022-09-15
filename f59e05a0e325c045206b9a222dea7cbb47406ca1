@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d109ecb0_e913a634",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-15T16:34:04Z",
+      "side": 1,
+      "message": "Change is ready for review. Note that, even though the two last dallas debug jobs have failed, they failed because of preflight, so not related to this change. You can see all the tnf suites are executed properly and that tnf helm test is passing.",
+      "revId": "f59e05a0e325c045206b9a222dea7cbb47406ca1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
