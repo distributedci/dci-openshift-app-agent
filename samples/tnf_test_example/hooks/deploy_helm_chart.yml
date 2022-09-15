@@ -1,0 +1,75 @@
+---
+
+- name: Create temporary directory
+  tempfile:
+    state: directory
+    prefix: tnf_test_example_helm_chart.
+  register: tnf_test_example_helm_chart
+
+- name: Check if the Helm chart file exists
+  uri:
+    url: "{{ tnf_helm_chart_to_install.chart_url }}"
+  register: file_response
+  ignore_errors: true
+  run_once: true
+
+- name: Chart file cannot be downloaded
+  fail:
+    msg: "{{ tnf_helm_chart_to_install.chart_url }} cannot be downloaded"
+  when:
+    - file_response.status | int != 200
+
+- name: Download Helm chart file
+  get_url:
+    url: "{{ tnf_helm_chart_to_install.chart_url }}"
+    dest: "{{ tnf_test_example_helm_chart }}/tnf_example.tgz"
+    mode: 0644
+
+# Needed to extract the values.yaml file, which needs to be updated for disconnected.
+- name: Untar Helm chart file
+  unarchive:
+    src: "{{ tnf_test_example_helm_chart }}/tnf_example.tgz"
+    dest: "{{ tnf_test_example_helm_chart }}"
+
+- name: Set values_dict fact
+  set_fact:
+    values_dict: "{{ lookup('file', tnf_test_example_helm_chart + '/samplechart/values.yaml') | from_yaml }}"
+
+- name: Update image to be used if we are on a disconnected environment
+  vars:
+    image_name: "{{ tnf_helm_chart_to_install.image_repository | regex_replace('^[^/]*/', '') }}"
+    local_image_location: "{{ provisionhost_registry }}/{{ image_name }}"
+    updated_image: { 'image': { 'repository': "{{ local_image_location }}" } }
+  set_fact:
+    values_dict: "{{ values_dict | combine(updated_image, recursive=true) }}"
+  with_dict: "{{ values_dict }}"
+  when:
+    - dci_disconnected | default(false) | bool
+    - provisionhost_registry|length
+
+- name: Deploy Helm chart
+  community.kubernetes.helm:
+    name: tnf_test_example
+    chart_ref: "{{ tnf_test_example_helm_chart }}/tnf_test_example.tgz"
+    release_namespace: "{{ target_ns }}"
+    values: "{{ values_dict }}"
+
+- name: Wait until Helm chart is deployed
+  community.kubernetes.helm_info:
+    name: tnf_test_example
+    release_namespace: "{{ target_ns }}"
+  register: chart_check
+  retries: 60
+  delay: 5
+  when:
+    - "chart_check.resources|length == 1"
+    - "'status' in chart_check.resources[0]"
+    - "'status' in chart_check.resources[0].status"
+    - "chart_check.resources[0].status.status == 'deployed'"
+
+- name: Remove temporary directory
+  file:
+    path: "{{ tnf_test_example_helm_chart.path }}"
+    state: absent
+
+...
