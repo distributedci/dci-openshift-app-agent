@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f90c9033_112c1105",
+        "filename": "samples/tnf_test_example/hooks/deploy_helm_chart.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-16T14:18:46Z",
+      "side": 1,
+      "message": "that\u0027s true, I forgot to remove it, done",
+      "parentUuid": "8b469e7a_7f94a8f8",
+      "revId": "5fb610a70160f19712d0575be9a29f54ac72ed88",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "76073c53_afcfc611",
@@ -65,6 +83,24 @@
       "writtenOn": "2022-09-16T14:04:08Z",
       "side": 1,
       "message": "I think you do not need this anymore",
+      "revId": "5fb610a70160f19712d0575be9a29f54ac72ed88",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a252bb0_035c7098",
+        "filename": "samples/tnf_test_example/hooks/deploy_helm_chart.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-16T14:18:46Z",
+      "side": 1,
+      "message": "that\u0027s true, I forgot to remove it, done",
+      "parentUuid": "76073c53_afcfc611",
       "revId": "5fb610a70160f19712d0575be9a29f54ac72ed88",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
