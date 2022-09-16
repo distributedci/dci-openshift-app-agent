@@ -135,6 +135,24 @@
       "message": "Hello Ramón,\n\nYou can use the helm override capabilities to update the image_repository/image without having to parse the default values file. Please see the \"Using complex Values\" sample from: https://docs.ansible.com/ansible/latest/collections/kubernetes/core/helm_module.html",
       "revId": "f59e05a0e325c045206b9a222dea7cbb47406ca1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fecd1d58_7a99cfe6",
+        "filename": "samples/tnf_test_example/hooks/deploy_helm_chart.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-16T08:25:41Z",
+      "side": 1,
+      "message": "Nice! I will give it a try, thanks Beto!",
+      "parentUuid": "d03ff2bc_c94a6eef",
+      "revId": "f59e05a0e325c045206b9a222dea7cbb47406ca1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
