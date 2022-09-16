@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e7cb085_a7af9776",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-16T17:41:30Z",
+      "side": 1,
+      "message": "Now it\u0027s ready for merging, sorry for the noise, I had to fix some issues I had in disconnected.",
+      "revId": "a1f7d7a798f49e8d0aded845d24838e6770d0cf0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
