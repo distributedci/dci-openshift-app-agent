@@ -86,6 +86,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6173bce_af4fb9fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-16T01:14:09Z",
+      "side": 1,
+      "message": "there is one of those random problems with aws, because the job failed to scheduled and https://www.distributed-ci.io/ is not even loading :/ let\u0027s wait to retry again",
+      "revId": "f59e05a0e325c045206b9a222dea7cbb47406ca1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d03ff2bc_c94a6eef",
