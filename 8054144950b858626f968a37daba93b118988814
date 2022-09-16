@@ -67,6 +67,23 @@
       "message": "problems with aws, the job failed to scheduled and https://www.distributed-ci.io/ not loading, let\u0027s wait to retry again",
       "revId": "8054144950b858626f968a37daba93b118988814",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "334d8579_a523183a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-16T01:47:08Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "8054144950b858626f968a37daba93b118988814",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
