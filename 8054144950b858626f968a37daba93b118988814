@@ -84,6 +84,23 @@
       "message": "recheck",
       "revId": "8054144950b858626f968a37daba93b118988814",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c921b6b_94aa19b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-16T08:28:59Z",
+      "side": 1,
+      "message": "Thanks Manuel, now libvirt job has passed with the desired output, so the change is ready for merging",
+      "revId": "8054144950b858626f968a37daba93b118988814",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
