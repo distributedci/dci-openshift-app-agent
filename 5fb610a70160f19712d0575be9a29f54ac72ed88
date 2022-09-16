@@ -33,6 +33,40 @@
       "message": "Change is ready for review again, waiting for libvirt job that should be fine",
       "revId": "5fb610a70160f19712d0575be9a29f54ac72ed88",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b469e7a_7f94a8f8",
+        "filename": "samples/tnf_test_example/hooks/deploy_helm_chart.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-16T14:04:08Z",
+      "side": 1,
+      "message": "not needed too",
+      "revId": "5fb610a70160f19712d0575be9a29f54ac72ed88",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76073c53_afcfc611",
+        "filename": "samples/tnf_test_example/hooks/deploy_helm_chart.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-16T14:04:08Z",
+      "side": 1,
+      "message": "I think you do not need this anymore",
+      "revId": "5fb610a70160f19712d0575be9a29f54ac72ed88",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
