@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "277b70828d4f9e577b7ddb5f124d05a124ac6ab2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f7beab1_d2d40883",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-09-19T12:41:06Z",
+      "side": 1,
+      "message": "Tag is present in the example job, LGTM",
+      "revId": "277b70828d4f9e577b7ddb5f124d05a124ac6ab2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
