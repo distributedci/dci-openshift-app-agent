@@ -49,6 +49,10 @@
         {% endif %}
       args:
         chdir: "{{ preflight_container_artifacts.path }}"
+      register: preflight_check_container_exec
+      retries: 6
+      delay: 10
+      until: preflight_check_container_exec.rc == 0
 
     - name: Unset pyxis auth to not reuse by following containers
       set_fact:
