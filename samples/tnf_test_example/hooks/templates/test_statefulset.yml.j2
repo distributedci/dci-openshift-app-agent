@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: test
+        AffinityRequiredKey: "true"
 {% if targetpodlabels|length %}
 {% for label in targetpodlabels %}
         {{ label|regex_replace('=', ': ') }}
@@ -48,6 +49,7 @@ spec:
               memory: 512Mi
               cpu: 2000m
             limits:
+              hugepages-2Mi: 1Mi
               memory: 512Mi
               cpu: 2000m
 {% else %}
@@ -55,6 +57,7 @@ spec:
               memory: 256Mi
               cpu: 0.10
             limits:
+              hugepages-2Mi: 1Mi
               memory: 512Mi
               cpu: 0.25
 {% endif %}
@@ -95,7 +98,7 @@ spec:
           - mountPath: /data
             name: volume-claim-{{ app_ns }}
       affinity:
-        podAntiAffinity:
+        podAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             - labelSelector:
                 matchExpressions:
