@@ -48,6 +48,7 @@ spec:
               memory: 512Mi
               cpu: 2000m
             limits:
+              hugepages-2Mi: 100Mi
               memory: 512Mi
               cpu: 2000m
 {% else %}
@@ -55,6 +56,7 @@ spec:
               memory: 256Mi
               cpu: 0.10
             limits:
+              hugepages-2Mi: 100Mi
               memory: 512Mi
               cpu: 0.25
 {% endif %}
@@ -94,6 +96,12 @@ spec:
           volumeMounts:
           - mountPath: /data
             name: volume-claim-{{ app_ns }}
+          - mountPath: /hugepages-2Mi
+            name: hugepage-2mi
+      volumes:
+        - name: hugepage-2mi
+          emptyDir:
+            medium: HugePages-2Mi
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
