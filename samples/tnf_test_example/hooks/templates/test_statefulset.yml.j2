@@ -12,6 +12,7 @@ spec:
     metadata:
       labels:
         app: test
+        AffinityRequiredKey: "true"
 {% if targetpodlabels|length %}
 {% for label in targetpodlabels %}
         {{ label|regex_replace('=', ': ') }}
@@ -95,7 +96,7 @@ spec:
           - mountPath: /data
             name: volume-claim-{{ app_ns }}
       affinity:
-        podAntiAffinity:
+        podAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
             - labelSelector:
                 matchExpressions:
