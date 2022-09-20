@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb17e541_a07824a8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-20T14:39:55Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/fcbb9c10-5147-43af-9ef1-fbcc251c88f6/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/26150/\n\nNothing seems to be broken, so should be fine to merge this",
+      "revId": "3160e0e3b567d448ad7a41fb46c6dfe6d4e04342",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
