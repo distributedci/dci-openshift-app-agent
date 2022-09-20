@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19401d66_3b402984",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-20T15:20:17Z",
+      "side": 1,
+      "message": "After discussing offline with Tatiana, we reached the point that, maybe, an `ignore_errors: true` is enough here. If the preflight check is not executed, we will not have logs for that and we will pass to the next execution and that\u0027s all. Tatiana has created an issue on preflight side in the meanwhile.",
+      "revId": "35b28a7f30603a17d5567ebc82b2a3e2f8027d34",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
