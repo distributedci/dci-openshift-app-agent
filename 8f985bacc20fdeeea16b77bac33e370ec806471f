@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "476dbf26_74877109",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-20T11:28:49Z",
+      "side": 1,
+      "message": "I\u0027m a bit lost here, and also I cannot see the included task in the debug job. What\u0027s the main purpose of this change? Where is dci_all_components_are_ga exactly used afterwards? Or is this change just intending to calculate it and then use it in future changes?",
+      "revId": "8f985bacc20fdeeea16b77bac33e370ec806471f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
