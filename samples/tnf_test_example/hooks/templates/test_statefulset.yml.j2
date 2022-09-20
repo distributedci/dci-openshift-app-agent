@@ -36,7 +36,7 @@ spec:
       runtimeClassName: {{ runtime_class_name }}
 {% endif %}
       containers:
-        - image: {{ dci_openshift_app_image | default('quay.io/testnetworkfunction/cnf-test-partner:latest') }}
+        - image: {{ dci_openshift_app_image | default('registry.access.redhat.com/ubi8/nginx-120') }}
           imagePullPolicy: IfNotPresent
           name: test
           ports:
@@ -48,6 +48,7 @@ spec:
               memory: 512Mi
               cpu: 2000m
             limits:
+              hugepages-2Mi: 100Mi
               memory: 512Mi
               cpu: 2000m
 {% else %}
@@ -55,6 +56,7 @@ spec:
               memory: 256Mi
               cpu: 0.10
             limits:
+              hugepages-2Mi: 100Mi
               memory: 512Mi
               cpu: 0.25
 {% endif %}
@@ -94,6 +96,12 @@ spec:
           volumeMounts:
           - mountPath: /data
             name: volume-claim-{{ app_ns }}
+          - mountPath: /hugepages-2Mi
+            name: hugepage-2mi
+      volumes:
+        - name: hugepage-2mi
+          emptyDir:
+            medium: HugePages-2Mi
       affinity:
         podAntiAffinity:
           requiredDuringSchedulingIgnoredDuringExecution:
