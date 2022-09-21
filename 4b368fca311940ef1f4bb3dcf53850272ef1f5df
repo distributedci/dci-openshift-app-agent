@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "52e4717c_daa1a178",
+        "filename": "samples/tnf_test_example/hooks/templates/test_statefulset.yml.j2",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-21T20:58:02Z",
+      "side": 1,
+      "message": "From the job log with the failure, I think is expecting the label to be an string an not a boolean: \"cannot unmarshal bool into Go struct field ObjectMeta.spec.template.metadata.labels of type string\"",
+      "revId": "4b368fca311940ef1f4bb3dcf53850272ef1f5df",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee4c52e9_46820160",
+        "filename": "samples/tnf_test_example/hooks/templates/test_statefulset.yml.j2",
+        "patchSetId": 7
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-21T20:58:02Z",
+      "side": 1,
+      "message": "Also, I think there is an extra \"podAntiAffinity\" line isn\u0027t? either this one of the one below",
+      "revId": "4b368fca311940ef1f4bb3dcf53850272ef1f5df",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
