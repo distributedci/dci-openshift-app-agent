@@ -37,7 +37,7 @@ arguments:
                       clusters for example)
     -d, --dev         Use script directory to find dcirc.sh and dci-openshift-app-agent.yml (for dev usage)
     -c CONFIG, --config CONFIG
-                      Path to config file. default is /etc/dci-openshift-app-agent/settings.yml
+                      Path to config file. Default is /etc/dci-openshift-app-agent/settings.yml
     -v, --verbose     Display commands
 EOF
     exit $1
