@@ -35,6 +35,41 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f78a806_8a14ed79",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T12:14:16Z",
+      "side": 1,
+      "message": "Thanks Tatiana for your feedback. From my side, I think it\u0027s better to keep the change as it is right now, please see my responses below.",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "520b742e_6f188e75",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T12:14:16Z",
+      "side": 1,
+      "message": "I\u0027m not really sure if this can be done, and also if it\u0027s better to move this to two separate files.\n\nIf-else controls different elements to be attached or not to the deployment/statefulset at the time they are deployed, I don\u0027t know if there\u0027s a way of deploying a simple statefulset/deployment and then attach everything to them depending on the case, but I know that it is not advisable in some cases such as the tnf labels (they should be installed at the time they are deployed, and not attached after deploying them).\n\nAnd also, regarding dividing into two files, it\u0027s also a matter of how the hook is structured. This file is called under deploy_resources_in_ns, which is called in install hook as many times as namespaces are declared in tnf_config. So, in the end, we would have to include conditions in deploy_resources_in_ns to select one file or another. So, finally, the result would be, I think, to move the if-else from the yml.j2 current file to deploy_resources_in_ns.\n\nI don\u0027t know if you have followed me 😂 but maybe this exercise can be good for a future patch. For the moment, I\u0027d prefer to keep it in this way, unless you think there\u0027s a clear way of doing this, knowing these constraints.",
+      "parentUuid": "c029ebbd_d8a8271c",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a7774cfb_32f980cb",
@@ -48,6 +83,24 @@
       "writtenOn": "2022-09-22T11:42:44Z",
       "side": 1,
       "message": "Hi Ramon, usually `loop` and `when` don\u0027t work together, it\u0027s better to rewrite the loop as \n\n```\n- name: Create local volumes\n  include_tasks: create_local_volumes.yml\n  loop:\n    - \"production-cnf-test-0\"\n    - \"production-cnf-test-1\"\n  loop_control:\n    loop_var: volume_name_suffix\n```\n\nor define a variable\n\n```\n- name: Create local volumes\n  vars:\n    app_ns: production-cnf\n  include_tasks: create_local_volumes.yml\n  loop:\n    - \"{{ app_ns }}-test-0\"\n    - \"{{ app_ns }}-test-1\"\n  loop_control:\n    loop_var: volume_name_suffix\n```",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bbf910ec_de929824",
+        "filename": "samples/tnf_test_example/hooks/deploy_resources_in_ns.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T12:14:16Z",
+      "side": 1,
+      "message": "The problem is that `app_ns` is not a local variable; it is defined in `install.yml`: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/samples/tnf_test_example/hooks/install.yml#L31.\n\nYou can see there that this playbook called `deploy_resources_in_ns.yml` is called as many times as namespaces are declared in `tnf_config` variable. In tnf_test_example, we have two namespaces: `test-cnf` and `production-cnf`. And we only want to install the local volumes when we are installing the `production-cnf` namespace and resources. So, we need the `when` there, to avoid the installation in other namespaces. Then, the `loop` is just to make easier the creation of the volumes; as we have two pods, we have to create two volumes.\n\nSo, having said that, honestly, I don\u0027t know another way of rewriting this, taking into account these constraints. Do you have any idea? Or can it be maintained in the way I defined?",
+      "parentUuid": "a7774cfb_32f980cb",
       "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -71,6 +124,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ef221524_d731e9b6",
+        "filename": "samples/tnf_test_example/hooks/deploy_resources_in_ns.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T12:14:16Z",
+      "side": 1,
+      "message": "In the same way than in my previous comment, `app_ns` is defined in the install hook, so this cannot be changed, from my point of view.",
+      "parentUuid": "952d969e_51135a84",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ae07e44a_bc2a9e51",
         "filename": "samples/tnf_test_example/hooks/teardown.yml",
         "patchSetId": 4
@@ -82,6 +153,24 @@
       "writtenOn": "2022-09-22T11:42:44Z",
       "side": 1,
       "message": "Hi Ramon, line 35 is not needed probably because app_ns is already defined here",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fdb3ff2d_dde6e84c",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T12:14:16Z",
+      "side": 1,
+      "message": "It is like the other cases, I believe. Again, local volumes are only installed in production-cnf namespace, so that we only need to delete volumes in that namespace. For this, we need to iterate over tnf_config variable, extract the namespace from each item and check if the namespace is production-cnf. Again, I don\u0027t know if there\u0027s a better way of doing this, knowing this.",
+      "parentUuid": "ae07e44a_bc2a9e51",
       "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
