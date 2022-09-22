@@ -16,6 +16,74 @@
       "message": "Hi guys, can somebody take a look to the change to merge it? Because I need to continue integrating other features and there may be merge conflicts if I don\u0027t merge this before. It\u0027s an easy one, I promise, thanks!!",
       "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c029ebbd_d8a8271c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T11:42:44Z",
+      "side": 1,
+      "message": "Hi Ramon,\n\nThank you for CR. The file deploy_resources_in_ns.yml is a bit of a mix of two different deployments, it\u0027s an if/else code. Maybe it\u0027s possible to split it into deploy_production and deploy_test and move the common parts aside to reuse them both for production and test?",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7774cfb_32f980cb",
+        "filename": "samples/tnf_test_example/hooks/deploy_resources_in_ns.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T11:42:44Z",
+      "side": 1,
+      "message": "Hi Ramon, usually `loop` and `when` don\u0027t work together, it\u0027s better to rewrite the loop as \n\n```\n- name: Create local volumes\n  include_tasks: create_local_volumes.yml\n  loop:\n    - \"production-cnf-test-0\"\n    - \"production-cnf-test-1\"\n  loop_control:\n    loop_var: volume_name_suffix\n```\n\nor define a variable\n\n```\n- name: Create local volumes\n  vars:\n    app_ns: production-cnf\n  include_tasks: create_local_volumes.yml\n  loop:\n    - \"{{ app_ns }}-test-0\"\n    - \"{{ app_ns }}-test-1\"\n  loop_control:\n    loop_var: volume_name_suffix\n```",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "952d969e_51135a84",
+        "filename": "samples/tnf_test_example/hooks/deploy_resources_in_ns.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T11:42:44Z",
+      "side": 1,
+      "message": "as above, app_ns is better to define as a variable",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae07e44a_bc2a9e51",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T11:42:44Z",
+      "side": 1,
+      "message": "Hi Ramon, line 35 is not needed probably because app_ns is already defined here",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
