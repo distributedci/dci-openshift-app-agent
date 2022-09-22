@@ -70,6 +70,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "333abf4d_1af9158a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T12:48:21Z",
+      "side": 1,
+      "message": "Thanks for the explanations Ramon, I see the point, that\u0027s how CNF cert suite is designed. The job works fine, let\u0027s merge it.",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a7774cfb_32f980cb",
@@ -101,6 +118,24 @@
       "side": 1,
       "message": "The problem is that `app_ns` is not a local variable; it is defined in `install.yml`: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/samples/tnf_test_example/hooks/install.yml#L31.\n\nYou can see there that this playbook called `deploy_resources_in_ns.yml` is called as many times as namespaces are declared in `tnf_config` variable. In tnf_test_example, we have two namespaces: `test-cnf` and `production-cnf`. And we only want to install the local volumes when we are installing the `production-cnf` namespace and resources. So, we need the `when` there, to avoid the installation in other namespaces. Then, the `loop` is just to make easier the creation of the volumes; as we have two pods, we have to create two volumes.\n\nSo, having said that, honestly, I don\u0027t know another way of rewriting this, taking into account these constraints. Do you have any idea? Or can it be maintained in the way I defined?",
       "parentUuid": "a7774cfb_32f980cb",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c96cebf_a7f0e748",
+        "filename": "samples/tnf_test_example/hooks/deploy_resources_in_ns.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T12:48:21Z",
+      "side": 1,
+      "message": "Thanks Ramon, I see the issue. I checked the job, your approach works, so let\u0027s keep it: \n\nhttps://www.distributed-ci.io/jobs/ea7d59db-5358-4fd8-a1fb-fe4873363130/jobStates#89724158-1060-4aa2-82c9-8e95271f25f5:file10\n\nhttps://www.distributed-ci.io/jobs/ea7d59db-5358-4fd8-a1fb-fe4873363130/jobStates#89724158-1060-4aa2-82c9-8e95271f25f5:file19",
+      "parentUuid": "bbf910ec_de929824",
       "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -140,6 +175,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a56b340c_9b037eaf",
+        "filename": "samples/tnf_test_example/hooks/deploy_resources_in_ns.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T12:48:21Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ef221524_d731e9b6",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae07e44a_bc2a9e51",
@@ -171,6 +224,24 @@
       "side": 1,
       "message": "It is like the other cases, I believe. Again, local volumes are only installed in production-cnf namespace, so that we only need to delete volumes in that namespace. For this, we need to iterate over tnf_config variable, extract the namespace from each item and check if the namespace is production-cnf. Again, I don\u0027t know if there\u0027s a better way of doing this, knowing this.",
       "parentUuid": "ae07e44a_bc2a9e51",
+      "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee429c8e_f0fb5f42",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-22T12:48:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fdb3ff2d_dde6e84c",
       "revId": "0b9c8f05484bc747ea73f64916ca1a1ec5336faa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
