@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "34508ffd_e31626e2",
+        "filename": "samples/tnf_test_example/hooks/templates/test_statefulset.yml.j2",
+        "patchSetId": 7
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T07:50:25Z",
+      "side": 1,
+      "message": "Yes, it\u0027s true we have to use a string there, in fact it is what CNF Cert Suite suggests, but as value is \"true\", I tried with a boolean first of all. I\u0027ll change.",
+      "parentUuid": "52e4717c_daa1a178",
+      "revId": "4b368fca311940ef1f4bb3dcf53850272ef1f5df",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ee4c52e9_46820160",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-09-21T20:58:02Z",
       "side": 1,
       "message": "Also, I think there is an extra \"podAntiAffinity\" line isn\u0027t? either this one of the one below",
+      "revId": "4b368fca311940ef1f4bb3dcf53850272ef1f5df",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd0c2ba2_e73dfc9f",
+        "filename": "samples/tnf_test_example/hooks/templates/test_statefulset.yml.j2",
+        "patchSetId": 7
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-22T07:50:25Z",
+      "side": 1,
+      "message": "hehe, typical programming error when you are working several hours without stop x) I\u0027ll fix it",
+      "parentUuid": "ee4c52e9_46820160",
       "revId": "4b368fca311940ef1f4bb3dcf53850272ef1f5df",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
