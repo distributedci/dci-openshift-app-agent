@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "65c61c65_05f6b20b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-22T19:20:23Z",
+      "side": 1,
+      "message": "check dallas ocp-4.9-vanilla example-cnf",
+      "revId": "19143b0c45ae594940ed42e7540fa3c5f16d2112",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
