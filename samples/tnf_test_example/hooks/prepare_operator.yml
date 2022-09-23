@@ -11,9 +11,9 @@
     catalog_path: "{{ provisionhost_registry }}/testnetworkfunction/{{ tnf_operator_to_install.operator_name }}-disconnected-catalog"
     catalog_version: "{{ tnf_operator_to_install.operator_version }}_{{ lookup('password', '/dev/null length=16 chars=ascii_lowercase,digits') }}"
 
-- name: Create a common catalog image for simple-demo-operator bundle to be tested in disconnected environment
+- name: Create a common catalog image for operator bundle to be tested in disconnected environment
   block:
-    - name: Create a catalog for simple-demo-operator < 4.9
+    - name: Create a catalog for operator < 4.9
       environment:
         - REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file}}"
       shell: |
@@ -24,7 +24,7 @@
         chdir: "{{ tnf_test_example_prerun_tmp_dir.path }}"
       when: ocp_version_min | int < 9
 
-    - name: Create a catalog for simple-demo-operator >= 4.9 (FBC)
+    - name: Create a catalog for operator >= 4.9 (FBC)
       block:
         - name: "Create index directory"
           file:

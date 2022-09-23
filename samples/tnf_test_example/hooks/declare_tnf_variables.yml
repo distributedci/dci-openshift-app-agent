@@ -5,9 +5,9 @@
 - name: Set tnf_operator_to_install variable
   set_fact:
     tnf_operator_to_install:
-      operator_name: simple-demo-operator
-      operator_version: "v0.0.6"
-      operator_bundle: "quay.io/telcoci/simple-demo-operator-bundle@sha256:6cfbca9b14a51143cfc5d0d56494e7f26ad1cd3e662eedd2bcbebf207af59c86"
+      operator_name: kubemq-operator
+      operator_version: v1.7.8
+      operator_bundle: "registry.connect.redhat.com/kubemq/kubemq-operator-bundle@sha256:9009198860c7a1e0de4f429261d442b75b5b2893a943bb77914b14d643db8829"
   when: tnf_operator_to_install is not defined
 
 # Helm chart obtained from https://charts.openshift.io/index.yaml
