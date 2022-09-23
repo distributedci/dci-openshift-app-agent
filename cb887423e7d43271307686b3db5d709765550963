@@ -50,6 +50,23 @@
       "message": "Don\u0027t know what\u0027s going on with Zuul, if not reviewed before, I\u0027ll take a look on Monday",
       "revId": "cb887423e7d43271307686b3db5d709765550963",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5eba3e0a_bf90e84d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-23T16:44:09Z",
+      "side": 1,
+      "message": "LGTM, thanks!",
+      "revId": "cb887423e7d43271307686b3db5d709765550963",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
