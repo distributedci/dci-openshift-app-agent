@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.9-vanilla example-cnf",
       "revId": "19143b0c45ae594940ed42e7540fa3c5f16d2112",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "463423b1_ed3eacab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-23T07:14:37Z",
+      "side": 1,
+      "message": "everything works, thanks Beto! https://www.distributed-ci.io/jobs/6a151c79-6e59-4fd2-9fa3-f1cd79765f9d/jobStates ",
+      "revId": "19143b0c45ae594940ed42e7540fa3c5f16d2112",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
