@@ -33,6 +33,23 @@
       "message": "Change is ready for review and merge if it\u0027s fine",
       "revId": "170899f1b08234280dc2c4717ae68ac2721b59bd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49ce4c2e_1194c254",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-23T18:56:31Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "170899f1b08234280dc2c4717ae68ac2721b59bd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
