@@ -16,6 +16,23 @@
       "message": "Change is ready for review but not for merging, because we need to make sure that affinity-required test passes (from https://github.com/test-network-function/cnf-certification-test/pull/523#event-7439244964)",
       "revId": "170899f1b08234280dc2c4717ae68ac2721b59bd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55db827a_81f065a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-23T10:41:22Z",
+      "side": 1,
+      "message": "Change is ready for review and merge if it\u0027s fine",
+      "revId": "170899f1b08234280dc2c4717ae68ac2721b59bd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
