@@ -1,4 +1,5 @@
 ---
+# Temporary solution until OCP 4.12 is officially released.
 - name: "Labeling namespace to comply with PodSecurity profiles"
   community.kubernetes.k8s:
     definition:
