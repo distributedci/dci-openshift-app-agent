@@ -16,6 +16,23 @@
       "message": "Change is working fine.",
       "revId": "e7db5f697c6bd6eaf00b84fde0b50bc1a440bf36",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "875f74a3_2513d3e0",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-26T13:26:35Z",
+      "side": 1,
+      "message": "Hi Ramon, we got throttling by quay.io previously with these settings. I\u0027d prefer to use 2 retries instead of 6 to avoid that.",
+      "revId": "e7db5f697c6bd6eaf00b84fde0b50bc1a440bf36",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
