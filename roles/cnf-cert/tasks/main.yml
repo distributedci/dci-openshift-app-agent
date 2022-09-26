@@ -105,7 +105,7 @@
       podman build -t {{ tnf_image }} \
       --build-arg TNF_VERSION={{ tnf_version_image }} \
       --build-arg TNF_SRC_URL=https://github.com/test-network-function/cnf-certification-test \
-      --build-arg OPENSHIFT_VERSION={{ ocp_version_full }} .
+      --build-arg OPENSHIFT_VERSION=4.12.0-ec.2 .
     args:
       chdir: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}"
 
