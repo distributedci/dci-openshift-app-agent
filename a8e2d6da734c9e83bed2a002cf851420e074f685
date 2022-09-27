@@ -16,6 +16,40 @@
       "message": "Change is ready for review, working fine in dallas, we don\u0027t need to test it on libvirt because it only involves OCP 4.12 and BOS2 has OCP 4.11 installed.",
       "revId": "a8e2d6da734c9e83bed2a002cf851420e074f685",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "882ad902_f795ad13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-27T12:53:27Z",
+      "side": 1,
+      "message": "Looks god to me but I think that the changes are not temporary.",
+      "revId": "a8e2d6da734c9e83bed2a002cf851420e074f685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a246a6e_d1b76afc",
+        "filename": "samples/basic_example/hooks/install.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-27T12:53:27Z",
+      "side": 1,
+      "message": "Hello Ramón, \n\nTHis is not a Temporary solution. Starting 4.12 for every workload that we control the deployment we should start adding the proper security profile and restring capabilities to be in compliance.\n\nThanks!",
+      "revId": "a8e2d6da734c9e83bed2a002cf851420e074f685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
