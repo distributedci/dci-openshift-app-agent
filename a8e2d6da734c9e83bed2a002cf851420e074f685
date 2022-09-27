@@ -50,6 +50,24 @@
       "message": "Hello Ramón, \n\nTHis is not a Temporary solution. Starting 4.12 for every workload that we control the deployment we should start adding the proper security profile and restring capabilities to be in compliance.\n\nThanks!",
       "revId": "a8e2d6da734c9e83bed2a002cf851420e074f685",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf5bad97_e82c84bd",
+        "filename": "samples/basic_example/hooks/install.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-27T13:23:04Z",
+      "side": 1,
+      "message": "Thanks Beto, I believed it was temporary, but if not, I\u0027ll remove the comments regarding that, it\u0027s not a problem. Thanks!",
+      "parentUuid": "5a246a6e_d1b76afc",
+      "revId": "a8e2d6da734c9e83bed2a002cf851420e074f685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
