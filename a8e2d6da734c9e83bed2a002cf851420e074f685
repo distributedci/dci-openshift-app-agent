@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd78da18_531afc21",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-27T11:25:30Z",
+      "side": 1,
+      "message": "Change is ready for review, working fine in dallas, we don\u0027t need to test it on libvirt because it only involves OCP 4.12 and BOS2 has OCP 4.11 installed.",
+      "revId": "a8e2d6da734c9e83bed2a002cf851420e074f685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
