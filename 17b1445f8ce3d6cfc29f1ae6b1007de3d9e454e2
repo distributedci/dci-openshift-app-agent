@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d61047e8_06aefa9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-28T13:50:12Z",
+      "side": 1,
+      "message": "Change is ready for review, I managed to make the operator tnf test work with mongodb-enterprise operator. Let\u0027s see how it goes on libvirt",
+      "revId": "17b1445f8ce3d6cfc29f1ae6b1007de3d9e454e2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
