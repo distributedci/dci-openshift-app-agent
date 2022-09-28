@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0cc319f9_8857ee2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-28T15:25:37Z",
+      "side": 1,
+      "message": "Hi Charles, thanks for the review! \nI intentionally removed partner_email and partner_name because they are not used in the PR name for certified-operators as they are for helm-chart PRs. So I used the chance to reduce a number of required vars in the config.",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fa88bcf5_2b30581a",
@@ -48,6 +65,24 @@
       "writtenOn": "2022-09-28T14:12:34Z",
       "side": 1,
       "message": "I am not a big fan of using a shell cmd where there are already a ansible based tasks that are doing the same thing.",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c981df3_fb46409f",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-28T15:25:37Z",
+      "side": 1,
+      "message": "well, I believe here the shell is better:\n1/ much shorter, 4 lines and 1 task vs 12 lines and 2 tasks\n2/ more robust, there is no problematic regexp/lineinfile.",
+      "parentUuid": "fa88bcf5_2b30581a",
       "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +104,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a04d5d0_aa6369f1",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-28T15:25:37Z",
+      "side": 1,
+      "message": "Not sure if I got your comment. This part is tested, and it works as designed:\n- If \"com.redhat.openshift.versions\" is present, it passes\n- If \"com.redhat.openshift.versions\" is absent, it fails.",
+      "parentUuid": "6c321086_ca9966c8",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cae71ab3_146f18be",
@@ -82,6 +135,24 @@
       "writtenOn": "2022-09-28T14:12:34Z",
       "side": 1,
       "message": "typo here: {{ partner_email }}",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4acf1bdf_344f4b4e",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-28T15:25:37Z",
+      "side": 1,
+      "message": "Hi Charles, I intentionally removed partner_email because it was a useless variable - displayed nowhere, impacted nothing. We already require quite a heavy config from the partners, so I tried to reduce the number of variables if possible.",
+      "parentUuid": "cae71ab3_146f18be",
       "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
