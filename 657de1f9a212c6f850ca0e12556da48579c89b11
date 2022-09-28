@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f099b3e7_fab020d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-28T15:18:08Z",
+      "side": 1,
+      "message": "Still having issues with tnf side, they are working on the fix here: https://github.com/test-network-function/cnf-certification-test/pull/554. So, change can be reviewed but not merged yet.",
+      "revId": "657de1f9a212c6f850ca0e12556da48579c89b11",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
