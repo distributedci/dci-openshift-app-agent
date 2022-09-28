@@ -16,6 +16,23 @@
       "message": "Change is ready for review, I managed to make the operator tnf test work with mongodb-enterprise operator. Let\u0027s see how it goes on libvirt",
       "revId": "17b1445f8ce3d6cfc29f1ae6b1007de3d9e454e2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd6ad35e_2aa0dc7c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-28T15:35:00Z",
+      "side": 1,
+      "message": "libvirt job is not correct, it is launching basic_example instead of tnf_test_example. I believe it is because of the latest changes on dci-check-change on dci-openshift-agent. I\u0027d like to wait till having it fixed to have a successful libvirt job",
+      "revId": "17b1445f8ce3d6cfc29f1ae6b1007de3d9e454e2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
