@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "a2299fb3eb0614fe8da14ed911f2b14042c7a27d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e1da7ce_35d96736",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-28T17:01:41Z",
+      "side": 1,
+      "message": "Now yes, operator cert is passing in libvirt as well as preflight, change ready.",
+      "revId": "a2299fb3eb0614fe8da14ed911f2b14042c7a27d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
