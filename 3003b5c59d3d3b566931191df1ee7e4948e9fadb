@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee7bbba1_73f69551",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-09-28T13:53:37Z",
+      "side": 1,
+      "message": "lgtm, we just need to validate it in a job 😊",
+      "revId": "3003b5c59d3d3b566931191df1ee7e4948e9fadb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
