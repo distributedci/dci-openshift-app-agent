@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7141d2cd_25d8d7ff",
+        "filename": "group_vars/all",
+        "patchSetId": 12
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-09-28T08:14:23Z",
+      "side": 1,
+      "message": "Some roles, like the mirror-ocp-release use this very same variable but with a different name \"client_tools\". This raises two concerns from my side:\n- The fact that we need to define the same variable from different files, and apparently to make the same use of them so we\u0027re not reusing code.\n- Using different names for two variables with the same scope.",
+      "revId": "eeaf56f50fbec6f7348e8ac0dfa6013e4d01b252",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6096261a_b83e4422",
