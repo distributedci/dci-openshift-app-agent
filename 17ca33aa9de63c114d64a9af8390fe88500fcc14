@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f98e281_571038b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-28T09:57:48Z",
+      "side": 1,
+      "message": "Hello everyone,\n\nthe idea is to implement fully automated certification for operators:\n- Create cert project\n- Push Preflight test results in that project\n- Open cert PR which will read created cert project to ensure that the tests are green\n\nHere is the test job: https://www.distributed-ci.io/jobs/a67fb1c1-04f1-44c6-b87f-d56a4fa91634/jobStates \nthat opens cert project: https://connect.redhat.com/projects/63330affbc888bc1ff145410/overview\nand cert PR: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1321 \n\nThanks.",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
