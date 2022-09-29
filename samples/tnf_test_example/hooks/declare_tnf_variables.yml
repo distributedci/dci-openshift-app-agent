@@ -18,5 +18,4 @@
       image_repository: registry.access.redhat.com/ubi8/nginx-118
       app_version: 1-42
   when: tnf_helm_chart_to_install is not defined
-
 ...
