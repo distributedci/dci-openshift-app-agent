@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab2506db_609eff0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T12:06:44Z",
+      "side": 1,
+      "message": "Change is working fine in dallas, and does not depend on the change on cnf-certification-test side, so it can be merged separately.",
+      "revId": "e031a9bcae2a9092bad6277188604ffef5bbe981",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
