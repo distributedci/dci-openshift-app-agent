@@ -137,6 +137,7 @@
     - redhat-pre-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tasks:
     - block:
 
@@ -154,6 +155,7 @@
   hosts: jumphost
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tags:
     - pre-run
     - partner-pre-run
@@ -178,6 +180,7 @@
     - running
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tasks:
     - block:
         - name: Set job state - running
@@ -234,6 +237,7 @@
     - redhat-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tasks:
     - block:
 
@@ -255,6 +259,7 @@
     - partner-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tasks:
     - block:
 
@@ -276,6 +281,7 @@
     - testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tasks:
     - block:
 
@@ -291,6 +297,7 @@
     - post-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file }}"
   tasks:
     - block:
         - name: Run the post-run hook
@@ -309,6 +316,7 @@
     - success
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    REGISTRY_AUTH_FILE: "{{ pullsecret_tmp_file}}"
   tasks:
     - name: "Run common logging process"
       include_tasks: plays/common_logging.yml
