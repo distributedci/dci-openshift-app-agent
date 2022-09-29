@@ -33,6 +33,23 @@
       "message": "Libvirt part is fine (dual-stack test is failing as expected because the cluster is single-stack), change is ready for review and merge",
       "revId": "049950f9db320353bfb0cfb745e28429967f1078",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34626442_5cd1709a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-09-29T18:59:08Z",
+      "side": 1,
+      "message": "LGTM, I was thinking in the future we can add a validation to get the network cluster information and if there is dualstack then we can enable the service dual-stack option, otherwise we do not.",
+      "revId": "049950f9db320353bfb0cfb745e28429967f1078",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
