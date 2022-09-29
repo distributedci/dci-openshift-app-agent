@@ -52,6 +52,69 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1ef7795_a0ac868b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T09:30:22Z",
+      "side": 1,
+      "message": "Hi Tatiana, thanks for this great job. I have some questions but mostly related to the workflow it is followed, probably you can ignore them but I\u0027d like to understand several things before giving a +2",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "315fc6bb_5f09a681",
+        "filename": "roles/create-certification-project/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T09:30:22Z",
+      "side": 1,
+      "message": "By seeing this, I understand that create_container_project and create_operator_project variables have to be defined for each item in preflight_operators_to_certify, but by checking the table at the beginning of this README file, it\u0027s like you only need to define these variables once. What\u0027s the approach then?",
+      "range": {
+        "startLine": 38,
+        "startChar": 0,
+        "endLine": 43,
+        "endChar": 33
+      },
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "498344ab_78113ad8",
+        "filename": "roles/create-certification-project/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T09:30:22Z",
+      "side": 1,
+      "message": "nit: `github_token_path` (with `...`)",
+      "range": {
+        "startLine": 60,
+        "startChar": 17,
+        "endLine": 60,
+        "endChar": 34
+      },
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fa88bcf5_2b30581a",
@@ -207,6 +270,52 @@
       "side": 1,
       "message": "+1",
       "parentUuid": "4acf1bdf_344f4b4e",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "daf8fffd_1ea94f38",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T09:30:22Z",
+      "side": 1,
+      "message": "just curiosity, don\u0027t we have a table for items in preflight_containers_to_certify?",
+      "range": {
+        "startLine": 25,
+        "startChar": 3,
+        "endLine": 25,
+        "endChar": 23
+      },
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1df3d9a1_0c100730",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T09:30:22Z",
+      "side": 1,
+      "message": "just curiosity again: should create_container_project only be used with preflight_containers_to_certify and create_operator_project just with preflight_operators_to_certify? Or it doesn\u0027t matter, as proposed here?",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 301
+      },
       "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
