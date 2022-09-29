@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e54c9884_b29bd84e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T11:09:49Z",
+      "side": 1,
+      "message": "Change is working fine in dallas, we just need to confirm the same on libvirt (where the dual-stack tnf test has to fail because it is single-stack).\n\nResults:\n\n\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/e1fce768-cc20-4bed-8182-945e01fb865b/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/509\n\nExample of single-stack cluster -\u003e the dual-stack test has to fail -\u003e confirmed\n\n\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/5b522316-d01b-45c1-aca0-38adf37ea00b/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/509\n\nExample of dual-stack cluster -\u003e the dual-stack test has to pass -\u003e confirmed",
+      "revId": "049950f9db320353bfb0cfb745e28429967f1078",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
