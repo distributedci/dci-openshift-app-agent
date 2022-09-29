@@ -19,4 +19,8 @@
       app_version: 1-42
   when: tnf_helm_chart_to_install is not defined
 
+- name: Partner credentials
+  set_fact:
+    partner_creds: /opt/cache/tnf-sample.json
+  when: partner_creds is not defined
 ...
