@@ -87,6 +87,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "201df946_90e4d247",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-09-29T08:58:16Z",
+      "side": 1,
+      "message": "ack",
+      "parentUuid": "2c981df3_fb46409f",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c321086_ca9966c8",
@@ -122,6 +140,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f6cd36a_ced0ab66",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-09-29T08:58:16Z",
+      "side": 1,
+      "message": "if there by mistake two times the label \"com.redhat.openshift.versions\" in the annotations file, it will pass but the process will fail after.\nI agree this is not a common case.",
+      "parentUuid": "7a04d5d0_aa6369f1",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cae71ab3_146f18be",
@@ -153,6 +189,24 @@
       "side": 1,
       "message": "Hi Charles, I intentionally removed partner_email because it was a useless variable - displayed nowhere, impacted nothing. We already require quite a heavy config from the partners, so I tried to reduce the number of variables if possible.",
       "parentUuid": "cae71ab3_146f18be",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f9f217a_641e0791",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 76,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-09-29T08:58:16Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "4acf1bdf_344f4b4e",
       "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
