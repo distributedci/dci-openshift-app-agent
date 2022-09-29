@@ -276,6 +276,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4db9d2ce_9e10d4bd",
+        "filename": "roles/create-pr/tasks/helm_chart_verifier.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-09-29T11:16:32Z",
+      "side": 1,
+      "message": "Probably not so relevant, but since Charles pointed out the same detail in the past, I thought it worth mentioning that here as well the email is set to {{ partner_email }} instead of {{ github_username }}.",
+      "revId": "17ca33aa9de63c114d64a9af8390fe88500fcc14",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "daf8fffd_1ea94f38",
         "filename": "roles/preflight/README.md",
         "patchSetId": 22
