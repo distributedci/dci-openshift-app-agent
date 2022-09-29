@@ -1,7 +1,8 @@
 ---
 - name: "Render bundle operator image"
+  environment:
+    DOCKER_CONFIG: "{{ preflight_tmp_dir.path }}"
   shell: >
-    {{ preflight_docker_config_env | default('') }}
     {{ opm_tool_path }} render {{ operator.bundle_image }}
   register: rendered_bundle
 
