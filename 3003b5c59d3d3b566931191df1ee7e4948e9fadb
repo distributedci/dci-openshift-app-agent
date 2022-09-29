@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "3003b5c59d3d3b566931191df1ee7e4948e9fadb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8050fe6b_b4ed1da7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-29T07:55:07Z",
+      "side": 1,
+      "message": "Hi Nacho, change works fine, thanks: https://www.distributed-ci.io/jobs/92cea399-dfe8-47a2-8420-80b72b05590d/jobStates#addf3fa7-adb3-435e-859f-fabc48ab34ae:file84 ",
+      "revId": "3003b5c59d3d3b566931191df1ee7e4948e9fadb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
