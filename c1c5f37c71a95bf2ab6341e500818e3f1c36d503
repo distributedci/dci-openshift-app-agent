@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "c1c5f37c71a95bf2ab6341e500818e3f1c36d503",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6613122_c42c683a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T09:47:20Z",
+      "side": 1,
+      "message": "I was just confirming, with the latest jobs that we need to set an entry for registry.connect.redhat.com in BOS2 partner_config file, but not in dallas. Dallas part is now fine, now I\u0027ll recheck in libvirt to re-confirm that everything is fine by re-setting again the correct partner_config file",
+      "revId": "c1c5f37c71a95bf2ab6341e500818e3f1c36d503",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
