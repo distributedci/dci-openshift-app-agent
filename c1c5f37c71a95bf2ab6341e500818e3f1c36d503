@@ -84,6 +84,24 @@
       "message": "Ramon, LGTM but just to have more details, are we replacing simple demo operator because is not certified? I checked this[1] and does not show anything, so I guess is not certified in any version? Do you know who maintains it? And why did we choose use simple demo in first place? \n\n[1] https://catalog.redhat.com/api/containers/v1/operators/bundles?filter\u003dcsv_name\u003d\u003dsimple-demo-operator.v0.0.6;organization\u003d\u003dcertified-operators",
       "revId": "c1c5f37c71a95bf2ab6341e500818e3f1c36d503",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7005e34e_73125ccd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-29T14:00:44Z",
+      "side": 1,
+      "message": "Yes, exactly, our simple-demo-operator is not certified. It was originally submitted here: https://github.com/redhat-openshift-ecosystem/certified-operators/tree/main/operators/simple-demo-operator, which may make us think that it is certified, but then it seems that it was removed from the official list, which is under catalog.redhat.com. So, we cannot consider it as certified, as a result. I think there\u0027s a Pyxis team that is in charge of maintaining that catalog, but I\u0027m not sure.\n\nThen, regarding why simple-demo-operator was used at the beginning, it was just to have an operator up and running on tnf_test_example to test operator test suite, but it was not passing affiliated-certification test suite because it was not certified. Then, we waited until having it published in the URL I commented before, but it was finally removed from certified operators in the official list, so I took the decision of changing the operator to be tested. That\u0027s the main idea behind this.",
+      "parentUuid": "bebac367_044b65a4",
+      "revId": "c1c5f37c71a95bf2ab6341e500818e3f1c36d503",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
