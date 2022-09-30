@@ -120,6 +120,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4483f0ce_6f80d1dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-30T15:35:32Z",
+      "side": 1,
+      "message": "Thanks",
+      "parentUuid": "7493f1ce_376d7abf",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a95edca9_684df10c",
@@ -133,6 +151,30 @@
       "writtenOn": "2022-09-30T12:19:37Z",
       "side": 1,
       "message": "pullsecret_tmp_file is only generated on disconnected environments, but preflight can be run in connected too. This task will fail in connected environments consequently. I commented about this here: https://github.com/dci-labs/service-configs/pull/74#issuecomment-1263352951\nSo, we will need to change the code in dci-openshift-app-agent.yml to call pullsecret.yml play in all cases.",
+      "range": {
+        "startLine": 38,
+        "startChar": 34,
+        "endLine": 38,
+        "endChar": 53
+      },
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c86ffa6b_921dc86f",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-30T15:35:32Z",
+      "side": 1,
+      "message": "Updated the dci-openshift-app-agent to perform the pull secret merges always.",
+      "parentUuid": "a95edca9_684df10c",
       "range": {
         "startLine": 38,
         "startChar": 34,
@@ -174,6 +216,24 @@
       "side": 1,
       "message": "In that case, the task at the end of this play can be deleted too",
       "parentUuid": "97c2ebe3_9d261e23",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34c0458a_f0388295",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-09-30T15:35:32Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d3214a39_2ae6aab0",
       "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
