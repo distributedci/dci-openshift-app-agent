@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "4f82f20e3f1b378598aa4b8535b448a14eb216bd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e7483da_c206c15c",
+        "filename": "requirements.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-09-30T17:26:45Z",
+      "side": 1,
+      "message": "We can remove this one too",
+      "revId": "4f82f20e3f1b378598aa4b8535b448a14eb216bd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
