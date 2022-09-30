@@ -86,6 +86,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "50a89dd7_dc89f95d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-30T13:38:09Z",
+      "side": 1,
+      "message": "Hi Beto, concerning preflight part, tests in Dallas are ok both for 4.11 and 4.7.59.\n\nIt would be nice to test in BOS2 as well, to ensure that the connected env is ok as well. \n\n\u003e Test-Hints: sno\nDepends-On: I8977a55ee5dacdc37e5fe55b893e05067f017337\nTest-Args-Hints: -e {\"preflight_operators_to_certify\":[{\"bundle_image\":\"quay.io/telcoci/simple-demo-operator:v0.0.6\",\"index_image\":\"quay.io/telcoci/simple-demo-operator-catalog:v0.0.6\"}]} -e partner_creds\u003d/opt/cache/partner_config.json -e pyxis_apikey_path\u003d/opt/cache/pyxis-apikey.txt",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a95edca9_684df10c",
