@@ -103,6 +103,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "73a8e0b7_0d87b9aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-30T15:24:45Z",
+      "side": 1,
+      "message": "\u003e Patch Set 7:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/bcf7d7fa-dbf1-4195-ac69-784a2d0c2a56/jobStates\n\u003e - SUCCESS https://www.distributed-ci.io/jobs/bb802a1f-b8d3-4038-9a6d-cdb3601c6f61/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/511\n\ntnf_test_example looks fine too, the only missing part is to test on BOS2, and as I said, we will need the change I commented before to make preflight work there.",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a95edca9_684df10c",
