@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97fe9cdb_b895aa2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-09-30T15:15:07Z",
+      "side": 1,
+      "message": "LGTM, let\u0027s the tests before merging it",
+      "revId": "3a4b679f6a24f52bd87ac34038e541cf8080a6ac",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
