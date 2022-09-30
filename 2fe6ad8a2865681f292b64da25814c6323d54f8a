@@ -69,6 +69,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "12705b99_11c0e8a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-30T13:10:32Z",
+      "side": 1,
+      "message": "Another comment",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a95edca9_684df10c",
@@ -105,6 +122,24 @@
       "writtenOn": "2022-09-30T08:13:51Z",
       "side": 1,
       "message": "It seems like we need to add somewhere a handler to remove tnf_test_example_prerun_tmp_dir\n\u003e notify:\n    - Remove tmp dir",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3214a39_2ae6aab0",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-30T13:10:32Z",
+      "side": 1,
+      "message": "In that case, the task at the end of this play can be deleted too",
+      "parentUuid": "97c2ebe3_9d261e23",
       "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
