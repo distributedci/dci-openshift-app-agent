@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7493f1ce_376d7abf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-09-30T12:27:05Z",
+      "side": 1,
+      "message": "Tip: if you want to test tnf_test_example + preflight in BOS2, you can add this to the commit, just to validate that the change is also working on libvirt:\n\n```\nTest-App-Hints: tnf_test_example\nTest-Args-Hints: -e dci_openshift_app_ns\u003d\"test-cnf\" -e do_cnf_cert\u003dtrue -e {\"tnf_config\":[{\"namespace\":\"test-cnf\",\"targetpodlabels\":[\"environment\u003dtest\"],\"target_crds\":[\"crdexamples.test-network-function.com\"],\"operators_regexp\":\"mongodb-enterprise\",\"exclude_connectivity_regexp\":\"\"}]} -e sync_cnf_cert_and_preflight\u003dtrue -e {\"preflight_operators_to_certify\":[]} -e partner_creds\u003d/opt/cache/partner_config.json -e pyxis_apikey_path\u003d/opt/cache/pyxis-apikey.txt\n```",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a95edca9_684df10c",
