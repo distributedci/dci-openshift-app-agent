@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a1178e0_0e9fed87",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-30T08:13:51Z",
+      "side": 1,
+      "message": "Hi Beto, thanks for the change, I\u0027ve scheduled the tests on 4.7, just to be sure about one of our partners :) Will add +2 once it\u0027s ok",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97c2ebe3_9d261e23",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-30T08:13:51Z",
+      "side": 1,
+      "message": "It seems like we need to add somewhere a handler to remove tnf_test_example_prerun_tmp_dir\n\u003e notify:\n    - Remove tmp dir",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
