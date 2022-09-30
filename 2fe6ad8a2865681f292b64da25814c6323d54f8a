@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "75faa764_f2eb7092",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-09-30T10:05:40Z",
+      "side": 1,
+      "message": "Hi Beto, for 4.7.59 all operator checks failed, the errors are here:\n\njob: https://www.distributed-ci.io/jobs/61065ae7-e1ba-4127-a7e2-a84fc2caf8c6/files\nlog file: preflight_operator_simple-demo-operator_0.0.6_preflight.log\n\nWhat did happen:\n- Preflight pulled and extracted quay.io/telcoci/simple-demo-operator-bundle@sha256:6cfbca9b14a51143cfc5d0d56494e7f26ad1cd3e662eedd2bcbebf207af59c86 into tmp dir\n\n- and started scorecard checks for this tmp sir\n\u003e operator-sdk scorecard --output json --selector\u003dsuite\u003dolm --kubeconfig /kubeconfig --wait-time 240s --namespace preflight-testing --service-account default --config /tmp/scorecard-test-config-283068322.yaml --verbose /tmp/preflight-1698686806/fs\n\n- strangely, this folder /tmp/preflight-1698686806/fs, where preflight extracted the image, doesn\u0027t contain any folders it normally should: /tmp/preflight-1698686806/fs/manifests and /tmp/preflight-1698686806/fs/metadata are absent.\n\nShould not be related to your change though, mostly it looks like a crane bug while pulling the image:\nhttps://github.com/redhat-openshift-ecosystem/openshift-preflight/blob/bad1155194fac7b835bd51852521fa2b5238ed22/certification/internal/engine/engine.go#L82\n\nI will restart the tests.",
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "97c2ebe3_9d261e23",
