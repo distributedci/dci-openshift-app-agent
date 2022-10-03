@@ -33,6 +33,40 @@
       "message": "thanks for including my changes Tatiana!",
       "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "244006f3_41402115",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-03T14:55:10Z",
+      "side": 1,
+      "message": "I still have one question regarding the if/else statement",
+      "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f8fa10c_6c9ff4b4",
+        "filename": "roles/create-pr/templates/ci.yaml.j2",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-03T14:55:10Z",
+      "side": 1,
+      "message": "is the following one working?\n{{ operator.merge_pr | default(false) | bool }}\nor is the if/else statement needed here?",
+      "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
