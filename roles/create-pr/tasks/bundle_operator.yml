@@ -21,7 +21,6 @@
 
 - name: "Render bundle operator image"
   shell: >
-    {{ preflight_docker_config_env | default('') }}
     {{ opm_tool_path }} render {{ operator.bundle_image }}
   register: rendered_bundle
 
@@ -63,7 +62,7 @@
   shell: |
     cat {{ work_dir }}/{{ fork_name }}/operators/{{ product_name }}/{{ product_version }}/metadata/annotations.yaml
   register: preflight_annotations
-  failed_when: "'com.redhat.openshift.versions' not in preflight_annotations.stdout"
+  # failed_when: "'com.redhat.openshift.versions' not in preflight_annotations.stdout"
 
 - name: "Render CI.yaml file"
   template:
