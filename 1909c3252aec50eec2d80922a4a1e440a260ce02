@@ -102,6 +102,24 @@
       "parentUuid": "3f8fa10c_6c9ff4b4",
       "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "134844cf_bd472409",
+        "filename": "roles/create-pr/templates/ci.yaml.j2",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-03T15:34:37Z",
+      "side": 1,
+      "message": "ok thank you for your answer",
+      "parentUuid": "f0097c67_fc8a0558",
+      "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
