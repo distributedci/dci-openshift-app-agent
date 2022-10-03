@@ -133,9 +133,17 @@
       set_fact:
         target_repository: "{{ sandbox_repository | default('redhat-openshift-ecosystem/certified-operators') }}"
 
+    - name: Copy authentication config
+      copy:
+        src: "{{ preflight_tmp_dir.path }}/config.json"
+        dest: "{{ preflight_operator_artifacts.path }}/config.json"
+
     - name: Create a PR for certification
       include_role:
         name: create-pr
+        apply:
+          environment:
+            - DOCKER_CONFIG: "{{ work_dir }}"
       vars:
         product_name: "{{ operator.name }}"
         product_version: "{{ operator.version }}"
