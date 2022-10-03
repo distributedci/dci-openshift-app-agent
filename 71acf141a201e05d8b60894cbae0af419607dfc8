@@ -108,6 +108,30 @@
       },
       "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfd826e2_d9393e1d",
+        "filename": "roles/preflight/tasks/prepare_operator_metadata.yml",
+        "patchSetId": 16
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-10-03T17:38:51Z",
+      "side": 1,
+      "message": "Ok, will keep it as it was originally. I didn\u0027t want to update create-pr because there is a dependency on there with the directory created by preflight.\n\nThanks",
+      "parentUuid": "4bcd2d21_fd9d8ac1",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 0
+      },
+      "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
