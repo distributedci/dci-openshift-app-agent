@@ -52,6 +52,41 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d293be64_b337eeb4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T15:40:47Z",
+      "side": 1,
+      "message": "Beto, forget this message, I\u0027ve been discussing about this with Tony and Tatiana and we\u0027ve agreed to use the same partner_config.json file for preflight and tnf-test-cnf pipelines, also maintaining the usage of partner_creds when calling to fbc-catalog instead of changing back to pullsecret_tmp_file, so nothing to worry about this.\n\nBut it\u0027s true that, if you can run a test on BOS2 deploying tnf_test_example, it would be great, to confirm it\u0027s working fine (it should). Preflight has already been verified and tnf-test-cnf has been tested in dallas, but we need the BOS2 test too.\n\nUpdating the hints to be used to really test it, these are the good ones (using the correct partner_creds var):\n\n```\nTest-App-Hints: tnf_test_example\nTest-Args-Hints: -e dci_openshift_app_ns\u003d\"test-cnf\" -e do_cnf_cert\u003dtrue -e {\"tnf_config\":[{\"namespace\":\"test-cnf\",\"targetpodlabels\":[\"environment\u003dtest\"],\"target_crds\":[\"crdexamples.test-network-function.com\"],\"operators_regexp\":\"mongodb-enterprise\",\"exclude_connectivity_regexp\":\"\"}]} -e sync_cnf_cert_and_preflight\u003dtrue -e {\"preflight_operators_to_certify\":[]} -e partner_creds\u003d/opt/cache/partner_config.json -e pyxis_apikey_path\u003d/opt/cache/pyxis-apikey.txt\n```",
+      "parentUuid": "5d511488_486fe4d1",
+      "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2acd514_41efbce3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T15:40:47Z",
+      "side": 1,
+      "message": "Updating my comments after discussing the pullsecret stuff with Tony and Tatiana. From my side, the change is fine, only needing to check tnf_test_example in BOS2. Also, one keeping opened one minor suggestion.",
+      "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4bcd2d21_fd9d8ac1",

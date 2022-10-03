@@ -209,6 +209,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "13a25f59_b0aefc43",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T15:40:47Z",
+      "side": 1,
+      "message": "Clarified with Tony that we will finally use partner_creds instead of pullsecret_tmp_file, I\u0027ll close this",
+      "parentUuid": "6b75451e_3bdf8696",
+      "range": {
+        "startLine": 38,
+        "startChar": 34,
+        "endLine": 38,
+        "endChar": 53
+      },
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "97c2ebe3_9d261e23",
