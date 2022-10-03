@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "33024640_2c79ee36",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-03T15:33:09Z",
+      "side": 1,
+      "message": "Thank you for the reviews!",
+      "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3f8fa10c_6c9ff4b4",
@@ -65,6 +82,24 @@
       "writtenOn": "2022-10-03T14:55:10Z",
       "side": 1,
       "message": "is the following one working?\n{{ operator.merge_pr | default(false) | bool }}\nor is the if/else statement needed here?",
+      "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0097c67_fc8a0558",
+        "filename": "roles/create-pr/templates/ci.yaml.j2",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-03T15:33:09Z",
+      "side": 1,
+      "message": "It\u0027s working but it put me \"False\" instead of \"false\": https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1338/files\n \nThat\u0027s why I had to move to the condition :(",
+      "parentUuid": "3f8fa10c_6c9ff4b4",
       "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
