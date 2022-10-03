@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cdb9faba_2fb5cd66",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T11:53:29Z",
+      "side": 1,
+      "message": "(rechecking because I\u0027ve updated the pullsecrets file in BOS2 according to what we should have there, preflight should pass)",
+      "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4bcd2d21_fd9d8ac1",
