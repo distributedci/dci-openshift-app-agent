@@ -187,6 +187,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6b75451e_3bdf8696",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T11:44:39Z",
+      "side": 1,
+      "message": "Is this done? Because I can still see the when condition when calling plays/pullsecrets.yml in dci-openshift-app-agent.yml file.\nThen, after checking the latest changes, I can see that now it is used DOCKER_CONFIG variable when calling to fbc-catalog role, but the file used for pullsecrets is still partner_creds one, not pullsecret_tmp_file. Is this what we finally want? (in that case, we\u0027d need to create different partner_creds file for each case; because the one used for preflight pipeline is not valid for tnf_test_example",
+      "parentUuid": "c86ffa6b_921dc86f",
+      "range": {
+        "startLine": 38,
+        "startChar": 34,
+        "endLine": 38,
+        "endChar": 53
+      },
+      "revId": "2fe6ad8a2865681f292b64da25814c6323d54f8a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "97c2ebe3_9d261e23",
         "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
         "patchSetId": 7

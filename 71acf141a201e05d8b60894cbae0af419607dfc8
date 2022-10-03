@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d511488_486fe4d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T11:44:39Z",
+      "side": 1,
+      "message": "I\u0027ve been testing this morning with tnf_test_example in dallas, including the change in service-configs repo to have the previous version of partner_config.json file, and I can still see that there are issues with tnf_test_example. It is not related to this change at all, but it is related to the pullsecret\u0027s story, and I believe we should finally decide if the variable to be used as env variable in fbc-catalog role is pullsecret_tmp_file or partner_creds, to do the appropriate changes in other repos such as service-configs and probably the pipelines.\n\nAlso, as it was confirmed that preflight is working fine on dallas and bos2, can we now test tnf_test_example on BOS2 in the following way?\n\n```\nTest-App-Hints: tnf_test_example\nTest-Args-Hints: -e dci_openshift_app_ns\u003d\"test-cnf\" -e do_cnf_cert\u003dtrue -e {\"tnf_config\":[{\"namespace\":\"test-cnf\",\"targetpodlabels\":[\"environment\u003dtest\"],\"target_crds\":[\"crdexamples.test-network-function.com\"],\"operators_regexp\":\"mongodb-enterprise\",\"exclude_connectivity_regexp\":\"\"}]} -e sync_cnf_cert_and_preflight\u003dtrue -e {\"preflight_operators_to_certify\":[]} -e partner_creds\u003d/opt/cache/tnf_sample.json -e pyxis_apikey_path\u003d/opt/cache/pyxis-apikey.txt\n```\n\nAlso, please find some comments below.",
+      "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4bcd2d21_fd9d8ac1",
+        "filename": "roles/preflight/tasks/prepare_operator_metadata.yml",
+        "patchSetId": 16
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T11:44:39Z",
+      "side": 1,
+      "message": "I think we can avoid this change and continue using `{{ preflight_docker_config_env | default(\u0027\u0027) }}`, because I\u0027ve seen this variable is used in other parts of the preflight and create-pr code, and effectively its value is the same than the env variable.\nIf changing this, then I guess we\u0027d need to change the other roles too, to use DOCKER_CONFIG env variable instead.\nBoth options are fine for me.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 0
+      },
+      "revId": "71acf141a201e05d8b60894cbae0af419607dfc8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
