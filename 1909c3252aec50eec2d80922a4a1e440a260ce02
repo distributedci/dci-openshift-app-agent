@@ -16,6 +16,23 @@
       "message": "Hello Ramon and Charles,\n\nThank you for checking!\n\nCharles, the change is tested:\n\n- If merge_pr is not defined, the default option `merge: false` is used in the ci.yaml: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1342/files\n\n- if merge_pr is set to true, ci.yaml contains `merge: true`: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1345/files\n\nRamon, the documentation is updated, and I also added some changes to create-certification-project requested previously.\n\nThanks!\n\n",
       "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "048f444a_dd6b3e74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T11:23:32Z",
+      "side": 1,
+      "message": "thanks for including my changes Tatiana!",
+      "revId": "1909c3252aec50eec2d80922a4a1e440a260ce02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
