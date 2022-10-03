@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a228a688_e9c616fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T10:28:02Z",
+      "side": 1,
+      "message": "Hi Fred, I\u0027ve been checking the history for the change in BOS2 and d-o-a repos and reaching this one that is still open. Let me write about what I\u0027ve been observing.\n\nI believe tnf_test_example was not working fine because you didn\u0027t define tnf_config variable, which is needed to build the scenario to be deployed and to run the tests.\n\nThen, in your test, we have the extreme case where tnf_config is not defined, and it\u0027s strange that the teardown task that deletes the local volumes created is failing, because it has the `tnf_config is defined` condition. I agree that the task should work in any circumstance, so let\u0027s see if we can fix this but maintaining the required conditions.",
+      "revId": "34fa587c1a4cbc881f3b6706878e1fbddb0a8a81",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4659676a_1b5a9754",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-03T10:28:02Z",
+      "side": 1,
+      "message": "I think this was the root cause of the original failure, because if tnf_config is not defined, pods_in_same_ns.namespace is not defined, then this variable cannot be created because tnf_config is undefined, which is the error message I saw.\n\nI understand that your change tries to check this, but we cannot get rid of the conditions removed, because we need to iterate over tnf_config and check that the namespace is production-cnf.\n\nThe task prior to this also iterates over tnf_config, but without defining any variable. That task worked in fact, so maybe I can propose the following modification to ensure this task passes if tnf_config is not defined + it does the proper checks.\n\nI propose the following:\n\n- teardown.yml -\u003e remove the 2 first tasks of the hook and include this instead:\n\n```\n- name: Delete testing resources\n  include_tasks: delete_testing_resources.yml\n  loop: \"{{ tnf_config }}\"\n  loop_control:\n    loop_var: pods_in_same_ns\n  when:\n    - tnf_config is defined\n    - tnf_config|length\n    - pods_in_same_ns.namespace is defined\n    - pods_in_same_ns.namespace|length\n```\n\n- crete delete_testing_resources.yml with the following content:\n\n```\n# Despite dci_openshift_app_ns is deleted in agent\u0027s\n# teardown, it will be removed here in order to delete\n# the local volumes without issues.\n- name: Delete namespaces if not done before\n  community.kubernetes.k8s:\n    api_version: v1\n    kind: Namespace\n    name: \"{{ pods_in_same_ns.namespace }}\"\n    state: absent\n    wait: yes\n    wait_sleep: 5\n    wait_timeout: 120\n\n- name: Delete local volumes created\n  include_tasks: delete_local_volumes.yml\n  vars:\n    app_ns: \"{{ pods_in_same_ns.namespace }}\"\n  when:\n    - app_ns \u003d\u003d \u0027production-cnf\u0027\n```",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 45
+      },
+      "revId": "34fa587c1a4cbc881f3b6706878e1fbddb0a8a81",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
