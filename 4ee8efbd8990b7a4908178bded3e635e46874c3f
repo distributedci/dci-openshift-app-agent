@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef7f23f3_315f18ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-04T09:24:15Z",
+      "side": 1,
+      "message": "Hi Beto, I tried to test but it failed 3 times in a row at \"Create FBC catalog\", don\u0027t know what\u0027s the issue :( ",
+      "revId": "4ee8efbd8990b7a4908178bded3e635e46874c3f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
