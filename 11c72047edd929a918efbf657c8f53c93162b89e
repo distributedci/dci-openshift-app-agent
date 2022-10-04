@@ -33,6 +33,23 @@
       "message": "I think it can be fine, can we test it on dallas and bos2?",
       "revId": "11c72047edd929a918efbf657c8f53c93162b89e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "861f7d4d_d1131b9c",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 139,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-04T07:52:47Z",
+      "side": 1,
+      "message": "Hi Beto, \n\n- preflight_tmp_dir is a config folder. It contains everything common between different operators that should not go into logs: preflight binary, registry cert, dockerconfig, etc. This folder lives during all preflight execution.\n\n- preflight_operator_artifacts is a log folder. It contains logs files for the current execution of preflight, for the current operator. The idea is to copy all the files from this folder into logs and delete the folder after every operator.\n\nHere you copy dockerconfig into the logs folder, and to be honest, I don\u0027t like the idea. I\u0027d prefer the other option you propose - to pass dockerconfig as a variable on the role level, we could do it here: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/tasks/tests_preflight_check_operator.yml#L136-L144 \n\nFrom the other side, nothing bad happens, you do it after the logs are uploaded and before the folder is deleted, so the config is not exposed in the dci logs. You probably want to keep the role as standalone as possible and remove excessive dependencies. I\u0027ll run the tests for the change.",
+      "revId": "11c72047edd929a918efbf657c8f53c93162b89e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
