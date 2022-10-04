@@ -16,6 +16,24 @@
       "message": "Hi Beto, I tried to test but it failed 3 times in a row at \"Create FBC catalog\", don\u0027t know what\u0027s the issue :( ",
       "revId": "4ee8efbd8990b7a4908178bded3e635e46874c3f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51fb3c24_33fb5148",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-04T10:15:26Z",
+      "side": 1,
+      "message": "It looks like the fbc-catalog change was merged after running cron.sh, so that the patch has not been downloaded on dallas jumphost and we don\u0027t have the code in `/usr/share/dci-openshift-agent/roles`",
+      "parentUuid": "ef7f23f3_315f18ef",
+      "revId": "4ee8efbd8990b7a4908178bded3e635e46874c3f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
