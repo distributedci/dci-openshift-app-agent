@@ -33,6 +33,23 @@
       "message": "Great work! a solid +2 from my side",
       "revId": "0cb43aa6610c1a92b768ec736e944ff48056b166",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "99b9029e_e413dd53",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-04T07:18:49Z",
+      "side": 1,
+      "message": "Thank you Charles 😊",
+      "revId": "0cb43aa6610c1a92b768ec736e944ff48056b166",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
