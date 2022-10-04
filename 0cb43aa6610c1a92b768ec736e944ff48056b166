@@ -16,6 +16,23 @@
       "message": "Change is ready for review.\nI\u0027ve finally make a change on the way this set of changes has been designed, because we have confirmed that the presence of istio makes some tnf tests to fail. So, the idea is that the code to enable istio in the pods under test (this CR) will still be there, because it is working fine, but it will be only used if this new variable, called tnf_enable_service_mesh, is set to true (false by default). So, for the moment, we will continue skipping this test, but at least we have confirmed it is passing fine when istio is configured, even though there are other tests that are failing.\n@Tony, @Beto, adding you as reviewers, as you were working with aspenmesh, just in case you want to review something about it. The istio-injection configuration is working fine, it has already been tested.",
       "revId": "0cb43aa6610c1a92b768ec736e944ff48056b166",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c2d1b64_d07dbd97",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-04T07:12:42Z",
+      "side": 1,
+      "message": "Great work! a solid +2 from my side",
+      "revId": "0cb43aa6610c1a92b768ec736e944ff48056b166",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
