@@ -16,6 +16,23 @@
       "message": "@Tatiana\n\nNot sure if I need to remove the project from connect to avoid the name conflicts.\n\nThanks",
       "revId": "11c72047edd929a918efbf657c8f53c93162b89e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "efd76097_1d5628f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-04T07:25:01Z",
+      "side": 1,
+      "message": "I think it can be fine, can we test it on dallas and bos2?",
+      "revId": "11c72047edd929a918efbf657c8f53c93162b89e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
