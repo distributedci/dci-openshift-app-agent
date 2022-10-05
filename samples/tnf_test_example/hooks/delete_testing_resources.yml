@@ -1,0 +1,23 @@
+---
+
+# Despite dci_openshift_app_ns is deleted in agent's
+# teardown, it will be removed here in order to delete
+# the local volumes without issues.
+- name: Delete namespaces if not done before
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ pods_in_same_ns.namespace }}"
+    state: absent
+    wait: yes
+    wait_sleep: 5
+    wait_timeout: 120
+
+- name: Delete local volumes created
+  include_tasks: delete_local_volumes.yml
+  vars:
+    app_ns: "{{ pods_in_same_ns.namespace }}"
+  when:
+    - app_ns == 'production-cnf'
+
+...
