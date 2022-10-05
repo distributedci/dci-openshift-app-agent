@@ -16,6 +16,23 @@
       "message": "The change I\u0027ve included should not affect to the results, it\u0027s just moving another task to delete_testing_resources. I\u0027ve seen libvirt job was working fine. From my side, it\u0027s ready for merging",
       "revId": "29b6d8f566dc6c3daa80d7458ea3c2778a965d1e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0769ba47_a1479e2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-05T20:42:18Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "29b6d8f566dc6c3daa80d7458ea3c2778a965d1e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
