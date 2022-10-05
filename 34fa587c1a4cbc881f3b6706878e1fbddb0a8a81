@@ -111,6 +111,30 @@
       },
       "revId": "34fa587c1a4cbc881f3b6706878e1fbddb0a8a81",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da840005_34f7629d",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-05T20:28:51Z",
+      "side": 1,
+      "message": "Thanks! I\u0027ve just added a small change in order to move another task to delete_testing_resources, because it comes from the change related to service-mesh",
+      "parentUuid": "06046f36_be5244fa",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 45
+      },
+      "revId": "34fa587c1a4cbc881f3b6706878e1fbddb0a8a81",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
