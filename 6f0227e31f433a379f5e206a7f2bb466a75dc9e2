@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f7ffed3_b29ebf82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-05T10:18:25Z",
+      "side": 1,
+      "message": "I\u0027ll check in dallas and if passes, I\u0027ll merge",
+      "revId": "6f0227e31f433a379f5e206a7f2bb466a75dc9e2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
