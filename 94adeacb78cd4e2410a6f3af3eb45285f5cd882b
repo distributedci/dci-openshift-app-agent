@@ -16,6 +16,23 @@
       "message": "added project id and restarted the job",
       "revId": "94adeacb78cd4e2410a6f3af3eb45285f5cd882b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1cf6ab30_56e8e048",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-05T13:10:44Z",
+      "side": 1,
+      "message": "Tests are now ok: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1351/files \n\nI\u0027ll remove the commented annotations.yaml verification and create_pr in the description.",
+      "revId": "94adeacb78cd4e2410a6f3af3eb45285f5cd882b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
