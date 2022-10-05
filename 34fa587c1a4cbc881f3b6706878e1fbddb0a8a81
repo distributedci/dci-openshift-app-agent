@@ -87,6 +87,30 @@
       },
       "revId": "34fa587c1a4cbc881f3b6706878e1fbddb0a8a81",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "06046f36_be5244fa",
+        "filename": "samples/tnf_test_example/hooks/teardown.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-10-05T20:12:59Z",
+      "side": 1,
+      "message": "sorry, forgot to push it...",
+      "parentUuid": "2a4a2afc_26c5d05b",
+      "range": {
+        "startLine": 25,
+        "startChar": 2,
+        "endLine": 26,
+        "endChar": 45
+      },
+      "revId": "34fa587c1a4cbc881f3b6706878e1fbddb0a8a81",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
