@@ -33,6 +33,24 @@
       "message": "we could maybe use fewer retries to avoid throttling\n\n\u003e retries: 2\n\u003e delay: 10\n\u003e until: not result.failed",
       "revId": "94e181dc2f2e41ace69d2fc98157d11001df1b18",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5186d44_bb49d0be",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 181,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-05T16:38:42Z",
+      "side": 1,
+      "message": "okey, done!",
+      "parentUuid": "da9fdaa8_0b3c4a86",
+      "revId": "94e181dc2f2e41ace69d2fc98157d11001df1b18",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
