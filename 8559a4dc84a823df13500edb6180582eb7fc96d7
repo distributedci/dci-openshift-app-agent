@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a5276a35_e7435493",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-07T16:10:56Z",
+      "side": 1,
+      "message": "Moving to WIP for the moment, because it looks like the issue is on Red Hat Connect portal.",
+      "revId": "8559a4dc84a823df13500edb6180582eb7fc96d7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
