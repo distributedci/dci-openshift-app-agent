@@ -55,6 +55,6 @@
   when:
     - dci_disconnected | default(false) | bool
     - provisionhost_registry|length
-    - pullsecret_tmp_file|length
+    - partner_creds|length
 
 ...

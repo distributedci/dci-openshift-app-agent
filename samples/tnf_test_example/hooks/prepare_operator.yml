@@ -29,7 +29,7 @@
 
 - name: Push catalog image into local registry
   shell: |
-    podman push --authfile {{ pullsecret_tmp_file }} \
+    podman push --authfile {{ partner_creds }} \
     {{ catalog_path }}:{{ catalog_version }}
 
 - name: Manage imageContentSourcePolicy update
@@ -37,7 +37,7 @@
     - name: "Get catalog SHA256"
       shell:
         cmd: |
-          skopeo inspect --authfile {{ pullsecret_tmp_file }} \
+          skopeo inspect --authfile {{ partner_creds }} \
           docker://{{ catalog_path }}:{{ catalog_version }} | jq -r '.Digest'
       register: catalog_sha
       retries: 5
@@ -47,7 +47,7 @@
 
     - name: Mirror images and save manifests into a temporary directory
       shell: |
-        {{ oc_tool_path }} adm catalog mirror -a {{ pullsecret_tmp_file }} \
+        {{ oc_tool_path }} adm catalog mirror -a {{ partner_creds }} \
         {{ catalog_path }}@{{ catalog_sha.stdout }} \
         {{ provisionhost_registry }} \
         --to-manifests={{ tnf_test_example_prerun_tmp_dir.path }}/tmp_oc
