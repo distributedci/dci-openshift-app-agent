@@ -16,6 +16,24 @@
       "message": "LGTM but I think there is a typo in the test-args so it runs the test with a chart from a remote location, let me update it and see how it goes :)",
       "revId": "163261443ca60b9a8311e652ab5a5bc6fa825447",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81458ad4_fc2c95f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-10T07:23:03Z",
+      "side": 1,
+      "message": "oups, my bad! I did not see there were two charts one local and one remote ^^",
+      "parentUuid": "5281bdf7_75cdf0bf",
+      "revId": "163261443ca60b9a8311e652ab5a5bc6fa825447",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
