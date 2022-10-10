@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12963c63_b9b99e36",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-10T13:42:04Z",
+      "side": 1,
+      "message": "This is working for me.\nMay I ask why it is likable to have a single branch name instead of generated one?",
+      "revId": "70eedd0166940b87f03ec6600e4b70166c17feb2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
