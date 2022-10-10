@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cc85cb09_474b687a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-10T20:22:44Z",
+      "side": 1,
+      "message": "Hi Charles, sorry for the issue, I found an issue in my previous testing (I mixed up the normal job and the voting job) and re-run the jobs. I also had to ensure that the remote branch does not exist before re-pushing it from local.\n\nTested:\n\n1/ Open a new PR when there is no other opened PR: https://www.distributed-ci.io/jobs/48cda326-dad8-48ea-9edd-f40f9f3a6d08/jobStates?sort\u003ddate\u0026task\u003dda345d8d-0225-41a0-9f9c-65c88ce3819b\n\n2/ Open a new PR + close the previous PR: https://www.distributed-ci.io/jobs/c71baf56-f7e4-4147-ba41-e8c6694cd06a/jobStates?sort\u003ddate\u0026task\u003d9677332a-76df-43d5-94f1-5af75177b6ad\n",
+      "revId": "e46e56b6eb0970ab1298dbd29782d71c1fe49540",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
