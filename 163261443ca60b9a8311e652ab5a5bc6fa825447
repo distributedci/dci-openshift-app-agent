@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5281bdf7_75cdf0bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-10-10T07:20:32Z",
+      "side": 1,
+      "message": "LGTM but I think there is a typo in the test-args so it runs the test with a chart from a remote location, let me update it and see how it goes :)",
+      "revId": "163261443ca60b9a8311e652ab5a5bc6fa825447",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
