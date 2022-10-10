@@ -16,6 +16,24 @@
       "message": "This is working for me.\nMay I ask why it is likable to have a single branch name instead of generated one?",
       "revId": "70eedd0166940b87f03ec6600e4b70166c17feb2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7ea9356_ed6cad92",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-10T13:58:09Z",
+      "side": 1,
+      "message": "Hi Charles, thanks for checking!\n\nTekton has a check to verify that we have at most one PR per operator: https://github.com/redhat-openshift-ecosystem/certification-releases/blob/main/4.9/ga/troubleshooting.md#submission-validation\n\nFor the moment, we create a new branch every time, it opens a new PR each time and it fails this submission-validation check.\n\nThe idea is to have a pinned branch name, then the same PR is updated by follow-up jobs: \n- Job 1, opens PR: https://www.distributed-ci.io/jobs/43ab76ce-c56a-450a-ac22-a2fd3f9f113a/jobStates\n- Jobs 2, updates the same PR: https://www.distributed-ci.io/jobs/2bbdfcda-f857-452f-bc51-45509d2bff81/jobStates",
+      "parentUuid": "12963c63_b9b99e36",
+      "revId": "70eedd0166940b87f03ec6600e4b70166c17feb2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

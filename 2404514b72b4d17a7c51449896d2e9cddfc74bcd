@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55270728_bebc7a12",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-10T13:58:09Z",
+      "side": 1,
+      "message": "The change is tested:\n\n- Job 1, opens PR: https://www.distributed-ci.io/jobs/43ab76ce-c56a-450a-ac22-a2fd3f9f113a/jobStates\n- Jobs 2, updates the same PR: https://www.distributed-ci.io/jobs/2bbdfcda-f857-452f-bc51-45509d2bff81/jobStates",
+      "revId": "2404514b72b4d17a7c51449896d2e9cddfc74bcd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
