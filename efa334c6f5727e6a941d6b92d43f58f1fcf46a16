@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "718488b9_11bd3815",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-13T09:11:06Z",
+      "side": 1,
+      "message": "Change is working fine, we need to merge this prior to https://github.com/test-network-function/cnf-certification-test/pull/579, else CILAB-721 will appear again in daily jobs.",
+      "revId": "efa334c6f5727e6a941d6b92d43f58f1fcf46a16",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
