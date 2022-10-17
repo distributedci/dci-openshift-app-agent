@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fda19e2b_89ce4c37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-10-17T17:10:47Z",
+      "side": 1,
+      "message": "Increase delay to be able to fix this kind of issue:\nhttps://www.distributed-ci.io/jobs/b4c5e1d7-217d-486a-85a9-dd5bf3fbd193/jobStates?sort\u003ddate\u0026task\u003ded73f4df-b288-4a47-93e1-59a5bf864b7a",
+      "revId": "797bc37fb34630e19a3a4cf94451fc5759a3b044",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
