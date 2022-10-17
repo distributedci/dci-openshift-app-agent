@@ -33,6 +33,24 @@
       "message": "I see no harm in increasing this, but if already with 5 mins is not able to delete the namespace, there might be something else blocking the deletion.",
       "revId": "797bc37fb34630e19a3a4cf94451fc5759a3b044",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a98e7773_da001c73",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 88,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-10-17T18:46:55Z",
+      "side": 1,
+      "message": "Definitely, I agree with you something blocks or slows the deletion. \nBut on my last job, I checked 20 minutes after and the nm was deleted.",
+      "parentUuid": "58bc9fab_c375a1f8",
+      "revId": "797bc37fb34630e19a3a4cf94451fc5759a3b044",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
