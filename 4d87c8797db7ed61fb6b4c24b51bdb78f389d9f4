@@ -33,6 +33,24 @@
       "message": "It thought the mode will remain the same but it changed (0644), it let\u0027s change it as well, just to remain the way it was:\n\n    mode: 0640",
       "revId": "4d87c8797db7ed61fb6b4c24b51bdb78f389d9f4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e7b6783_43f2e200",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-25T15:30:42Z",
+      "side": 1,
+      "message": "Here is the last test: \"group\": \"root\", \"mode\": \"0640\", \"owner\": \"dciteam\", it seems like the mode was untouched: https://www.distributed-ci.io/jobs/77dd3050-242d-4183-8025-424c6774e673/jobStates?sort\u003ddate\u0026task\u003dffa22c14-7a54-407c-aab1-3189cd7aef1c",
+      "parentUuid": "561915af_135d24e6",
+      "revId": "4d87c8797db7ed61fb6b4c24b51bdb78f389d9f4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
