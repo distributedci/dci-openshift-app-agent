@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "561915af_135d24e6",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-10-25T14:49:59Z",
+      "side": 1,
+      "message": "It thought the mode will remain the same but it changed (0644), it let\u0027s change it as well, just to remain the way it was:\n\n    mode: 0640",
+      "revId": "4d87c8797db7ed61fb6b4c24b51bdb78f389d9f4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
