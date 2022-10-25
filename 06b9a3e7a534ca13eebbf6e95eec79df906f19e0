@@ -51,6 +51,23 @@
       "parentUuid": "fb3f5cfd_c330beda",
       "revId": "06b9a3e7a534ca13eebbf6e95eec79df906f19e0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a476ed74_ee3b149c",
+        "filename": "roles/preflight/tasks/test_run_health_check.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-10-25T16:03:58Z",
+      "side": 1,
+      "message": "We also need to change oval-report.html\n\nhttps://www.distributed-ci.io/jobs/4083441c-6cae-46fe-a22c-1010f5166567/jobStates?sort\u003ddate\u0026task\u003d7426a10a-3cb8-4d69-8639-50115fdbb027",
+      "revId": "06b9a3e7a534ca13eebbf6e95eec79df906f19e0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
