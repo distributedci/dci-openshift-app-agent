@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fc24875_1648130e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-10-25T15:02:21Z",
+      "side": 1,
+      "message": "The change worked: https://www.distributed-ci.io/jobs/e9885eb0-0240-4b31-b5f4-45933ec231c2/jobStates?sort\u003ddate\u0026task\u003db9842dd9-fd0e-4cc4-802e-ff6650cd7309\nIt failed because of the regression in preflight test results on ocp-4.12, I\u0027m re-running the test on ocp-4.10",
+      "revId": "4d87c8797db7ed61fb6b4c24b51bdb78f389d9f4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "561915af_135d24e6",
