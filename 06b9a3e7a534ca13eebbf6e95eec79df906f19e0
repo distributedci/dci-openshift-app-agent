@@ -16,6 +16,23 @@
       "message": "It seems like we have to change the group as well. We were changing ownership, but not a user group: \"group\": \"root\", \"mode\": \"0640\", \"owner\": \"dciteam\". It passed JUnit generation but failed the cleanup: https://www.distributed-ci.io/jobs/77dd3050-242d-4183-8025-424c6774e673/jobStates?sort\u003ddate\u0026task\u003d9577cf98-594a-4d99-9b45-e4f7f567960a ",
       "revId": "06b9a3e7a534ca13eebbf6e95eec79df906f19e0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb3f5cfd_c330beda",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-10-25T15:59:42Z",
+      "side": 1,
+      "message": "Ignore my last comment, I definitely don\u0027t know how to read 😂\n\nWwner and group looks good now.",
+      "revId": "06b9a3e7a534ca13eebbf6e95eec79df906f19e0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
