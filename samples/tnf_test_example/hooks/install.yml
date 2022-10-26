@@ -28,6 +28,66 @@
   include_tasks: check_aspenmesh.yml
   when: tnf_enable_service_mesh | default(false) | bool
 
+# Obtained from Verizon VCP Webscale Core and Edge Cloud Native Network Function Requirements, v1.4.
+# Using a SCC that is adapted to Service Mesh, just in case it is used.
+- name: Create SCC Category 1 - CNFs that require Service Mesh
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      kind: SecurityContextConstraints
+      apiVersion: security.openshift.io/v1
+      name: restricted-no-uid0
+      allowHostDirVolumePlugin: false
+      allowHostIPC: false
+      allowHostNetwork: false
+      allowHostPID: false
+      allowHostPorts: false
+      allowPrivilegeEscalation: true
+      allowPrivilegedContainer: false
+      allowedCapabilities: null
+      defaultAddCapabilities: null
+      fsGroup:
+        type: RunAsAny
+      groups:
+      - system:authenticated
+      metadata:
+        annotations:
+      priority: null
+      readOnlyRootFilesystem: false
+      requiredDropCapabilities:
+      - KILL
+      - MKNOD
+      - SETUID
+      - SETGID
+      runAsUser:
+        type: MustRunAsNonRoot
+      seLinuxContext:
+        type: MustRunAs
+      supplementalGroups:
+        type: RunAsAny
+      users: []
+      volumes:
+      - configMap
+      - downwardAPI
+      - emptyDir
+      - persistentVolumeClaim
+      - projected
+      - secret
+
+- name: Create ClusterRole attached to the created SCC
+  community.kubernetes.k8s:
+    state: present
+    definition:
+      kind: ClusterRole
+      apiVersion: rbac.authorization.k8s.io/v1
+      metadata:
+        name: use-custom-scc
+      rules:
+        - apiGroups: ["security.openshift.io"]
+          resources: ["securitycontextconstraints"]
+          resourceNames: ["restricted-no-uid0"]
+          verbs: ["use"]
+
 # If the namespace is dci_openshift_app_ns, its creation is handled in
 # d-o-a-a plays, so we do not need to do that here.
 # exclude_connectivity_regexp is not checked because it is optional.
