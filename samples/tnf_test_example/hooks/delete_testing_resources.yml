@@ -26,8 +26,5 @@
     kind: ClusterRoleBinding
     name: "{{ pods_in_same_ns.namespace }}:scc:anyuid"
     state: absent
-  when:
-    - tnf_enable_service_mesh | default(false) | bool
-    - am_installed | default(false) | bool
 
 ...
