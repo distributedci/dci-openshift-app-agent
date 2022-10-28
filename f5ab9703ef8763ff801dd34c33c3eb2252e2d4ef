@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e9e2873_86b8858b",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-10-28T11:21:03Z",
+      "side": 1,
+      "message": "you don\u0027t really need to specify this as dci-release is already specified above.",
+      "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8c5b217f_05fe735e",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-10-28T11:21:03Z",
+      "side": 1,
+      "message": "I think it is better to duplicate here as pointing to github in the doc is not good.",
+      "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d38c7af_86907e45",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-10-28T11:21:03Z",
+      "side": 1,
+      "message": "don\u0027t change the # to $ as it was done to show that we are running as root. Same bellow.",
+      "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
