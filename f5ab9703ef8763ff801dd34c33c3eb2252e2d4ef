@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "52336509_6d902040",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-28T14:25:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e9e2873_86b8858b",
+      "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8c5b217f_05fe735e",
@@ -35,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d777338d_7e5ff3ba",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-28T14:25:25Z",
+      "side": 1,
+      "message": "I\u0027m not a fan of replicating content, but okey, let\u0027s do that",
+      "parentUuid": "8c5b217f_05fe735e",
+      "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9d38c7af_86907e45",
@@ -48,6 +84,24 @@
       "writtenOn": "2022-10-28T11:21:03Z",
       "side": 1,
       "message": "don\u0027t change the # to $ as it was done to show that we are running as root. Same bellow.",
+      "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3ebcf40_b5d24ca2",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-10-28T14:25:25Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9d38c7af_86907e45",
       "revId": "f5ab9703ef8763ff801dd34c33c3eb2252e2d4ef",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
