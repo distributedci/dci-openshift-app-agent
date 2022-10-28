@@ -43,7 +43,7 @@ This agent is expected to be installed in a RHEL8 server (from now on referred a
 
 ## Requirements
 
-Before starting make sure the next list of items are covered in the Jumpbox server.
+Before starting make sure the next list of items are covered in the jumphost server.
 
 - Be running the latest stable RHEL release (**8.4 or higher**) and registered via RHSM
 - Ansible 2.9 (See section [Newer Ansible Versions](#newer-ansible-versions) for newer Ansible versions)
@@ -54,31 +54,23 @@ Before starting make sure the next list of items are covered in the Jumpbox serv
   - baseos-rpms
   - appstream-rpms
 - Podman 3.0 (See section [Old Podman versions](#old-podman-versions) for older Podman versions)
-- kubernetes python module
+- Kubernetes Python module
+- [DCI OpenShift Agent](https://github.com/redhat-cip/dci-openshift-agent#installation-of-dci-jumpbox) already installed.
 
-In an already registered server with RHEL you can fullfil the repositories requirements with the following commands:
-
-```ShellSession
-# dnf -y install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
-# dnf -y install https://packages.distributed-ci.io/dci-release.el8.noarch.rpm
-# subscription-manager repos --enable=rhel-8-for-x86_64-baseos-rpms
-# subscription-manager repos --enable=rhel-8-for-x86_64-appstream-rpms
-```
-
-Then install kubernetes module
+In an already registered server with RHEL you can fullfil the repositories, Ansible 2.9 and `dci-openshift-agent` requirements with the commands presented in [DCI OpenShift Agent Jumpbost installation section](https://github.com/redhat-cip/dci-openshift-agent#installation-of-dci-jumpbox). Please make sure that you have followed these steps before continuing. Then, install Kubernetes module:
 
 ```ShellSession
-# dnf install python3-kubernetes
+$ dnf install python3-kubernetes
 ```
 
-> NOTE: Another option is to use pip3, and you can use a more recent version of the module
+> NOTE: Another option is to use pip3, and you can use a more recent version of the module, however it is not recommended.
 
 ## Installation
 
 The `dci-openshift-app-agent` is packaged and available as a RPM file located in [this repository](https://packages.distributed-ci.io/dci-release.el8.noarch.rpm). It can be installed in the jumphost server with the following command:
 
 ```ShellSession
-# dnf -y install dci-openshift-app-agent
+$ dnf -y install dci-openshift-app-agent
 ```
 
 In order to execute the `dci-openshift-app-agent`, a running OpenShift cluster, together with the credentials needed to make use of the cluster (i.e. through the `KUBECONFIG` environment variable) are needed.
@@ -176,7 +168,7 @@ The agent can be executed manually or through systemd, once the agent is configu
 If you need to run the `dci-openshift-app-agent` manually in foreground, you can use this command line:
 
 ```ShellSession
-# su - dci-openshift-app-agent
+$ su - dci-openshift-app-agent
 $ dci-openshift-app-agent-ctl -s
 ```
 
@@ -185,7 +177,7 @@ $ dci-openshift-app-agent-ctl -s
 If you prefer to launch a job with systemd, start the dci-openshift-app-agent service
 
 ```ShellSession
-# systemctl start dci-openshift-app-agent
+$ systemctl start dci-openshift-app-agent
 ```
 
 > Please note that the service is a systemd `Type=oneshot`. This means that if you need to run a DCI job periodically, you have to configure a `systemd timer` or a `crontab`.
@@ -195,14 +187,14 @@ If you prefer to launch a job with systemd, start the dci-openshift-app-agent se
 To replay any steps, the use of Ansible tags (--tags) is an option. Please refer to [Workflow](#workflow) section to understand the steps that compose the `dci-openshift-app-agent`.
 
 ```ShellSession
-# su - dci-openshift-app-agent
+$ su - dci-openshift-app-agent
 $ dci-openshift-app-agent-ctl -s -- --tags kubeconfig,job,pre-run,running,post-run
 ```
 
 or to avoid one or multiple steps, use `--skip-tags`:
 
 ```ShellSession
-# su - dci-openshift-app-agent
+$ su - dci-openshift-app-agent
 $ dci-openshift-app-agent-ctl -s -- --skip-tags testing
 ```
 
@@ -228,7 +220,7 @@ The `dci` tag can be used to skip all DCI calls else the `job` tag is mandatory 
 all the DCI specifics. If you cannot do the DCI calls, you just need to call the agent like this:
 
 ```ShellSession
-# su - dci-openshift-app-agent
+$ su - dci-openshift-app-agent
 $ dci-openshift-app-agent-ctl -s -- --skip-tags dci
 ```
 
@@ -434,7 +426,7 @@ Red Hat Enterprise Linux 8 defaults to Ansible 2.9 installed from Ansible or bas
 After installing the agent, login as dci-openshift-app-agent user and install the following collections
 
 ```ShellSession
-# su - dci-openshift-app-agent
+$ su - dci-openshift-app-agent
 $ ansible-galaxy collection install community.kubernetes
 $ ansible-galaxy collection install community.general
 ```
