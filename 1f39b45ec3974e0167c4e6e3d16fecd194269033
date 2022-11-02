@@ -51,6 +51,24 @@
       "message": "you need to remove the name from the query else it will not work. I have tested with an rc and a dev version and it works without it.",
       "revId": "1f39b45ec3974e0167c4e6e3d16fecd194269033",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c0afcd2_8641be1d",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 124,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-02T23:18:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4f414824_38a9b4d3",
+      "revId": "1f39b45ec3974e0167c4e6e3d16fecd194269033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
