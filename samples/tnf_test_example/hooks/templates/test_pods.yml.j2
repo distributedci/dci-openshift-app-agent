@@ -46,6 +46,12 @@ spec:
 {% endif %}
       terminationGracePeriodSeconds: 30
       automountServiceAccountToken: false
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 3000
+        fsGroup: 2000
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
 {% if runtime_class_name is defined and runtime_class_name|length and app_ns == 'production-cnf' %}
       runtimeClassName: {{ runtime_class_name }}
 {% endif %}
@@ -78,6 +84,12 @@ spec:
               memory: 512Mi
               cpu: 0.25
 {% endif %}
+          securityContext:
+            seLinuxOptions:
+              level: "s0:c123,c456"
+            capabilities:
+              drop: ["KILL","MKNOD","SETUID","SETGID"]
+            allowPrivilegeEscalation: true
           lifecycle:
             postStart:
               exec:
