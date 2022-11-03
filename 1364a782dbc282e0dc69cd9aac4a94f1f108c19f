@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd6d11df_cda484d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-03T09:14:18Z",
+      "side": 1,
+      "message": "It\u0027s fine for me, I\u0027ll just give +1 in case some more people wants to review too",
+      "revId": "1364a782dbc282e0dc69cd9aac4a94f1f108c19f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
