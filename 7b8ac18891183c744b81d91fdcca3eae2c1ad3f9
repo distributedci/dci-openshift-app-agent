@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "364918a2_678e0c84",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-03T17:01:25Z",
+      "side": 1,
+      "message": "Change is ready for review, it is working fine in dallas and BOS2 (for BOS2, I had to book a cluster and launch dci-check-change using the kubeconfig, because if using gerrit automation, it tries to use the component with d-o-a and fails like in this example: https://www.distributed-ci.io/jobs/bcc5efa9-d699-4ba1-986c-446e08d5bcd8/jobStates?sort\u003ddate)",
+      "revId": "7b8ac18891183c744b81d91fdcca3eae2c1ad3f9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
