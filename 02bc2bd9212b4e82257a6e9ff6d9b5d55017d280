@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f68d10d3_dec54045",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-04T11:10:03Z",
+      "side": 1,
+      "message": "Hello team,\n\nThe change is tested, certification project is created: https://www.distributed-ci.io/jobs/315efebc-99e8-40d2-bd51-7e0a19224adf/jobStates?sort\u003ddate\u0026task\u003d0bbba684-23bf-4581-add2-e2c4c44db290\n\nHere is the link to created project: https://connect.redhat.com/projects/6364e61aa4f5bdbb937150b0/overview\n\nI urgently need this change for the meeting in two hours, going to merge it. \n",
+      "revId": "02bc2bd9212b4e82257a6e9ff6d9b5d55017d280",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
