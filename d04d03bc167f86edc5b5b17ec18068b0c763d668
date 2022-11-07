@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "d04d03bc167f86edc5b5b17ec18068b0c763d668",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24054ef7_465c62e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-07T20:25:56Z",
+      "side": 1,
+      "message": "Tested at KS and got a permission issue while copying from the bundle: https://www.distributed-ci.io/jobs/1e4aa02a-e12c-4581-baa9-46f6ccbd2be2/jobStates?sort\u003ddate\u0026task\u003d915b4224-3dff-4c5d-8b69-1976a5d88e84\n\nProbably I have to copy as a root and then recursively reset permissions on the folder.\n",
+      "revId": "d04d03bc167f86edc5b5b17ec18068b0c763d668",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
