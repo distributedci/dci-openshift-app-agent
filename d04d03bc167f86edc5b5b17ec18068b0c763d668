@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a6f5dfd_f8befc2c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-07T19:56:25Z",
+      "side": 1,
+      "message": "The change is tested:\n\n1/ Make repository_name to be unique: https://www.distributed-ci.io/jobs/3f5195ee-201d-4b8b-ba83-4bcda4d7764e/jobStates?sort\u003ddate\u0026task\u003df756eb95-8efa-43b3-9d8d-94153c657f22\n\n\u003e \"repository_name\": \"simple-demo-operator-bundle\"\n\n2/ Retrieve manifests with podman cp: \nansible task: https://www.distributed-ci.io/jobs/53cb4f43-7390-4cc8-a079-7edb919475ce/jobStates?sort\u003ddate\u0026task\u003dc0a280a2-f622-4b76-bc77-241ba110010f\n\nretrieved manifests: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1469/files\n",
+      "revId": "d04d03bc167f86edc5b5b17ec18068b0c763d668",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
