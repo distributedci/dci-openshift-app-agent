@@ -16,6 +16,24 @@
       "message": "Labels fixed tests ScorecardBasicSpecCheck and ScorecardOlmSuiteCheck but broke DeployableByOlm test: https://www.distributed-ci.io/jobs/281a26f1-0683-471f-b183-fe675a0bac4b/tests \nNeed to get comments from subs description after the csv failure to understand what did happen.",
       "revId": "496a168e20c16f686dc1f0d0e87be2429a7a009c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9410943a_530ab06b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-11-07T21:38:52Z",
+      "side": 1,
+      "message": "Maybe give it a try using enforce\u003dprivileged",
+      "parentUuid": "9b9c74d1_ba97f492",
+      "revId": "496a168e20c16f686dc1f0d0e87be2429a7a009c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
