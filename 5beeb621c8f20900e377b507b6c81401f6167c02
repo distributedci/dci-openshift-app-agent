@@ -33,6 +33,24 @@
       "message": "Please add more context about the issue:\n\n\u003cAPIx\u003e is been used by [userAgent] and will be deprecated in \u003cOCPx\u003e",
       "revId": "5beeb621c8f20900e377b507b6c81401f6167c02",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3810dd5_f2a45592",
+        "filename": "plays/scripts/compute_removed_apis",
+        "patchSetId": 8
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-11-08T20:50:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ea73320d_0bdafd1a",
+      "revId": "5beeb621c8f20900e377b507b6c81401f6167c02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
