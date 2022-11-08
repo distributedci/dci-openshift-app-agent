@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "788c5171_d2507dbb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-08T14:33:28Z",
+      "side": 1,
+      "message": "The tests are ongoing:\n\n- Dallas with preflight-green pipeline is ok: \n\nansible task: https://www.distributed-ci.io/jobs/53cb4f43-7390-4cc8-a079-7edb919475ce/jobStates?sort\u003ddate\u0026task\u003dc0a280a2-f622-4b76-bc77-241ba110010f\n\nretrieved manifests: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1469/files\n\n- Partner lab with ctl is ko, strange permission issue while writing the files from the bundle into tmp folder: https://www.distributed-ci.io/jobs/da231d9c-bd1f-452d-a85e-93515cb2242f/jobStates?sort\u003ddate ",
+      "revId": "5d4a06bc0377851ed193257e6e649211d9e10d7b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
