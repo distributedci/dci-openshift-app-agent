@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa9d13ae_e2fd519b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-08T14:04:23Z",
+      "side": 1,
+      "message": "LGTM, thanks Ramon. \nWe could also implement these retries directly in the OPM repo: https://github.com/operator-framework/operator-registry/blob/92e55235a9761e7d3b2674e989d11cebb8c6c397/pkg/image/containerdregistry/registry.go#L50",
+      "revId": "ec3f68729d295fbde00e43a2f719046376d0703c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f6aa912c_bfc37224",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-08T14:04:23Z",
+      "side": 1,
+      "message": "I would prefer as a more verbal way to do the same\n\n\u003e until: not rendered.failed",
+      "revId": "ec3f68729d295fbde00e43a2f719046376d0703c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
