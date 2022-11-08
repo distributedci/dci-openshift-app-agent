@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b053c7f_e2cf3c65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-11-08T22:11:45Z",
+      "side": 1,
+      "message": "Nevermind about the app-agent, that should be the agent to detect the usage of deprecated APIs by the hooks\n\nSorry about that",
+      "parentUuid": "248ac72b_a8d256bc",
+      "revId": "5beeb621c8f20900e377b507b6c81401f6167c02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ea73320d_0bdafd1a",
