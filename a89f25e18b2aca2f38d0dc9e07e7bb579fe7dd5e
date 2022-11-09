@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5b5b0d8_c694f889",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-09T18:43:55Z",
+      "side": 1,
+      "message": "Even though this will not be the default configuration to be used, I\u0027d like to merge this change in order to have it as a backup, in case tnf_test_example component is not used. So feel free to review the change and accept it. All tests have passed.",
+      "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
