@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77b7735c_663c17c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-09T06:13:46Z",
+      "side": 1,
+      "message": "Great addition, thank you Fred! We could also identify the workload the uses the outdated API: https://docs.openshift.com/container-platform/4.9/updating/updating-cluster-prepare.html#update-preparing-evaluate-apirequestcount-workloads_updating-cluster-prepare \n",
+      "revId": "fbe8b24d3b3688ac7991f6f9aac38132c0cd287a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
