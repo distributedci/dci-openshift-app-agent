@@ -16,6 +16,23 @@
       "message": "The problem was to ensure unique name while creating several project in a row, to comply with Pyxis API requirements.\n\nThe change is tested: https://www.distributed-ci.io/jobs/e0420719-add6-4313-b9a1-0ac1c4637faa/jobStates?sort\u003ddate\n\nThat correctly created two projects in FredCo:\n\n1/ https://www.distributed-ci.io/jobs/e0420719-add6-4313-b9a1-0ac1c4637faa/jobStates?sort\u003ddate\u0026task\u003dd263205d-7f09-4b8d-91fb-19eaa97b79e9\n\n2/ https://www.distributed-ci.io/jobs/e0420719-add6-4313-b9a1-0ac1c4637faa/jobStates?sort\u003ddate\u0026task\u003daff9672f-eaf2-41cc-9f9d-89134d8607fd",
       "revId": "d585270e86b690f3dd789198dd719ec18dd7983e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61937ea4_6fa9d52c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-09T08:58:05Z",
+      "side": 1,
+      "message": "sorry, going to merge fast to unblock Nicu",
+      "revId": "d585270e86b690f3dd789198dd719ec18dd7983e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
