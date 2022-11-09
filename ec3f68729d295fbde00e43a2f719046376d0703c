@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b5343a_4b97400c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-09T18:21:28Z",
+      "side": 1,
+      "message": "that\u0027s interesting! I\u0027ll check it",
+      "parentUuid": "fa9d13ae_e2fd519b",
+      "revId": "ec3f68729d295fbde00e43a2f719046376d0703c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f6aa912c_bfc37224",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-11-08T14:04:23Z",
       "side": 1,
       "message": "I would prefer as a more verbal way to do the same\n\n\u003e until: not rendered.failed",
+      "revId": "ec3f68729d295fbde00e43a2f719046376d0703c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8cb08042_a13b6be9",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-09T18:21:28Z",
+      "side": 1,
+      "message": "we can address it in a next patch I think, because we have a lot of conditions using rc \u003d\u003d 0, and if we start to diverge in some of them to use other alternatives, it might be confusing when reviewing in the future. So probably, we can think on a change in the future to move from rc \u003d\u003d 0 to not blabla.failed, if you find it fine",
+      "parentUuid": "f6aa912c_bfc37224",
       "revId": "ec3f68729d295fbde00e43a2f719046376d0703c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
