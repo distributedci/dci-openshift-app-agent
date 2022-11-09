@@ -22,6 +22,30 @@
       },
       "revId": "ca822dfa02263b732456ccd779a25b46999782c3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebf799ae_c49427e2",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-11-09T11:17:35Z",
+      "side": 1,
+      "message": "\u003e wouldn\u0027t it mean that python-dciclient would be a dependency for the app-agent?\n\nyes that\u0027s already the case but I should bump the version in the spec file",
+      "parentUuid": "e0d7dd28_7bfcb0f1",
+      "range": {
+        "startLine": 16,
+        "startChar": 10,
+        "endLine": 16,
+        "endChar": 24
+      },
+      "revId": "ca822dfa02263b732456ccd779a25b46999782c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
