@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f8d7f6ad_1b87f8a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-11-09T20:11:04Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "6309156d_ba459e66",
+      "revId": "5178ee34bb6433cea6ae67adb4d57d0274c1c423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "97e40dcf_3bd32104",
@@ -48,6 +66,30 @@
       "writtenOn": "2022-11-09T17:46:26Z",
       "side": 1,
       "message": "when finishing, if no content is saved in output, can we write a default message like \"No removed APIs\"?",
+      "range": {
+        "startLine": 72,
+        "startChar": 48,
+        "endLine": 72,
+        "endChar": 54
+      },
+      "revId": "5178ee34bb6433cea6ae67adb4d57d0274c1c423",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e873720_f14113d4",
+        "filename": "plays/scripts/compute_removed_apis",
+        "patchSetId": 10
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-11-09T20:11:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "97e40dcf_3bd32104",
       "range": {
         "startLine": 72,
         "startChar": 48,
