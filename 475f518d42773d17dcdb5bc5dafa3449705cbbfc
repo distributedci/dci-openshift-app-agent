@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1efdd3e_8d686689",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-10T07:21:50Z",
+      "side": 1,
+      "message": "May we comment in the README that this file will be generated? As well as done for https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/26598",
+      "revId": "475f518d42773d17dcdb5bc5dafa3449705cbbfc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
