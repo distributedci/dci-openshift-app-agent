@@ -33,6 +33,24 @@
       "message": "Hi Ramon, what you described looks like a correct behavior: \n\n\u003e Sometimes, some tnf_test_example jobs are failing because operator under test cannot be installed.\n\nIf you test the installation of the operator, and the operator failed to install, then the job should fail, shouldn\u0027t it?",
       "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "01cc439c_f7bca9f6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-14T12:44:48Z",
+      "side": 1,
+      "message": "Thanks Tania! Yes, that\u0027s correct, and that\u0027s why I am adding this exception: in case that no tnf_test_example component is used (where the operator to be used is defined), then launch the suite without using operators and helm charts, at least to execute the certification and check the results.\nThis is crucial for CNF Cert Suite PR checks, because if the jobs are failing because an operator not being installed properly (i.e. something external to them), then we\u0027re blocking the review of their PRs. This is a way to quickly unblock them in case we experience again issues with operators.",
+      "parentUuid": "cbb66307_78aaa58b",
+      "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
