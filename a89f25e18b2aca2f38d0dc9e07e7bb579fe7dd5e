@@ -16,6 +16,23 @@
       "message": "Even though this will not be the default configuration to be used, I\u0027d like to merge this change in order to have it as a backup, in case tnf_test_example component is not used. So feel free to review the change and accept it. All tests have passed.",
       "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbb66307_78aaa58b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-14T11:59:46Z",
+      "side": 1,
+      "message": "Hi Ramon, what you described looks like a correct behavior: \n\n\u003e Sometimes, some tnf_test_example jobs are failing because operator under test cannot be installed.\n\nIf you test the installation of the operator, and the operator failed to install, then the job should fail, shouldn\u0027t it?",
+      "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
