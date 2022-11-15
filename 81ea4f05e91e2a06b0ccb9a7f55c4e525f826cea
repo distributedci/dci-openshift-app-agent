@@ -16,6 +16,23 @@
       "message": "thanks!",
       "revId": "81ea4f05e91e2a06b0ccb9a7f55c4e525f826cea",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90655c19_74b8b0a7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-15T10:18:05Z",
+      "side": 1,
+      "message": "The change is tested:\n4.12: https://www.distributed-ci.io/jobs/029c1bef-f6e8-4f11-b06d-f5047517e05b/jobStates?sort\u003ddate\n4.11: https://www.distributed-ci.io/jobs/0b365f5c-2a30-4fab-b48a-ada4a747bc06/jobStates?sort\u003ddate\n\nGoing to merge once 4.11 would be finished.",
+      "revId": "81ea4f05e91e2a06b0ccb9a7f55c4e525f826cea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
