@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "beb67048_cd3bca72",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-11-16T21:27:52Z",
+      "side": 1,
+      "message": "The current status of this change not fix the issue.\nPreflight team released few days ago a feature to support officially insecure registry, it not yet support check operator, but it can change soon. \n",
+      "revId": "6d4e6c03a0a9eb855d670b2912c94b4d559b9ac6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

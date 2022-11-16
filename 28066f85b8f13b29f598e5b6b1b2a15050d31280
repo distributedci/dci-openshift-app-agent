@@ -16,6 +16,24 @@
       "message": "greatest contribution ever! one letter that can make a lot of difference! :)",
       "revId": "28066f85b8f13b29f598e5b6b1b2a15050d31280",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21209b6e_8edb94ba",
+        "filename": "roles/preflight/tasks/prepare_custom_certificate.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-11-16T21:27:52Z",
+      "side": 0,
+      "message": "I forgot we use the --security-opt\u003dlabel\u003ddisable option, so this change is useless 😞",
+      "parentUuid": "41bb0508_591244a3",
+      "revId": "28066f85b8f13b29f598e5b6b1b2a15050d31280",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
