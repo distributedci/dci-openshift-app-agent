@@ -48,7 +48,8 @@
       allowPrivilegeEscalation: true
       allowPrivilegedContainer: false
       allowedCapabilities: null
-      defaultAddCapabilities: null
+      defaultAddCapabilities:
+        - SYS_PTRACE
       requiredDropCapabilities:
         - KILL
         - MKNOD
