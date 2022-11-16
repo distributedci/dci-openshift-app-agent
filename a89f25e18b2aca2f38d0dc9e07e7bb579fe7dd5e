@@ -103,6 +103,24 @@
       "parentUuid": "01cc439c_f7bca9f6",
       "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6eba4d81_71057cc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-16T09:49:42Z",
+      "side": 1,
+      "message": "thank you! and yeah, mainly the Jira card related to the issue was CILAB-874 and it was already done, so mainly we\u0027re fine with this currently. And also we\u0027ll have this workaround in case everything becomes mad again.",
+      "parentUuid": "2a79fdbd_1d8a4667",
+      "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
