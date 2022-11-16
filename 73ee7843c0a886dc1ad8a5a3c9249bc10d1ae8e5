@@ -71,6 +71,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab32fe6c_05b5fd20",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-16T23:25:53Z",
+      "side": 1,
+      "message": "Got it, there\u0027s definitely an issue with the way we\u0027re processing the data. If podman cp does it right then let\u0027s go with it.",
+      "parentUuid": "38155cba_7615ea16",
+      "revId": "73ee7843c0a886dc1ad8a5a3c9249bc10d1ae8e5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "00fa7700_6f04545b",
