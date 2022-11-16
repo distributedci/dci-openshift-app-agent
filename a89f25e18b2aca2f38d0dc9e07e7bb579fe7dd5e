@@ -68,6 +68,41 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/619c1318-2cb1-43bc-9738-3480f7f2a100/jobStates\n\u003e  from https://github.com/test-network-function/cnf-certification-test/pull/631\n\nThis is not related to this change.",
       "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a79fdbd_1d8a4667",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-16T08:32:27Z",
+      "side": 1,
+      "message": "thanks Ramon, I see, let\u0027s merge this as a workaround then. We could also create a jira to handle this in a proper way in the long term.",
+      "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e5075f6_eac4cb85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-16T08:32:27Z",
+      "side": 1,
+      "message": "thanks Ramon, I see, let\u0027s merge this as a workaround then. We could also create a jira to handle this in a proper way in the long term.",
+      "parentUuid": "01cc439c_f7bca9f6",
+      "revId": "a89f25e18b2aca2f38d0dc9e07e7bb579fe7dd5e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
