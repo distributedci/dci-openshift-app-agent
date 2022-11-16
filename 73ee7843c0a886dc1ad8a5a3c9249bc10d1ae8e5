@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00fa7700_6f04545b",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-16T14:48:39Z",
+      "side": 1,
+      "message": "Option --rm is not necessary as it removes the container when it exits but as it never starts, it won\u0027t be removed at the end.",
+      "revId": "73ee7843c0a886dc1ad8a5a3c9249bc10d1ae8e5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
