@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1de55a5f_8ad0e397",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-16T10:56:07Z",
+      "side": 1,
+      "message": "Including some people to review, we were discussing about the security labels in https://github.com/dci-labs/f5-aspenmesh-config/pull/58, creating this for tnf_test_example, among other stuff that is also covered in this change.",
+      "revId": "71f483bb81e9f883208a08e1c4e8a75e94127d46",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
