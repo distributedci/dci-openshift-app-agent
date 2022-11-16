@@ -3,6 +3,40 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d03b317d_560eaf6b",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-16T14:54:45Z",
+      "side": 1,
+      "message": "Why is this change of permissions needed?",
+      "revId": "73ee7843c0a886dc1ad8a5a3c9249bc10d1ae8e5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4a247bbb_ef039e9e",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-16T14:54:45Z",
+      "side": 1,
+      "message": "I compared the csv from the bundle vs the content of the image and the only difference is the spacing. I got the feeling that the pipeline is either comparing the files provided from what\u0027s in the image or using hashes. In any case, if this makes happy that check then let\u0027s go with it.",
+      "revId": "73ee7843c0a886dc1ad8a5a3c9249bc10d1ae8e5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "00fa7700_6f04545b",
         "filename": "roles/create-pr/tasks/bundle_operator.yml",
         "patchSetId": 6
