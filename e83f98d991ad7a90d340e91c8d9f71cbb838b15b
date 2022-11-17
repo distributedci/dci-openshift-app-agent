@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28eaa181_b49b5b9c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 35
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-17T13:59:08Z",
+      "side": 1,
+      "message": "The change is to simplify the debugging of failing preflight tests, all preflight_operator_async_* would contain the cluster logs concerning the tested operator: https://www.distributed-ci.io/jobs/e250283e-f778-4a4b-9a4f-ac597414d961/files\n\nHere is an example of log file: https://www.distributed-ci.io/files/f392ef26-d05c-4fda-b0b3-e64855bb1f8c  \n\nThe log_gather wasn\u0027t used because it requires 10 minutes to run and we only have 3 min.\n\nI included this change unconditionally, by default, because the usage of k8s_info module normally ensures the log retrieval to be smooth. JIC, there is `ignore_errors: true` for the log retrieval task.",
+      "revId": "e83f98d991ad7a90d340e91c8d9f71cbb838b15b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
