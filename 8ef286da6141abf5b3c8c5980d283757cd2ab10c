@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f058bd35_4c46e10d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 34
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-17T13:11:05Z",
+      "side": 1,
+      "message": "Hello Pierre and Ramon, the change is ready for the review. \nI ran about 5 tests this morning to ensure that everything works stable, and going to run some more.",
+      "revId": "8ef286da6141abf5b3c8c5980d283757cd2ab10c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

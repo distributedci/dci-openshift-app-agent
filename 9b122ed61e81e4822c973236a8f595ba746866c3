@@ -76,6 +76,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "060af013_73157fe2",
+        "filename": "roles/preflight/tasks/test_async_logs_check_operator.yml",
+        "patchSetId": 31
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-17T13:11:05Z",
+      "side": 1,
+      "message": "Hi Ramon, 600 is just a limit, we never spent more than 180s here. \nIt\u0027s nice to have a bit more here because we allow to choose an arbitrary preflight version, and it could have a higher threshold.",
+      "parentUuid": "822c8f25_011c5ede",
+      "range": {
+        "startLine": 2,
+        "startChar": 47,
+        "endLine": 2,
+        "endChar": 62
+      },
+      "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "31684c69_f56ec075",
@@ -89,6 +113,30 @@
       "writtenOn": "2022-08-23T10:00:19Z",
       "side": 1,
       "message": "What is async is the execution of check operator, and not the log retrieval, isn\u0027t it?",
+      "range": {
+        "startLine": 55,
+        "startChar": 17,
+        "endLine": 55,
+        "endChar": 28
+      },
+      "revId": "9b122ed61e81e4822c973236a8f595ba746866c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "422fda84_b93b1f6c",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 31
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-17T13:11:05Z",
+      "side": 1,
+      "message": "Sorry, not sure if I got the question, the idea is to fire preflight execution, confirm that it\u0027s fired and then retrieve the logs in parallel while waiting for the job result. I.e. it\u0027s an ansible implementation of the async task: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/async_status_module.html",
+      "parentUuid": "31684c69_f56ec075",
       "range": {
         "startLine": 55,
         "startChar": 17,
