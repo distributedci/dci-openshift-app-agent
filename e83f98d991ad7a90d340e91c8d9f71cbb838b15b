@@ -33,6 +33,23 @@
       "message": "Here is an example of the info you get when preflight DeployableByOlm fails, you directly see the error from the subscription message in the last line: https://www.distributed-ci.io/files/b5a59377-8215-4241-9841-f93e02a70d3a\n\nHere is the complete job: https://www.distributed-ci.io/jobs/48cac31d-0c33-43dc-87a6-5af44277e2b0/files\n\n",
       "revId": "e83f98d991ad7a90d340e91c8d9f71cbb838b15b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7fa6d541_0007f344",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 35
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2022-11-17T14:28:54Z",
+      "side": 1,
+      "message": "It is nice to have these logsfiles Tania !\nLGTM",
+      "revId": "e83f98d991ad7a90d340e91c8d9f71cbb838b15b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
