@@ -91,7 +91,7 @@
           verbs: ["use"]
 
 # exclude_connectivity_regexp is not checked because it is optional.
-- name: Create namespaces and deploy test resources on each namespace if not done before
+- name: Create namespaces and deploy test resources on each namespace
   include_tasks: deploy_resources_in_ns.yml
   vars:
     app_ns: "{{ pods_in_same_ns.namespace }}"
