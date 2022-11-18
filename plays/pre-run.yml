@@ -6,6 +6,10 @@
     status: "pre-run"
   tags: [dci]
 
+- name: Debug task
+  debug:
+    msg: "Hello World"
+
 - name: Include installed software as components
   vars:
     rpms_to_components: "{{ dci_rpms_to_components }}"

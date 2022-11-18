@@ -95,6 +95,8 @@ function interrupt() {
 
 trap interrupt INT TERM
 
+set -x
+
 if [ -r /etc/dci-openshift-app-agent/config ]; then
     . /etc/dci-openshift-app-agent/config
 fi
@@ -194,7 +196,6 @@ if [ "$start" != 1 ]; then
     echo "Dry-Run: pass -s or --start to actually execute. Running a syntax check instead:"
 fi
 
-set -x
 
 if [ -z "$dev" ]; then
     [ -e /etc/dci-openshift-app-agent/dcirc.sh ] && . /etc/dci-openshift-app-agent/dcirc.sh
