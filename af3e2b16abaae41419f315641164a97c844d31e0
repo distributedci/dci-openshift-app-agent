@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f948a7fc_191e4843",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-22T13:32:38Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "13a13e14_f5a0fc69",
+      "revId": "af3e2b16abaae41419f315641164a97c844d31e0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ae0b620e_62d75516",
@@ -41,6 +59,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c872144_8977d9b7",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-22T13:32:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ae0b620e_62d75516",
+      "range": {
+        "startLine": 12,
+        "startChar": 333,
+        "endLine": 12,
+        "endChar": 334
+      },
+      "revId": "af3e2b16abaae41419f315641164a97c844d31e0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a091f3bb_79dd81ca",
@@ -54,6 +96,30 @@
       "writtenOn": "2022-11-22T10:46:11Z",
       "side": 1,
       "message": "Can we add a task at the beginning to check test_network_function_version and make the job fail if version provided is lower than v4.0.0?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "af3e2b16abaae41419f315641164a97c844d31e0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c83cd66e_9bdf7df5",
+        "filename": "roles/cnf-cert/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-22T13:32:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a091f3bb_79dd81ca",
       "range": {
         "startLine": 1,
         "startChar": 0,
@@ -95,6 +161,24 @@
       "side": 1,
       "message": "In fact, we should remove the whole task. We should validate at the beginning of cnf-cert/main.yml if tnf version is lower than v4.0.0, in whose case we should make the job to fail",
       "parentUuid": "e9fa8915_c416dc92",
+      "revId": "af3e2b16abaae41419f315641164a97c844d31e0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e6c0a0c_4279ded5",
+        "filename": "roles/sync-cnf-cert-and-preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-22T13:32:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "cb455521_566c3abc",
       "revId": "af3e2b16abaae41419f315641164a97c844d31e0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
