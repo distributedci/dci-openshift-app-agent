@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c44944cb_6df03d14",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-22T14:28:52Z",
+      "side": 1,
+      "message": "LGTM, thank you Charles!\nLeaving one more +1 to Ramon",
+      "revId": "dfbca9362148e42bf718c3b1b2335fdbb37c7def",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
