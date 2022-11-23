@@ -6,6 +6,19 @@
     status: "post-run"
   tags: [dci]
 
+- name: "check mirrored-catalog with opcap"
+  include_role:
+    name: opcap-tool
+    apply:
+      environment:
+        - KUBECONFIG: "{{ kubeconfig_path }}"
+  vars:
+    opcap_target_catalog_source: "mirrored-redhat-operators"
+    opcap_catalog_source_namespace: "openshift-marketplace"
+    opcap_output_dir: "{{ job_logs }}"
+  when:
+    - dci_disconnected | default(false) | bool
+
 - name: "cnf-cert post-run"
   include_role:
     name: cnf-cert
