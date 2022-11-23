@@ -31,4 +31,20 @@
     name: preflight
   when: preflight_operators_to_certify is defined
 
+- name: Retrieve all CatalogSource present in openshift-marketplace Namespace
+  community.kubernetes.k8s_info:
+    api_version: operators.coreos.com/v1alpha1
+    kind: CatalogSource
+    namespace: openshift-marketplace
+  register: cs
+
+- name: Checking found CalalogSource with opcap
+  include_role:
+    name: opcap-tool
+  vars:
+    opcap_target_catalog_source: "{{ item }}"
+    opcap_catalog_source_namespace: "openshift-marketplace"
+    opcap_output_dir: "{{ job_logs.path }}"
+  loop: "{{ cs | json_query('resources[*].metadata.name') }}"
+  when: cs.resources|length >= 1
 ...
