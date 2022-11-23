@@ -1,0 +1,191 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d32c11f7_5e6d2e1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "This is a cool feature, more than happy to have a chat if that helps to clarify any of the comments. Thanks!",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c184f9bb_0682ad4f",
+        "filename": "plays/teardown.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "I think this should be added as a handler in the role instead.\n\nBy leaving it in here I know that you could reuse the binary but that implies that you need to specify the directory before calling the role.",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "437c844a_fc61b450",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "Could you add another column (Required), is easier to spot what variables are needed and which ones are optional",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc0e562e_b8a20328",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "It would be nice to standardize variable names to prepend them with the role name as you did with other variables, e.g. target_catalog_source would be something like opcap_target_catalog_source or similar",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f13070db_d4eebde5",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "I\u0027m not convinced with this variable. If you define it to call the role it will fail as the code makes reference to opcap_dir.path. It also implies that the directory must be created before hand and lastly this role relies on an external action (teardown) to clean up.\n\nI think is a better experience removing it, wdyt?",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efa5df18_c01cf3a6",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "I think opcap_version should be included in here",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58c8ec10_dacfb72a",
+        "filename": "roles/opcap-tool/tasks/build.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "Could we built through a container and then extract the binary? That way we avoid installing these dependencies",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9b78f820_9c62fa3d",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "We could avoid this step if we always build or if we stick with the option to reuse a dir then we could use here stat module instead",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "308855a0_3e16647e",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "I suggest to define a variable where the report will be placed and pass that to the role instead of use variables from the agent, this is to make the role independent from the agent.  For example:\n\nWhen calling:\n    - name: Run opcap checks on nfv-catalog\n      include_role:\n        name: opcap-tool\n        apply:\n          environment:\n            - KUBECONFIG: \"{{ kubeconfig_path }}\"\n      vars:\n        opcap_target_catalog_source: \"nfv-example-cnf-catalog\"\n        opcap_catalog_source_namespace: \"openshift-marketplace\"\n        opcap_result_dir: \"{{ job_logs }}\"\n\nIn the role:\n    - name: \"Copy Results out\"\n      copy:\n        src: ...\n        dest: \"{{ opcap_result_dir }}/{{ opcap_target_catalog_source }}_install_report.json\"",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5654c3c7_cffc1e49",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "Is this step part of preflight? can we move it out if possible?",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d8817a2_c3b5fb74",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-23T18:18:50Z",
+      "side": 1,
+      "message": "Why these two CS vars are hardcoded?",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
