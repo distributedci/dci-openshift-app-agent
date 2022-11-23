@@ -17,6 +17,12 @@
     state: absent
   when: client_tmp_dir is defined
 
+- name: "Remove opcap install directory"
+  file:
+    path: "{{ opcap_dir.path }}"
+    state: absent
+  when: opcap_dir is defined
+
 - name: Delete namespace
   community.kubernetes.k8s:
     api_version: v1
