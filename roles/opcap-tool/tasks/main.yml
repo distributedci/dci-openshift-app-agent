@@ -1,0 +1,39 @@
+---
+- name: "Validate parameters"
+  assert:
+    that: "{{ item }} is defined"
+    fail_msg: "The parameter {{ item }} is required"
+  with_items:
+      - opcap_dir
+      - target_catalog_source
+      - catalog_source_namespace
+
+- name: "Check if opcap is installed"
+  shell:
+    cmd: >
+      {{ opcap_dir }}/opcap/bin/opcap version
+  ignore_errors: true
+  register: opcap_bin
+
+- name: "Build opcap if not present"
+  include_tasks: build.yml
+  when: opcap_bin.rc != 0
+
+- name: "Display Available package in the catalog"
+  shell:
+    cmd: >
+      ./opcap list packages --catalogsource={{ target_catalog_source }}
+    chdir: "{{ opcap_dir }}/opcap/bin"
+
+- name: "Run opcap check"
+  shell:
+    cmd: >
+      ./opcap check --audit-plan={{ audit_plan }}
+      --catalogsource={{ target_catalog_source }}
+      --catalogsourcenamespace={{ catalog_source_namespace }}
+    chdir: "{{ opcap_dir }}/opcap/bin"
+
+- name: "Copy Results in {{ job_logs }}"
+  copy:
+    src: "{{ opcap_dir }}/opcap/bin/operator_install_report.json"
+    dest: "{{ job_logs }}/{{ target_catalog_source }}_install_report.json"
