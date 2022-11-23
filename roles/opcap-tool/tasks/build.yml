@@ -1,0 +1,26 @@
+---
+
+- name: "Install required packages"
+  become: true
+  package:
+    name:
+      - "go"
+      - "make"
+    state: installed
+
+- name: "Clone opcap repository"
+  git:
+    repo: "{{ opcap_repo }}"
+    dest: "{{ opcap_dir.path }}/opcap"
+
+- name: "Building opcap tool"
+  shell:
+    cmd: >
+     OPCAP_VERSION={{ opcap_version }} make build
+    chdir: "{{ opcap_dir.path }}/opcap"
+
+- name: "Check opcap bin"
+  shell:
+    cmd: >
+      ./bin/opcap version
+    chdir: "{{ opcap_dir.path }}/opcap"
