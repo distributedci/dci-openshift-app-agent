@@ -94,6 +94,14 @@
       loop_control:
         loop_var: operator
       when: operator_sdk_tool_path is defined
+
+    - name: Run opcap checks on nfv-catalog
+      include_role:
+        name: opcap-tool
+      vars:
+        opcap_dir: preflight_tmp_dir
+        target_catalog_source: "nfv-example-cnf-catalog"
+        catalog_source_namespace: "openshift-marketplace"
   always:
     - name: Teardown
       include_tasks: teardown.yml
