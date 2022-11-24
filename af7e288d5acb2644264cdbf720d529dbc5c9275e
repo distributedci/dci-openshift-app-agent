@@ -228,6 +228,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "051986e0_dd51db84",
+        "filename": "roles/opcap-tool/tasks/build.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T10:31:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5828f065_ad2e7248",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9b78f820_9c62fa3d",
@@ -333,6 +351,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "15c457fd_f8746912",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T10:31:37Z",
+      "side": 1,
+      "message": "I am testing the disconnected catalog instead",
+      "parentUuid": "732802b5_df350861",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9d8817a2_c3b5fb74",
@@ -364,6 +400,24 @@
       "side": 1,
       "message": "It was meant for testing purposes but it should be defined in example-cnf instead.",
       "parentUuid": "9d8817a2_c3b5fb74",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3485c547_4781ec4a",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T10:31:37Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5c905c18_9e590ce3",
       "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
