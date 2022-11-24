@@ -1,0 +1,78 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef0ed118_31a07db5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-11-24T19:26:34Z",
+      "side": 1,
+      "message": "Hello Charles,\n\nInteresting tool, I see in the jobs where it was testing that the result file says that sriov was found but failed the install due a timeout.\n\nI am wondering about the settings used by the tool to deploy the operator and if that is going to conflict with an operator already installed. Maybe we can test on a vanilla pipeline with sriov_enabled and have the tool really deploying the operator and providing more details in the report.\n\nThanks",
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1fa3290_8d88d2a7",
+        "filename": "plays/tests.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-11-24T19:26:34Z",
+      "side": 1,
+      "message": "Considering that we now have support for multiple catalogs and to avoid hard coding, may be good to obtain the list of catalogs available in the cluster and loop through the list.",
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "99e56eec_a33ff7bb",
+        "filename": "plays/tests.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-11-24T19:26:34Z",
+      "side": 1,
+      "message": "I think it will be safe to pass the kubeconfig at play level as we are doing for other cases: https://github.com/redhat-cip/dci-openshift-agent/blob/ef7f33957e196ac6845a4bc8e445cb8678444e77/dci-openshift-agent.yml#L424",
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f90d2769_3dfa4980",
+        "filename": "plays/tests.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-11-24T19:26:34Z",
+      "side": 1,
+      "message": "in disconnected we have the catalog name in {{ opm_catalog_source_name }} variable",
+      "range": {
+        "startLine": 41,
+        "startChar": 34,
+        "endLine": 41,
+        "endChar": 59
+      },
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
