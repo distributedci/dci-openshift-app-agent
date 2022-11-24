@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ab0b1cf_1408be82",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-24T14:37:15Z",
+      "side": 1,
+      "message": "it looks promising, some comments below",
+      "revId": "2314e0ebf1a317c4d3fb720928efa5d13d7722bb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b374c6d7_4fe8727a",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-24T14:37:15Z",
+      "side": 1,
+      "message": "conceptual question: as we\u0027re running tests, should this role be placed in tests hook?",
+      "revId": "2314e0ebf1a317c4d3fb720928efa5d13d7722bb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "89c25f32_c8b73580",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-24T14:37:15Z",
+      "side": 1,
+      "message": "could it be \"mirrored-redhat-operators CatalogSource\" instead? just to precise the item that will be checked",
+      "range": {
+        "startLine": 9,
+        "startChar": 15,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "2314e0ebf1a317c4d3fb720928efa5d13d7722bb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "db7c4552_5ba7020f",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-24T14:37:15Z",
+      "side": 1,
+      "message": "note that we define, in the README, that opcap_output_dir is a directory, but here, we\u0027re using job_logs, which is not a directory, the directory is job_logs.path. May lead to mistakes if somebody starts using the role in hooks from scratch.",
+      "range": {
+        "startLine": 18,
+        "startChar": 4,
+        "endLine": 18,
+        "endChar": 38
+      },
+      "revId": "2314e0ebf1a317c4d3fb720928efa5d13d7722bb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4519510c_a50215c0",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-24T14:37:15Z",
+      "side": 1,
+      "message": "a single OpenShift operator? or \"OpenShift operators\"?",
+      "range": {
+        "startLine": 3,
+        "startChar": 44,
+        "endLine": 3,
+        "endChar": 66
+      },
+      "revId": "2314e0ebf1a317c4d3fb720928efa5d13d7722bb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
