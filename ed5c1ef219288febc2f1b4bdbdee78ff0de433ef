@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "ed5c1ef219288febc2f1b4bdbdee78ff0de433ef",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "58460567_653241ec",
+        "filename": "dci-openshift-app-agent-ctl",
+        "patchSetId": 6
+      },
+      "lineNbr": 185,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-11-24T21:39:31Z",
+      "side": 1,
+      "message": "it should be something like this:\n\n    if [ -n \"$dev\" ] \u0026\u0026 [ -z \"$INIT_CONFIG_DIR\" ]; then\n\nto make sure not to override with the change when CONFIG_DIR is under version control.",
+      "revId": "ed5c1ef219288febc2f1b4bdbdee78ff0de433ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
