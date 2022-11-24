@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8064ba3c_f3505173",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-24T12:41:17Z",
+      "side": 1,
+      "message": "Testing this change directly in BOS2 using server04 and dci-check-change/test-runner from 26796, in order to test prefixes (using doaa prefix to test tnf_test_example using the correct settings file based on the prefix).\n\nFirst debug job including Debug task worked: https://www.distributed-ci.io/jobs/e7ffb2fd-0870-4724-8806-8196d616e270/jobStates?sort\u003ddate\u0026task\u003d1715e265-8276-47ec-aaef-bade9f0fc350. Job name is correctly displayed (doaa) and tnf_test_example is launched.\n\nSecond and final debug job changing tnf_test_example task name worked too, now it\u0027s taking the change from this change: https://www.distributed-ci.io/jobs/e3c28925-fe51-4e9d-8167-8ceb14ec1a0f/jobStates?sort\u003ddate\u0026task\u003d48b160dd-92b9-44ca-bf91-8727884340d4\n\nReady for review and merge",
+      "revId": "ed5c1ef219288febc2f1b4bdbdee78ff0de433ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
