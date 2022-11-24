@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7f598df_f8f1cad5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "Thank you for your suggestion, I was hesitating if the binary should be reusable but it is cleaner this way.",
+      "revId": "1deb58ea2d187e5dc0bfb395c3cd84bbf114e35d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

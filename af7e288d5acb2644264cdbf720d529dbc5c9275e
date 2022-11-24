@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f0acf4b_6774e742",
+        "filename": "plays/teardown.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "My initial idea was to have the binary built once if the role is called several times (if we want to test multiple catalogs in one run). I don\u0027t see how a handler can be run only on the last time the role is called. But I don\u0027t like the external definition of the directory anyway, so I think I will just abandon the idea of reusing the binary.",
+      "parentUuid": "c184f9bb_0682ad4f",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "437c844a_fc61b450",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-11-23T18:18:50Z",
       "side": 1,
       "message": "Could you add another column (Required), is easier to spot what variables are needed and which ones are optional",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdf652f0_208b985f",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "437c844a_fc61b450",
       "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +105,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d98c5f1_2d56e079",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "fc0e562e_b8a20328",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f13070db_d4eebde5",
@@ -86,6 +140,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "56476787_a6ea0e62",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "I am not conviced neither. I\u0027ll remove it.",
+      "parentUuid": "f13070db_d4eebde5",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "efa5df18_c01cf3a6",
@@ -99,6 +171,24 @@
       "writtenOn": "2022-11-23T18:18:50Z",
       "side": 1,
       "message": "I think opcap_version should be included in here",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b23d8afc_b56ee43c",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "I will add it but honestly this variable is pretty useless anyway.",
+      "parentUuid": "efa5df18_c01cf3a6",
       "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -122,6 +212,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5828f065_ad2e7248",
+        "filename": "roles/opcap-tool/tasks/build.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "Good suggestion, I will try!",
+      "parentUuid": "58c8ec10_dacfb72a",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9b78f820_9c62fa3d",
         "filename": "roles/opcap-tool/tasks/main.yml",
         "patchSetId": 5
@@ -133,6 +241,24 @@
       "writtenOn": "2022-11-23T18:18:50Z",
       "side": 1,
       "message": "We could avoid this step if we always build or if we stick with the option to reuse a dir then we could use here stat module instead",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7110951_7b1cf7f2",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "9b78f820_9c62fa3d",
       "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -150,6 +276,24 @@
       "writtenOn": "2022-11-23T18:18:50Z",
       "side": 1,
       "message": "I suggest to define a variable where the report will be placed and pass that to the role instead of use variables from the agent, this is to make the role independent from the agent.  For example:\n\nWhen calling:\n    - name: Run opcap checks on nfv-catalog\n      include_role:\n        name: opcap-tool\n        apply:\n          environment:\n            - KUBECONFIG: \"{{ kubeconfig_path }}\"\n      vars:\n        opcap_target_catalog_source: \"nfv-example-cnf-catalog\"\n        opcap_catalog_source_namespace: \"openshift-marketplace\"\n        opcap_result_dir: \"{{ job_logs }}\"\n\nIn the role:\n    - name: \"Copy Results out\"\n      copy:\n        src: ...\n        dest: \"{{ opcap_result_dir }}/{{ opcap_target_catalog_source }}_install_report.json\"",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39b24c06_847a9d20",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "I don\u0027t see a situation where we don\u0027t want to have this JSON file copied into the job_logs dir and then pushed to DCI. But I see it is better for the independence and structure of the role.",
+      "parentUuid": "308855a0_3e16647e",
       "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -173,6 +317,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "732802b5_df350861",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "I added this only for testing, still in WIP",
+      "parentUuid": "5654c3c7_cffc1e49",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9d8817a2_c3b5fb74",
         "filename": "roles/preflight/tasks/main.yml",
         "patchSetId": 5
@@ -184,6 +346,24 @@
       "writtenOn": "2022-11-23T18:18:50Z",
       "side": 1,
       "message": "Why these two CS vars are hardcoded?",
+      "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c905c18_9e590ce3",
+        "filename": "roles/preflight/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 106,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-24T08:37:00Z",
+      "side": 1,
+      "message": "It was meant for testing purposes but it should be defined in example-cnf instead.",
+      "parentUuid": "9d8817a2_c3b5fb74",
       "revId": "af7e288d5acb2644264cdbf720d529dbc5c9275e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
