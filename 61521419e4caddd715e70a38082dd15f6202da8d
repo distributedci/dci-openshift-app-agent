@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c1e5c86_e8adc623",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2022-11-24T12:43:34Z",
+      "side": 1,
+      "message": "LGTM tested in isolation and it worked with junit with 1 or 2 test cases.",
+      "revId": "61521419e4caddd715e70a38082dd15f6202da8d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
