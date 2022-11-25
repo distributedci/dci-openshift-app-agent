@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57bb062c_f29e5ed0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-25T12:03:33Z",
+      "side": 1,
+      "message": "Change is working fine again based on the final specifications. In the debug job launched in BOS2, we can see that the task name modified in cnf-cert role was changed, so we\u0027re running the change fine: https://www.distributed-ci.io/jobs/1256b4a9-16a3-4337-8934-c5b7e0f95c1a/jobStates?sort\u003ddate\u0026task\u003db94059d7-93b0-472d-ba5c-9c4da090c1a4",
+      "revId": "5374677cafa94e1608b5f3224c902862a4853730",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
