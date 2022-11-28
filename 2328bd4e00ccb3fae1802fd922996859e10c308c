@@ -16,6 +16,23 @@
       "message": "To be merged when sign problem is fixed",
       "revId": "2328bd4e00ccb3fae1802fd922996859e10c308c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a07e03a_19aa03c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28
+      },
+      "writtenOn": "2022-11-28T10:28:04Z",
+      "side": 1,
+      "message": "Package signing is fixed",
+      "revId": "2328bd4e00ccb3fae1802fd922996859e10c308c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
