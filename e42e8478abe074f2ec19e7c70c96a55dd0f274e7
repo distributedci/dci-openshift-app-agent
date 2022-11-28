@@ -73,6 +73,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "8cd17c59_f95c3850",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-28T16:28:04Z",
+      "side": 1,
+      "message": "Oh, that\u0027s interesting, I wasn\u0027t aware that this will be executed multiple times. thanks for sharing.\nIn any case even when that happens the directory won\u0027t exist every time because it will be deleted at the end of the role.\n\nIf the building time is considerable, then an option would be to create the temporary building directory outside the tests.yml and pass it to the role to build there and to keep it until all the operators have been checked.\n\nYou should keep the creation of the temp dir in case the external building dir is not passed. In that task is where you want to add the notify for the deletion of the dir.",
+      "parentUuid": "d6b588af_f51ebb18",
+      "revId": "e42e8478abe074f2ec19e7c70c96a55dd0f274e7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ad580bbb_16ebdb92",
         "filename": "roles/opcap-tool/tasks/main.yml",
         "patchSetId": 14
