@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6de89b69_56f6e4b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-28T18:57:41Z",
+      "side": 1,
+      "message": "Hello Ramon and Fred,\n\nthe single testcase is e2e tested in local: https://gist.github.com/tkrishtop/379fcd9cb4d0341b0b28c451ce06b6ca",
+      "revId": "2d90dafde6ddbe8135289c154260ab7bf1a91fb8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
