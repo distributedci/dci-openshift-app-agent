@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf0bcdb0_455c8ad2",
+        "filename": "plays/tests.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-28T14:27:32Z",
+      "side": 1,
+      "message": "It is possible to not have a CS, we would need a conditional for such case",
+      "revId": "e42e8478abe074f2ec19e7c70c96a55dd0f274e7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "43e9558d_3e731fe4",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-28T14:27:32Z",
+      "side": 1,
+      "message": "Is this really needed? if someone wanted to provide a path already created, they would need to define a variable like \"opcap_dir.path\" for this task\n\nIt\u0027s a lot easier let the role do it, wdyt?",
+      "revId": "e42e8478abe074f2ec19e7c70c96a55dd0f274e7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad580bbb_16ebdb92",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-11-28T14:27:32Z",
+      "side": 1,
+      "message": "Do we really need the binary?",
+      "revId": "e42e8478abe074f2ec19e7c70c96a55dd0f274e7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
