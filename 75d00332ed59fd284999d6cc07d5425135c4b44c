@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b72335c7_9209d98e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-28T09:26:44Z",
+      "side": 1,
+      "message": "Yes I agree, the results are a bit weird, I will check in a regular pipeline in dallas.",
+      "parentUuid": "ef0ed118_31a07db5",
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e1fa3290_8d88d2a7",
@@ -31,6 +49,24 @@
       "writtenOn": "2022-11-24T19:26:34Z",
       "side": 1,
       "message": "Considering that we now have support for multiple catalogs and to avoid hard coding, may be good to obtain the list of catalogs available in the cluster and loop through the list.",
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "010afd1f_13fbc2e9",
+        "filename": "plays/tests.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-28T09:26:44Z",
+      "side": 1,
+      "message": "That\u0027s a good idea!",
+      "parentUuid": "e1fa3290_8d88d2a7",
       "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -52,6 +88,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c023f1b2_843ebaa0",
+        "filename": "plays/tests.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-28T09:26:44Z",
+      "side": 1,
+      "message": "You are right, in fact it is already defined when plays/tests.yml is called.",
+      "parentUuid": "99e56eec_a33ff7bb",
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f90d2769_3dfa4980",
@@ -65,6 +119,30 @@
       "writtenOn": "2022-11-24T19:26:34Z",
       "side": 1,
       "message": "in disconnected we have the catalog name in {{ opm_catalog_source_name }} variable",
+      "range": {
+        "startLine": 41,
+        "startChar": 34,
+        "endLine": 41,
+        "endChar": 59
+      },
+      "revId": "75d00332ed59fd284999d6cc07d5425135c4b44c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0a81173_198bdcb6",
+        "filename": "plays/tests.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-28T09:26:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f90d2769_3dfa4980",
       "range": {
         "startLine": 41,
         "startChar": 34,
