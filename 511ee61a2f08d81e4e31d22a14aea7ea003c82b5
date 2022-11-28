@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "efe0284a_d4cc5760",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-11-28T15:04:02Z",
+      "side": 1,
+      "message": "The change is tested:\n\nDallas, with pipeline:\n- Good formatting with podman cp: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1471/files#diff-063729366c3544f6a543b6aac2c6f23036d33806dba8c73d46565839b6b2b6e9\n\n- Bad formatting with opm: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1465/files#diff-3fb4b33919ffc15138dab8834aae784a99d72ee955057acf67064d1e9705317a\n\nBOS2, with ctl:\n- Good formatting with podman cp: https://github.com/redhat-openshift-ecosystem/certified-operators/pull/1591/files#diff-063729366c3544f6a543b6aac2c6f23036d33806dba8c73d46565839b6b2b6e9\n\nIt seems like Nicu\u0027s permission issues are probably related to some podman misbehavior, not to test again at his lab.",
+      "revId": "511ee61a2f08d81e4e31d22a14aea7ea003c82b5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
