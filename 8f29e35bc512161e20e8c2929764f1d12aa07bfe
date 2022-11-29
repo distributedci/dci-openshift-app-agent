@@ -22,6 +22,30 @@
       },
       "revId": "8f29e35bc512161e20e8c2929764f1d12aa07bfe",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a0978ef_66b2b5c7",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-29T13:24:54Z",
+      "side": 1,
+      "message": "I was trying to do that in the first patch of this CR but at the end it adds a lot of complexity and makes the role less independent just to save 20s.\nI will change the name of the task though.",
+      "parentUuid": "720cb854_fbe08ec5",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 0
+      },
+      "revId": "8f29e35bc512161e20e8c2929764f1d12aa07bfe",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
