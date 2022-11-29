@@ -89,6 +89,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d40206f_7d833a64",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 14
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-11-29T09:19:08Z",
+      "side": 1,
+      "message": "hum it save 20s to build the tool, I think it will just remove the check.",
+      "parentUuid": "8cd17c59_f95c3850",
+      "revId": "e42e8478abe074f2ec19e7c70c96a55dd0f274e7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ad580bbb_16ebdb92",
