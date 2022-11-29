@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "720cb854_fbe08ec5",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-29T12:24:23Z",
+      "side": 1,
+      "message": "We are not checking if opcap is present, so I believe the task can be renamed to simply \"Build opcap\".\nApart from this, I\u0027m not a fan of doing the same build several times in a loop. Isn\u0027t it better to execute this prior to the execution of opcap for each catalogsource detected, do it once in a fixed directory, then remove it when finishing all the iterations?",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 0
+      },
+      "revId": "8f29e35bc512161e20e8c2929764f1d12aa07bfe",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
