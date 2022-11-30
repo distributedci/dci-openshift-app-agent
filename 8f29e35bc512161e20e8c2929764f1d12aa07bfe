@@ -46,6 +46,30 @@
       },
       "revId": "8f29e35bc512161e20e8c2929764f1d12aa07bfe",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e82db8d7_6031648e",
+        "filename": "roles/opcap-tool/tasks/main.yml",
+        "patchSetId": 20
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2022-11-30T09:27:10Z",
+      "side": 1,
+      "message": "Oh, I wasn\u0027t aware of the first patch, sorry for that. If that was changed, then let\u0027s leave it in this way",
+      "parentUuid": "9a0978ef_66b2b5c7",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 0
+      },
+      "revId": "8f29e35bc512161e20e8c2929764f1d12aa07bfe",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
