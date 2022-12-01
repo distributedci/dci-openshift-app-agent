@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a0af7b6_c7054842",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-12-01T19:06:53Z",
+      "side": 1,
+      "message": "Could you add a way to limit the execution of the tool to certain amount of packages as well? \n\nThe tools seems to allow it: https://github.com/opdev/opcap/blob/main/cmd/check.go#L50",
+      "revId": "c5a570e58b2c694d7db7959b73aa99d38a5bab9a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
