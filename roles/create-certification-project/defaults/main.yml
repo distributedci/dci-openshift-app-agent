@@ -1,4 +1,21 @@
 ---
 create_project_url: "https://catalog.redhat.com/api/containers/v1/projects/certification"
 connect_url: "https://connect.redhat.com/projects"
+create_product_url: "https://catalog.redhat.com/api/containers/v1/product-listings"
+verify_project_url: "https://catalog.redhat.com/api/containers/v1/vendors/org-id"
+
+cert_img_short_description: "Add image description here"
+
+cert_setting_auto_publish: false
+cert_setting_build_categories: "Standalone image"
+cert_setting_registry_override_instruct: "Add override instructions"
+cert_setting_application_categories: "Networking"
+cert_setting_os_content_type: "Red Hat Universal Base Image (UBI)"
+cert_setting_privileged: true
+cert_setting_release_category: "Generally Available"
+cert_setting_repository_description: "Add a description of project here"
+
+cert_listing_published: false
+cert_listing_type: "container stack"
+
 ...
