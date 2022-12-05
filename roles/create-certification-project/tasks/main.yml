@@ -9,29 +9,115 @@
   debug:
     msg: "{{ lookup('template', template_filename) }}"
 
-- name: Create certification project
+- name: Set container image name fact
+  set_fact:
+    image_name: "{{ current_operator_image.split('@')[0].split(':')[0].split('/')[-1] }}"
+  when: project_type == 'container'
+
+- name: Set operator image name fact
+  set_fact:
+    image_name: "{{ operator.bundle_image.split('@')[0].split(':')[0].split('/')[-1] }}"
+  when: project_type == 'operator'
+
+- name: Get certification projects from organization
   vars:
     pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
-    template_filename: "templates/create_project_{{ project_type }}.json.j2"
   uri:
-    url: "{{ create_project_url }}"
-    method: POST
+    url: "{{ verify_project_url }}/{{ cert_settings.organization_id }}/projects/certification?page_size=200&page=0"
+    method: GET
     headers:
       X-API-KEY: "{{ pyxis_apikey }}"
     body_format: json
-    body: "{{ lookup('template', template_filename) }}"
-    status_code: 201
+    status_code: 200
     timeout: 120
-  register: cert_project_output
+  register: cert_project_list_output
+  retries: 20
+  delay: 3
+  until:
+    - not cert_project_list_output.failed | bool
+  when:
+    - cert_settings.organization_id is defined
 
-- name: Set project ID to reuse it later
+- name: "Set fact cert_project_id for {{ image_name }} if exists"
   set_fact:
-    cert_project_id: "{{ cert_project_output.json | json_query('_id') }}"
+    cert_project_id: "{{ cert_project_list_output.json.data | to_json | from_json | json_query(query) }}"
+  vars:
+    query: "[?contains(name, '{{ image_name }}')]._id"
+  when:
+    - not cert_project_list_output.failed | bool
 
-- name: Print the URL of created certification project
+- name: "Notify if image {{ image_name }} is already in a certification project"
   debug:
-    msg: |
-      Certification project was created and could be checked here:
-      {{ connect_url }}/{{ cert_project_id }}/overview
+    msg: "The following certification projects already have image {{ image_name }} in process to certify: {{ cert_project_id }}"
+  when:
+    - cert_project_id != []
+    - not cert_project_list_output.failed | bool
 
+- name: Tasks to create certification project
+  block:
+    - name: Create certification project
+      vars:
+        pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+        template_filename: "templates/create_project_{{ project_type }}.json.j2"
+      uri:
+        url: "{{ create_project_url }}"
+        method: POST
+        headers:
+          X-API-KEY: "{{ pyxis_apikey }}"
+        body_format: json
+        body: "{{ lookup('template', template_filename) }}"
+        status_code: 201
+        timeout: 120
+      register: cert_project_output
+
+    - name: Set project ID to reuse it later
+      set_fact:
+        cert_project_id: "{{ cert_project_output.json | json_query('_id') }}"
+
+    - name: Set and save project IDs to use with Product-Listing PATCH and Attachment
+      set_fact:
+        cert_projects: "{{ cert_projects | default([]) + [ cert_project_id ] }}"
+
+    - name: Print cert projects testing
+      debug:
+        msg: "{{ cert_projects }}"
+
+    - name: Update certification project Settings
+      vars:
+        pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+        template_filename: "templates/update_project_{{ project_type }}_setting.json.j2"
+      uri:
+        url: "{{ create_project_url }}/id/{{ cert_project_id }}"
+        method: PATCH
+        headers:
+          X-API-KEY: "{{ pyxis_apikey }}"
+        body_format: json
+        body: "{{ lookup('template', template_filename) }}"
+        status_code: [200]
+        timeout: 120
+      register: update_cert_project_output
+      when: cert_settings is defined
+
+    - name: Set pyxis_product_list_identifier if cert product list is already here
+      set_fact:
+        pyxis_product_list_identifier: "{{ cert_listings.pyxis_product_list_identifier }}"
+      when: cert_listings.pyxis_product_list_identifier  | default('') | length
+
+    - name: Patch product list to attach Prod-List ID to container project
+      vars:
+        pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+        template_filename: "templates/attach_product_{{ project_type }}_listing.json.j2"
+      uri:
+        url: "{{ create_product_url }}/id/{{ pyxis_product_list_identifier }}"
+        method: PATCH
+        headers:
+          X-API-KEY: "{{ pyxis_apikey }}"
+        body_format: json
+        body: "{{ lookup('template', template_filename) }}"
+        status_code: [200]
+        timeout: 120
+      register: attach_cert_product_list_status
+      when: cert_listings is defined
+  when:
+    - cert_project_id is undefined or cert_project_id == []
 ...
