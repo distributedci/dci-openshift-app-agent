@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63a4fddf_f1fe2c8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 25
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-05T08:17:28Z",
+      "side": 1,
+      "message": "Is everyone okay by adding a opcap check at the end of the tnf sample?",
+      "revId": "91562336f2fc88d986f55312a13a9ed2ab20e90f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

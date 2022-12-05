@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2bf69512_46b9eee0",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 24
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-05T08:17:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5622a078_ab8f896b",
+      "revId": "d27fe4bb88eaf8bc127f500f57b79616ab64850a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "526060c3_6314ff64",
@@ -48,6 +66,24 @@
       "writtenOn": "2022-12-02T18:57:31Z",
       "side": 1,
       "message": "typo: opcap_packages\n\ncould you also add the example of multiple pkgs, e.g. my-package,my-other-package",
+      "revId": "d27fe4bb88eaf8bc127f500f57b79616ab64850a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13f4bc27_448db265",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 24
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-05T08:17:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "526060c3_6314ff64",
       "revId": "d27fe4bb88eaf8bc127f500f57b79616ab64850a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
