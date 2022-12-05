@@ -1,0 +1,17 @@
+---
+- name: Check if container project already exists
+  include_tasks: check_if_container_project_exists.yml
+
+- name: Tasks to create certification project
+  block:
+    - name: Create container project
+      include_tasks: create_project.yml
+
+    # This task will not be executed if the container creation fails
+    - name: Update certification container project with company info
+      include_tasks: update_container_project.yml
+  when: not cert_project_exists_own_org | default(false) | bool
+  rescue:
+    - name: Check if container project exists in the other org
+      include_tasks: check_if_container_project_exists_other_org.yml
+...
