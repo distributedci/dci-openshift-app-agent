@@ -1,4 +1,5 @@
 ---
 create_project_url: "https://catalog.redhat.com/api/containers/v1/projects/certification"
 connect_url: "https://connect.redhat.com/projects"
+create_product_url: "https://catalog.redhat.com/api/containers/v1/product-listings"
 ...
