@@ -16,6 +16,23 @@
       "message": "Is everyone okay by adding a opcap check at the end of the tnf sample?",
       "revId": "91562336f2fc88d986f55312a13a9ed2ab20e90f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8854141_f33da24e",
+        "filename": "samples/tnf_test_example/hooks/tests.yml",
+        "patchSetId": 25
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-12-05T14:26:32Z",
+      "side": 1,
+      "message": "I think this should have a setting to activate/deactivate, the question is what is a sane default value for it.\n\nDo we want to do this for every operator? will this become a requirement for certification at some point?\n\nMy opinion is that we should have it available but not enabled it unless explicity requested, as it will add some time and is not used at the moment.",
+      "revId": "91562336f2fc88d986f55312a13a9ed2ab20e90f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
