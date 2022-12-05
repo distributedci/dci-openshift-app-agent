@@ -1,0 +1,8 @@
+{
+  "cert_projects": {{ cert_projects }},
+  "published": {{ cert_listings.published | default(cert_listing_published) }},
+  "target_platforms": [
+    "Red Hat OpenShift"
+  ],
+  "type": "{{ cert_listings.type | default(cert_listing_type) }}"
+}
