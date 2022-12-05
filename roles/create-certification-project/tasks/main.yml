@@ -28,6 +28,22 @@
   set_fact:
     cert_project_id: "{{ cert_project_output.json | json_query('_id') }}"
 
+- name: Update certification project Settings
+  vars:
+    pyxis_apikey: "{{ lookup('file', pyxis_apikey_path) }}"
+    template_filename: "templates/update_project_{{ project_type }}_setting.json.j2"
+  uri:
+    url: "{{ create_project_url }}/id/{{ cert_project_id }}"
+    method: PATCH
+    headers:
+      X-API-KEY: "{{ pyxis_apikey }}"
+    body_format: json
+    body: "{{ lookup('template', template_filename) }}"
+    status_code: [200,204]
+    timeout: 120
+  register: update_cert_project_output
+  when: cert_settings is defined
+
 - name: Print the URL of created certification project
   debug:
     msg: |

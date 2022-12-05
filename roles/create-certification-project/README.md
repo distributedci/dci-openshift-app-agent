@@ -52,6 +52,25 @@ preflight_operators_to_certify:
     # at the certified-operators repository
     create_pr: true
 
+# List of container images to certify,
+# you could provide multiple images to certify at once.
+preflight_containers_to_certify:
+  - container_image: "quay.io/my-container/bla-bla-image:v0.0.1"
+    create_container_project: true
+    short_description: "Add description here"
+    # Optional
+
+# Project certification settings for all images to certify (Optional)
+cert_settings:
+   build_categories: "Standalone image"
+   registry_override_instruct: "This is an instruction how to get the image link"
+   email_address: "email@example.com"
+   application_categories: "Networking"
+   os_content_type: "Red Hat Universal Base Image (UBI)"
+   privileged: false
+   release_category: "Generally Available"
+   repository_description: "This is a test"
+
 # Optional; provide it when you need to submit test results.
 # This token is shared between all your projects.
 # To generate it: connect.redhat.com -> Product certification ->
