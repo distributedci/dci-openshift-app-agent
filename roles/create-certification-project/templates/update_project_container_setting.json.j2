@@ -1,0 +1,29 @@
+{
+    "certification_status": "In Progress",
+    "contacts": [
+      {
+        "email_address": "{{ cert_settings.email_address }}",
+        "type": "Technical contact"
+      }
+    ],
+    "container": {
+      "auto_publish": {{ cert_settings.auto_publish | default(cert_setting_auto_publish) }},
+      "os_content_type": "{{ cert_settings.os_content_typea | default(cert_setting_os_content_type) }}",
+      "privileged": {{ cert_settings.privileged | default(cert_setting_privileged) }},
+      "application_categories": [
+      "{{ cert_settings.application_categories | default(cert_setting_application_categories) }}"
+      ],
+      "build_categories": "{{ cert_settings.build_categories | default(cert_setting_build_categories) }}",
+      "registry_override_instruct": "{{ cert_settings.registry_override_instruct | default(cert_setting_registry_override_instruct) }}",
+      "release_category": "{{ cert_settings.release_category | default(cert_setting_release_category) }}",
+      "repository_description": "{{ cert_settings.repository_description | default(cert_setting_repository_description) }}",
+      "short_description": "{{ c.short_description | default(cert_img_short_description) }}",
+      "type": "container"
+    },
+    "marketplace": {
+      "enablement_status": "ineligible"
+    },
+    "name": "{{ current_operator_image.split('@')[0].split(':')[0].split('/')[-1] }}",
+    "project_status": "active",
+    "type": "Containers"
+}
