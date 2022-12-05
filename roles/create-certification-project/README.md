@@ -19,6 +19,23 @@ create_container_project | false                                                
 create_operator_project  | false                                                                      | If set to true, it would create a new operator certification project.
 
 
+## Variables to define for project settings under `cert_settings` main variable (Optional)
+
+Below an example of variables used for container image certification project, more variables are available depending is created for operator or helmchart certifications. All sub-variables are optional.
+For more details see full [API schema](https://catalog.redhat.com/api/containers/v1/ui/#/Certification%20projects/pyxis.rest.legacy.cert_projects.patch_certification_project)
+
+Name                      | Default     | Description
+-------------------       | ------------| -------------
+build_categories          | None        | Image type, choose between "Standalone image", "Operator image" or "Component image".
+registry_override_instruct| None        | (String) Additional instructions to get image.
+email_address             | None        | Maintainer email addresses separated by a comma.
+application_categories    | None        | (String) Up to three categories related to the function of the image/operator. Examples: "Networking", "Storage", "Security".
+os_content_type           | None        | Base OS running in the image. Either "Red Hat Enterprise Linux" for RHEL or "Red Hat Universal Base Image (UBI)" for UBI.
+privileged                | None        | false or true: false when the container is isolated from the host, and true when the container requires special Host level privileges.
+release_category          | None        | Whether the resource to certify is either GA or Beta, choose between: "Generally Available" or "Beta".
+repository_description    | None        | This will be displayed on the container catalog repository overview page.
+
+
 ## Example of configuration file
 
 ```yaml
@@ -51,6 +68,27 @@ preflight_operators_to_certify:
     # Optional; use it to automatically open cert PR
     # at the certified-operators repository
     create_pr: true
+
+# List of container images to certify,
+# you could provide multiple images to certify at once.
+preflight_containers_to_certify:
+  - container_image: "quay.io/my-container/bla-bla-image:v0.0.1"
+    create_container_project: true
+    # Optional; use it to pass an image description to the created project
+    short_description: "Add description here"
+
+# Project certification setting (Optional)
+# This allows to fill the rest of the project settings after project creation
+# Any project for containers images or operators certifications can use them
+cert_settings:
+   build_categories: "Standalone image"
+   registry_override_instruct: "This is an instruction how to get the image link"
+   email_address: "email@example.com"
+   application_categories: "Networking"
+   os_content_type: "Red Hat Universal Base Image (UBI)"
+   privileged: false
+   release_category: "Generally Available"
+   repository_description: "This is a test"
 
 # Optional; provide it when you need to submit test results.
 # This token is shared between all your projects.
