@@ -16,6 +16,57 @@
       "message": "recheck",
       "revId": "49e8e94fe5ac22839dec9bd576f15ec73934552c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "29dd1fda_2b39a3b6",
+        "filename": "roles/create-certification-project/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-06T10:20:02Z",
+      "side": 1,
+      "message": "It is a bit confusing for me. Is it the short_description optional?",
+      "revId": "49e8e94fe5ac22839dec9bd576f15ec73934552c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25b0d88c_f719ee37",
+        "filename": "roles/create-certification-project/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-06T10:20:02Z",
+      "side": 1,
+      "message": "Can it be also used for operator certification?",
+      "revId": "49e8e94fe5ac22839dec9bd576f15ec73934552c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3e00760_773301b6",
+        "filename": "roles/create-certification-project/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-06T10:20:02Z",
+      "side": 1,
+      "message": "Maybe is it worth adding a description of these variables.",
+      "revId": "49e8e94fe5ac22839dec9bd576f15ec73934552c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
