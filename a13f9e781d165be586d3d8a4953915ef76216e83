@@ -22,6 +22,30 @@
       },
       "revId": "a13f9e781d165be586d3d8a4953915ef76216e83",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3a7576dd_be3fe661",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 540,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-12-06T02:03:27Z",
+      "side": 1,
+      "message": "Thanks Beto, I moved my change to 26929 because I was committing to master in the other CR, I fixed the typo there :P",
+      "parentUuid": "47461263_fe07d7b2",
+      "range": {
+        "startLine": 540,
+        "startChar": 151,
+        "endLine": 540,
+        "endChar": 156
+      },
+      "revId": "a13f9e781d165be586d3d8a4953915ef76216e83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
