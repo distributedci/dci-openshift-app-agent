@@ -34,6 +34,24 @@
       "parentUuid": "7a0af7b6_c7054842",
       "revId": "c5a570e58b2c694d7db7959b73aa99d38a5bab9a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97e6f948_95f6fa4d",
+        "filename": "roles/opcap-tool/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2022-12-06T14:56:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "169223de_84b6940b",
+      "revId": "c5a570e58b2c694d7db7959b73aa99d38a5bab9a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
