@@ -50,6 +50,23 @@
       "message": "LGTM",
       "revId": "39047279bfe7d0ffd79ca825adbde66626275eae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1932f60e_08176b29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-12-07T14:48:42Z",
+      "side": 1,
+      "message": "The change worked: https://www.distributed-ci.io/jobs/be826467-44ab-48b8-b2fc-e52649541bbc/jobStates\nLet\u0027s merge it!",
+      "revId": "39047279bfe7d0ffd79ca825adbde66626275eae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
