@@ -33,6 +33,23 @@
       "message": "Thank you for the fix, Tony! I started the job to test your change on cluster10 with check_workload, will give you +2 once it\u0027s green.",
       "revId": "39047279bfe7d0ffd79ca825adbde66626275eae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2cd523d_0bc6772c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-12-07T14:30:04Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "39047279bfe7d0ffd79ca825adbde66626275eae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
