@@ -67,6 +67,23 @@
       "message": "recheck",
       "revId": "f8c949075c9b825dc26c8e4ce5d2353344919d7a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad05deb8_21bc1ee8",
+        "filename": "roles/create-certification-project/templates/update_project_container_setting.json.j2",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-12-07T14:45:42Z",
+      "side": 1,
+      "message": "I think to have a stable behavior it\u0027s better to use not a loop variable but a shared variable:\n\n\u003e \"short_description\": \"{{ operator.short_description }}\",\n\nand add \n\n\u003e short_description: \"{{ operator.short_description | default(omit) }}\" in https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/tasks/prepare_operator_metadata.yml#L58",
+      "revId": "f8c949075c9b825dc26c8e4ce5d2353344919d7a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
