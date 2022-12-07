@@ -84,6 +84,24 @@
       "message": "I think to have a stable behavior it\u0027s better to use not a loop variable but a shared variable:\n\n\u003e \"short_description\": \"{{ operator.short_description }}\",\n\nand add \n\n\u003e short_description: \"{{ operator.short_description | default(omit) }}\" in https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/tasks/prepare_operator_metadata.yml#L58",
       "revId": "f8c949075c9b825dc26c8e4ce5d2353344919d7a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a017aaa2_9006b07d",
+        "filename": "roles/create-certification-project/templates/update_project_container_setting.json.j2",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-12-07T22:30:10Z",
+      "side": 1,
+      "message": "Thanks for the feedback Tatiana!\n\nI think in the current use case for this CR, we have declared the \"short_description\" in the variable preflight_containers_to_certify. And I got the impression that we\u0027ll have to declare \"short_description\" in preflight_operators_to_certify for this to work isn\u0027t?\n\nMaybe we have to do this in two places? in the prepare_operator_metadata.yml#L58 and I believe also in this file for cases when only standalone containers get certified?\n\u003e short_description: \"{{ c.short_description | default(omit) }}\" in\nhttps://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/preflight/tasks/main_standalone_containers_certification.yml#L28\n\nPlease let me know if I\u0027m missing something.",
+      "parentUuid": "ad05deb8_21bc1ee8",
+      "revId": "f8c949075c9b825dc26c8e4ce5d2353344919d7a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
