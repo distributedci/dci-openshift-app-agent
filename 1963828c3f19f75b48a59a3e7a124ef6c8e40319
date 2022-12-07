@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5df93a75_a828c03a",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2022-12-07T21:42:49Z",
+      "side": 1,
+      "message": "If the partner sets a different SA, it is supposed that it was already created? or should we create it on the fly? \n\ndefault SA is created when a new project is set, I do not see it has a role binding.",
+      "revId": "1963828c3f19f75b48a59a3e7a124ef6c8e40319",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
