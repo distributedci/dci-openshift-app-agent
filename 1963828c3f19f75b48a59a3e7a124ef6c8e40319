@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5f1cccc_9c5dd36b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-12-08T08:39:27Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "1963828c3f19f75b48a59a3e7a124ef6c8e40319",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5df93a75_a828c03a",
@@ -14,6 +31,24 @@
       "writtenOn": "2022-12-07T21:42:49Z",
       "side": 1,
       "message": "If the partner sets a different SA, it is supposed that it was already created? or should we create it on the fly? \n\ndefault SA is created when a new project is set, I do not see it has a role binding.",
+      "revId": "1963828c3f19f75b48a59a3e7a124ef6c8e40319",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40133886_c80a3fb9",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-12-08T08:39:27Z",
+      "side": 1,
+      "message": "Hi Beto, yes, the different SA is supposed to be created in the pre-run hooks. \n\nThis PR is an attempt to unwind the cross-impact of 2 CSVs: \n- One created by the regular operator installation in one namespace\n- Another created by Preflight in the preflight-testing namespace\n\nThe cross-impact is because of ClusterRoleBinding which is bound to the service account.",
+      "parentUuid": "5df93a75_a828c03a",
       "revId": "1963828c3f19f75b48a59a3e7a124ef6c8e40319",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
