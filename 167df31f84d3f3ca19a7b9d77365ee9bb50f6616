@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "167df31f84d3f3ca19a7b9d77365ee9bb50f6616",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "66e6a0c5_9c3e5ab7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2022-12-08T22:46:06Z",
+      "side": 1,
+      "message": "I think test-runner or something does not like the spaces, the sast two job failures show this in the job log:\n\u003e ansible-playbook: error: unrecognized arguments: description of a nice project\"}]} image\",\"registry_override_instruct\":\"This is an instruction how to get the image link\",\"email_address\":\"email@example.com\",\"application_categories\":\"Networking\",\"os_content_type\":\"Red Hat Universal Base Image (UBI)\",\"privileged\":\"false\",\"release_category\":\"Generally Available\",\"repository_description\":\"This is a test description\"}}\n\nI\u0027m removing spaces from the strings to test again",
+      "revId": "167df31f84d3f3ca19a7b9d77365ee9bb50f6616",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
