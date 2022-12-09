@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "7daa9f0f7b2c53c4a25b2640f90ea13ae36c3647",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9ad0d5e_77f738dc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2022-12-09T09:22:37Z",
+      "side": 1,
+      "message": "The new error is a verification check of Pyxis API (it requires spaces): https://www.distributed-ci.io/jobs/62807598-b6b8-4a6f-88b1-7698f5d73bdc/jobStates?sort\u003ddate\u0026task\u003d6cc339de-118c-429c-b16e-e0aadf979898\n\nI investigated the old error, the faulty code is in the doaa-ctl: CILAB-918\n\nGoing to check in more details on Mon.",
+      "revId": "7daa9f0f7b2c53c4a25b2640f90ea13ae36c3647",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
