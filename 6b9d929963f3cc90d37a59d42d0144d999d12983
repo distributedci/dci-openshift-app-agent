@@ -16,6 +16,23 @@
       "message": "Some examples of what is happening now without this fix:\n\n- https://www.distributed-ci.io/jobs/e06d5da8-4a0e-43ac-b831-1c6790d14a06/jobStates?sort\u003ddate\u0026task\u003d93bc2908-20c7-4df2-8734-31e40a994083\n- https://www.distributed-ci.io/jobs/da874659-b034-4353-9218-17b6f358ada1/jobStates?sort\u003ddate\u0026task\u003d7af9eb59-e1e6-48a6-befa-1226ae1eaef3",
       "revId": "6b9d929963f3cc90d37a59d42d0144d999d12983",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "337e3ff0_97156905",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2022-12-15T22:08:46Z",
+      "side": 1,
+      "message": "Ah! There\u0027s a bit of history behind this one...\n\nIn doaa the dci_config_dir (singular) is expected to a string, a single directory. If someone wants to use multiple hooks then multiple executions of doaa is expected.\n\nOpposite to doa where dci_config_dirs (plural) expects a list of dirs. The right fix is then to make the dci_gits_to_components to be a list instead.\n\nhttps://github.com/redhat-cip/dci-openshift-app-agent/blob/master/group_vars/all#L13",
+      "revId": "6b9d929963f3cc90d37a59d42d0144d999d12983",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
