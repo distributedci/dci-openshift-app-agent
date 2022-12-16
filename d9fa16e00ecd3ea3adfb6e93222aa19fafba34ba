@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "823f3f8d_cf2b9259",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2022-12-16T15:11:08Z",
+      "side": 1,
+      "message": "Checked the update in the cnf-cert readme file.\n\nThis documentation change looks OK to me.\n\nThanks for the work.",
+      "revId": "d9fa16e00ecd3ea3adfb6e93222aa19fafba34ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
