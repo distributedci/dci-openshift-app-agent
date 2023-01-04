@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "82669536_50eb107b",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-01-04T17:05:26Z",
+      "side": 0,
+      "message": "I think we need to proceeds with three stages for compatibility:\n- Add new feature and mark old way as deprecated.\n- Wait everybody use the new way.\n- Remove the deprecated way from the code.",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 0
+      },
+      "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
