@@ -22,6 +22,30 @@
       },
       "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1f78464_fe42eb8d",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-04T19:19:08Z",
+      "side": 0,
+      "message": "I\u0027m ok with the change, but I like David\u0027s three stages to add the new feature if is not too complicated. I\u0027m not sure if many partners use it, but just to play safe and use good practices to replace features.",
+      "parentUuid": "82669536_50eb107b",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 0
+      },
+      "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
