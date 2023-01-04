@@ -16,6 +16,23 @@
       "message": "Change ready for review",
       "revId": "6aab37a0ba221019c47efb7b5bed30b6f41e9402",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3758fe00_ba0aa1cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-01-04T15:27:02Z",
+      "side": 1,
+      "message": "For me, it makes the code a bit clearer",
+      "revId": "6aab37a0ba221019c47efb7b5bed30b6f41e9402",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
