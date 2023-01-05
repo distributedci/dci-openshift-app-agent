@@ -166,6 +166,30 @@
       },
       "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88f221ea_397c488b",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-01-05T16:47:17Z",
+      "side": 0,
+      "message": "Okey, cool, let\u0027s do it :-)",
+      "parentUuid": "448df798_8b334cdc",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 0
+      },
+      "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
