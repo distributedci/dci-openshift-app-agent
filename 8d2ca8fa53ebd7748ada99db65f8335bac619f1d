@@ -118,6 +118,30 @@
       },
       "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ffae690_b9820831",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-01-05T15:40:39Z",
+      "side": 0,
+      "message": "Is the compatibility change part of the PR? I don\u0027t see it. The link goes to the PR, it is broken, I guess.",
+      "parentUuid": "897d4ef0_5ec65518",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 0
+      },
+      "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
