@@ -53,6 +53,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7e15c9f5_71522bb2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-05T12:00:16Z",
+      "side": 1,
+      "message": "Hi Ramon, the job tnf-test-cnf-green produced an unrelated error \"Failed at olm-operator : Issues during operator installation\", rescheduled it. Not sure if I\u0027m testing it properly with `jumphost ~]$ check_workload 27107 tnf-test-cnf-green`. Do you mind having a look?",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5dc7cea_dc56a788",
