@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61034f14_9d779f3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T09:24:49Z",
+      "side": 1,
+      "message": "Can we reproduce the case of solutions team here to confirm that it\u0027s working?\nAlso, can we also test tnf-test-cnf to validate the change is working there too?",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5dc7cea_dc56a788",
+        "filename": "roles/verify-tests/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T09:24:49Z",
+      "side": 1,
+      "message": "is there any way of avoiding using pip module here? I\u0027ve seen that `dnf install python3-junitparser` doesn\u0027t work, so it seems that package module would fail, but I remember there are problems with some partners or teams using pip to install dependencies, so that should not be the proper way of installing software if possible",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 6
+      },
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
