@@ -105,6 +105,41 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f31cd44_29e7fe8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T13:16:53Z",
+      "side": 1,
+      "message": "hmm, I think the change needs to be reviewed, because as I was fearing, the check is not working with tnf-test-cnf pipeline (it\u0027s the same than tnf-test-cnf-green pipeline in the end):\n\n\u003e Patch Set 5:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/4184d68d-0c41-4f57-8761-af2d3967deb2/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/27107/\n\nthis is the tests_to_verify used in this pipeline:\n\n```\n    tests_to_verify:\n      - filename: \"cnf-certification-tests_junit.xml\"\n        expected_results:\n          - testcase: \"^((?!platform-alteration-tainted-node-kernel|affiliated-certification-operator-is-certified|\\\n              affiliated-certification-container-is-certified-digest|networking-dual-stack-service).)*$\"\n            passed: True\n```\n\nso, the job expects that all tnf tests pass excepting these four ones that may fail, which is the case of this job, however verify-tests is marking a failure (and it shouldn\u0027t)",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22c1bd52_155a4b28",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T13:16:53Z",
+      "side": 1,
+      "message": "I agree with the testing of multiple test suites in one JUnit, but maybe it\u0027s fine with the local test you did. Here, we can do two things: 1) to test with dci-check-change a job that generates this kind of junit file, or 2) merge this change when it\u0027s ready and then check if it\u0027s working, then correcting issues if we find more, but always making sure that we\u0027re not breaking what we\u0027re doing now",
+      "parentUuid": "b1b53244_b763bfe7",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5dc7cea_dc56a788",
