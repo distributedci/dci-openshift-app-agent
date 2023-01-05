@@ -140,6 +140,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "07789cce_8121fc48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-05T13:19:03Z",
+      "side": 1,
+      "message": "The last job made it till verify-tests and correctly verified the test results: https://www.distributed-ci.io/jobs/4184d68d-0c41-4f57-8761-af2d3967deb2/jobStates?sort\u003ddate\u0026task\u003d24b030df-7c2a-4ccf-84c9-8c415cba97e2 \n\nactual results:\n{\"passed\": false, \"testcase\": \"[It] networking networking-dual-stack-service [common, networking, networking-dual-stack-service]\"}\n\nverification:\n\"The following expectations failed: [{\u0027testcase\u0027: \u0027^((?!platform-alteration-tainted-node-kernel|affiliated-certification-operator-is-certified|affiliated-certification-container-is-certified-digest|networking-dual-stack-service).)*$\u0027, \u0027passed\u0027: True}]\"}",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5dc7cea_dc56a788",
