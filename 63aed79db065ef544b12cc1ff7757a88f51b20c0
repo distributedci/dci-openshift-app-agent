@@ -177,6 +177,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7bde3461_7e8986bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T13:53:04Z",
+      "side": 1,
+      "message": "but these two tests are skipped, not failed, as well as other 5 tnf tests that are also skipped and are not hitting the issue. So I\u0027m not sure if the validation is working fine, because currently, all skipped test are handled as passed, and now it\u0027s handling two skipped tests as failed but the rest skipped tests as passed",
+      "parentUuid": "c24c3d71_65d70ffc",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e5dc7cea_dc56a788",
         "filename": "roles/verify-tests/tasks/main.yml",
         "patchSetId": 5
