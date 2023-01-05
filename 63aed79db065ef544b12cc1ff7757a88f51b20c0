@@ -18,6 +18,41 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5690e2f7_69da2c3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-05T09:41:48Z",
+      "side": 1,
+      "message": "\u003e Can we reproduce the case of solutions team here to confirm that it\u0027s working?\n\nI tested that locally: https://gist.github.com/tkrishtop/f3779762652e08514807bb671bca2775\nCould we test in Dallas somehow? \n\n\u003e Also, can we also test tnf-test-cnf to validate the change is working there too?\n\nStarted the job: check_workload 27107 tnf-test-cnf-green",
+      "parentUuid": "61034f14_9d779f3c",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9cf3ae9f_9cc16ebb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-05T09:41:48Z",
+      "side": 1,
+      "message": "Hello Ramon and Manuel, the change is ready for review.\n\nThe change is tested:\n- On a single test suite in Dallas:\n  -- preflight-green: https://www.distributed-ci.io/jobs/4d857472-39d6-4e75-a2ea-a17c57c38b92/jobStates?sort\u003ddate\u0026task\u003dd2d3df4e-4ae8-4a95-aa48-eccc09efca78\n  -- preflight: https://www.distributed-ci.io/jobs/352e9bf5-affa-4bc0-b9bf-9ba0f769fc7d/jobStates?sort\u003ddate\u0026task\u003d8c6286eb-89f5-45d0-83f9-99f677a4f50b\n\n- On multiple test suites locally: https://gist.github.com/tkrishtop/f3779762652e08514807bb671bca2775  \n\n",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5dc7cea_dc56a788",
@@ -31,6 +66,30 @@
       "writtenOn": "2023-01-05T09:24:49Z",
       "side": 1,
       "message": "is there any way of avoiding using pip module here? I\u0027ve seen that `dnf install python3-junitparser` doesn\u0027t work, so it seems that package module would fail, but I remember there are problems with some partners or teams using pip to install dependencies, so that should not be the proper way of installing software if possible",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 6
+      },
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "819aefad_55299b33",
+        "filename": "roles/verify-tests/tasks/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-05T09:41:48Z",
+      "side": 1,
+      "message": "These problems were due to conflicting dependencies and here we have an isolated package. That should be safe.",
+      "parentUuid": "e5dc7cea_dc56a788",
       "range": {
         "startLine": 3,
         "startChar": 0,
