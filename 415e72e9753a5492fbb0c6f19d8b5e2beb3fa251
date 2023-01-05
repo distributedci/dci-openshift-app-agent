@@ -16,6 +16,24 @@
       "message": "LGTM but we need to wait until having tnf v4.1.3 available in Quay before merging: https://quay.io/repository/testnetworkfunction/cnf-certification-test?tab\u003dtags",
       "revId": "415e72e9753a5492fbb0c6f19d8b5e2beb3fa251",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a84941e_61256f03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-05T14:39:18Z",
+      "side": 1,
+      "message": "Thanks Ramon, yes I\u0027ll keep checking when the image be available and then we can merge",
+      "parentUuid": "7d528a98_c35ee2f5",
+      "revId": "415e72e9753a5492fbb0c6f19d8b5e2beb3fa251",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
