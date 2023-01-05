@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8a306ee_b20ed644",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T10:44:38Z",
+      "side": 1,
+      "message": "Two previous failed jobs are not related to the change.\n\nIn libvirt job, we can see that, effectively, tnf_env_vars is defined based on legacy env vars: https://www.distributed-ci.io/jobs/704541c6-b708-4bb5-a15a-e61f5d82b364/jobStates?sort\u003ddate\u0026task\u003d84eefa50-87d6-40ca-b912-9445940bddad, then the tnf execution worked.\n\nThe values defined there are propagated to tnf execution, as we can see in execution.log file:\n\n```\n...\n+ podman run --rm --network host -v /var/lib/dci-openshift-agent/clusterconfigs-server07/kubeconfig:/usr/tnf/kubeconfig/config:Z -v /tmp/ansible.l2w6nn_4/cnf-certification-test/cnf-certification-test:/usr/tnf/config:Z -v /tmp/ansible.l2w6nn_4/cnf-certification-test/cnf-certification-test:/usr/tnf/claim:Z -e KUBECONFIG\u003d/usr/tnf/kubeconfig/config -e TNF_OFFLINE_DB\u003d/usr/offline-db -e TNF_NON_INTRUSIVE_ONLY\u003dFalse -e TNF_DISABLE_CONFIG_AUTODISCOVER\u003dfalse -e TNF_PARTNER_REPO\u003dquay.io/testnetworkfunction -e SUPPORT_IMAGE\u003d -e TNF_DEPLOYMENT_TIMEOUT\u003d -e TNF_LOG_LEVEL\u003ddebug -e ON_DEMAND_DEBUG_PODS\u003dfalse -e PATH\u003d/usr/bin:/usr/local/oc/bin cnf-certification-test:v4.1.2 ./run-cnf-suites.sh -o /usr/tnf/claim -f -s -l common,extended,pre_release\n...\n```\n\nSo, I think this is ready for review again. I\u0027ll try to make a job pass in dallas lab, explicitly defining tnf_env_vars there, but we know that this worked in the previous patchset, so it\u0027s not strictly required",
+      "revId": "fb6e547ec9c6c4ac4b24d45706112b241bccf3d3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
