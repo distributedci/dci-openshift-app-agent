@@ -88,6 +88,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1b53244_b763bfe7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-05T12:51:49Z",
+      "side": 1,
+      "message": "Hi Ramon, you requested to run tnf-test-cnf-green, but I don\u0027t think that would add any value in this case. We\u0027ve already tested the one-testsuite situation on preflight and preflight-green jobs.\n\ntnf-test-cnf-green has failed three times in a row with errors unrelated to verify-tests: \"Failed at olm-operator: Issues during operator installation\" and \"Failed at Wait until volume is available.\" It\u0027s probably just a matter of repairing the cluster10 after some storage-related tests, I\u0027m reinstalling it right now, but it has nothing related to the verify-tests role. \n\nWhat might be helpful is running something in Dallas with multiple test suites in one JUnit. Do we have something like that? I\u0027ve already tested multiple test suites locally, and the only missing part is an e2e test: https://gist.github.com/tkrishtop/f3779762652e08514807bb671bca2775\n\nThanks for your help with this.\n\n",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5dc7cea_dc56a788",
