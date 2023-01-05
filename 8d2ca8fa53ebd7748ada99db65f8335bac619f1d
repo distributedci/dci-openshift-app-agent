@@ -46,6 +46,30 @@
       },
       "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c42885e5_123a2f66",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T09:12:43Z",
+      "side": 0,
+      "message": "I\u0027ve included a task before running tnf where I redefine tnf_env_vars to include the old variables used for tnf environment variables only in the case that tnf_env_vars has not been overriden, to keep backwards compatibility. I\u0027ll test this on libvirt, while I test tnf_env_vars in dallas.",
+      "parentUuid": "d1f78464_fe42eb8d",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 0
+      },
+      "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
