@@ -142,6 +142,30 @@
       },
       "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "448df798_8b334cdc",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 237,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T15:57:39Z",
+      "side": 0,
+      "message": "This is the code that ensures the backwards compatibility, as I said:\n\n```\n# Task to be deleted when removing backwards compatibility with env vars usage.\n- name: Redefine tnf_env_vars if empty using default environment variables\n  set_fact:\n    tnf_env_vars:\n      TNF_NON_INTRUSIVE_ONLY: \"{{ tnf_non_intrusive_only }}\"\n      TNF_RUN_CFD_TEST: \"{{ tnf_run_cfd_test }}\"\n      TNF_LOG_LEVEL: \"{{ tnf_log_level }}\"\n  when: tnf_env_vars|length \u003d\u003d 0\n```\n\nwith this, and with this:\n\n```\n# The task automatically append TNF_PARTNER_REPO and TNF_IMAGE environment variables to tnf_env_vars\n- name: Run the CNF Test Suite\n  vars:\n    tnf_partner_repo: \"{{ ( provisionhost_registry|length ) | ternary(provisionhost_registry, \u0027quay.io\u0027) }}/testnetworkfunction\"\n  environment: \"{{ tnf_env_vars | combine({\u0027TNF_PARTNER_REPO\u0027: tnf_partner_repo, \u0027TNF_IMAGE\u0027: tnf_image}) }}\"\n```\n\nwe don\u0027t need to do export anymore",
+      "parentUuid": "4ffae690_b9820831",
+      "range": {
+        "startLine": 232,
+        "startChar": 0,
+        "endLine": 237,
+        "endChar": 0
+      },
+      "revId": "8d2ca8fa53ebd7748ada99db65f8335bac619f1d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
