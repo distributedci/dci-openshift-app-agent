@@ -33,6 +33,23 @@
       "message": "Nice, thank you for fixing this long-term tech debt, Tony!",
       "revId": "81d83b3254bf580986f8130b179890b5aa38a5a1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7cd83ea5_e569023f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T09:18:20Z",
+      "side": 1,
+      "message": "Hi Tony, I\u0027ve been reviewing changes and I think this one can be merged but needs to be rebased, do you think it\u0027s fine to do that?",
+      "revId": "81d83b3254bf580986f8130b179890b5aa38a5a1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
