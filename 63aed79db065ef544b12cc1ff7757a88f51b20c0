@@ -211,6 +211,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "81bdfa74_27d3e25f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-05T14:50:25Z",
+      "side": 1,
+      "message": "Now I\u0027ve seen the job again and I could see all the skipped tests are marked as passed\u003dfalse, whereas they were marked as passed\u003dtrue before.\n\nI think we need to rediscuss this a little bit, because if we go ahead with this approach, I fear that each time a new tnf test is included (and it\u0027s usually skipped by default because it usually requires to introduce new config in the workloads in order to be tested), the daily jobs will fail because tests_to_verify is not considering the new tnf skipped test.\n\nHonestly, because of that, I\u0027d prefer to just keep passed\u003dfalse only for tests that are failing, and do not consider skipped tests. Or, as a different approach, to consider the same fields defined in the junit XML (status\u003dpassed/skipped/failed) and only fail if status\u003dfailed",
+      "parentUuid": "f027e134_876a8fce",
+      "revId": "63aed79db065ef544b12cc1ff7757a88f51b20c0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e5dc7cea_dc56a788",
