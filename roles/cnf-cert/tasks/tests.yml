@@ -1,4 +1,8 @@
 ---
+- name: debug task
+  debug:
+    msg: hello world
+
 - name: Fail if tnf version is lower than v4.0.0
   fail:
     msg: "cnf-cert role is no longer compatible with tnf versions lower than v4.0.0"
