@@ -33,6 +33,24 @@
       "message": "Hi Tony, thank you! I started preflight-green job to ensure that everything works fine. Will give you +2 once it\u0027s ok.",
       "revId": "afa76d259a4fb573daa72e3d4cb6459a7f56ac0b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58da8b66_b074f566",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-06T14:24:26Z",
+      "side": 1,
+      "message": "Thanks for including that check! I see it returned OK 😊",
+      "parentUuid": "b716fbe7_997d3cc5",
+      "revId": "afa76d259a4fb573daa72e3d4cb6459a7f56ac0b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
