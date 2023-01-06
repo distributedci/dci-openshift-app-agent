@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b78ba05_a67b5dc7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-06T10:58:04Z",
+      "side": 1,
+      "message": "The change has been tested successfully on a single test suite in Dallas and on multiple test suites locally.\n\nBefore merging it, we need to figure out how to deal with skipped tests for Ramon\u0027s tnf use case.\n\nHis use case is as follows: He has over 70 test cases and wants to use a regex to specify that \"all test cases should pass or be skipped, except for these 4.\"\n \nThe current logic considers absent or skipped tests as a failed expectation:\n\n\u003e # The output of verify-tests validation\n{\u0027failed_expectation\u0027: \n{\u0027testcase\u0027: \u0027^((?!platform-alteration-tainted-node-kernel|affiliated-certification-operator-is-certified|affiliated-certification-container-is-certified-digest|networking-dual-stack-service).)*$\u0027, \u0027passed\u0027: True}, \n\u0027actual_result\u0027: \n{\u0027testcase\u0027: \u0027[It] access-control access-control-sys-ptrace-capability [common, telco, access-control, access-control-sys-ptrace-capability]\u0027, \u0027passed\u0027: False}}, \n\n\u003e # JUnit file\n\u003ctestcase name\u003d\"[It] access-control access-control-sys-ptrace-capability [common, telco, access-control, access-control-sys-ptrace-capability]\" classname\u003d\"CNF Certification Test Suite\" status\u003d\"skipped\" time\u003d\"0.000443271\"\u003e \n\nRamon wants to treat absent and skipped tests differently:\nAbsent test \u003d KO\nSkipped test \u003d OK\n\nTechnically, it\u0027s easy to do, although it\u0027s probably not the best solution. We could implement this logic temporarily, to enable the merge for multiple test cases, and then discuss how to proceed with absent and skipped tests.",
+      "revId": "875bb4f954704d35f62076120984d64540d7f971",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
