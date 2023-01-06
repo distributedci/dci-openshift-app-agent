@@ -33,6 +33,23 @@
       "message": "Now verified in dallas: if we define tnf_env_vars, we don\u0027t use legacy variables: https://www.distributed-ci.io/jobs/653c92a7-6717-4802-b420-a95b353b32d2/jobStates?sort\u003ddate\u0026task\u003d0ae9e584-5b42-435d-a8c7-a4217509fa95, and the execution worked.",
       "revId": "fb6e547ec9c6c4ac4b24d45706112b241bccf3d3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91f1ac99_204f5c3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-06T04:07:28Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "fb6e547ec9c6c4ac4b24d45706112b241bccf3d3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
