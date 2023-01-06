@@ -34,6 +34,23 @@
       "parentUuid": "7d528a98_c35ee2f5",
       "revId": "415e72e9753a5492fbb0c6f19d8b5e2beb3fa251",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02f18837_167642d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-06T20:13:25Z",
+      "side": 1,
+      "message": "Thanks, I\u0027m merging now, the image is in quay :)",
+      "revId": "415e72e9753a5492fbb0c6f19d8b5e2beb3fa251",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
