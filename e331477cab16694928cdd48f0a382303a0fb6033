@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0141cb49_6b5f1e2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-09T19:37:54Z",
+      "side": 1,
+      "message": "Sure David, merging this",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "109822ce_5c3482bb",
@@ -121,6 +138,24 @@
       "side": 1,
       "message": "And I don\u0027t have permission to merge, Manuel, please.",
       "parentUuid": "0352c898_c70a3dd2",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "897da376_bc311c72",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-09T19:37:54Z",
+      "side": 1,
+      "message": "\u003e I\u0027m not aware of a Red Hat\u0027s way, and I\u0027m not a lawyer\n:)",
+      "parentUuid": "63d22e77_466b07c5",
       "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
