@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ea81aee_a3498a33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-09T19:04:11Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "109822ce_5c3482bb",
@@ -32,6 +49,24 @@
       "side": 1,
       "message": "It is not right. The rule for copyright years is: 1. the year of a first release 2. the year of the last change, e.g. 2001, 2004-2020. I wrote a script, that looks for git history and copyright notice, https://github.com/rdavid/toolbox/blob/master/app/copyright. I run in once in a while for all projects I\u0027m involve.",
       "parentUuid": "109822ce_5c3482bb",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7fc76d7_5f3cec02",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-09T19:04:11Z",
+      "side": 1,
+      "message": "Thanks for the clarification, I was looking on the internet before asking you and I didn\u0027t find a clear standard but most of the posts I read mentioned that the \u0027end’ year being the last year that the work was revised. Maybe there is a Red Hat way I didn\u0027t find, either way I\u0027m ok.",
+      "parentUuid": "c941a63d_97fa40ab",
       "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
