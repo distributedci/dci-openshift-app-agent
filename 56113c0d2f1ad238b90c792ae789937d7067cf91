@@ -16,6 +16,23 @@
       "message": "I need a +2 again to merge, because I needed to rebase from master as there were some conflicts before merging",
       "revId": "56113c0d2f1ad238b90c792ae789937d7067cf91",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b842b0f1_be9d6a95",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-09T14:09:43Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "56113c0d2f1ad238b90c792ae789937d7067cf91",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
