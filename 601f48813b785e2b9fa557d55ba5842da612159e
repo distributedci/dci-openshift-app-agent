@@ -16,6 +16,23 @@
       "message": "LGTM, let\u0027s see the fix for the skipped test in a next change",
       "revId": "601f48813b785e2b9fa557d55ba5842da612159e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cea89d71_dd35d805",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-09T14:05:22Z",
+      "side": 1,
+      "message": "Preflight-green and tnf jobs are ok, going to merge.\n\nThe failure for preflight job is because somehow preflight tests for testpmd-lb are skipped and the result validation fails, as it should.\n\nWhy these tests are skipped will require separate investigation: https://www.distributed-ci.io/jobs/79b170bc-3dce-4d42-8655-b97d7b5633f0/jobStates?sort\u003ddate\u0026task\u003d986b8176-b0c5-4231-a043-828111806087 ",
+      "revId": "601f48813b785e2b9fa557d55ba5842da612159e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
