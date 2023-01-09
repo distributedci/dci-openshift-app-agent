@@ -41,6 +41,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b62181bc_b1485691",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-01-09T11:10:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "15824ef1_5da25dab",
+      "range": {
+        "startLine": 58,
+        "startChar": 30,
+        "endLine": 58,
+        "endChar": 35
+      },
+      "revId": "1b2ecff07433421895bcc773674c512beca46005",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "99ab984a_eeed4df4",
@@ -54,6 +78,30 @@
       "writtenOn": "2023-01-09T10:46:13Z",
       "side": 1,
       "message": "\"later usage\", or \"using it later\"",
+      "range": {
+        "startLine": 60,
+        "startChar": 43,
+        "endLine": 60,
+        "endChar": 52
+      },
+      "revId": "1b2ecff07433421895bcc773674c512beca46005",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "072fc619_b01719df",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 60,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-01-09T11:10:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "99ab984a_eeed4df4",
       "range": {
         "startLine": 60,
         "startChar": 43,
@@ -87,6 +135,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0990268_46ab3b18",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-01-09T11:10:03Z",
+      "side": 1,
+      "message": "I think click is correct here.",
+      "parentUuid": "cf270871_79e3a39e",
+      "range": {
+        "startLine": 64,
+        "startChar": 37,
+        "endLine": 64,
+        "endChar": 42
+      },
+      "revId": "1b2ecff07433421895bcc773674c512beca46005",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "90e2f4ee_634701be",
@@ -100,6 +172,30 @@
       "writtenOn": "2023-01-09T10:46:13Z",
       "side": 1,
       "message": "Can we add a header like `# Old way to use the dci-openshift-app-agent` as well as done in https://softwarefactory-project.io/r/c/dci-openshift-agent/+/27120?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 2
+      },
+      "revId": "1b2ecff07433421895bcc773674c512beca46005",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed4d6fdb_278bee28",
+        "filename": "obsolete.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-01-09T11:10:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "90e2f4ee_634701be",
       "range": {
         "startLine": 1,
         "startChar": 0,
