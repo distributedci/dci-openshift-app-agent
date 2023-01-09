@@ -16,6 +16,24 @@
       "message": "David, thanks for this fix, wdyt if we bump up this to 2021-2023?",
       "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c941a63d_97fa40ab",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-01-09T18:54:00Z",
+      "side": 1,
+      "message": "It is not right. The rule for copyright years is: 1. the year of a first release 2. the year of the last change, e.g. 2001, 2004-2020. I wrote a script, that looks for git history and copyright notice, https://github.com/rdavid/toolbox/blob/master/app/copyright. I run in once in a while for all projects I\u0027m involve.",
+      "parentUuid": "109822ce_5c3482bb",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
