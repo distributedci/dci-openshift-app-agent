@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9749391e_e1e40983",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-09T10:48:30Z",
+      "side": 1,
+      "message": "I need a +2 again to merge, because I needed to rebase from master as there were some conflicts before merging",
+      "revId": "56113c0d2f1ad238b90c792ae789937d7067cf91",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
