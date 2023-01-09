@@ -69,6 +69,24 @@
       "parentUuid": "c941a63d_97fa40ab",
       "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8bef58b2_1f8b9fb9",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-01-09T19:22:23Z",
+      "side": 1,
+      "message": "I\u0027m not aware of a Red Hat\u0027s way, and I\u0027m not a lawyer. This is my own opinion, based on Google search for sure. Me and the Google search could be wrong :-)",
+      "parentUuid": "c7fc76d7_5f3cec02",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
