@@ -105,6 +105,24 @@
       "parentUuid": "8bef58b2_1f8b9fb9",
       "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63d22e77_466b07c5",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-01-09T19:25:57Z",
+      "side": 1,
+      "message": "And I don\u0027t have permission to merge, Manuel, please.",
+      "parentUuid": "0352c898_c70a3dd2",
+      "revId": "e331477cab16694928cdd48f0a382303a0fb6033",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
