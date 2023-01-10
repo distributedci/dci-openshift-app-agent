@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fcc9f5dd_da1693d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-10T22:28:23Z",
+      "side": 1,
+      "message": "LGTM, I think we only need to test in OCP 4.12/4/13",
+      "revId": "08c966b74815695c068e9bc23d003c1f1962a517",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
