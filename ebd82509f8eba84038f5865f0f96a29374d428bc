@@ -16,6 +16,24 @@
       "message": "I started to see a lot of \"Check base page\" errors since yesterday. It\u0027s very random.\nrecheck",
       "revId": "ebd82509f8eba84038f5865f0f96a29374d428bc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3daabe65_fab46950",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-10T14:43:37Z",
+      "side": 1,
+      "message": "Yes, that\u0027s strange... at the end I\u0027ve just ran a d-o-a-a job on top of an already up-and-running cluster to unblock this change to be merged",
+      "parentUuid": "b1d98648_11d8c917",
+      "revId": "ebd82509f8eba84038f5865f0f96a29374d428bc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
