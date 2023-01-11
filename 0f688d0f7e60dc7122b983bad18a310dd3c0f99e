@@ -82,6 +82,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "98e29e84_ea59803e",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-01-11T21:59:10Z",
+      "side": 1,
+      "message": "No needed. This is more a preflight issue.",
+      "parentUuid": "f57859e0_520720b5",
+      "range": {
+        "startLine": 52,
+        "startChar": 8,
+        "endLine": 52,
+        "endChar": 18
+      },
+      "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7e2ef8fa_ba6aac67",
@@ -95,6 +119,24 @@
       "writtenOn": "2023-01-11T21:12:27Z",
       "side": 1,
       "message": "nit: I think the header should be inside the conditional, by printing the header and not having is not clear if there\u0027s an issue with the content or not, wdyt?",
+      "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "525f2d44_9816a553",
+        "filename": "roles/preflight/templates/cluster_logs.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-01-11T21:59:10Z",
+      "side": 1,
+      "message": "Three log files are collected, some of them may be empty depending on how takes the operator to be deployed. I will prefer to see the headers and not an empty file and see when the information was populated.",
+      "parentUuid": "7e2ef8fa_ba6aac67",
       "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
