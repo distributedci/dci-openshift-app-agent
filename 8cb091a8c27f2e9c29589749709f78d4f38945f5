@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a73a06f_e65cac59",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-11T21:33:50Z",
+      "side": 1,
+      "message": "IMO, the reference to the  jumphost is not as important as the fact that this will remove stale async files in ~/.ansible_async due to running an async task with poll:0 [1]\n\nhttps://docs.ansible.com/ansible/latest/playbook_guide/playbooks_async.html#run-tasks-concurrently-poll-0",
+      "revId": "8cb091a8c27f2e9c29589749709f78d4f38945f5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e286bf67_3964f687",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-11T21:33:50Z",
+      "side": 1,
+      "message": "LGTM, but I\u0027d just rewrite the commit msg",
+      "revId": "8cb091a8c27f2e9c29589749709f78d4f38945f5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
