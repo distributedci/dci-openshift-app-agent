@@ -139,6 +139,24 @@
       "parentUuid": "7e2ef8fa_ba6aac67",
       "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d18ea129_da7fee14",
+        "filename": "roles/preflight/templates/cluster_logs.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-01-11T21:59:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "525f2d44_9816a553",
+      "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
