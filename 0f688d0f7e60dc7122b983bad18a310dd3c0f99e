@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c04bc4a_030d65a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-11T21:12:27Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6bf30df7_f668bead",
@@ -37,6 +54,47 @@
         "endLine": 52,
         "endChar": 18
       },
+      "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f57859e0_520720b5",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-11T21:12:27Z",
+      "side": 1,
+      "message": "Do we really need another conditional for 4.12+? These labels are only enforced in 4.12+, it won\u0027t matter if any other version has these labels.",
+      "parentUuid": "6bf30df7_f668bead",
+      "range": {
+        "startLine": 52,
+        "startChar": 8,
+        "endLine": 52,
+        "endChar": 18
+      },
+      "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e2ef8fa_ba6aac67",
+        "filename": "roles/preflight/templates/cluster_logs.j2",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-11T21:12:27Z",
+      "side": 1,
+      "message": "nit: I think the header should be inside the conditional, by printing the header and not having is not clear if there\u0027s an issue with the content or not, wdyt?",
       "revId": "0f688d0f7e60dc7122b983bad18a310dd3c0f99e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
