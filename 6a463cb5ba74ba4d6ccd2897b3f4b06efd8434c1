@@ -16,6 +16,23 @@
       "message": "Async job files are been removed. It failed because https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/27151 was still not merged.",
       "revId": "6a463cb5ba74ba4d6ccd2897b3f4b06efd8434c1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5ec9be76_cf6d1e7d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-12T00:19:31Z",
+      "side": 1,
+      "message": "Let\u0027s test it against a preflight pipeline like example-cnf",
+      "revId": "6a463cb5ba74ba4d6ccd2897b3f4b06efd8434c1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
