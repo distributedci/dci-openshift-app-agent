@@ -67,6 +67,23 @@
       "message": "check dallas ocp-4.11-vanilla example-cnf",
       "revId": "6a463cb5ba74ba4d6ccd2897b3f4b06efd8434c1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9376186_e3d1a8f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-12T16:58:58Z",
+      "side": 1,
+      "message": "check workload preflight-green",
+      "revId": "6a463cb5ba74ba4d6ccd2897b3f4b06efd8434c1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
