@@ -84,6 +84,23 @@
       "message": "check workload preflight-green",
       "revId": "6a463cb5ba74ba4d6ccd2897b3f4b06efd8434c1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d88ff65a_322d19e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-01-12T17:05:22Z",
+      "side": 1,
+      "message": "Hi Beto, thanks for all of the contributions, it\u0027s highly appreciated! \n\nI\u0027m sorry for the numerous issues with preflight pipeline (absent junit files), it seems to be related with skipped turns in the ansible loop, but I have to check that in more details.\n\nPlease use preflight-green for the moment for the tests, that should be enough to validate preflight.\nAdding +2 to let you merge once the tests are green.",
+      "revId": "6a463cb5ba74ba4d6ccd2897b3f4b06efd8434c1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
