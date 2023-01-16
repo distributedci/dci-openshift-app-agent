@@ -34,6 +34,23 @@
       "parentUuid": "bfa18e0f_c4a591e0",
       "revId": "fc9083ec8f5849f8fd0f9b11bbe12e35cd341b8c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdb9303e_6ec19fdf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-16T15:52:44Z",
+      "side": 1,
+      "message": "Ramon, thanks for the clarification, LGTM",
+      "revId": "fc9083ec8f5849f8fd0f9b11bbe12e35cd341b8c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
