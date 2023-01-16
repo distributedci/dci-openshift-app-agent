@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfa18e0f_c4a591e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-16T15:18:28Z",
+      "side": 1,
+      "message": "Ramon, I see now the jobs have dci-tnf-execution.log, but if I understand correctly, once https://github.com/test-network-function/cnf-certification-test/pull/787 gets merged, we\u0027ll also have tnf-execution.log with logs from Golang code? ",
+      "revId": "fc9083ec8f5849f8fd0f9b11bbe12e35cd341b8c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
