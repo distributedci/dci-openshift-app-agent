@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35c7e8d5_f7a29aea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-19T15:45:49Z",
+      "side": 1,
+      "message": "change is ready for review, however I\u0027m having issues with Zuul...",
+      "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
