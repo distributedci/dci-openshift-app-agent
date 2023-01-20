@@ -50,6 +50,41 @@
       "message": "I think this change is fine, controlling which runtimeclasses are used by the cluster.  I also added a filter in the CNF pod-recreation test in my PR to ignore the HasNodeSelector() check if the pod contains a runtimeClassName.\n\nThis should hopefully allow us to be more flexible.",
       "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ea99a7d_750ac7da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-20T08:29:43Z",
+      "side": 1,
+      "message": "Thanks Brandon! I\u0027ll recheck your patch with the current code of the app-agent, so that we can validate that.",
+      "parentUuid": "202d532e_c6b080ad",
+      "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ddbe4a6a_3bf23ec0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-20T08:29:43Z",
+      "side": 1,
+      "message": "Hi team. Can you give some review here? I will highly appreciate that, I promise it\u0027s quick to review :) \n\neven though our current deployment should work with tnf update from the PR included as build-depends, I think it\u0027s better to have the same environment in libvirt and dallas regarding runtimeclass usage. This change will allow that",
+      "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
