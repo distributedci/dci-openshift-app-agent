@@ -102,6 +102,24 @@
       "message": "do you still need this debug?",
       "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d40e324b_b15eff06",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-20T15:26:10Z",
+      "side": 1,
+      "message": "oh yes, it was added at the beginning to do some WIP tests, I\u0027ll remove, thanks for checking",
+      "parentUuid": "6b1759e9_58b8793f",
+      "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
