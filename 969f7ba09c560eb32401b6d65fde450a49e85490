@@ -85,6 +85,23 @@
       "message": "Hi team. Can you give some review here? I will highly appreciate that, I promise it\u0027s quick to review :) \n\neven though our current deployment should work with tnf update from the PR included as build-depends, I think it\u0027s better to have the same environment in libvirt and dallas regarding runtimeclass usage. This change will allow that",
       "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b1759e9_58b8793f",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-01-20T08:39:09Z",
+      "side": 1,
+      "message": "do you still need this debug?",
+      "revId": "969f7ba09c560eb32401b6d65fde450a49e85490",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
