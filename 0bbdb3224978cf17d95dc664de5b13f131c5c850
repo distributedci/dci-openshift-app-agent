@@ -33,6 +33,23 @@
       "message": "\u003e Patch Set 5:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/b5fa684e-f403-4fe9-aaac-8e4c13106e66/jobStates\n\u003e  from https://github.com/test-network-function/cnf-certification-test/pull/804\n\nDallas job worked fine. change ready for review",
       "revId": "0bbdb3224978cf17d95dc664de5b13f131c5c850",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f51b27bb_15c9be37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-01-23T15:23:06Z",
+      "side": 1,
+      "message": "Good job",
+      "revId": "0bbdb3224978cf17d95dc664de5b13f131c5c850",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
