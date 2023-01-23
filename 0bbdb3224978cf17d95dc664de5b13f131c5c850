@@ -16,6 +16,23 @@
       "message": "libvirt jobs are working fine:\n\n- no HEAD branch, no tnf-PR804: authentication tasks are omitted - https://www.distributed-ci.io/jobs/ba15b3a0-a544-491a-b5c8-604cf83ef52a/jobStates?sort\u003ddate\u0026task\u003df00ab5e0-ebb6-42d5-b5bf-cbbc9a5ecf91\n- tnf-PR804 but not partner_creds defined: autodiscovery from tnf-PR804 worked, authentication tasks are omitted - https://www.distributed-ci.io/jobs/dcb301aa-40f9-47d7-8097-05fb4fb7da41/jobStates?sort\u003ddate\u0026task\u003df241d723-d125-474b-ab98-14fa51596fe1\n- tnf-PR804 with partner_creds: authentication tasks worked - https://www.distributed-ci.io/jobs/3b0b9a6a-294e-473f-b923-d1c1c760cb2f/jobStates?sort\u003ddate\u0026task\u003d325c56d9-79ed-4756-b81d-652a62366c0a\n\nnow verifying everything in dallas, I experienced issues with cluster10 today, that\u0027s why there are a lot of failures. I\u0027ve moved to cluster5 and now everything should be fine",
       "revId": "0bbdb3224978cf17d95dc664de5b13f131c5c850",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45974aaa_7fc519dd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-23T10:10:21Z",
+      "side": 1,
+      "message": "\u003e Patch Set 5:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/b5fa684e-f403-4fe9-aaac-8e4c13106e66/jobStates\n\u003e  from https://github.com/test-network-function/cnf-certification-test/pull/804\n\nDallas job worked fine. change ready for review",
+      "revId": "0bbdb3224978cf17d95dc664de5b13f131c5c850",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
