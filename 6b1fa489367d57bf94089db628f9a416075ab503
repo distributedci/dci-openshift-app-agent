@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "115dc4f5_22969e98",
+        "filename": "samples/tnf_test_example/hooks/delete_local_volumes.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-01-24T16:27:06Z",
+      "side": 1,
+      "message": "I\u0027m curious on the reason the wait options might not be working as expected",
+      "revId": "6b1fa489367d57bf94089db628f9a416075ab503",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
