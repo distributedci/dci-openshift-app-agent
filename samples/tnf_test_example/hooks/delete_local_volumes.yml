@@ -1,14 +1,21 @@
-- name: Delete local volumes
+- name: "Delete local volume {{ app_ns }}-test-0"
   community.kubernetes.k8s:
     api_version: v1
-    name: "volume-{{ volume_name_suffix }}"
+    name: "volume-{{ app_ns }}-test-0"
     kind: PersistentVolume
     state: absent
-    wait: yes
-    wait_sleep: 5
-    wait_timeout: 120
-  loop:
-    - "{{ app_ns }}-test-0"
-    - "{{ app_ns }}-test-1"
-  loop_control:
-    loop_var: volume_name_suffix
+  register: volume
+  retries: 60
+  delay: 5
+  until: volume.resources|length == 0
+
+- name: "Delete local volume {{ app_ns }}-test-1"
+  community.kubernetes.k8s:
+    api_version: v1
+    name: "volume-{{ app_ns }}-test-1"
+    kind: PersistentVolume
+    state: absent
+  register: volume
+  retries: 60
+  delay: 5
+  until: volume.resources|length == 0
