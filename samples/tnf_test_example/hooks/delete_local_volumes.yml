@@ -7,6 +7,9 @@
     wait: yes
     wait_sleep: 5
     wait_timeout: 120
+    wait_condition:
+      type: "Failed"
+      status: "False"
   loop:
     - "{{ app_ns }}-test-0"
     - "{{ app_ns }}-test-1"
