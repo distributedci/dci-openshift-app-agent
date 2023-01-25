@@ -16,6 +16,23 @@
       "message": "Hi Tony and Pierre,\n\nchange is ready for review and preflight-green-tested: https://www.distributed-ci.io/jobs/cc813b3c-cc21-4705-af02-9b30a9acd325/jobStates?sort\u003ddate\n\nPreflight 1.5.0 uses operator-sdk 1.26.0 under the hood, and 1.26.0 contains a fix to get more detailed logs in case of operator-sdk timeout. We often see these timeouts during the dailies as \"Failed at verify-tests : Fail if not all test results are as expected for preflight_operator_\u003cwhatever_operator_here\u003e\". \n",
       "revId": "8d38777b11bd944f5f3442d720c00f9be1dc5ace",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df1df9b7_e8f9d1b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-25T17:42:42Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "8d38777b11bd944f5f3442d720c00f9be1dc5ace",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
