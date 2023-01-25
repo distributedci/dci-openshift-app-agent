@@ -33,6 +33,23 @@
       "message": "\u003e Patch Set 3:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/51b6a909-920b-499b-9b2b-f8cfcd42977a/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/27257/\n\nI\u0027ll rerun the test I said yesterday since this fails.",
       "revId": "6d67d63d26ef2d0dc76bf29a924e0c62e948ad35",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72ec32b9_0e81e810",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-25T18:13:03Z",
+      "side": 1,
+      "message": "Now the test worked (first job failed yesterday because I run check command multiple times), so that we\u0027ve verified that resources created in this job and that were not deleted: https://www.distributed-ci.io/jobs/624b911c-34ca-4595-8fa7-b91c083f5e35/jobStates?sort\u003ddate, are being cleaned in the pre-run stage of the next job: https://www.distributed-ci.io/jobs/7046bd15-c53a-48a8-989d-09006d397ba8/jobStates\n\nPending to see if there\u0027s a better way to do the cleanup of PVs",
+      "revId": "6d67d63d26ef2d0dc76bf29a924e0c62e948ad35",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
