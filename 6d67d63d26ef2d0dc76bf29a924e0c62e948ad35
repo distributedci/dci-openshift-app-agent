@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 3:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/c0fc3af0-618c-4c05-bfa1-b753dc32d3e5/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/27257/\n\nBase case worked: cluster without any resource created -\u003e we try to clean at the beginning, we don\u0027t do anything because it is already cleaned. Job runs fine and teardown cleans everything.\n\nNow, I\u0027m going to test the following:\n\n- run a job, again, with everything cleaned, but setting dci_teardown_on_* to false, to not delete the resources\n- run a second job, cleaning the resources from previous job in the pre-run, then continue as usual",
       "revId": "6d67d63d26ef2d0dc76bf29a924e0c62e948ad35",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4e7b6ec6_3eea7591",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-25T17:41:17Z",
+      "side": 1,
+      "message": "\u003e Patch Set 3:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/51b6a909-920b-499b-9b2b-f8cfcd42977a/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/27257/\n\nI\u0027ll rerun the test I said yesterday since this fails.",
+      "revId": "6d67d63d26ef2d0dc76bf29a924e0c62e948ad35",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

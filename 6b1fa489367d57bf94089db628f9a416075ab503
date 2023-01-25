@@ -52,6 +52,24 @@
       "parentUuid": "c48013c9_94f238ff",
       "revId": "6b1fa489367d57bf94089db628f9a416075ab503",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e2b861b_1a10d76d",
+        "filename": "samples/tnf_test_example/hooks/delete_local_volumes.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-25T17:41:17Z",
+      "side": 1,
+      "message": "I commented about this in CILAB-957. In some DCI jobs like this one: https://www.distributed-ci.io/jobs/70781364-5c84-444a-8ba7-655ab621cb38/jobStates?sort\u003ddate\u0026task\u003db1803192-4e04-435b-8e40-fd934f3bd4af, if you check the output of the current task that performs the removal of PVs, you\u0027ll see the following error message: `\"status\": {\"message\": \"error getting deleter volume plugin for volume \\\"volume-production-cnf-test-1\\\": no deletable volume plugin matched\", \"phase\": \"Failed\"}`.\n\nSo, despite passing the task, the PV is not deleted, in fact. And when running a new job, it is still there and it causes issues when creating it.\n\nThat\u0027s why the job fails and that\u0027s why we want to do the cleanup in the pre-run and doing the removal of PVs in a different way.\n\nOf course, if you think there\u0027s a better way of doing this, I can change that!",
+      "parentUuid": "184c3ba7_2062de86",
+      "revId": "6b1fa489367d57bf94089db628f9a416075ab503",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
