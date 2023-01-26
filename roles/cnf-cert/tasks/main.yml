@@ -1,4 +1,8 @@
 ---
+- name: debug
+  debug:
+    msg: "hello world"
+
 - name: Execute cnf-cert tests stage
   include_tasks: tests.yml
   when: tnf_stage == "tests"
