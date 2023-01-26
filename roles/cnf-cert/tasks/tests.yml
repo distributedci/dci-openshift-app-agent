@@ -251,11 +251,18 @@
     - test_network_function_version == "HEAD"
     - partner_creds|length
 
+# Use custom certificate for self sign registry
+- name: Get custom CA certificate for tnf-preflight execution
+  include_tasks: prepare_custom_certificate.yml
+  when:
+    - test_network_function_version == "HEAD"
+    - tnf_custom_ca|length
+
 # The task automatically append TNF_PARTNER_REPO and TNF_IMAGE environment variables to tnf_env_vars
 - name: Run the CNF Test Suite
   vars:
     tnf_partner_repo: "{{ ( local_registry | length ) | ternary(local_registry, 'quay.io') }}/testnetworkfunction"
-  environment: "{{ tnf_env_vars | combine({'TNF_PARTNER_REPO': tnf_partner_repo, 'TNF_IMAGE': tnf_image}) }}"
+  environment: "{{ tnf_env_vars | combine({'TNF_PARTNER_REPO': tnf_partner_repo, 'TNF_IMAGE': tnf_image, 'TNF_CUSTOM_CA': tnf_podman_ca|default('')}) }}"
   shell: |
     set -x
 

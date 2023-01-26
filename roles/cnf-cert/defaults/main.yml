@@ -22,3 +22,4 @@ tnf_env_vars: {}
 tnf_non_intrusive_only: false
 tnf_run_cfd_test: false
 tnf_log_level: "debug"
+tnf_custom_ca: ""

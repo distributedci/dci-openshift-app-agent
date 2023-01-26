@@ -1,0 +1,39 @@
+
+---
+- name: Get ca-bundle.trust from tnf image
+  vars:
+    tnf_partner_repo: "{{ ( local_registry | length ) | ternary(local_registry, 'quay.io') }}/testnetworkfunction"
+  shell: >
+    podman run
+    --entrypoint cat
+    {{ tnf_partner_repo }}/{{ tnf_image }}
+    /etc/pki/tls/certs/ca-bundle.trust.crt
+  register: cabundle
+  no_log: true
+
+- name: Copy CA in directory with dockerconfig
+  copy:
+    src: "{{ tnf_custom_ca }}"
+    dest: "{{ tnf_git_dir.path }}/ca.crt"
+
+- name: Copy CA in trusted directory
+  copy:
+    src: "{{ tnf_custom_ca }}"
+    dest: "/etc/pki/ca-trust/source/anchors/tnf_ca.crt"
+  become: true
+
+- name: Update trusted ca
+  command: /bin/update-ca-trust
+  become: true
+
+- name: Merge the ca trust with the custom ca
+  blockinfile:
+    insertbefore: BOF
+    path: "{{ tnf_git_dir.path }}/ca.crt"
+    block: "{{ cabundle.stdout }}"
+
+- name: Update preflight_custom_ca for podman
+  set_fact:
+    tnf_podman_ca:
+      "-v {{ tnf_git_dir.path }}/ca.crt:/etc/pki/tls/certs/ca-bundle.trust.crt"
+...
