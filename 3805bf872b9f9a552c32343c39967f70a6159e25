@@ -16,6 +16,23 @@
       "message": "Change is ready for review, already verified that it\u0027s working fine",
       "revId": "3805bf872b9f9a552c32343c39967f70a6159e25",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40fc14d1_c3550f3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-01-26T19:14:24Z",
+      "side": 1,
+      "message": "LGTM, but IMHO we may need to start thinking on modifying the way we do workload testing by using random resources for each testing: \n- random namespace\n- random RBACs\n- encapsulating all the required resources in the namespaces created for the test (for example catalogsources)\n\nSometimes it is been difficult to guarantee the immutability and cleanliness of a testing environment.   But if everything is brand new, we may not have that problem. Also will allow us to identify dangling resources later and work on its permanent fix.\n\nThanks!",
+      "revId": "3805bf872b9f9a552c32343c39967f70a6159e25",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
