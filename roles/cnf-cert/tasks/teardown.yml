@@ -29,4 +29,18 @@
           pod-security.kubernetes.io/enforce: null
           pod-security.kubernetes.io/enforce-version: null
   when: ocp_version is version("4.12", ">=")
+
+- name: Remove certificate used by tnf-preflight from the CA-Trust database
+  block:
+    - name: Remove the anchor CA file
+      file:
+        state: absent
+        path: "/etc/pki/ca-trust/source/anchors/tnf_ca.crt"
+
+    - name: Update trusted CA
+      command: /bin/update-ca-trust
+  when:
+    - test_network_function_version == "HEAD"
+    - tnf_custom_ca|length
+  become: true
 ...

@@ -23,6 +23,7 @@ tnf\_env\_vars                          | {}                                    
 tnf\_non\_intrusive\_only               | false                                                | If set to true, skip intrusive tests which may disrupt cluster operations. *Note that the recommended way of defining the environment variable is to use `tnf_env_vars` variable defined above.*
 tnf\_run\_cfd\_test                     | false                                                | The test suites from [openshift-kni/cnf-feature-deploy](https://github.com/openshift-kni/cnf-features-deploy) will be run prior to the actual CNF certification test execution and the results are incorporated in the same claim. *Note that the recommended way of defining the environment variable is to use `tnf_env_vars` variable defined above.*
 tnf\_log\_level                         | "debug"                                              | Log level used to run the CNF Cert Suite. Possible values can be seen [here](https://github.com/test-network-function/cnf-certification-test/tree/v4.0.2#log-level). *Note that the recommended way of defining the environment variable is to use `tnf_env_vars` variable defined above.*
+preflight\_custom\_ca                   | ""                                                   | Optional. Path of custom ca.crt. Used to test container/operator stored in a self signed registry with preflight embedded in tnf (only in HEAD version).
 
 ## Example of a tnf_config variable to test pods deployed on multiple namespaces not using label prefixes
 
