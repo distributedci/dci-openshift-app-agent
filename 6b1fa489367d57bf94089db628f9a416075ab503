@@ -106,6 +106,24 @@
       "parentUuid": "44a05e75_31bf534d",
       "revId": "6b1fa489367d57bf94089db628f9a416075ab503",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7178692_b16d8c75",
+        "filename": "samples/tnf_test_example/hooks/delete_local_volumes.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-26T13:03:11Z",
+      "side": 1,
+      "message": "Tony, I\u0027ve tried with this and I think that the \"Failed\" status is not an error, it is just that Ansible did the check when the PV was already removed and then it printed Failed because it was not there. I was able to reproduce this in this job [0], and I could see that, despite the task shows \"Failed\" status, it was because the PVs were deleted correctly.\n\nSo I\u0027ll use the current way of deleting the PVs finally, only including the cleanup tasks in the pre-run and that\u0027s all.\n\n[0] https://www.distributed-ci.io/jobs/6ceefb9b-6d16-4937-a412-b4c1b535e73c/jobStates",
+      "parentUuid": "d7c54c56_ba001ed2",
+      "revId": "6b1fa489367d57bf94089db628f9a416075ab503",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
