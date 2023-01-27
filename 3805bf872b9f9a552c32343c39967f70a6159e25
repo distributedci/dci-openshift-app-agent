@@ -33,6 +33,24 @@
       "message": "LGTM, but IMHO we may need to start thinking on modifying the way we do workload testing by using random resources for each testing: \n- random namespace\n- random RBACs\n- encapsulating all the required resources in the namespaces created for the test (for example catalogsources)\n\nSometimes it is been difficult to guarantee the immutability and cleanliness of a testing environment.   But if everything is brand new, we may not have that problem. Also will allow us to identify dangling resources later and work on its permanent fix.\n\nThanks!",
       "revId": "3805bf872b9f9a552c32343c39967f70a6159e25",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c48e4c5_3bb6eb33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-27T09:53:39Z",
+      "side": 1,
+      "message": "Thanks Beto for your suggestion. Yes, it could be a good improvement, I\u0027ll add it to my to-do list for the future. For the moment, it\u0027s true we\u0027re using random namespaces (so, we specify them in the pipelines, there are not hardcoded in the code), but for sure this can be improved.",
+      "parentUuid": "40fc14d1_c3550f3c",
+      "revId": "3805bf872b9f9a552c32343c39967f70a6159e25",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
