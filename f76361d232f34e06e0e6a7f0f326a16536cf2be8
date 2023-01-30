@@ -33,6 +33,24 @@
       "message": "Your last test did not create a new certification project, it reuses the existing one with the id:  627be35fc9c98afb4c2e83ea. I think it is because the \u0027pyxis_container_identifier\u0027 is defined somewhere, even if you have set \u0027create_container_project\u0027 to \u0027true\u0027",
       "revId": "f76361d232f34e06e0e6a7f0f326a16536cf2be8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f166678b_c8ef219f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-30T14:01:04Z",
+      "side": 1,
+      "message": "I think my patch in d-o-a is not working as I was expecting after all, because the d-o-a-a job is not even running the task \"Preflight container-only tests\" that\u0027s because the variable \"preflight_containers_to_certify\" is undefined, so even if I\u0027m passing this block of variables is not taking them into account, might be, because of the single quotes that protects the whole block of variables, in a manual test, this was working, so I do not understand why during the job execution is not :/ \n\n\u003e  \u0027-e preflight_test_certified_image\u003dtrue -e {\"preflight_containers_to_certify\":[{\"container_image\":\"quay.io/rh-nfv-int/testpmd-lb-operator:v0.2.9\",\"create_container_project\":\"true\",\"short_description\":\"nice description of a nice project\",\"attach_product_listing\":\"true\"}]} -e {\"cert_settings\":{\"auto_publish\":\"true\",\"build_categories\":\"Standalone image\",\"registry_override_instruct\":\"I lack creativity to add descriptions\",\"email_address\":\"email@example.com\",\"application_categories\":\"Networking\",\"os_content_type\":\"Red Hat Universal Base Image (UBI)\",\"privileged\":\"false\",\"release_category\":\"Generally Available\",\"repository_description\":\"This is a test description\"}} -e {\"cert_listings\":{\"published\":\"false\",\"type\":\"container stack\",\"pyxis_product_list_identifier\":\"yyyyyyyyyyyyyyyyy\"}} -e partner_creds\u003d/opt/cache/partner_config.json -e pyxis_apikey_path\u003d/opt/cache/pyxis-apikey.txt\u0027",
+      "parentUuid": "6ef5f851_894ae374",
+      "revId": "f76361d232f34e06e0e6a7f0f326a16536cf2be8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
