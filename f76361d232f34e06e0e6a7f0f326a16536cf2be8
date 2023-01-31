@@ -51,6 +51,24 @@
       "parentUuid": "6ef5f851_894ae374",
       "revId": "f76361d232f34e06e0e6a7f0f326a16536cf2be8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eedce08c_6e532c83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-01-31T06:51:30Z",
+      "side": 1,
+      "message": "Oh, you\u0027re true... the problem is that dci-check-change and test-runner are quite \"tricky\" for manipulating these kind of variables with spaces:\n\n```\n+ setsid /var/lib/dci-openshift-agent/gerrit/26928-849ea80f8f1823a95c9a6b07048fc73c/dci-openshift-app-agent/dci-openshift-app-agent-ctl -s -d -v -- -v -e dci_name\u003dlibvirt -e dci_configuration\u003dvirt -e \u0027{\"dev_gits_to_components\":[\"/var/lib/dci-openshift-agent/gerrit/26928-849ea80f8f1823a95c9a6b07048fc73c/dci-openshift-app-agent\",\"/var/lib/dci-openshift-agent/gerrit/26928-849ea80f8f1823a95c9a6b07048fc73c/dci-openshift-agent\",]}\u0027 -e dci_previous_job_id\u003d31eecd8e-3f79-4671-94e0-69c6e0863161 \u0027-e preflight_test_certified_image\u003dtrue -e {\"preflight_containers_to_certify\":[{\"container_image\":\"quay.io/rh-nfv-int/testpmd-lb-operator:v0.2.9\",\"create_container_project\":\"true\",\"short_description\":\"nice description of a nice project\",\"attach_product_listing\":\"true\"}]} -e {\"cert_settings\":{\"auto_publish\":\"true\",\"build_categories\":\"Standalone image\",\"registry_override_instruct\":\"I lack creativity to add descriptions\",\"email_address\":\"email@example.com\",\"application_categories\":\"Networking\",\"os_content_type\":\"Red Hat Universal Base Image (UBI)\",\"privileged\":\"false\",\"release_category\":\"Generally Available\",\"repository_description\":\"This is a test description\"}} -e {\"cert_listings\":{\"published\":\"false\",\"type\":\"container stack\",\"pyxis_product_list_identifier\":\"yyyyyyyyyyyyyyyyy\"}} -e partner_creds\u003d/opt/cache/partner_config.json -e pyxis_apikey_path\u003d/opt/cache/pyxis-apikey.txt\u0027 -e \u0027{\"dci_pipeline_id\": \"fd33ef95-dac4-4afe-92b0-ffd581aee376\", \"dci_url\": \"https://softwarefactory-project.io/r/#/c/26928/\", \"dci_tags\": [\"debug\", \"gerrit:dci-openshift-app-agent-26928\", \"queue-id:vpool.2618\"]}\u0027 -e dci_config_dir\u003d/var/lib/dci-openshift-agent/gerrit/26928-849ea80f8f1823a95c9a6b07048fc73c/dci-openshift-app-agent/samples/basic_example -e dci_name\u003dbasic_example\n```\n\nSo, the patch done in d-o-a should need to be reviewed\nWhile it\u0027s reviewed, another option to test these variables in BOS2, if you really need them, is to get rid of the hints and use other options like, for example, prefixes, then you need to create a specific settings.yml file in DCI_CONFIG_DIR (from d-o-a-a config), naming it with the prefix name, and then call dci-check-change from the terminal with the prefix",
+      "parentUuid": "f166678b_c8ef219f",
+      "revId": "f76361d232f34e06e0e6a7f0f326a16536cf2be8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
