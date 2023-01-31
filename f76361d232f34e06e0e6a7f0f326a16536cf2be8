@@ -69,6 +69,24 @@
       "parentUuid": "f166678b_c8ef219f",
       "revId": "f76361d232f34e06e0e6a7f0f326a16536cf2be8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8cca1535_a1861ada",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-01-31T20:11:30Z",
+      "side": 1,
+      "message": "Thanks, we roll backed the doa change since it was not doing what we wanted and was going to cause issues.\nfor now I declared all the variables with spaces in the defaults/main.yaml file of the role, last test finally got those variables, we\u0027ll go with this for now, and the space issue will be handled in another time.",
+      "parentUuid": "eedce08c_6e532c83",
+      "revId": "f76361d232f34e06e0e6a7f0f326a16536cf2be8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
