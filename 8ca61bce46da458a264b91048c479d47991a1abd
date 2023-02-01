@@ -16,6 +16,24 @@
       "message": "LGTM",
       "revId": "8ca61bce46da458a264b91048c479d47991a1abd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6cee8414_a5d1bf0b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-01T14:58:25Z",
+      "side": 1,
+      "message": "Thanks, now I need to test using an image that is not used in a certification project, so I\u0027ll update the commit and retest",
+      "parentUuid": "9ae02659_b2224d86",
+      "revId": "8ca61bce46da458a264b91048c479d47991a1abd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
