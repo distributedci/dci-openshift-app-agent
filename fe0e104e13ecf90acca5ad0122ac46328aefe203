@@ -51,6 +51,108 @@
       "parentUuid": "2a46fd8a_83a6c24b",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "220f550c_831f58b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-03T14:08:54Z",
+      "side": 1,
+      "message": "Hi Manny, I started the review of Andrew\u0027s code, pushing the first notes.",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4bd37d3b_86aac251",
+        "filename": "roles/create-certification-project/defaults/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-03T14:08:54Z",
+      "side": 1,
+      "message": "nice workaround to merge long-pending Andrew\u0027s changes",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9f56146_fa455096",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-03T14:08:54Z",
+      "side": 1,
+      "message": "it would be nice to unset all these variables later during the cleanup for every operator. To avoid a possible bad impact on the follow-up operator",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0acfd006_88d44e02",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-03T14:08:54Z",
+      "side": 1,
+      "message": "I believe we\u0027ll get the only one result and so the pagination is not needed",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b7bc97c1_fc1acafd",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-03T14:08:54Z",
+      "side": 1,
+      "message": "`to_json | from_json` could be safel removed",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9bd5d57_5e1a13bb",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-03T14:08:54Z",
+      "side": 1,
+      "message": "it seems like the option to attach the product listing is not tested",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
