@@ -70,6 +70,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1ce3896_6131936f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-06T19:51:58Z",
+      "side": 1,
+      "message": "I synced with Tatiana and her concerns are valid, we are going to continue improving this, breaking it in smaller changes (might be new PRs) and cover more cases to make it work not only with a standalone container.",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4bd37d3b_86aac251",
@@ -83,6 +100,24 @@
       "writtenOn": "2023-02-03T14:08:54Z",
       "side": 1,
       "message": "nice workaround to merge long-pending Andrew\u0027s changes",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd58845b_03f14009",
+        "filename": "roles/create-certification-project/defaults/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-06T19:51:58Z",
+      "side": 1,
+      "message": "😊",
+      "parentUuid": "4bd37d3b_86aac251",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -106,6 +141,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "db36a5fa_0b2c1884",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-06T19:51:58Z",
+      "side": 1,
+      "message": "makes sense to do some cleanup",
+      "parentUuid": "f9f56146_fa455096",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0acfd006_88d44e02",
         "filename": "roles/create-certification-project/tasks/main.yml",
         "patchSetId": 15
@@ -117,6 +170,24 @@
       "writtenOn": "2023-02-03T14:08:54Z",
       "side": 1,
       "message": "I believe we\u0027ll get the only one result and so the pagination is not needed",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb01abd9_e09c6a5e",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-06T19:51:58Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0acfd006_88d44e02",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -138,6 +209,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ecbf4a91_0f8b3a67",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-06T19:51:58Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b7bc97c1_fc1acafd",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f9bd5d57_5e1a13bb",
@@ -151,6 +240,24 @@
       "writtenOn": "2023-02-03T14:08:54Z",
       "side": 1,
       "message": "it seems like the option to attach the product listing is not tested",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "504d39f0_41cde0e5",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-06T19:51:58Z",
+      "side": 1,
+      "message": "correct, I created my product-listing, but I can\u0027t list it, seems I need to add more information in the product-listing so it would be available.",
+      "parentUuid": "f9bd5d57_5e1a13bb",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
