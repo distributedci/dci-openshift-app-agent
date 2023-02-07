@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "80271407_3ce800e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-07T09:45:54Z",
+      "side": 1,
+      "message": "Hi Ramon, could you please have a look? Everything is tested green: https://www.distributed-ci.io/jobs/7ffd838b-0db6-446b-b2fe-d3a868580f60/jobStates?sort\u003ddate  ",
+      "revId": "0c017be85928a1bce884b495efa98d70fd591898",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
