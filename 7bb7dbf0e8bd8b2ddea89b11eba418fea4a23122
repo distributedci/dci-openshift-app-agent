@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d45dc419_9da3b614",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 17
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-07T19:54:46Z",
+      "side": 1,
+      "message": "Refined the logic to create cert project, update it with the company info (when cert_settings is defined) and attach product listing (when cert_listings is defined).\n\nNext steps:\n- to test all of the usecases using ready PR in dallas-pipelines\n- to rewrite the logic \"if project exists\", to make it work for partners that do not define cert_settings",
+      "revId": "7bb7dbf0e8bd8b2ddea89b11eba418fea4a23122",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
