@@ -16,6 +16,23 @@
       "message": "Hi guys, can you take a look to this?",
       "revId": "6b144de7ca3d47710c4cf3f27bd817bd7704d063",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e709a08_9edae4da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-07T13:48:21Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "6b144de7ca3d47710c4cf3f27bd817bd7704d063",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
