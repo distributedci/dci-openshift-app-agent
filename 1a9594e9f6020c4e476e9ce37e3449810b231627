@@ -16,6 +16,23 @@
       "message": "Thanks, Looks good to me, I\u0027ll just wait for the dallas job to add +2",
       "revId": "1a9594e9f6020c4e476e9ce37e3449810b231627",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "da6f98a6_1a8d7c68",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-02-07T14:13:43Z",
+      "side": 1,
+      "message": "Testing this CR in NM lab. Will report on the result:\n\nhttps://www.distributed-ci.io/jobs?page\u003d1\u0026perPage\u003d20\u0026where\u003dtags:dci_local_registry",
+      "revId": "1a9594e9f6020c4e476e9ce37e3449810b231627",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
