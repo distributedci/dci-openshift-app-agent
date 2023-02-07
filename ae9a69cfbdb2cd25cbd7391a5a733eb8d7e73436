@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51e09ff4_275c697f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-07T13:46:09Z",
+      "side": 1,
+      "message": "The change is in a work-in-progress state. More refactoring is needed, and then we can test it using pipeline config: https://github.com/dci-labs/dallas-pipelines/pull/652/files ",
+      "revId": "ae9a69cfbdb2cd25cbd7391a5a733eb8d7e73436",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
