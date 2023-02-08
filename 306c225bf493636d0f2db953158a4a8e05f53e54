@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9d74db2_a7d554e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-02-08T10:56:55Z",
+      "side": 1,
+      "message": "The job to test a disconnected environment in NM got delayed.\n\nSince it\u0027s not a relevant use case all the same, I\u0027m giving this CR my +2 and will test the disconnected setup later.",
+      "revId": "306c225bf493636d0f2db953158a4a8e05f53e54",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
