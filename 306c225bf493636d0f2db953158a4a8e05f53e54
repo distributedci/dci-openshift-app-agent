@@ -16,6 +16,23 @@
       "message": "The job to test a disconnected environment in NM got delayed.\n\nSince it\u0027s not a relevant use case all the same, I\u0027m giving this CR my +2 and will test the disconnected setup later.",
       "revId": "306c225bf493636d0f2db953158a4a8e05f53e54",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "036a9865_d66b80a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-08T11:13:39Z",
+      "side": 1,
+      "message": "\u003e Patch Set 2:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/1eb79dae-f191-4777-b1db-65ea3aadb0a2/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/651\n\nIt\u0027s working in tnf-test-cnf, the failure was because of tnf test result, not because of the registry",
+      "revId": "306c225bf493636d0f2db953158a4a8e05f53e54",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
