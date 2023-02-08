@@ -33,6 +33,23 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/1eb79dae-f191-4777-b1db-65ea3aadb0a2/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/651\n\nIt\u0027s working in tnf-test-cnf, the failure was because of tnf test result, not because of the registry",
       "revId": "306c225bf493636d0f2db953158a4a8e05f53e54",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "680930bd_606f0061",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-08T11:13:56Z",
+      "side": 1,
+      "message": "\u003e Patch Set 2:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/02105551-fa3b-4552-bc12-1bbf8b30155a/jobStates\n\u003e - SUCCESS https://www.distributed-ci.io/jobs/4decb6e6-0025-41ee-aa56-97c31e539137/jobStates\n\u003e - SUCCESS https://www.distributed-ci.io/jobs/18ecb3fa-1c8f-4294-beb1-0256d6ae5f9c/jobStates\n\u003e - SUCCESS https://www.distributed-ci.io/jobs/78c47faf-1098-4953-8812-14f4c1c386ff/jobStates\n\u003e - FAILURE https://www.distributed-ci.io/jobs/f835d31f-38e0-42b6-b064-26db083207f3/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/651\n\nI think example-cnf needs to pass before merging this",
+      "revId": "306c225bf493636d0f2db953158a4a8e05f53e54",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
