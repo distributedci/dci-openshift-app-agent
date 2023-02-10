@@ -314,6 +314,24 @@
       "parentUuid": "504d39f0_41cde0e5",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b80bfbee_c69ffbfa",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-10T19:48:58Z",
+      "side": 1,
+      "message": "Thanks for the comments Andrew, I\u0027ll start a new PR and we\u0027ll test/integrate this product list part.",
+      "parentUuid": "97af1e17_1f2d4f77",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
