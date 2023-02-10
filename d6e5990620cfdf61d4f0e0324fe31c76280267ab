@@ -33,6 +33,23 @@
       "message": "I\u0027m not an expert on preflight but as I said some days ago, the change looks fine for me. If you need to unblock this for partners, Manuel, you have my +2",
       "revId": "d6e5990620cfdf61d4f0e0324fe31c76280267ab",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb70361e_f8fe643c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 27
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-02-10T19:13:34Z",
+      "side": 1,
+      "message": "Looks good! Thanks.",
+      "revId": "d6e5990620cfdf61d4f0e0324fe31c76280267ab",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

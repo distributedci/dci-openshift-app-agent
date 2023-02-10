@@ -296,6 +296,24 @@
       "parentUuid": "504d39f0_41cde0e5",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "97af1e17_1f2d4f77",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-02-10T19:13:34Z",
+      "side": 1,
+      "message": "I think it defined but never used since attach_product_container_listing.json.j2 not needed to use it, Originally the plan is to use similarly as we did in update_project details\n      \"short_description\": \"{% if c.short_description is defined %}{{ c.short_description }}{% endif %}\",\n\nattach_product_container_listing.json.j2:\n{\n  \"cert_projects\": {{ cert_projects }},\n  \"published\": {{ cert_listings.published }},\n  \"target_platforms\": [\n    \"Red Hat OpenShift\"\n  ],\n  \"type\": \"{{ cert_listings.type }}\"\n}\n\nI plan to add create_product_list later. Tested with CURL but never continued on DCI. \n\nThat is my understanding. I could be wrong. Thanks.",
+      "parentUuid": "504d39f0_41cde0e5",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
