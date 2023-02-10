@@ -157,6 +157,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9a1c61f_702594ee",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-10T13:51:07Z",
+      "side": 1,
+      "message": "Tatiana added support to validate vars for each type of image to avoid conflicts",
+      "parentUuid": "db36a5fa_0b2c1884",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0acfd006_88d44e02",
@@ -258,6 +276,24 @@
       "side": 1,
       "message": "correct, I created my product-listing, but I can\u0027t list it, seems I need to add more information in the product-listing so it would be available.",
       "parentUuid": "f9bd5d57_5e1a13bb",
+      "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "45f00d22_cdfdd62f",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 15
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-10T13:51:07Z",
+      "side": 1,
+      "message": "We agreed to continue with this on next PR, Andrew does not need it for next week, so we need to validate this part is working.",
+      "parentUuid": "504d39f0_41cde0e5",
       "revId": "fe0e104e13ecf90acca5ad0122ac46328aefe203",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

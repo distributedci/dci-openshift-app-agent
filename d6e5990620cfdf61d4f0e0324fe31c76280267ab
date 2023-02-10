@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f839004_99c71be9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 27
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-10T13:51:07Z",
+      "side": 1,
+      "message": "Ready for review: last three tests reflect the following:\n\n1. Create cert project (new image): https://www.distributed-ci.io/jobs/e2af61c4-9ebd-4c09-a303-48a551576f14/jobStates\n2. Cert project not created, if image already present in an active cert project, but we update cert settings https://www.distributed-ci.io/jobs/97e493d0-eaad-471d-88e0-7d255eef3eb0/jobStates\n3. Tested that jobs that do not have anything related to this patch still work: https://www.distributed-ci.io/jobs/89249b37-de09-4429-a3d9-3d018fabcc2b/jobStates",
+      "revId": "d6e5990620cfdf61d4f0e0324fe31c76280267ab",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
