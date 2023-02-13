@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3557839f_653b4d6a",
+        "filename": "roles/cnf-cert/tasks/teardown.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-02-13T14:46:22Z",
+      "side": 1,
+      "message": "Would you consider to name the built image different instead? For example as in [1]:\n\n    tnf_image: \"{{ test_network_function_project_name }}:{{ tnf_version_image }}-{{ cluster }}\"\n\nThis way you avoid the collision and there\u0027s no need to try and test.\n\nhttps://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/cnf-cert/tasks/tests.yml#L191",
+      "revId": "1cd0965477a6a4cf30d8fa5d5b3c1e77e9805ab9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
