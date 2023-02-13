@@ -2,17 +2,33 @@
 # Only remove the local tnf image if:
 # - It's not generated from the latest, stable version (test_network_function_version)
 # - It has already been created (tnf_image and tnf_version_image would exist)
-- name: Remove the local tnf image
+- name: Local tnf image removal process
   block:
     - name: Gather tnf image info
       containers.podman.podman_image_info:
         name: "{{ tnf_image }}"
       register: tnf_image_info
 
-    - name: Remove tnf image
-      containers.podman.podman_image:
-        name: "{{ tnf_image }}"
-        state: absent
+    - name: Try to remove the local tnf image
+      block:
+        - name: Retrieve current containers being executed in the jumphost
+          containers.podman.podman_container_info:
+          register: containers_running
+          no_log: true
+
+        - name: Activate flag variable if one of the containers is based on tnf_image
+          set_fact:
+            container_with_tnf: true
+          with_items: "{{ containers_running.containers }}"
+          when: tnf_image in item["ImageName"]
+          no_log: true
+
+        - name: Remove tnf image only if it is not being used by a container
+          containers.podman.podman_image:
+            name: "{{ tnf_image }}"
+            state: absent
+          when: container_with_tnf|default(false)
+
       when: tnf_image_info.images|length
   when:
     - tnf_image is defined
