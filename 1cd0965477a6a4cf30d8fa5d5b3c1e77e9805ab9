@@ -16,6 +16,24 @@
       "message": "Would you consider to name the built image different instead? For example as in [1]:\n\n    tnf_image: \"{{ test_network_function_project_name }}:{{ tnf_version_image }}-{{ cluster }}\"\n\nThis way you avoid the collision and there\u0027s no need to try and test.\n\nhttps://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/cnf-cert/tasks/tests.yml#L191",
       "revId": "1cd0965477a6a4cf30d8fa5d5b3c1e77e9805ab9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d895fc85_2ff02d9c",
+        "filename": "roles/cnf-cert/tasks/teardown.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-13T14:52:02Z",
+      "side": 1,
+      "message": "It\u0027s not a bad option but honestly, I\u0027d like to not depend on other variables, just for simplicity. Also, note this tnf_image variable can be different if we are testing a tnf PR, if we are testing a stable branch or if we are testing the master branch, so we hay have multiple tnf images that are exactly the same but targeting different clusters each one, then using more disk space.",
+      "parentUuid": "3557839f_653b4d6a",
+      "revId": "1cd0965477a6a4cf30d8fa5d5b3c1e77e9805ab9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
