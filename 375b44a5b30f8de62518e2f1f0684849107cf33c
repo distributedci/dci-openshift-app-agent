@@ -33,6 +33,24 @@
       "message": "Since the app-agent will work with tnf_image, I think it\u0027s good to delete the pulled image in here, that way the similar layers will be truly removed in the teardown and there will be no left overs",
       "revId": "375b44a5b30f8de62518e2f1f0684849107cf33c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "292f2ad8_d799d582",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 212,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-14T09:46:44Z",
+      "side": 1,
+      "message": "Yes, good catch, I\u0027ve tested it manually and it worked, so I\u0027ll do that in this task.",
+      "parentUuid": "45ab3031_daaa3440",
+      "revId": "375b44a5b30f8de62518e2f1f0684849107cf33c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
