@@ -120,6 +120,24 @@
       "parentUuid": "a017aaa2_9006b07d",
       "revId": "f8c949075c9b825dc26c8e4ce5d2353344919d7a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d2bfa35_6f3958e0",
+        "filename": "roles/create-certification-project/templates/update_project_container_setting.json.j2",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-15T10:35:03Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a017aaa2_9006b07d",
+      "revId": "f8c949075c9b825dc26c8e4ce5d2353344919d7a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
