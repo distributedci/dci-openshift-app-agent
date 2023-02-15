@@ -1,56 +1,4 @@
 ---
-
-# Step 0a : set kubeconfig_path, OCP version vars and dci_topic. Check hooks
-- name: "Execute kubeconfig step"
-  hosts: jumphost
-  tags:
-    - kubeconfig
-  tasks:
-    - block:
-        - name: Display proxy settings
-          debug:
-            msg: "http_proxy={{ lookup('env','http_proxy') }} https_proxy={{ lookup('env','https_proxy') }} no_proxy={{ lookup('env','no_proxy') }}"
-
-        - name: Check kubeconfig
-          include_tasks: 'plays/check_kubeconfig.yml'
-
-        # Check prerequisite
-        - name: "Check prerequisite"
-          include_tasks: 'plays/check_prerequisite.yml'
-
-      rescue: &error_with_upload_logs
-        - name: "Run common logging process"
-          include_tasks: plays/common_logging.yml
-
-        - name: "Execute the teardown process"
-          include_tasks: "{{ dci_config_dir }}/hooks/teardown.yml"
-          when:
-            - dci_teardown_on_failure
-            - check_teardown.stat.exists
-
-        - name: "Run the teardown play"
-          include_tasks: plays/teardown.yml
-          when:
-            - dci_teardown_on_failure
-
-        - name: "Execute the error process"
-          include_tasks: plays/error.yml
-
-        # The error may happen before creating the job_info variable, or it may happen in a
-        # job where dci tag is not enabled (so job_info variable is not created). Then, 
-        # we have to set a different error message in that case
-        - name: Fail properly
-          fail:
-            msg: "Error: Something went wrong"
-          when: job_info is not defined
-
-        # Use dci tag to avoid problems with job_info.job.id, which would not be defined
-        # if dci tag is not enabled
-        - name: Fail properly
-          fail:
-            msg: "Error: Something went wrong, review the log at: https://www.distributed-ci.io/jobs/{{ job_info.job.id }}/jobStates"
-          tags: [dci]
-
 # Step 0b : initial step
 - name: "Execute initial step"
   hosts: jumphost
@@ -139,8 +87,6 @@
   tags:
     - pre-run
     - redhat-pre-run
-  environment:
-    KUBECONFIG: "{{ kubeconfig_path }}"
   tasks:
     - block:
 
@@ -156,8 +102,6 @@
 # Step 1b : Hook "pre-run" step
 - name: "Execute hooks' pre-run step"
   hosts: jumphost
-  environment:
-    KUBECONFIG: "{{ kubeconfig_path }}"
   tags:
     - pre-run
     - partner-pre-run
@@ -173,6 +117,57 @@
           when: check_pre_run.stat.exists
 
       rescue: *error_with_upload_logs
+
+# Step 2c : set kubeconfig_path, OCP version vars and dci_topic. Check hooks
+- name: "Execute kubeconfig step"
+  hosts: jumphost
+  tags:
+    - kubeconfig
+  tasks:
+    - block:
+        - name: Display proxy settings
+          debug:
+            msg: "http_proxy={{ lookup('env','http_proxy') }} https_proxy={{ lookup('env','https_proxy') }} no_proxy={{ lookup('env','no_proxy') }}"
+
+        - name: Check kubeconfig
+          include_tasks: 'plays/check_kubeconfig.yml'
+
+        # Check prerequisite
+        - name: "Check prerequisite"
+          include_tasks: 'plays/check_prerequisite.yml'
+
+      rescue: &error_with_upload_logs
+        - name: "Run common logging process"
+          include_tasks: plays/common_logging.yml
+
+        - name: "Execute the teardown process"
+          include_tasks: "{{ dci_config_dir }}/hooks/teardown.yml"
+          when:
+            - dci_teardown_on_failure
+            - check_teardown.stat.exists
+
+        - name: "Run the teardown play"
+          include_tasks: plays/teardown.yml
+          when:
+            - dci_teardown_on_failure
+
+        - name: "Execute the error process"
+          include_tasks: plays/error.yml
+
+        # The error may happen before creating the job_info variable, or it may happen in a
+        # job where dci tag is not enabled (so job_info variable is not created). Then,
+        # we have to set a different error message in that case
+        - name: Fail properly
+          fail:
+            msg: "Error: Something went wrong"
+          when: job_info is not defined
+
+        # Use dci tag to avoid problems with job_info.job.id, which would not be defined
+        # if dci tag is not enabled
+        - name: Fail properly
+          fail:
+            msg: "Error: Something went wrong, review the log at: https://www.distributed-ci.io/jobs/{{ job_info.job.id }}/jobStates"
+          tags: [dci]
 
 # Step 2 : "running" step
 - name: "Execute install step"
