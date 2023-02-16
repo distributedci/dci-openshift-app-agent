@@ -33,6 +33,24 @@
       "message": "Nice work, CSV looks good. ( Olivier should be worrying 😜 )\n\nCould you please update the readme accordingly? https://github.com/redhat-cip/dci-openshift-app-agent#removed_apitxt \n\nThanks!",
       "revId": "63598f395d5f93f38e984f5cb2770467e1294172",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84715bc5_82be000c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-16T10:03:01Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c5a6d0dd_67f887b3",
+      "revId": "63598f395d5f93f38e984f5cb2770467e1294172",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
