@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "446594f6_39ad4824",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-16T13:07:57Z",
+      "side": 1,
+      "message": "Hi Ramon, there isn\u0027t that much value in this CR. I\u0027ll give you a +2 since there is no harm either. However, in my humble opinion, it\u0027s better to delete this role once the new functionality by the CNF team is tested.",
+      "revId": "83181ec6993ae9e49233729d3d56490e1cf5acf8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
