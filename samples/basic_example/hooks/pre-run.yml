@@ -17,9 +17,9 @@
   include_role:
     name: mirror_images
   vars:
-    images:
+    mi_images:
       - docker.io/library/nginx
-    authfile: "{{ pullsecret_tmp_file }}"
+    mi_authfile: "{{ pullsecret_tmp_file }}"
   when:
     - dci_disconnected | default(false) | bool
     - dci_local_registry | length
