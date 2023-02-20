@@ -16,6 +16,23 @@
       "message": "Hi Beto, I apologize for the issue. In the previous CR, I accidentally discarded your fix during the documentation update.",
       "revId": "48619d4da7c91231c3eb23727b9654673cdd4fcb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d0e0518_0cd6e600",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-02-20T15:29:29Z",
+      "side": 1,
+      "message": "Thanks!",
+      "revId": "48619d4da7c91231c3eb23727b9654673cdd4fcb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
