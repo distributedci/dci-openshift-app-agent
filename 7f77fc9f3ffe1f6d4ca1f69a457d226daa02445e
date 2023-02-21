@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d66bfa78_984b8124",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-21T10:42:14Z",
+      "side": 1,
+      "message": "Thanks, Beto, the more docs, the better!",
+      "revId": "7f77fc9f3ffe1f6d4ca1f69a457d226daa02445e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "37fa6035_eeab6ad6",
@@ -31,6 +48,30 @@
       "writtenOn": "2023-02-21T08:23:35Z",
       "side": 1,
       "message": "not sure that this kind of files are generated in the app-agent",
+      "range": {
+        "startLine": 257,
+        "startChar": 4,
+        "endLine": 257,
+        "endChar": 9
+      },
+      "revId": "7f77fc9f3ffe1f6d4ca1f69a457d226daa02445e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ade664af_04969d94",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-02-21T10:42:14Z",
+      "side": 1,
+      "message": "for example, operator-sdk now generates .trace when failing",
+      "parentUuid": "37fa6035_eeab6ad6",
       "range": {
         "startLine": 257,
         "startChar": 4,
