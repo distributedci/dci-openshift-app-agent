@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1b7ff54_a8eb4495",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-21T08:23:35Z",
+      "side": 1,
+      "message": "I\u0027d add the following ones to the list:\n\n- Regarding *.log file, maybe I\u0027d differentiate in the description between the cases presented: \u003cpod_name\u003e.log includes the log entries for a given pod, \u003cnamespace\u003e_events.log shows the events that have happened in that namespace, and \u003cnamespace\u003e_status.log reflects the current pods deployed in the namespace.\n- tnf_config.yml - if tnf is enabled, it shows the config file passed to tnf execution\n- dci-tnf-execution.yml - if tnf is enabled, it shows the output of tnf execution for troubleshooting purposes\n- apirequestcounts.after/before.json, related to API deprecacion (or maybe with removed_api.csv is enough)\n- version.txt, with the version of OCP and k8s (or maybe with clusterversion.txt is enough)\n\nAnd also, should we put a reference to ansible.log file? It\u0027s useful for troubleshooting when we don\u0027t have any reference of the failure in the DCI GUI",
+      "revId": "7f77fc9f3ffe1f6d4ca1f69a457d226daa02445e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37fa6035_eeab6ad6",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 257,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-21T08:23:35Z",
+      "side": 1,
+      "message": "not sure that this kind of files are generated in the app-agent",
+      "range": {
+        "startLine": 257,
+        "startChar": 4,
+        "endLine": 257,
+        "endChar": 9
+      },
+      "revId": "7f77fc9f3ffe1f6d4ca1f69a457d226daa02445e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f927ccf_70e155c8",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 262,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-02-21T08:23:35Z",
+      "side": 1,
+      "message": "I\u0027ll add a whitespace here",
+      "range": {
+        "startLine": 262,
+        "startChar": 59,
+        "endLine": 262,
+        "endChar": 60
+      },
+      "revId": "7f77fc9f3ffe1f6d4ca1f69a457d226daa02445e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
