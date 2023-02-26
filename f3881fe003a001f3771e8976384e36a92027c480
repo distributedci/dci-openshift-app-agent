@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03b3dfe1_5a8cd063",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-02-26T21:19:53Z",
+      "side": 1,
+      "message": "Last three jobs represent the following:\n1. passing all vars to create cert project except the org_id (should fail)\n2. passing all vars to create cert project, including org_id (should pass)\n3. running other pipelines (should pass)",
+      "revId": "f3881fe003a001f3771e8976384e36a92027c480",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
