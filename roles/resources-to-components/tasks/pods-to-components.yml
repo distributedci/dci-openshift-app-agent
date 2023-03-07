@@ -1,0 +1,20 @@
+---
+- name: Get all pods from namespace
+  community.kubernetes.k8s_info:
+    namespace: "{{ resources.namespace }}"
+    kind: "{{ resources.resource }}"
+  register: pods_in_ns
+
+- name: Create a component based on pod information
+  vars:
+    containers_in_pod: "{{ pod.spec.containers }}"
+    container_images_version_in_pod: "{% for container in containers_in_pod %} {{ ( container.image.split('@')|length == 1 ) | ternary(container.image.split(':')[-1], container.image.split('@')[-1]) }} {% if not loop.last %}, {% endif %}{% endfor %}"
+    comp_name: "CNF img {{ pod.metadata.name }} {{ pod.metadata.namespace }} {{ container_images_version_in_pod }}"
+    comp_canonical_project_name: "CNF img {{ pod.metadata.name }} {{ pod.metadata.namespace }} {{ container_images_version_in_pod }}"
+    comp_type: "{{ resources.resource }}"
+  include_tasks: create-component.yml
+  loop: "{{ pods_in_ns.resources }}"
+  loop_control:
+    loop_var: pod
+
+...

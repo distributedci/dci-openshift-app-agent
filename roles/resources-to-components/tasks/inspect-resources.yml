@@ -1,0 +1,9 @@
+---
+# For the moment, we are only considering the case of creating components
+# based on pods. When having more cases, they will be added below.
+- name: Retrieve pods information and create the components
+  include_tasks: pods-to-components.yml
+  when:
+    - resources.resource == "Pod"
+
+...
