@@ -22,6 +22,11 @@
   include_role:
     name: include-components
 
+- name: Create components for already deployed OCP resources
+  include_role:
+    name: resources-to-components
+  when: dci_resources_to_components | length
+
 - name: Compute if all needed components are ga
   vars:
     ga_components: "{{ job_info['job']['components'] | selectattr('tags', 'issuperset', ['build:ga']) | map(attribute='type') | list }}"
