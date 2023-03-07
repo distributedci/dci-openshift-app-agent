@@ -90,7 +90,7 @@ tests\_to\_verify                  | undefined                                  
 |See [Operator Certification (preflight)](roles/preflight/README.md) for details to enable the Operator Certifications tests suite ||
 |See [CNF-cert role](roles/cnf-cert/README.md) for details to enable the Cloud Native Functions (CNF) cert suite                   ||
 |See [chart-verifier role](roles/chart-verifier/README.md) for details to enable the chart-verifier tests                          ||
-
+|See [resources-to-components role](roles/resources-to-components/README.md) for details to enable the creation of DCI components based on OCP resources deployed in the cluster before running this agent, making use of `dci_resources_to_components` variable. ||
 
 ## Pipeline job definition
 

@@ -1,0 +1,7 @@
+---
+resources_available_to_check:
+  - "Pod"
+  - "Deployment"
+  - "ReplicaSet"
+  - "StatefulSet"
+  - "ClusterServiceVersion"

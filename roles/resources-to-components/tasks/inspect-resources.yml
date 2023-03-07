@@ -1,0 +1,17 @@
+---
+
+# Just fail in this task but skip that, just not to make the job to fail.
+- name: Check if the resource can be checked
+  assert:
+    that: resources.resource in resources_available_to_check
+  fail_msg: >
+    "Your resource {{ resources.resource }} is not one of the resources
+    available to check: {{ resources_available_to_check }}"
+  ignore_errors: true
+
+- name: Retrieve resource information and create the components
+  include_tasks: resource-info-to-components.yml
+  when:
+    - resources.resource in resources_available_to_check
+
+...
