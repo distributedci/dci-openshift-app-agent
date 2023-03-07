@@ -1,0 +1,31 @@
+---
+- name: Get all pods from namespace
+  community.kubernetes.k8s_info:
+    namespace: "{{ resources.namespace }}"
+    kind: "{{ resources.resource }}"
+  register: pods_in_ns
+
+- name: Extract container images from pod names
+  set_fact:
+    container_images_in_ns: "{{ pods_in_ns | json_query('resources[*].spec.containers[*].image') }}"
+
+- name: Create a component based on pod information
+  vars:
+    container_image_name: >-
+      {% for image_chunk in container_image.split('@') %}
+        {% if loop.index > 1 %}{{ image_chunk }}{% endif %}
+        {% if not loop.last %}/{% endif %}
+      {% endfor %}
+    container_image_version: >-
+      {{ ( container_image.split('@')|length == 1 ) | ternary(
+      container_image.split(':')[-1],
+      container_image.split('@')[-1]) }}
+    comp_name: "POD_IMG {{ container_image_name }} {{ container_image_version }}"
+    comp_canonical_project_name: "{{ comp_name }}"
+    comp_type: "{{ resources.resource }}"
+  include_tasks: create-component.yml
+  loop: "{{ container_images_in_ns }}"
+  loop_control:
+    loop_var: container_image
+
+...
