@@ -39,6 +39,30 @@
       },
       "revId": "c6d002917bb5f1de147806629af97540b710e215",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad398099_a90918d1",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-09T23:24:45Z",
+      "side": 1,
+      "message": "I\u0027ve finally renamed to POD_IMG, as what we\u0027re going to present as component, in the end, is the container image",
+      "parentUuid": "cb34958d_1b4dff45",
+      "range": {
+        "startLine": 12,
+        "startChar": 16,
+        "endLine": 12,
+        "endChar": 23
+      },
+      "revId": "c6d002917bb5f1de147806629af97540b710e215",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
