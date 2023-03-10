@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "91f0177a_b9a63573",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-10T03:59:51Z",
+      "side": 1,
+      "message": "Hi Ramón, let me know if something is not clear, more than happy to chat about it. Thanks!",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "af227a1c_da78d531",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-10T03:59:51Z",
+      "side": 1,
+      "message": "IMO, we should only search pods that does not have a ownerReference, two main reasons.\n1. This is a PoC, limiting the scope would be better if it is decided to continue with this and increase the scope to more resources\n2. If later another resource like deployments or statefulsets, jobs, cronjobs, etc. are adopted, it won\u0027t duplicate what\u0027s created here.",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dadfb1ef_977c62a3",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-10T03:59:51Z",
+      "side": 1,
+      "message": "What about images used in ephemeral or init containers?\n\nYou also want this list to be unique, as any deploy, replicasets, statefulset, daemonset will have multiple pods with the exact same container images",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "24999651_e436b2a0",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-10T03:59:51Z",
+      "side": 1,
+      "message": "it\u0027s possible that a registry contains a port, i.e use of colon \":\"",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4970bf9e_2a2d6421",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-10T03:59:51Z",
+      "side": 1,
+      "message": "besides the use of digest or tag in an image is also valid not to specify a tag, where :latest is the default",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1eec2ce6_b5a1f161",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-10T03:59:51Z",
+      "side": 1,
+      "message": "I think the type should be the kind of resource",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
