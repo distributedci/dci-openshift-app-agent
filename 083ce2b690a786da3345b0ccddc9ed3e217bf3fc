@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f60060d7_5dc983ec",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-13T19:00:15Z",
+      "side": 1,
+      "message": "I agree, and after some work, I\u0027ve managed to add the treatment of ownerReference, and also I\u0027ve extended the coverage of this role to also include deployments, statefulsets, replicasets and csvs. Feedback is welcome",
+      "parentUuid": "af227a1c_da78d531",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dadfb1ef_977c62a3",
@@ -48,6 +66,24 @@
       "writtenOn": "2023-03-10T03:59:51Z",
       "side": 1,
       "message": "What about images used in ephemeral or init containers?\n\nYou also want this list to be unique, as any deploy, replicasets, statefulset, daemonset will have multiple pods with the exact same container images",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5a74f347_1d1fad55",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-13T19:00:15Z",
+      "side": 1,
+      "message": "Yes, that\u0027s true, and it\u0027s happening in fact in our example. The thing is, for similar images, the component would not be created multiple times, as it happened in the debug job. But it\u0027s true it would be better to avoid iterating unexpected times. So I\u0027ll add the unique filter there.\n\nRegarding the ephemeral/init containers, are they covered with this answer? From my side, I don\u0027t mind to retrieve all the container images related to the autodiscovered pods, even if they are ephemeral or init ones.\n\nI\u0027ll leave the comment open just in case we need to review that last topic. Else, it can be closed.",
+      "parentUuid": "dadfb1ef_977c62a3",
       "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -69,6 +105,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "06bfa439_94933292",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-13T19:00:15Z",
+      "side": 1,
+      "message": "Yes, I\u0027m aware :) here, the main intention of the variable called `container_image_without_version` is to just remove the image tag/digest, so that, in `container_image_name`, we remove the registry; and there, we split based on \u0027/\u0027, so that we remove the registry, and if having the port (:), it wouldn\u0027t mind as we\u0027re splitting based on \u0027/\u0027.\n\nI did it in this way just because of what you were commenting; in case of having a registry with port, splitting with \":\" would require more processing.\n\nI\u0027ll explain this with some more comments in the code.\n\nBut then, there\u0027s the point of the \":latest\" tag if provided... I\u0027ll include the logic to handle it (as I explain in my next response).",
+      "parentUuid": "24999651_e436b2a0",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4970bf9e_2a2d6421",
@@ -86,6 +140,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1daf3c63_cd5fee26",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-13T19:00:15Z",
+      "side": 1,
+      "message": "Good catch, I\u0027ll try to add the support for this. What I\u0027ll mainly do here is to split the string based on \":\" (for the case where we don\u0027t have digest), and if the last string contains \"/\", it should mean that the image does not specify the tag, so that we\u0027ll put latest.\n\nI\u0027ve tested it with my latest patchset and now should be fine, here the tests: http://pastebin.test.redhat.com/1094438",
+      "parentUuid": "4970bf9e_2a2d6421",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1eec2ce6_b5a1f161",
@@ -99,6 +171,24 @@
       "writtenOn": "2023-03-10T03:59:51Z",
       "side": 1,
       "message": "I think the type should be the kind of resource",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bbc8a70e_aef3aa69",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-13T19:00:15Z",
+      "side": 1,
+      "message": "Hmmm, I\u0027m not sure about this. I\u0027m setting the type to the container image name just thinking on the kind of queries we would set in dci_components afterwards. Mainly following what we already do with SPK, AM, etc.\n\nSo, imagine we have an image called \"cnf-image:v3.0\". Currently, name is \"v3.0\" and type is \"cnf-image\". When using dci_components variable in the pipelines, we use the type to filter the component to retrieve. So, if using the kind of resource as type, we would have the same type for all the images + version combinations.\n\nFor the moment, I\u0027ll leave this in this way, waiting for your opinion on my comment.",
+      "parentUuid": "1eec2ce6_b5a1f161",
       "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
