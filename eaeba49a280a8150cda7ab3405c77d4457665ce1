@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "634ec605_e5f652cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T22:01:35Z",
+      "side": 1,
+      "message": "Nevermind about this, I see that for those we will collect information when the type is ClusterServiceVersion",
+      "parentUuid": "02903e6f_953e2ceb",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0a7a4664_b47aa117",
@@ -375,6 +393,23 @@
         "endLine": 2,
         "endChar": 28
       },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b098dd9a_ea0dc6c1",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T22:01:35Z",
+      "side": 1,
+      "message": "Maybe you can use a json filter to remove items that have ownerReferences and override the resources_in_ns to avoid the loop",
       "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
