@@ -16,6 +16,407 @@
       "message": "I\u0027ve changed a little bit the PoC, so that we are now covering some more resources, apart from Pods.\nLast debug job in dallas worked, but it retrieved components that I created previously, that\u0027s why they\u0027re not using the new naming convention, but the code is working fine apart from that.",
       "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02903e6f_953e2ceb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "Thanks for this change. Just adding some recommendations.\n\nRegarding skipping resources that have ownerReferences, we may need to revisit that for the deployments, RS, etc. I was doing some testing and if a deployment is controlled by an operator, that will always have at least an entry in ownerReferences. E.g. \n\n  ownerReferences:\n  - apiVersion: multicluster.openshift.io/v1\n    blockOwnerDeletion: true\n    controller: true\n    kind: MultiClusterEngine\n    name: multiclusterengine\n    uid: 1a57cd53-3f77-40d2-b217-116f8440576e\n    \nSo, the role won\u0027t create a component for it. Is that expected?\n\nCheers\n\n",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a7a4664_b47aa117",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "\"used\"",
+      "range": {
+        "startLine": 3,
+        "startChar": 17,
+        "endLine": 3,
+        "endChar": 23
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "67f273e6_3e20b3f8",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "This looks like the requirements:\n\n- The role should be used from DOAA",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e628ee06_af25e128",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "Kubernetes?\n\nI think the kinds that are planned to be considered are generic for K8s. Just a suggestion.",
+      "range": {
+        "startLine": 3,
+        "startChar": 87,
+        "endLine": 3,
+        "endChar": 90
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a95be95_f29954de",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "The resources in the namespaces with the attribute `metadata.ownerReferences` are skipped. So only non-dependant resources are converted to components.",
+      "range": {
+        "startLine": 5,
+        "startChar": 117,
+        "endLine": 5,
+        "endChar": 326
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a590cd8e_a4442cd0",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "listed",
+      "range": {
+        "startLine": 5,
+        "startChar": 58,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a70b1e82_0630adf5",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "The list of supported resources by this role",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 53
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "592bbf27_f265c3c6",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "can you add the a prefix to the role variables according the role name? something like: rtc_?",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "353a3c6a_19415759",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "Does the role has dependencies/requirements?",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4350152d_2ba92aa5",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "Kubernetes?",
+      "range": {
+        "startLine": 16,
+        "startChar": 107,
+        "endLine": 16,
+        "endChar": 110
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "74326160_e2b273b8",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "This has been already mentioned above.",
+      "range": {
+        "startLine": 36,
+        "startChar": 224,
+        "endLine": 36,
+        "endChar": 322
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef22ea44_69a4ad1d",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "I think most part of this paragraph is good for the role description.",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 346
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96e5d9fb_77a76c61",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "prefix for",
+      "range": {
+        "startLine": 44,
+        "startChar": 9,
+        "endLine": 44,
+        "endChar": 24
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71ef4e9b_9256ea58",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "The name of the container image in use.",
+      "range": {
+        "startLine": 45,
+        "startChar": 54,
+        "endLine": 45,
+        "endChar": 67
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63b40153_0ebf6edb",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "The component cannonical name is formed with the following structure:",
+      "range": {
+        "startLine": 52,
+        "startChar": 2,
+        "endLine": 52,
+        "endChar": 60
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4466fd67_8c6e4bda",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "### License",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d5ca7edc_dbe8dff4",
+        "filename": "roles/resources-to-components/defaults/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "rtc_supported_resources?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 28
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6c828090_9f37afc4",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "Some trailing spaces in this doc.",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "01e360cd_48384f53",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-03-13T21:37:28Z",
+      "side": 1,
+      "message": "inspected?",
+      "range": {
+        "startLine": 31,
+        "startChar": 34,
+        "endLine": 31,
+        "endChar": 40
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
