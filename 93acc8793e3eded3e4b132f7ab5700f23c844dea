@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5995bd19_c225a548",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T15:07:38Z",
+      "side": 1,
+      "message": "Change can be reviewed again, we can see the ownerReferences filter is working fine in example-cnf and also in the upcoming tnf-test-cnf debug job that is running right now",
+      "revId": "93acc8793e3eded3e4b132f7ab5700f23c844dea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
