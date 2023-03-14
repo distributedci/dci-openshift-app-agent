@@ -53,6 +53,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4ba4f62_f99899f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "yeah, that\u0027s why I\u0027ve added the support for CSVs! the important thing is that, in all resources, the ownerReferences are retrieved from the metadata, so not needing to check in other places.",
+      "parentUuid": "634ec605_e5f652cc",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0a7a4664_b47aa117",
@@ -106,6 +124,72 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "Kubernetes?\n\nI think the kinds that are planned to be considered are generic for K8s. Just a suggestion.",
+      "range": {
+        "startLine": 3,
+        "startChar": 87,
+        "endLine": 3,
+        "endChar": 90
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19405a6a_ca4baba1",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0a7a4664_b47aa117",
+      "range": {
+        "startLine": 3,
+        "startChar": 17,
+        "endLine": 3,
+        "endChar": 23
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9ecdbbd_2e73da8b",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "I\u0027ll change \"can\" by \"should\"",
+      "parentUuid": "67f273e6_3e20b3f8",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f6b6d02_07e24078",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "yes, let\u0027s put Kubernetes here",
+      "parentUuid": "e628ee06_af25e128",
       "range": {
         "startLine": 3,
         "startChar": 87,
@@ -185,6 +269,78 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1b7da78_74edfac2",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a590cd8e_a4442cd0",
+      "range": {
+        "startLine": 5,
+        "startChar": 58,
+        "endLine": 5,
+        "endChar": 65
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "38464d71_430ebc10",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2a95be95_f29954de",
+      "range": {
+        "startLine": 5,
+        "startChar": 117,
+        "endLine": 5,
+        "endChar": 326
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c178773_9b98d4c1",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a70b1e82_0630adf5",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 53
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "592bbf27_f265c3c6",
@@ -198,6 +354,24 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "can you add the a prefix to the role variables according the role name? something like: rtc_?",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f490ffc_fb7b5df6",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "it was just to follow the same naming convention than dci_rpm/git variables, but yes, I can do that.",
+      "parentUuid": "592bbf27_f265c3c6",
       "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -219,6 +393,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8a3b70d_204e2305",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "No, you only need to define the resources_to_components variable based on the resources you want to autodiscover in this role. If not finding anything, no component will be created. I\u0027ll rewrite the readme to say this.",
+      "parentUuid": "353a3c6a_19415759",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4350152d_2ba92aa5",
@@ -232,6 +424,30 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "Kubernetes?",
+      "range": {
+        "startLine": 16,
+        "startChar": 107,
+        "endLine": 16,
+        "endChar": 110
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ea407a29_b0649ed3",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4350152d_2ba92aa5",
       "range": {
         "startLine": 16,
         "startChar": 107,
@@ -265,6 +481,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d346f78_aaaa8b2e",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "removing.",
+      "parentUuid": "74326160_e2b273b8",
+      "range": {
+        "startLine": 36,
+        "startChar": 224,
+        "endLine": 36,
+        "endChar": 322
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ef22ea44_69a4ad1d",
@@ -278,6 +518,30 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "I think most part of this paragraph is good for the role description.",
+      "range": {
+        "startLine": 40,
+        "startChar": 0,
+        "endLine": 40,
+        "endChar": 346
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5288b15a_c6f59cc9",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "good catch, moving.",
+      "parentUuid": "ef22ea44_69a4ad1d",
       "range": {
         "startLine": 40,
         "startChar": 0,
@@ -311,6 +575,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "33212632_d7711e6f",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "96e5d9fb_77a76c61",
+      "range": {
+        "startLine": 44,
+        "startChar": 9,
+        "endLine": 44,
+        "endChar": 24
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "71ef4e9b_9256ea58",
@@ -324,6 +612,30 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "The name of the container image in use.",
+      "range": {
+        "startLine": 45,
+        "startChar": 54,
+        "endLine": 45,
+        "endChar": 67
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a305753_13fef036",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "71ef4e9b_9256ea58",
       "range": {
         "startLine": 45,
         "startChar": 54,
@@ -357,6 +669,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b077ce6f_f74e4946",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "just adding \"project name\" to your sentence, at that\u0027s the official name.",
+      "parentUuid": "63b40153_0ebf6edb",
+      "range": {
+        "startLine": 52,
+        "startChar": 2,
+        "endLine": 52,
+        "endChar": 60
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4466fd67_8c6e4bda",
@@ -374,6 +710,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a220a990_0b71ed9e",
+        "filename": "roles/resources-to-components/README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4466fd67_8c6e4bda",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d5ca7edc_dbe8dff4",
@@ -387,6 +741,30 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "rtc_supported_resources?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 28
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "898119c1_cf43e39c",
+        "filename": "roles/resources-to-components/defaults/main.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "ack, I\u0027ll update this in other places too",
+      "parentUuid": "d5ca7edc_dbe8dff4",
       "range": {
         "startLine": 2,
         "startChar": 0,
@@ -416,6 +794,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4856e829_512ee981",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Hehe, I know this is not a clever option, but I was checking several hours how to do it with a json filter and I didn\u0027t find the way, do you have the proper solution to do that? I will really appreciate that!",
+      "parentUuid": "b098dd9a_ea0dc6c1",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "6c828090_9f37afc4",
         "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
         "patchSetId": 5
@@ -427,6 +823,24 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "Some trailing spaces in this doc.",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b322974_1a786e29",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "6c828090_9f37afc4",
       "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -444,6 +858,30 @@
       "writtenOn": "2023-03-13T21:37:28Z",
       "side": 1,
       "message": "inspected?",
+      "range": {
+        "startLine": 31,
+        "startChar": 34,
+        "endLine": 31,
+        "endChar": 40
+      },
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d86306a_e77599fe",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-14T13:26:16Z",
+      "side": 1,
+      "message": "true, I forgot to update this",
+      "parentUuid": "01e360cd_48384f53",
       "range": {
         "startLine": 31,
         "startChar": 34,
