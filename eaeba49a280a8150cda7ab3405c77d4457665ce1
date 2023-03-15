@@ -845,6 +845,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef990fee_e8b02ca4",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-15T11:09:28Z",
+      "side": 1,
+      "message": "Looks nice, I\u0027ve added it in my latest patchset, I\u0027ll retest with it",
+      "parentUuid": "9fa8abeb_60cbcf02",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c828090_9f37afc4",
