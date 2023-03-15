@@ -863,6 +863,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae23ddce_6ba7b121",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-15T11:17:43Z",
+      "side": 1,
+      "message": "Confirming it\u0027s working as expected, thanks Beto! https://www.distributed-ci.io/jobs/f209c24c-5f5c-447f-a6b1-c7486f25241f/jobStates?sort\u003ddate\u0026task\u003df3ac8ed5-ede5-42c6-80c8-923080aa50c7",
+      "parentUuid": "ef990fee_e8b02ca4",
+      "revId": "eaeba49a280a8150cda7ab3405c77d4457665ce1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6c828090_9f37afc4",
