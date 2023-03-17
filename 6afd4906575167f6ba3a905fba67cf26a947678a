@@ -68,6 +68,41 @@
       "parentUuid": "652de941_11837dfb",
       "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3ff510c_eaa78aec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T16:04:24Z",
+      "side": 1,
+      "message": "Thanks for the chat, no other feature will be added, e.g. no regex on csv as that will make the role more complex. CSV will show any operator available in the ns, and there are some that are multi-ns or run in all ns, is best to reflect what\u0027s available in the ns rather than filtering.",
+      "parentUuid": "133f0c85_e401b789",
+      "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1a3fda4_e8a835df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T16:04:24Z",
+      "side": 1,
+      "message": "LGTM, Thanks Ramón!",
+      "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

@@ -89,6 +89,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f5b3a069_144dfbdd",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T16:04:24Z",
+      "side": 1,
+      "message": "We had a chat about this, while the scope was increased, this will not be a PoC anymore and this change will be included in the agent. At this point the feature is considered completed and no more resources will be added.",
+      "parentUuid": "37f85217_a5b4e4b2",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dadfb1ef_977c62a3",
@@ -138,6 +156,24 @@
       "side": 1,
       "message": "ephemeral and init containers are not covered here, the filtering is only with containers, but that could be handled later since this is a PoC",
       "parentUuid": "5a74f347_1d1fad55",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d672acf3_35f63a2b",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T16:04:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "abaaa32e_163524b6",
       "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -209,6 +245,24 @@
       "side": 1,
       "message": "it is considered, yes, I added the support for that in following patchsets, including a comment above the task to explain how is working",
       "parentUuid": "96c69cf8_be0a6bde",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b24f18d_f82a57f0",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T16:04:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "131502ba_8b853d2e",
       "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
