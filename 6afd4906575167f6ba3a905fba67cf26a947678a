@@ -33,6 +33,23 @@
       "message": "Thanks Ramon, LGTM",
       "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "652de941_11837dfb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T03:28:29Z",
+      "side": 1,
+      "message": "I\u0027ve seen the components created and so far I\u0027m not quite sure I see the value of them. for example:\n\n  Canonical project name: IMG openshift4/performance-addon-rhel8-operator  sha256:2d1145f5ee5635b5928e24c352fc1813e8b6a14abe4e5520f36450d05c856f1d\n  Name:  sha256:2d1145f5ee5635b5928e24c352fc1813e8b6a14abe4e5520f36450d05c856f1d\n  Type:  openshift4/performance-addon-rhel8-operator\n  \nNot sure what\u0027s this component is providing or how to make use of it.\n\nPlease don\u0027t take this as critique to your work, my comment goes to the end goal of this PoC that is create components based on images used in a cluster.",
+      "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

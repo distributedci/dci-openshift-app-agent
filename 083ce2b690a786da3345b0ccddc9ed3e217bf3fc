@@ -73,6 +73,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "37f85217_a5b4e4b2",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T03:28:29Z",
+      "side": 1,
+      "message": "Hi Ramón, let\u0027s sync, my request was to limit the scope and the change is increasing the scope.",
+      "parentUuid": "f60060d7_5dc983ec",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "dadfb1ef_977c62a3",
         "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
         "patchSetId": 3
@@ -108,6 +126,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "abaaa32e_163524b6",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T03:28:29Z",
+      "side": 1,
+      "message": "ephemeral and init containers are not covered here, the filtering is only with containers, but that could be handled later since this is a PoC",
+      "parentUuid": "5a74f347_1d1fad55",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "24999651_e436b2a0",
         "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
         "patchSetId": 3
@@ -137,6 +173,24 @@
       "side": 1,
       "message": "Yes, I\u0027m aware :) here, the main intention of the variable called `container_image_without_version` is to just remove the image tag/digest, so that, in `container_image_name`, we remove the registry; and there, we split based on \u0027/\u0027, so that we remove the registry, and if having the port (:), it wouldn\u0027t mind as we\u0027re splitting based on \u0027/\u0027.\n\nI did it in this way just because of what you were commenting; in case of having a registry with port, splitting with \":\" would require more processing.\n\nI\u0027ll explain this with some more comments in the code.\n\nBut then, there\u0027s the point of the \":latest\" tag if provided... I\u0027ll include the logic to handle it (as I explain in my next response).",
       "parentUuid": "24999651_e436b2a0",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96c69cf8_be0a6bde",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T03:28:29Z",
+      "side": 1,
+      "message": "When you say that it would require more processing, does that mean that it is not considered at this point?",
+      "parentUuid": "06bfa439_94933292",
       "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -207,6 +261,24 @@
       "side": 1,
       "message": "Hmmm, I\u0027m not sure about this. I\u0027m setting the type to the container image name just thinking on the kind of queries we would set in dci_components afterwards. Mainly following what we already do with SPK, AM, etc.\n\nSo, imagine we have an image called \"cnf-image:v3.0\". Currently, name is \"v3.0\" and type is \"cnf-image\". When using dci_components variable in the pipelines, we use the type to filter the component to retrieve. So, if using the kind of resource as type, we would have the same type for all the images + version combinations.\n\nFor the moment, I\u0027ll leave this in this way, waiting for your opinion on my comment.",
       "parentUuid": "1eec2ce6_b5a1f161",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "60fccdb8_154e9e4c",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-17T03:28:29Z",
+      "side": 1,
+      "message": "Yeah, at the moment the component is not giving enough flexibility on that regard, but that is changing. So let\u0027s keep it the way you have the type for now until the components are modified.",
+      "parentUuid": "bbc8a70e_aef3aa69",
       "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
