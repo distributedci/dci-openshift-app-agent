@@ -197,6 +197,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "131502ba_8b853d2e",
+        "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-17T10:56:24Z",
+      "side": 1,
+      "message": "it is considered, yes, I added the support for that in following patchsets, including a comment above the task to explain how is working",
+      "parentUuid": "96c69cf8_be0a6bde",
+      "revId": "083ce2b690a786da3345b0ccddc9ed3e217bf3fc",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "4970bf9e_2a2d6421",
         "filename": "roles/resources-to-components/tasks/pods-to-components.yml",
         "patchSetId": 3

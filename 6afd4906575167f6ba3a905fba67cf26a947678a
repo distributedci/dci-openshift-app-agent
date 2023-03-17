@@ -50,6 +50,24 @@
       "message": "I\u0027ve seen the components created and so far I\u0027m not quite sure I see the value of them. for example:\n\n  Canonical project name: IMG openshift4/performance-addon-rhel8-operator  sha256:2d1145f5ee5635b5928e24c352fc1813e8b6a14abe4e5520f36450d05c856f1d\n  Name:  sha256:2d1145f5ee5635b5928e24c352fc1813e8b6a14abe4e5520f36450d05c856f1d\n  Type:  openshift4/performance-addon-rhel8-operator\n  \nNot sure what\u0027s this component is providing or how to make use of it.\n\nPlease don\u0027t take this as critique to your work, my comment goes to the end goal of this PoC that is create components based on images used in a cluster.",
       "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "133f0c85_e401b789",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-17T10:56:24Z",
+      "side": 1,
+      "message": "Yes, I agree, it looks like these components are taken from the cluster-wide operators that we deploy, e.g. PAO. Maybe a way of removing them is to add a kind of regex to each item from rtc_resources_to_components (default to \"*\"), to avoid this behavior. We can discuss about this separately, of course.\n\nAnd of course, all feedback is welcome, for sure all this comments will help to really target what we really want :)",
+      "parentUuid": "652de941_11837dfb",
+      "revId": "6afd4906575167f6ba3a905fba67cf26a947678a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
