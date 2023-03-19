@@ -16,6 +16,24 @@
       "message": "Hi Tania, I have a couple of silly questions, just trying to get familiar with this.\n\n1. Is there a component or log that shows the pre-flight image version? I found something in the ansible.log[1] but I was wondering if there is a better way to validate.\n2. About the breaking test for non-modified rpms, where do we see that? \n\nThanks,\n\n\n[1]\n\u003e 2023-03-17 08:20:38,920 p\u003d1512442 u\u003ddciteam n\u003dansible | TASK [Download preflight]\n\u003e ...\n\u003e 2023-03-17 08:20:41,166 p\u003d1512442 u\u003ddciteam n\u003dansible | changed: [jumphost] \u003d\u003e {\"attempts\": 1, \"changed\": true, \"cmd\": \"wget -q https://github.com/redhat-openshift-ecosystem/openshift-preflight/releases/download/1.5.3/preflight-linux-amd64 -O /tmp/preflight_tmp_dir.i1cjbtet/preflight/1.5.3/preflight ...",
       "revId": "4b70e1707c8d4175b967ab275d11ce3d9b14662a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5237e5ae_8b376123",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-03-19T20:07:47Z",
+      "side": 1,
+      "message": "Hi Manny, it\u0027s all in the main logfile, preflight.log. Let\u0027s check ibm_mq here:\n\n1. preflight_container_ibm-mq_1.3.1_ibm-mq-operator_preflight.log\n\n\u003e time\u003d\"2023-03-17T08:22:48-05:00\" level\u003dinfo msg\u003d\"certification library version\" version\u003d\"1.5.3 \u003ccommit: e2655949dc6d331b319e9d8f9baa140b672f002e\u003e\"\n\n2. preflight_container_ibm-mq_1.3.1_ibm-mq-operator_preflight.log\n\n\u003e time\u003d\"2023-03-17T08:22:54-05:00\" level\u003ddebug msg\u003d\"running check\" check\u003dHasModifiedFiles\ntime\u003d\"2023-03-17T08:22:56-05:00\" level\u003dinfo msg\u003d\"check completed\" check\u003dHasModifiedFiles result\u003dPASSED\n\nThe previous implementation of HasModifiedFiles made it always work but the current one is much most strict.",
+      "parentUuid": "7ff61237_e4ba603f",
+      "revId": "4b70e1707c8d4175b967ab275d11ce3d9b14662a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
