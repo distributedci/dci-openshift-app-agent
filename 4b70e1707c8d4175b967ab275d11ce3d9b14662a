@@ -51,6 +51,23 @@
       "message": "Ready for review, tests are green: https://www.distributed-ci.io/jobs/8b94033e-2b9d-4eb7-8519-011368e479a5/jobStates",
       "revId": "4b70e1707c8d4175b967ab275d11ce3d9b14662a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e866ba9c_e20d8e5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-03-20T14:01:14Z",
+      "side": 1,
+      "message": "Tania, thanks for the clarification",
+      "revId": "4b70e1707c8d4175b967ab275d11ce3d9b14662a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
