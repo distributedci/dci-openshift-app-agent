@@ -44,10 +44,15 @@
         - operator.create_container_project | default(false) | bool
         - operator.pyxis_container_identifier | default('') | length == 0
 
-    - name: Template config.yaml with Preflight setup
+    - name: Template config.yaml to display it in logs
       template:
         src: templates/config_container.yaml.j2
         dest: "{{ preflight_container_artifacts.path }}/config.yaml"
+
+    - name: Template config.yaml with Preflight setup for the invocation
+      template:
+        src: templates/config_container.yaml.j2
+        dest: "{{ preflight_binary_dir }}/config.yaml"
 
     - name: "Run preflight check container on operator image {{ current_operator_image }} with preflight binary"
       shell: >
