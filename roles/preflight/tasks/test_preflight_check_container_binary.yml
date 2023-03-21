@@ -49,6 +49,12 @@
         src: templates/config_container.yaml.j2
         dest: "{{ preflight_container_artifacts.path }}/config.yaml"
 
+    - name: Print config file to be used for preflight invocation
+      vars:
+        template_filename: "templates/config_container.yaml.j2"
+      debug:
+        msg: "{{ lookup('template', template_filename) }}"
+
     - name: "Run preflight check container on operator image {{ current_operator_image }} with preflight binary"
       shell: >
         {{ preflight_binary_dir }}/preflight
