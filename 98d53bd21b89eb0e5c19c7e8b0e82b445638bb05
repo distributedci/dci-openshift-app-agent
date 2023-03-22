@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2b42f5c_ed050524",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-03-22T15:00:33Z",
+      "side": 1,
+      "message": "I think I have spotted a syntax error.",
+      "revId": "98d53bd21b89eb0e5c19c7e8b0e82b445638bb05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

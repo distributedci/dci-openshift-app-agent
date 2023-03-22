@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5661e255_dd05a148",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 258,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-03-22T15:00:33Z",
+      "side": 1,
+      "message": "The last \u0027|true \u0027 does not make sense for me. And I think Ansible will complain about this.\nI think you meant \u0027bool\u0027",
+      "revId": "7d8aed2efffdc87f6bd8636513da459ee13e8f98",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
