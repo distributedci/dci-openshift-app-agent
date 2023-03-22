@@ -255,6 +255,7 @@
   when:
     - test_network_function_version is version("v4.1.6", ">=") or test_network_function_version == "HEAD"
     - partner_creds|length
+    - not tnf_disable_preflight | default(false) | true
 
 # The task automatically append TNF_PARTNER_REPO and TNF_IMAGE environment variables to tnf_env_vars
 - name: Run the CNF Test Suite
