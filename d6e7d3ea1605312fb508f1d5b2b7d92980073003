@@ -16,6 +16,40 @@
       "message": "recheck",
       "revId": "d6e7d3ea1605312fb508f1d5b2b7d92980073003",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16c7204e_98ed71e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-23T21:21:39Z",
+      "side": 1,
+      "message": "Thanks Tania, this is good, I\u0027ll submit a patchset with what was suggested and test it",
+      "revId": "d6e7d3ea1605312fb508f1d5b2b7d92980073003",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a6eb820_6953a873",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_binary.yml",
+        "patchSetId": 5
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-23T21:21:39Z",
+      "side": 1,
+      "message": "To avoid (at least on our side) to expose creds in the ansible log, use environment to pass all the variables to shell, e.g. \n\n  environment:\n    PFLT_JUNIT: \"true\"\n    ...\n    PFLT_CERTIFICATION_PROJECT_ID: \"{{ cert_project_id }}\"\n    PFLT_PYXIS_API_TOKEN: \"{{ pyxis_apikey }}\"\n    \nThis will not print in the logs the env vars, but will be passed to the preflight command.\n\nI\u0027ll make the change and run the test",
+      "revId": "d6e7d3ea1605312fb508f1d5b2b7d92980073003",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
