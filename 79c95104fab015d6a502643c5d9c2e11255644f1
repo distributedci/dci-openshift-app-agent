@@ -33,6 +33,24 @@
       "message": "I don\u0027t see the dci-agent-syntax-check nor the dci-rpm-build-with-doc-el8 that are required, I\u0027m trying to make those trigger.\n\nWe may need to remove the +1 from workflow",
       "revId": "79c95104fab015d6a502643c5d9c2e11255644f1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1315f138_7f1799ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-26T21:20:10Z",
+      "side": 1,
+      "message": "dci-agent-syntax-check is aborted: https://softwarefactory-project.io/zuul/t/local/build/d7c46cf2866043a1a94949250269a956\nThere is no dci-rpm-build-with-doc-el8 job: https://softwarefactory-project.io/zuul/t/local/builds?job_name\u003ddci-rpm-build-with-doc-el8\u0026change\u003d27826\u0026skip\u003d0",
+      "parentUuid": "6e82fe57_f5953ec5",
+      "revId": "79c95104fab015d6a502643c5d9c2e11255644f1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
