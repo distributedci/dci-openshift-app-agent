@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "79c95104fab015d6a502643c5d9c2e11255644f1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6e82fe57_f5953ec5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-03-26T16:46:46Z",
+      "side": 1,
+      "message": "I don\u0027t see the dci-agent-syntax-check nor the dci-rpm-build-with-doc-el8 that are required, I\u0027m trying to make those trigger.\n\nWe may need to remove the +1 from workflow",
+      "revId": "79c95104fab015d6a502643c5d9c2e11255644f1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
