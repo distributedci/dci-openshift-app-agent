@@ -68,6 +68,23 @@
       "message": "recheck",
       "revId": "79c95104fab015d6a502643c5d9c2e11255644f1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "12acb019_a539f03c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-03-27T07:06:59Z",
+      "side": 1,
+      "message": "Removed +1 to retrigger the syntax check",
+      "revId": "79c95104fab015d6a502643c5d9c2e11255644f1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
