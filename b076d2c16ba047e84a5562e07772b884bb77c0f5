@@ -16,6 +16,23 @@
       "message": "check workload preflight-green",
       "revId": "b076d2c16ba047e84a5562e07772b884bb77c0f5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7577619_3580627e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-03-27T12:33:31Z",
+      "side": 1,
+      "message": "dupe of approved 27826 created to fix the merge issue",
+      "revId": "b076d2c16ba047e84a5562e07772b884bb77c0f5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
