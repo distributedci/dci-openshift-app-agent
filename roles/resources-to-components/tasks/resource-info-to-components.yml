@@ -108,8 +108,8 @@
       {% else %}\
         {{ container_image.split('@')[-1] }}\
       {% endif %}"
-    comp_name: "{{ container_image_version }}"
-    comp_canonical_project_name: "IMG {{ container_image_name }} {{ container_image_version }}"
+    comp_display_name: "IMG {{ container_image_name }} {{ container_image_version }}"
+    comp_version: "{{ container_image_version }}"
     comp_type: "{{ container_image_name }}"
   include_tasks: create-component.yml
   loop: "{{ container_images_in_ns }}"
