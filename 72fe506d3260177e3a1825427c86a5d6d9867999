@@ -16,6 +16,23 @@
       "message": "Change is ready for merging, now it\u0027s working fine and with the correct release",
       "revId": "72fe506d3260177e3a1825427c86a5d6d9867999",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fd48a17_9f2e178b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-03-30T13:18:09Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "72fe506d3260177e3a1825427c86a5d6d9867999",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
