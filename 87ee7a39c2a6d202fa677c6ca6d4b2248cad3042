@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c563a272_f210829e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-30T12:37:00Z",
+      "side": 1,
+      "message": "Hi Yassine, the debug job is complaining about the new display_name field to be passed to dci_components. It\u0027s because we\u0027re not using the correct version of dci_components? (in theory, there\u0027s a depends-on to that change, so it should be in place)",
+      "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
