@@ -33,6 +33,24 @@
       "message": "LGTM",
       "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1671fd0c_ceef7307",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2023-03-30T21:59:49Z",
+      "side": 1,
+      "message": "Yes you are right, but for some reasons the depends-on is not working between dci-ansible and dciclient. Once dciclient\u0027s patch will be merge it should be taken into account in this one.",
+      "parentUuid": "c563a272_f210829e",
+      "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
