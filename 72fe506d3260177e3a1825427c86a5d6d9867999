@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "72fe506d3260177e3a1825427c86a5d6d9867999",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "176cee03_6d9cf26d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-03-30T14:59:32Z",
+      "side": 1,
+      "message": "I\u0027ll merge this one, tnf team confirmed me that they will create a new release, v4.2.1, to release the patch for the affiliated-certification test. I\u0027ll create a new change for that",
+      "revId": "72fe506d3260177e3a1825427c86a5d6d9867999",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
