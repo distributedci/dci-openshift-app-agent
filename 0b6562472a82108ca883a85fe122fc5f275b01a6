@@ -16,6 +16,24 @@
       "message": "shouldn\u0027t this be removed in the teardown on a failure?",
       "revId": "0b6562472a82108ca883a85fe122fc5f275b01a6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22ac21fb_835ec79f",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-04-03T23:28:04Z",
+      "side": 1,
+      "message": "yes, but we have that disabled for some pipelines. So today I had to remove all these: \n\nlocalhost/cnf-certification-test               v4.2.1-v7tuiZw4y4brmUIh                                    24c791f4f854  16 hours ago   807 MB\nlocalhost/cnf-certification-test               v4.2.1-RNLQDJO5rdTdmIHK                                    00d923dfa833  40 hours ago   807 MB\nlocalhost/cnf-certification-test               v4.2.1-UuY9UT77o2WzwJYm                                    00d923dfa833  40 hours ago   807 MB\nlocalhost/cnf-certification-test               v4.2.1-iAOPlaHRhFvFJ4Yc                                    00d923dfa833  40 hours ago   807 MB\nlocalhost/cnf-certification-test               v4.2.1-hAmzE4eAwzMpF2yU                                    00d923dfa833  40 hours ago   807 MB\nlocalhost/cnf-certification-test               v4.2.1-Wv6EXcZuSCj9B027                                    00d923dfa833  40 hours ago   807 MB\nlocalhost/cnf-certification-test               v4.2.1-h0aYjdVuWMXZdF9c                                    ec650f405cdf  2 days ago     807 MB\nlocalhost/cnf-certification-test               v4.2.1-TN5nSMjPZ6vXEC8r                                    ec650f405cdf  2 days ago     807 MB\nlocalhost/cnf-certification-test               v4.2.1-qotugfafsjETWcYf                                    ec650f405cdf  2 days ago     807 MB\nlocalhost/cnf-certification-test               ff725a4ea27cb23bd40e21dc186f20eb8bcfb695-2wvj82Wtq6tZWDzq  b7ae5d12f9e7  3 days ago     799 MB\nlocalhost/cnf-certification-test               c971bb3808a0766d655faa29efbed85d765f236b-W6XJGmQOD2d3BNlf  4bb4d83ab43d  3 days ago     799 MB\nlocalhost/cnf-certification-test               unstable-VwwPb8HS949l9K1K                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-Uj5LMAkp8bSPZF9O                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-eimyW1nCBw62Eb6s                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-03TOFONH1Y8mnnyF                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-sVfxNz2zBolRhGoj                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-gLW2VoazR5vTPsIv                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-uGxw3u6RjqjlhyE7                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-XN6oxcD9Rc3uDIZA                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-0UfzIDWlYNarHMfo                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               unstable-UYAtADRyC7VCO433                                  93645678f5b7  3 days ago     807 MB\nlocalhost/cnf-certification-test               v4.2.1-TvrufW4wgy7IGSM1                                    aa951b19a9ca  3 days ago     807 MB",
+      "parentUuid": "7f62e1e1_72e272db",
+      "revId": "0b6562472a82108ca883a85fe122fc5f275b01a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
