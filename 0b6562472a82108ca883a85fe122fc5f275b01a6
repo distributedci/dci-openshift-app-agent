@@ -72,6 +72,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "20ed3bb3_ea2ca22a",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-04-04T17:11:26Z",
+      "side": 1,
+      "message": "Agree, if the image is not used in any shape or form after this point, then is enough to remove it in here and remove the code in the teardown.",
+      "parentUuid": "c006507a_96dd4618",
+      "revId": "0b6562472a82108ca883a85fe122fc5f275b01a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7474e8a9_c57b507f",
