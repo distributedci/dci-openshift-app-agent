@@ -34,6 +34,41 @@
       "parentUuid": "7f62e1e1_72e272db",
       "revId": "0b6562472a82108ca883a85fe122fc5f275b01a6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "069f050d_927463f9",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 292,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-04T06:06:49Z",
+      "side": 1,
+      "message": "I agree with the removal here for that case, but I\u0027d add a when condition here, which is to run the removal of local tnf image if dci_teardown_on_success/failure are false (if they are true, then the teardown would take care)",
+      "parentUuid": "22ac21fb_835ec79f",
+      "revId": "0b6562472a82108ca883a85fe122fc5f275b01a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7474e8a9_c57b507f",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 296,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-04T06:06:49Z",
+      "side": 1,
+      "message": "I think we don\u0027t need this check, tnf_image is built, regardless of the tnf execution",
+      "revId": "0b6562472a82108ca883a85fe122fc5f275b01a6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
