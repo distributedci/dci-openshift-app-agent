@@ -6,6 +6,7 @@
     - cert_project_output.failed | bool
     - "'You cannot change container.repository and container.registry fields to specified values as the combination would no longer be unique' in cert_project_output.json.detail"
 
+# TODO: Display an ansible warning here
 - name: Print message if image might exists in another organization
   debug:
     msg:
