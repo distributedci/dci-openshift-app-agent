@@ -44,53 +44,60 @@
         - operator.create_container_project | default(false) | bool
         - operator.pyxis_container_identifier | default('') | length == 0
 
-    - name: "Run preflight check container on operator image {{ current_operator_image }} with preflight binary"
-      vars:
-        pflt_envs: |
-          PFLT_JUNIT: "true"
-          PFLT_LOGLEVEL: trace
-          PFLT_ARTIFACTS: "{{ preflight_container_artifacts.path }}"
-          PFLT_LOGFILE: "{{ preflight_container_artifacts.path }}/preflight.log"
-          {% if partner_creds | length %}
-          PFLT_DOCKERCONFIG: "{{ preflight_tmp_dir.path }}/config.json"
-          {% endif %}
-          {% if cert_project_id | default('') | length %}
-          PFLT_PYXIS_API_TOKEN: "{{ lookup('file', pyxis_apikey_path) }}"
-          PFLT_CERTIFICATION_PROJECT_ID: "{{ cert_project_id }}"
-          {% endif %}
-      shell: >
-        {{ preflight_binary_dir }}/preflight
-        check container
-        {{ current_operator_image }}
-        {% if cert_project_id | default('') | length %}
-        --submit
-        {% endif %}
-      environment: "{{ pflt_envs | from_yaml }}"
-      args:
-        chdir: "{{ preflight_container_artifacts.path }}"
-      ignore_errors: true
+    - block:
+        - name: "Run preflight check container on operator image {{ current_operator_image }} with podman"
+          shell: >
+            podman run
+            --rm
+            --privileged
+            -e PFLT_JUNIT=true
+            -e PFLT_LOGLEVEL=trace
+            -e PFLT_ARTIFACTS=/artifacts
+            -e PFLT_LOGFILE=/artifacts/preflight.log
+            {% if partner_creds | length %}
+            -e PFLT_DOCKERCONFIG=/opt/config.json
+            {% endif %}
+            {% if cert_project_id | default('') | length %}
+            -e PFLT_PYXIS_API_TOKEN={{ lookup('file', pyxis_apikey_path) }}
+            -e PFLT_CERTIFICATION_PROJECT_ID={{ cert_project_id }}
+            {% endif %}
+            -v {{ preflight_container_artifacts.path }}:/artifacts
+            {% if partner_creds | length %}
+            -v {{ preflight_tmp_dir.path }}/config.json:/opt/config.json
+            {% endif %}
+            {{ preflight_podman_ca }}
+            {{ preflight_image }}
+            check container
+            {{ current_operator_image }}
+            {% if cert_project_id | default('') | length %}
+            --submit
+            {% endif %}
+      rescue:
+        - name: Do not fail when preflight check container throws an error
+          debug:
+            msg: Do not fail when preflight check container throws an error"      
+      always:
+        - name: Unset pyxis auth to not reuse by following containers
+          set_fact:
+            cert_project_id: ""
 
-    - name: Unset pyxis auth to not reuse by following containers
-      set_fact:
-        cert_project_id: ""
+        - name: "Run health check on {{ current_operator_image }}"
+          include_tasks: test_run_health_check.yml
+          when: preflight_run_health_check | bool
 
-    - name: "Run health check on {{ current_operator_image }}"
-      include_tasks: test_run_health_check.yml
-      when: preflight_run_health_check | bool
+        - name: Upload logs for preflight check container into DCI
+          vars:
+            image_name: "{{ current_operator_image | regex_search('.*/([^@:]+).*$', '\\1') | join('') }}"
+            preflight_prefix: "preflight_container_{{ operator.name }}_{{ operator.version }}_{{ image_name }}"
+          copy:
+            src: "{{ item }}"
+            dest: "{{ job_logs.path }}/{{ preflight_prefix }}_{{ item | basename }}"
+          with_fileglob:
+            - "{{ preflight_container_artifacts.path }}/*"
 
-    - name: Upload logs for preflight check container into DCI
-      vars:
-        image_name: "{{ current_operator_image | regex_search('.*/([^@:]+).*$', '\\1') | join('') }}"
-        preflight_prefix: "preflight_container_{{ operator.name }}_{{ operator.version }}_{{ image_name }}"
-      copy:
-        src: "{{ item }}"
-        dest: "{{ job_logs.path }}/{{ preflight_prefix }}_{{ item | basename }}"
-      with_fileglob:
-        - "{{ preflight_container_artifacts.path }}/*"
-
-    - name: Remove tmp dir
-      file:
-        path: "{{ preflight_container_artifacts.path }}"
-        state: absent
+        - name: Remove tmp dir
+          file:
+            path: "{{ preflight_container_artifacts.path }}"
+            state: absent
   when: not (already_certified | default(false) | bool)
 ...
