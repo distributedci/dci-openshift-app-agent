@@ -49,7 +49,7 @@ spec:
 {% endif %}
       containers:
         - image: {{ tnf_app_image | default('quay.io/testnetworkfunction/cnf-test-partner:latest') }}
-          imagePullPolicy: IfNotPresent
+          imagePullPolicy: Always
           name: test
           ports:
             - name: "http-probe"
