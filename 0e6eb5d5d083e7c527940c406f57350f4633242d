@@ -16,6 +16,23 @@
       "message": "LGTM, thanks ",
       "revId": "0e6eb5d5d083e7c527940c406f57350f4633242d",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "00b45cf2_f14d4757",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2023-04-11T18:26:16Z",
+      "side": 1,
+      "message": "job impacted: https://www.distributed-ci.io/jobs/2ecfe579-a58a-4fd6-81ea-383bf466ae06/jobStates?sort\u003ddate\u0026task\u003d4f439527-3bb1-4d59-a859-2712e8729d03",
+      "revId": "0e6eb5d5d083e7c527940c406f57350f4633242d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
