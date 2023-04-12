@@ -33,6 +33,24 @@
       "message": "Yesterday I tested this in Casa nd it worked, but I think we need to use the master version (or wait for 4.2.3?) and not 4.2.2 since https://github.com/test-network-function/cnf-certification-test/pull/1004 was not merged before the release of 4.2.2",
       "revId": "f4b7ca4d39b8bec172ef1a3d2c237169f3116223",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "77b8d113_609ac9f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-12T15:18:20Z",
+      "side": 1,
+      "message": "great that it\u0027s working in Casa :) we can merge this anyway (I need to do some refactors before removing the WIP tag), because if you check the tnf_labels, I am directly using the ones related to the test suites, not using common right now. When moving to v4.2.3, then I\u0027ll reinclude the common tag, which will not include preflight then.",
+      "parentUuid": "a3e7be12_1662983c",
+      "revId": "f4b7ca4d39b8bec172ef1a3d2c237169f3116223",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
