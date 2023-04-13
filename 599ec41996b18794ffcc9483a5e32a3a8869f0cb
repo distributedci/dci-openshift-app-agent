@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "768bee20_5ece7d8d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-13T16:24:53Z",
+      "side": 1,
+      "message": "Now it\u0027s ready for review again, sorry for the noise, but the conditions to avoid checking partner_creds for preflight was failing, now it\u0027s working fine",
+      "revId": "599ec41996b18794ffcc9483a5e32a3a8869f0cb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
