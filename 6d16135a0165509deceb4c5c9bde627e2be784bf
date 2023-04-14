@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90829c9e_06dec8df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-04-14T02:05:42Z",
+      "side": 1,
+      "message": "Actually must-gather was broken. Must gather files were empty. Now it is collecting logs only for the current job execution.",
+      "revId": "6d16135a0165509deceb4c5c9bde627e2be784bf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
