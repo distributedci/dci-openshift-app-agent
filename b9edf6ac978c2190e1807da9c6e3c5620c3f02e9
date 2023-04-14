@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "289c7d0a_8d84dfac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-14T09:51:31Z",
+      "side": 1,
+      "message": "Thank you for the contribution, Abhishek! \n\nThe change is tested:\n\n- Request data without the timestamp: https://www.distributed-ci.io/jobs/676a1c5c-840d-4f49-ae69-056585069966/jobStates?sort\u003ddate\u0026task\u003dc514c2f4-ed1e-402d-9f22-6e0b3bb554b7 \n\n- The cert project was correctly created with Pyxis API: \nhttps://www.distributed-ci.io/jobs/676a1c5c-840d-4f49-ae69-056585069966/jobStates?sort\u003ddate\u0026task\u003d80039695-09ab-453e-8f32-883705790abe",
+      "revId": "b9edf6ac978c2190e1807da9c6e3c5620c3f02e9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
