@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ecaa064_420fe67c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-18T09:12:53Z",
+      "side": 1,
+      "message": "Hello everyone, the change is tested and ready to be merged:\n\n- Creation of the new project works fine: https://www.distributed-ci.io/jobs/2ab339b2-5765-4f5e-b255-18c4eb23dff7/jobStates?sort\u003ddate\u0026task\u003d41db142f-100e-4e4a-95e1-346705b7adb0\n\n- Attempt to create duplicate project fails by default: https://www.distributed-ci.io/jobs/864adf74-c6aa-4a2d-8fea-d149d468b3df/jobStates?sort\u003ddate\u0026task\u003dd3466ff9-fd8f-41e7-b590-6e2680619082\n\n- Andrew\u0027s logic to skip the creation of the project if there is an existing one and to not fail: check_for_existing_projects \u003d true + ignore_project_creation_errors \u003d true: https://www.distributed-ci.io/jobs/9d2fbb81-d02f-4168-b02a-1b8f9013944d/jobStates?sort\u003ddate\u0026task\u003dc2c2726d-520f-4fd3-be49-ab332d2135ba",
+      "revId": "0e52765d87f3c734021dbc44010a0815e5f3bca4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
