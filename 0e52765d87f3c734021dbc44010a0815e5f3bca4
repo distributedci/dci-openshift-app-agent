@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "34b8be43_93e6beff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-18T15:21:04Z",
+      "side": 1,
+      "message": "Thanks Ramon, I explained the design decisions I made here. Please do not hesitate to disagree, the flow is quite complex, and I am quite tired of all these cert fixes to be honest, so might easily miss something.",
+      "revId": "0e52765d87f3c734021dbc44010a0815e5f3bca4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aaaee515_b24adf21",
@@ -58,6 +75,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "14b68cff_17d088de",
+        "filename": "roles/create-certification-project/tasks/check_if_container_project_exists_other_org.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-18T15:21:04Z",
+      "side": 1,
+      "message": "Yes, it\u0027s a particular situation when the Pyxis API throws an exception if the project (container + registry path) exists in another organization. Andrew is dealing with it because he first tests the creation of partner projects locally. \n\nSince the CR is quite large already, I\u0027ll add the proper handling of that \"another organization\" situation as the next step. Right now, I just want to fix things for our partner :)",
+      "parentUuid": "aaaee515_b24adf21",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 7
+      },
+      "revId": "0e52765d87f3c734021dbc44010a0815e5f3bca4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cde327a8_a201722d",
@@ -71,6 +112,30 @@
       "writtenOn": "2023-04-18T14:58:38Z",
       "side": 1,
       "message": "Sorry if I am missing some context, but just to be sure: if the cert project is already created, should we skip this one? or will the creation do nothing because it was already created?",
+      "range": {
+        "startLine": 6,
+        "startChar": 8,
+        "endLine": 6,
+        "endChar": 32
+      },
+      "revId": "0e52765d87f3c734021dbc44010a0815e5f3bca4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08a4f600_90174d7e",
+        "filename": "roles/create-certification-project/tasks/create_container_project.yml",
+        "patchSetId": 6
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-18T15:21:04Z",
+      "side": 1,
+      "message": "It\u0027s one of the tests, here is the flow:\n\n1/ We\u0027ll identify that the project exists and we\u0027ll display its ID.\n2/ We\u0027ll proceed to the creation of the new project, fail, and ignore that error.\n3/ We\u0027ll _not_ use the ID of the existing project to submit the test results, and let the user define the desired behavior during the next run. \nThe user could set the identified container project id to submit the tests, or simply remove the option `create_project` for that container.\n\nAndrew\u0027s logic to skip the creation of the project if there is an existing one and to not fail: check_for_existing_projects \u003d true + ignore_project_creation_errors \u003d true: https://www.distributed-ci.io/jobs/9d2fbb81-d02f-4168-b02a-1b8f9013944d/jobStates?sort\u003ddate\u0026task\u003dc2c2726d-520f-4fd3-be49-ab332d2135ba",
+      "parentUuid": "cde327a8_a201722d",
       "range": {
         "startLine": 6,
         "startChar": 8,
