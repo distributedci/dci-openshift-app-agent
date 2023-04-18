@@ -69,6 +69,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd71aa1f_d0e330f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-18T20:46:13Z",
+      "side": 1,
+      "message": "Hi Manny, thank you for checking!\n\nYes, we will keep the logic of Pyxis API as the default behavior. This means that an attempt to create a duplicate project will throw an error, causing the job to fail, and displaying the error provided by Pyxis API.\n\nWe also have the option to overwrite this behavior by setting \"check_for_existing_projects\" to true and \"ignore_project_creation_errors\" to true. In that case, our automation will check for an existing project and display its ID if found. It will then proceed to create a new project, fail, and ignore that error. Basically, this is Andrew\u0027s scenario.",
+      "parentUuid": "c0ab0c94_ada44813",
+      "revId": "0e52765d87f3c734021dbc44010a0815e5f3bca4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aaaee515_b24adf21",
