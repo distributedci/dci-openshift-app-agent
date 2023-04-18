@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0ab0c94_ada44813",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-04-18T16:21:33Z",
+      "side": 1,
+      "message": "Tania, LGTM\n\nOne last question, now the default behavior without the custom handling vars will be to fail during the project creation right? and print whatever failure it displays, which could be that the image is another/own org, or anything else. Is my understanding correct?\n\nThanks",
+      "revId": "0e52765d87f3c734021dbc44010a0815e5f3bca4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "aaaee515_b24adf21",
