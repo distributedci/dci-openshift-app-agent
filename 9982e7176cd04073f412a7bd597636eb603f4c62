@@ -33,6 +33,41 @@
       "message": "Interesting, so is this \u0027distribution_method\": \"rhcc\"\u0027 what makes it use Pyxis GraphQL API? Thanks",
       "revId": "9982e7176cd04073f412a7bd597636eb603f4c62",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8b16a89_8409ac33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-19T15:54:20Z",
+      "side": 1,
+      "message": "thank you Manny!",
+      "revId": "9982e7176cd04073f412a7bd597636eb603f4c62",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64874e7a_aeed44cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-19T15:54:20Z",
+      "side": 1,
+      "message": "Actually, no :)  \n\nGraphQL is their new option by default and that\u0027s why I had to remove all the timestamps. With the timestamps, it throws an error \"Pyxis API was unable to create valid GraphQL query\".\n\nConcerning \"external\" -\u003e \"rhcc\" change, it\u0027s another deprecation the cert team made in December. The projects created with \"external\" will not pass the Tekton pipeline which is running on the cert PRs in the certified-operators repo, we have now to use the new keyword.",
+      "parentUuid": "c9957457_2232cc81",
+      "revId": "9982e7176cd04073f412a7bd597636eb603f4c62",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
