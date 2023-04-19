@@ -16,6 +16,23 @@
       "message": "The change is tested e2e and ready to be merged:\n\nCreation of operator cert project worked: \n\nhttps://www.distributed-ci.io/jobs/c22ffd10-ad70-42e7-9c87-9a151279c554/jobStates?sort\u003ddate\u0026task\u003d0f917d8a-cfeb-452b-9968-ff8e9aa993af \n\nHere is the project:\nhttps://connect.redhat.com/projects/643fe7d368dd4557ae2c3ddb/overview\n\nThe creation of cert PR worked as well:\nhttps://github.com/redhat-openshift-ecosystem/certified-operators/pull/2134/files",
       "revId": "9982e7176cd04073f412a7bd597636eb603f4c62",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9957457_2232cc81",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-04-19T15:45:34Z",
+      "side": 1,
+      "message": "Interesting, so is this \u0027distribution_method\": \"rhcc\"\u0027 what makes it use Pyxis GraphQL API? Thanks",
+      "revId": "9982e7176cd04073f412a7bd597636eb603f4c62",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
