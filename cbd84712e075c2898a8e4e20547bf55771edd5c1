@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64126a66_0f83e6f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-04-20T08:12:23Z",
+      "side": 1,
+      "message": "check workload tnf-test-cnf-green",
+      "revId": "cbd84712e075c2898a8e4e20547bf55771edd5c1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
