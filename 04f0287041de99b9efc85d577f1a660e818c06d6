@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b2437b0_2a3d0032",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-20T14:03:37Z",
+      "side": 1,
+      "message": "Hi Tony and Pierre, I remove here the old env var DOCKER_CONFIG, and replace it with PFLT_DOCKERCONFIG, as recommended by the Preflight team. The change is tested: https://www.distributed-ci.io/jobs/0976f6ad-2463-469d-85e5-2f00ac96a5ea/jobStates ",
+      "revId": "04f0287041de99b9efc85d577f1a660e818c06d6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
