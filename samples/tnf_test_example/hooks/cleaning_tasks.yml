@@ -38,6 +38,7 @@
     wait: yes
     wait_sleep: 5
     wait_timeout: 120
+  when: not enable_nfs_storage | default(false) | bool
 
 - name: Delete custom RuntimeClass
   community.kubernetes.k8s:
@@ -48,6 +49,39 @@
     wait: yes
     wait_sleep: 5
     wait_timeout: 120
+
+- name: Cleaning NFS external storage resources
+  block:
+    - name: Delete nfs-client-provisioner Deployment
+      community.kubernetes.k8s:
+        api_version: apps/v1
+        name: nfs-client-provisioner
+        kind: Deployment
+        state: absent
+        wait: yes
+        wait_sleep: 5
+        wait_timeout: 120
+
+    - name: Delete managed-nfs-storage StorageClass
+      community.kubernetes.k8s:
+        api_version: storage.k8s.io/v1
+        name: managed-nfs-storage
+        kind: StorageClass
+        state: absent
+        wait: yes
+        wait_sleep: 5
+        wait_timeout: 120
+
+    - name: Delete openshift-nfs-storage Namespace
+      community.kubernetes.k8s:
+        api_version: v1
+        name: openshift-nfs-storage
+        kind: Namespace
+        state: absent
+        wait: yes
+        wait_sleep: 5
+        wait_timeout: 120
+  when: enable_nfs_storage | default(false) | bool
 
 - name: Delete operator-catalog
   community.kubernetes.k8s:

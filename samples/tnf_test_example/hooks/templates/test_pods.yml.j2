@@ -152,5 +152,5 @@ spec:
       resources:
         requests:
           storage: 10Mi
-      storageClassName: local-storage
+      storageClassName: {{ enable_nfs_storage | default(false) | bool | ternary('managed-nfs-storage', 'local-storage') }}
 {% endif %}
