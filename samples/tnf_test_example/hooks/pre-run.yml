@@ -49,4 +49,31 @@
     - dci_local_registry | length
     - pullsecret_tmp_file|length
 
+# If enabled, we will use NFS external storage to create the volumes for the pods under test.
+- name: Configure NFS external storage if enabled
+  block:
+    - name: "Mirroring the NFS external storage provisioner image"
+      include_role:
+        name: mirror_images
+      vars:
+        images: ['registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2']
+        authfile: "{{ pullsecret_tmp_file }}"
+      when:
+        - dci_disconnected | default(false) | bool
+        - dci_local_registry | length
+        - pullsecret_tmp_file|length
+
+    - name: "Deploy NFS external storage"
+      include_role:
+        name: nfs-external-storage
+      vars:
+        nes_nfs_server: "{{ nfs_server }}"
+        nes_nfs_path: "{{ nfs_path }}"
+        nes_path_pattern: "{{ job_id is defined |
+                            ternary( job_id+'_${.PVC.name}', omit) }}"
+        nes_provisioner_image: "{{ dci_disconnected | default(false) | bool |
+                                ternary( dci_local_registry+'/sig-storage/nfs-subdir-external-provisioner:v4.0.2',
+                                'registry.k8s.io/sig-storage/nfs-subdir-external-provisioner:v4.0.2' ) }}"
+  when: enable_nfs_storage | default(false) | bool
+
 ...

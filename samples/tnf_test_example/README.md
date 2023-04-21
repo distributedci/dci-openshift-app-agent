@@ -32,6 +32,7 @@ Other resources related to the pods under test are also deployed:
 
 - Configuration for istio injection, in order to install istio-proxy container on each pod, if istio/Aspenmesh is installed in the cluster. This is only done if `tnf_enable_service_mesh` control flag is set to `true` (`false` by default).
 - Local StorageClass and PersistentVolumes, attached to the pods under test in `production-cnf` namespace.
+  - If activating `enable_nfs_storage: true`, NFS StorageClass is used instead, using [nfs-external-storage](https://github.com/redhat-cip/dci-openshift-agent/tree/master/common-roles/nfs-external-storage) common role provided on `dci-openshift-agent`. Remember you need to define `nfs_server` and `nfs_path` variables in that case.
 - A custom SCC applied to all the pods. This SCC follows the Verizon recommendations to use best practices for deploying pods securely.
 - Resource quotas, extracted from [this repository](https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-target/resource-quota.yaml).
 - Network policies, extracted from these sources: [(1)](https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-target/ingress-deny-all-np.yaml), [(2)](https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-target/egress-deny-all-np.yaml) and [(3)](https://github.com/test-network-function/cnf-certification-test-partner/blob/main/test-target/pod-to-pod-np.yaml).
