@@ -152,5 +152,5 @@ spec:
       resources:
         requests:
           storage: 10Mi
-      storageClassName: local-storage
+      storageClassName: {{ storage_class is defined | ternary(storage_class, 'local-storage') }}
 {% endif %}
