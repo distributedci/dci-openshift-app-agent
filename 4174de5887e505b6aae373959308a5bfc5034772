@@ -16,6 +16,23 @@
       "message": "Hello everyone, I tested the change:\n\n1/ If skip_absent_testfiles is not defined, the absent JUnit file causes the failure: https://www.distributed-ci.io/jobs/a2828023-3269-4d7d-8a79-f8c6b8bd0fd3/jobStates?sort\u003ddate\n\n2/ If skip_absent_testfiles is defined, the absent JUnit file is ignored: https://www.distributed-ci.io/jobs/8e305d59-9cd6-4973-a5ce-dc9fa05ee092/jobStates?sort\u003ddate\u0026task\u003d34c05c50-b732-438f-94a5-30ec5305994c\n\n3/ If there is no absent files, and skip_absent_testfiles is not defined, everything is ok: https://www.distributed-ci.io/jobs/2d7bcfde-9c8e-4514-a10e-487af7211a91/jobStates",
       "revId": "4174de5887e505b6aae373959308a5bfc5034772",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbe6429b_f43325da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-04-21T13:20:03Z",
+      "side": 1,
+      "message": "Hello everyone, I tested the change:\n\n1/ If skip_absent_testfiles is not defined, the absent JUnit file causes the failure: https://www.distributed-ci.io/jobs/a2828023-3269-4d7d-8a79-f8c6b8bd0fd3/jobStates?sort\u003ddate\u0026task\u003d40a2a27a-751c-43a3-9a9d-2229f2904f51\n\n2/ If skip_absent_testfiles is defined, the absent JUnit file is ignored: https://www.distributed-ci.io/jobs/8e305d59-9cd6-4973-a5ce-dc9fa05ee092/jobStates?sort\u003ddate\u0026task\u003d34c05c50-b732-438f-94a5-30ec5305994c\n\n3/ If there is no absent files, and skip_absent_testfiles is not defined, everything is ok: https://www.distributed-ci.io/jobs/2d7bcfde-9c8e-4514-a10e-487af7211a91/jobStates",
+      "revId": "4174de5887e505b6aae373959308a5bfc5034772",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
