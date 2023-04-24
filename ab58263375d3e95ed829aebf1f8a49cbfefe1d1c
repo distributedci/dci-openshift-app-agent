@@ -68,6 +68,24 @@
       "parentUuid": "b631f28e_d487824a",
       "revId": "ab58263375d3e95ed829aebf1f8a49cbfefe1d1c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "290742b2_f7a4ed9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-04-24T15:54:59Z",
+      "side": 1,
+      "message": "It should not require a lot of effort, it should be enough by adding NFS storage to the cluster10 inventory and next time it is rebuilt it will have NFS available. From that point any workload through [TC]NF or preflight will have access to the  storage of that cluster",
+      "parentUuid": "36f72820_cd696639",
+      "revId": "ab58263375d3e95ed829aebf1f8a49cbfefe1d1c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
