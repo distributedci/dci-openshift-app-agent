@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a7d773d_fbd35cd5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-24T11:31:40Z",
+      "side": 1,
+      "message": "Change is ready for review, working in all cases:\n\n- Not using NFS storage: using local storage instead:\n-- BOS2: https://www.distributed-ci.io/jobs/de5f7e4f-1755-41d2-a41e-2a51cf20c395/jobStates?sort\u003ddate\n-- Dallas: https://www.distributed-ci.io/jobs/6de5077f-39bc-4216-a3f7-077139d59829/jobStates?sort\u003ddate\n\n- Using NFS storage with tnf v4.2.2: storage test still failing, but NFS works:\n-- BOS2: https://www.distributed-ci.io/jobs/ce9abc0a-e137-4aa0-a575-b16e8e34730f/jobStates?sort\u003ddate\n-- Dallas: https://www.distributed-ci.io/jobs/0cc57bb7-1ab4-421f-8838-7ed1eda6e318/jobStates?sort\u003ddate\n\n- Using NFS storage with tnf HEAD: storage test fixed, now passing as well as NFS is installed correctly:\n-- BOS2: https://www.distributed-ci.io/jobs/d14a4c95-8089-4d13-9ab3-bf946cbb38ff/jobStates?sort\u003ddate\n-- Dallas: https://www.distributed-ci.io/jobs/e92db1b8-79bd-40a0-927a-bfdea3ddbd51/jobStates?sort\u003ddate\n\nNote that the resources created are also deleted correctly.",
+      "revId": "ab58263375d3e95ed829aebf1f8a49cbfefe1d1c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
