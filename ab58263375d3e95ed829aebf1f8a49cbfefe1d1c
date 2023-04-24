@@ -50,6 +50,24 @@
       "message": "These type of tasks are more suitable for a dci-openshift-agent hook than for an dci-openshift-app-agent hook.\n\nThe app-agent should consume what\u0027s in the cluster. If the cluster has storage, there should no be any different if is NetApp, ODF, NFS, etc.\n\nWhile is possible to do all this in a hook it is better to assign infrastructure tasks to the doa and workflow tasks to doaa",
       "revId": "ab58263375d3e95ed829aebf1f8a49cbfefe1d1c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36f72820_cd696639",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-24T15:45:10Z",
+      "side": 1,
+      "message": "Thanks Tony for the review, let me check if I can do something, but I didn\u0027t want to change all our pipelines to meet this configuration just for tnf_test_example, but I agree that should be the ideal way of doing it, I\u0027ll see and refactor everything required.",
+      "parentUuid": "b631f28e_d487824a",
+      "revId": "ab58263375d3e95ed829aebf1f8a49cbfefe1d1c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
