@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "67daeba4_183ea88f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-25T18:47:21Z",
+      "side": 1,
+      "message": "Change is ready for review again. Tests already done:\n\n- Libvirt with local storage, works (current method): https://www.distributed-ci.io/jobs/eaf6136d-91f1-4d6a-859d-c21a92c485fc/jobStates\n- Baremetal with local storage, works (current method): https://www.distributed-ci.io/jobs/5839f06c-d483-493b-bcba-f350739c63d7/jobStates?sort\u003ddate\n- Baremetal with Trident, works: https://www.distributed-ci.io/jobs/8814abd6-499f-468e-a5da-bb723bdaebd0/jobStates?sort\u003ddate (job is failing in opcap, not related to this change. tnf test related to storage is passing)\n\nThere are some upcoming tests that are currently run, such as testing NFS in libvirt and baremetal, but it should work too. Anyway, change can be reviewed.",
+      "revId": "7d3050ae35f5df5a1c1d6fd0bb75fb6d5ace050c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
