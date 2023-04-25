@@ -6,6 +6,23 @@ targetNameSpaces:
 {% endif %}
 {% endfor %}
 
+{% if test_network_function_version is version('v4.2.3', '>=') or test_network_function_version == 'HEAD' %}
+podsUnderTestLabels:
+{% for item in tnf_config %}
+{% if item.targetpodlabels is defined and item.targetpodlabels is iterable %}
+{% for label in item.targetpodlabels %}
+{% if label|length %}
+  - "{{ label|regex_search('.+?=')|regex_replace('=', '') }}: {{ label|regex_search('=.*')|regex_replace('=', '') }}"
+{% endif %}
+{% endfor %}
+{% endif %}
+{% endfor %}
+
+# tbc
+operatorsUnderTestLabels:
+  - "test-network-function.com/operator: target"
+{% else %}
+
 targetPodLabels:
 {% for item in tnf_config %}
 {% if item.targetpodlabels is defined and item.targetpodlabels is iterable %}
@@ -25,6 +42,7 @@ targetPodLabels:
 {% endfor %}
 {% endif %}
 {% endfor %}
+{% endif %}
 
 targetCrdFilters:
 {% for item in tnf_config %}
