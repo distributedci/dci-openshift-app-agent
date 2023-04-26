@@ -33,6 +33,23 @@
       "message": "Two pending tests are also working:\n- using NFS in baremetal: https://www.distributed-ci.io/jobs/2a7b2a79-7c98-4673-a769-e5e2228939be/jobStates?sort\u003ddate\n- using NFS in libvirt: https://www.distributed-ci.io/jobs/268437de-aff9-47a9-83d5-1032a4d7d31f/jobStates?sort\u003ddate",
       "revId": "7d3050ae35f5df5a1c1d6fd0bb75fb6d5ace050c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11c5d2e3_13618d24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-04-26T15:29:23Z",
+      "side": 1,
+      "message": "LGTM, thanks Ramón!",
+      "revId": "7d3050ae35f5df5a1c1d6fd0bb75fb6d5ace050c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
