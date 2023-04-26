@@ -47,7 +47,6 @@ The `dci-openshift-app-agent` is packaged and available as a RPM file located in
 
 To configure your DCI job pipelines, you need to install `dci-pipeline`. Instructions at [dci-pipeline documentation](../dci-pipeline/).
 
-
 ## Configuration
 
 The DCI dashboard gives you a view into what jobs you have run in your distributed agent. In order to gain access to it
@@ -116,6 +115,9 @@ Here is an example of a pipeline job definition for `dci-openshift-app-agent`:
     kubeconfig: kubeconfig_path
 ```
 
+## Using podman image
+
+dci-pipeline project offers a podman image to execute dci-openshift-app-agent workflow. See [the dci-pipeline](https://github.com/redhat-cip/dci-pipeline/) documentation for more details.
 
 ## Enabling the Test Suites in DCI App Agent
 
