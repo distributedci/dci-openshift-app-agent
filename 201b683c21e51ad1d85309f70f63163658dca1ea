@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dea2c480_b36e8209",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-27T10:01:54Z",
+      "side": 1,
+      "message": "We have to stop the integration for the moment because I have detected some breaking changes in tnf v4.2.3 that have to be corrected, and probably it will cause the creation of a new release that will fix these issues. Everything reported in https://issues.redhat.com/browse/CNFCERT-447.",
+      "revId": "201b683c21e51ad1d85309f70f63163658dca1ea",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
