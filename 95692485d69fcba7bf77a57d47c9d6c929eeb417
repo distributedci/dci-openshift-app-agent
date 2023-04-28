@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "897f58e8_afdc537f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-28T13:35:26Z",
+      "side": 1,
+      "message": "Change is working, waiting for https://github.com/test-network-function/cnf-certification-test/pull/1053 to be merged and to have a new tnf release, then we can merge this.\n\nScenarios tested and validated:\n\n- In Dallas, using tnf-test-cnf-green, with new format for tnf_config and using operator labels: https://www.distributed-ci.io/jobs/32433dd6-e47d-45a8-9400-9e3ae21451f8/jobStates\n- In BOS2, using the same configuration: https://www.distributed-ci.io/jobs/69b69395-0df9-4a73-8123-7b8e8c100d76/jobStates\n- In BOS2, testing with legacy test-network-function/operator: target label: https://www.distributed-ci.io/jobs/4ec8c731-882d-4517-a58a-a357abcf6ee2/jobStates\n- In BOS2, testing without operator labels and using legacy operators_regexp, to see nothing is broken in that case: https://www.distributed-ci.io/jobs/03bc449d-c54c-4771-a57a-3fe6f6eb16ce/jobStates?sort\u003ddate\n- In Dallas: using example-cnf, with new format for tnf_config and using operator labels: https://www.distributed-ci.io/jobs/6708952b-5884-4b65-94fb-b5317ada1505/jobStates?sort\u003ddate",
+      "revId": "95692485d69fcba7bf77a57d47c9d6c929eeb417",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
