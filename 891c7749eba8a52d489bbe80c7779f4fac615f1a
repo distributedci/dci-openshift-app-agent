@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d3fab3ff_258a7c33",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-04-28T08:58:51Z",
+      "side": 1,
+      "message": "Hi Pierre, correct me if I\u0027m wrong, but, is the podman documentation ongoing right now? Because I cannot see any reference in the dci-pipeline project README regarding that",
+      "revId": "891c7749eba8a52d489bbe80c7779f4fac615f1a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
