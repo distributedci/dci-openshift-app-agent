@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ce6c164_db981662",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-02T17:25:48Z",
+      "side": 1,
+      "message": "Everything re-validated just in case, working in dallas and in BOS2. Ready for merging",
+      "revId": "23e55860c530d1d71a25af2ff9669d4af044d749",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
