@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e33904b_254a5741",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-02T16:49:13Z",
+      "side": 1,
+      "message": "Moving to active since tnf v4.2.4 is now available. I\u0027ll only check in BOS2 since the tests done last week apply for this new stable release, we used almost the same code from HEAD branch in the validation, and this code now belongs to v4.2.4 release.",
+      "revId": "9914a8667dc62816c1a91f450828eaa9e0eb8071",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
