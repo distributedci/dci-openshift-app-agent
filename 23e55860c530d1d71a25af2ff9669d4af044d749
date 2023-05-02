@@ -16,6 +16,23 @@
       "message": "Everything re-validated just in case, working in dallas and in BOS2. Ready for merging",
       "revId": "23e55860c530d1d71a25af2ff9669d4af044d749",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91f993b1_65b3bf1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-05-02T23:16:23Z",
+      "side": 1,
+      "message": "LGTM, just one question, in the commit I see these two items in the list:\n\n\u003e - Change the way we interact with debug daemonset for previous tnf versions\n\u003e - Change the check for authentication when launching preflight\n\nBut I couldn\u0027t point the exact changes for that in d-o-a-a. Are those changes part of TNF 4.2.3 and above? ",
+      "revId": "23e55860c530d1d71a25af2ff9669d4af044d749",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
