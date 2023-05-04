@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75924fe4_42ad91b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-04T07:51:59Z",
+      "side": 1,
+      "message": "Change is ready for review.\nPrevious failure was because of a wrong condition in https://github.com/test-network-function/cnf-certification-test/pull/1045, not related to this change. Because of this, in DCI job https://www.distributed-ci.io/jobs/fd9bb45b-9aed-48ce-97ab-f00511e8e68a/jobStates, the job is failing: access-control-cluster-role-bindings test is failing and it shouldn\u0027t.\nI\u0027ve tested now without that build-depends, using tnf v4.2.4, and it\u0027s working fine in BOS2 and in Dallas.\nWe can safely merge this change, and be prepared for tnf-PR1045.",
+      "revId": "942cc8789586374dd4fd06a867c6c0b7650d7451",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
