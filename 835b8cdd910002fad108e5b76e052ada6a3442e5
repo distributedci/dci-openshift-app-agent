@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b101833b_e444b01a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-05T08:40:01Z",
+      "side": 1,
+      "message": "Can we try here to test tnf-test-cnf? because it\u0027s the main source of code affected by the components\u0027 change",
+      "revId": "835b8cdd910002fad108e5b76e052ada6a3442e5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
