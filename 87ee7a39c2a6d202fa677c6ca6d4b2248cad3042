@@ -99,6 +99,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc99a9ad_e4ecba0d",
+        "filename": "roles/resources-to-components/tasks/create-component.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2023-05-05T09:06:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3d3205f4_5207cb6c",
+      "range": {
+        "startLine": 4,
+        "startChar": 4,
+        "endLine": 4,
+        "endChar": 27
+      },
+      "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "606455e2_acda96e9",
@@ -112,6 +136,30 @@
       "writtenOn": "2023-04-06T11:36:51Z",
       "side": 1,
       "message": "comp_name can be removed here if not used",
+      "range": {
+        "startLine": 111,
+        "startChar": 4,
+        "endLine": 111,
+        "endChar": 46
+      },
+      "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b840650e_c546dbae",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 29
+      },
+      "writtenOn": "2023-05-05T09:06:21Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "606455e2_acda96e9",
       "range": {
         "startLine": 111,
         "startChar": 4,
