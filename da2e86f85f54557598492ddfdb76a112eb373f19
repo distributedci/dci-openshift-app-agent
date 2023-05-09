@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "deb24e8e_99bdae54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-09T09:19:43Z",
+      "side": 1,
+      "message": "Including some changes in resources-to-components after discussing with Fred, now it should fix the naming followed for the components created there, also including an improvement when having a digest, to avoid really long names in the UI view",
+      "revId": "da2e86f85f54557598492ddfdb76a112eb373f19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
