@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ceaafc3_60f917f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-09T10:13:03Z",
+      "side": 1,
+      "message": "\u003e Patch Set 14:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/7866cbf5-b555-433c-a054-1b94e58c18b8/jobStates\n\u003e  from https://github.com/dci-labs/inventories/pull/148\n\nChange is now working fine in tnf-test-cnf",
+      "revId": "2c7ee9cc709078edb26bcd14362de1cdecc2e846",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
