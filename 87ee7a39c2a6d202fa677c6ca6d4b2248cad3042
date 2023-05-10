@@ -76,6 +76,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f6e7048_89c063a4",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 1440
+      },
+      "writtenOn": "2023-05-10T08:28:49Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "95bb70c5_2b05b753",
+      "range": {
+        "startLine": 151,
+        "startChar": 6,
+        "endLine": 151,
+        "endChar": 37
+      },
+      "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3d3205f4_5207cb6c",
