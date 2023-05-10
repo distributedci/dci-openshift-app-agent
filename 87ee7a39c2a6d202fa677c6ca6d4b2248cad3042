@@ -168,6 +168,30 @@
       },
       "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f6f04e7_fe08e617",
+        "filename": "roles/resources-to-components/tasks/resource-info-to-components.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1440
+      },
+      "writtenOn": "2023-05-10T08:28:04Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "606455e2_acda96e9",
+      "range": {
+        "startLine": 111,
+        "startChar": 4,
+        "endLine": 111,
+        "endChar": 46
+      },
+      "revId": "87ee7a39c2a6d202fa677c6ca6d4b2248cad3042",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
