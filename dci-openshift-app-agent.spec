@@ -1,5 +1,5 @@
 Name:          dci-openshift-app-agent
-Version:       0.5.5
+Version:       0.5.6
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
@@ -73,6 +73,7 @@ exit 0
 %{_datadir}/dci-openshift-app-agent/plays/scripts/*
 %{_datadir}/dci-openshift-app-agent/roles/*
 %{_datadir}/dci-openshift-app-agent/group_vars/all
+%{_datadir}/dci-openshift-app-agent/utils/*
 
 %{_unitdir}/*
 
@@ -81,6 +82,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Thu May 19 2023 Beto Rdz <josearod@redhat.com> 0.5.6-1
+- Add utils scripts
+
 * Fri Apr 28 2023 Frederic Lepied <flepied@redhat.com> 0.5.5-1
 - Requires dci-ansible >= 3.1.0 for the new component fields
 

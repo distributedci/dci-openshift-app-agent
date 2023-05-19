@@ -31,6 +31,9 @@ install:
 
 	install -p -D -m 644 group_vars/all $(BUILDROOT)$(DATADIR)/dci-openshift-app-agent/group_vars/all
 
+    install -dm 755 "$(BUILDROOT)$(DATADIR)/dci-openshift-app-agent/utils/"
+    install -Dm 755 utils/cleanup-scripts/*{.sh,.py} "$(BUILDROOT)$(DATADIR)/dci-openshift-app-agent/utils/"
+
 	install -p -D -m 644 systemd/$(NAME).service $(BUILDROOT)$(UNITDIR)/$(NAME).service
 	install -p -D -m 644 systemd/$(NAME).timer $(BUILDROOT)$(UNITDIR)/$(NAME).timer
 
