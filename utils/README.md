@@ -7,11 +7,16 @@ Each utility is documented in its own README.md file.
 ## Index of Utilities
 
 - [Internal-registry](#internal-registry/README.md)
+- [cleanup-scripts](#cleanup-scripts/README.md)
 
 
 ## Internal-registry
 
 The [internal-registry](#internal-registry/README.md) is an Ansible playbook to enable the OCP internal images registry.
+
+## Cleanup scripts
+
+The cleanup-scripts contains a set of scripts that can be used to remove the resources that are left during jobs executions in the jumphost server.
 
 ## License
 

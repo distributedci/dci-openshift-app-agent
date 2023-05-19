@@ -40,3 +40,6 @@ install:
 	find roles/* -type f -exec install -v -p -D -m 644 "{}" "$(BUILDROOT)$(DATADIR)/dci-openshift-app-agent/{}" \;
 
 	install -v -p -D -m 755 dci-openshift-app-agent-ctl $(BUILDROOT)$(BINDIR)/dci-openshift-app-agent-ctl
+
+    install -dm 755 "$(BUILDROOT)$(DATADIR)/dci-openshift-app-agent/utils/"
+    install -Dm 755 utils/cleanup-scripts/*{.sh,.py} "$(BUILDROOT)$(DATADIR)/dci-openshift-app-agent/utils/"
