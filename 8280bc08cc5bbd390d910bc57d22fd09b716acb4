@@ -16,6 +16,24 @@
       "message": "Is it possible to reuse the clean-webartifact.sh from doa?  doaa requires doa so we can count on it to be available.",
       "revId": "8280bc08cc5bbd390d910bc57d22fd09b716acb4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27d0bfeb_8a5acbbb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-05-23T00:38:45Z",
+      "side": 1,
+      "message": "sounds good, let me move there",
+      "parentUuid": "adbce476_d2d6643e",
+      "revId": "8280bc08cc5bbd390d910bc57d22fd09b716acb4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
