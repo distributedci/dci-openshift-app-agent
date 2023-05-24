@@ -152,27 +152,27 @@
   # rely on the last commit id. For that reason, it is better to just do it
   # here rather than changing pre-run and track_git_repo to be adapted to this
   # casuistic
-  - name: Manually create the corresponding tnf component for DCI
-    dci_component:
-      display_name: "{{ test_network_function_project_name }} {{ tnf_version_image[:7] }}"
-      version: "{{ tnf_version_image }}"
-      team_id: "{{ job_info['job']['team_id'] }}"
-      topic_id: "{{ job_info['job']['topic_id'] }}"
-      type: "{{ test_network_function_project_name }}"
-      url: "https://github.com/test-network-function/cnf-certification-test/commit/{{ tnf_version_image }}"  # noqa 204
-      state: present
-    register: tnf_git_component
-    tags: [dci]
+  # - name: Manually create the corresponding tnf component for DCI
+  #   dci_component:
+  #     display_name: "{{ test_network_function_project_name }} {{ tnf_version_image[:7] }}"
+  #     version: "{{ tnf_version_image }}"
+  #     team_id: "{{ job_info['job']['team_id'] }}"
+  #     topic_id: "{{ job_info['job']['topic_id'] }}"
+  #     type: "{{ test_network_function_project_name }}"
+  #     url: "https://github.com/test-network-function/cnf-certification-test/commit/{{ tnf_version_image }}"  # noqa 204
+  #     state: present
+  #   register: tnf_git_component
+  #   tags: [dci]
 
-  - name: Attach tnf component to the job
-    dci_job_component:
-      component_id: "{{ tnf_git_component.component.id }}"
-      job_id: "{{ job_id }}"
-    register: job_component_result
-    until: job_component_result is not failed
-    retries: 5
-    delay: 20
-    tags: [dci]
+  # - name: Attach tnf component to the job
+  #   dci_job_component:
+  #     component_id: "{{ tnf_git_component.component.id }}"
+  #     job_id: "{{ job_id }}"
+  #   register: job_component_result
+  #   until: job_component_result is not failed
+  #   retries: 5
+  #   delay: 20
+  #   tags: [dci]
 
   when:
     - tnf_is_file_path.stat.exists|bool
