@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "c1e39cf2b2182cf75a6142fad487dd47d860ca44",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3af1e910_da0983da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-05-24T14:56:29Z",
+      "side": 1,
+      "message": "Beto, the new task \"Append to image name the job id\" is suppose to be executed only when we build the prflight image right? I was checking in the logs of the last two jobs, and I didn\u0027t find it, unless I\u0027m missing anything :/",
+      "revId": "c1e39cf2b2182cf75a6142fad487dd47d860ca44",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
