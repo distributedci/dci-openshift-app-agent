@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91de2ff6_2677f971",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-05-24T20:46:01Z",
+      "side": 1,
+      "message": "I simulated the use-case from Nokia CMM where we faced some conditions checking issues, then tested locally in our lab. here is the job-id\nhttps://www.distributed-ci.io/jobs/11da8af9-a60f-4be8-874e-f11a9361159b",
+      "revId": "e715f610ff424b31662a9bc545fd5c72cc113ef1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
