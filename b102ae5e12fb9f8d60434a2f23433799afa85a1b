@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae70b123_3129ec70",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-24T14:16:53Z",
+      "side": 1,
+      "message": "The change looks fine but I would like to hear some more opinions on this, because then, it does not make really sense to have stages defined as \"pre-run\", \"teardown\", etc. if we are not going to launch them in the corresponding d-o-a-a stage",
+      "revId": "b102ae5e12fb9f8d60434a2f23433799afa85a1b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
