@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd92573f_4427eb36",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-05-25T19:48:36Z",
+      "side": 1,
+      "message": "New use-case when we faced an issue from Nokia CMM Partner where project-name from portal is not same as container project-name. Normally DCI or RH advises partners to create container project(BE) using image-name\nTesting scenario as following:\n1. project-name from portal is different from real image-name e.g. cmm-ctcs vs. cmm-aimctcs\n2. both project-name(portal) and image-name are identical\n3. create a new container project with new-image but with update mandatory parameters and attach product-list\n\nhttps://www.distributed-ci.io/jobs/a1165ae2-e591-4716-9bf7-7978e9117858",
+      "revId": "be1d41cf8e9b686e2649abaf26d172eb5151753a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
