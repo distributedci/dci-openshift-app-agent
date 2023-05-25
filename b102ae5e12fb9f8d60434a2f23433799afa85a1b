@@ -33,6 +33,40 @@
       "message": "check dallas ocp-4.12-vanilla example-cnf",
       "revId": "b102ae5e12fb9f8d60434a2f23433799afa85a1b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef1e9e06_2080e965",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-05-25T19:06:59Z",
+      "side": 1,
+      "message": "I think is a good idea to make more independent the role, I know we have been going back and forth with the hooks and what not. But I see this as a way to keep the role independent of the hook and I\u0027m OK with it. The end result is expected to be the same and the advantage I see is that all the resources are created/deleted right at the same time.",
+      "revId": "b102ae5e12fb9f8d60434a2f23433799afa85a1b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e92e3571_ef6778cd",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 155,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-05-25T19:06:59Z",
+      "side": 1,
+      "message": "This is commented out for testing or not needed at all?",
+      "revId": "b102ae5e12fb9f8d60434a2f23433799afa85a1b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
