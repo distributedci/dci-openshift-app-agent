@@ -16,6 +16,23 @@
       "message": "I simulated the use-case from Nokia CMM where we faced some conditions checking issues, then tested locally in our lab. here is the job-id\nhttps://www.distributed-ci.io/jobs/11da8af9-a60f-4be8-874e-f11a9361159b",
       "revId": "e715f610ff424b31662a9bc545fd5c72cc113ef1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e11baca9_659a8403",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-05-25T07:19:36Z",
+      "side": 1,
+      "message": "Hi Andrew, thank you for the CR and for all the testing, LGTM.",
+      "revId": "e715f610ff424b31662a9bc545fd5c72cc113ef1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
