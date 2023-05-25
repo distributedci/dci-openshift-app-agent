@@ -16,6 +16,23 @@
       "message": "LGTM, thanks Beto!",
       "revId": "054d3513ef9b6935f7ccc9e8e8ed4093aaea92e8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3b638cd_4311f27e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-05-25T21:01:27Z",
+      "side": 1,
+      "message": "https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/28442",
+      "revId": "054d3513ef9b6935f7ccc9e8e8ed4093aaea92e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
