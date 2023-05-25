@@ -68,6 +68,24 @@
       "message": "check dallas ocp-4.12-vanilla preflight-green",
       "revId": "c1e39cf2b2182cf75a6142fad487dd47d860ca44",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "28baba9b_9f29fe4d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-05-25T19:38:24Z",
+      "side": 1,
+      "message": "Hi Beto, to test the build, you have to define the variable preflight_source_dir that should point to a location containing preflight code. \n\nThere are two ways to do it:\n- Open DNM PR in the preflight repo and set depend-zone. That will automatically create the required directory. But the preflight team will see a garbage PR, and maybe that\u0027s not nice. \n- [Preferred way] Create a folder in Dallas, clone preflight main branch inside and run the job like this: \n\"check dallas ocp-4.12-vanilla preflight-green preflight-green:ansible_extravars\u003dpreflight_source_dir:/preflight/source/dir/in/dallas\"",
+      "parentUuid": "8391a6b2_2490e077",
+      "revId": "c1e39cf2b2182cf75a6142fad487dd47d860ca44",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
