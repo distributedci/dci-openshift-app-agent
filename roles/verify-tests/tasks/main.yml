@@ -3,6 +3,7 @@
   pip:
     name:
       - junitparser
+      - semver
   become: true
 
 - name: Loop over mandatory test results
