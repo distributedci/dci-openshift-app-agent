@@ -16,6 +16,24 @@
       "message": "Hello Tatiana\n\nJust heads ups, you will need to add xml to https://github.com/redhat-cip/dci-openshift-app-agent/blob/60d793be7ddebeb683e8247805b272a07d490e30/plays/common_logging.yml#L14",
       "revId": "fdbaf81da831b196bd011083a7831172ea4c18e4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff9713f6_5c6e2821",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-05-26T21:29:33Z",
+      "side": 1,
+      "message": "Sorry... I see that is uploaded by the junit upload task.\n\nJust this need to add the file to: https://github.com/redhat-cip/dci-openshift-agent/blob/master/README.md#job-outputs",
+      "parentUuid": "896d248d_3d06c78c",
+      "revId": "fdbaf81da831b196bd011083a7831172ea4c18e4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
