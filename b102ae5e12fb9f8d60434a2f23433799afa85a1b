@@ -88,6 +88,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa3d284d_91980181",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-26T20:52:30Z",
+      "side": 1,
+      "message": "Yes, I agree, and yeah, when I was referring to stages, I meant \"hooks\", but I got what you were saying and probably we can go ahead with that.",
+      "parentUuid": "5e7f72f2_e0d2f6e9",
+      "revId": "b102ae5e12fb9f8d60434a2f23433799afa85a1b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e92e3571_ef6778cd",
