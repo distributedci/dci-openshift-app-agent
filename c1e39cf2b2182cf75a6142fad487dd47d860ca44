@@ -138,6 +138,24 @@
       "message": "Hi Beto, your task passed fine, and preflight was run as it should: https://www.distributed-ci.io/jobs/e0e35fa1-5f79-4821-9b8e-95ada6d89511/jobStates?sort\u003ddate\u0026task\u003d54b0f494-547f-459e-b9c4-01b3885e259f\n\nThe fact that the preflight main branch fails requires an additional investigation, I thought to fix it with https://github.com/redhat-openshift-ecosystem/openshift-preflight/pull/976 but somehow we have a new issue. \n\nAnyway, that\u0027s nothing to do with your change, which is safe to merge. Thanks.",
       "revId": "c1e39cf2b2182cf75a6142fad487dd47d860ca44",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "944e3a6d_a1c19fd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-05-26T14:55:34Z",
+      "side": 1,
+      "message": "Thanks, Tatiana \nI will see if that helps to identify some lingering images been left in the jump host and if it is needed to tag others. \nRegards",
+      "parentUuid": "9e80d7bd_30d5794c",
+      "revId": "c1e39cf2b2182cf75a6142fad487dd47d860ca44",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
