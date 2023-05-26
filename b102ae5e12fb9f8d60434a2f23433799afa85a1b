@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6de813c_8a257f76",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-05-26T02:28:52Z",
+      "side": 1,
+      "message": "It is likely that \"stages\" are not needed after all. If the role does not have a need to run a particular \"stage\" independently then probably there\u0027s no need to have them.\n\nA clarification point here, I think what you refer to doaa \"stages\" are \"hooks\". Correct me if I\u0027m getting it wrong.\n\nI think we got here through the use of hooks and forcing those hooks into the role, but roles must be independent and the way it is at the moment is tightly coupled to the agent hooks. Through this change I see the role more independent and that\u0027s a good thing IMO.\n\nhth.",
+      "parentUuid": "ae70b123_3129ec70",
+      "revId": "b102ae5e12fb9f8d60434a2f23433799afa85a1b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e92e3571_ef6778cd",
