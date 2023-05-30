@@ -16,6 +16,23 @@
       "message": "Change is ready for merging.",
       "revId": "d4be97fc4257f0060fdae6d749da1bd22240cdc7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b69fc9b_20488097",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-05-30T11:09:21Z",
+      "side": 1,
+      "message": "Thanks for the fix.",
+      "revId": "d4be97fc4257f0060fdae6d749da1bd22240cdc7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
