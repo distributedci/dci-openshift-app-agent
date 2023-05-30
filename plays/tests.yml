@@ -1,6 +1,6 @@
 ---
 
-- name: "Chart verifier tests"
+- name: "Chart verifier test"
   include_role:
     name: chart-verifier
   when:
