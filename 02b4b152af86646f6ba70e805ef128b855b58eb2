@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb34b1ae_5e5f882c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-05-31T09:54:27Z",
+      "side": 1,
+      "message": "The change is ready for review. The change for the support image was needed for this version. Everything tested and working fine.",
+      "revId": "02b4b152af86646f6ba70e805ef128b855b58eb2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
