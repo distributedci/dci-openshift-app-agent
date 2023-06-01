@@ -86,6 +86,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "16c6130d_198bc30c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-01T15:15:37Z",
+      "side": 1,
+      "message": "Thank you Manny and Ramon!",
+      "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3263cdcb_cf7a607e",
@@ -153,6 +170,24 @@
       "side": 1,
       "message": "If the info comes from the apirequestcounts output, then I can see it shows what would be removed in the next three releases, this output was from a 4.14\n\u003e $ oc version\n\u003e Client Version: 4.14.0-ec.0\n\u003e Kustomize Version: v4.5.7\n\u003e Server Version: 4.14.0-ec.0\n\u003e Kubernetes Version: v1.26.2+d2e245f\n\u003e $ oc get apirequestcounts | egrep \"1\\.2\" | column -t\n\u003e flowschemas.v1beta1.flowcontrol.apiserver.k8s.io                  1.26  0   1\n\u003e flowschemas.v1beta2.flowcontrol.apiserver.k8s.io                  1.29  20  133\n\u003e prioritylevelconfigurations.v1beta1.flowcontrol.apiserver.k8s.io  1.26  0   1\n\u003e prioritylevelconfigurations.v1beta2.flowcontrol.apiserver.k8s.io  1.29  20  125",
       "parentUuid": "ad9d5577_573513a9",
+      "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4162161_c67bbda5",
+        "filename": "roles/deprecated-api/filter_plugins/ocp_compatibility.py",
+        "patchSetId": 10
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-01T15:15:37Z",
+      "side": 1,
+      "message": "Thank you Manny, yes, OCP-4.13 and OCP-4.16 are k8s-1.26 and k8s-1.29 coming from apirequestcounts / removedInRelease",
+      "parentUuid": "964489b2_35fcb895",
       "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
