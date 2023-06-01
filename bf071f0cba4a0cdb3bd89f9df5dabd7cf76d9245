@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d59a4f1f_8ed1e969",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-01T09:53:08Z",
+      "side": 1,
+      "message": "I think the feature is fine from my side, just one minor question to clarify, and also, I\u0027d like to leave space for other reviewers to check it",
+      "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3263cdcb_cf7a607e",
@@ -83,6 +100,24 @@
       "side": 1,
       "message": "Hi Ramon, the function k8s2ocp converts the k8s version to the OCP version: 1.26 -\u003e split by dot, add 3 to the first part, and subtract 13 from the second -\u003e 4.13. \nDocs on how to declare anonymous lambda-function: https://www.w3schools.com/python/python_lambda.asp\n\n\n\u003e This is showing OCP versions from OCP 4.13 to OCP 4.16, and 4.15-4.16 don\u0027t exist yet.\n\nThis is by design, we try to predict until which version the workload will work. We do that by checking in which OCP versions the APIs used by the workload will be deprecated:\n\n1/ (line 17) We first parse apirequestscount.after.json and build a list of versions found in the removedInRelease field: failed_versions \u003d [4.13, 4.16]\n\n2/ (lines 26-29) Then we add into consideration the current version: 4.13 and the next version 4.14 and compute min_version \u003d 4.13 and max_version \u003d 4.16\n\n3/ (lines 31-42) We build a continuous list from min_version to max_version: [4.13, 4.14, 4.15, 4.16] and mark the versions as not_compatible if the previous version was not compatible or if the version itself is not compatible.",
       "parentUuid": "3263cdcb_cf7a607e",
+      "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad9d5577_573513a9",
+        "filename": "roles/deprecated-api/filter_plugins/ocp_compatibility.py",
+        "patchSetId": 10
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-01T09:53:08Z",
+      "side": 1,
+      "message": "Yes, with what regards to the functionality of the Python script, it\u0027s mostly fine for me. My fear is that we are including information here about OCP releases that don\u0027t exist yet.\nHowever, from what I can see, this OCP 4.16 comes, in fact, from the API deprecation calculation, doesn\u0027t it? So, in the end, this information is not coming from our side, but from the info we are retrieving from there, is that correct?\nIf that\u0027s true, then I think it\u0027s fine to go ahead with it. You can resolve this comment in that case.",
+      "parentUuid": "4d8427be_0c950e2a",
       "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
