@@ -16,6 +16,40 @@
       "message": "ready for review",
       "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b606999a_1d537732",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-01T07:21:47Z",
+      "side": 1,
+      "message": "Just one question after checking the results, rest looks fine",
+      "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3263cdcb_cf7a607e",
+        "filename": "roles/deprecated-api/filter_plugins/ocp_compatibility.py",
+        "patchSetId": 10
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-01T07:21:47Z",
+      "side": 1,
+      "message": "Right now, if you check e.g. https://www.distributed-ci.io/jobs/ac4b27f8-a4ad-41f0-8359-b286ec999ac0/tests/ba0e8101-99de-45eb-8698-0fc6afe1c032, this is showing OCP versions from OCP 4.13 to OCP 4.16, and 4.15-4.16 don\u0027t exist yet. Is that because of this calculation?",
+      "revId": "bf071f0cba4a0cdb3bd89f9df5dabd7cf76d9245",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
