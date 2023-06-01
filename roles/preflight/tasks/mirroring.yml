@@ -7,11 +7,6 @@
     preflight_images: "{{ (preflight_assets_images + busybox_images + preflight_bundle_images) | unique }}"
 
 - name: Mirror preflight images
-  # Deactivate mirroring of busybox images to workaround docker pull limits.
-  # TODO: to delete vars section here and mirror preflight_images.
-  vars:
-    preflight_bundle_images: "{{ preflight_operators_to_check | map(attribute='bundle_image') | list }}"
-    preflight_images_to_mirror: "{{ (preflight_assets_images + preflight_bundle_images) | unique }}"
   shell: >
     skopeo copy
     --all
@@ -20,7 +15,7 @@
     --dest-tls-verify=false
     docker://{{ item }}
     docker://{{ dci_local_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
-  loop: "{{ preflight_images_to_mirror }}"
+  loop: "{{ preflight_images }}"
   register: result
   retries: 3
   delay: 10
