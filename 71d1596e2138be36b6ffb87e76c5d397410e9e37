@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b0ade43_50ad11ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-02T10:05:47Z",
+      "side": 1,
+      "message": "As a hotfix, you can do that with semver, that should fix the partner\u0027s jobs. \n\nConcerning junitparser, there is no rpm package for it, but it was already installed everywhere some months ago. So let\u0027s keep junitparser as it is for the moment, and then I\u0027ll have to build this package for dci.",
+      "revId": "71d1596e2138be36b6ffb87e76c5d397410e9e37",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
