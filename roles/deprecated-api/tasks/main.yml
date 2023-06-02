@@ -4,6 +4,7 @@
     name:
       - junitparser
       - semver
+  become: true
 
 - name: Compute removed API
   vars:
