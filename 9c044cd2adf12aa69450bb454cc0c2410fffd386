@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f030cb9_262f4f2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-02T07:55:51Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for the fix! It will fail with sudo in bos2. Let\u0027s add umask and I\u0027ll give you +2.",
+      "revId": "9c044cd2adf12aa69450bb454cc0c2410fffd386",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "311e64fd_0d8ffb46",
+        "filename": "roles/deprecated-api/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-02T07:55:51Z",
+      "side": 1,
+      "message": "Hey Ramon, I think we need a more elaborated fix for the long-term because here is how it failed when I was initially installing it with sudo: https://www.distributed-ci.io/jobs/ed453238-9675-43fd-9b81-66cb170ca290/jobStates?sort\u003ddate\u0026task\u003d64194b02-b425-40ab-99c1-6a2b1cd7c949 \n\nIt seems like sudo pip in bos2 does not use the global path and hence the installed package is not available for all the users.\n\nLet\u0027s use sudo and add umask setup: https://docs.ansible.com/ansible/latest/collections/ansible/builtin/pip_module.html#parameter-umask\n\n# Install semver while ensuring the umask is 0022 \n# (to ensure other users can use it)\n- pip:\n    name:\n      - junitparser\n      - semver\n    umask: \"0022\"\n  become: true",
+      "revId": "9c044cd2adf12aa69450bb454cc0c2410fffd386",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
