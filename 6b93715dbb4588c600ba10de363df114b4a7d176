@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b67eed5e_9797472e",
+        "filename": "roles/preflight/files/scorecard-busybox-ubi.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-02T07:06:25Z",
+      "side": 1,
+      "message": "to follow the same naming convention, do you want to add a comment below this to explain the new images you\u0027re adding?",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 1
+      },
+      "revId": "6b93715dbb4588c600ba10de363df114b4a7d176",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
