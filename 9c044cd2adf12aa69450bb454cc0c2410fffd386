@@ -51,6 +51,24 @@
       "parentUuid": "311e64fd_0d8ffb46",
       "revId": "9c044cd2adf12aa69450bb454cc0c2410fffd386",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a819fcb4_6a5bfa87",
+        "filename": "roles/deprecated-api/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-02T10:02:23Z",
+      "side": 1,
+      "message": "Hi Ramon, sorry for the second contradictory review, but we just discussed the CR with Fred and he told me that I\u0027m doing whatever here using pip installation during the post-run. Pip should be avoided, and we should prefer using rpms.\n\nSo instead of using umask, we could delete these pip installations and add rpm installation of required packages:\n\n  name: Install Semver\n  dnf:\n    name: python3-semver\n    state: present",
+      "parentUuid": "2304cbdf_f0ac490d",
+      "revId": "9c044cd2adf12aa69450bb454cc0c2410fffd386",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
