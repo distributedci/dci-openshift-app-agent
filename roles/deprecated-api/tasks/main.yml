@@ -4,6 +4,8 @@
     name:
       - junitparser
       - semver
+    umask: "0022"
+  become: true
 
 - name: Compute removed API
   vars:
