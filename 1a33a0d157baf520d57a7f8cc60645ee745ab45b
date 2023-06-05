@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2110f1c6_e020a2c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-05T12:24:54Z",
+      "side": 1,
+      "message": "Hi Ramon, thank you for checking, fixed the comments.\nPlease do not bother with the review for the moment, I\u0027m still trying to fix the mirroring.",
+      "revId": "1a33a0d157baf520d57a7f8cc60645ee745ab45b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
