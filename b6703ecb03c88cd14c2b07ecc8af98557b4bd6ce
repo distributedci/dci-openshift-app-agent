@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9973275c_28473bd2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-05T20:21:05Z",
+      "side": 1,
+      "message": "Ready for review. The issue with mirroring was skopeo changing the digests during the copy, and it was fixed by using the option --preserve-digests",
+      "revId": "b6703ecb03c88cd14c2b07ecc8af98557b4bd6ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
