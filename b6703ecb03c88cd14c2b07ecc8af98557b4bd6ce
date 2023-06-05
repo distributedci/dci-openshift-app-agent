@@ -51,6 +51,23 @@
       "message": "LGTM",
       "revId": "b6703ecb03c88cd14c2b07ecc8af98557b4bd6ce",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51aa077a_c48c5556",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-05T21:22:33Z",
+      "side": 1,
+      "message": "The change works fine with operator-sdk 1.29.0 but it\u0027s not backward compatible with preflight 1.5.4. Please do not merge, I\u0027ll fix the backward compatibility tomorrow.",
+      "revId": "b6703ecb03c88cd14c2b07ecc8af98557b4bd6ce",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
