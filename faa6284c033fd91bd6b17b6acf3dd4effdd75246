@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a94fa97_084297e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-06T11:37:35Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "36eef872_e3c4585f",
@@ -83,6 +100,24 @@
       "side": 1,
       "message": "Yep, we did not mirror them with skopeo even before, to avoid docker throttling. They\u0027re only here to be included in ICSP and allow to start the scorecard pod from the old release 1.27.  \nHopefully, in a week or so we could get rid of them forever :)",
       "parentUuid": "36eef872_e3c4585f",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbb0df0e_98ea86da",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-06T11:37:35Z",
+      "side": 1,
+      "message": "Thanks for the clarification",
+      "parentUuid": "94e3e59e_05358414",
       "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
