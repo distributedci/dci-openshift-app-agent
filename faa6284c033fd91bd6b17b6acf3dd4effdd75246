@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "39ec277e_2094a45c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-06T10:20:01Z",
+      "side": 1,
+      "message": "Ready for review, the change was reworked to keep the backward compatibility and could be merged without any preflight dependencies.",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
