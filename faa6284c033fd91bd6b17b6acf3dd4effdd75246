@@ -16,6 +16,40 @@
       "message": "Ready for review, the change was reworked to keep the backward compatibility and could be merged without any preflight dependencies.",
       "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "991ab589_0b9999f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-06T11:23:43Z",
+      "side": 1,
+      "message": "LGTM, just one question below.",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "36eef872_e3c4585f",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-06T11:23:43Z",
+      "side": 1,
+      "message": "I assume there is no need to copy the old images with skopeo as you did for preflight_images?",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
