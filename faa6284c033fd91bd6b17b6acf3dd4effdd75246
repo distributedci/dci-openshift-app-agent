@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "256d5155_cc255df1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-06T11:32:54Z",
+      "side": 1,
+      "message": "Hi Manuel, thanks for checking, the old images are here for the backward compatibility, and I hope to delete them in a week or so.",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "36eef872_e3c4585f",
@@ -48,6 +65,24 @@
       "writtenOn": "2023-06-06T11:23:43Z",
       "side": 1,
       "message": "I assume there is no need to copy the old images with skopeo as you did for preflight_images?",
+      "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94e3e59e_05358414",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 13
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-06T11:32:54Z",
+      "side": 1,
+      "message": "Yep, we did not mirror them with skopeo even before, to avoid docker throttling. They\u0027re only here to be included in ICSP and allow to start the scorecard pod from the old release 1.27.  \nHopefully, in a week or so we could get rid of them forever :)",
+      "parentUuid": "36eef872_e3c4585f",
       "revId": "faa6284c033fd91bd6b17b6acf3dd4effdd75246",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
