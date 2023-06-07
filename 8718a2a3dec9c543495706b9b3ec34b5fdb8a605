@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f4a6aa3_3647a00d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-07T10:40:47Z",
+      "side": 1,
+      "message": "@Tatiana, @Beto, adding you as reviewers as you\u0027re on CI Duty, this is an old issue that has been happening several times in BOS2 daily jobs and this wait looks like helping a little bit. Can you take a look to the change to see if you\u0027re fine with this to merge?\nIt has been validated in connected (in both IPI and SNO, where we have the conflict) and in disconnected, so no issues in any deployment up to now. I\u0027ve even tested in the very same SNO connected cluster in BOS2 where the job failed today and it\u0027s passing.",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
