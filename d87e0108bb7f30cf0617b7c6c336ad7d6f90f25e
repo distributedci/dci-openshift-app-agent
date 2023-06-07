@@ -84,6 +84,23 @@
       "message": "I fixed the issue, turns out dci agent was not updated since more than a week https://github.com/dci-labs/bos2-ci-config/pull/69 I had to cancel the current job, so launching again.\n\nrecheck",
       "revId": "d87e0108bb7f30cf0617b7c6c336ad7d6f90f25e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b1d1315_22cdc894",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-07T19:45:17Z",
+      "side": 1,
+      "message": "thank you Manuel!",
+      "revId": "d87e0108bb7f30cf0617b7c6c336ad7d6f90f25e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
