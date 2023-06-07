@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "d87e0108bb7f30cf0617b7c6c336ad7d6f90f25e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab4ea278_7af6fd43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-07T15:46:41Z",
+      "side": 1,
+      "message": "the job failed because worker0/2 didn\u0027t join the cluster, I see in the logs is the same issue as last week with 4.13 that is not taking the correct disk to boot, oddly this job despite the root_device_hint vars are declared is not passing the serial tag to the VM creation, hence IPI install-config.yml didn\u0027t include any device hints to select a primary disk, I\u0027m taking a look.",
+      "revId": "d87e0108bb7f30cf0617b7c6c336ad7d6f90f25e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
