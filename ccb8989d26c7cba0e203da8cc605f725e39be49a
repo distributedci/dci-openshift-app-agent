@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.11-vanilla example-cnf",
       "revId": "ccb8989d26c7cba0e203da8cc605f725e39be49a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef797c59_f07066ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-07T19:51:31Z",
+      "side": 1,
+      "message": "thank you for fixing that, Charles!",
+      "revId": "ccb8989d26c7cba0e203da8cc605f725e39be49a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
