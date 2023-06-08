@@ -1,5 +1,5 @@
 ---
-preflight_image: "quay.io/opdev/preflight:1.5.4"
+preflight_image: "quay.io/opdev/preflight:a66cf9b"
 preflight_namespace: preflight-testing
 preflight_sa: default
 preflight_custom_ca: ""
