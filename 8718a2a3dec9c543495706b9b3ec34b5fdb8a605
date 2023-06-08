@@ -138,6 +138,24 @@
       "message": "Hi Ramon, added links to the related BZs. It seems like they already tried to wait and that did not help.",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a588b4db_deec67a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-08T12:48:37Z",
+      "side": 1,
+      "message": "The thing is, under normal circumstances (excepting the 2-3 cases where this has failed and was reported on CILAB-788), we should not need to wait for the presence of this annotation, so I believe it\u0027s fine that the namespace is retrieved immediately in the success case.\n\nThe problem is when this annotation takes some time to appear, which is what happened in CILAB-788, where the pod creation complained about the absence of this annotation; however, I reserved the cluster in the last failure we had (it passed some time after the job), and the annotation was there. I tried to create the pod with the very same playbook and it worked. So, for me, it\u0027s like a timing issue, which is commented in the last BZ. So my solution was, then, to wait until confirming that the annotation is there.\n\nAs I said, 99% of the cases, the namespace will be retrieved automatically. But I would like to see what happens now with this 1% where there\u0027s some latency in the provision of this annotation. So, do you think it\u0027s fine to do this? Or do you think there\u0027s a better way of doing this?",
+      "parentUuid": "f02dc2b0_a5af070e",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
