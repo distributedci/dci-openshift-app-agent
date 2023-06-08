@@ -33,6 +33,23 @@
       "message": "Hi Ramon, could you please give a link to the failure you\u0027re trying to fix? \n\nI do not see any retries in your wait task in the success jobs, but it does no harm either. ",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2c2b04b_9a3bb12a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-06-08T02:58:39Z",
+      "side": 1,
+      "message": "I am fine with the patch, but I think that part of the issue is that we are not setting the pod to use a specific runAsUser ID. Something like:\n\nspec:\n  securityContext:\n    runAsUser: 10000\n    \nOCP is been slow generating anottating the namespace, but if the pod explicitly defines its security context that won\u0027t be needed.\n\nhttps://docs.openshift.com/dedicated/authentication/managing-security-context-constraints.html#security-context-constraints-example_configuring-internal-oauth\n",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
