@@ -156,6 +156,23 @@
       "parentUuid": "f02dc2b0_a5af070e",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e425dfbd_d226b5cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-06-08T15:37:39Z",
+      "side": 1,
+      "message": "Thanks Ramon, I think this is good start. Let see if it works in our case.",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
