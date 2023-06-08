@@ -16,6 +16,23 @@
       "message": "CC Andrew in this change\nIf you check the debug job launched, as I\u0027ve put in the hints that do_must_gather is false, it\u0027s not created: https://www.distributed-ci.io/jobs/7742391a-a2c6-4d2d-9608-02e30a16b1c0/files",
       "revId": "4262fb1bed3ab8f2f40dd22ea2228817cd0e25fb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5369cbe5_dab71591",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-06-08T16:39:00Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "4262fb1bed3ab8f2f40dd22ea2228817cd0e25fb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
