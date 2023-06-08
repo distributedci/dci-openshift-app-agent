@@ -16,6 +16,23 @@
       "message": "I initially started this PR to debug the red dailies with quay.io/opdev/preflight:a66cf9b - they were supposed to be green because operator-sdk 1.29.0 integration is merged both to DCI and Preflight:a66cf9b.\n\nUnfortunately, both preflight-green and preflight jobs are green, I see nothing. So I simply added more logs and going to check on tomorrow\u0027s dailies.",
       "revId": "3ead5e821a8542a9502de5a728ea07e82477d5ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c8d0693_7e408c88",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-08T13:42:00Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "3ead5e821a8542a9502de5a728ea07e82477d5ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
