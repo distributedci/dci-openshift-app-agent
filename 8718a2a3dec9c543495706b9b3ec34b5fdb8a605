@@ -173,6 +173,23 @@
       "message": "Thanks Ramon, I think this is good start. Let see if it works in our case.",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6965de6a_8c0967d7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-08T16:30:05Z",
+      "side": 1,
+      "message": "Thanks Beto! I\u0027ll wait for Tatiana\u0027s response before merging. If you finally agree on merging it, please do it tomorrow because I will be off. Thanks!",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
