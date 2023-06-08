@@ -103,6 +103,41 @@
       "parentUuid": "f2c2b04b_9a3bb12a",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f02dc2b0_a5af070e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-08T12:33:12Z",
+      "side": 1,
+      "message": "\u003e The retries are done here:https://www.distributed-ci.io/jobs/9c833269-f71c-4017-b4ad-3331cf878750/jobStates?sort\u003ddate\u0026task\u003d9fb7fea1-ddbd-494e-b57b-31caf33a3fde\n\nWhat I mean is that there is no retries, the namespace is retrieved immediately, there is no need to wait.\n\nHere is BZ on exactly that bug: https://bugzilla.redhat.com/show_bug.cgi?id\u003d2046094\n\nThey were already trying to wait as you do here and that did not help: https://bugzilla.redhat.com/show_bug.cgi?id\u003d1961204",
+      "parentUuid": "715adc76_66ee8129",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d816c44_7077c2fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-08T12:33:12Z",
+      "side": 1,
+      "message": "Hi Ramon, added links to the related BZs. It seems like they already tried to wait and that did not help.",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
