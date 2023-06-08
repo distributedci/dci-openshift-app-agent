@@ -50,6 +50,59 @@
       "message": "I am fine with the patch, but I think that part of the issue is that we are not setting the pod to use a specific runAsUser ID. Something like:\n\nspec:\n  securityContext:\n    runAsUser: 10000\n    \nOCP is been slow generating anottating the namespace, but if the pod explicitly defines its security context that won\u0027t be needed.\n\nhttps://docs.openshift.com/dedicated/authentication/managing-security-context-constraints.html#security-context-constraints-example_configuring-internal-oauth\n",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b452956_4ea7a811",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-08T10:26:48Z",
+      "side": 1,
+      "message": "Thanks for your feedback, replying to your comments",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "715adc76_66ee8129",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-08T10:26:48Z",
+      "side": 1,
+      "message": "The failure is in the description of the change: https://www.distributed-ci.io/jobs/17e47d2d-5508-49ea-a7b2-4be0ac44cd10/jobStates?sort\u003ddate\u0026task\u003d979a494c-e632-4c5e-850a-9d632ebb3fca , this pod was not installed because this annotation was missed in the namespace.\n\nThe retries are done here: https://www.distributed-ci.io/jobs/9c833269-f71c-4017-b4ad-3331cf878750/jobStates?sort\u003ddate\u0026task\u003d9fb7fea1-ddbd-494e-b57b-31caf33a3fde. Should be working because, in this other debug job that failed because of wrong selection of the namespace: https://www.distributed-ci.io/jobs/29b0b141-c926-44dd-8dc2-d95cf700685e/jobStates?sort\u003ddate\u0026task\u003d977bb3eb-44ef-4521-bcbb-43db0e4efcab , the task was retried.",
+      "parentUuid": "1317a085_b4fa523a",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef94e39b_4549ee5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-08T10:26:48Z",
+      "side": 1,
+      "message": "Oh, I can see your point Beto. But, do you think we should impose a user ID for this case, that will run in different clusters (Dallas, BOS2)? Or is it better to leave the patch in the way it is right now?",
+      "parentUuid": "f2c2b04b_9a3bb12a",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
