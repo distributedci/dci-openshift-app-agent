@@ -207,6 +207,23 @@
       "message": "Hi Ramon, I\u0027ll merge, since your change is of no harm and safe to merge, but I do believe it will not fix the problem.\n\nLeaving here the links to related BZs and another approaches:\n\nHere is BZ on exactly that bug: https://bugzilla.redhat.com/show_bug.cgi?id\u003d2046094\n\nThey were already trying to wait as you do here and that did not help: https://bugzilla.redhat.com/show_bug.cgi?id\u003d1961204",
       "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b86c7c6d_bb327faf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-09T07:54:18Z",
+      "side": 1,
+      "message": "regate",
+      "revId": "8718a2a3dec9c543495706b9b3ec34b5fdb8a605",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
