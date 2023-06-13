@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7d5fd06_2b4dca9a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-13T10:39:33Z",
+      "side": 1,
+      "message": "\u003e Patch Set 1:\n\u003e \n\u003e - FAILURE https://www.distributed-ci.io/jobs/26e0e211-8cbb-468f-a0e6-4f31d8fc3c22/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/28609/\n\nAre we expecting preflight-green to be working fine with preflight 1.6.6? or is this failure expected?\nGiving a +1 for the moment until confirming this",
+      "revId": "ba1b87bb56085242c502e0208ef3dc4814dec15a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
