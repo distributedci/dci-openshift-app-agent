@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7236360f_22eb7cba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-14T18:52:06Z",
+      "side": 1,
+      "message": "LGTM, how did you come to the conclusion that we needed these two parameters?",
+      "revId": "c1ae41c2624610670a3e7f19166caffc938e97d6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
