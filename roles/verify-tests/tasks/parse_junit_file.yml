@@ -1,23 +1,23 @@
 ---
 - name: "Verify the presence of {{ t.filename }} in the log folder"
-  vars:
-    junit_filename: "{{ job_logs.path }}/{{ t.filename }}"
-  stat:
-    path: "{{ junit_filename }}"
+  find:
+    paths: "{{ job_logs.path }}"
+    patterns: '{{ t.filename }}'
   register: junit_file
 
 - name: "Fail if {{ t.filename }} is not present in the log folder"
   fail:
     msg: "Could not verify test results: {{ t.filename }} is not present"
   failed_when:
-    - not junit_file.stat.exists
+    # there is no junit associated with the test or several ones
+    - junit_file.matched == 0 or junit_file.matched > 1
     # Do not fail when the option to skip missing files is on
     - not skip_absent_testfiles | bool
 
 - block:
     - name: "Retrieve the actual test results from {{ t.filename }}"
       vars:
-        junit_filename: "{{ job_logs.path }}/{{ t.filename }}"
+        junit_filename: "{{ job_logs.path }}/{{ junit_file.files[0].path }}"
       set_fact:
         actual_results: "{{ junit_filename | junit2dict }}"
 
