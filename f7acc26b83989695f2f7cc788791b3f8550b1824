@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b263101_161df67b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-15T22:11:28Z",
+      "side": 1,
+      "message": "Hi Charles, thank you for starting this! \n\nI think the idea is not simple to implement, so let\u0027s enable it as a feature protected by the flag at the beginning. It\u0027s like we do with the feature to skip the absent JUnit files requested by SLCM team: skip_absent_testfiles: https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/roles/verify-tests\n\nLet\u0027s create a flag discover_junit_by_regex and implement all the dev first under this flag, without breaking the default behavior currently used by Andrew for his partners, Preflight, SLCM, and TNF. Breaking the default behavior could have a large impact and I would prefer to avoid it here. Thanks.",
+      "revId": "f7acc26b83989695f2f7cc788791b3f8550b1824",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
