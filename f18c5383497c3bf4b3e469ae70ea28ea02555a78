@@ -33,6 +33,23 @@
       "message": "\u003e Patch Set 1:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/4528059d-c645-4cde-ab95-d92ec32803eb/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/28646/\n\nThis one does have the must-gather",
       "revId": "f18c5383497c3bf4b3e469ae70ea28ea02555a78",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "583fb529_58a8ed56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-06-16T17:06:54Z",
+      "side": 1,
+      "message": "LGTM, Thanks",
+      "revId": "f18c5383497c3bf4b3e469ae70ea28ea02555a78",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
