@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d9a09e4_f9a74b0c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-16T11:43:17Z",
+      "side": 1,
+      "message": "At least now it\u0027s able to trigger the creation of the must-gather report: https://www.distributed-ci.io/jobs/78b088f9-b554-4bfa-a780-163caecdab05/jobStates?sort\u003ddate\u0026task\u003dd2f7a0b1-c20c-49b2-9107-14e0828342c5\nHowever, it was not submitted in this case because the file was too large: https://www.distributed-ci.io/jobs/78b088f9-b554-4bfa-a780-163caecdab05/jobStates?sort\u003ddate\u0026task\u003d8ea73b02-6011-4eae-98c2-accc0432cfcc\nI\u0027ll recheck in cluster10 just in case",
+      "revId": "f18c5383497c3bf4b3e469ae70ea28ea02555a78",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
