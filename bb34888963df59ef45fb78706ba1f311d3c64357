@@ -33,6 +33,24 @@
       "message": "We probably switch to use \"stable\" tag instead",
       "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "18cabfbd_ca689a3e",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-21T15:11:21Z",
+      "side": 1,
+      "message": "I\u0027d prefer to wait for Tatiana\u0027s opinion on this, because for example, in CNF Cert, we always update the tag when there\u0027s a new release, instead of using \"latest\", just to have the control in case we need to add some changes on DCI for newer releases. I think we would need the same for Preflight and that\u0027s why we should keep doing this.",
+      "parentUuid": "0ec089c4_ea192d57",
+      "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
