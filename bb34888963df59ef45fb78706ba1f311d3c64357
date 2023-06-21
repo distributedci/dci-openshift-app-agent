@@ -16,6 +16,23 @@
       "message": "Hey guys, adding you here while Tatiana is off.\nThe jobs in dallas are complaining about a failure that happened some time ago, and it\u0027s because we\u0027re reaching the limit of requests done for registry.docker.io: https://www.distributed-ci.io/jobs/8c0e5c8c-19c8-4543-8453-b6ccfcc6bacd/jobStates?sort\u003ddate\u0026task\u003dbaf7ad25-ae68-40ba-ab01-236d92135cb3 . Do we need to update the credentials we\u0027re using for fixing that?",
       "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ec089c4_ea192d57",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-06-21T14:28:50Z",
+      "side": 1,
+      "message": "We probably switch to use \"stable\" tag instead",
+      "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
