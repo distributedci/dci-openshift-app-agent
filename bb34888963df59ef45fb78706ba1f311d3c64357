@@ -51,6 +51,24 @@
       "parentUuid": "0ec089c4_ea192d57",
       "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08b7a46b_b41a0187",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-06-21T18:10:56Z",
+      "side": 1,
+      "message": "That\u0027s fair, the version really has more meaning that stable, but I think we find a way to validate that and automate that change instead of doing this manually.\n\nMy thoughts on this compared to CNF is that preflight does not use latest but stable, stable is a tag added manually after some time to their releases, so it\u0027s not immediately latest.\n\nAlso, we are testing \"stable\" in the daily jobs, e.g.\n\nhttps://www.distributed-ci.io/jobs/f08b5ced-7cfa-4da1-af47-00205b8aa439/jobStates?sort\u003ddate\u0026task\u003db51f6288-1da1-4769-9780-b0e450ca7186\n\n    \"preflight_image\": \"quay.io/opdev/preflight:stable\"\n\nBut let\u0027s get it going and find a way to automate this.",
+      "parentUuid": "18cabfbd_ca689a3e",
+      "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
