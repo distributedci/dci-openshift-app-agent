@@ -69,6 +69,24 @@
       "parentUuid": "18cabfbd_ca689a3e",
       "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f126c24_555c1057",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-22T11:02:46Z",
+      "side": 1,
+      "message": "Yes, I think we may think on including that in the future, I\u0027ll add it to my TODO pocket list. For the moment, I think we\u0027re good to merge this, since the job passed, then partners can make use of it. Thanks Tony for reviewing!",
+      "parentUuid": "08b7a46b_b41a0187",
+      "revId": "bb34888963df59ef45fb78706ba1f311d3c64357",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
