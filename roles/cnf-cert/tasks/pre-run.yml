@@ -61,6 +61,9 @@
     state: directory
   register: tnf_git_dir
 
+- name: DEBUG - cause a failure here
+  command: /bin/false
+
 # test_network_function_repo will always be a link to the tnf Github repo
 # unless we are testing a PR from that repo, in whose case test-runner will
 # upload test_network_function_repo value to the file path in which
