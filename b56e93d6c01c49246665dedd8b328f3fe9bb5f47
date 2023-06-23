@@ -88,6 +88,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f8d9fd27_78dad822",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-06-23T12:48:24Z",
+      "side": 1,
+      "message": "I\u0027m guessing this is done in a dedicated task because the destination directory is different than in the XML and JSON copy.",
+      "parentUuid": "e09d72f0_9e0fa066",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fcfd2f81_33694277",
         "filename": "roles/cnf-cert/tasks/logging.yml",
         "patchSetId": 7
@@ -116,6 +134,41 @@
       "writtenOn": "2023-06-23T12:14:07Z",
       "side": 1,
       "message": "I believe that `always` is not needed and could be safely merged with the loop task using *.log and *.yml regex. This way it\u0027s safe - if the files are not here, they will not be copied, and there will be no exception raised either.",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efe10512_15d27b4f",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-06-23T12:48:24Z",
+      "side": 1,
+      "message": "Looks like, by copying these files from the always block, we ensure they\u0027re copied even if the claim.json file is absent and the fail task is triggered.",
+      "parentUuid": "1a061f6f_554ba2f7",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88d63c88_58613843",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-06-23T12:48:24Z",
+      "side": 1,
+      "message": "This task is not needed.\n\nThe file module already checks whether the file exists and only removes it if it does not.\n\nThe the file module code:\n\nhttps://github.com/ansible/ansible/blob/da2cd157f151ad1244296df54603698075faf5d2/lib/ansible/modules/file.py#L519\n\nIt first gets the current state and only deletes the files if they\u0027re not already absent.",
       "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
