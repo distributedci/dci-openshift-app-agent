@@ -90,6 +90,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c8e730c3_d61fb907",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-23T10:34:47Z",
+      "side": 1,
+      "message": "But, in the same folder where the log files are saved in tnf folder, we have the tnf code. They don\u0027t create a separate folder for logs. So, with this, I\u0027m fearing we would overload our DCI log folder with files that are not needed",
+      "parentUuid": "33abc114_6cfa43de",
+      "revId": "40878ca1b7e25a1d78de0bef64f851801d8f6779",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c7eacbed_3f0905d6",
         "filename": "roles/cnf-cert/tasks/logging.yml",
         "patchSetId": 5
