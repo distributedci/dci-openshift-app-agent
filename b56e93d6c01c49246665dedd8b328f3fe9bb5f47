@@ -16,6 +16,108 @@
       "message": "Debug jobs are working fine and the files are retrieved correctly depending on tnf version. Just relaunching again BOS2 job since I\u0027ve just changed the name of one task in this latest patchset, but the result will be the same. Ready for review and merge.",
       "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "acf3870d_8fae698e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-23T12:14:07Z",
+      "side": 1,
+      "message": "Hi Ramon, added some ideas how to shorten the code. My main concern is do we need to fail the job if CNF cert suite fails? That will prevent the execution of the follow-up tests, if any.",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6caf1df_c11e7b6d",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-23T12:14:07Z",
+      "side": 1,
+      "message": "Why do we need to fail here? I thought we wanted not to block the following tests.",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b9e34dc3_d0e6f273",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-23T12:14:07Z",
+      "side": 1,
+      "message": "we could add .log and .yml here:\n\n        - \"{{ tnf_logs_location }}/dci-tnf-execution.log\"\n        - \"{{ tnf_logs_location }}/tnf_config.yml\"",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e09d72f0_9e0fa066",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-23T12:14:07Z",
+      "side": 1,
+      "message": "could we add *.js into the task \"Copy XML and JSON files generated after CNF Cert Suite execution\"?",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcfd2f81_33694277",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-23T12:14:07Z",
+      "side": 1,
+      "message": "do we really have to compress here? Does it save us a lot of space?",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1a061f6f_554ba2f7",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 65,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-23T12:14:07Z",
+      "side": 1,
+      "message": "I believe that `always` is not needed and could be safely merged with the loop task using *.log and *.yml regex. This way it\u0027s safe - if the files are not here, they will not be copied, and there will be no exception raised either.",
+      "revId": "b56e93d6c01c49246665dedd8b328f3fe9bb5f47",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
