@@ -16,6 +16,23 @@
       "message": "Hi team, change is ready for review, and I need to merge it before https://github.com/test-network-function/cnf-certification-test/pull/1200, else daily jobs can fail in HEAD branch.\n\nThese are the tests that have been run:\n\n- https://www.distributed-ci.io/jobs/96f9425d-3e0a-402d-8f3b-ea60b0997315/files - v4.3.0 - all logs are retrieved including tnf-results-web-page.tar.gz\t\n- https://www.distributed-ci.io/jobs/e287cc6f-b6c4-4312-b9e3-bbecffdd7cf0/files - HEAD - all logs are retrieved including new tar.gz report\n- https://www.distributed-ci.io/jobs/06ddef6c-3ea3-4005-a94a-2eeb856906f4/jobStates?sort\u003ddate\u0026task\u003d8a4c476c-5ae3-44c5-9411-5a6285a7c0a2 - forcing a premature failure to see that tnf teardown is executed",
       "revId": "40878ca1b7e25a1d78de0bef64f851801d8f6779",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "927d42ce_d1a4f746",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-23T07:28:28Z",
+      "side": 1,
+      "message": "Adding Nacho who is on CI Duty this week. I need this change to be merged today since daily jobs are starting to fail and tnf checks depend on this fix too",
+      "revId": "40878ca1b7e25a1d78de0bef64f851801d8f6779",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
