@@ -3,7 +3,7 @@
   include_tasks: create_operator_project.yml
   when: project_type == 'operator'
 
-- name: Create certification project for the container
+- name: Create certification project for the container or Openshift-cnf
   include_tasks: create_container_project.yml
   when: project_type == 'container'
 ...
