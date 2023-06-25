@@ -1,0 +1,9 @@
+---
+- name: "Create certification cnf project for Vendor Validation"
+  include_role:
+    name: create-certification-project
+  vars:
+    project_type: "cnf"
+  when:
+    - cnfs.create_cnf_project | default(false) | bool
+...
