@@ -44,16 +44,10 @@
       and 'preflight' in tnf_labels))
       and partner_creds|length"
 
-- name: Check if there are XML JUnit results in the CNF Cert directory
-  stat:
-    path: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }}/cnf-certification-tests_junit.xml"
-  register: junit_present
-
 - name: Remove XML JUnit results if they exist
   file:
     path: "{{ tnf_git_dir.path }}/{{ test_network_function_project_name }}/{{ test_network_function_project_name }}/cnf-certification-tests_junit.xml"
     state: absent
-  when: junit_present.stat.exists|bool
 
 # The task automatically append these environment variables to tnf_env_vars:
 # - TNF_PARTNER_REPO
@@ -91,4 +85,13 @@
 - name: Logging tasks after finishing the execution of CNF Cert
   include_tasks: logging.yml
 
+# If this file is not present, it is because there was a failure when trying to execute tnf.
+# We have to make the job to fail at this point, since there may be happening something on CNF Cert Suite
+# that is not working properly, this way CNF Cert Suite developers are advised with a failed job that
+# they need to check what is going on.
+# (the variable called "claim_json_present" is created in logging.yml playbook)
+- name: CNF Cert Suite execution did not finish correctly
+  fail:
+    msg: claim.json file does not exist, so CNF Cert Suite execution did not finish correctly
+  when: not claim_json_present.stat.exists|bool
 ...
