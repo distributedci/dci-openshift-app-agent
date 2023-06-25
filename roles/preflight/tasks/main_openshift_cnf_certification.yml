@@ -1,0 +1,20 @@
+---
+- name: Openshift-cnf Project Creation Test Vendor Validation
+  block:
+    - name: "Create Openshift-cnf Certifcation Project Name {{ cnfs.name }}"
+      vars:
+        current_cnf_name: "{{ cc.cnf_name }}"
+        cnfs:
+          name: "{{ cc.cnf_name }}"
+          create_cnf_project: "{% if cc.create_cnf_project is defined %}{{ cc.create_cnf_project }}{% endif %}"
+      include_tasks: test_check_cnf.yml
+      loop: "{{ cnf_to_certify }}"
+      loop_control:
+        loop_var: cc
+    - name: "Print debug info "
+      debug:
+        msg: "cnf_t_certify {{ cnf_to_certify }}"
+  always:
+    - name: Teardown
+      include_tasks: teardown.yml
+...

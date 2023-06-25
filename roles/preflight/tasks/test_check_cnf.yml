@@ -1,0 +1,16 @@
+---
+#- name: Check if cnf has already been certified
+# include_tasks: test_check_if_cnf_certified.yml
+#  when: not preflight_test_certified_image
+
+- name: "Create certification cnf project for Vendor Validation"
+  include_role:
+    name: create-certification-project
+  vars:
+    project_type: "cnf"
+  when:
+    - cnfs.create_cnf_project | default(false) | bool
+- name: "print debug project_type {{ project_type }}"
+  debug:
+    msg: "cnf name {{ cnfs.name }}"
+...

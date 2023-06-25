@@ -10,7 +10,7 @@
   include_tasks: update_container_project.yml
   when:
     - cert_settings is defined
-    - cert_project_id is defined
+    - cert_project_id is defined and cnf_to_certify is not defined
 
 - name: Attach Product List ID to container project when cert_listings is defined
   include_tasks: attach_product_listing.yml

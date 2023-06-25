@@ -21,6 +21,7 @@ Name                     | Default                                              
 -------------------      | ------------                                                               | -------------
 create_container_project | false                                                                      | If set to true, it would create a new container certification project.
 create_operator_project  | false                                                                      | If set to true, it would create a new operator certification project.
+create_cnf_project  | false                                                                      | If set to true, it would create a new openshift-cnf certification project.
 
 
 ## Variables to define for project settings under `cert_settings` main variable (Optional)
@@ -87,6 +88,8 @@ preflight_operators_to_certify:
 preflight_containers_to_certify:
   - container_image: "quay.io/my-container/bla-bla-image:v0.0.1"
     create_container_project: true
+    #attach_product_listing is optional when doing recertification
+    attach_product_listing: true
     # Optional; use it to pass an image description to the created project
     short_description: "Add description here"
 
@@ -121,7 +124,38 @@ github_token_path: "/opt/cache/dcicertbot-token.txt"
 # Only required when preflight_containers_to_certify.create_container_project is true
 organization_id: 12345678
 ```
+## Example Configuration of Openshift-cnf certification project creation
+```yaml
+---
+dci_topic: OCP-4.11
+dci_name: Testing Openshift-cnf auto creation and attach
+dci_configuration: Using DCI create cnf project and attach product-list
+check_for_existing_projects: true
+ignore_project_creation_errors: true
+dci_config_dirs: [/etc/dci-openshift-agent]
+partner_creds: "/var/lib/dci-openshift-app-agent/auth.json"
+organization_id: 15451045
+#cnf_name is a free-text but format: CNF-version + OCP-version e.g "CNF23.5 OCP4.12.9"
+cnf_to_certify:
+  - cnf_name: "test-smf23.5 OCP4.11.5"
+    create_cnf_project: true
+    attach_product_listing: true
 
+  - cnf_name: "test-upf23.5 OCP4.11.5"
+    create_cnf_project: true
+    attach_product_listing: true
+
+cert_listings:
+  #email_address is mandatory when creating openshift-cnf for vendor validation but does not hurt to define it
+  email_address: "email@example.com"
+  published: true
+  type: "container stack"
+  pyxis_product_list_identifier: "yyyyyyyyyyyyyyyyy" #7GC UDM
+
+pyxis_apikey_path: "/var/lib/dci-openshift-app-agent/pyxis-apikey.txt"
+dci_gits_to_components: []
+...
+```
 ## GitHub token
 
 Please note that `github_token_path` is required when using `create_operator_project` project. It is used to setup proper permissions in the certification project.
