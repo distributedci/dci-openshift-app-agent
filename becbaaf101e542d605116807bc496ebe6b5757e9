@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9c1df686_9044159a",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:25:36Z",
+      "side": 1,
+      "message": "I still disagree that the CNF test itself should be blocking :) If we need a job to fail for the PR validation, we could do it using verify-tests, which is executed in the post-run. For our partners, that will allow to run all tests included in the job, and not just CNF.",
+      "revId": "becbaaf101e542d605116807bc496ebe6b5757e9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
