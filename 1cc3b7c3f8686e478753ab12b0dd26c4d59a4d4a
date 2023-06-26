@@ -1,0 +1,123 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b88a2262_e7e77b6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "Hi Andrew, thank you for the contribution! I added some minor notes about the grammar but my main concern is about mixing up together Preflight and CNF certification. I\u0027ll reach you out to better understand the requirements.",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "42d4dc73_69eaf425",
+        "filename": "plays/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "We could use here \n\n\u003e when: cnf_to_certify | default(false) | bool",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b78a7d7e_01eeb7ba",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "when: cnf_to_certify | default(false) | bool",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fcc95cd3_839b4b9d",
+        "filename": "roles/create-certification-project/tasks/create_container_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "when:\n    - cert_settings is defined\n    - cert_project_id is defined\n    - cnf_to_certify | default(false) | bool",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de2126d4_6c7d564d",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "It\u0027s a bit dangerous to mix two project types like this in the conditions. Andrew, I\u0027ll reach out to better understand the requirements.",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e584a76_af22bdac",
+        "filename": "roles/preflight/tasks/main_openshift_cnf_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "The same for this task, maybe it\u0027s better to move it to cnf-cert role.",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "220d3d98_7b17e2e1",
+        "filename": "roles/preflight/tasks/test_check_cnf.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-26T08:16:30Z",
+      "side": 1,
+      "message": "It feels like we mix up Preflight and CNF certification. Maybe it\u0027s better to use this task within the cnf-cert role: https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/roles/cnf-cert",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
