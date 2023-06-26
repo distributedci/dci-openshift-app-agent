@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "88da74c4_3721f6c4",
+        "filename": "plays/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-26T13:48:26Z",
+      "side": 1,
+      "message": "maybe this variable can be added to group_vars, as we do with do_cnf_cert among others?",
+      "parentUuid": "42d4dc73_69eaf425",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b78a7d7e_01eeb7ba",
         "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
         "patchSetId": 1
@@ -116,6 +134,24 @@
       "writtenOn": "2023-06-26T08:16:30Z",
       "side": 1,
       "message": "It feels like we mix up Preflight and CNF certification. Maybe it\u0027s better to use this task within the cnf-cert role: https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/roles/cnf-cert",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6146fe8d_ad603524",
+        "filename": "roles/preflight/tasks/test_check_cnf.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-26T13:48:26Z",
+      "side": 1,
+      "message": "I think this is a different project, hence it should be placed in a new role",
+      "parentUuid": "220d3d98_7b17e2e1",
       "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
