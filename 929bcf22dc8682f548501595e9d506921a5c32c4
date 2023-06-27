@@ -16,6 +16,23 @@
       "message": "Latest changes have been validated:\n- Confirming that, if tnf did not work, verify-tests will make the job to fail since the JUnit XML file would not be present: https://www.distributed-ci.io/jobs/f503b6c8-0553-4872-af00-4f23b94b0acf/jobStates\n- Other two tests are working in:\n-- HEAD: https://www.distributed-ci.io/jobs/81dbfe06-aa74-4f0b-984c-12df8fa8ddbe/jobStates?sort\u003ddate\n-- v4.3.0: https://www.distributed-ci.io/jobs/e2c46a17-d788-4274-9e39-f82430c103ef/jobStates?sort\u003ddate",
       "revId": "929bcf22dc8682f548501595e9d506921a5c32c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "762eba2e_9433552d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T10:06:10Z",
+      "side": 1,
+      "message": "Thank you Ramon!",
+      "revId": "929bcf22dc8682f548501595e9d506921a5c32c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
