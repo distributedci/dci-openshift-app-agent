@@ -16,6 +16,69 @@
       "message": "Hi Ramon, could you please have a look? That\u0027s a feature by Jennifer\u0027s request. I tested it locally and also ensured that it does not create a regression.",
       "revId": "5429592cb19125b4d3f90975fe758e1d7ac0befb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b969a9c7_8af37e71",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T11:47:57Z",
+      "side": 1,
+      "message": "Thanks for the change! adding some comments to review a couple of things",
+      "revId": "5429592cb19125b4d3f90975fe758e1d7ac0befb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "214d9ecd_8c4f5e2a",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T11:47:57Z",
+      "side": 1,
+      "message": "should this be `\u003ctestsuite\u003e`?",
+      "range": {
+        "startLine": 23,
+        "startChar": 27,
+        "endLine": 23,
+        "endChar": 37
+      },
+      "revId": "5429592cb19125b4d3f90975fe758e1d7ac0befb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "09b0fd1d_6b5ed818",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T11:47:57Z",
+      "side": 1,
+      "message": "is this variable defined/documented somewhere?",
+      "range": {
+        "startLine": 31,
+        "startChar": 12,
+        "endLine": 31,
+        "endChar": 26
+      },
+      "revId": "5429592cb19125b4d3f90975fe758e1d7ac0befb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
