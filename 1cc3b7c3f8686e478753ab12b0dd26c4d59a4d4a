@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d3d20cf_14080222",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T11:51:48Z",
+      "side": 1,
+      "message": "I think new changes are here: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/28723, let\u0027s move to that change.\nFor the next time, Andrew, just follow Tatiana\u0027s advices provided offline: `git add . \u0026\u0026 git commit --amend \u0026\u0026 git-review`, so that you can add new patchsets in this Gerrit change. If you have any question, don\u0027t hesitate to tell us!",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "42d4dc73_69eaf425",
