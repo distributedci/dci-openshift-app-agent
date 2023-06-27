@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b41bef5_fa080415",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T10:07:22Z",
+      "side": 1,
+      "message": "Hi Andrew, as discussed, waiting for you to push the new patchset. Please do not hesitate to ping us if you need any help with it.",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "42d4dc73_69eaf425",
@@ -66,6 +83,24 @@
       "writtenOn": "2023-06-26T08:16:30Z",
       "side": 1,
       "message": "when: cnf_to_certify | default(false) | bool",
+      "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7048d94_309451dd",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T10:07:22Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b78a7d7e_01eeb7ba",
       "revId": "1cc3b7c3f8686e478753ab12b0dd26c4d59a4d4a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
