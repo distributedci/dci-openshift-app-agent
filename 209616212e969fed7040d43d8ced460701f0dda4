@@ -1,0 +1,89 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c16376b_6f766778",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T11:58:51Z",
+      "side": 1,
+      "message": "Hi Andrew, thank you for the CR! I added some questions to better understand the dev - it seems like the template for cnf project creation is never used",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "abd24750_6ed02b7e",
+        "filename": "roles/create-certification-project/tasks/create_container_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T11:58:51Z",
+      "side": 1,
+      "message": "could we separate container project creation and cnf project creation or they have to be created together because of the requirements?",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "942d51c3_37c5bfae",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T11:58:51Z",
+      "side": 1,
+      "message": "Could we move cnf project creation into a separate file?\n\n\u003e name: Create certification project for the container or Openshift-cnf\n  include_tasks: create_openshift_cnf_project.yml\n  when: project_type \u003d\u003d \u0027cnf\u0027",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "593552c6_5796dd04",
+        "filename": "roles/create-certification-project/templates/create_project_cnf.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T11:58:51Z",
+      "side": 1,
+      "message": "I do not see where this template is used :(",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "80cfba79_6bdc365f",
+        "filename": "roles/openshift-cnf/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T11:58:51Z",
+      "side": 1,
+      "message": "is it work in progress or something missing during the git push?",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
