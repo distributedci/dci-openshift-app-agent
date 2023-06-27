@@ -18,6 +18,46 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "179ffcff_1bdd0a03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T12:09:21Z",
+      "side": 1,
+      "message": "some more comments from my side",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a3b517d8_7312a272",
+        "filename": "plays/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T12:09:21Z",
+      "side": 1,
+      "message": "I would remove this, so that we call the main.yml playbook, and from that playbook, you can call whatever you want.",
+      "range": {
+        "startLine": 30,
+        "startChar": 4,
+        "endLine": 30,
+        "endChar": 38
+      },
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "abd24750_6ed02b7e",
@@ -71,6 +111,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1ec1b1a8_754f4df0",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T12:09:21Z",
+      "side": 1,
+      "message": "I suppose this needs to be updated. You can follow as examples other roles we have (cnf-cert, preflight, etc.) to create your README. The structure is more or less the same.",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 9
+      },
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "80cfba79_6bdc365f",
         "filename": "roles/openshift-cnf/defaults/main.yml",
         "patchSetId": 1
@@ -82,6 +145,75 @@
       "writtenOn": "2023-06-27T11:58:51Z",
       "side": 1,
       "message": "is it work in progress or something missing during the git push?",
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c0e0d770_e81f8ae9",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T12:09:21Z",
+      "side": 1,
+      "message": "Here, I would call main_openshift_cnf_certification.yml with include_tasks, here\u0027s an example: https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/roles/cnf-cert/tasks/main.yml",
+      "range": {
+        "startLine": 2,
+        "startChar": 1,
+        "endLine": 2,
+        "endChar": 2
+      },
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1af16262_67ed5426",
+        "filename": "roles/openshift-cnf/tasks/main_openshift_cnf_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T12:09:21Z",
+      "side": 1,
+      "message": "where is this variable defined? isn\u0027t it `cc` instead of `cnfs`?",
+      "range": {
+        "startLine": 4,
+        "startChar": 63,
+        "endLine": 4,
+        "endChar": 67
+      },
+      "revId": "209616212e969fed7040d43d8ced460701f0dda4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "532b0477_cf669683",
+        "filename": "roles/openshift-cnf/tasks/test_check_cnf.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-27T12:09:21Z",
+      "side": 1,
+      "message": "Same, is this variable `cc` instead?",
+      "range": {
+        "startLine": 8,
+        "startChar": 6,
+        "endLine": 8,
+        "endChar": 10
+      },
       "revId": "209616212e969fed7040d43d8ced460701f0dda4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
