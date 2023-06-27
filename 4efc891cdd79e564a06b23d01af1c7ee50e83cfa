@@ -33,6 +33,23 @@
       "message": "Thanks, LGTM",
       "revId": "4efc891cdd79e564a06b23d01af1c7ee50e83cfa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "684c9172_6e9a513f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T13:53:19Z",
+      "side": 1,
+      "message": "thank you Manuel and Ramon!",
+      "revId": "4efc891cdd79e564a06b23d01af1c7ee50e83cfa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
