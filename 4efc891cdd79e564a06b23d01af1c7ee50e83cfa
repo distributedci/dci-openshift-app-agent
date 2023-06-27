@@ -16,6 +16,23 @@
       "message": "Hi Ramon, thank you for the review, I updated the docs and explained the pattern I use.",
       "revId": "4efc891cdd79e564a06b23d01af1c7ee50e83cfa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab2453da_c54e7f8f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-27T13:46:11Z",
+      "side": 1,
+      "message": "Thanks, LGTM",
+      "revId": "4efc891cdd79e564a06b23d01af1c7ee50e83cfa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
