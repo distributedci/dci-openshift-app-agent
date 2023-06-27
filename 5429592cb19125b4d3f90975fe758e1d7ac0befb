@@ -82,6 +82,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6bf3455_eda8c70d",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T13:43:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "11e80bdd_c1705f5c",
+      "range": {
+        "startLine": 23,
+        "startChar": 27,
+        "endLine": 23,
+        "endChar": 37
+      },
+      "revId": "5429592cb19125b4d3f90975fe758e1d7ac0befb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "09b0fd1d_6b5ed818",
@@ -119,6 +143,30 @@
       "side": 1,
       "message": "nice catch! Let me add some docs",
       "parentUuid": "09b0fd1d_6b5ed818",
+      "range": {
+        "startLine": 31,
+        "startChar": 12,
+        "endLine": 31,
+        "endChar": 26
+      },
+      "revId": "5429592cb19125b4d3f90975fe758e1d7ac0befb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f30833ef_1951ff58",
+        "filename": "roles/verify-tests/tasks/parse_junit_file.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-27T13:43:24Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "88472462_7141e20a",
       "range": {
         "startLine": 31,
         "startChar": 12,
