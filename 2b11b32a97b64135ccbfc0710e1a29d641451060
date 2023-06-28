@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9114f205_9893a08c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-28T21:19:11Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5fbf2b40_10bbf036",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-06-28T21:19:11Z",
+      "side": 1,
+      "message": "minor typo, it reads `paramter`, is it \"parameters\" maybe?",
+      "range": {
+        "startLine": 5,
+        "startChar": 209,
+        "endLine": 5,
+        "endChar": 217
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
