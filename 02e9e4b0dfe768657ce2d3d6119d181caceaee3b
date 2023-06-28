@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e9c4a75_53072257",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-28T15:15:00Z",
+      "side": 1,
+      "message": "Hi Andrew, as I understand, you tested the CR already, and I see that you created and nicely isolated the new role. LGTM to merge this change, and then we could continue to add some refinements later on.",
+      "revId": "02e9e4b0dfe768657ce2d3d6119d181caceaee3b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
