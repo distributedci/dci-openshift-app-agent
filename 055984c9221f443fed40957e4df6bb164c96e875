@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "372f7827_cdead9f7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-06-28T19:22:32Z",
+      "side": 1,
+      "message": "LGTM, the fix of the typo should make it go",
+      "revId": "055984c9221f443fed40957e4df6bb164c96e875",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "85d5276b_16b2a843",
+        "filename": "samples/tnf_test_example/hooks/deploy_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-06-28T19:22:32Z",
+      "side": 1,
+      "message": "small typo, missing }}",
+      "range": {
+        "startLine": 6,
+        "startChar": 55,
+        "endLine": 6,
+        "endChar": 56
+      },
+      "revId": "055984c9221f443fed40957e4df6bb164c96e875",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
