@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "026471cf_f1965e98",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2023-06-28T23:19:29Z",
+      "side": 1,
+      "message": "Tatiana/Ramon: this deprecated_api feature is broken on a fresh install. Furthermore, having any task installing through PIP on a the system-wide scope is really bad form. I am putting this behind a feature flag and disabling, as any new feature should be. This could very well be in role(s) but I am just trying to get it fixed for now.",
+      "revId": "2424f1c8027023e1882adfba5c19eec7571d2507",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
