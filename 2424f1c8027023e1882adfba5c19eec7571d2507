@@ -34,6 +34,40 @@
       "parentUuid": "026471cf_f1965e98",
       "revId": "2424f1c8027023e1882adfba5c19eec7571d2507",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "535ac641_c7ce6be5",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-06-28T23:38:25Z",
+      "side": 1,
+      "message": "nit: Let\u0027s avoid \"intel\" to prevent any confusion 😄",
+      "revId": "2424f1c8027023e1882adfba5c19eec7571d2507",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8d804e1_05564497",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-06-28T23:38:25Z",
+      "side": 1,
+      "message": "4.9 is now EOL, this condition could be deleted 😜",
+      "revId": "2424f1c8027023e1882adfba5c19eec7571d2507",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
