@@ -35,6 +35,115 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc85f8e8_d9d5bb42",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "Some comments from my side, mainly typos and some minor suggestions",
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9f45550_c983c078",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "Don\u0027t we do the same for openshift_cnf?",
+      "range": {
+        "startLine": 12,
+        "startChar": 12,
+        "endLine": 12,
+        "endChar": 41
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "30585272_ed19e222",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "I\u0027d also check here if cert_project_id variable is defined, since it\u0027s defined at the end of check_if_cnf_project_exists_same_org.yml under when conditions, so it may happen that is not defined\n\nSo:\n\n```\nwhen:\n  - cnf_to_certify is defined\n  - cert_project_id is defined\n```",
+      "range": {
+        "startLine": 19,
+        "startChar": 2,
+        "endLine": 19,
+        "endChar": 6
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "401f11b2_c29279a9",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "Is this correct? because for openshift-cnf, the project_type would be openshift_cnf, not container. Don\u0027t we need to create a new task for that case?",
+      "range": {
+        "startLine": 6,
+        "startChar": 58,
+        "endLine": 6,
+        "endChar": 71
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "40eeee2b_19182f5a",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "reuses",
+      "range": {
+        "startLine": 3,
+        "startChar": 145,
+        "endLine": 3,
+        "endChar": 150
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5fbf2b40_10bbf036",
@@ -53,6 +162,144 @@
         "startChar": 209,
         "endLine": 5,
         "endChar": 217
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c29e5aa6_af16cfa2",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "- I\u0027d say here that this is for cnf_to_certify variable\n- missing cnf_name in the table",
+      "range": {
+        "startLine": 11,
+        "startChar": 3,
+        "endLine": 11,
+        "endChar": 12
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3cb91b4a_906c28d0",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "I don\u0027t see where this variable is used",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d41ffc8e_6503e18f",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "Same, I don\u0027t see where this variable is used",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 18
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "68fe1274_399f7909",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": ". (dot) here",
+      "range": {
+        "startLine": 22,
+        "startChar": 118,
+        "endLine": 22,
+        "endChar": 119
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e83c5296_58ec689f",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "Email, upper case",
+      "range": {
+        "startLine": 25,
+        "startChar": 79,
+        "endLine": 25,
+        "endChar": 84
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7a1f0b61_88252588",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T10:49:53Z",
+      "side": 1,
+      "message": "it\u0027s a bit confusing for me that this parameter is required but cert_listings is optional, I\u0027d clarify this a little bit",
+      "range": {
+        "startLine": 25,
+        "startChar": 93,
+        "endLine": 25,
+        "endChar": 115
       },
       "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
