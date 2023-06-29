@@ -92,6 +92,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fbcb953_a466ca39",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c9f45550_c983c078",
+      "range": {
+        "startLine": 12,
+        "startChar": 12,
+        "endLine": 12,
+        "endChar": 41
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "30585272_ed19e222",
@@ -105,6 +129,30 @@
       "writtenOn": "2023-06-29T10:49:53Z",
       "side": 1,
       "message": "I\u0027d also check here if cert_project_id variable is defined, since it\u0027s defined at the end of check_if_cnf_project_exists_same_org.yml under when conditions, so it may happen that is not defined\n\nSo:\n\n```\nwhen:\n  - cnf_to_certify is defined\n  - cert_project_id is defined\n```",
+      "range": {
+        "startLine": 19,
+        "startChar": 2,
+        "endLine": 19,
+        "endChar": 6
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9692b0e0_e1f2cea6",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "30585272_ed19e222",
       "range": {
         "startLine": 19,
         "startChar": 2,
@@ -161,6 +209,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff7b0546_94a8b228",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "40eeee2b_19182f5a",
+      "range": {
+        "startLine": 3,
+        "startChar": 145,
+        "endLine": 3,
+        "endChar": 150
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5fbf2b40_10bbf036",
@@ -174,6 +246,30 @@
       "writtenOn": "2023-06-28T21:19:11Z",
       "side": 1,
       "message": "minor typo, it reads `paramter`, is it \"parameters\" maybe?",
+      "range": {
+        "startLine": 5,
+        "startChar": 209,
+        "endLine": 5,
+        "endChar": 217
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d457b20_1e067d27",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "this typo is still there",
+      "parentUuid": "5fbf2b40_10bbf036",
       "range": {
         "startLine": 5,
         "startChar": 209,
@@ -207,6 +303,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ca507067_ececdb21",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c29e5aa6_af16cfa2",
+      "range": {
+        "startLine": 11,
+        "startChar": 3,
+        "endLine": 11,
+        "endChar": 12
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3cb91b4a_906c28d0",
@@ -220,6 +340,30 @@
       "writtenOn": "2023-06-29T10:49:53Z",
       "side": 1,
       "message": "I don\u0027t see where this variable is used",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ea6c461_9a0c6dd3",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3cb91b4a_906c28d0",
       "range": {
         "startLine": 15,
         "startChar": 0,
@@ -253,6 +397,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d6948eec_9204addd",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "d41ffc8e_6503e18f",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 18
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "68fe1274_399f7909",
@@ -266,6 +434,30 @@
       "writtenOn": "2023-06-29T10:49:53Z",
       "side": 1,
       "message": ". (dot) here",
+      "range": {
+        "startLine": 22,
+        "startChar": 118,
+        "endLine": 22,
+        "endChar": 119
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1447806f_44eda0f5",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "68fe1274_399f7909",
       "range": {
         "startLine": 22,
         "startChar": 118,
@@ -312,6 +504,54 @@
       "writtenOn": "2023-06-29T10:49:53Z",
       "side": 1,
       "message": "it\u0027s a bit confusing for me that this parameter is required but cert_listings is optional, I\u0027d clarify this a little bit",
+      "range": {
+        "startLine": 25,
+        "startChar": 93,
+        "endLine": 25,
+        "endChar": 115
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5cc8e0ec_992eadd6",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e83c5296_58ec689f",
+      "range": {
+        "startLine": 25,
+        "startChar": 79,
+        "endLine": 25,
+        "endChar": 84
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f255bc80_b2d93d50",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7a1f0b61_88252588",
       "range": {
         "startLine": 25,
         "startChar": 93,

@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "41eea785_a7b4e980",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Thanks for the change Andrew! Just 2 minor things remaining here from my side",
+      "revId": "3218606d3d1b83517b0033d2556ad0cc23425f33",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f1a98b84_6bb3d001",
+        "filename": "roles/openshift-cnf/tasks/create_openshift_cnf_project.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "maybe better in this way:\n\n```\nwhen:\n  - cnf.attach_product_listing | default(false) | bool\n  - cnf.create_cnf_project | default(false) | bool\n```",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 95
+      },
+      "revId": "3218606d3d1b83517b0033d2556ad0cc23425f33",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
