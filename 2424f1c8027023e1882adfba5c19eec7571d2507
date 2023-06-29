@@ -71,6 +71,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "73859358_1378911d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-06-29T07:48:32Z",
+      "side": 1,
+      "message": "Hi Jose, I apologize for the error caused by my code. \n\nThe reason for the issue is not Python 3.6 versus Python 3.8; it\u0027s actually due to the fact that the junitparser package installed here (https://www.distributed-ci.io/jobs/5562e9cf-b535-41c4-a0dd-0dfe5efbfed7/jobStates?sort\u003ddate\u0026task\u003d22c85936-a996-4a13-aee8-e399b39dee08) is not accessible to all users.\n\nThat could be fixed by adding `umask: 0022` in the pre-run as suggested here (https://docs.ansible.com/ansible/latest/collections/ansible/builtin/pip_module.html#parameter-umask).  \n\n\u003e     name: Install junitparser\n      pip:\n        name: junitparser\n        umask: \"0022\"\n      become: true\n      \nRegarding the installation of junitparser using pip instead of dnf, it is a technical debt. Junitparser is not available through dnf, I have to package it.",
+      "revId": "2424f1c8027023e1882adfba5c19eec7571d2507",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "535ac641_c7ce6be5",
