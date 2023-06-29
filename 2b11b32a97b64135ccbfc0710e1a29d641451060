@@ -280,6 +280,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "39ef9344_337ad298",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-06-29T16:08:29Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2d457b20_1e067d27",
+      "range": {
+        "startLine": 5,
+        "startChar": 209,
+        "endLine": 5,
+        "endChar": 217
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c29e5aa6_af16cfa2",
