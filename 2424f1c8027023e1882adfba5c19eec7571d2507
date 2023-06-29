@@ -88,6 +88,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "88648e4c_ea4a0cd5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2023-06-29T22:14:02Z",
+      "side": 1,
+      "message": "Using PIP is still not the right path forward, we need to get away from installing extraneous modules from within ansible. I believe Fred wanted to fix this at the root but can we at least get this feature flag in?",
+      "revId": "2424f1c8027023e1882adfba5c19eec7571d2507",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "535ac641_c7ce6be5",
