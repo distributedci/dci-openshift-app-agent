@@ -116,6 +116,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1ce1012_c79a8114",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "Yes, we used this cert_listings for openshift_cnf.",
+      "parentUuid": "c9f45550_c983c078",
+      "range": {
+        "startLine": 12,
+        "startChar": 12,
+        "endLine": 12,
+        "endChar": 41
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "30585272_ed19e222",
@@ -163,6 +187,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3f51efa_feaea0aa",
+        "filename": "roles/create-certification-project/tasks/attach_product_listing.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "Thanks, Ramon. Nice catch!",
+      "parentUuid": "30585272_ed19e222",
+      "range": {
+        "startLine": 19,
+        "startChar": 2,
+        "endLine": 19,
+        "endChar": 6
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "401f11b2_c29279a9",
@@ -176,6 +224,30 @@
       "writtenOn": "2023-06-29T10:49:53Z",
       "side": 1,
       "message": "Is this correct? because for openshift-cnf, the project_type would be openshift_cnf, not container. Don\u0027t we need to create a new task for that case?",
+      "range": {
+        "startLine": 6,
+        "startChar": 58,
+        "endLine": 6,
+        "endChar": 71
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81e9e308_65fb020c",
+        "filename": "roles/create-certification-project/tasks/main.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "401f11b2_c29279a9",
       "range": {
         "startLine": 6,
         "startChar": 58,
@@ -220,6 +292,30 @@
         "id": 800
       },
       "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "40eeee2b_19182f5a",
+      "range": {
+        "startLine": 3,
+        "startChar": 145,
+        "endLine": 3,
+        "endChar": 150
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "771e2d46_dce658ac",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
       "side": 1,
       "message": "Ack",
       "parentUuid": "40eeee2b_19182f5a",
@@ -304,6 +400,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e70a028_80cc7b73",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2d457b20_1e067d27",
+      "range": {
+        "startLine": 5,
+        "startChar": 209,
+        "endLine": 5,
+        "endChar": 217
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c29e5aa6_af16cfa2",
@@ -338,6 +458,30 @@
         "id": 800
       },
       "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "c29e5aa6_af16cfa2",
+      "range": {
+        "startLine": 11,
+        "startChar": 3,
+        "endLine": 11,
+        "endChar": 12
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d087a82_31ad02be",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
       "side": 1,
       "message": "Ack",
       "parentUuid": "c29e5aa6_af16cfa2",
@@ -398,6 +542,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed256196_830b0678",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "It was removed when we removed/moved tasks to/from new role. Added the conditions back and tested",
+      "parentUuid": "3cb91b4a_906c28d0",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 15,
+        "endChar": 22
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d41ffc8e_6503e18f",
@@ -445,6 +613,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "83537780_251e272e",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "Same answer from #15",
+      "parentUuid": "d41ffc8e_6503e18f",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 18
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "68fe1274_399f7909",
@@ -479,6 +671,30 @@
         "id": 800
       },
       "writtenOn": "2023-06-29T15:48:42Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "68fe1274_399f7909",
+      "range": {
+        "startLine": 22,
+        "startChar": 118,
+        "endLine": 22,
+        "endChar": 119
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd04c895_975c88a2",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
       "side": 1,
       "message": "Ack",
       "parentUuid": "68fe1274_399f7909",
@@ -581,6 +797,54 @@
         "startChar": 93,
         "endLine": 25,
         "endChar": 115
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94d03a4b_7092dbb5",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "When creating Openshift-cnf certification email_address is needed, so I re-used cert_listings to add this email_address. When product-listing needed to attach then most of these parameters under cert_listings: are mandatory. I removed (optional) from header",
+      "parentUuid": "7a1f0b61_88252588",
+      "range": {
+        "startLine": 25,
+        "startChar": 93,
+        "endLine": 25,
+        "endChar": 115
+      },
+      "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e67c568_95cb4c08",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-06-30T14:09:21Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e83c5296_58ec689f",
+      "range": {
+        "startLine": 25,
+        "startChar": 79,
+        "endLine": 25,
+        "endChar": 84
       },
       "revId": "2b11b32a97b64135ccbfc0710e1a29d641451060",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
