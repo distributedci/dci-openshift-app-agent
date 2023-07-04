@@ -16,6 +16,23 @@
       "message": "Hi Ramon, could you please review the change, I\u0027d like to merge it fast to help Jennifer fix the following issue: https://www.distributed-ci.io/jobs/9dc39219-0203-4ec5-b77d-dfec3e3465f7/tests/f24b02da-c714-42a3-ae96-b96f4bda4b0e",
       "revId": "cd2fbeadb84c83aaa56c349a2820c49d5d9ddca0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eca85876_a41de047",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-07-04T12:16:19Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "cd2fbeadb84c83aaa56c349a2820c49d5d9ddca0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
