@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.10-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] example-cnf",
       "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "baa25287_5db61ca6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-04T19:42:26Z",
+      "side": 1,
+      "message": "Libvirt: here is an example of the output JUnit file: https://www.distributed-ci.io/jobs/2a90b128-145d-4c41-8319-ff8c825cec9b/tests/097fa1d3-34eb-4761-9b71-b9bf34b513d7\n\nPip installation is removed for the role, and replaced with dnf which should cause no issues.\n\nThe tests in Dallas are ongoing.\n",
+      "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
