@@ -16,6 +16,23 @@
       "message": "Thank you Ramon, adding +2 since the change is tested by Andrew.",
       "revId": "aaad577e9ac169880762fcbb12f38f0de675a298",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72884fba_e64fd45b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-04T14:56:27Z",
+      "side": 1,
+      "message": "approved by Andrew",
+      "revId": "aaad577e9ac169880762fcbb12f38f0de675a298",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
