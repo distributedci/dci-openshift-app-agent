@@ -85,6 +85,23 @@
       "message": "I think it\u0027s fine to go ahead with this, if this is a blocker.",
       "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c6460e9_9e961c7f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-05T08:45:03Z",
+      "side": 1,
+      "message": "thank you Ramon and Charles!",
+      "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
