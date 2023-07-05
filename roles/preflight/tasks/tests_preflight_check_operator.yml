@@ -106,7 +106,7 @@
 
 - name: Upload logs for preflight check operator into DCI
   vars:
-    preflight_prefix: "preflight_operator_{{ operator.name }}_{{ operator.version }}"
+    preflight_prefix: "preflight_operator_{{ operator.name }}"
   copy:
     src: "{{ item }}"
     dest: "{{ job_logs.path }}/{{ preflight_prefix }}_{{ item | basename }}"
