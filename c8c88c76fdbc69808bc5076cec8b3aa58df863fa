@@ -50,6 +50,24 @@
       "message": "That\u0027s a nice improvement!\nA minor complain is the sentence \u0027Compatible with OCP-VERSION\u0027 is written twice in the DCI UI",
       "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08c38ffa_60fec672",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-05T07:52:18Z",
+      "side": 1,
+      "message": "Thank you Charles, yes, that\u0027s a name and a classname, I should refine it somehow later on. This is just to unblock the situation for Jorge.\n\nHere are test results in Dallas: https://www.distributed-ci.io/jobs/8747f6f7-dc50-40b1-9454-c4e1ec3e721a/tests/382a1599-873b-40e3-a4bb-d03043e3062a",
+      "parentUuid": "8b4ca924_d3031630",
+      "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
