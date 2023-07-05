@@ -33,6 +33,23 @@
       "message": "Libvirt: here is an example of the output JUnit file: https://www.distributed-ci.io/jobs/2a90b128-145d-4c41-8319-ff8c825cec9b/tests/097fa1d3-34eb-4761-9b71-b9bf34b513d7\n\nPip installation is removed for the role, and replaced with dnf which should cause no issues.\n\nThe tests in Dallas are ongoing.\n",
       "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8b4ca924_d3031630",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-05T07:40:56Z",
+      "side": 1,
+      "message": "That\u0027s a nice improvement!\nA minor complain is the sentence \u0027Compatible with OCP-VERSION\u0027 is written twice in the DCI UI",
+      "revId": "c8c88c76fdbc69808bc5076cec8b3aa58df863fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
