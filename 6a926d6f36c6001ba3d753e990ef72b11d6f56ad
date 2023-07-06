@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "245e4c16_54234a05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-06T18:42:21Z",
+      "side": 1,
+      "message": "Hey Tony and Charles, the change is tested on all pipelines: preflight, preflight-green, example-cnf. Tony, thank you for pointing out the issues, I fixed them. Charles, please feel free to merge both CR and PR in the dallas-pipelines. Thanks",
+      "revId": "6a926d6f36c6001ba3d753e990ef72b11d6f56ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
