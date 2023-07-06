@@ -16,6 +16,23 @@
       "message": "Hey Tony and Charles, the change is tested on all pipelines: preflight, preflight-green, example-cnf. Tony, thank you for pointing out the issues, I fixed them. Charles, please feel free to merge both CR and PR in the dallas-pipelines. Thanks",
       "revId": "6a926d6f36c6001ba3d753e990ef72b11d6f56ad",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5e5db10f_07a0e43e",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-06T20:06:39Z",
+      "side": 1,
+      "message": "What about this one? can be removed?",
+      "revId": "6a926d6f36c6001ba3d753e990ef72b11d6f56ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

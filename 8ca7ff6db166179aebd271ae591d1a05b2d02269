@@ -33,6 +33,24 @@
       "message": "The operator.version remains in here because these files (and line 150) are generated with this format, correct?",
       "revId": "8ca7ff6db166179aebd271ae591d1a05b2d02269",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b35ada61_692b62ca",
+        "filename": "roles/preflight/tasks/tests_preflight_check_operator.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 143,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-06T20:06:39Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4fd94cc0_6d8cf078",
+      "revId": "8ca7ff6db166179aebd271ae591d1a05b2d02269",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
