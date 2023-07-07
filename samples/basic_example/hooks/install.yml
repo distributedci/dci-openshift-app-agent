@@ -1,16 +1,4 @@
 ---
-- name: "Labeling namespace to comply with PodSecurity profiles"
-  community.kubernetes.k8s:
-    definition:
-      apiVersion: v1
-      kind: Namespace
-      metadata:
-        name: "{{ app_ns }}"
-        labels:
-          security.openshift.io/scc.podSecurityLabelSync: "false"
-          pod-security.kubernetes.io/enforce: "baseline"
-          pod-security.kubernetes.io/enforce-version: "latest"
-          pod-security.kubernetes.io/warn: "baseline"
 
 - name: Wait until namespace has openshift.io/sa.scc.uid-range annotation
   community.kubernetes.k8s_info:
@@ -51,4 +39,8 @@
             initialDelaySeconds: 30
             periodSeconds: 30
             successThreshold: 1
+  register: pod_creation
+  retries: 6
+  delay: 10
+  until: pod_creation is not failed
 ...
