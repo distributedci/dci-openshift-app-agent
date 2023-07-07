@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "08b9f53d_a1a6eaeb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-07T11:19:49Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "6a926d6f36c6001ba3d753e990ef72b11d6f56ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5e5db10f_07a0e43e",
@@ -48,6 +65,24 @@
       "writtenOn": "2023-07-06T20:06:39Z",
       "side": 1,
       "message": "What about this one? can be removed?",
+      "revId": "6a926d6f36c6001ba3d753e990ef72b11d6f56ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2d69a40c_a76940f3",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-07T11:19:49Z",
+      "side": 1,
+      "message": "I think this variable is used in other places, so needs to be checked",
+      "parentUuid": "5e5db10f_07a0e43e",
       "revId": "6a926d6f36c6001ba3d753e990ef72b11d6f56ad",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
