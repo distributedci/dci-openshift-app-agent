@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "2989ccd8afca72ca764e68287f17a0efb9bdc961",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a55bc150_65fa2972",
+        "filename": "samples/basic_example/hooks/install.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-07T20:17:02Z",
+      "side": 1,
+      "message": "For a pod please use wait[1] instead\n    wait: true\n    \nIf you need a more specific condition you could use wait_condition instead[2], but I think wait should be enough for this case\n\n[1] https://docs.ansible.com/ansible/2.10/collections/community/kubernetes/k8s_module.html#parameter-wait\n[2] https://docs.ansible.com/ansible/2.10/collections/community/kubernetes/k8s_module.html#parameter-wait_condition",
+      "revId": "2989ccd8afca72ca764e68287f17a0efb9bdc961",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
