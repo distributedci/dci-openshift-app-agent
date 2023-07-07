@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c75a786c_115091ba",
+        "filename": "samples/basic_example/hooks/install.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-07-07T16:57:46Z",
+      "side": 0,
+      "message": "I guess this warn label is no longer needed?",
+      "revId": "cd2fbeadb84c83aaa56c349a2820c49d5d9ddca0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
