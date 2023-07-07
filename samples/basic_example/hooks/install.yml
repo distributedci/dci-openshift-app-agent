@@ -1,28 +1,23 @@
 ---
-- name: "Labeling namespace to comply with PodSecurity profiles"
+- name: Retrieve pullsecret's content
+  slurp:
+    src: "{{ pullsecret_tmp_file }}"
+  register: pullsecret_content
+  no_log: true
+
+- name: Create a secret for the pod
   community.kubernetes.k8s:
+    state: present
     definition:
       apiVersion: v1
-      kind: Namespace
+      kind: Secret
       metadata:
-        name: "{{ app_ns }}"
-        labels:
-          security.openshift.io/scc.podSecurityLabelSync: "false"
-          pod-security.kubernetes.io/enforce: "baseline"
-          pod-security.kubernetes.io/enforce-version: "latest"
-          pod-security.kubernetes.io/warn: "baseline"
+        name: basic-example-secret
+        namespace: "{{ app_ns }}"
+      type: kubernetes.io/dockerconfigjson
+      data:
+        .dockerconfigjson: "{{ pullsecret_content.content }}"
 
-- name: Wait until namespace has openshift.io/sa.scc.uid-range annotation
-  community.kubernetes.k8s_info:
-    api_version: v1
-    kind: Namespace
-    name: "{{ app_ns }}"
-  register: namespace_annotations
-  retries: 15
-  delay: 5
-  until:
-    - namespace_annotations.resources|length == 1
-    - namespace_annotations.resources[0].metadata.annotations["openshift.io/sa.scc.uid-range"] is defined
 
 - name: Create a simple pod
   community.kubernetes.k8s:
@@ -51,4 +46,7 @@
             initialDelaySeconds: 30
             periodSeconds: 30
             successThreshold: 1
+        imagePullSecrets:
+          - name: basic-example-secret
+    wait: true
 ...
