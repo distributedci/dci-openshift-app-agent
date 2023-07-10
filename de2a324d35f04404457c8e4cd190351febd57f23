@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 3:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/2b5f2730-6a06-4d6e-a313-4ee482d46957/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/28801/\n\nWorks in disconnected. Now I\u0027ll test in connected with sno, where we had the issues that we\u0027re trying to mitigate.",
       "revId": "de2a324d35f04404457c8e4cd190351febd57f23",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "007ff18e_3e605054",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-10T13:52:15Z",
+      "side": 1,
+      "message": "Debug job in BOS2 is complaining about the pull rate limit reached for this image:\n\n```\n  Type     Reason   Age                      From     Message\n  ----     ------   ----                     ----     -------\n  Warning  Failed   80m (x7 over 3h8m)       kubelet  Failed to pull image \"docker.io/library/nginx\": rpc error: code \u003d Unknown desc \u003d fetching target platform image selected from manifest list: reading manifest sha256:1bb5c4b86cb7c1e9f0209611dc2135d8a2c1c3a6436163970c99193787d067ea in docker.io/library/nginx: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit\n  Warning  Failed   41m (x29 over 3h51m)     kubelet  Failed to pull image \"docker.io/library/nginx\": rpc error: code \u003d Unknown desc \u003d reading manifest latest in docker.io/library/nginx: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit\n  Normal   BackOff  6m29s (x877 over 3h51m)  kubelet  Back-off pulling image \"docker.io/library/nginx\"\n  Normal   Pulling  91s (x45 over 3h51m)     kubelet  Pulling image \"docker.io/library/nginx\"\n\n```\n\nWe need to update the pullsecret used by BOS2 jobs to fix this",
+      "revId": "de2a324d35f04404457c8e4cd190351febd57f23",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
