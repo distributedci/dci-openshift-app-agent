@@ -1,0 +1,7 @@
+---
+- name: Remove tmp directory
+  file:
+    path: "{{ scorecard_tmp_dir.path }}"
+    state: absent
+  when: scorecard_tmp_dir is defined
+...
