@@ -24,6 +24,11 @@
     name: preflight
   when: preflight_operators_to_certify is defined
 
+- name: Operator-SDK Scorecard tests
+  include_role:
+    name: operator-sdk
+  when: scorecard_operators_to_certify is defined
+
 - name: CNF Project Creation-Only tests for Vendor Validation
   include_role:
     name: openshift-cnf

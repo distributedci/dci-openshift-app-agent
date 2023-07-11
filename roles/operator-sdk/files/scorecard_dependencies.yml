@@ -1,0 +1,5 @@
+---
+# Dependency to start scorecard pod 1.30.0. TODO: open an issue to Operator-SDK
+images:
+  - docker.io/busybox@sha256:315fd9e7f9056a6d76dfc2c63a5377c37aaa79faed354dce683147ed781adc77
+...
