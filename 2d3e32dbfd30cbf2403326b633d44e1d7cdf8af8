@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd3ca93f_3db7d7de",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 10
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-11T15:23:16Z",
+      "side": 1,
+      "message": "Also forgot that it would be best if you reword a bit this subject/title as it would be more clear the main reason of the change",
+      "revId": "2d3e32dbfd30cbf2403326b633d44e1d7cdf8af8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "e05410bd_2a7d7d2c",
