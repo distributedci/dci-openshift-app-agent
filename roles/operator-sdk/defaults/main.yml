@@ -1,0 +1,3 @@
+---
+# operator-sdk standalone tests
+operator_sdk_image: ""

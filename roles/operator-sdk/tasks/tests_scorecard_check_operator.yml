@@ -1,12 +1,7 @@
+# TODO: rework the entire file making it standalone for the scorecard-sdk role
 ---
 - name: Setup tmp scorecard folders
   block:
-    - name: Create temporary scorecard directory
-      tempfile:
-        state: directory
-        prefix: scorecard_tmp_dir.
-      register: scorecard_tmp_dir
-
     - name: Set directories for artifacts and operator bundle extract
       set_fact:
         scorecard_artifacts: "{{ scorecard_tmp_dir.path }}/artifacts"
@@ -23,9 +18,9 @@
       loop_control:
         loop_var: scorecard_dir_to_create
 
-- name: Extract bundle
+- name: Extract operator bundle
   block:
-    - name: Extract bundle and add read permissions
+    - name: Extract operator bundle and add read permissions
       shell:
         cmd: |
           {{ oc_tool_path }} image extract {{ operator.bundle_image }} --confirm -a {{ partner_creds }}

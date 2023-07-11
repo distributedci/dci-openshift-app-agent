@@ -1,0 +1,54 @@
+---
+- name: Run Operator-SDK Scorecard certification suite
+  block:
+    - name: Create temporary directory for config and scorecard binary
+      tempfile:
+        state: directory
+        prefix: scorecard_tmp_dir.
+      register: scorecard_tmp_dir
+
+    - name: Copy kubeconfig file into tmp config directory
+      copy:
+        src: "{{ kubeconfig_path }}"
+        dest: "{{ scorecard_tmp_dir.path }}"
+        mode: "0644"
+
+    - name: Copy registry authentication into config folder
+      copy:
+        src: "{{ partner_creds }}"
+        dest: "{{ scorecard_tmp_dir.path }}/config.json"
+      when: partner_creds | length
+    
+    # To run scorecard test suite,
+    # scorecard_operators_to_certify variable should be provided
+    # in the config file /etc/dci-openshift-app-agent/settings.yml
+    - name: Create empty list of operators to check
+      set_fact:
+        scorecard_operators_to_check: []
+
+    # TODO: make preflight role to use and change the external vars
+    # - name: Convert scorecard_operators_to_certify to scorecard_operators_to_check
+    #   include_tasks: prepare_operator_metadata.yml
+    #   loop: "{{ scorecard_operators_to_certify }}"
+    #   loop_control:
+    #     loop_var: operator
+    
+    # TODO: next step
+    # # Optional: build operator-sdk image. This can be used
+    # # to test a unmerged PRs in operator-sdk repository
+    # # when a ready image is not available
+    # - name: Build scorecard_image
+    #   include_tasks: prepare_scorecard_image.yml
+    #   # this variable is set in test-runner
+    #   when: scorecard_source_dir is defined
+
+    # Main tests
+    - name: Scorecard tests
+      include_tasks: tests_scorecard_check_operator.yml
+      loop: "{{ scorecard_operators_to_check }}"
+      loop_control:
+        loop_var: operator
+  always:
+    - name: Teardown
+      include_tasks: teardown.yml
+...
