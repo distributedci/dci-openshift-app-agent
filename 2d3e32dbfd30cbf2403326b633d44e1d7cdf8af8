@@ -16,6 +16,57 @@
       "message": "Previous failure in BOS2 was because I didn\u0027t apply the correct settings file with the partner_config variable loaded. Now it\u0027s working. Only difference in this patchset is to add a no_log entry to avoid printing the secret.",
       "revId": "2d3e32dbfd30cbf2403326b633d44e1d7cdf8af8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "025c0804_89cef349",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-11T15:21:55Z",
+      "side": 1,
+      "message": "I\u0027m sorry Ramón, didn\u0027t realize earlier that the main purpose of the change is to avoid the rate limit on pull for a docker.io image.\n\nLet\u0027s avoid using docker.io image if possible, and also let\u0027s not make a requirement to have a docker account.",
+      "revId": "2d3e32dbfd30cbf2403326b633d44e1d7cdf8af8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "72e79ad2_098d9320",
+        "filename": "samples/basic_example/hooks/install.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-11T15:21:55Z",
+      "side": 1,
+      "message": "I rather do this optional *if* creds are provided, otherwise we are forcing to anyone using this sample to create a docker account",
+      "revId": "2d3e32dbfd30cbf2403326b633d44e1d7cdf8af8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "98487459_ccfba748",
+        "filename": "samples/basic_example/hooks/install.yml",
+        "patchSetId": 10
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-11T15:21:55Z",
+      "side": 1,
+      "message": "let\u0027s avoid docker.io because of the rate limiting, please use\n    mirror.gcr.io/library/nginx:latest\n\nAs there\u0027s no rate limiting there.",
+      "revId": "2d3e32dbfd30cbf2403326b633d44e1d7cdf8af8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
