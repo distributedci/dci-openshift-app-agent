@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8a27439c_240b6482",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T14:04:40Z",
+      "side": 1,
+      "message": "Oh, now the hints disappeared :(",
+      "revId": "342250ceb29e938d58879d5117c9b96331de1caf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
