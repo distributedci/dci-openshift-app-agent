@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "08c629f6_c57566a0",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-12T13:50:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "357278c7_710fa179",
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8ab0c2a5_985ae418",
@@ -31,6 +49,30 @@
       "writtenOn": "2023-07-12T13:17:54Z",
       "side": 1,
       "message": "we have to include `telco` here:\n`\"common,extended,telco,preflight\"`\nConsequently, we need to update the tnf internal docs to include `telco` suite: https://github.com/dci-labs/dallas-internal-docs/blob/master/how-to-test-tnf-changes.md, do you want to take care of that change too?",
+      "range": {
+        "startLine": 11,
+        "startChar": 557,
+        "endLine": 11,
+        "endChar": 582
+      },
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e392dd8c_7097b175",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-12T13:50:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8ab0c2a5_985ae418",
       "range": {
         "startLine": 11,
         "startChar": 557,
@@ -58,6 +100,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "135a671a_1c80f243",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-12T13:50:57Z",
+      "side": 1,
+      "message": "Thanks for the review, I will launch some additional tests with 4.3.0 and 4.2.4",
+      "parentUuid": "f268afa3_bd0b6575",
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7900f0d_ca2f837c",
@@ -81,6 +141,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "247cc84a_1147e9be",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-12T13:50:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d7900f0d_ca2f837c",
+      "range": {
+        "startLine": 13,
+        "startChar": 370,
+        "endLine": 13,
+        "endChar": 376
+      },
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dc6505ab_cb71fc07",
@@ -94,6 +178,30 @@
       "writtenOn": "2023-07-12T13:17:54Z",
       "side": 1,
       "message": "this variable is also used in tests.yml, defined directly when launching cnf-cert. You\u0027ll need to remove that line too.",
+      "range": {
+        "startLine": 48,
+        "startChar": 4,
+        "endLine": 48,
+        "endChar": 25
+      },
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "37138965_4b863df9",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-12T13:50:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc6505ab_cb71fc07",
       "range": {
         "startLine": 48,
         "startChar": 4,
