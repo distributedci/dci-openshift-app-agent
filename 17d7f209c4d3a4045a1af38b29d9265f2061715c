@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8654af12_c8bd4d57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T15:39:34Z",
+      "side": 1,
+      "message": "let\u0027s try with v4.2.4 with check_workload and after that, I think it will be ready for merging",
+      "revId": "17d7f209c4d3a4045a1af38b29d9265f2061715c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
