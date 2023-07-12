@@ -16,6 +16,23 @@
       "message": "let\u0027s try with v4.2.4 with check_workload and after that, I think it will be ready for merging",
       "revId": "17d7f209c4d3a4045a1af38b29d9265f2061715c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "69289d5b_c2bd26da",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-07-12T19:38:23Z",
+      "side": 1,
+      "message": "Ready to be merged\nTests:\n* 4.3.1: https://www.distributed-ci.io/jobs/c8457395-7fb3-49c1-a9dc-64856c1a1e3e/jobStates?sort\u003ddate\u0026task\u003d27a5cee6-504d-4ad1-a991-a7e1b6ed1291\n* 4.3.0: https://www.distributed-ci.io/jobs/52f1dd5f-8121-4d24-87dd-b4b70f043bf8/jobStates?sort\u003ddate\u0026task\u003dc8a231e6-ef7d-47aa-a5d9-a2115191b948\n* 4.2.4: https://www.distributed-ci.io/jobs/45a31cb0-afe5-475e-b526-9998224f8536/jobStates?sort\u003ddate\u0026task\u003d047868dc-2524-4c4c-94b3-699c404c158a",
+      "revId": "17d7f209c4d3a4045a1af38b29d9265f2061715c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
