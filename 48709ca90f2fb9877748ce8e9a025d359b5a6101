@@ -1,0 +1,107 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "357278c7_710fa179",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T13:17:54Z",
+      "side": 1,
+      "message": "Can we add NFS storage to the tests? Then we will be able to test mostly the same we have in dallas:\n\n```\nTest-Args-Hints: -e enable_nfs_storage\u003dtrue -e nfs_server\u003d192.168.16.10 -e nfs_path\u003d/exports/external-provisioner\n```",
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ab0c2a5_985ae418",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T13:17:54Z",
+      "side": 1,
+      "message": "we have to include `telco` here:\n`\"common,extended,telco,preflight\"`\nConsequently, we need to update the tnf internal docs to include `telco` suite: https://github.com/dci-labs/dallas-internal-docs/blob/master/how-to-test-tnf-changes.md, do you want to take care of that change too?",
+      "range": {
+        "startLine": 11,
+        "startChar": 557,
+        "endLine": 11,
+        "endChar": 582
+      },
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f268afa3_bd0b6575",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T13:17:54Z",
+      "side": 1,
+      "message": "Changes in dallas looks fine, I\u0027d just retest in dallas with v4.3.0 and v4.2.4 to check they\u0027re working fine\nFor BOS2, just to add telco test suite. In your next patchset, a new job should be launched to test that",
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7900f0d_ca2f837c",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T13:17:54Z",
+      "side": 1,
+      "message": "v4.3.1",
+      "range": {
+        "startLine": 13,
+        "startChar": 370,
+        "endLine": 13,
+        "endChar": 376
+      },
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc6505ab_cb71fc07",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-12T13:17:54Z",
+      "side": 1,
+      "message": "this variable is also used in tests.yml, defined directly when launching cnf-cert. You\u0027ll need to remove that line too.",
+      "range": {
+        "startLine": 48,
+        "startChar": 4,
+        "endLine": 48,
+        "endChar": 25
+      },
+      "revId": "48709ca90f2fb9877748ce8e9a025d359b5a6101",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
