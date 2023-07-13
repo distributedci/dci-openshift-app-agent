@@ -16,6 +16,24 @@
       "message": "Oh, now the hints disappeared :(",
       "revId": "342250ceb29e938d58879d5117c9b96331de1caf",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79084621_41fa962f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-13T07:32:51Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "8a27439c_240b6482",
+      "revId": "342250ceb29e938d58879d5117c9b96331de1caf",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
