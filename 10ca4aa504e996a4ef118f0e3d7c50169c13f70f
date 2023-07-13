@@ -16,6 +16,23 @@
       "message": "The basic example has never been working in disconnected, this is a successful job where the pod was never running: \n\nhttps://www.distributed-ci.io/jobs/888ccf5c-0e90-48a6-a15d-3cd28f2aa7bf/jobStates?sort\u003ddate\u0026task\u003d7eed30e8-556b-44bc-aa68-9f9c726a467b\n\nIn a recent change https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/28801 validation of the pod was added but was not tested in a disconnected environment, this caused: https://www.distributed-ci.io/jobs/2288d8c7-5741-4b9b-9e92-854004e6c3fe/jobStates?sort\u003ddate\u0026task\u003dba75af55-6dcd-4595-bbea-dbd6995483d7\n\nThis change should add the ICSP needed so a disconnected cluster can pull the image for the sample container",
       "revId": "10ca4aa504e996a4ef118f0e3d7c50169c13f70f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d6f52c1d_d557b966",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-07-13T22:41:51Z",
+      "side": 1,
+      "message": "Can this be moved to a block variable? just to avoid replacing in 2 places?",
+      "revId": "10ca4aa504e996a4ef118f0e3d7c50169c13f70f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
