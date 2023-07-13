@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d23612a8_b1222f57",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-13T23:12:43Z",
+      "side": 1,
+      "message": "Instead of ICSP the change uses the image mirrored in the local registry. This will avoid a change when ICSP are retired in 4.14",
+      "revId": "e2e42c99d9ec56bdfc5a0f372d700d2616714d39",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
