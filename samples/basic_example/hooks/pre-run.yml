@@ -13,13 +13,29 @@
   set_fact:
     app_ns: "{{ dci_openshift_app_ns|default('myns') }}"
 
-- name: "basic_example : Mirror nginx image"
-  include_role:
-    name: mirror_images
-  vars:
-    images:
-      - mirror.gcr.io/library/nginx:latest
-    authfile: "{{ pullsecret_tmp_file }}"
+- name: Mirror image and enable mirroring
+  block:
+    - name: "basic_example : Mirror nginx image"
+      include_role:
+        name: mirror_images
+      vars:
+        images:
+          - mirror.gcr.io/library/nginx:latest
+        authfile: "{{ pullsecret_tmp_file }}"
+
+    - name: "basic_example : Create ICSP"
+      community.kubernetes.k8s:
+        state: present
+        definition:
+          apiVersion: v1/alpha1
+          kind: ImageContentSourcePolicy
+          metadata:
+            name: mirror-nginx
+          spec:
+            repositoryDigestMirrors:
+              - mirrors:
+                  - "{{ dci_local_registry }}/library/nginx:latest"
+                source: mirror.gcr.io/library/nginx:latest
   when:
     - dci_disconnected | default(false) | bool
     - dci_local_registry | length
