@@ -33,6 +33,24 @@
       "message": "Can this be moved to a block variable? just to avoid replacing in 2 places?",
       "revId": "10ca4aa504e996a4ef118f0e3d7c50169c13f70f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e01134b6_3949766d",
+        "filename": "samples/basic_example/hooks/pre-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-13T22:55:45Z",
+      "side": 1,
+      "message": "Good idea, done",
+      "parentUuid": "d6f52c1d_d557b966",
+      "revId": "10ca4aa504e996a4ef118f0e3d7c50169c13f70f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
