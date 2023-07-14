@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d606276_f0bcd854",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-14T07:50:11Z",
+      "side": 1,
+      "message": "LGTM, I\u0027ll also validate in disconnected with an update of the pipeline I\u0027ve just created, but should be fine.",
+      "revId": "dc961cce8340a07660d16120ff8e25aafa247103",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
