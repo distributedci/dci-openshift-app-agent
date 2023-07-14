@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c615cd8_fdef4835",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-14T18:18:15Z",
+      "side": 1,
+      "message": "The validation is failing because is not using the code in this change as seen in: https://www.distributed-ci.io/jobs/fdcce7dd-0904-4095-a726-8906a674f607/jobStates?sort\u003ddate\u0026task\u003dace21365-6881-4bf4-999d-cd29a3b29391 where /var/lib/dci-openshift-app-agent/samples/basic_example/hooks/install.yml:2 is loaded instead of the change, adding a dependency to get it fixed in test-runner",
+      "revId": "b44dc50168b2b1d68b03797eac33dc26bb6046d0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
