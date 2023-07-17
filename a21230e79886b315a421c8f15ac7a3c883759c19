@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "94c45169_61e65a25",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-17T15:07:10Z",
+      "side": 1,
+      "message": "FYI @tony @manny, with `wait_condition`, the only thing we can do is to check status, not really checking the presence of the missed label. I suppose it\u0027s fine to start with this and check later on if we need something more. What do you think?",
+      "revId": "a21230e79886b315a421c8f15ac7a3c883759c19",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
