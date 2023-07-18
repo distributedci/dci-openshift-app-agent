@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "94749373f6751e3126da45876c9f5436ab889bf7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3552a671_ddacda44",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-18T11:09:50Z",
+      "side": 1,
+      "message": "I think I cannot merge it unless having a +2 from someone. Can somebody put a +2 to avoid issues? Thanks!",
+      "revId": "94749373f6751e3126da45876c9f5436ab889bf7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
