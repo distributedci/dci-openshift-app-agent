@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eefc8639_71ca257b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-19T15:18:29Z",
+      "side": 1,
+      "message": "Hello everyone, the change is ready for review. Here are the tests:\n\n1/ preflight-green: https://www.distributed-ci.io/jobs/6749d6e8-e2b0-40a1-b1df-ed26706759e2/jobStates\n\nEverything is 100% ok.\n\n2/ operator-sdk: https://www.distributed-ci.io/jobs/9285cebe-3eb4-482c-a3da-3dce0900a34a/files\n\nThe job is green, but the tests are red, as you can see in the scorecard_* files. They are red because the scorecard-testing pod is trying to pull busybox:1.33.0 by tag.\n\nThis issue could be resolved in two ways: by contributing to Operator-SDK or by replacing ImageContentSourcePolicy with ImageTagMirrorSet and ImageDigestMirrorSet in DOAA. \n\nBoth solutions require external dependencies. That\u0027s why I would prefer to merge the skeleton right now and then work precisely on the issue.",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
