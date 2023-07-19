@@ -33,6 +33,199 @@
       "message": "Thanks Tatiana, \n- Should we add a README for this new role.\n_ I think it will be good to document that {{ oc_tool_path }} and {{ opm_tool_path }} variables are required or set them to the default system binary. \n\nRegards",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec01c70e_dbf97b81",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Hi Tania, thanks for all the effort here, I have some questions and requests\n\nCould you help me to understand better what role is playing operator-sdk in the certification?\nIs the operator-sdk an alternative to certify operators as preflight? or is it only a subset for the certification?\n\nI\u0027m struggling to understand what the benefit operator-sdk is giving us on its own vs preflight.\n\nFor the role there are some changes that I\u0027d like to see\n\n- Variable names - Add a prefix to the role variables as we have been doing with other roles\nThis helps us to have better control over them and avoid clashing with other variables in other roles or plays.  So far we have been using the initials of the role\u0027s name, e.g. `os_` would be for operator-sdk role\n- Avoid using play variables, instead define a role variable to handle it, e.g. dci_disconnected -\u003e os_disconnected\n- Documentation should include dependencies, explanation of variables, its defaults and a few examples.\n- Cleanup after your role, not only directories but k8s resources need to be removed, e.g. ICSP\n\nAll of the above is to make the role as independent as possible.\n\nThanks!",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e48763bf_e8e9350e",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Is this file empty on purpose or missed to push the documentation?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5cf71352_0ba53aa9",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Can we get the list of images from the repo instead? I\u0027m afraid we will have to change this every new release, if we can point to a tag or commit we can get the images and the digest from there, right?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d60a8880_d3e85f82",
+        "filename": "roles/operator-sdk/tasks/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Where is this the copied kubeconfig_path used?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4bd7b8a3_7c3f35b1",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Could you move this var into the next task and avoid defining it as a fact?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fbf37878_d0800cdd",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Where does pullsecret_tmp_file comes from?",
+      "range": {
+        "startLine": 52,
+        "startChar": 39,
+        "endLine": 52,
+        "endChar": 58
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1382e8f_1c438c17",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Isn\u0027t this duplicating the bundle entries? the scorecard_images has both bundles and scorecard_basic_images, should this be scorecard_basic_images instead?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fd680c2_b88e63e4",
+        "filename": "roles/operator-sdk/tasks/teardown.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "nit: rename to be the pre-run tmp dir",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2a088c5e_08153692",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Should the binary point to the current directory instead? ./operator-sdk",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1d38f62e_30329a98",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "Should this use the copied kubeconfig_path instead?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "01bdee86_c75f0fdc",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-19T16:50:09Z",
+      "side": 1,
+      "message": "should this have a when condition to only run when scorecard_pods and scorecard_events are defined?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
