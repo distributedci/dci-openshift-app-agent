@@ -24,6 +24,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bc0c9d9_fcc36c08",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-07-19T14:08:37Z",
+      "side": 1,
+      "message": "\u003e do we really need to also iterate over outputs variable defined in the previous task? because it only has one value, which is kubeconfig\n\nyes that\u0027s the generic mechanism from dci-pipeline so we need to do it like this.",
+      "parentUuid": "8392af56_07ee14ed",
+      "range": {
+        "startLine": 33,
+        "startChar": 13,
+        "endLine": 33,
+        "endChar": 29
+      },
+      "revId": "aa2322bd6215b3e7a7a9f65c05ad4713ec6624c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "97d36c66_f35c6657",
@@ -37,6 +61,30 @@
       "writtenOn": "2023-07-06T10:21:55Z",
       "side": 1,
       "message": "is this variable defined by default? because I\u0027ve been checking some jobs executed in this change and this task is skipped",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 24
+      },
+      "revId": "aa2322bd6215b3e7a7a9f65c05ad4713ec6624c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b993f8a_698c842a",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-07-19T14:08:37Z",
+      "side": 1,
+      "message": "\u003e is this variable defined by default? because I\u0027ve been checking some jobs executed in this change and this task is skipped\n\nthis variable exists only if defined in the pipeline.",
+      "parentUuid": "97d36c66_f35c6657",
       "range": {
         "startLine": 37,
         "startChar": 8,
