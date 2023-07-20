@@ -93,6 +93,30 @@
       },
       "revId": "aa2322bd6215b3e7a7a9f65c05ad4713ec6624c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0c574a7_0b3ec28b",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-20T10:04:25Z",
+      "side": 1,
+      "message": "Is this documented? Because, as far as I know, job_info is created at the beginning of the job, taking some context from DCI. I don\u0027t really understand, from a practical point of view, that we need to create this in the pipeline, since job_info is created by the agent.",
+      "parentUuid": "4b993f8a_698c842a",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 24
+      },
+      "revId": "aa2322bd6215b3e7a7a9f65c05ad4713ec6624c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
