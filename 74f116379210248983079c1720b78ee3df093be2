@@ -16,6 +16,23 @@
       "message": "This time the ns has been created as expected and the log shows the annotations, I see the events are showing the scc were created:\n\nopenshift-kube-controller-manager                  17s         Normal    CreatedSCCRanges                         pod/kube-controller-manager-sno                                   created SCC ranges for myns namespace\n\nThe problem now is with the pod api call, don\u0027t think we can do much there since that\u0027s the k8s API returning 404, but let\u0027s try one more time.",
       "revId": "74f116379210248983079c1720b78ee3df093be2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9775332_38fd9b83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-20T22:26:10Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "74f116379210248983079c1720b78ee3df093be2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
