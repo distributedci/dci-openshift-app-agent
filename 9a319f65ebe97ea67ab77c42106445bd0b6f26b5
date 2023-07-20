@@ -16,6 +16,24 @@
       "message": "The debugs are good for troubleshooting in this change, once figured out let\u0027s remove them.\n\nI\u0027d suggest to add the expected conditions in the creation of the ns not as a separated task.",
       "revId": "9a319f65ebe97ea67ab77c42106445bd0b6f26b5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "018ef242_5c3ec000",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-20T15:36:39Z",
+      "side": 1,
+      "message": "Thanks Tony. Is there a way of adding this condition when creating the namespace, with the k8s Ansible module? https://github.com/redhat-cip/dci-openshift-app-agent/blob/master/plays/install.yml#L2. I was trying to check a way of doing that but I didn\u0027t manage to find an easy way",
+      "parentUuid": "e83002d8_b2ef7cbf",
+      "revId": "9a319f65ebe97ea67ab77c42106445bd0b6f26b5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
