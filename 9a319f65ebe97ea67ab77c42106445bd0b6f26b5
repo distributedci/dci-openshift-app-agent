@@ -34,6 +34,24 @@
       "parentUuid": "e83002d8_b2ef7cbf",
       "revId": "9a319f65ebe97ea67ab77c42106445bd0b6f26b5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ad89d5f_c7f56d03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-20T17:58:55Z",
+      "side": 1,
+      "message": "Hey Ramón, I went ahead and implemented the change here int he namespace creation. You\u0027re right is not easy to add the conditions in the wait_condition of ansible as it\u0027s limited to the API status of the object, and for namespace is quite simple[1] and is not considering annotations.\n\nThe retry in the ns should not delete/create because the k8s module is patching the resource on every attempt so we should be safe there.  I tested manually and it takes about 2s to add the annotations, the delay should be enough for what we have observed in the failures.\n\n[1] https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.24/#namespacecondition-v1-core",
+      "parentUuid": "018ef242_5c3ec000",
+      "revId": "9a319f65ebe97ea67ab77c42106445bd0b6f26b5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
