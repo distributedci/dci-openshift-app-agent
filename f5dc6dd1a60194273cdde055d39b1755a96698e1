@@ -50,6 +50,24 @@
       "message": "thanks, looks good to me, wdyt of adding the var in the vars table of dci-openshift-app-agent/roles/opcap-tool/README.md ? ",
       "revId": "f5dc6dd1a60194273cdde055d39b1755a96698e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40694960_d430265f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-20T13:23:14Z",
+      "side": 1,
+      "message": "The thing is, opcap is just executed in the tnf_test_example sample, not in the role, so I guess the variable would not be visible if just defining it in the role. That\u0027s why I\u0027ve done this in that way.\nIf there are other workloads using opcap, maybe we can rethink about this, but for the moment I\u0027d leave this in this way.",
+      "parentUuid": "abf5d3dd_7a50ec53",
+      "revId": "f5dc6dd1a60194273cdde055d39b1755a96698e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
