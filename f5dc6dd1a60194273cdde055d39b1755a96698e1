@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "f5dc6dd1a60194273cdde055d39b1755a96698e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "abf5d3dd_7a50ec53",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-07-20T13:13:56Z",
+      "side": 1,
+      "message": "thanks, looks good to me, wdyt of adding the var in the vars table of dci-openshift-app-agent/roles/opcap-tool/README.md ? ",
+      "revId": "f5dc6dd1a60194273cdde055d39b1755a96698e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
