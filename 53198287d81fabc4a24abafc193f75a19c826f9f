@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4508e2f9_9d1e2a00",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-20T21:15:10Z",
+      "side": 1,
+      "message": "The conditional is working as expected, it failed because after all the attempts it didn\u0027t have the annotations\n\nhttps://www.distributed-ci.io/jobs/19a79151-75d9-4ac3-a931-1b5e9d0f7234/jobStates?sort\u003ddate\u0026task\u003d01ca1f5a-d5bc-4dde-9f15-03d47c5e0252\n\nBut is strange that it takes that long to do so because I tried in the same SNO cluster and it takes only a couple of seconds:\n\nTASK [Create namespace] *******************************************************************************************************************************************************************************************\nFAILED - RETRYING: Create namespace (10 retries left).\nok: [localhost] \u003d\u003e {\"attempts\": 2, \"changed\": false, \"method\": \"patch\", \"result\": {\"apiVersion\": \"v1\", \"kind\": \"Namespace\", \"metadata\": {\"annotations\": {\"openshift.io/sa.scc.mcs\": \"s0:c26,c25\", \"openshift.io/sa.scc.supplemental-groups\": \"1000700000/10000\", \"openshift.io/sa.scc.uid-range\": \"1000700000/10000\"}, \"creationTimestamp\": \"2023-07-20T21:13:27Z\", \"labels\": {\"kubernetes.io/metadata.name\": \"myns\", \"pod-security.kubernetes.io/enforce\": \"baseline\", \"pod-security.kubernetes.io/enforce-version\": \"latest\", \"security.openshift.io/scc.podSecurityLabelSync\": \"false\"}, \"managedFields\": [{\"apiVersion\": \"v1\", \"fieldsType\": \"FieldsV1\", \"fieldsV1\": {\"f:metadata\": {\"f:labels\": {\".\": {}, \"f:kubernetes.io/metadata.name\": {}, \"f:pod-security.kubernetes.io/enforce\": {}, \"f:pod-security.kubernetes.io/enforce-version\": {}, \"f:security.openshift.io/scc.podSecurityLabelSync\": {}}}}, \"manager\": \"OpenAPI-Generator\", \"operation\": \"Update\", \"time\": \"2023-07-20T21:13:27Z\"}, {\"apiVersion\": \"v1\", \"fieldsType\": \"FieldsV1\", \"fieldsV1\": {\"f:metadata\": {\"f:annotations\": {\".\": {}, \"f:openshift.io/sa.scc.mcs\": {}, \"f:openshift.io/sa.scc.supplemental-groups\": {}, \"f:openshift.io/sa.scc.uid-range\": {}}}}, \"manager\": \"cluster-policy-controller\", \"operation\": \"Update\", \"time\": \"2023-07-20T21:13:27Z\"}], \"name\": \"myns\", \"resourceVersion\": \"40230\", \"uid\": \"c3569e87-131c-457c-b977-d21eadb47936\"}, \"spec\": {\"finalizers\": [\"kubernetes\"]}, \"status\": {\"phase\": \"Active\"}}}\n\nI\"ll increase the delay to check and see how it goes",
+      "revId": "53198287d81fabc4a24abafc193f75a19c826f9f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
