@@ -1,4 +1,35 @@
 ---
+# Ensure that openshift.io/sa.scc.uid-range annotation is present in the target namespace before
+# creating the pod.
+- name: Debug namespace status
+  community.kubernetes.k8s_info:
+    api_version: v1
+    kind: Namespace
+    name: "{{ app_ns }}"
+  register: ns_info
+
+- name: Wait until namespace has openshift.io/sa.scc.uid-range annotation
+  block:
+    community.kubernetes.k8s_info:
+      api_version: v1
+      kind: Namespace
+      name: "{{ app_ns }}"
+    register: ns_info
+    retries: 15
+    delay: 5
+    until:
+      - ns_info.resources|length == 1
+      - ns_info.resources[0].metadata.annotations["openshift.io/sa.scc.uid-range"] is defined
+  always:
+    - name: Debug namespace status after checking the annotation
+      community.kubernetes.k8s_info:
+        api_version: v1
+        kind: Namespace
+        name: "{{ app_ns }}"
+  when:
+    - ns_info.resources|length == 1
+    - ns_info.resources[0].metadata.annotations["openshift.io/sa.scc.uid-range"] is not defined
+
 - name: Create a simple pod
   vars:
     app_img: |-
