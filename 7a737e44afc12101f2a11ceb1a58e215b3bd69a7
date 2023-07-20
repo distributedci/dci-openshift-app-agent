@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4630f88_6f00e515",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-20T09:09:33Z",
+      "side": 1,
+      "message": "I\u0027ve made the change to unblock this, since Charles is on PTO. The rest was fine",
+      "revId": "7a737e44afc12101f2a11ceb1a58e215b3bd69a7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
