@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c8f8957_f0abcba6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 20
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:28:26Z",
+      "side": 1,
+      "message": "Hi Tony, Ramon, and Beto, thank you for all the reviews! I addressed the feedback, please do not hesitate to check once again.\n\nTony:\n\u003e Could you help me to understand better what role is playing operator-sdk in the certification? I\u0027m struggling to understand what the benefit operator-sdk is giving us on its own vs preflight.\n\nAs we discussed yesterday during the daily, that\u0027s for standalone testing, to ensure that they will not break the integration.\n\n\u003e Add a prefix to the role variables as we have been doing with other roles\n\nDone, thank you. I only kept credentials, kubeconfig and disconnected to be global, so that we have some visibility on them. Role-related variables are moved to use scorecard prefix.\n\n\nBeto:\n\u003e Should we add a README for this new role.\n\nDone, thanks.\n\n\u003e _ I think it will be good to document that {{ oc_tool_path }} and {{ opm_tool_path }} variables are required or set them to the default system binary. \n\nI\u0027ll push this change in 5 min, thanks, missed it somehow.\n\n\nRamon:\n\u003e Some comments from my side, mainly to confirm if some variables are still needed on preflight or not\n\nI refined the docs, thank you!",
+      "revId": "eaef9f01430239bfc944bdd004af8534115c058c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
