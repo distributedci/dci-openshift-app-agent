@@ -33,6 +33,24 @@
       "message": "recheck",
       "revId": "74f116379210248983079c1720b78ee3df093be2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a891e9cd_91b891fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-21T08:40:00Z",
+      "side": 1,
+      "message": "It happened again and it\u0027s quite weird... it looks like the case where it was failing because of missed SCC annotation: somehow, the pod is not able to be created\nMay we repeat the creation of the pod until it is successful? Let me try that",
+      "parentUuid": "8edd39f7_aa299d06",
+      "revId": "74f116379210248983079c1720b78ee3df093be2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
