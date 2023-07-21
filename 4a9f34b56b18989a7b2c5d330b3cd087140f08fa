@@ -86,6 +86,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fb1c22a_4d6ed1a2",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "thank you for catching that, I forgot to write the documentation",
+      "parentUuid": "e48763bf_e8e9350e",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5cf71352_0ba53aa9",
@@ -126,6 +144,48 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fa9262b9_050d3e19",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "Hi Tony, we follow the practice of pinning working versions of dependent software throughout DOAA (TNF, Preflight, opcap, etc). These versions will be overwritten during the execution of daily jobs.",
+      "parentUuid": "5cf71352_0ba53aa9",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed127128_230b6b6e",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f2354319_bc74b46d",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 6
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d60a8880_d3e85f82",
@@ -143,6 +203,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b03dfa2_0db05b1e",
+        "filename": "roles/operator-sdk/tasks/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "thank you for finding out, let me remove this task. I copied from preflight which modifies kubeconfig while running the tests, here it\u0027s not the case.",
+      "parentUuid": "d60a8880_d3e85f82",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "4bd7b8a3_7c3f35b1",
@@ -156,6 +234,24 @@
       "writtenOn": "2023-07-19T16:50:09Z",
       "side": 1,
       "message": "Could you move this var into the next task and avoid defining it as a fact?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "831a1154_b5b62f6b",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "good idea, thanks!",
+      "parentUuid": "4bd7b8a3_7c3f35b1",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -183,6 +279,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "cab5dcf3_901cf3e7",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "From plays/pullsecrets.yml, Ramon and Beto reworked the auth one year ago, I didn\u0027t follow that closely.",
+      "parentUuid": "fbf37878_d0800cdd",
+      "range": {
+        "startLine": 52,
+        "startChar": 39,
+        "endLine": 52,
+        "endChar": 58
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c1382e8f_1c438c17",
@@ -196,6 +316,24 @@
       "writtenOn": "2023-07-19T16:50:09Z",
       "side": 1,
       "message": "Isn\u0027t this duplicating the bundle entries? the scorecard_images has both bundles and scorecard_basic_images, should this be scorecard_basic_images instead?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ee32c190_0a3c1630",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "We need here both bundles and operator-sdk images, because operator-sdk first creates its pod and then pulls everything from there",
+      "parentUuid": "c1382e8f_1c438c17",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -217,6 +355,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e036ab4e_6c19c115",
+        "filename": "roles/operator-sdk/tasks/teardown.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "thanks, let me do it",
+      "parentUuid": "3fd680c2_b88e63e4",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2a088c5e_08153692",
@@ -230,6 +386,24 @@
       "writtenOn": "2023-07-19T16:50:09Z",
       "side": 1,
       "message": "Should the binary point to the current directory instead? ./operator-sdk",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27647510_b71741f0",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 71,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "good idea, thanks!",
+      "parentUuid": "2a088c5e_08153692",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -251,6 +425,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "59156a1b_8fdeac1b",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "thanks, I removed the copied version, I think, it\u0027s safe to use the main kubeconfig with operator-sdk (it was not the case for preflight).",
+      "parentUuid": "1d38f62e_30329a98",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "01bdee86_c75f0fdc",
@@ -264,6 +456,24 @@
       "writtenOn": "2023-07-19T16:50:09Z",
       "side": 1,
       "message": "should this have a when condition to only run when scorecard_pods and scorecard_events are defined?",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ed68b40_d1291d30",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 110,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "good idea, thanks",
+      "parentUuid": "01bdee86_c75f0fdc",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -291,6 +501,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "444ae5ec_523b7bb9",
+        "filename": "roles/preflight/README.md",
+        "patchSetId": 19
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "nice catch, let me remove it",
+      "parentUuid": "8189d548_579af6a7",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 22
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ce26114a_95f2f7bc",
@@ -304,6 +538,30 @@
       "writtenOn": "2023-07-20T10:22:56Z",
       "side": 1,
       "message": "do we still need to save scorecard related resources in preflight, now that operator-sdk is in a new role?",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 6
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8db0b08_9db5c723",
+        "filename": "roles/preflight/files/scorecard-old-images.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-21T13:15:43Z",
+      "side": 1,
+      "message": "yes, because preflight calls operator-sdk scorecard under the hood",
+      "parentUuid": "ce26114a_95f2f7bc",
       "range": {
         "startLine": 2,
         "startChar": 0,
