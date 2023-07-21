@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c54f8da1_90bcafe9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2023-07-21T16:39:52Z",
+      "side": 1,
+      "message": "can you rename the variable to just `custom_project_name` please? `create_custom_project_name` sounds boolean, but you\u0027re passing the custom project name as a string, makes more sense that way.",
+      "revId": "ac98f0eba7444319565a1488415ef118e10e2ec1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8ac47365_d3c5b447",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2023-07-21T16:39:52Z",
+      "side": 1,
+      "message": "I don\u0027t know why the rest of the checks are done that way, but you can change this to use a default() filter instead, e.g. `{{ c.custom_project_name | default(current_operator_image.split(....)) }}` that would make it more readable.",
+      "revId": "ac98f0eba7444319565a1488415ef118e10e2ec1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
