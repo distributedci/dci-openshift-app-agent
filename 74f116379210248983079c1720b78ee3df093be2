@@ -87,6 +87,24 @@
       "parentUuid": "32f93019_5729a65f",
       "revId": "74f116379210248983079c1720b78ee3df093be2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31cac214_5f561d6d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-21T15:31:41Z",
+      "side": 1,
+      "message": "Indeed 😂 now is working as expected, great work!",
+      "parentUuid": "4c1f5603_16364788",
+      "revId": "74f116379210248983079c1720b78ee3df093be2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
