@@ -51,6 +51,24 @@
       "parentUuid": "8edd39f7_aa299d06",
       "revId": "74f116379210248983079c1720b78ee3df093be2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "32f93019_5729a65f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-21T09:35:02Z",
+      "side": 1,
+      "message": "Tony, I may have a theory for this. You\u0027re naming the variable to gather the result of namespace creation as \"app_ns\", but we\u0027re using this same var in basic-example. Maybe we\u0027re overriding it? Let me try by renaming the new var created for the ns creation",
+      "parentUuid": "a891e9cd_91b891fe",
+      "revId": "74f116379210248983079c1720b78ee3df093be2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
