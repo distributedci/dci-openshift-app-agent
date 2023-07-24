@@ -1,0 +1,25 @@
+---
+- name: Get node information
+  k8s_info:
+    kind: Node
+  register: nodes_info
+
+- name: Retrieve all nodes
+  set_fact:
+    all_nodes: "{{ nodes_info.resources | map(attribute='metadata.name') | list }}"
+
+- name: Get dumpxmls
+  block:
+  - name: Display dumpxml for all nodes
+    shell: |
+      virsh dumpxml {{ item }}
+    register: nodes_dumpxml
+    become: true
+    loop: "{{ all_nodes }}"
+  always:
+    - name: Save dumpxml results to files
+      copy:
+        content: "{{ item.stdout }}"
+        dest: "{{ job_logs.path }}/{{ item.item }}.xml"
+      loop: "{{ nodes_dumpxml.results }}"
+...
