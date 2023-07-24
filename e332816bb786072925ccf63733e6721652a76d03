@@ -16,6 +16,92 @@
       "message": "Hello guys, could you please take another look when you have some time?",
       "revId": "e332816bb786072925ccf63733e6721652a76d03",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f53fa9c_6e4df649",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 22
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-24T10:43:55Z",
+      "side": 1,
+      "message": "Some more comments from my side, but it\u0027s near to the final solution",
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "284fd032_66294bc2",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-24T10:43:55Z",
+      "side": 1,
+      "message": "typo: scorecard_operators_to_certify",
+      "range": {
+        "startLine": 19,
+        "startChar": 44,
+        "endLine": 19,
+        "endChar": 74
+      },
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d5ae415b_8c792a1d",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-24T10:43:55Z",
+      "side": 1,
+      "message": "whitespace",
+      "range": {
+        "startLine": 44,
+        "startChar": 68,
+        "endLine": 44,
+        "endChar": 69
+      },
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "272a804a_a3857323",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-24T10:43:55Z",
+      "side": 1,
+      "message": "just wondering the same than Tony asked, because I cannot see the new code: \"should this have a when condition to only run when scorecard_pods and scorecard_events are defined?\n\"",
+      "range": {
+        "startLine": 102,
+        "startChar": 12,
+        "endLine": 102,
+        "endChar": 43
+      },
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
