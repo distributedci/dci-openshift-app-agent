@@ -33,6 +33,24 @@
       "message": "Thanks Tania, I see last libvirt job failed to get the masters config, but we got the workers, and maybe that is enough, let me send this ti Franck and confirm. ",
       "revId": "7ef5a828a1f5b87114d8638e8827905344ccf240",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4cded35_66a6fad1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-24T18:42:51Z",
+      "side": 1,
+      "message": "Hi Manny, we actually got both masters and workers here: https://www.distributed-ci.io/jobs/928ac879-723d-42fd-bc66-5c8058dc0588/jobStates?sort\u003ddate\u0026task\u003d72b619a9-bc40-4623-9db0-a11a1b293e56 (except the worker-2 who gets an \"error: failed to get domain \u0027worker-2\u0027\"). But all this is for Dallas cluster10, not for the partner you wanted.",
+      "parentUuid": "847a314e_b0d099ac",
+      "revId": "7ef5a828a1f5b87114d8638e8827905344ccf240",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
