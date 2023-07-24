@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a92b8aa3_70cd9340",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-24T12:44:10Z",
+      "side": 1,
+      "message": "thanks Ramon, I removed the white spaces and replied to your concern.",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

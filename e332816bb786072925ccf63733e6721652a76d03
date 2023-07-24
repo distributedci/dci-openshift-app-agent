@@ -58,6 +58,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "366ec1a1_f25cd7c1",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-24T12:44:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "284fd032_66294bc2",
+      "range": {
+        "startLine": 19,
+        "startChar": 44,
+        "endLine": 19,
+        "endChar": 74
+      },
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d5ae415b_8c792a1d",
@@ -81,6 +105,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2520b221_f88237fb",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 22
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-24T12:44:10Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d5ae415b_8c792a1d",
+      "range": {
+        "startLine": 44,
+        "startChar": 68,
+        "endLine": 44,
+        "endChar": 69
+      },
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "272a804a_a3857323",
@@ -94,6 +142,30 @@
       "writtenOn": "2023-07-24T10:43:55Z",
       "side": 1,
       "message": "just wondering the same than Tony asked, because I cannot see the new code: \"should this have a when condition to only run when scorecard_pods and scorecard_events are defined?\n\"",
+      "range": {
+        "startLine": 102,
+        "startChar": 12,
+        "endLine": 102,
+        "endChar": 43
+      },
+      "revId": "e332816bb786072925ccf63733e6721652a76d03",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2e6a8b0_4d735b79",
+        "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
+        "patchSetId": 22
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-24T12:44:10Z",
+      "side": 1,
+      "message": "Yes, after the comment of Tony, I reorganized the code to move this dump into rescue where we are sure to have scorecard_events.",
+      "parentUuid": "272a804a_a3857323",
       "range": {
         "startLine": 102,
         "startChar": 12,
