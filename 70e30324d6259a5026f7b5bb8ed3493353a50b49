@@ -16,6 +16,23 @@
       "message": "thanks Ramon, I removed the white spaces and replied to your concern.",
       "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "699cf9dc_16cc4e50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-24T13:06:12Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
