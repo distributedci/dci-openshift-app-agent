@@ -15,6 +15,7 @@
 # under the License.
 
 
+#Some change to be able to test
 ANSIBLE_PID=
 JOB_ID_FILE=
 OUTPUT_DIR=
