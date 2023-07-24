@@ -1,0 +1,38 @@
+---
+- name: Get node information
+  k8s_info:
+    kind: Node
+  register: nodes_info
+
+- name: Display worker nodes
+  vars:
+    workers: "{{ nodes_info.resources | rejectattr('metadata.labels.node-role.kubernetes.io/master', 'defined') | list }}"
+  debug:
+    msg: "Worker node: {{ item.metadata.name }}"
+  with_items: "{{ workers }}"
+
+- name: Display master nodes
+  vars:
+    masters: "{{ nodes_info.resources | selectattr('metadata.labels.node-role.kubernetes.io/master', 'defined') | list }}"
+  debug:
+    msg: "Master node: {{ item.metadata.name }}"
+  with_items: "{{ masters }}"
+
+- name: Display dumpxml for all workers
+  vars:
+    workers: "{{ nodes_info.resources | rejectattr('metadata.labels.node-role.kubernetes.io/master', 'defined') | list }}"
+  shell: |
+    virsh dumpxml {{ item.metadata.name }}
+  register: worker_dumpxml
+  become: true
+  loop: "{{ workers }}"
+
+- name: Display dumpxml for all masters
+  vars:
+    masters: "{{ nodes_info.resources | selectattr('metadata.labels.node-role.kubernetes.io/master', 'defined') | list }}"
+  shell: |
+    virsh dumpxml {{ item.metadata.name }}
+  register: master_dumpxml
+  become: true
+  loop: "{{ masters }}"
+...

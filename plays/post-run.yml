@@ -23,6 +23,10 @@
     - ocp_version is version("4.9", ">=")
     - check_workload_api | bool
 
+- name: Dump xml for all workers and masters after the execution
+  include_role:
+    name: dumpxml
+
 - name: Get the differences from the previous DCI job
   shell: "dci-diff-jobs --job_id_1 {{ job_id }} > {{ job_logs.path }}/diff-jobs.txt"
   ignore_errors: true
