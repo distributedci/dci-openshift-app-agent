@@ -16,6 +16,23 @@
       "message": "check workload preflight-green",
       "revId": "7ef5a828a1f5b87114d8638e8827905344ccf240",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "847a314e_b0d099ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-07-24T17:58:15Z",
+      "side": 1,
+      "message": "Thanks Tania, I see last libvirt job failed to get the masters config, but we got the workers, and maybe that is enough, let me send this ti Franck and confirm. ",
+      "revId": "7ef5a828a1f5b87114d8638e8827905344ccf240",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
