@@ -33,6 +33,142 @@
       "message": "LGTM",
       "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4835abc1_bd5fed3e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 23
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "Thanks for the continued work in here.",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9fe9ec44_b3dd5531",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "I disagree with:\n\n\u003e You can utilize this role to thoroughly validate your operator.\n\nSince this is a subset of preflight, I don\u0027t think this alone thoroughly validates the operator. I think this alone can be used to do a part of the validation of the operator and should be faster than preflight",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e72fb697_033a86e4",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "Could you add another column to define whether or not a variable is required?",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "190863d1_d5d4336d",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "\u003e that\u0027s for standalone testing\n\nSince operator-sdk role is not for certification, but for testing, could you rename this variable to not use the \"certify\" in it?",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf6bf6c3_8bf1f060",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "To make this role independent could you make these variables part of the role and expect them to be passed from where it is being used? example:\n\n  include_role:\n    name: operator-sdk\n  vars:\n    scorecard_oc_tool_path: \"/path/to/oc\" \n\nI think these variables used from the agent are missing as well: dci_local_registry, dci_disconnected, pullsecret_tmp_file,  job_logs, kubeconfig_path\n\nCould you also please add the other roles dependencies? e.g. mirror_images, fbc-catalog, etc.",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3f8ee842_ba29e080",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "Could you also document the outputs, i.e. the files that are generated.",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf1d4046_35de11ea",
+        "filename": "roles/operator-sdk/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "nit: Rename to avoid \"certification\" in it, maybe \"testing\" ?",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bb8ca24_b8d75b13",
+        "filename": "roles/operator-sdk/tasks/teardown.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-24T16:37:20Z",
+      "side": 1,
+      "message": "Would it be possible to remove added ICSP?",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
