@@ -224,6 +224,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f81b068c_ae1b4615",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-25T21:10:02Z",
+      "side": 1,
+      "message": "Let me try to clarify myself here. Digest are provided in here because you were able to get them based on some logic, can the same logic be used to calculate those digests based on any tag or commit?",
+      "parentUuid": "4d7cc181_aed06ed6",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d60a8880_d3e85f82",
         "filename": "roles/operator-sdk/tasks/main.yml",
         "patchSetId": 19
@@ -389,6 +407,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2b7d717a_b44ad4f2",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-25T21:10:02Z",
+      "side": 1,
+      "message": "\u003e Sure, added the variable into the invocation\n\nThanks, please also document/add it in the README.md\n\nNot sure if someone else asked but don\u0027t understand why you ask me to ask someone else about those vars 😕",
+      "parentUuid": "d56b4ead_81ffc9b0",
+      "range": {
+        "startLine": 52,
+        "startChar": 39,
+        "endLine": 52,
+        "endChar": 58
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c1382e8f_1c438c17",
         "filename": "roles/operator-sdk/tasks/mirroring.yml",
         "patchSetId": 19
@@ -454,6 +496,24 @@
       "side": 1,
       "message": "Hey, this CR isn\u0027t the \"perfect working role\"; instead, it\u0027s meant to quickly merge and remove the dependencies with ICSP and preflight role, to proceed with making operator-sdk work. Since I need to conduct more extensive tests to ensure that your idea is correct, I\u0027d prefer to save that for the next step. Thanks.",
       "parentUuid": "14a29d96_9927d155",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0431e061_2db993f8",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-25T21:10:02Z",
+      "side": 1,
+      "message": "Sure, if you prefer this to be merged and check later that\u0027s fine. In the end it won\u0027t hurt to have duplicated mirrors, but please add a TODO here as we talked this morning, so this review does not go to waste.",
+      "parentUuid": "737b4409_14c9908d",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
