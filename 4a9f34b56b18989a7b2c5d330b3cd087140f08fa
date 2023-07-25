@@ -204,6 +204,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d7cc181_aed06ed6",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Hi Tony, because the images are different, they\u0027re not all 1.30.0. We might need many variables for the tags, and that could be even more confusing than a simple image list.",
+      "parentUuid": "247307e0_f4e89747",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d60a8880_d3e85f82",
@@ -345,6 +363,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d56b4ead_81ffc9b0",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Sure, added the variable into the invocation. Concerning the documentation, why pullsecret_tmp_file and not partner_creds, please ask Beto or Ramon, I didn\u0027t follow that closely.",
+      "parentUuid": "bbb61b96_8eb8bde4",
+      "range": {
+        "startLine": 52,
+        "startChar": 39,
+        "endLine": 52,
+        "endChar": 58
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c1382e8f_1c438c17",
@@ -394,6 +436,24 @@
       "side": 1,
       "message": "Understood, but the bundles are already added initially in the ICSP when mirroring them, here they are added again, thus duplicating them https://www.distributed-ci.io/jobs/8d72bc76-b787-499d-831d-939e9dfd6655/jobStates?sort\u003ddate\u0026task\u003db5e2a0f8-3a07-4b2d-91fc-c39db86a5108\n\nexample:\n\nThis comes from the ICSP:\n  - mirrors:\n    - registry.dfwt5g.lab:4443/ibmcom/ibm-mq-operator-bundle\n    source: docker.io/ibmcom/ibm-mq-operator-bundle\n    \nThis is the duplicated bundle added in this task:\n\n  # BEGIN ANSIBLE MANAGED BLOCK docker.io/ibmcom/ibm-mq-operator-bundle\n  # Scorecard container\n  - mirrors:\n    - registry.dfwt5g.lab:4443/ibmcom/ibm-mq-operator-bundle\n    source: docker.io/ibmcom/ibm-mq-operator-bundle\n  # END ANSIBLE MANAGED BLOCK docker.io/ibmcom/ibm-mq-operator-bundle",
       "parentUuid": "ee32c190_0a3c1630",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "737b4409_14c9908d",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Hey, this CR isn\u0027t the \"perfect working role\"; instead, it\u0027s meant to quickly merge and remove the dependencies with ICSP and preflight role, to proceed with making operator-sdk work. Since I need to conduct more extensive tests to ensure that your idea is correct, I\u0027d prefer to save that for the next step. Thanks.",
+      "parentUuid": "14a29d96_9927d155",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },

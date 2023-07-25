@@ -69,6 +69,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9e44544f_f0edf211",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Actually, Operator-SDK proposes the way more tests, and Preflight only uses 3 of them.",
+      "parentUuid": "9fe9ec44_b3dd5531",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e72fb697_033a86e4",
@@ -82,6 +100,24 @@
       "writtenOn": "2023-07-24T16:37:20Z",
       "side": 1,
       "message": "Could you add another column to define whether or not a variable is required?",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "442967ce_37bbae09",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "it\u0027s already in the last column.",
+      "parentUuid": "e72fb697_033a86e4",
       "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -103,6 +139,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c3914545_985d4ee7",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "190863d1_d5d4336d",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "bf6bf6c3_8bf1f060",
@@ -116,6 +170,24 @@
       "writtenOn": "2023-07-24T16:37:20Z",
       "side": 1,
       "message": "To make this role independent could you make these variables part of the role and expect them to be passed from where it is being used? example:\n\n  include_role:\n    name: operator-sdk\n  vars:\n    scorecard_oc_tool_path: \"/path/to/oc\" \n\nI think these variables used from the agent are missing as well: dci_local_registry, dci_disconnected, pullsecret_tmp_file,  job_logs, kubeconfig_path\n\nCould you also please add the other roles dependencies? e.g. mirror_images, fbc-catalog, etc.",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "26bc4a17_93abb25b",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "sure, added dependencies in the meta/main.yml as advised here: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html#using-role-dependencies",
+      "parentUuid": "bf6bf6c3_8bf1f060",
       "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -137,6 +209,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a089c99e_78e14e4c",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3f8ee842_ba29e080",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cf1d4046_35de11ea",
@@ -154,6 +244,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "89b64bc7_f57632eb",
+        "filename": "roles/operator-sdk/tasks/main.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cf1d4046_35de11ea",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "5bb8ca24_b8d75b13",
@@ -167,6 +275,24 @@
       "writtenOn": "2023-07-24T16:37:20Z",
       "side": 1,
       "message": "Would it be possible to remove added ICSP?",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49af2943_0b6fa744",
+        "filename": "roles/operator-sdk/tasks/teardown.yml",
+        "patchSetId": 23
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Good idea, let\u0027s check it.",
+      "parentUuid": "5bb8ca24_b8d75b13",
       "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

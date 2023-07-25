@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e09b03df_86a27182",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 24
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-25T11:50:28Z",
+      "side": 1,
+      "message": "Hi Tony, thank you for the review! I\u0027m really interested in merging this CR to remove all the dependencies and focus solely on operator-sdk. I\u0027ve applied the second batch of your feedback, except for the potential duplicates in ICSP, which I\u0027ll address in the next step with ITMS. Thanks.",
+      "revId": "4f04ba772928ecd13fe2b56e58985af72aa1415d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
