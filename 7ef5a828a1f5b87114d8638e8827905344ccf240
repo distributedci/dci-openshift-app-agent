@@ -51,6 +51,24 @@
       "parentUuid": "847a314e_b0d099ac",
       "revId": "7ef5a828a1f5b87114d8638e8827905344ccf240",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fef28db_d5608ed6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-25T08:22:43Z",
+      "side": 1,
+      "message": "I\u0027m curious to know how this command worked in cluster10, since cluster10 is baremetal and there are not virtual machines deployed",
+      "parentUuid": "f4cded35_66a6fad1",
+      "revId": "7ef5a828a1f5b87114d8638e8827905344ccf240",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
