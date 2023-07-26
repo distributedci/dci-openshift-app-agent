@@ -141,6 +141,30 @@
       },
       "revId": "aa2322bd6215b3e7a7a9f65c05ad4713ec6624c4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0b671a4_5e9ce78a",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-07-26T10:57:33Z",
+      "side": 1,
+      "message": "Done, already clarified",
+      "parentUuid": "543a6ef2_4d1173b4",
+      "range": {
+        "startLine": 37,
+        "startChar": 8,
+        "endLine": 37,
+        "endChar": 24
+      },
+      "revId": "aa2322bd6215b3e7a7a9f65c05ad4713ec6624c4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
