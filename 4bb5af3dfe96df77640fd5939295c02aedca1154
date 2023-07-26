@@ -16,6 +16,23 @@
       "message": "Hey Tony, thank you again for the extensive review. \n\n\u003e Thanks for the chat this morning. Would you please test with the latest patchset?\nI didn\u0027t re-run the tests earlier as all updates were made in the readme. \n\nHowever, I have now applied your latest feedback and re-run everything to ensure everything is in order. I hope we are good to go for merging now. Thanks.",
       "revId": "4bb5af3dfe96df77640fd5939295c02aedca1154",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d8cae32_e38a12f5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-26T14:26:17Z",
+      "side": 1,
+      "message": "LGTM, I\u0027ll switch to +2 after a test on this role.",
+      "revId": "4bb5af3dfe96df77640fd5939295c02aedca1154",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

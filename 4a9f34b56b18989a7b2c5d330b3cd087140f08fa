@@ -258,6 +258,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "18d3ae4a_8bab3a9f",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-26T14:26:17Z",
+      "side": 1,
+      "message": "To be clear I\u0027m not talking about ICSP, I\u0027m talking about programmatically  getting a specific image from a commit or tag in operator-sdk.\n\nAnd btw, ICSP won\u0027t be dropped until 4.13 is EOL, so it may take a really long time before transition to support tagging in mirroring is fully covered.\n\nDon\u0027t worry about this, I\u0027m pretty sure you\u0027ll get to this once you start working on validating changes in operators-sdk.",
+      "parentUuid": "1bc916ba_2b48e246",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d60a8880_d3e85f82",
