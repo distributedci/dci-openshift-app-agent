@@ -210,6 +210,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c94e71d_8b865a31",
+        "filename": "roles/operator-sdk/README.md",
+        "patchSetId": 23
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-26T11:58:12Z",
+      "side": 1,
+      "message": "\u003e btw there is no meta/main.yml included in this change\n\nAs we discussed during the call, I initially added meta/main.yml to the project. However, I later realized that the tests would fail unless I meticulously listed all the dependencies\u0027 variables (please refer to this link to the documentation for the explanation: https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_reuse_roles.html#using-role-dependencies). Due to this, I decided to remove it in this commit: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/28812/26..27 to avoid spending too much time on it at the moment.\n\nTo create a new role in doaa and wrap it in an independent Ansible module are two different tasks. If it\u0027s not straightforward to proceed with both simultaneously, I\u0027d prefer to split them into separate tasks. We discussed this during the call, and I\u0027m curious why this issue has resurfaced.\n\nI documented the dependency vars in the readme, so no worries here.",
+      "parentUuid": "cbe06e4d_21caf2cd",
+      "revId": "70e30324d6259a5026f7b5bb8ed3493353a50b49",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3f8ee842_ba29e080",

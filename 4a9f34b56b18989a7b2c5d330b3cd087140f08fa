@@ -240,6 +240,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1bc916ba_2b48e246",
+        "filename": "roles/operator-sdk/defaults/main.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-26T11:58:12Z",
+      "side": 1,
+      "message": "As we discussed previously, I prefer to transition from ICSP to ITMS, as it would be more beneficial for us to test the new functionality.",
+      "parentUuid": "f81b068c_ae1b4615",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d60a8880_d3e85f82",
@@ -429,6 +447,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "78ce6fc6_e7197c37",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-26T11:58:12Z",
+      "side": 1,
+      "message": "Sorry Tony, it feels like I may have unintentionally offended you, but that wasn\u0027t my intention. What I meant to say is that I didn\u0027t closely follow the design decision of using \"partner_creds\" in one place and \"pullsecret_tmp_file\" in the other. I documented the dependency vars in the readme, so no worries here.",
+      "parentUuid": "2b7d717a_b44ad4f2",
+      "range": {
+        "startLine": 52,
+        "startChar": 39,
+        "endLine": 52,
+        "endChar": 58
+      },
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c1382e8f_1c438c17",
@@ -514,6 +556,24 @@
       "side": 1,
       "message": "Sure, if you prefer this to be merged and check later that\u0027s fine. In the end it won\u0027t hurt to have duplicated mirrors, but please add a TODO here as we talked this morning, so this review does not go to waste.",
       "parentUuid": "737b4409_14c9908d",
+      "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bcb7509c_2e755bcc",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 19
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-26T11:58:12Z",
+      "side": 1,
+      "message": "Sure, added the TODO. As we discussed, replacing scorecard_images with scorecard_basic_images directly caused operator-sdk scorecard tests to timeout, so we need to ensure the functionality as well.",
+      "parentUuid": "0431e061_2db993f8",
       "revId": "4a9f34b56b18989a7b2c5d330b3cd087140f08fa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
