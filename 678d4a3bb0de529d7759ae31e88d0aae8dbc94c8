@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "450762e5_5cba7802",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-07-27T18:04:23Z",
+      "side": 1,
+      "message": "- At this time we are only processing amd64 in the results, we will need to add the proper post validations for other archs in a separate change\n\n- As it is now, we are going to process the files if they are placed in /artifacts on on artifacts/amd64. Once we decide to start validating results for other platforms and that we are certain about the outputs we can act accordingly",
+      "revId": "678d4a3bb0de529d7759ae31e88d0aae8dbc94c8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
