@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eee1de9a_61ab6832",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T14:29:32Z",
+      "side": 0,
+      "message": "Hi Beto, why do we have to delete this env? Is it now set to \"/artifacts\" by default or is it replaced with /amd64?\n \nI\u0027m asking because several lines below we mount this folder into volume: \n-v {{ preflight_container_artifacts.path }}:/artifacts\n\nShould we mount /amd64 instead?",
+      "revId": "a8b3e5f7f18161bf3fe68cf80aa914500e17341a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
