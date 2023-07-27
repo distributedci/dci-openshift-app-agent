@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d7b5322_034e4515",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T15:06:59Z",
+      "side": 1,
+      "message": "you probably also have to create a tmp folder `{{ preflight_container_artifacts.path }}/amd64` and mount /amd64 as a container volume \n\n-v {{ preflight_container_artifacts.path }}/amd64:/amd64",
+      "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
