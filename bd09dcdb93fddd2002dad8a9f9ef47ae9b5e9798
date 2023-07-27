@@ -33,6 +33,23 @@
       "message": "check workload operator-sdk",
       "revId": "bd09dcdb93fddd2002dad8a9f9ef47ae9b5e9798",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1811353_8becba1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T18:41:35Z",
+      "side": 1,
+      "message": "check workload preflight-green",
+      "revId": "bd09dcdb93fddd2002dad8a9f9ef47ae9b5e9798",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
