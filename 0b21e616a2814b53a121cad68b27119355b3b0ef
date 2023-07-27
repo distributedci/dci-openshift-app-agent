@@ -34,6 +34,24 @@
       "parentUuid": "9d7b5322_034e4515",
       "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11a8538b_7bbf8df4",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T16:01:09Z",
+      "side": 1,
+      "message": "Hi Beto, sorry, you were right, I see the files copied from amd64 folder: https://www.distributed-ci.io/jobs/34547d73-3365-4e47-85b2-00d33830d0e3/jobStates?sort\u003ddate\u0026task\u003d500588f4-33e1-49c9-9ab6-94297e5b83fa \n\n(item\u003d/tmp/preflight_container_artifacts.buqv2549/amd64/cert-image.json) \u003d\u003e (item\u003d/tmp/preflight_container_artifacts.buqv2549/amd64/rpm-manifest.json) \u003d\u003e (item\u003d/tmp/preflight_container_artifacts.buqv2549/amd64/results-junit.xml) \u003d\u003e",
+      "parentUuid": "2ab55c81_8928713f",
+      "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
