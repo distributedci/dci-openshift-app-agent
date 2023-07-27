@@ -3,6 +3,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "578bb23c_c77c6b4b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-27T16:45:08Z",
+      "side": 1,
+      "message": "Let\u0027s hold a bit this change, I think this could break previous releases of preflight as the new flag won\u0027t be recognized.",
+      "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9d7b5322_034e4515",
         "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
         "patchSetId": 4
