@@ -13,6 +13,9 @@
         dest: "{{ scorecard_tmp_dir.path }}/config.json"
       when: scorecard_partner_creds | length
 
+    # TODO: generate operator_sdk_img and scorecard_test_img
+    # when operator_sdk_source_dir is defined
+
     - name: Retrieve operator-sdk binary from provided image
       shell:
         cmd: >
