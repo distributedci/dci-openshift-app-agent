@@ -1,0 +1,6 @@
+---
+- name: Remove operator_sdk_img built from the source 
+  shell:
+    cmd: >
+      podman rmi -f {{ operator_sdk_img }}
+...
