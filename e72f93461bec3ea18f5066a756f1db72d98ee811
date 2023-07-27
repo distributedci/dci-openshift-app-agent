@@ -16,6 +16,24 @@
       "message": "Great work Tania. From my side just one question I see in the commit message \"Move to Preflight 1.7.0\" and in this play and in the README we see 1.6.10? so the image is 1.6.0 but the preflight role supports 1.7.0? or something like that :)",
       "revId": "e72f93461bec3ea18f5066a756f1db72d98ee811",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d622c9f_0d4e65da",
+        "filename": "roles/preflight/defaults/main.yml",
+        "patchSetId": 26
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T07:51:26Z",
+      "side": 1,
+      "message": "Thank you Manny, nice catch, I fixed it",
+      "parentUuid": "bcaa246e_376d84c1",
+      "revId": "e72f93461bec3ea18f5066a756f1db72d98ee811",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

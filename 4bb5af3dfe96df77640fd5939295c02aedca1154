@@ -67,6 +67,41 @@
       "message": "Thanks for pointing to the job, I see some failures but I guess you\u0027re aware of those and will get them fixed in upcoming changes.\n\nLGTM",
       "revId": "4bb5af3dfe96df77640fd5939295c02aedca1154",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "422e8747_1def776b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T07:51:26Z",
+      "side": 1,
+      "message": "Thank you, Manny, Beto, Ramon, and Tony!",
+      "revId": "4bb5af3dfe96df77640fd5939295c02aedca1154",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2fb2f17_dcaf60af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 31
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T07:51:26Z",
+      "side": 1,
+      "message": "Hi Tony, thanks. Yes, the first operator is green, but the tests for the second operator timed out because of this known bug: https://github.com/operator-framework/operator-sdk/issues/5452",
+      "parentUuid": "b925c87a_e8d98b6c",
+      "revId": "4bb5af3dfe96df77640fd5939295c02aedca1154",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
