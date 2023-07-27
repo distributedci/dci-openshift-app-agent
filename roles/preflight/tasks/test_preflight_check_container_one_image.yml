@@ -56,6 +56,7 @@
             {% if partner_creds | length %}
             -e PFLT_DOCKERCONFIG=/opt/config.json
             {% endif %}
+            -e PFLT_PLATFORM={{ ansible_architecture }}
             {% if cert_project_id | default('') | length %}
             -e PFLT_PYXIS_API_TOKEN={{ lookup('file', pyxis_apikey_path) }}
             -e PFLT_CERTIFICATION_PROJECT_ID={{ cert_project_id }}
