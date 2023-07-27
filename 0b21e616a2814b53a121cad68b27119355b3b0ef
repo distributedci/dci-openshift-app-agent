@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "61b10102_8d729ddb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-07-27T17:14:32Z",
+      "side": 1,
+      "message": "we could wrap it in the condition \n\n{% if preflight_source_dir is defined %}\n--platform amd64\n{% endif %}\n\nto only use this parameter on unmerged PRs for which we build preflight binary from the source folder",
+      "parentUuid": "578bb23c_c77c6b4b",
+      "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "9d7b5322_034e4515",
         "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
         "patchSetId": 4
