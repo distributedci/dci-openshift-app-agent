@@ -16,6 +16,24 @@
       "message": "you probably also have to create a tmp folder `{{ preflight_container_artifacts.path }}/amd64` and mount /amd64 as a container volume \n\n-v {{ preflight_container_artifacts.path }}/amd64:/amd64",
       "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ab55c81_8928713f",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-07-27T15:34:35Z",
+      "side": 1,
+      "message": "Thanks I do not think more volumes are needed, just looking for file on the paths that we are interested in should be enough. \n\nHolding a bit on this, as the patch is not behaving as described in the description. Execution is not defaulting to \u0027amd64\u0027, instead it is testing all architecture. And that will break testing on previous versions.\n\ncheers",
+      "parentUuid": "9d7b5322_034e4515",
+      "revId": "0b21e616a2814b53a121cad68b27119355b3b0ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
