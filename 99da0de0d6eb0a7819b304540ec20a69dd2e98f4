@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e22f2c42_67c4bbdc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-31T23:04:55Z",
+      "side": 1,
+      "message": "LGTM, but needs a depencendy through RPM to your other change in the d-o-a",
+      "revId": "99da0de0d6eb0a7819b304540ec20a69dd2e98f4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
