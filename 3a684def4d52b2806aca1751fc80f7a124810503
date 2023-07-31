@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3af38d3_eeb144c7",
+        "filename": "dci-openshift-app-agent.spec",
+        "patchSetId": 4
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-07-31T23:37:07Z",
+      "side": 1,
+      "message": "You have to bump the version in d-o-a as current version is 0.5.7, you could make it 0.5.8 there and 0.5.8 here as well",
+      "revId": "3a684def4d52b2806aca1751fc80f7a124810503",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
