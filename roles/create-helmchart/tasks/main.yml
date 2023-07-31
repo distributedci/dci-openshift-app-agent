@@ -1,0 +1,16 @@
+---
+- name: helmchart Certification Project
+  block:
+    - name: "Create helmchart Certifcation Project"
+      vars:
+        current_chart_name: "{{ hc.chart_name }}"
+        helmchart:
+          create_helmchart_project: "{% if hc.create_helmchart_project is defined %}{{ hc.create_helmchart_project }}{% endif %}"
+          attach_product_listing: "{% if hc.attach_product_listing is defined %}{{ hc.attach_product_listing }}{% endif %}"
+          short_description: "{% if hc.short_description is defined %}{{ hc.short_description }}{% endif %}"
+      include_tasks: create_helmchart_project.yml
+      loop: "{{ helmchart_to_certify }}"
+      loop_control:
+        loop_var: hc
+  when: project_type == 'helmchart'
+...
