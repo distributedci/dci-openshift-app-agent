@@ -10,7 +10,7 @@ Source0:       dci-openshift-app-agent-%{version}.tar.gz
 BuildRequires: systemd
 BuildRequires: systemd-units
 Requires: sudo
-Requires: dci-openshift-agent >= 0.5.3
+Requires: dci-openshift-agent >= 0.5.7
 Requires: dci-ansible >= 0.3.1
 %if 0%{?rhel} && 0%{?rhel} < 8
 Requires: python2-dciclient >= 3.1.0
