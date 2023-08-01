@@ -1,0 +1,458 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "be5158d6_b53997fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Some design-related comments to start with\nAdding Beto as he worked with Helm Chart cert in the past",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "beaa1f2c_113fd186",
+        "filename": "plays/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Helm Chart Certification Project",
+      "range": {
+        "startLine": 47,
+        "startChar": 8,
+        "endLine": 47,
+        "endChar": 39
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "873c23c7_de4558ad",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Write Helm Chart instead of helmchart whenever possible",
+      "range": {
+        "startLine": 6,
+        "startChar": 12,
+        "endLine": 6,
+        "endChar": 21
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "be407d45_63993ff4",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "extra whitespace to remove",
+      "range": {
+        "startLine": 10,
+        "startChar": 36,
+        "endLine": 10,
+        "endChar": 37
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "724dcd49_988362e6",
+        "filename": "roles/create-certification-project/templates/update_project_helmchart_setting.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "whitespaces to remove",
+      "range": {
+        "startLine": 13,
+        "startChar": 81,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "980d2631_f511d869",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Certification Project",
+      "range": {
+        "startLine": 1,
+        "startChar": 58,
+        "endLine": 1,
+        "endChar": 78
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1f4466a1_281c4f8d",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "whitespace to remove",
+      "range": {
+        "startLine": 3,
+        "startChar": 360,
+        "endLine": 3,
+        "endChar": 361
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a55764e7_1e13477a",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "(general comment) Write Helm chart in upper case whenever possible",
+      "range": {
+        "startLine": 12,
+        "startChar": 47,
+        "endLine": 12,
+        "endChar": 51
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8ca6886_d4609aa5",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Github",
+      "range": {
+        "startLine": 16,
+        "startChar": 115,
+        "endLine": 16,
+        "endChar": 121
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dd7ff780_39fbb14a",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "whitespace to remove",
+      "range": {
+        "startLine": 18,
+        "startChar": 204,
+        "endLine": 18,
+        "endChar": 205
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb009b2f_852900bf",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Helm Chart Certification Project",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 46
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8614f3a_b2cdfbb0",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 14,
+        "startChar": 19,
+        "endLine": 14,
+        "endChar": 28
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e47c938_6cf0e1fe",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 22,
+        "startChar": 34,
+        "endLine": 22,
+        "endChar": 43
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "77233098_93321e5f",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 2,
+        "startChar": 8,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e236e17_158fb7f9",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 4,
+        "startChar": 20,
+        "endLine": 4,
+        "endChar": 29
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4f143706_d0f27540",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "Certification",
+      "range": {
+        "startLine": 4,
+        "startChar": 30,
+        "endLine": 4,
+        "endChar": 42
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "63308cba_609e1ce4",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "better to write: \"{{ hc.create_helmchart_project | default(\u0027\u0027) }}\"",
+      "range": {
+        "startLine": 8,
+        "startChar": 36,
+        "endLine": 8,
+        "endChar": 129
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "739d4a56_094cad0a",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "follow the same example than the previous one",
+      "range": {
+        "startLine": 9,
+        "startChar": 10,
+        "endLine": 9,
+        "endChar": 32
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "764e0d6e_06942e45",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "follow the same example than the previous one",
+      "range": {
+        "startLine": 10,
+        "startChar": 10,
+        "endLine": 10,
+        "endChar": 27
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a0a5ca92_d5ed2093",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-01T07:23:06Z",
+      "side": 1,
+      "message": "I think this is useless, this will always be true",
+      "range": {
+        "startLine": 15,
+        "startChar": 2,
+        "endLine": 15,
+        "endChar": 35
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
