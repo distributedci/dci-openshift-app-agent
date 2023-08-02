@@ -51,6 +51,24 @@
       "parentUuid": "093e57df_a3817ec2",
       "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aef233b2_9b20a5af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T15:46:30Z",
+      "side": 1,
+      "message": "\u003e I still see \"results-junit.xml\" as the output of the files from preflight. I don\u0027t seem to find files renamed. Could you share where did you see this?\n\nOh I see, it\u0027s actually your change modifying the filename. \n\nWhen you replace \n\"{{ job_logs.path }}/{{ preflight_prefix }}_{{ item | basename }}\"\nwith \ndest: \"{{ job_logs.path }}/{{ preflight_prefix }}_{{ item.path | regex_replace(\u0027/\u0027, \u0027_\u0027) }}\"\n\nitem.path gives you a relative path amd64/results-junit.xml and then you convert it into amd64_results-junit.xml, here we see that in the logs: https://www.distributed-ci.io/jobs/7a988690-5551-48dd-b5d6-e91af49fe9d4/jobStates?sort\u003ddate\u0026task\u003d00aca17b-89fa-4246-946c-81c949d03670 \n\n\u0027src\u0027: \u0027/tmp/preflight_container_artifacts.8lx58bm3/amd64/results-junit.xml\u0027\n\"dest\": \"/tmp/dci_logs.fpx8g8kn/preflight_container_simple-demo-operator_kube-rbac-proxy_amd64_results-junit.xml\"\n\nCould we keep the original filename or there is a reason to append amd64 to it? It\u0027s currently used in a lot of places (here: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/28784).\n\nThank you for working on it.",
+      "parentUuid": "cf830bf1_dc2dd420",
+      "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
