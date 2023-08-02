@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ba22da1_4e0ba61f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T14:30:21Z",
+      "side": 1,
+      "message": "Hello Andrew, thank you for the contribution! My main concern is that cert_project_exists_own_org and cert_project_id shadow the global variables from another role, and I\u0027d prefer to rename them to be on a safe side. Thanks. ",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "beaa1f2c_113fd186",
@@ -100,6 +117,74 @@
         "endLine": 10,
         "endChar": 37
       },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7e587a74_b756267e",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T14:30:21Z",
+      "side": 1,
+      "message": "will it work if the previous task returns several projects?",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b6a682af_18e27d03",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T14:30:21Z",
+      "side": 1,
+      "message": "we probably do need to set a default here because cert_project_data is always defined in the previous task",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2cf1e818_2a1c5e26",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T14:30:21Z",
+      "side": 1,
+      "message": "cert_project_exists_own_org is already defined in another role. To avoid possible overlaps, we could maybe use a role-particular prefix for the variables",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd2f3ec1_92688311",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T14:30:21Z",
+      "side": 1,
+      "message": "the same for cert_project_id, could we replace it with helm_project_id?",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -301,6 +386,23 @@
         "endLine": 18,
         "endChar": 205
       },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efc2eed9_64d3f372",
+        "filename": "roles/create-helmchart/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-02T14:30:21Z",
+      "side": 1,
+      "message": "do we need this file?",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
