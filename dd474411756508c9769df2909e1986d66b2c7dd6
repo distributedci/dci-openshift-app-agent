@@ -16,6 +16,23 @@
       "message": "Change is ready for review, working fine in dallas and bos2",
       "revId": "dd474411756508c9769df2909e1986d66b2c7dd6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb72e0a7_1da01cea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-08-02T13:47:06Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "dd474411756508c9769df2909e1986d66b2c7dd6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
