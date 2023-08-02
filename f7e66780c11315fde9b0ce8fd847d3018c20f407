@@ -33,6 +33,24 @@
       "message": "Hi Tony,\n\nIt appears that the preflight team has renamed the files by adding the \"amd64\" prefix. Previously, we had:\n\npreflight_container_simple-demo-operator_kube-rbac-proxy_results-junit.xml\n\nNow, the logs show:\n\npreflight_container_simple-demo-operator_kube-rbac-proxy_amd64_results-junit.xml\n\nBefore merging this change, it would be better to update preflight-green as well. However, I\u0027m unsure how to provide backward compatibility in this case.\n\nAnother possible solution could be to ask the preflight team to remove the \"amd64\" prefix since the files are already in the folder called \"amd64\". Or, we could remove it within the app-agent on our side.\n\nLet me know your thoughts on this.\n\nThanks.",
       "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf830bf1_dc2dd420",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-02T15:19:07Z",
+      "side": 1,
+      "message": "\u003e It appears that the preflight team has renamed the files by adding the \"amd64\" prefix. Previously, we had:\n\u003e \n\u003e preflight_container_simple-demo-operator_kube-rbac-proxy_results-junit.xml\n\u003e \n\u003e Now, the logs show:\n\u003e \n\u003e preflight_container_simple-demo-operator_kube-rbac-proxy_amd64_results-junit.xml\n\u003e \n\u003e ...\n\u003e \n\u003e Another possible solution could be to ask the preflight team to remove the \"amd64\" prefix since the files are already in the folder called \"amd64\".\n\n\nThe examples shown in here seem like the ones we generate. I still see \"results-junit.xml\" as the output of the files from preflight. I don\u0027t seem to find files renamed. Could you share where did you see this?\n\n\n\u003e Before merging this change, it would be better to update preflight-green as well. \n\n\nCould you point me to what change needs to be done there? I\u0027ll take care of any modification needed in there.\n\n\n\u003e However, I\u0027m unsure how to provide backward compatibility in this case.\n\n\nCorrect, this change modifies the naming of the files. I only considered that the files are uploaded to DCI control server. Are they used in other place? If they do then I\u0027ll probably need to modify that other place as well.\n\n\nThanks for looking",
+      "parentUuid": "093e57df_a3817ec2",
+      "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
