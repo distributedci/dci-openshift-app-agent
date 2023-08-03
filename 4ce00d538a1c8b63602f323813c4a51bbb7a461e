@@ -297,6 +297,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8940543e_69c30628",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:01:27Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e9fdd1b4_a7bb1eb0",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2cf1e818_2a1c5e26",
@@ -328,6 +346,24 @@
       "side": 1,
       "message": "Thanks. Something like this?\ncert_project_exists_own_org | default(false) | bool\n\u003d\u003d\u003d\u003e\nhelmchart_cert_project_exists_own_org | default(false) | bool",
       "parentUuid": "2cf1e818_2a1c5e26",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4315b477_9950c958",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:01:27Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "5f36afcd_20f1b329",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -1171,6 +1207,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "83baa24e_c37aa223",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:01:27Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "2486cec4_5a88eec6",
+      "range": {
+        "startLine": 8,
+        "startChar": 36,
+        "endLine": 8,
+        "endChar": 129
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "739d4a56_094cad0a",
@@ -1194,6 +1254,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fac6072_91327fcb",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:01:27Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "739d4a56_094cad0a",
+      "range": {
+        "startLine": 9,
+        "startChar": 10,
+        "endLine": 9,
+        "endChar": 32
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "764e0d6e_06942e45",
@@ -1207,6 +1291,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "follow the same example than the previous one",
+      "range": {
+        "startLine": 10,
+        "startChar": 10,
+        "endLine": 10,
+        "endChar": 27
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "68689f36_ebb723c9",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:01:27Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "764e0d6e_06942e45",
       "range": {
         "startLine": 10,
         "startChar": 10,
@@ -1254,6 +1362,30 @@
       "side": 1,
       "message": "Agree. Shall I just remove when and leave the block as it is or remove the block as well?\n- name: Create Helm Chart Certification Project\n  include_tasks: create_helmchart_project.yml\n  loop: \"{{ helmchart_to_certify }}\"\n  loop_control:\n    loop_var: hc\n  vars:\n    current_chart_name: \"{{ hc.chart_name }}\"\n    helmchart:\n      create_helmchart_project: \"{% if hc.create_helmchart_project is defined %}{{ hc.create_helmchart_project }}{% endif %}\"\n      attach_product_listing: \"{% if hc.attach_product_listing is defined %}{{ hc.attach_product_listing }}{% endif %}\"\n      short_description: \"{% if hc.short_description is defined %}{{ hc.short_description }}{% endif %}\"",
       "parentUuid": "a0a5ca92_d5ed2093",
+      "range": {
+        "startLine": 15,
+        "startChar": 2,
+        "endLine": 15,
+        "endChar": 35
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34c0de12_c1377b5b",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:01:27Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e03c895d_ec95665d",
       "range": {
         "startLine": 15,
         "startChar": 2,
