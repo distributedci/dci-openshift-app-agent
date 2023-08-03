@@ -262,6 +262,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d98b50c5_4d7b69da",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:04:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4975f0b8_f72b99fb",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "b6a682af_18e27d03",
@@ -544,6 +562,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc293b62_ddf4e67b",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:04:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a1261854_b3246b7d",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1f4466a1_281c4f8d",
@@ -607,6 +649,30 @@
       "range": {
         "startLine": 3,
         "startChar": 360,
+        "endLine": 3,
+        "endChar": 361
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9a2bd9f_76e7847c",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:04:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a9621210_4a4afb7a",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
         "endLine": 3,
         "endChar": 361
       },

@@ -16,6 +16,23 @@
       "message": "Updated",
       "revId": "3dd3605bea8d3b99021a9aeddb97903ceff026e2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2903307a_f3d887a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T23:04:05Z",
+      "side": 1,
+      "message": "Acked on Beto\u0027s comment",
+      "revId": "3dd3605bea8d3b99021a9aeddb97903ceff026e2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
