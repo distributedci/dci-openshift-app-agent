@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d2895d11_c369b235",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Please advise.",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "beaa1f2c_113fd186",
@@ -65,6 +82,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "Helm Chart Certification Project",
+      "range": {
+        "startLine": 47,
+        "startChar": 8,
+        "endLine": 47,
+        "endChar": 39
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "821721e8_650a7b94",
+        "filename": "plays/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "beaa1f2c_113fd186",
       "range": {
         "startLine": 47,
         "startChar": 8,
@@ -98,6 +139,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "07c2e0be_5415a883",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "873c23c7_de4558ad",
+      "range": {
+        "startLine": 6,
+        "startChar": 12,
+        "endLine": 6,
+        "endChar": 21
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "be407d45_63993ff4",
@@ -111,6 +176,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "extra whitespace to remove",
+      "range": {
+        "startLine": 10,
+        "startChar": 36,
+        "endLine": 10,
+        "endChar": 37
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f965037_ee28f8c8",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "be407d45_63993ff4",
       "range": {
         "startLine": 10,
         "startChar": 36,
@@ -140,6 +229,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "4975f0b8_f72b99fb",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "The chart_name is unique and it would not allow to create different project with chart_name. Backend will reject it. In this checking, it checks against the chart_name from settings.yml against all projects in this org_id. Please clarify more in which use-case that we will receive multiple project records? Thanks in advance.",
+      "parentUuid": "7e587a74_b756267e",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "b6a682af_18e27d03",
         "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
         "patchSetId": 1
@@ -151,6 +258,24 @@
       "writtenOn": "2023-08-02T14:30:21Z",
       "side": 1,
       "message": "we probably do need to set a default here because cert_project_data is always defined in the previous task",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e9fdd1b4_a7bb1eb0",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Thanks for your comments. Can you provide more info, Tatiana?",
+      "parentUuid": "b6a682af_18e27d03",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -174,6 +299,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5f36afcd_20f1b329",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Thanks. Something like this?\ncert_project_exists_own_org | default(false) | bool\n\u003d\u003d\u003d\u003e\nhelmchart_cert_project_exists_own_org | default(false) | bool",
+      "parentUuid": "2cf1e818_2a1c5e26",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fd2f3ec1_92688311",
         "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
         "patchSetId": 1
@@ -185,6 +328,24 @@
       "writtenOn": "2023-08-02T14:30:21Z",
       "side": 1,
       "message": "the same for cert_project_id, could we replace it with helm_project_id?",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63b482b2_dd61a8db",
+        "filename": "roles/create-certification-project/tasks/check_if_helmchart_project_exists_same_org.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fd2f3ec1_92688311",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -202,6 +363,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "whitespaces to remove",
+      "range": {
+        "startLine": 13,
+        "startChar": 81,
+        "endLine": 13,
+        "endChar": 85
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52d6c4c3_ed24eb42",
+        "filename": "roles/create-certification-project/templates/update_project_helmchart_setting.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "724dcd49_988362e6",
       "range": {
         "startLine": 13,
         "startChar": 81,
@@ -258,6 +443,54 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "febb95fb_152c14f1",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "980d2631_f511d869",
+      "range": {
+        "startLine": 1,
+        "startChar": 58,
+        "endLine": 1,
+        "endChar": 78
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a1261854_b3246b7d",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "I reworded functionalities to requirements but new role name is already mentioned at the beginning of this paragraph.",
+      "parentUuid": "6b1d6ffc_757268d1",
+      "range": {
+        "startLine": 1,
+        "startChar": 2,
+        "endLine": 1,
+        "endChar": 3
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1f4466a1_281c4f8d",
@@ -304,6 +537,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "785f2b80_90b4f55e",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1f4466a1_281c4f8d",
+      "range": {
+        "startLine": 3,
+        "startChar": 360,
+        "endLine": 3,
+        "endChar": 361
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a55764e7_1e13477a",
@@ -317,6 +574,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "(general comment) Write Helm chart in upper case whenever possible",
+      "range": {
+        "startLine": 12,
+        "startChar": 47,
+        "endLine": 12,
+        "endChar": 51
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c76c933a_15115449",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a55764e7_1e13477a",
       "range": {
         "startLine": 12,
         "startChar": 47,
@@ -346,6 +627,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2c6d8697_49623795",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "I just followed same format from other README.md. If needed I can create column.",
+      "parentUuid": "066599d8_72e583d2",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e8ca6886_d4609aa5",
         "filename": "roles/create-helmchart/README.md",
         "patchSetId": 1
@@ -357,6 +656,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "Github",
+      "range": {
+        "startLine": 16,
+        "startChar": 115,
+        "endLine": 16,
+        "endChar": 121
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5948f212_ed14f943",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e8ca6886_d4609aa5",
       "range": {
         "startLine": 16,
         "startChar": 115,
@@ -390,6 +713,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "05d1357b_5c371979",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "dd7ff780_39fbb14a",
+      "range": {
+        "startLine": 18,
+        "startChar": 204,
+        "endLine": 18,
+        "endChar": 205
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "efc2eed9_64d3f372",
@@ -403,6 +750,24 @@
       "writtenOn": "2023-08-02T14:30:21Z",
       "side": 1,
       "message": "do we need this file?",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5fc3ec7f_84f1d1d2",
+        "filename": "roles/create-helmchart/defaults/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "efc2eed9_64d3f372",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -426,6 +791,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "033195f6_8af8cd94",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Your example is different from what I am trying to do. I re-used some tasks from different role, so  I have to include that role and tasks that I needed. In your case, your tasks are from same role.",
+      "parentUuid": "fcc982e8_1a3bf3b2",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fb009b2f_852900bf",
         "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
         "patchSetId": 1
@@ -437,6 +820,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "Helm Chart Certification Project",
+      "range": {
+        "startLine": 8,
+        "startChar": 15,
+        "endLine": 8,
+        "endChar": 46
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae7397bc_2458ecde",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "fb009b2f_852900bf",
       "range": {
         "startLine": 8,
         "startChar": 15,
@@ -470,6 +877,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0cb9ebc_fda05f62",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b8614f3a_b2cdfbb0",
+      "range": {
+        "startLine": 14,
+        "startChar": 19,
+        "endLine": 14,
+        "endChar": 28
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7e47c938_6cf0e1fe",
@@ -493,6 +924,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "93646b36_f437d9d3",
+        "filename": "roles/create-helmchart/tasks/create_helmchart_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7e47c938_6cf0e1fe",
+      "range": {
+        "startLine": 22,
+        "startChar": 34,
+        "endLine": 22,
+        "endChar": 43
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "77233098_93321e5f",
@@ -506,6 +961,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "Helm Chart",
+      "range": {
+        "startLine": 2,
+        "startChar": 8,
+        "endLine": 2,
+        "endChar": 17
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3727a84b_5de8ff6a",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "77233098_93321e5f",
       "range": {
         "startLine": 2,
         "startChar": 8,
@@ -562,6 +1041,54 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7537679a_0409403c",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4f143706_d0f27540",
+      "range": {
+        "startLine": 4,
+        "startChar": 30,
+        "endLine": 4,
+        "endChar": 42
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c8d54937_3be1c99b",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3e236e17_158fb7f9",
+      "range": {
+        "startLine": 4,
+        "startChar": 20,
+        "endLine": 4,
+        "endChar": 29
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "63308cba_609e1ce4",
@@ -575,6 +1102,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "better to write: \"{{ hc.create_helmchart_project | default(\u0027\u0027) }}\"",
+      "range": {
+        "startLine": 8,
+        "startChar": 36,
+        "endLine": 8,
+        "endChar": 129
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2486cec4_5a88eec6",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Thank you, Ramon, for the feedback. I appreciate your suggestion to simplify the condition. However, my intention is to maintain the same style of checking as used in the container certification project. And I am open to updating the changes based on your feedback without any issues. Please let me know. Same comments for #9 and #10",
+      "parentUuid": "63308cba_609e1ce4",
       "range": {
         "startLine": 8,
         "startChar": 36,
@@ -644,6 +1195,30 @@
       "writtenOn": "2023-08-01T07:23:06Z",
       "side": 1,
       "message": "I think this is useless, this will always be true",
+      "range": {
+        "startLine": 15,
+        "startChar": 2,
+        "endLine": 15,
+        "endChar": 35
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e03c895d_ec95665d",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-03T15:14:54Z",
+      "side": 1,
+      "message": "Agree. Shall I just remove when and leave the block as it is or remove the block as well?\n- name: Create Helm Chart Certification Project\n  include_tasks: create_helmchart_project.yml\n  loop: \"{{ helmchart_to_certify }}\"\n  loop_control:\n    loop_var: hc\n  vars:\n    current_chart_name: \"{{ hc.chart_name }}\"\n    helmchart:\n      create_helmchart_project: \"{% if hc.create_helmchart_project is defined %}{{ hc.create_helmchart_project }}{% endif %}\"\n      attach_product_listing: \"{% if hc.attach_product_listing is defined %}{{ hc.attach_product_listing }}{% endif %}\"\n      short_description: \"{% if hc.short_description is defined %}{{ hc.short_description }}{% endif %}\"",
+      "parentUuid": "a0a5ca92_d5ed2093",
       "range": {
         "startLine": 15,
         "startChar": 2,
