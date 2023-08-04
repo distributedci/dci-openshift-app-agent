@@ -123,6 +123,24 @@
       "parentUuid": "17ae5d3c_398a08fc",
       "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "25c4ec01_22439ee0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-04T07:26:48Z",
+      "side": 1,
+      "message": "Hi Tony, thanks, really elegant solution. I\u0027d like to run three tests to ensure the functionality:\n1/ [Done] Test with PR of Brad: https://www.distributed-ci.io/jobs/ba9a3f87-aaab-43b5-98af-6d06fff2583a/jobStates?sort\u003ddate\n2/ check workload preflight-green, without PR of Brad in the dependency\n3/ check workload preflight-green + option skip_absent_testfiles in the preflight-green pipeline, to ensure compatibility with Jeniffer\u0027s work\n\nI\u0027ll add +2 once the tests are ok",
+      "parentUuid": "b3380ea1_4314c530",
+      "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
