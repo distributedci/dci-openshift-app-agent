@@ -141,6 +141,24 @@
       "parentUuid": "b3380ea1_4314c530",
       "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb1c7550_e998147e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-04T21:10:34Z",
+      "side": 1,
+      "message": "Last two successful jobs are 2 and 3\n\nI\u0027m doing an additional test\n\n- check workload preflight-green + skip_absent_testfiles + preflight pull 997\n\nThis should avoid failures as will be using skip_absent_testfiles because the filenames in the preflight-green is not using globbing.",
+      "parentUuid": "25c4ec01_22439ee0",
+      "revId": "f7e66780c11315fde9b0ce8fd847d3018c20f407",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
