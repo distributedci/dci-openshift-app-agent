@@ -33,6 +33,52 @@
       "message": "Acked on Beto\u0027s comment",
       "revId": "3dd3605bea8d3b99021a9aeddb97903ceff026e2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0dd3e30e_9a6ff4ca",
+        "filename": "roles/create-certification-project/tasks/update_helmchart_project.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-04T07:35:39Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 2,
+        "startChar": 54,
+        "endLine": 2,
+        "endChar": 64
+      },
+      "revId": "3dd3605bea8d3b99021a9aeddb97903ceff026e2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dff00b5a_0577899b",
+        "filename": "roles/create-certification-project/tasks/update_helmchart_project.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-04T07:35:39Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 26,
+        "startChar": 29,
+        "endLine": 26,
+        "endChar": 38
+      },
+      "revId": "3dd3605bea8d3b99021a9aeddb97903ceff026e2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

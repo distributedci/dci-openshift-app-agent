@@ -1297,6 +1297,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "20c96f07_e2281ea4",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-04T07:35:39Z",
+      "side": 1,
+      "message": "Understood! If there are other places where this kind of conditions is applied, I\u0027d say it\u0027s better to move to this other way, since it\u0027s easier to review and understand. Thanks for applying the review for this code",
+      "parentUuid": "83baa24e_c37aa223",
+      "range": {
+        "startLine": 8,
+        "startChar": 36,
+        "endLine": 8,
+        "endChar": 129
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "739d4a56_094cad0a",
@@ -1452,6 +1476,30 @@
       "side": 1,
       "message": "Ack",
       "parentUuid": "e03c895d_ec95665d",
+      "range": {
+        "startLine": 15,
+        "startChar": 2,
+        "endLine": 15,
+        "endChar": 35
+      },
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "90097d51_66bc6c1d",
+        "filename": "roles/create-helmchart/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-04T07:35:39Z",
+      "side": 1,
+      "message": "By just removing the when condition is enough. Also, It\u0027s true that, since this playbook only has one task included in the block, maybe you can get rid of the block too, but that\u0027s a personal decision, for me it\u0027s not an issue to have the block, as it is right now",
+      "parentUuid": "34c0de12_c1377b5b",
       "range": {
         "startLine": 15,
         "startChar": 2,
