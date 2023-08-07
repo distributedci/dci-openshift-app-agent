@@ -56,6 +56,30 @@
       },
       "revId": "d13bc2e7e575bd4e9ea1cd3b19474e3ce8d974bd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4f761abb_4cebe8cc",
+        "filename": "roles/create-certification-project/tasks/check_if_container_project_exists.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-07T17:48:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9f54cfc6_7ea012e8",
+      "range": {
+        "startLine": 12,
+        "startChar": 17,
+        "endLine": 12,
+        "endChar": 26
+      },
+      "revId": "d13bc2e7e575bd4e9ea1cd3b19474e3ce8d974bd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

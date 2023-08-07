@@ -86,6 +86,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6982f93_b68597c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-07T17:48:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5b129106_1b84a522",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "beaa1f2c_113fd186",
@@ -758,6 +776,24 @@
       "side": 1,
       "message": "I just followed same format from other README.md. If needed I can create column.",
       "parentUuid": "066599d8_72e583d2",
+      "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ccbc6d79_11538f0d",
+        "filename": "roles/create-helmchart/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-08-07T17:48:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2c6d8697_49623795",
       "revId": "4ce00d538a1c8b63602f323813c4a51bbb7a461e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
