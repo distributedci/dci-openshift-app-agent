@@ -16,6 +16,46 @@
       "message": "recheck",
       "revId": "d13bc2e7e575bd4e9ea1cd3b19474e3ce8d974bd",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "091ba121_a516b242",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-07T07:46:58Z",
+      "side": 1,
+      "message": "Just one more spelling change, the rest looks fine for me",
+      "revId": "d13bc2e7e575bd4e9ea1cd3b19474e3ce8d974bd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9f54cfc6_7ea012e8",
+        "filename": "roles/create-certification-project/tasks/check_if_container_project_exists.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-07T07:46:58Z",
+      "side": 1,
+      "message": "Helm Chart",
+      "range": {
+        "startLine": 12,
+        "startChar": 17,
+        "endLine": 12,
+        "endChar": 26
+      },
+      "revId": "d13bc2e7e575bd4e9ea1cd3b19474e3ce8d974bd",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
