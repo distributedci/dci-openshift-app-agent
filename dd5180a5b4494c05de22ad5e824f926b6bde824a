@@ -16,6 +16,23 @@
       "message": "Change is ready for review. First debug job from BOS2 is testing this change directly, where no tnf PR is used, whereas the second one is testing a tnf PR change, this comes from https://softwarefactory-project.io/r/c/dci-openshift-agent/+/29068\n\nIn the jobs launched in cluster10, first one is also testing a tnf PR, and the second one is directly testing this change without using tnf PR.\n\nIn all cases, the result is the expected one",
       "revId": "dd5180a5b4494c05de22ad5e824f926b6bde824a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbd94ffe_0d282602",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-08T13:13:08Z",
+      "side": 1,
+      "message": "reverify",
+      "revId": "dd5180a5b4494c05de22ad5e824f926b6bde824a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
