@@ -34,6 +34,24 @@
       "parentUuid": "86264c74_c5bb5bd5",
       "revId": "7bd683b48b2b58c90e7c0047a25e32ceab85c637",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c7676e8b_bf9cb4c9",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-08T19:10:30Z",
+      "side": 1,
+      "message": "Andrew, to fix your PR, just go to your branch and run:\n\n\u003e git commit --amend  (Then fix the commit message)\n\u003e git-review (To submit again)",
+      "parentUuid": "164aa616_528dc2c6",
+      "revId": "7bd683b48b2b58c90e7c0047a25e32ceab85c637",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
