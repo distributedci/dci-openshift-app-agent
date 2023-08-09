@@ -51,6 +51,41 @@
       "parentUuid": "80316f08_96121c46",
       "revId": "f759350b04b455749d036c1717fc9115a0debf9c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ada7811c_0a7a8976",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-09T14:22:42Z",
+      "side": 1,
+      "message": "Just some fruit for thought: In case we would like to address only the must-gather issue, I discovered there is a parameter that could help:\n\n\u003e oc adm must-gather --help\n\u003e     --timeout\u003d\u002710m\u0027: The length of time to gather data, like 5s, 2m, or 3h, higher than zero. Defaults to 10 minutes.\n\nof course we do not only run the must-gather but we also run a bunch of \"oc get something\" commands, but this could help if we do not want to have the async task",
+      "parentUuid": "cc672c75_165e3cc3",
+      "revId": "f759350b04b455749d036c1717fc9115a0debf9c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "12821e4e_78e45a6f",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-09T14:22:42Z",
+      "side": 1,
+      "message": "Thanks for starting this, looks good to me, let\u0027s just replace \"getting events\" with \"getting logs\" or something like that : )",
+      "revId": "f759350b04b455749d036c1717fc9115a0debf9c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
