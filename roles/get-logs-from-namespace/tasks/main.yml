@@ -37,10 +37,26 @@
     > {{ get_logs_folder }}/{{ get_logs_ns }}_status.log ;
     [ -s {{ get_logs_folder }}/{{ get_logs_ns }}_status.log ] || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_status.log
 
-- name: "Get events from from namespace"
+- name: Get events from namespace setting 1h as timeout
   shell: >
     {{ oc_tool_path }} get events
     --namespace={{ get_logs_ns }}
     > {{ get_logs_folder }}/{{ get_logs_ns }}_events.log ;
     [ -s {{ get_logs_folder }}/{{ get_logs_ns }}_events.log ] || rm -f {{ get_logs_folder }}/{{ get_logs_ns }}_events.log
+  async: 3600
+  poll: 0
+  register: get_events_exec
+
+- name: Wait while getting events from namespace is done
+  async_status:
+    jid: "{{ get_events_exec.ansible_job_id }}"
+  register: get_events_job_result
+  until: get_events_job_result.finished
+  retries: 60
+  delay: 60
+
+- name: Cleanup the async wait
+  async_status:
+    jid: "{{ get_events_exec.ansible_job_id }}"
+    mode: cleanup
 ...
