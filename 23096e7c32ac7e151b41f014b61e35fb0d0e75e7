@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "23096e7c32ac7e151b41f014b61e35fb0d0e75e7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bff1ec8d_424d5eee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-09T13:00:03Z",
+      "side": 1,
+      "message": "Hi Ramon, sorry, I think I did the fix too fast and that\u0027s probably not a good fix. I checked the logs once again, we see that the last task here https://github.com/redhat-cip/dci-openshift-app-agent/blob/6ad26d803c4c0b5605d37a2ff4c4669c66f798c6/roles/get-logs-from-namespace/tasks/main.yml#L40 has finished:\n\nTASK [get-logs-from-namespace : Get events from from namespace]\n\"start\": \"2023-08-08 22:06:51.329644\"\n\"end\": \"2023-08-08 22:06:51.412042\"\n\n\nThe timeout happened after that last task, and my fix in its current form will do nothing useful. ",
+      "revId": "23096e7c32ac7e151b41f014b61e35fb0d0e75e7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
