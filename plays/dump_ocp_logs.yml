@@ -37,5 +37,21 @@
       PATH: "{{ ansible_env.PATH }}:/sbin:/usr/sbin:/usr/local/bin/{% if client_tmp_dir.path is defined %}:{{ client_tmp_dir.path }}{% endif %}"
       DO_MUST_GATHER: "{{ do_must_gather | lower }}"
     script: plays/scripts/get-logs "{{ job_logs.path }}"
-    ignore_errors: true
+    async: 3600
+    poll: 0
+    register: get_logs_exec
+
+  - name: Wait while getting events from namespace is done
+    async_status:
+      jid: "{{ get_logs_exec.ansible_job_id }}"
+    register: get_logs_job_result
+    until: get_logs_job_result.finished
+    retries: 60
+    delay: 60
+    failed_when: false
+
+  - name: Cleanup the async wait
+    async_status:
+      jid: "{{ get_logs_exec.ansible_job_id }}"
+      mode: cleanup
 ...
