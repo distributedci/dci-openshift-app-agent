@@ -51,6 +51,24 @@
       "message": "I see in the last job, the task failed with: \"Could not find or access \u0027timeout\u0027 maybe we need \"/usr/bin\" in the PATH?",
       "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5363278_a20ca47b",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-09T21:15:53Z",
+      "side": 1,
+      "message": "hmm, actually it\u0027s using timeout as if it was a directory in the path to the script, maybe we need to change this with a shell task?",
+      "parentUuid": "7d1495aa_cfe83497",
+      "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
