@@ -74,3 +74,6 @@ if [ "$DO_MUST_GATHER" = true ]; then
 
   rm -Rf "${must_gather_dir}"
 fi
+
+# Sleeping more than 20min to make it timeout
+sleep 1300
