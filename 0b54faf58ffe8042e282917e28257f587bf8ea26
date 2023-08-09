@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "19ab4a7a_6e061478",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-09T17:38:14Z",
+      "side": 1,
+      "message": "Patchset 2 has a sleep in the script to test the timeout and continuation of collection of logs",
+      "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
