@@ -16,6 +16,41 @@
       "message": "Patchset 2 has a sleep in the script to test the timeout and continuation of collection of logs",
       "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5fa552e2_01d493ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-09T21:08:00Z",
+      "side": 1,
+      "message": "👌",
+      "parentUuid": "19ab4a7a_6e061478",
+      "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d1495aa_cfe83497",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-09T21:08:00Z",
+      "side": 1,
+      "message": "I see in the last job, the task failed with: \"Could not find or access \u0027timeout\u0027 maybe we need \"/usr/bin\" in the PATH?",
+      "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
