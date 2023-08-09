@@ -69,6 +69,24 @@
       "parentUuid": "7d1495aa_cfe83497",
       "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76ee65a3_e66d77f1",
+        "filename": "plays/dump_ocp_logs.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-09T22:49:54Z",
+      "side": 1,
+      "message": "Yes, I had to switch to a shell module instead, I\u0027m giving it a try 🙏",
+      "parentUuid": "e5363278_a20ca47b",
+      "revId": "0b54faf58ffe8042e282917e28257f587bf8ea26",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
