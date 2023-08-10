@@ -33,6 +33,23 @@
       "message": "This CR is to extend the wait time to cover the service unavailable period: https://www.distributed-ci.io/jobs/cb68b2ce-439f-43ff-8085-0a57d1bc0bd4/jobStates?sort\u003ddate\u0026task\u003d31cb8ed8-471d-4a50-bdc5-b3cf9d417942  ",
       "revId": "16508270b6d7f73e5086eff1ab77781185ce7b43",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c38307e_e51ca842",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2023-08-10T13:30:10Z",
+      "side": 1,
+      "message": "LVGTM.\n\nThanks for this change.",
+      "revId": "16508270b6d7f73e5086eff1ab77781185ce7b43",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
