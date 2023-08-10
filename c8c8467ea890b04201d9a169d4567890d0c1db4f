@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3dfb570d_25c9004b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-10T07:16:56Z",
+      "side": 1,
+      "message": "Thank Tony, it\u0027s working! https://www.distributed-ci.io/jobs/07a4986a-785c-4479-b184-3003880f62dd/jobStates?sort\u003ddate\u0026task\u003d3688c482-0aa6-4370-81a4-0e0f6794108b\n\nLet\u0027s remove sleep and get it merged",
+      "revId": "c8c8467ea890b04201d9a169d4567890d0c1db4f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
