@@ -4,6 +4,13 @@
     state: absent
     definition: "{{ lookup('file', scorecard_prerun_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
 
+- name: "Delete {{ scorecard_namespace }}"
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ scorecard_namespace }}"
+    state: absent
+
 - name: Wait for MCP status
   include_role:
     name: check-resource
@@ -24,4 +31,9 @@
     path: "{{ scorecard_prerun_tmp_dir.path }}"
     state: absent
   when: scorecard_prerun_tmp_dir is defined
+
+- name: Remove operator_sdk_img built from the source
+  containers.podman.podman_image:
+    name: "{{ operator_sdk_img }}"
+    state: absent
 ...
