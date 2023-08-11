@@ -24,4 +24,20 @@
     path: "{{ scorecard_prerun_tmp_dir.path }}"
     state: absent
   when: scorecard_prerun_tmp_dir is defined
+
+- name: "Wait for {{ scorecard_namespace }} to be destroyed"
+  community.kubernetes.k8s_info:
+    api_version: v1
+    kind: Namespace
+    name: "{{ scorecard_namespace }}"
+    state: absent
+  register: namespace_info
+  until: namespace_info | success
+  retries: 6
+  delay: 20
+
+- name: Remove operator_sdk_img built from the source
+  containers.podman.podman_image:
+    name: "{{ operator_sdk_img }}"
+    state: absent
 ...
