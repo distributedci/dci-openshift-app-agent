@@ -16,6 +16,23 @@
       "message": "check workload operator-sdk",
       "revId": "5553dc787a0d717b2fadf7cd1b1c6df6a56b6711",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08016949_2382d41d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-14T13:37:54Z",
+      "side": 1,
+      "message": "This is to fix the failures like this: https://www.distributed-ci.io/jobs/f740d6d2-db4e-4d69-8cf5-7523a4dacecd/jobStates?sort\u003ddate\u0026task\u003d58806355-618a-4cd3-8a45-1ecedd447898\n\n\u003e TASK [failed/RUNNING HANDLER [operator-sdk : Remove operator_sdk_img built from the source]]1s\n\u003e task path: /usr/share/dci-openshift-app-agent/roles/operator-sdk/handlers/main.yml:2\n\u003e fatal: [jumphost]: FAILED! \u003d\u003e {\"changed\": false, \"msg\": \"Failed to remove image registry.dfwt5g.lab:4443/operator-framework/operator-sdk:pr6529-f740d6d2-db4e-4d69-8cf5-7523a4dacecd. Error: image used by febb552ea0a43be113943c5912a4a7ce7dbf673fc530dd0daac5f9a46c105bde: image is in use by a container\"}\n\nrelated to the fact that the scorecard-pod (and the testing namespace as a consequence) is not destroyed fast enough. \n\nHere you can see that the fix is working: https://www.distributed-ci.io/jobs/1c728741-64b6-43b1-9e2f-214589256e7a/jobStates?sort\u003ddate\u0026task\u003dd0dc99ad-8028-4535-98f9-a08b0e207c6a\n\n\u003e TASK [operator-sdk : Wait until namespace scorecard-testing is unstuck]11s\n\u003e task path: /home/dciteam/gerrit/29133-5673f8b80834befb7990018a92616397/dci-openshift-app-agent/roles/operator-sdk/tasks/tests_scorecard_check_operator.yml:157\n\u003e FAILED - RETRYING: Wait until namespace scorecard-testing is unstuck (6 retries left).\n\u003e ok: [jumphost] \u003d\u003e {\"api_found\": true, \"attempts\": 2, \"changed\": false, \"resources\":[]}",
+      "revId": "5553dc787a0d717b2fadf7cd1b1c6df6a56b6711",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
