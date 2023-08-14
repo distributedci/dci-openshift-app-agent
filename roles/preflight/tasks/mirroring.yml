@@ -47,60 +47,96 @@
     prefix: preflight_prerun_tmp_dir.
   register: preflight_prerun_tmp_dir
 
-- name: Manage imageContentSourcePolicy update
+- name: "Get catalog Digest"
+  shell:
+    cmd: >
+      skopeo inspect
+      --authfile {{ pullsecret_tmp_file }}
+      docker://{{ OO_INDEX }} |
+      jq -r '.Digest'
+  register: catalog_sha
+  retries: 2
+  delay: 10
+  until: not catalog_sha.failed
+
+- name: "Remove local catalog image"
+  shell: |
+    podman rmi "{{ OO_INDEX }}"
+
+- name: Redefine catalog path + SHA
+  set_fact:
+    OO_INDEX: "{{ dci_local_registry }}/telcoci/preflight/disconnected-catalog@{{ catalog_sha.stdout }}"
+
+- name: Mirror the disconnected-catalog
+  shell: >
+    {{ oc_tool_path }} adm catalog mirror
+    --registry-config {{ partner_creds }}
+    --max-components=3
+    {{ OO_INDEX }}
+    {{ dci_local_registry }}
+    --to-manifests={{ preflight_prerun_tmp_dir.path }}/tmp_oc
+  register: catalog_mirror
+  retries: 2
+  delay: 10
+  until: catalog_mirror.stderr.find('error:') == -1
+
+- name: Set image source file fact
+  vars:
+    is_manifest_files:
+      - "{{ preflight_prerun_tmp_dir.path }}/tmp_oc/imageDigestMirrorSet.yaml"
+      - "{{ preflight_prerun_tmp_dir.path }}/tmp_oc/imageContentSourcePolicy.yaml"
+  set_fact:
+    prefligh_is_file: "{{ lookup('first_found', is_manifest_files) }}"
+
+- name: Append pre-flight images to Image Sources 
+  blockinfile:
+    block: |
+      # Scorecard container
+        - mirrors:
+          - {{ dci_local_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
+          source: {{ item.split('@')[0] }}
+    marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.split('@')[0] }}"
+    path: "{{ preflight_is_file }}"
+  # TODO: these old images are still required by the operator-sdk 1.30.0
+  loop: "{{ (preflight_images + old_images) | unique }}"
+
+- name: Set image source kind
+  set_fact:
+    image_source_kind: >
+      {{ idms_resources.resources |
+         length |
+         ternary('ImageDigestMirrorSet', 'ImageContentSourcePolicy')
+      }}
+
+- name: Migrate ICSP to IDMS
+  when:
+    - image_source_kind == 'ImageDigestMirrorSet'
+    - "'imageContentSourcePolicy.yaml' in preflight_is_file"
   block:
-    - name: "Get catalog SHA256"
+    - name: Transform ICSP to IDMS
       shell:
-        cmd: |
-          skopeo inspect --authfile {{ pullsecret_tmp_file }} \
-          docker://{{ OO_INDEX }} | jq -r '.Digest'
-      register: catalog_sha
-      retries: 2
-      delay: 10
-      until: not catalog_sha.failed
+        cmd: >
+          {{ oc_tool_path }} adm migrate icsp
+          {{ preflight_is_file }}
+          --dest-dir {{ preflight_prerun_tmp_dir.path }}
+      register: migrate_result
 
-    - name: "Remove local catalog image"
-      shell: |
-        podman rmi "{{ OO_INDEX }}"
-
-    - name: Redefine catalog path + SHA
+    - name: Set new image source file
       set_fact:
-        OO_INDEX: "{{ dci_local_registry }}/telcoci/preflight/disconnected-catalog@{{ catalog_sha.stdout }}"
+        preflight_is_file: "{{ migrate_result.stdout_lines[0].split(' ')[-1] }}"
 
-    - name: Mirror the disconnected-catalog
-      shell: >
-        {{ oc_tool_path }} adm catalog mirror -a {{ partner_creds }}
-        --max-components=3
-        {{ OO_INDEX }} {{ dci_local_registry }} --to-manifests={{ preflight_prerun_tmp_dir.path }}/tmp_oc
-      register: catalog_mirror
-      retries: 2
-      delay: 10
-      until: catalog_mirror.stderr.find('error:') == -1
+- name: Apply Image Source file
+  community.kubernetes.k8s:
+    definition: "{{ lookup('file', preflight_is_file) }}"
+  notify:
+    - Remove tmp dir
 
-    - name: Append pre-flight images to imageContentSourcePolicy
-      blockinfile:
-        block: |
-          # Scorecard container
-            - mirrors:
-              - {{ dci_local_registry }}/{{ '/'.join(item.split('@')[0].split('/')[1:]) }}
-              source: {{ item.split('@')[0] }}
-        marker: "# {mark} ANSIBLE MANAGED BLOCK {{ item.split('@')[0] }}"
-        path: "{{ preflight_prerun_tmp_dir.path }}/tmp_oc/imageContentSourcePolicy.yaml"
-      # TODO: these old images are still required by the operator-sdk 1.30.0
-      loop: "{{ (preflight_images + old_images) | unique }}"
-
-    - name: Apply Image Content Source Policy
-      community.kubernetes.k8s:
-        definition: "{{ lookup('file', preflight_prerun_tmp_dir.path + '/tmp_oc/imageContentSourcePolicy.yaml') }}"
-      notify:
-        - Remove tmp dir
-
-    - name: Wait for MCP status
-      include_role:
-        name: check-resource
-      vars:
-        resource_to_check: "MachineConfigPool"
-        check_wait_retries: 45
-        check_wait_delay: 20
-        check_reason: "ICSP update in preflight role"
+- name: Wait for MCP status
+  include_role:
+    name: check-resource
+  vars:
+    resource_to_check: "MachineConfigPool"
+    check_wait_retries: 45
+    check_wait_delay: 20
+    check_reason: "Image Source update in preflight role"
 ...
