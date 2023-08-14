@@ -54,6 +54,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "9771f820_004da920",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-14T14:55:29Z",
+      "side": 1,
+      "message": "thank you Manny!",
+      "revId": "5553dc787a0d717b2fadf7cd1b1c6df6a56b6711",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "53391fd4_5e18f813",
         "filename": "roles/operator-sdk/tasks/tests_scorecard_check_operator.yml",
         "patchSetId": 8
