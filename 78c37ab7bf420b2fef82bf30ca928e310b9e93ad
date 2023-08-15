@@ -16,6 +16,24 @@
       "message": "Thanks David, just one thing, do you mind updating the entries of the variables \"tnf_suites\" and \"tnf_skip_suites\" in the doc table[1] to mention that the \"-s\" and \"-f\" options are deprecated since v4.1.0. \n\n[1]https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/roles/cnf-cert#variables\n\n",
       "revId": "78c37ab7bf420b2fef82bf30ca928e310b9e93ad",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "33b6e4d8_b5f9c1bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1056
+      },
+      "writtenOn": "2023-08-15T18:00:33Z",
+      "side": 1,
+      "message": "Upon further consideration, perhaps we should stick with the flags for backward compatibility?\n\nThe same config [0] and the same DCI agent works for 4.2.4 [1] and doesn’t for 4.3.4 [2]. Why did the agent decide to put \"-s\" in [2]?\n\n[0] ttps://github.com/dci-labs/mavenir-tnf-config/blob/main/cfg/settings-mco.yml\n[1] https://www.distributed-ci.io/jobs/037f2497-a8f2-4cc0-bb31-5a8ab4810f19\n[2] https://www.distributed-ci.io/jobs/52935963-644c-45b4-b3d9-8987894a3b0c",
+      "parentUuid": "aac9c64a_84565633",
+      "revId": "78c37ab7bf420b2fef82bf30ca928e310b9e93ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
