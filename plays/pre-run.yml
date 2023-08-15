@@ -1,4 +1,7 @@
 ---
+- name:  Silly task to trick test-runner with a fake change
+  debug:
+    msg: ":)"
 
 - name: pre-run
   dci_job:
