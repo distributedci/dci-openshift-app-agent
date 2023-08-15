@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aac9c64a_84565633",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-15T15:23:05Z",
+      "side": 1,
+      "message": "Thanks David, just one thing, do you mind updating the entries of the variables \"tnf_suites\" and \"tnf_skip_suites\" in the doc table[1] to mention that the \"-s\" and \"-f\" options are deprecated since v4.1.0. \n\n[1]https://github.com/redhat-cip/dci-openshift-app-agent/tree/master/roles/cnf-cert#variables\n\n",
+      "revId": "78c37ab7bf420b2fef82bf30ca928e310b9e93ad",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
