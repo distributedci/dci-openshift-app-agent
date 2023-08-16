@@ -46,6 +46,30 @@
       },
       "revId": "f19fcf20d1bf107466b4766c2cc5f27df30dc0a2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "646fcf23_3b57a52c",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-16T14:26:29Z",
+      "side": 0,
+      "message": "Sorry David, but I disagree. If there is something that is not supported in a given version, we need to properly update the code. Currently, in dci-openshift-app-agent, the cnf-cert role is complex enough now because we need to keep backwards compatibility. I don\u0027t know why this should be an exception for that rule.\nI will create a change to include this, for me it\u0027s easy to check and maintain the code when having conditions that wrap some part of the code that may be not supported in the future.",
+      "parentUuid": "35f77381_e9ce8ea3",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 74
+      },
+      "revId": "f19fcf20d1bf107466b4766c2cc5f27df30dc0a2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
