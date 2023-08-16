@@ -86,6 +86,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e01a415_37bfc327",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "50b0b5cd_126adcfd",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "baa32a15_d5e713a4",
@@ -99,6 +117,24 @@
       "writtenOn": "2023-08-16T12:20:42Z",
       "side": 1,
       "message": "would it be a good idea to replace until with wait?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a65d6002_66889129",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "I\u0027m not sure I understand, does shell support wait? could you share an example?",
+      "parentUuid": "baa32a15_d5e713a4",
       "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -120,6 +156,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f9d72a_ebd66bb3",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "Is the output of the mirror-catalog role[1]. Will not collide as is re-set every time it\u0027s called. Here we save the value because is used in the teardown, that way is not lost.\n\n[1] https://github.com/redhat-cip/dci-openshift-agent/tree/master/common-roles/mirror-catalog#outputs",
+      "parentUuid": "49997346_9fdb8cc3",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "61900dd3_07fd9077",
@@ -133,6 +187,24 @@
       "writtenOn": "2023-08-16T12:20:42Z",
       "side": 1,
       "message": "the same question here, for example, if we run first preflight tests and then scorecard tests, how do you ensure that mc_is_file does not create any collisions?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "016294ea_0459f911",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "mc_is_file is an output of the role, and we are setting the fact right after its use",
+      "parentUuid": "61900dd3_07fd9077",
       "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -154,6 +226,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6b9cc7d_37389731",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "For roles yes, but this is a hook",
+      "parentUuid": "e0e64163_a962791d",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8950d056_3b41416a",
@@ -171,6 +261,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "82d54838_97b462e9",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "Same as above",
+      "parentUuid": "8950d056_3b41416a",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ea20e386_8f2e74d2",
@@ -184,6 +292,24 @@
       "writtenOn": "2023-08-16T12:20:42Z",
       "side": 1,
       "message": "ditto for all the variables, you usually advice to make them role-specific",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8f079aa3_8c4f8ca2",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-16T16:37:49Z",
+      "side": 1,
+      "message": "Yes, in roles",
+      "parentUuid": "ea20e386_8f2e74d2",
       "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
