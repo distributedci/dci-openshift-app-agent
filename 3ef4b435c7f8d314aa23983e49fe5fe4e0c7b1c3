@@ -50,6 +50,142 @@
       "message": "check dallas ocp-4.14-vanilla example-cnf openshift-vanilla:ansible_extravars\u003ddci_force_mirroring:true example-cnf:ansible_extravars\u003dexample_cnf_deploy_script_version:idms_support",
       "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "729769b7_5f3530ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "Hi Tony, thank you for the CR, added some suggestions. The main point is how the potential variable shadowing for mc_is_file handled?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50b0b5cd_126adcfd",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "typo: delete :)",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "baa32a15_d5e713a4",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "would it be a good idea to replace until with wait?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49997346_9fdb8cc3",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "where is mc_is_file defined? How do you handle possible collisions if it is defined in another role?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "61900dd3_07fd9077",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "the same question here, for example, if we run first preflight tests and then scorecard tests, how do you ensure that mc_is_file does not create any collisions?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0e64163_a962791d",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "should you be using here tnf_pullsecret_tmp_file as you usually advice?",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8950d056_3b41416a",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 43,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "ditto",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ea20e386_8f2e74d2",
+        "filename": "samples/tnf_test_example/hooks/prepare_operator.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 62,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T12:20:42Z",
+      "side": 1,
+      "message": "ditto for all the variables, you usually advice to make them role-specific",
+      "revId": "3ef4b435c7f8d314aa23983e49fe5fe4e0c7b1c3",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
