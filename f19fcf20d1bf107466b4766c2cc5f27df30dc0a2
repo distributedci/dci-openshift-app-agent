@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c527b675_a1d4aae7",
+        "filename": "roles/cnf-cert/tasks/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-16T08:18:43Z",
+      "side": 0,
+      "message": "My suggestion is not to remove this, and wrap it under a condition related to the tnf version:\n\n    {% if test_network_function_version is version(\"v4.3.3\", \"\u003c\u003d\") %}\n    {% if tnf_suites|length %}-f \u0027{{ tnf_suites }}\u0027 \\{% endif %}\n    {% if tnf_skip_suites|length %}-s \u0027{{ tnf_skip_suites }}\u0027 \\{% endif %}\n    {% endif %}",
+      "range": {
+        "startLine": 69,
+        "startChar": 0,
+        "endLine": 70,
+        "endChar": 74
+      },
+      "revId": "f19fcf20d1bf107466b4766c2cc5f27df30dc0a2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
