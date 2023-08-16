@@ -33,6 +33,23 @@
       "message": "Next tests will be launched in the following way:\n\n```\n$ check_workload 29162 tnf-test-cnf tnf-test-cnf:ansible_extravars\u003dtnf_suites:observability tnf-test-cnf:ansible_extravars\u003dtnf_labels:\"\" tnf-test-cnf:ansible_extravars\u003dtest_network_function_version:v4.3.3 tnf-test-cnf:ansible_extravars\u003dtests_to_verify:[]\n```",
       "revId": "e7d86070d082be6fda935520437eda4306e4eef0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef953400_8f76a0e9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-16T16:21:10Z",
+      "side": 1,
+      "message": "\u003e Patch Set 3:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/d93f8fde-c91a-4c8c-917b-0dbdd0dc04f8/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/29162/\n\nand worked! only observability tests were launched as specified in the extravars provided by CLI, and in this case, since we\u0027re using tnf v4.3.3, -f option is being taken into account:\n\n```\n./run-tnf-container.sh -k /home/dciteam/clusterconfigs-cluster10/kubeconfig -t /tmp/ansible.d_a_durr/cnf-certification-test/cnf-certification-test -o /tmp/ansible.d_a_durr/cnf-certification-test/cnf-certification-test -f \u0027observability\u0027 \\\\-i cnf-certification-test:v4.3.3-d93f8fde-c91a-4c8c-917b-0dbdd0dc04f8 \u0026\u003e cnf-certification-test/dci-tnf-execution.log\n\n```\nchange is now ready for merging again",
+      "revId": "e7d86070d082be6fda935520437eda4306e4eef0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
