@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 3:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/59a3125f-8678-4548-82a8-3b26ca6268a8/jobStates\n\u003e  from https://softwarefactory-project.io/r/#/c/29162/\n\nthis corresponds to:\n\n```\n$ check_workload 29162 tnf-test-cnf-green tnf-test-cnf-green:ansible_extravars\u003dtnf_suites:whatever\n```\n\nWhere we have this result: https://www.distributed-ci.io/jobs/59a3125f-8678-4548-82a8-3b26ca6268a8/jobStates?sort\u003ddate\u0026task\u003d46fded61-588b-4ff0-b3a5-ffcd43a340f9\n\nAnd this command executed:\n\n```\n./run-tnf-container.sh -k /home/dciteam/clusterconfigs-cluster10/kubeconfig -t /tmp/ansible.ta4_nm62/cnf-certification-test/cnf-certification-test -o /tmp/ansible.ta4_nm62/cnf-certification-test/cnf-certification-test -l \u0027common,telco,extended,preflight\u0027 \\\\-c /tmp/ansible.ta4_nm62/cnf-certification-test/config.json \\\\-i cnf-certification-test:unstable-59a3125f-8678-4548-82a8-3b26ca6268a8 \u0026\u003e cnf-certification-test/dci-tnf-execution.log\n```\n\nSo, despite using tnf_suites, it\u0027s skipped since it\u0027s used in a version which doesn\u0027t support it.\n\nI\u0027ll test now the opposite: to run tnf_suites in a version that supports it, to confirm it\u0027s working the backwards compatibility.",
       "revId": "e7d86070d082be6fda935520437eda4306e4eef0",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34e55cd1_5a6440f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-16T15:46:15Z",
+      "side": 1,
+      "message": "Next tests will be launched in the following way:\n\n```\n$ check_workload 29162 tnf-test-cnf tnf-test-cnf:ansible_extravars\u003dtnf_suites:observability tnf-test-cnf:ansible_extravars\u003dtnf_labels:\"\" tnf-test-cnf:ansible_extravars\u003dtest_network_function_version:v4.3.3 tnf-test-cnf:ansible_extravars\u003dtests_to_verify:[]\n```",
+      "revId": "e7d86070d082be6fda935520437eda4306e4eef0",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
