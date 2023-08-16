@@ -20,6 +20,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "a20611eb_9102e554",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-16T13:16:07Z",
+      "side": 1,
+      "message": "thanks Ramon!",
+      "revId": "23b132dceb6aa32ad15fa29592528eb7456339aa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "c5e6aff7_99c78eaa",
         "filename": "roles/cnf-cert/README.md",
         "patchSetId": 1
