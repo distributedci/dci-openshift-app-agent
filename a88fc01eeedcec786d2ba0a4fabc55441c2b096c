@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4be6d56c_847a78eb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-17T15:12:40Z",
+      "side": 1,
+      "message": "Thanks Ramon, I checked really quick, looks harmless, let\u0027s merge it and try on Mon. Have a nice recharge day!",
+      "revId": "a88fc01eeedcec786d2ba0a4fabc55441c2b096c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
