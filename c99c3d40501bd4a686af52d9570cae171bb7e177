@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1bc9f768_6ce6e87c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-17T09:38:46Z",
+      "side": 1,
+      "message": "Hello Tony, I appreciate the fixes. Let\u0027s make sure they work for the operator-sdk pipeline as well:\n`check workload operator-sdk`",
+      "revId": "c99c3d40501bd4a686af52d9570cae171bb7e177",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}

@@ -34,6 +34,24 @@
       "parentUuid": "ea9b0c07_2c68efb9",
       "revId": "046ca12a471ad3c920fbfacf42b12c6a04f45200",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "924bb223_1a0e9386",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-17T09:38:46Z",
+      "side": 0,
+      "message": "Yes, of course. It\u0027s considerate of you to suggest addressing this issue as well. Let\u0027s ensure that we run the command `check workload operator-sdk` to cover this part.",
+      "parentUuid": "9cc2b803_d70e59f1",
+      "revId": "046ca12a471ad3c920fbfacf42b12c6a04f45200",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
