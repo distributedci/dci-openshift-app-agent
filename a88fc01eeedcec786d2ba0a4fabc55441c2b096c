@@ -33,6 +33,23 @@
       "message": "Thanks Ramon, LGTM",
       "revId": "a88fc01eeedcec786d2ba0a4fabc55441c2b096c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "923f2466_6d7c91c6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-17T15:22:53Z",
+      "side": 1,
+      "message": "Thank you guys! As I explained in the daily, the change is working fine. In BOS2 job, the default value of tnf_feedback is used, and we can see it\u0027s not breaking anything. In Dallas jobs, we provide feedback for one of the tests that is always failing in our case (affiliated-certification-container-is-certified-digest), and the feedback is automatically appended to the HTML report, thanks to the feedback.js file. I\u0027ll merge it if you don\u0027t mind, so that we can test it with partners.",
+      "revId": "a88fc01eeedcec786d2ba0a4fabc55441c2b096c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
