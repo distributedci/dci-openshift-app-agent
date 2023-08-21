@@ -52,6 +52,24 @@
       "parentUuid": "9cc2b803_d70e59f1",
       "revId": "046ca12a471ad3c920fbfacf42b12c6a04f45200",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7607f2c_c3a00ac4",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 79,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-21T23:16:11Z",
+      "side": 0,
+      "message": "Validated in www.distributed-ci.io/jobs/dd645ac1-2de6-40a7-8137-ab38b039941e/jobStates",
+      "parentUuid": "924bb223_1a0e9386",
+      "revId": "046ca12a471ad3c920fbfacf42b12c6a04f45200",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
