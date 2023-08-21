@@ -33,6 +33,23 @@
       "message": "BOS2 test is passing and tnf_config includes the new config: https://www.distributed-ci.io/files/8243fe3a-52d8-48c9-b0a8-4ea20224d7f8, launching a job in dallas, result should be similar",
       "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "23320b78_9a617eff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-21T16:22:27Z",
+      "side": 1,
+      "message": "\u003e Patch Set 2:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/d6f0276f-3e90-44f4-9b23-55bdba429caa/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/785\n\nAnd dallas job passing as expected, change is ready now",
+      "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
