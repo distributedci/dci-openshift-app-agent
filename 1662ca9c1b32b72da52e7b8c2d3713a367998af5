@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b48a858_23870f3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-21T16:05:36Z",
+      "side": 1,
+      "message": "LGTM, I\u0027ll give +2 once the job is finished",
+      "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
