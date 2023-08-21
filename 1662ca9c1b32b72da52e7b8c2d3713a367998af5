@@ -50,6 +50,23 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e - SUCCESS https://www.distributed-ci.io/jobs/d6f0276f-3e90-44f4-9b23-55bdba429caa/jobStates\n\u003e  from https://github.com/dci-labs/dallas-pipelines/pull/785\n\nAnd dallas job passing as expected, change is ready now",
       "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af70cbc8_b1a0c4b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-21T17:20:29Z",
+      "side": 1,
+      "message": "LGTM, I\u0027m just curious if any of you are aware of a partner using these features other than KS? I think it\u0027s very clear how to use it the new options, but just to be aware if another partner could be benefited or impacted by the change. ",
+      "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
