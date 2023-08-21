@@ -67,6 +67,41 @@
       "message": "LGTM, I\u0027m just curious if any of you are aware of a partner using these features other than KS? I think it\u0027s very clear how to use it the new options, but just to be aware if another partner could be benefited or impacted by the change. ",
       "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fb3470a_3fcf2737",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-21T17:29:41Z",
+      "side": 1,
+      "message": "Not really right now, I think, in fact this kind of test has been updated recently, and there are partners that are using older versions of tnf, so they\u0027re not really testing this. Anyway, we already have the support for that in DCI, so this can be used",
+      "parentUuid": "af70cbc8_b1a0c4b3",
+      "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e0f615da_3392d15a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-21T17:29:41Z",
+      "side": 1,
+      "message": "I\u0027ll try to merge it, let\u0027s see if zuul works now",
+      "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
