@@ -16,6 +16,23 @@
       "message": "LGTM, I\u0027ll give +2 once the job is finished",
       "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dcce0ee8_50d04ced",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-08-21T16:17:11Z",
+      "side": 1,
+      "message": "BOS2 test is passing and tnf_config includes the new config: https://www.distributed-ci.io/files/8243fe3a-52d8-48c9-b0a8-4ea20224d7f8, launching a job in dallas, result should be similar",
+      "revId": "1662ca9c1b32b72da52e7b8c2d3713a367998af5",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
