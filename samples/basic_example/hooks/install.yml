@@ -1,37 +1,45 @@
 ---
-- name: Create a simple pod
-  vars:
-    app_img: |-
-      {%- if dci_disconnected | default(false) | bool %}
-      {{ dci_local_registry }}/{{ '/'.join(dci_openshift_app_image.split('/')[1:]) }}
-      {%- else %}
-      {{ dci_openshift_app_image }}
-      {%- endif %}
+- name: "Create Service Account for the deployment"
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ dci_openshift_app_ns }}"
+    definition:
+      apiVersion: v1
+      kind: ServiceAccount
+      metadata:
+        name: webserver
+    wait: true
+
+- name: Assign anyuid scc to deployment SA
   community.kubernetes.k8s:
     state: present
     definition:
-      apiVersion: v1
-      kind: Pod
+      apiVersion: rbac.authorization.k8s.io/v1
+      kind: RoleBinding
       metadata:
-        app: httpd
-        name: webserver
-        namespace: "{{ app_ns }}"
-      spec:
-        containers:
-          - name: webserver
-            image: "{{ app_img }}"
-            securityContext:
-              capabilities: {}
-            ports:
-              - containerPort: 80
-            livenessProbe:
-              failureThreshold: 3
-              httpGet:
-                path: /
-                port: 80
-              scheme: HTTP
-            initialDelaySeconds: 30
-            periodSeconds: 30
-            successThreshold: 1
+        name: system:openshift:scc:anyuid
+        namespace: "{{ dci_openshift_app_ns }}"
+      roleRef:
+        apiGroup: rbac.authorization.k8s.io
+        kind: ClusterRole
+        name: system:openshift:scc:anyuid
+      subjects:
+        - kind: ServiceAccount
+          name: webserver
+          namespace: "{{ dci_openshift_app_ns }}"
+    wait: true
+
+- name: "Create a deployment of a webserver pod(s)"
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ app_ns }}"
+    definition: "{{ lookup('template', 'deployment.yml.j2') }}"
+    wait: true
+
+- name: "Create a service for the webserver pod(s)"
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ app_ns }}"
+    definition: "{{ lookup('template', 'service.yml.j2') }}"
     wait: true
 ...
