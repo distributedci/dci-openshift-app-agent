@@ -33,6 +33,24 @@
       "message": "IMO httpbin provides a wider range of options for testing, but not sure if the use case is worth for it",
       "revId": "f3bb9d7e876edd0543b420482542304d64319456",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9a29c19a_7fcba96e",
+        "filename": "samples/basic_example/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-22T23:03:01Z",
+      "side": 1,
+      "message": "Yes, I think it\u0027s worth it, the use case is to have a deployment with multiple pods with anti-affinity to test during upgrades, with the current changes it might allow to work, but we want to expand that to use a service with a MetalLB IP and test several types of TCP requests, and maybe IPv6, so I think is going that direction and httpbin might be a better option. More details in CILAB-1164. I\u0027ll submit a new patch-set with the changes. Thanks.",
+      "parentUuid": "1443dca1_debc7cf0",
+      "revId": "f3bb9d7e876edd0543b420482542304d64319456",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
