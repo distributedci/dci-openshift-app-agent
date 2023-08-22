@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8ef0fa5d_dd3d6282",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-22T21:40:45Z",
+      "side": 1,
+      "message": "It is great to see this example more complete 😎",
+      "revId": "f3bb9d7e876edd0543b420482542304d64319456",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1443dca1_debc7cf0",
+        "filename": "samples/basic_example/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-22T21:40:45Z",
+      "side": 1,
+      "message": "IMO httpbin provides a wider range of options for testing, but not sure if the use case is worth for it",
+      "revId": "f3bb9d7e876edd0543b420482542304d64319456",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
