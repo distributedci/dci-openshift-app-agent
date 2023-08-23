@@ -16,6 +16,24 @@
       "message": "Wondering if we could take advantage of the change and rename the vars, because this is a hook, we can avoid the dci_ prefix on them to avoid confusion with vars for the agents, wdyt?\n\nAlso, this task would need to be renamed to something more generic: https://softwarefactory-project.io/r/plugins/gitiles/dci-openshift-app-agent/+/refs/heads/master/samples/basic_example/hooks/pre-run.yml#17",
       "revId": "95dbb0c6cd8496fa5f5b18690cd131de39cc58ef",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a66a4491_a7f08e54",
+        "filename": "samples/basic_example/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-08-23T18:18:38Z",
+      "side": 1,
+      "message": "Make sense, I changed the vars and the task name.",
+      "parentUuid": "5b6c4092_5aecc0ad",
+      "revId": "95dbb0c6cd8496fa5f5b18690cd131de39cc58ef",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
