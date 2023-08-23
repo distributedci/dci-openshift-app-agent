@@ -16,6 +16,24 @@
       "message": "Last job failed with message: \"docker.io/kennethreitz/httpbin: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit\" so I changed the image to \"mirror.gcr.io/library/httpbin:latest\"",
       "revId": "44c157fe57b684e150b239a6efcdda6eefd81f1e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22dad41e_697e853a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-23T23:46:16Z",
+      "side": 1,
+      "message": "if that works, that\u0027s fine, if not we have been using mirror.gcr.io/kennethreitz/httpbin in other repos without issues",
+      "parentUuid": "7b6315b2_31183e5a",
+      "revId": "44c157fe57b684e150b239a6efcdda6eefd81f1e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
