@@ -69,6 +69,23 @@
       "message": "LGTM, thanks Manuel!",
       "revId": "44c157fe57b684e150b239a6efcdda6eefd81f1e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfbff780_8842af2b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-08-24T08:41:14Z",
+      "side": 1,
+      "message": "Thanks Manuel!\nLet\u0027s merge this! I will try to add an helm chart based on your work :)",
+      "revId": "44c157fe57b684e150b239a6efcdda6eefd81f1e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
