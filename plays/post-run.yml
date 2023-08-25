@@ -25,7 +25,9 @@
 
 - name: Set outputs to be copied
   set_fact:
-    outputs:
+    outputs: "{{ agent_outputs | combine(outputs | default({})) }}"
+  vars:
+    agent_outputs:
       kubeconfig: "{{ kubeconfig_path }}"
 
 - name: Copy outputs if defined
