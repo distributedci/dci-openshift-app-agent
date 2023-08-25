@@ -16,6 +16,24 @@
       "message": "Hi Tony, thank you for the change! I scheduled some more tests to ensure that the error with deletion of IDMS is gone in the patch 9: https://www.distributed-ci.io/jobs/ec77a979-e8b4-44fe-983d-8fe2c7e98a24/jobStates?sort\u003ddate\u0026task\u003d72c5b8e6-f543-46e1-ba66-cbc898b728b7 ",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8bebe46a_a44a95c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-25T00:17:11Z",
+      "side": 1,
+      "message": "Validated here: https://www.distributed-ci.io/jobs/4d987337-026a-4ab8-87ad-0bafdb938b93?sort\u003ddate\u0026task\u003db5cbf16b-00cb-486a-9499-f222343a678d",
+      "parentUuid": "f081c363_bbb51692",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
