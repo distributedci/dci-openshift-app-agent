@@ -16,6 +16,23 @@
       "message": "Hi Nacho, thanks for the change, I understand this will allow anyone in a hook to inject outputs to be passed to the next job through a set of pipelines. I wonder if you have an example of the use case for this requirement, and wondering if there is any other alternative to it.\n\nThe reason I\u0027m asking is because adding an output implies requiring an input in a following pipeline. But, in this case the input will be only useful for a pipeline that makes use of another hook that expects that input.\n\nThanks.",
       "revId": "cfa848676cd41b14eab6ba0651de155e10406977",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e367888_7095fe37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 789
+      },
+      "writtenOn": "2023-08-28T08:31:10Z",
+      "side": 1,
+      "message": "Hi Tony,\n\nThanks for your comments.\n\nIn my partner use case an operator is deployed in the pipeline stage #2 and the preflight tests are run in the stage #4.\n\nDuring the stage #2 the agent figures out the tag of the operator build that needs to be inserted in the operators_to_certify variable in stage #4.\n\nThe idea behind this change is that stage #2 shall be able to pass the operator tag as an output to be retrieved in stage #4.\n\nIf you can think of a more efficient way to achieve this I\u0027ll be happy to hear it.\n\nOn the other hand, if the whole output/input implementation can not be configured by the users, it looks like a bit of an overkill solution just to pass the kubeconfig file between stages.",
+      "revId": "cfa848676cd41b14eab6ba0651de155e10406977",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
