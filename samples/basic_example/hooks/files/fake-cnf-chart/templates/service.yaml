@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "fake-cnf.fullname" . }}
+  labels:
+    {{- include "fake-cnf.labels" . | nindent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    {{- toYaml .Values.service.ports | nindent 4 }}
+  selector:
+    {{- include "fake-cnf.selectorLabels" . | nindent 4 }}
