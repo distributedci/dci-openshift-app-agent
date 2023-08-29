@@ -1,22 +1,36 @@
 ---
-- name: "Create a Deployment of a webserver pod(s)"
-  community.kubernetes.k8s:
-    state: present
-    namespace: "{{ openshift_app_ns }}"
-    definition: "{{ lookup('template', 'deployment.yml.j2') }}"
-    wait: true
+- block:
+  - name: "Create a Deployment of a webserver pod(s)"
+    community.kubernetes.k8s:
+      state: present
+      namespace: "{{ openshift_app_ns }}"
+      definition: "{{ lookup('template', 'deployment.yml.j2') }}"
+      wait: true
 
-- name: "Create a Service for the webserver pod(s)"
-  community.kubernetes.k8s:
-    state: present
-    namespace: "{{ openshift_app_ns }}"
-    definition: "{{ lookup('file', 'service.yml.j2') }}"
-    wait: true
+  - name: "Create a Service for the webserver pod(s)"
+    community.kubernetes.k8s:
+      state: present
+      namespace: "{{ openshift_app_ns }}"
+      definition: "{{ lookup('file', 'service.yml.j2') }}"
+      wait: true
 
-- name: "Create a Route for the webserver service"
-  community.kubernetes.k8s:
-    state: present
-    namespace: "{{ openshift_app_ns }}"
-    definition: "{{ lookup('file', 'route.yml.j2') }}"
+  - name: "Create a Route for the webserver service"
+    community.kubernetes.k8s:
+      state: present
+      namespace: "{{ openshift_app_ns }}"
+      definition: "{{ lookup('file', 'route.yml.j2') }}"
+      wait: true
+  when: openshift_app_helm_chart is not defined or openshift_app_helm_chart | length == 0
+
+- name: "Deploy webserver Helm chart"
+  community.kubernetes.helm:
+    name: "webserver"
+    chart_ref: "{{ openshift_app_helm_chart }}"
+    release_namespace: "{{ openshift_app_ns }}"
+    values: "{{ lookup('template', 'values.yaml.j2') | from_yaml }}"
+    create_namespace: true
     wait: true
+  when:
+    - openshift_app_helm_chart is defined
+    - openshift_app_helm_chart | length > 0
 ...
