@@ -70,6 +70,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3133be2e_64659525",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-29T16:49:43Z",
+      "side": 1,
+      "message": "pullsecret_tmp_file is combination of dci job pullsecrets and the partner_creds.",
+      "parentUuid": "ee7345ad_96542ef6",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "36b8de9b_c4bd7cfa",
@@ -83,6 +101,24 @@
       "writtenOn": "2023-08-28T13:27:33Z",
       "side": 1,
       "message": "Hi Tony, I see the issue here. In scorecard-sdk role, you use the auth pullsecret_tmp_file to push to local registry, and in preflight role, you use partner_creds. \n\nNot sure which of them should be finally chosen, but at least, that should be the same file.",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1acff025_1424df8e",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-29T16:49:43Z",
+      "side": 1,
+      "message": "pullsecret_tmp_file should be the one used",
+      "parentUuid": "36b8de9b_c4bd7cfa",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -104,6 +140,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9af25f6f_60a68301",
+        "filename": "roles/operator-sdk/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-29T16:49:43Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "bc2618e4_ec7fa7b7",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cb68fc0e_e979f0db",
@@ -117,6 +171,24 @@
       "writtenOn": "2023-08-28T13:27:33Z",
       "side": 1,
       "message": "Hi Tony, I see the issue here. In scorecard-sdk role, you use the auth pullsecret_tmp_file to push to local registry, and in preflight role, you use partner_creds. \n\nNot sure which of them should be finally chosen, but at least, that should be the same file.",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2c1b85d0_e267122b",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-29T16:49:43Z",
+      "side": 1,
+      "message": "Yeah this is not correct, my change is not introducing this, the partner_creds is what\u0027s been used in preflight role.\n\nDo you want me to make the fix in here? Or do you want to make that in another change?",
+      "parentUuid": "cb68fc0e_e979f0db",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
