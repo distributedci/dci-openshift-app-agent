@@ -1,1 +1,6 @@
 ---
+- name: "Delete tmp tools directory"
+  file:
+    path: "{{ helm_tmp_dir.path }}"
+    state: absent
+  when: helm_tmp_dir is defined
