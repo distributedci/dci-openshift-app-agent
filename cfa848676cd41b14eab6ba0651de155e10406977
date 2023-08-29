@@ -33,6 +33,24 @@
       "message": "Hi Tony,\n\nThanks for your comments.\n\nIn my partner use case an operator is deployed in the pipeline stage #2 and the preflight tests are run in the stage #4.\n\nDuring the stage #2 the agent figures out the tag of the operator build that needs to be inserted in the operators_to_certify variable in stage #4.\n\nThe idea behind this change is that stage #2 shall be able to pass the operator tag as an output to be retrieved in stage #4.\n\nIf you can think of a more efficient way to achieve this I\u0027ll be happy to hear it.\n\nOn the other hand, if the whole output/input implementation can not be configured by the users, it looks like a bit of an overkill solution just to pass the kubeconfig file between stages.",
       "revId": "cfa848676cd41b14eab6ba0651de155e10406977",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6206b99_c028889e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-29T17:01:20Z",
+      "side": 1,
+      "message": "Let\u0027s schedule some time to discuss this, I\u0027m interested in understanding the use case further.\n\n\n\u003e On the other hand, if the whole output/input implementation can not be configured by the users, it looks like a bit of an overkill solution just to pass the kubeconfig file between stages.\n\nIMO, is the opposite, I think the solution to pass input/outputs is very simple, thus wondering if this use case is a good fit to add complexity to it.",
+      "parentUuid": "5e367888_7095fe37",
+      "revId": "cfa848676cd41b14eab6ba0651de155e10406977",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
