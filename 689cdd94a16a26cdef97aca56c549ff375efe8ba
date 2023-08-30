@@ -191,6 +191,24 @@
       "parentUuid": "cb68fc0e_e979f0db",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d0b2e323_86faafd2",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-30T13:37:00Z",
+      "side": 1,
+      "message": "Hi Tony, I\u0027d prefer to keep \"partner_creds\" both in preflight and operator-sdk due to the OPM issue we discussed during yesterday\u0027s grooming session. \n\nWe can switch to \"pullsecret_tmp_file\" in the next update and test it in select partner labs before merging.",
+      "parentUuid": "2c1b85d0_e267122b",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
