@@ -227,6 +227,24 @@
       "parentUuid": "d0b2e323_86faafd2",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7c7e07cf_b175ed7e",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-08-31T10:25:04Z",
+      "side": 1,
+      "message": "\"I\u0027m working on the opm piece in a separate change to get this moving.\"\n\nSure! Can we keep `partners_creds` in both the operator-sdk and preflight roles in this CR? \n\nThe current state is a bit confusing, as some parts have been migrated to pullsecret_tmp_file, while the rest will be done in a separate change. This division is making debugging a bit challenging and creating confusion.\n\nI\u0027d like to remind you that the previous migration from partners_creds to pullsecret_tmp_file caused job failures for two of our partners during their certifications. To avoid a similar situation, it would be best to keep the changes consistent.\n\nThank you.",
+      "parentUuid": "783215c3_a7502eae",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
