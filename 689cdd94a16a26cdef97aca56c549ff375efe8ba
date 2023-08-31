@@ -245,6 +245,24 @@
       "parentUuid": "783215c3_a7502eae",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad3cd6e6_51105435",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-08-31T22:39:02Z",
+      "side": 1,
+      "message": "I can see how there may be some confusion, it was really strange to see the combination of both pullsecrets in preflight, but now it makes sense that is to avoid the issue with same registry in the creds.\n\nI\u0027ll get the opm fix in place so we can use pullsecret_tmp_file and avoid the confusion.",
+      "parentUuid": "7c7e07cf_b175ed7e",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
