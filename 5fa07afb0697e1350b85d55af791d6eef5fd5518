@@ -16,6 +16,57 @@
       "message": "recheck",
       "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "405e1f49_f192838e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-09-01T19:59:00Z",
+      "side": 1,
+      "message": "Looks promising!",
+      "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dc7d15ad_3dacd29d",
+        "filename": "samples/basic_example/hooks/files/fake-cnf-chart/templates/deployment.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-09-01T19:59:00Z",
+      "side": 1,
+      "message": "please remove the extra empty space at the end of the line :)",
+      "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0116ee96_b4be2fc9",
+        "filename": "samples/basic_example/hooks/files/fake-cnf-chart/templates/deployment.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-09-01T19:59:00Z",
+      "side": 1,
+      "message": "Last job failed, because this is appending twice the tag \"latest\" because \"openshift_app_image\" variable defaults to \"mirror.gcr.io/kennethreitz/httpbin:latest\" in the pre-run.yml play of this hook, so we might need to update that or remove the \".Values.image.tag\" from here.\n\n\u003e Warning   InspectFailed       pod/webserver-fake-cnf-5cd77f5bd9-2lfv7    Failed to apply default image tag \"mirror.gcr.io/kennethreitz/httpbin:latest:latest\": couldn\u0027t parse image reference \"mirror.gcr.io/kennethreitz/httpbin:latest:latest\": invalid reference format",
+      "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
