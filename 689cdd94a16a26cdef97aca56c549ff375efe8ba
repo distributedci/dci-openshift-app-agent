@@ -263,6 +263,24 @@
       "parentUuid": "7c7e07cf_b175ed7e",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2f63119c_e3eb4ea5",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-01T13:03:37Z",
+      "side": 1,
+      "message": "Thanks, Tony! That solution works for me. I\u0027ll ask Nicu to schedule a job on Monday to validate preflight changes on the situation with two different credentials for quay.io.",
+      "parentUuid": "ad3cd6e6_51105435",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
