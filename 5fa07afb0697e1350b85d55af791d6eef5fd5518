@@ -52,6 +52,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e6d0c39_d63fe467",
+        "filename": "samples/basic_example/hooks/files/fake-cnf-chart/templates/deployment.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-09-04T09:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "dc7d15ad_3dacd29d",
+      "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0116ee96_b4be2fc9",
@@ -65,6 +83,24 @@
       "writtenOn": "2023-09-01T19:59:00Z",
       "side": 1,
       "message": "Last job failed, because this is appending twice the tag \"latest\" because \"openshift_app_image\" variable defaults to \"mirror.gcr.io/kennethreitz/httpbin:latest\" in the pre-run.yml play of this hook, so we might need to update that or remove the \".Values.image.tag\" from here.\n\n\u003e Warning   InspectFailed       pod/webserver-fake-cnf-5cd77f5bd9-2lfv7    Failed to apply default image tag \"mirror.gcr.io/kennethreitz/httpbin:latest:latest\": couldn\u0027t parse image reference \"mirror.gcr.io/kennethreitz/httpbin:latest:latest\": invalid reference format",
+      "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed3180a8_de60eb78",
+        "filename": "samples/basic_example/hooks/files/fake-cnf-chart/templates/deployment.yaml",
+        "patchSetId": 10
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-09-04T09:29:31Z",
+      "side": 1,
+      "message": "Thanks! I have seen in the last patch there was an issue with the tag of the image, it is fixed now 😊",
+      "parentUuid": "0116ee96_b4be2fc9",
       "revId": "5fa07afb0697e1350b85d55af791d6eef5fd5518",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
