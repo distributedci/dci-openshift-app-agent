@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "643bec9ae7e4f5b2de1a26290cb7a94f96687ac7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c03b65f_5df5f101",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-05T08:16:46Z",
+      "side": 1,
+      "message": "I listed the APIs that are not compatible with the given OCP version.\n\nHere is how it looks now: https://www.distributed-ci.io/jobs/55969a4d-555c-4e1c-87d3-d1e2bb792bca/tests/ff593ffe-9519-448a-87e2-6646d8037e55\n\nHere is what we had before: https://www.distributed-ci.io/jobs/7d309988-4414-4661-a9ff-4b46a2e15354/tests/800a254a-2ae5-48cb-9b2b-5b8ce964a9b0\n\nThanks",
+      "revId": "643bec9ae7e4f5b2de1a26290cb7a94f96687ac7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
