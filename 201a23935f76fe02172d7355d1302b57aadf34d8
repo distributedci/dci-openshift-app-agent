@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "e981c27e_ab1e0baf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-09-06T07:37:32Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "201a23935f76fe02172d7355d1302b57aadf34d8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9bd1ef29_4364597a",
@@ -31,6 +48,24 @@
       "writtenOn": "2023-09-05T16:02:33Z",
       "side": 1,
       "message": "Should we remove the chart explicitly in here? or removing the ns is enough?",
+      "revId": "201a23935f76fe02172d7355d1302b57aadf34d8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "03c3ac5d_3ff98155",
+        "filename": "samples/basic_example/hooks/teardown.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-09-06T07:37:32Z",
+      "side": 1,
+      "message": "Good question, I think so because every object deployed by the helm chart are Namespace scoped, but I will do a test to be sure :)",
+      "parentUuid": "9bd1ef29_4364597a",
       "revId": "201a23935f76fe02172d7355d1302b57aadf34d8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
