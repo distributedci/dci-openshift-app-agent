@@ -68,6 +68,24 @@
       "parentUuid": "9bd1ef29_4364597a",
       "revId": "201a23935f76fe02172d7355d1302b57aadf34d8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e5b8128_1b2d83e3",
+        "filename": "samples/basic_example/hooks/teardown.yml",
+        "patchSetId": 12
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-09-06T09:58:33Z",
+      "side": 1,
+      "message": "I confirm that removing the NS here is enough, but the best practice is to remove the helm chart before deleting the NS. I will update the CR",
+      "parentUuid": "03c3ac5d_3ff98155",
+      "revId": "201a23935f76fe02172d7355d1302b57aadf34d8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
