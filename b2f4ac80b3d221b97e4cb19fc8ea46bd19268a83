@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f99a52c_e0cad8fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-06T12:50:03Z",
+      "side": 1,
+      "message": "the tests are green, thanks Manny!",
+      "revId": "b2f4ac80b3d221b97e4cb19fc8ea46bd19268a83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
