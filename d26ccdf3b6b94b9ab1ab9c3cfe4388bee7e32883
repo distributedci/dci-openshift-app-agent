@@ -67,6 +67,24 @@
       "message": "What is this vim file? I think is not part of the change right? looks similar to file: roles/create-helmchart/tasks/create_helmchart_project.yml",
       "revId": "d26ccdf3b6b94b9ab1ab9c3cfe4388bee7e32883",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc0f4d97_9dad230e",
+        "filename": "vim",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-08T19:07:43Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a625b94e_79aaf8fa",
+      "revId": "d26ccdf3b6b94b9ab1ab9c3cfe4388bee7e32883",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
