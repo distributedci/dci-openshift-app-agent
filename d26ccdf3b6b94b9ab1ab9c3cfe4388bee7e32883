@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f4bbea5f_60c35eb6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-08T14:22:37Z",
+      "side": 1,
+      "message": "Hi Andrew, I\u0027ll add +2 once the test will pass. Thanks!",
+      "revId": "d26ccdf3b6b94b9ab1ab9c3cfe4388bee7e32883",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
