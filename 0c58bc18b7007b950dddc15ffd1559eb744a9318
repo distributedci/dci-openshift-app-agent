@@ -16,6 +16,23 @@
       "message": "LGTM, \nFYI, I just noticed the task to check pods running https://www.distributed-ci.io/jobs/3f353f6f-656b-4d2f-8a87-9ae8508a99ef/jobStates?sort\u003ddate\u0026task\u003da90092c0-c7a3-450a-a380-ee9bc9a86812 in the test.yaml hook is not finding anything when deploying with the chart because the pods are named differently, the task is not well designed to fail, so something to improve on next changes.",
       "revId": "0c58bc18b7007b950dddc15ffd1559eb744a9318",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d846b168_272bf3fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 18
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 673
+      },
+      "writtenOn": "2023-09-11T14:20:32Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "0c58bc18b7007b950dddc15ffd1559eb744a9318",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
