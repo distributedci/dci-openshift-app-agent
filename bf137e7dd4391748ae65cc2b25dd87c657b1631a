@@ -50,6 +50,23 @@
       "message": "LGTM, thanks Tony",
       "revId": "bf137e7dd4391748ae65cc2b25dd87c657b1631a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f2bb410_462c060d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-11T20:17:00Z",
+      "side": 1,
+      "message": "The last error in preflight-green was due to a rename in the fake-cnf to basic_example. Re-running the test",
+      "revId": "bf137e7dd4391748ae65cc2b25dd87c657b1631a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
