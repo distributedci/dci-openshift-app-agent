@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "398936d5_a35fab41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-09-11T22:41:48Z",
+      "side": 1,
+      "message": "Thanks Andrew, by chance do you have a job URL where you tested this change?",
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
