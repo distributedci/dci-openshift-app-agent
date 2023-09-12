@@ -16,6 +16,184 @@
       "message": "Thanks Andrew, by chance do you have a job URL where you tested this change?",
       "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef42ceda_edc6ad22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "Commenting some cosmetic issues.\nAlso, as Manny said, I\u0027d like to see a job testing this functionality before merging",
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8b45b0cc_348cc9cb",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "attach",
+      "range": {
+        "startLine": 7,
+        "startChar": 442,
+        "endLine": 7,
+        "endChar": 450
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34e3ca4f_943404ce",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "I\u0027d say \"to include the \u003cold_certs_list\u003e and \u003cnew_cert_list\u003e\"\n\nby",
+      "range": {
+        "startLine": 7,
+        "startChar": 101,
+        "endLine": 7,
+        "endChar": 158
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee8870a7_c6894375",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "to all cert projects",
+      "range": {
+        "startLine": 7,
+        "startChar": 474,
+        "endLine": 7,
+        "endChar": 501
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "640b8f0d_7fb9e637",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "merge",
+      "range": {
+        "startLine": 7,
+        "startChar": 399,
+        "endLine": 7,
+        "endChar": 405
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8d713336_3e1df4fe",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "Certification",
+      "range": {
+        "startLine": 4,
+        "startChar": 34,
+        "endLine": 4,
+        "endChar": 46
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "881a2336_3aa34f64",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "I think you need quotes here to properly parse the variable you\u0027re including in the title",
+      "range": {
+        "startLine": 14,
+        "startChar": 11,
+        "endLine": 14,
+        "endChar": 134
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e17c166b_50cbf12d",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T07:57:42Z",
+      "side": 1,
+      "message": "same than above",
+      "range": {
+        "startLine": 18,
+        "startChar": 12,
+        "endLine": 18,
+        "endChar": 100
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
