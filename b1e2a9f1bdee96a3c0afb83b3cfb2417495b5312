@@ -35,6 +35,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6d063f7_91407edf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "https://www.distributed-ci.io/jobs/1dfd5d10-cacc-44fb-bb83-afc16aa8b427",
+      "parentUuid": "398936d5_a35fab41",
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8b45b0cc_348cc9cb",
@@ -127,6 +145,102 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d63cff71_1731a2d2",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8b45b0cc_348cc9cb",
+      "range": {
+        "startLine": 7,
+        "startChar": 442,
+        "endLine": 7,
+        "endChar": 450
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03904373_44f8255f",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34e3ca4f_943404ce",
+      "range": {
+        "startLine": 7,
+        "startChar": 101,
+        "endLine": 7,
+        "endChar": 158
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2085b2a_0e0db3c5",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ee8870a7_c6894375",
+      "range": {
+        "startLine": 7,
+        "startChar": 474,
+        "endLine": 7,
+        "endChar": 501
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13d109f6_c4cc1caf",
+        "filename": "roles/openshift-cnf/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "640b8f0d_7fb9e637",
+      "range": {
+        "startLine": 7,
+        "startChar": 399,
+        "endLine": 7,
+        "endChar": 405
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "8d713336_3e1df4fe",
@@ -140,6 +254,30 @@
       "writtenOn": "2023-09-12T07:57:42Z",
       "side": 1,
       "message": "Certification",
+      "range": {
+        "startLine": 4,
+        "startChar": 34,
+        "endLine": 4,
+        "endChar": 46
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0eae4854_41693bfd",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "8d713336_3e1df4fe",
       "range": {
         "startLine": 4,
         "startChar": 34,
@@ -173,6 +311,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2bea468b_0df584fd",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "881a2336_3aa34f64",
+      "range": {
+        "startLine": 14,
+        "startChar": 11,
+        "endLine": 14,
+        "endChar": 134
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e17c166b_50cbf12d",
@@ -186,6 +348,30 @@
       "writtenOn": "2023-09-12T07:57:42Z",
       "side": 1,
       "message": "same than above",
+      "range": {
+        "startLine": 18,
+        "startChar": 12,
+        "endLine": 18,
+        "endChar": 100
+      },
+      "revId": "b1e2a9f1bdee96a3c0afb83b3cfb2417495b5312",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0f3eee6e_d717c0cc",
+        "filename": "roles/openshift-cnf/tasks/main.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-12T13:06:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e17c166b_50cbf12d",
       "range": {
         "startLine": 18,
         "startChar": 12,
