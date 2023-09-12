@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c40a7e96_ee52704b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-12T08:37:42Z",
+      "side": 1,
+      "message": "Change is working fine. The debug job launched in BOS2 is testing HEAD branch and now tnf is able to be launched properly, with the new tnf_config format. First dallas job tested tnf v4.3.5, where we use the legacy format, and it\u0027s working fine too.\nIncoming test in Dallas using HEAD branch, it should work too",
+      "revId": "3a0b8772291979d19091b5a5ac79936c9196ddf2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
