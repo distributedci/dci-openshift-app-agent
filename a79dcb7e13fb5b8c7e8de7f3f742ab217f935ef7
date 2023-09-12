@@ -22,6 +22,30 @@
       },
       "revId": "a79dcb7e13fb5b8c7e8de7f3f742ab217f935ef7",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3d7bc252_c14871d7",
+        "filename": "roles/create-pr/tasks/bundle_operator.yml",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-12T15:33:37Z",
+      "side": 1,
+      "message": "No, because these are roles, it would\u0027ve made sense in the agent. Thanks",
+      "parentUuid": "f4c00fe0_2d049fb9",
+      "range": {
+        "startLine": 24,
+        "startChar": 4,
+        "endLine": 24,
+        "endChar": 63
+      },
+      "revId": "a79dcb7e13fb5b8c7e8de7f3f742ab217f935ef7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
