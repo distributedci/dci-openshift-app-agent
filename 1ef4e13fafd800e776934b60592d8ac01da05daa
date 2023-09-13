@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bdc66a94_ba95cdc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-13T10:49:12Z",
+      "side": 1,
+      "message": "Tests are working fine and the failed job is failing because it has to fail, so it\u0027s matching the conditions we\u0027ve defined here.",
+      "revId": "1ef4e13fafd800e776934b60592d8ac01da05daa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
