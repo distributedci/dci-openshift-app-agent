@@ -1,4 +1,15 @@
 ---
+- name: "Fail if {{ t.filename }} fileglobbing does not return any occurence"
+  vars:
+    fileglob_item: "{{ job_logs.path }}/{{ t.filename }}"
+    fileglob_result: "{{ lookup('ansible.builtin.fileglob', fileglob_item) }}"
+  fail:
+    msg: "{{ t.filename }} fileglobbing does not result any occurence"
+  failed_when:
+    - fileglob_result | length == 0
+    # Do not fail when the option to skip missing files is on
+    - not skip_absent_testfiles | bool
+
 - name: Loop through the the given JUnit files
   include_tasks: parse_junit_file.yml
   with_fileglob:
