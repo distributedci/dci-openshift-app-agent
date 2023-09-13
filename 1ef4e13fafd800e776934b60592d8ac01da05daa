@@ -16,6 +16,40 @@
       "message": "Tests are working fine and the failed job is failing because it has to fail, so it\u0027s matching the conditions we\u0027ve defined here.",
       "revId": "1ef4e13fafd800e776934b60592d8ac01da05daa",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7db85a8_4d2e89c4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-13T19:02:11Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "1ef4e13fafd800e776934b60592d8ac01da05daa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c1fb8aef_fb1c85ed",
+        "filename": "roles/verify-tests/tasks/read_junit_files.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-13T19:02:11Z",
+      "side": 1,
+      "message": "You could simplify the fail task by adding a register in the include_task and then checking if it was skipped something like:\n\n```\n    register: junit_file\n  \n  - name: \"Check {{ t.filename }} matching\"\n    fail:\n      msg: \"{{ t.filename }} does not match any junit file\"\n    when: junit_file.skipped or not skip_absent_testfiles | bool\n```   \n    \nThat task will only skip when there was no files matching.",
+      "revId": "1ef4e13fafd800e776934b60592d8ac01da05daa",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
