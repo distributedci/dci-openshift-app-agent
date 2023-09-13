@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "8c874fe1a004a664137e3e4b93b234cca3daf259",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fd6bc3af_8d7d259e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-13T17:52:22Z",
+      "side": 1,
+      "message": "The failures in the example-cnf and preflight jobs were related to MCP not being ready. The jobs show a node in scheduling disabled status:\n\nNAME       STATUS                     ROLES                  AGE     VERSION\nmaster-0   Ready                      control-plane,master   3h24m   v1.27.4+2c83a9f\nmaster-1   Ready                      control-plane,master   3h24m   v1.27.4+2c83a9f\nmaster-2   Ready                      control-plane,master   3h25m   v1.27.4+2c83a9f\nworker-0   Ready                      worker                 165m    v1.27.4+2c83a9f\nworker-1   Ready,SchedulingDisabled   worker                 165m    v1.27.4+2c83a9f\nworker-2   Ready                      worker                 165m    v1.27.4+2c83a9f\nworker-3   Ready                      worker                 165m    v1.27.4+2c83a9f\n\nBut the must-gather of both show they were ready few min later:\n\n❯ omc get nodes\nNAME       STATUS   ROLES                  AGE   VERSION\nmaster-0   Ready    control-plane,master   2h    v1.27.4+2c83a9f\nmaster-1   Ready    control-plane,master   2h    v1.27.4+2c83a9f\nmaster-2   Ready    control-plane,master   2h    v1.27.4+2c83a9f\nworker-0   Ready    worker                 2h    v1.27.4+2c83a9f\nworker-1   Ready    worker                 2h    v1.27.4+2c83a9f\nworker-2   Ready    worker                 2h    v1.27.4+2c83a9f\nworker-3   Ready    worker                 2h    v1.27.4+2c83a9f\n\n❯ omc get events -o json | jq \u0027.items | map(select(.involvedObject.name \u003d\u003d \"worker-1\")) | sort_by(.lastTimestamp) | last | .involvedObject,.message,.reason\u0027\n{\n  \"kind\": \"Node\",\n  \"name\": \"worker-1\",\n  \"uid\": \"worker-1\"\n}\n\"Node worker-1 status is now: NodeSchedulable\"\n\"NodeSchedulable\"",
+      "revId": "8c874fe1a004a664137e3e4b93b234cca3daf259",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
