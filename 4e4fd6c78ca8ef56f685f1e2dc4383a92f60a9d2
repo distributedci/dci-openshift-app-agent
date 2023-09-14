@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "efd25f03_742c1915",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-14T11:19:55Z",
+      "side": 1,
+      "message": "Now it\u0027s working fine in all the cases:\n\n- case where tnf failed and no XML is created, job failed - https://www.distributed-ci.io/jobs/87a14f36-3a5b-47d5-8a42-a7202f73b51c/jobStates?sort\u003ddate\n\n- cases where the testing tool worked and XML are created, job worked, tested with tnf - https://www.distributed-ci.io/jobs/21b8aa32-4bf6-49de-a743-a0dbd3f7fba6/jobStates?sort\u003ddate and preflight - https://www.distributed-ci.io/jobs/10a98d22-7a21-42b0-8187-1476fdb84cc4/jobStates",
+      "revId": "4e4fd6c78ca8ef56f685f1e2dc4383a92f60a9d2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
