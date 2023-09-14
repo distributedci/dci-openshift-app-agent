@@ -281,6 +281,24 @@
       "parentUuid": "ad3cd6e6_51105435",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc4c1888_84612b35",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-14T23:23:50Z",
+      "side": 1,
+      "message": "I\u0027ve tested all the combinations that were requested, please let me know if there\u0027s anything else that needs to be tested.\n\nPlease use https://issues.redhat.com/browse/CILAB-1172 as a reference for the tests.",
+      "parentUuid": "2f63119c_e3eb4ea5",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
