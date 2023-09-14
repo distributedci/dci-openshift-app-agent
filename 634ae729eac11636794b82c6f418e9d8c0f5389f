@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7d350d10_3cdb7c41",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-14T09:57:10Z",
+      "side": 1,
+      "message": "I had to change the condition for junit_file.skipped because, if the include_tasks works, then there\u0027s no skipped attribute in junit_file:\n\nhttps://www.distributed-ci.io/jobs/460f950a-c33d-41d0-ac39-4d08803c0a15/jobStates?sort\u003ddate\u0026task\u003df1755b4c-e929-4dc9-9a71-4b279212d74e\n\nI\u0027m just checking now if it\u0027s defined",
+      "revId": "634ae729eac11636794b82c6f418e9d8c0f5389f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
