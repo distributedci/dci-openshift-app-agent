@@ -12,7 +12,8 @@
     - cert_settings is defined
     - cert_project_id is defined
 
-- name: Attach Product List ID to container project when cert_listings is defined
-  include_tasks: attach_product_listing.yml
-  when: cert_listings is defined
+- name: Set container project to store new projects for later merging with existing IDs
+  set_fact:
+    new_container_projects: "{{ new_container_projects | default([]) + [cert_project_id] }}"
+  when: cert_project_id is defined
 ...

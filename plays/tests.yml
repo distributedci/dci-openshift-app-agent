@@ -17,6 +17,8 @@
   include_role:
     name: preflight
     tasks_from: main_standalone_containers_certification
+  vars:
+    project_type: "container"
   when: preflight_containers_to_certify is defined
 
 - name: Preflight tests
