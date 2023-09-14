@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c21c2fce_098dfec1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-14T01:16:35Z",
+      "side": 1,
+      "message": "Same situation as before, the node was not ready\n\n```\n$ oc get mcp                                                                                                                                                                            \nNAME     CONFIG                                             UPDATED   UPDATING   DEGRADED   MACHINECOUNT   READYMACHINECOUNT   UPDATEDMACHINECOUNT   DEGRADEDMACHINECOUNT   AGE                                     \nmaster   rendered-master-bcb92a773371c6eeda026f61b386baf3   True      False      False      3              3                   3                     0                      3h49m                                   \nworker   rendered-worker-9d3683a3c45a19ccc73ef60b4b33c302   False     True       False      4              3                   3                     0                      3h49m\n\n$ oc get mcp -o json | jq \u0027.items[1].status | .unavailableMachineCount,.machineCount\u0027\n1\n4\n\n## Few min later:\n\n$ oc get events | tail -1\n12m         Normal    NodeSchedulable                          node/worker-3                        Node worker-3 status is now: NodeSchedulable\n```\n\nI\u0027m increasing the retries for this task",
+      "revId": "9c89fbfb013fe1b52e78602b93f23ce371748425",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
