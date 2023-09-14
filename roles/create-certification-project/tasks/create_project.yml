@@ -1,5 +1,4 @@
 ---
-- block:
     - name: Print JSON draft for the project to be created
       vars:
         template_filename: "templates/create_project_{{ project_type }}.json.j2"
@@ -32,5 +31,4 @@
           Certification project was created and could be checked here:
           {{ connect_url }}/{{ cert_project_id }}/overview
       when: not cert_project_output.failed
-  ignore_errors: "{{ ignore_project_creation_errors | bool }}"
 ...
