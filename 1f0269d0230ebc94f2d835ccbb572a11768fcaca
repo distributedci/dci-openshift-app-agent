@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "70f0a726_16e9bccb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-15T10:01:02Z",
+      "side": 1,
+      "message": "Some comments from my side, I think Tatiana and Manuel can give a more precise opinion on the changes for preflight.\n\nAlso, in preflight role, there\u0027s one more place where attach_product_listing is used, but it\u0027s related to operator cert, I think. Anyway, please take a look to confirm that the change is fine:\n\n```\nroles/preflight/tasks/prepare_operator_metadata.yml:      attach_product_listing: \"{{ operator.attach_product_listing | default(omit) }}\"\n```",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04d06f6f_98e4dbb2",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-15T10:01:02Z",
+      "side": 1,
+      "message": "needs to be between quotes",
+      "range": {
+        "startLine": 33,
+        "startChar": 12,
+        "endLine": 33,
+        "endChar": 130
+      },
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "573f94e3_409cc048",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-15T10:01:02Z",
+      "side": 1,
+      "message": "whitespace to remove",
+      "range": {
+        "startLine": 35,
+        "startChar": 42,
+        "endLine": 35,
+        "endChar": 46
+      },
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
