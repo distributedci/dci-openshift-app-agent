@@ -299,6 +299,24 @@
       "parentUuid": "2f63119c_e3eb4ea5",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1f82367_3d9566b5",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-15T09:49:11Z",
+      "side": 1,
+      "message": "Hi Tony, have you tested tnf-test-cnf pipeline? I haven\u0027t seen it under the tested jobs",
+      "parentUuid": "dc4c1888_84612b35",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
