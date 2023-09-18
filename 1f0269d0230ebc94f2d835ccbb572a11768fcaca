@@ -338,6 +338,30 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec334472_17b6e388",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-18T23:28:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "573f94e3_409cc048",
+      "range": {
+        "startLine": 35,
+        "startChar": 42,
+        "endLine": 35,
+        "endChar": 46
+      },
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7f5aee7_9b7f98fd",
