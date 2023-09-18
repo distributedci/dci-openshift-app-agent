@@ -67,6 +67,24 @@
       "message": "I see that the must-gather file is not been generated in 4.13 releases. In this version the CRD for imds and icsp are present. As we are checking for IDMS first, the registry var will be empty because in 4.13 we have all in the ICSP CR. \n\nhttps://www.distributed-ci.io/jobs/fa813c2d-edae-4e93-b814-2bf98fd52fbf/jobStates?sort\u003ddate\u0026task\u003de0a19db2-0cce-4152-8b6f-9d3a044d29c3\n\nYou may want to out the output where items is \u003e 0 or get the ImageSources type based on the clusterversion.\n\n$ oc get clusterversion\nNAME      VERSION   AVAILABLE   PROGRESSING   SINCE   STATUS\nversion   4.13.13   True        False         16m     Cluster version is 4.13.13\n$ /usr/local/bin/oc get imagedigestmirrorsets -o json\n{\n    \"apiVersion\": \"v1\",\n    \"items\": [],\n    \"kind\": \"List\",\n    \"metadata\": {\n        \"resourceVersion\": \"\"\n    }\n}\n$ /usr/local/bin/oc get imagecontentsourcepolicy  -o json\n{\n    \"apiVersion\": \"v1\",\n    \"items\": [\n        {\n            \"apiVersion\": \"operator.openshift.io/v1alpha1\",\n            \"kind\": \"ImageContentSourcePolicy\",\n            \"metadata\": {\n\nI think this is also happening in the corresponding change for DOA.",
       "revId": "d25b588238a7e441828ec21a9f39b499207ff94a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73e0074d_504d6b27",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-18T22:34:25Z",
+      "side": 1,
+      "message": "Thanks Beto, I\u0027ve fixed this issue by considering the output as well",
+      "parentUuid": "bf88f002_66827ecd",
+      "revId": "d25b588238a7e441828ec21a9f39b499207ff94a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
