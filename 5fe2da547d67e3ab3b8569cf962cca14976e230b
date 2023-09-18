@@ -16,6 +16,24 @@
       "message": "I\u0027d prefer to keep the project type here, also because we have 2 entry points, main and main_standalone_containers_certification, and if you delete this line, the flow will only work for the second one.",
       "revId": "5fe2da547d67e3ab3b8569cf962cca14976e230b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e82a7a5d_f5fa62cb",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-18T23:27:46Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "6ba4560c_8735c759",
+      "revId": "5fe2da547d67e3ab3b8569cf962cca14976e230b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
