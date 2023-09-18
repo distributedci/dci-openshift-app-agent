@@ -317,6 +317,24 @@
       "parentUuid": "dc4c1888_84612b35",
       "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8d4903f_11120926",
+        "filename": "roles/preflight/tasks/mirroring.yml",
+        "patchSetId": 9
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-09-18T14:08:36Z",
+      "side": 1,
+      "message": "It has been now successfully tested, thanks for checking",
+      "parentUuid": "d1f82367_3d9566b5",
+      "revId": "689cdd94a16a26cdef97aca56c549ff375efe8ba",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
