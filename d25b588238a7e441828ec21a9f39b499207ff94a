@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "d25b588238a7e441828ec21a9f39b499207ff94a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74d1bed9_d1a69faa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T14:54:26Z",
+      "side": 1,
+      "message": "Hi Tony, I\u0027ve checked the jobs, operator-sdk and preflight-green look just fine: https://www.distributed-ci.io/jobs?page\u003d1\u0026perPage\u003d20\u0026where\u003dtags:github:dallas-pipelines-pr837 I\u0027ll add +1, and leave one more vote for Ramon. Thank you!",
+      "revId": "d25b588238a7e441828ec21a9f39b499207ff94a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
