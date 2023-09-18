@@ -18,6 +18,142 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "86dca0e8_dd126b67",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "Hi Andrew, thank you for the contribution, and I appreciate a lot the fixes you added while going through the code! Here is the first review, the main issue is the place where you define the project_type. Thanks",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fc6dfb62_a68e5686",
+        "filename": "plays/tests.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "Why do we have to define it here and not while calling create-cert-project role? Maybe we\u0027re not going to create a certification project.",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c87e7247_45c91302",
+        "filename": "roles/create-certification-project/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "should we set attach_product_listing to false in the role\u0027s default/main.yml?",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d4de5b12_f9e6b111",
+        "filename": "roles/create-certification-project/tasks/create_container_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "why do we have to remember all the project IDs used during the job?",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "07ab0f51_6d236890",
+        "filename": "roles/create-certification-project/tasks/get_all_container_projects_basedon_product_list_id.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "we could also add a message here to simplify possible debugging: \n\n\u003e fail_msg: \"The \u0027organization_id\u0027 variable is not defined.\"",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bc4efd9a_1685c4a3",
+        "filename": "roles/create-certification-project/tasks/get_all_container_projects_basedon_product_list_id.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "Do we really have to set new_container_projects every time? It seems like it is enough to just retrieve the list of the attached projects every time, append the current project and then update the product listing.",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "037e9af1_562bb2e3",
+        "filename": "roles/create-certification-project/templates/attach_product_container_listing.json.j2",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "nice!",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "582a0e8f_5cea753f",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "great fix, thanks!",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "04d06f6f_98e4dbb2",
@@ -31,6 +167,30 @@
       "writtenOn": "2023-09-15T10:01:02Z",
       "side": 1,
       "message": "needs to be between quotes",
+      "range": {
+        "startLine": 33,
+        "startChar": 12,
+        "endLine": 33,
+        "endChar": 130
+      },
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cfa1af24_afae9024",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "04d06f6f_98e4dbb2",
       "range": {
         "startLine": 33,
         "startChar": 12,
@@ -60,6 +220,74 @@
         "endLine": 35,
         "endChar": 46
       },
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7f5aee7_9b7f98fd",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "again we need quotes to properly display the variable value",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e5ff7fb0_0d7984ba",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "should we set it to false in the role\u0027s defaults?",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c427b1bd_0e028bbe",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "should we assert that all_container_projects is properly defined and fail otherwise?",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7924e9d_66ab9df1",
+        "filename": "roles/preflight/tasks/main_standalone_containers_certification.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 1,
+      "message": "the newline was for good here :)",
       "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }

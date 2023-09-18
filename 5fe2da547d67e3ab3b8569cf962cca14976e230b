@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ba4560c_8735c759",
+        "filename": "roles/preflight/tasks/test_preflight_check_container_one_image.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T19:38:53Z",
+      "side": 0,
+      "message": "I\u0027d prefer to keep the project type here, also because we have 2 entry points, main and main_standalone_containers_certification, and if you delete this line, the flow will only work for the second one.",
+      "revId": "5fe2da547d67e3ab3b8569cf962cca14976e230b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
