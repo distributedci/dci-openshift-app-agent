@@ -16,6 +16,23 @@
       "message": "Change is ready for review, it is working as expected",
       "revId": "ee2f6b4019e222405dd3a7c3ec8e379a9eba66e1",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6db0be0c_642d4092",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-18T09:40:44Z",
+      "side": 1,
+      "message": "thanks Ramon!",
+      "revId": "ee2f6b4019e222405dd3a7c3ec8e379a9eba66e1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
