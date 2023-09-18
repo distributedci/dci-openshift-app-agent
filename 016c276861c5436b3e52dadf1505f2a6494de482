@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6fdd2d61_34eb252f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2023-09-18T16:06:31Z",
+      "side": 1,
+      "message": "Ramón, \n\nThis is basically what we have in DOA as operators.txt. Can use the same command to generate operators report in DOAA? or the requirement is to have the output? Please consider that for operators that have it CSV created on all namespaces, you will have multiple entries in the output.\n\nhttps://github.com/redhat-cip/dci-openshift-agent/blob/2079b55a2814ac415bfd7638e0e91bc642e037dc/plays/scripts/get-ocp-logs#L95C1-L95C162\n\nYou may need to update the readme with this new output. \n\nRegards",
+      "revId": "016c276861c5436b3e52dadf1505f2a6494de482",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
