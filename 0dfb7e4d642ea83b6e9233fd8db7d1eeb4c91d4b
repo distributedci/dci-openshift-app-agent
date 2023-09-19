@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c2ba9ab_c7a1174d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-19T16:36:55Z",
+      "side": 1,
+      "message": "For this first job, I ran it in this way, to force the failure (and it\u0027s working):\n\ncheck_workload https://github.com/dci-labs/dallas-pipelines/pull/863 tnf-test-cnf-green tnf-test-cnf-green:ansible_extravars\u003dtnf_commit_sha:whatever\n```\n\nNow I\u0027m repeating the tests with tnf-test-cnf and tnf-test-cnf-green with default versions, they should work",
+      "revId": "0dfb7e4d642ea83b6e9233fd8db7d1eeb4c91d4b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
