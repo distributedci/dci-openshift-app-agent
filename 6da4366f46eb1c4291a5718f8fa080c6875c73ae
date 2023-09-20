@@ -16,6 +16,40 @@
       "message": "This test failed: https://www.distributed-ci.io/jobs/87d36ff8-e24d-487d-98a3-638a81f1ef48/jobStates, it should have passed ideally, but in fact it\u0027s working fine. It\u0027s detecting correctly the commitId from the Github repo, but the tnf unstable image for that commit was not built at the time the job was launched, and it was based in the prev commitId, that\u0027s why it\u0027s failing. So this change is behaving properly.\nI\u0027ll launch a new test with tnf-test-cnf-green to confirm it\u0027s fine (it should), but the change is ready for review and merge.\n(tnf-test-cnf one is working fine, that was the successful job we lastly execute)",
       "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "94895ffe_d9c092fc",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-09-20T12:15:01Z",
+      "side": 1,
+      "message": "why checking for absent?",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1925a9ac_60bc7b16",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-09-20T12:15:01Z",
+      "side": 1,
+      "message": "should we protect it also with a test to be sure everything is fine when not running the cnf-cert.",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
