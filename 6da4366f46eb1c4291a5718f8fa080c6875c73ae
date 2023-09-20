@@ -18,6 +18,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a49ff0f_8f96ad16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-20T12:23:58Z",
+      "side": 1,
+      "message": "Now, tnf-test-cnf-green passed correctly; now tnf unstable is really testing the same commitId that we\u0027re cloning: https://www.distributed-ci.io/jobs/5ba96018-721b-4b56-ac07-13054831a320/jobStates?sort\u003ddate",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "94895ffe_d9c092fc",
@@ -37,6 +54,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e13df026_9c3889ad",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-20T12:23:58Z",
+      "side": 1,
+      "message": "Honestly, I extracted this from this stackoverflow thread: https://stackoverflow.com/questions/38461920/how-can-i-check-if-a-string-exists-in-a-file\n\nThe absent does the trick, in fact; it\u0027s like a reverse query, so in the end, the task passes if the regex is present in the file, which is what we want.",
+      "parentUuid": "94895ffe_d9c092fc",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1925a9ac_60bc7b16",
         "filename": "roles/cnf-cert/tasks/pre-run.yml",
         "patchSetId": 3
@@ -48,6 +83,24 @@
       "writtenOn": "2023-09-20T12:15:01Z",
       "side": 1,
       "message": "should we protect it also with a test to be sure everything is fine when not running the cnf-cert.",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e58dc944_743c8cee",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-20T12:23:58Z",
+      "side": 1,
+      "message": "it\u0027s protected since we only do the check if tnf is executed correctly (so, claim.json is generated). We do it in logging.yml with this condition in the task that applies the regex:\n```\n    - claim_json_present.stat.exists|bool\n```",
+      "parentUuid": "1925a9ac_60bc7b16",
       "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
