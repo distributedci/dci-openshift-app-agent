@@ -1,0 +1,14 @@
+---
+- name: Dump deprecated API
+  community.kubernetes.k8s_info:
+    kind: APIRequestCount
+    field_selectors:
+      - status.removedInRelease!=null
+  register: removed_in_release_api
+
+- name: Save deprecated API info to a file
+  copy:
+    content: "{{ removed_in_release_api.resources | to_json }}"
+    dest: "{{ dump_path }}"
+  when: removed_in_release_api.resources | length > 0
+...
