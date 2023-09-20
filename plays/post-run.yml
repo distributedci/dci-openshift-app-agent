@@ -9,12 +9,11 @@
 - name: Dump deprecated API after executing the workload
   block:
     - name: Dump deprecated API after executing the workload
-      shell: >
-        set -o pipefail &&
-        {{ oc_tool_path }} get -o json apirequestcounts
-        | jq -r '.items[] | select(.status.removedInRelease!=null)'
-        | jq -s '.'
-        > {{ job_logs.path }}/apirequestcounts.after.json
+      include_role:
+        name: deprecated-api
+        tasks_from: dump_api
+      vars:
+        dump_path: "{{ job_logs.path }}/apirequestcounts.after.json"
 
     - name: Compute removed API
       include_role:
