@@ -56,6 +56,30 @@
       },
       "revId": "0dfb7e4d642ea83b6e9233fd8db7d1eeb4c91d4b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e48a680b_044c14f7",
+        "filename": "roles/cnf-cert/README.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-20T12:01:13Z",
+      "side": 1,
+      "message": "thanks :)",
+      "parentUuid": "03979b87_499feaaa",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 23
+      },
+      "revId": "0dfb7e4d642ea83b6e9233fd8db7d1eeb4c91d4b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }

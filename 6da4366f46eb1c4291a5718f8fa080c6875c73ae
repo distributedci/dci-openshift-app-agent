@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "712220dd_e7614dc9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-20T12:01:13Z",
+      "side": 1,
+      "message": "This test failed: https://www.distributed-ci.io/jobs/87d36ff8-e24d-487d-98a3-638a81f1ef48/jobStates, it should have passed ideally, but in fact it\u0027s working fine. It\u0027s detecting correctly the commitId from the Github repo, but the tnf unstable image for that commit was not built at the time the job was launched, and it was based in the prev commitId, that\u0027s why it\u0027s failing. So this change is behaving properly.\nI\u0027ll launch a new test with tnf-test-cnf-green to confirm it\u0027s fine (it should), but the change is ready for review and merge.\n(tnf-test-cnf one is working fine, that was the successful job we lastly execute)",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
