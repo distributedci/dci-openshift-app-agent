@@ -1,0 +1,25 @@
+---
+- name: Discover all namespaces
+  set_fact:
+    all_namespaces: "{{ namespace_info.resources | map(attribute='metadata.name') | list }}"
+
+- name: Get API request counts for all namespaces
+  k8s_info:
+    kind: APIService
+    namespace: "{{ item }}"
+  # Check all namespaces by default unless otherwise requested
+  with_items: "{{ deprecated_namespaces | default(all_namespaces) }}"
+  register: api_request_counts
+
+- name: Only keep removedInRelease API
+  vars:
+    query: "[?item.status.removedInRelease != null]"
+  set_fact:
+    removed_in_release_api: "{{ api_request_counts.results | json_query(query) }}"
+
+- name: Dump removedInRelease API
+  copy:
+    content: "{{ removed_in_release_api | to_json }}"
+    dest: "{{ dump_path }}"
+  when: removed_in_release_api | length > 0
+...
