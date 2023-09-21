@@ -35,6 +35,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4403c9a5_ff18f7a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-21T08:35:58Z",
+      "side": 1,
+      "message": "Thanks Fred for the review! Let\u0027s merge it and see how it behaves in daily jobs, it will be interesting to see how many times we\u0027re really testing the correct tnf version",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "94895ffe_d9c092fc",
