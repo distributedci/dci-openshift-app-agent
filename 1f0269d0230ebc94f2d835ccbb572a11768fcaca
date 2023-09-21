@@ -142,6 +142,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "bc92950c_359ffed7",
+        "filename": "roles/create-certification-project/tasks/create_container_project.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1441
+      },
+      "writtenOn": "2023-09-21T14:57:48Z",
+      "side": 1,
+      "message": "Thanks for quick sync. I am testing the changes you suggested e.g. remove nested loop and attach product-listing to each project+old during each job but not at the end to avoid it. I will amend the changes here shortly.",
+      "parentUuid": "0e3c510c_5f0e4b56",
+      "revId": "1f0269d0230ebc94f2d835ccbb572a11768fcaca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "07ab0f51_6d236890",
         "filename": "roles/create-certification-project/tasks/get_all_container_projects_basedon_product_list_id.yml",
         "patchSetId": 1
