@@ -88,6 +88,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fdf59b8_56f1dc20",
+        "filename": "roles/cnf-cert/tasks/logging.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-09-21T08:33:08Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f76fa605_4549487f",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "1925a9ac_60bc7b16",
@@ -119,6 +137,24 @@
       "side": 1,
       "message": "it\u0027s protected since we only do the check if tnf is executed correctly (so, claim.json is generated). We do it in logging.yml with this condition in the task that applies the regex:\n```\n    - claim_json_present.stat.exists|bool\n```",
       "parentUuid": "1925a9ac_60bc7b16",
+      "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b78f81_cf6a1148",
+        "filename": "roles/cnf-cert/tasks/pre-run.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 235,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2023-09-21T08:33:08Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e58dc944_743c8cee",
       "revId": "6da4366f46eb1c4291a5718f8fa080c6875c73ae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
