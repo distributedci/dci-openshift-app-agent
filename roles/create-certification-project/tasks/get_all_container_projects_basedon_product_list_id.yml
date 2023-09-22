@@ -31,4 +31,6 @@
 - name: Print All container projects
   debug:
     var: all_container_projects
+
+# This is a test to see if this CR includes changes from dci-openshift-app-agent/+/29465 that is not merged yet
 ...
