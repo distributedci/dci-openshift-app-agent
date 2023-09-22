@@ -9,4 +9,10 @@ page_size: 200
 check_for_existing_projects: false
 ignore_project_creation_errors: false
 attach_product_listing: false
+<<<<<<< Updated upstream
+=======
+privileged: false
+auto_publish: false
+published: false #product-listing auto published
+>>>>>>> Stashed changes
 ...
