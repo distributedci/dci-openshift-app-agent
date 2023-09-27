@@ -16,6 +16,23 @@
       "message": "I only tested the basic situation to create a cert project, but that\u0027s what we use the most: https://www.distributed-ci.io/jobs/e26264a4-5ec8-40ba-a47b-ebcd2c3f2602/jobStates?sort\u003ddate\u0026task\u003dd3c35261-02a2-4648-8d8d-0325900c6bff\n\nThank you for your contribution!",
       "revId": "c0bd81957dec83d262c33edfd1820ca710079c1b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b66cec05_37d138b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 19
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-09-27T17:28:11Z",
+      "side": 1,
+      "message": "Thanks, LGTM",
+      "revId": "c0bd81957dec83d262c33edfd1820ca710079c1b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
