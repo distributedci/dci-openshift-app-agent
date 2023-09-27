@@ -16,6 +16,23 @@
       "message": "check dallas ocp-4.15-vanilla openshift-vanilla:ansible_extravars\u003dcnf_test_suites:[] preflight-green",
       "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "afe78181_23f2ade2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-27T13:10:34Z",
+      "side": 1,
+      "message": "Hello everyone,\n\nI\u0027m still waiting for the last test to pass but would appreciate a review anyway. Here is what I already tested:\n\n1. Locally: if there is no deprecated API discovered. In this case, we simply display the green test - compatibility with the current version and the next version.\n\n2. We do not define a list of namespaces to check. In this case, we discover all the ns, filter out openshift-* and kube-* namespaces and check all the rest for deprecated API. For libvirt tests, that\u0027s default and myns namespaces, here is the output: https://www.distributed-ci.io/jobs/5df4007f-6df6-4d55-88fa-142fda4b99f2/tests/c6625b13-4958-410f-9804-c35328109d7e \n\n3. We defined a list of namespaces to check. The test is ongoing: https://github.com/dci-labs/dallas-pipelines/pull/879",
+      "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
