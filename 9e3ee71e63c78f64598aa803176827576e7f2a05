@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d17a2a0c_4b117226",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-28T08:40:23Z",
+      "side": 1,
+      "message": "Don\u0027t know if I\u0027m on time to provide some feedback, just documentation-related comments. I\u0027d create a README to briefly document the deprecated-api role, mainly",
+      "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "277e2674_e5aff1fb",
@@ -65,6 +82,47 @@
       "writtenOn": "2023-09-27T14:24:48Z",
       "side": 1,
       "message": "I think you should document somewhere that it does not target namespaces starting but \u0027openshift or kube\u0027. Image a partner calling its namespace Openshift-fredco. Even if it is unlikely, I think you should mention it in the doc.",
+      "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "efaa981c_3f591f4b",
+        "filename": "roles/deprecated-api/tasks/main.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-28T08:40:23Z",
+      "side": 1,
+      "message": "+1",
+      "parentUuid": "277e2674_e5aff1fb",
+      "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4715d61d_b8aa351c",
+        "filename": "roles/deprecated-api/tasks/main.yml",
+        "patchSetId": 11
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-09-28T08:40:23Z",
+      "side": 1,
+      "message": "Where is this variable defined? Is it expected that this variable is provided? I\u0027d document that",
+      "range": {
+        "startLine": 19,
+        "startChar": 18,
+        "endLine": 19,
+        "endChar": 39
+      },
       "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
