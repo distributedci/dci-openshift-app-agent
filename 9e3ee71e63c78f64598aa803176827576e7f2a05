@@ -69,6 +69,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "6b5ec39d_8800d491",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-09-29T07:22:47Z",
+      "side": 1,
+      "message": "Thank you Charles and Ramon, I\u0027ll merge now to have the functionality available for our partner today and then add the documentation",
+      "revId": "9e3ee71e63c78f64598aa803176827576e7f2a05",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "277e2674_e5aff1fb",
