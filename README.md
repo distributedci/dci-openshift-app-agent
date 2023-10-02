@@ -87,11 +87,11 @@ do\_chart\_verifier                | false                                      
 do\_must\_gather                   | true                                                 | Enable/Disable the generation of must_gather
 do\_preflight\_tests               | false                                                | Trigger to activate the preflight tests
 sync\_cnf\_cert\_and\_preflight    | false                                                | If true, CNF Cert Suite output (claim.json file) would be used to create the `preflight_operators_to_check` variable needed for preflight tests.
-tests\_to\_verify                  | undefined                                                | List of expected test results. When defined, it triggers the validation of actual test results against the expectations. Please check [verify-tests readme](roles/verify-tests/README.md) to get more details and an example of the configuration.
-|See [Operator Certification (preflight)](roles/preflight/README.md) for details to enable the Operator Certifications tests suite ||
-|See [CNF-cert role](roles/cnf-cert/README.md) for details to enable the Cloud Native Functions (CNF) cert suite                   ||
-|See [chart-verifier role](roles/chart-verifier/README.md) for details to enable the chart-verifier tests                          ||
-|See [resources-to-components role](roles/resources-to-components/README.md) for details to enable the creation of DCI components based on Kubernetes resources deployed in the cluster, making use of `rtc_resources_to_components` variable. ||
+tests\_to\_verify                  | undefined                                                | List of expected test results. When defined, it triggers the validation of actual test results against the expectations. Please check [verify-tests readme](https://github.com/redhatci/ocp/tree/main/roles/verify-tests/README.md) to get more details and an example of the configuration.
+|See [Operator Certification (preflight)](https://github.com/redhatci/ocp/tree/main/roles/preflight/README.md) for details to enable the Operator Certifications tests suite ||
+|See [CNF-cert role](https://github.com/redhatci/ocp/tree/main/roles/cnf-cert/README.md) for details to enable the Cloud Native Functions (CNF) cert suite                   ||
+|See [chart-verifier role](https://github.com/redhatci/ocp/tree/main/roles/chart-verifier/README.md) for details to enable the chart-verifier tests                          ||
+|See [resources-to-components role](https://github.com/redhatci/ocp/tree/main/roles/resources-to-components/README.md) for details to enable the creation of DCI components based on Kubernetes resources deployed in the cluster, making use of `rtc_resources_to_components` variable. ||
 
 ## Pipeline job definition
 
@@ -126,15 +126,15 @@ The DCI App Agent has support to execute multiple test suites to validate contai
 
 This test suite will run the command line interface for validating if OpenShift Operator Bundles and images meet minimum requirements for Red Hat [Operator Certification](https://github.com/redhat-openshift-ecosystem/openshift-preflight).
 
-For specific details about the features and variables for this test suite see: [Preflight role](roles/preflight/README.md) documentation.
+For specific details about the features and variables for this test suite see: [Preflight role](https://github.com/redhatci/ocp/tree/main/roles/preflight/README.md) documentation.
 
-The test results for each operator can be submitted to the [Red Hat connect Site](https://connect.redhat.com/). Please see [Preflight Role](roles/preflight/README.md) documentation about how to enable this feature.
+The test results for each operator can be submitted to the [Red Hat connect Site](https://connect.redhat.com/). Please see [Preflight Role](https://github.com/redhatci/ocp/tree/main/roles/preflight/README.md) documentation about how to enable this feature.
 
 ### Cloud Native Functions (CNF) Certification tests
 
-The [CNF-cert role](roles/cnf-cert/README.md) allows the deployment of CNFs and run the defined [Tests Network Functions (TNF)](https://github.com/test-network-function/cnf-certification-test) in the order to meet minimum requirements for Red Hat OpenShift Certification.
+The [CNF-cert role](https://github.com/redhatci/ocp/tree/main/roles/cnf-cert/README.md) allows the deployment of CNFs and run the defined [Tests Network Functions (TNF)](https://github.com/test-network-function/cnf-certification-test) in the order to meet minimum requirements for Red Hat OpenShift Certification.
 
-For specific details about the features and variables for this test suite see: [CNF-cert role](roles/cnf-cert/README.md) documentation.
+For specific details about the features and variables for this test suite see: [CNF-cert role](https://github.com/redhatci/ocp/tree/main/roles/cnf-cert/README.md) documentation.
 
 Also, the [tnf_test_example sample](samples/tnf_test_example/README.md) can be followed as a good example of how to deploy a workload to be tested by the CNF Cert Suite.
 
@@ -142,7 +142,7 @@ Also, the [tnf_test_example sample](samples/tnf_test_example/README.md) can be f
 
 [Helm Chart Verifier](https://github.com/redhat-certification/chart-verifier) is a test tool that validates Helm charts based on Red Hat recommendations.
 
-The [chart-verifier role](roles/chart-verifier/README.md) is able to deploy charts on an OCP cluster and run the helm chart verifier tests. Please see the role documentation for more details about how to run tests using via the app agent or using a pipeline.
+The [chart-verifier role](https://github.com/redhatci/ocp/tree/main/roles/chart-verifier/README.md) is able to deploy charts on an OCP cluster and run the helm chart verifier tests. Please see the role documentation for more details about how to run tests using via the app agent or using a pipeline.
 
 ## General workflow
 
