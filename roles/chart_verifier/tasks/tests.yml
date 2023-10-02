@@ -171,7 +171,7 @@
 
 - name: "Submit CV and create pull request"
   include_role:
-    name: create_pr
+    name: redhatci.ocp.create_pr
   vars:
     product_name: "{{ chart_name }}"
     product_version: "{{ chart_version }}"
