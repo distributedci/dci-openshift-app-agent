@@ -156,7 +156,7 @@
 
 - name: "Create certification project for {{ operator.name }}"
   include_role:
-    name: create_certification_project
+    name: redhatci.ocp.create_certification_project
   vars:
     project_type: "operator"
   when:
@@ -170,7 +170,7 @@
 
 - name: "Submit the results to Pyxis for {{ operator.name }}"
   include_role:
-    name: pyxis
+    name: redhatci.ocp.pyxis
   when: cert_project_id | default('') | length > 0
 
 - name: Create certification PR
@@ -181,7 +181,7 @@
 
     - name: Create a PR for certification
       include_role:
-        name: create_pr
+        name: redhatci.ocp.create_pr
         apply:
           environment:
             - DOCKER_CONFIG: "{{ preflight_tmp_dir.path }}"

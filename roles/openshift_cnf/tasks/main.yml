@@ -17,7 +17,7 @@
 
     - name: "Attach Product List ID {{ cert_listings.pyxis_product_list_identifier }} to all projects using same Product-Listing ID"
       include_role:
-        name: create_certification_project
+        name: redhatci.ocp.create_certification_project
         tasks_from: attach_product_listing
       when:
         - cert_listings.attach_product_listing | default(false) | bool
