@@ -8,7 +8,7 @@
 
 - name: Mirror Operator-SDK images
   include_role:
-    name: mirror_images
+    name: redhatci.ocp.mirror_images
   vars:
     images: "{{ scorecard_images }}"
     authfile: "{{ scorecard_partner_creds }}"
@@ -22,7 +22,7 @@
 
 - name: Create FBC catalog
   include_role:
-    name: fbc_catalog
+    name: redhatci.ocp.fbc_catalog
     apply:
       environment:
         - DOCKER_CONFIG: "{{ scorecard_tmp_dir.path }}"
@@ -47,7 +47,7 @@
 
 - name: Mirror generated catalog
   include_role:
-    name: mirror_catalog
+    name: redhatci.ocp.mirror_catalog
   vars:
     mc_oc_tool_path: "{{ scorecard_oc_tool_path }}"
     mc_catalog: "{{ OO_INDEX }}"
@@ -83,7 +83,7 @@
 
 - name: Wait for MCP status
   include_role:
-    name: check_resource
+    name: redhatci.ocp.check_resource
   vars:
     resource_to_check: "MachineConfigPool"
     check_wait_retries: 30
