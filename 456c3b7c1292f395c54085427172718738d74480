@@ -16,6 +16,24 @@
       "message": "This is the test with preflight-green",
       "revId": "456c3b7c1292f395c54085427172718738d74480",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "44e5978b_8f6ec4cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-10-04T19:21:51Z",
+      "side": 1,
+      "message": "ok, and the issue with example-cnf is known, the job ran in cluster2 and we have a link issue there",
+      "parentUuid": "557f0bfe_08fabac3",
+      "revId": "456c3b7c1292f395c54085427172718738d74480",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
