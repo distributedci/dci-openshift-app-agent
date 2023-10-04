@@ -52,6 +52,23 @@
       "parentUuid": "44e5978b_8f6ec4cb",
       "revId": "456c3b7c1292f395c54085427172718738d74480",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b11f5b11_8050cbe1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-04T23:38:13Z",
+      "side": 1,
+      "message": "This is the test with tnf-test-cnf pipeline",
+      "revId": "456c3b7c1292f395c54085427172718738d74480",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
