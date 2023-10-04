@@ -1,0 +1,106 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a0473b9_67eb95fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-04T19:44:04Z",
+      "side": 1,
+      "message": "Thank you Andrew, I\u0027ll be off tomorrow, and run some tests on 6 Oct to ensure the unbroken operator flow. I added some minor comments and possible improvements, but nothing really blocking, please feel free to ignore them. Thanks.",
+      "revId": "9ce986f4b9a580d3364ec1f44df29bc5a2f66433",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0e197a2f_f5fc26d4",
+        "filename": "roles/create-certification-project/tasks/create_operator_project.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-04T19:44:04Z",
+      "side": 1,
+      "message": "why should we fail in the situation of a PL with no projects attached? Maybe that\u0027s a brand new PL, and that\u0027s ok",
+      "revId": "9ce986f4b9a580d3364ec1f44df29bc5a2f66433",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fbddd9fe_39a72f7c",
+        "filename": "roles/create-certification-project/tasks/create_operator_project.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-04T19:44:04Z",
+      "side": 1,
+      "message": "Tony is about to freeze the repository for a week, to move to the collections. Not sure if I\u0027ll have time to extensively test before 6 Oct, if not, the naming conventions will be updated, here is the link: https://softwarefactory-project.io/r/c/dci-openshift-app-agent/+/29660",
+      "revId": "9ce986f4b9a580d3364ec1f44df29bc5a2f66433",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ce5fd812_8c470d01",
+        "filename": "roles/create-certification-project/tasks/get_all_operator_projects_basedon_product_list_id.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-04T19:44:04Z",
+      "side": 1,
+      "message": "we could also add success_msg",
+      "revId": "9ce986f4b9a580d3364ec1f44df29bc5a2f66433",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a1bdcd4d_2a3566a4",
+        "filename": "roles/create-certification-project/tasks/get_all_operator_projects_basedon_product_list_id.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-04T19:44:04Z",
+      "side": 1,
+      "message": "this task will fail if cert_project_list_output length is 0. Should we add a condition here as in the previous task?",
+      "revId": "9ce986f4b9a580d3364ec1f44df29bc5a2f66433",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae63aa53_ab5f8641",
+        "filename": "roles/create-certification-project/tasks/update_operator_project.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-04T19:44:04Z",
+      "side": 1,
+      "message": "should we use PATCH or PUT? Since we provide a complete list of projects to be attached, it\u0027s probably PUT, wdyt?",
+      "revId": "9ce986f4b9a580d3364ec1f44df29bc5a2f66433",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
