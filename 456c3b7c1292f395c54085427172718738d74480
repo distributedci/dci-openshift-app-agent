@@ -34,6 +34,24 @@
       "parentUuid": "557f0bfe_08fabac3",
       "revId": "456c3b7c1292f395c54085427172718738d74480",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4d7798a8_87513d13",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-04T23:36:24Z",
+      "side": 1,
+      "message": "Thanks for letting me know, testing in a diff cluster",
+      "parentUuid": "44e5978b_8f6ec4cb",
+      "revId": "456c3b7c1292f395c54085427172718738d74480",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
