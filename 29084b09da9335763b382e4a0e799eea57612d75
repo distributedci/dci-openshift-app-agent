@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e4346100_c81ea994",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2023-10-04T11:23:20Z",
+      "side": 1,
+      "message": "Hi team, I really need this merged before the freezing date for the migration to collections, which is next Friday",
+      "revId": "29084b09da9335763b382e4a0e799eea57612d75",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
