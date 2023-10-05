@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "25dbeb07_31c2a28a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-05T01:57:52Z",
+      "side": 1,
+      "message": "Last failure showed that a role was not renamed (opcap-tool), it has been renamed in the latest patchset",
+      "revId": "0a54c3184c52462a027ce164465bd67795f5fb76",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
