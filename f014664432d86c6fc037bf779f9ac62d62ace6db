@@ -50,6 +50,23 @@
       "message": "Hi Tony, it seems like some plugins are not taken into account\n\n\u003e task path: /home/dciteam/gerrit/29637-5abbf48f5f582cff007792f2573dc830/collections/ansible_collections/redhatci/ocp/roles/verify_tests/tasks/parse_junit_file.yml:31\nfatal: [jumphost]: FAILED! \u003d\u003e {\"msg\": \"template error while templating string: No filter named \u0027junit2dict\u0027.. String: {{ item | junit2dict }}\"}\n\nIt seems like you made the plugin to be global so we probably have to replace junit2dict with redhatci.ocp.junit2dict",
       "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b3b0b4f_ea21195b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-11T12:24:11Z",
+      "side": 1,
+      "message": "check workload preflight-green",
+      "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
