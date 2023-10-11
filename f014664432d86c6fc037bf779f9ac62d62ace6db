@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5120efa_273a031b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-11T08:22:31Z",
+      "side": 1,
+      "message": "check workload operator-sdk",
+      "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
