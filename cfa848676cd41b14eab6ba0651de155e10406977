@@ -68,6 +68,23 @@
       "message": "Thanks for the discussion Nacho, after some ideas seems like a good option is to look at the cluster\u0027s operator to extract the tag.",
       "revId": "cfa848676cd41b14eab6ba0651de155e10406977",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c414d329_c40207e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-11T16:39:16Z",
+      "side": 1,
+      "message": "I think this one can be closed, right?",
+      "revId": "cfa848676cd41b14eab6ba0651de155e10406977",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
