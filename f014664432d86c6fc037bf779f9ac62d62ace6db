@@ -67,6 +67,41 @@
       "message": "check workload preflight-green",
       "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "504fd704_504c5406",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-11T15:32:31Z",
+      "side": 1,
+      "message": "check workload operator-sdk",
+      "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f3a8c220_1fc93c64",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-11T15:32:31Z",
+      "side": 1,
+      "message": "Thanks for checking, I\u0027ve it fixed it in the ansible-collection-redhatci-ocp PR",
+      "parentUuid": "69c4d486_1d82fb70",
+      "revId": "f014664432d86c6fc037bf779f9ac62d62ace6db",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
