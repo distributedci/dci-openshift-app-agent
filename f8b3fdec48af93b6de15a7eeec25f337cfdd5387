@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c53d3c9c_45213961",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2023-10-12T13:56:56Z",
+      "side": 1,
+      "message": "LGTM, but I wonder if this change will impact 29637 and the changes about role conversion to collections.",
+      "revId": "f8b3fdec48af93b6de15a7eeec25f337cfdd5387",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
