@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c2f2df1b_3a32c71a",
+        "filename": "dci-openshift-app-agent.spec",
+        "patchSetId": 10
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2023-10-12T19:56:00Z",
+      "side": 1,
+      "message": "same comment as in d-o-a, let\u0027s keep this whole change contained to 0.6.x",
+      "revId": "5df3e055dc580c059f93984afe8dc9f2ac0a4440",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7bb86252_c3b63ac1",
+        "filename": "dci-openshift-app-agent.spec",
+        "patchSetId": 10
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2023-10-12T19:56:00Z",
+      "side": 1,
+      "message": "this Requires is already present down in ln 21",
+      "revId": "5df3e055dc580c059f93984afe8dc9f2ac0a4440",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
