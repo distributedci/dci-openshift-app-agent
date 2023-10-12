@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51fa1058_f2214c03",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2023-10-12T10:11:30Z",
+      "side": 1,
+      "message": "The change is tested: \n\n- Simple project creation: https://www.distributed-ci.io/jobs/f51ab18e-81a0-411e-8a45-7fd9f1520471/jobStates?sort\u003ddate\n\n- Project creation + product listing attachment: https://www.distributed-ci.io/jobs/7e0ea24f-9b6f-474d-b5ff-8d2ccabd4406/jobStates\n\nThank you for the contribution, Andrew! \n\nI\u0027ll add +1 and add Tony to be a reviewer to let him decide when to merge the change.",
+      "revId": "25a07dd0ac24124a348c245e59ceeba849652d02",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
