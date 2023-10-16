@@ -36,6 +36,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "78ee8eed_674c301d",
+        "filename": "dci-openshift-app-agent.spec",
+        "patchSetId": 10
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-10-16T20:48:14Z",
+      "side": 1,
+      "message": "Agreed to do a minor bump as in d-o-a",
+      "parentUuid": "788f76e2_2cb5beb4",
+      "revId": "5df3e055dc580c059f93984afe8dc9f2ac0a4440",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7bb86252_c3b63ac1",
