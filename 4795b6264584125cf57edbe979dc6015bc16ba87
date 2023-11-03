@@ -16,6 +16,24 @@
       "message": "Hi Tony, I have a question: why, in this change, we\u0027re using stable-4.13 in fbc and preflight roles: https://github.com/redhatci/ansible-collection-redhatci-ocp/pull/29, and here we\u0027re using again stable?",
       "revId": "4795b6264584125cf57edbe979dc6015bc16ba87",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1292d124_1af40051",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2023-11-03T15:36:23Z",
+      "side": 1,
+      "message": "Using 4.13 was a workaround to understand what was the problem, more info in https://github.com/redhatci/ansible-collection-redhatci-ocp/pull/31 that depends on this change.",
+      "parentUuid": "500a2502_b475eff8",
+      "revId": "4795b6264584125cf57edbe979dc6015bc16ba87",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
