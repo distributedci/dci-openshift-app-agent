@@ -17,3 +17,18 @@
   when:
     - helm_tmp_dir is defined
     - helm_tmp_dir.path is defined
+
+- name: Delete the load test container
+  when: openshift_app_test_stage | default('') == "post-upgrade"
+  block:
+    - name: Get the configmap with the container info
+      community.kubernetes.k8s_info:
+        kind: ConfigMap
+        namespace: "{{ openshift_app_ns }}"
+        name: load-test-container
+      register: container_info
+
+    - name: Delete load test container
+      containers.podman.podman_container:
+        name: "{{ container_info.resources[0].data.containerName }}"
+        state: absent

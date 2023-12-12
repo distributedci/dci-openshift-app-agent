@@ -1,0 +1,21 @@
+---
+- name: Create a Deployment of the App
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ openshift_app_ns }}"
+    definition: "{{ lookup('template', 'deployment.yml.j2') }}"
+    wait: true
+
+- name: Create a Service for the App
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ openshift_app_ns }}"
+    definition: "{{ lookup('file', 'service.yml.j2') }}"
+    wait: true
+
+- name: Create a Route for the App
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ openshift_app_ns }}"
+    definition: "{{ lookup('file', 'route.yml.j2') }}"
+    wait: true

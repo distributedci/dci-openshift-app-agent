@@ -51,8 +51,9 @@ service:
   ipFamilyPolicy: PreferDualStack
   selectorLabel:
     app: httpd
-
+{% if openshift_app_cmds is defined and openshift_app_cmds | length %}
 command: {{ openshift_app_cmds }}
+{% endif %}
 
 ingress:
   enabled: false

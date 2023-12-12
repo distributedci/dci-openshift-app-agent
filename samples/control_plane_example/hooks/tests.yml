@@ -7,12 +7,20 @@
   community.kubernetes.k8s_info:
     namespace: "{{ openshift_app_ns }}"
     kind: Pod
-    name: webserver
+    name: httpbin
     field_selectors:
       - status.phase=Running
-  register: web_service
+  register: app_service
 
 - name: Fail if pod is NOT found
   fail:
-    msg: "webserver is not running"
-  when: web_service == False
+    msg: "App is not running"
+  when: app_service == False
+
+- name: Load testing - pre-upgrade
+  when: openshift_app_test_stage | default('') == "pre-upgrade"
+  ansible.builtin.include_tasks: load_test_pre_upgrade.yml
+
+- name: Load testing - post-upgrade
+  when: openshift_app_test_stage | default('') == "post-upgrade"
+  ansible.builtin.include_tasks: load_test_post_upgrade.yml

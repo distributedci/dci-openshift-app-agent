@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  app: httpd
-  name: webserver
+  app: httpbin
+  name: httpbin
 spec:
   replicas: {{ openshift_app_replicas | default(1) }}
   selector:
     matchLabels:
-      app: httpd
+      app: httpbin
   template:
     metadata:
       labels:
-        app: httpd
+        app: httpbin
     spec:
       affinity:
         podAntiAffinity:
@@ -24,14 +24,16 @@ spec:
                   - httpd
               topologyKey: kubernetes.io/hostname
       containers:
-        - env:
-          name: webserver
+        - name: httpbin
+          env:
+            - name: HTTPBIN_HOST
+              value: '[::]'
 {% if dci_disconnected | default(false) | bool %}
           image: {{ openshift_app_registry }}/{{ '/'.join(openshift_app_image.split('/')[1:]) }}
 {% else %}
           image: {{ openshift_app_image }}
 {% endif %}
-{% if openshift_app_cmds | length %}
+{% if openshift_app_cmds is defined and openshift_app_cmds| length %}
           command: {{ openshift_app_cmds }}
 {% endif %}
           ports:

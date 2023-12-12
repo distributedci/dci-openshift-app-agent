@@ -1,0 +1,21 @@
+---
+- name: Get configmap with container info
+  community.kubernetes.k8s_info:
+    kind: ConfigMap
+    namespace: "{{ openshift_app_ns }}"
+    name: load-test-container
+  register: container_info
+   
+- name: Get logs from container
+  ansible.builtin.shell:
+    cmd: >
+      podman logs {{ container_info.resources[0].data.containerName }}
+  register: container_logs
+
+- name: Parse logs
+  ansible.builtin.set_fact:
+    container_logs: "{{ container_logs.stdout_lines | from_json }}"
+
+- name: Print logs
+  ansible.builtin.debug:
+    msg: "{{ container_logs }}"

@@ -1,0 +1,41 @@
+---
+- name: Get Route of the service
+  community.kubernetes.k8s_info:
+    kind: Route
+    namespace: "{{ openshift_app_ns }}"
+    name: httpbin
+  register: route_app
+   
+- name: Run load test container
+  vars:
+    oha_duration: 90m
+    oha_concurrent: 50
+    oha_qps: 5 # Queries per second
+  containers.podman.podman_container:
+    name: oha_{{ job_id }}
+    image: quay.io/tonyskapunk/oha:latest
+    state: started
+    command: 
+      - "--no-tui"
+      - "-z{{ oha_duration }}"
+      - "-c{{ oha_concurrent }}"
+      - "-q{{ oha_qps }}"
+      - "--latency-correction"
+      - "--disable-keepalive"
+      - "--json"
+      - "--insecure"
+      - "https://{{ route_app.resources[0].spec.host }}"
+  register: oha_container
+
+- name: Create configmap with container info
+  community.kubernetes.k8s:
+    state: present
+    namespace: "{{ openshift_app_ns }}"
+    definition:
+      apiVersion: v1
+      kind: ConfigMap
+      metadata:
+        name: load-test-container
+      data:
+        containerName: "oha_{{ job_id }}"
+    wait: true
