@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb5c3d36_6348ecb8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2024-01-09T17:23:03Z",
+      "side": 1,
+      "message": "I\u0027m still not 100% sold on that specific rule from ansible-lint, but thank you for fixing it nonetheless.",
+      "revId": "d54107359da2183a0b8eda48cee035505ea875c1",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
