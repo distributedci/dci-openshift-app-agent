@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9600f3b3_701b7321",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-01-22T19:24:32Z",
+      "side": 1,
+      "message": "LGTM, Andrew tested in his lab: https://www.distributed-ci.io/jobs/66f83e21-4fc4-49ba-b7bf-3d4e758d12c3/jobStates?sort\u003ddate",
+      "revId": "c50a1449969c0fa0e260ed58f5f3fe268c688499",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
