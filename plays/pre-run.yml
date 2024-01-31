@@ -31,6 +31,15 @@
   include_role:
     name: redhatci.ocp.include_components
 
+- name: Debug components for the certification
+  vars:
+    ga_components: "{{ job_info['job']['components'] | selectattr('tags', 'issuperset', ['build:ga']) | map(attribute='type') | list }}"
+  debug:
+    msg:
+      - "dci_ga_components_for_certification: {{ dci_ga_components_for_certification }}"
+      - "ga_components: {{ ga_components }}"
+      - "dci_all_components_are_ga: {{ dci_all_components_are_ga }}"    
+
 - name: Compute if all needed components are ga
   vars:
     ga_components: "{{ job_info['job']['components'] | selectattr('tags', 'issuperset', ['build:ga']) | map(attribute='type') | list }}"
