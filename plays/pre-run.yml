@@ -37,6 +37,15 @@
   set_fact:
     dci_all_components_are_ga: "{{ dci_ga_components_for_certification | difference(ga_components) | length == 0 }}"
 
+- name: Debug components for the certification
+  vars:
+    ga_components: "{{ job_info['job']['components'] | selectattr('tags', 'issuperset', ['build:ga']) | map(attribute='type') | list }}"
+  debug:
+    msg:
+      - "dci_ga_components_for_certification: {{ dci_ga_components_for_certification }}"
+      - "ga_components: {{ ga_components }}"
+      - "dci_all_components_are_ga: {{ dci_all_components_are_ga }}"
+
 ### Mirror must-gather images
 
 - name: "dci-openshift-app-agent : Mirror must gather images"
