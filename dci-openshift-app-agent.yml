@@ -117,18 +117,23 @@
         id: '{{ job_id }}'
         tags: '{{ ["agent:openshift-app"] + dci_tags + dci_workarounds }}'
 
-    - name: Count workarounds
-      dci_job:
-        id: "{{ job_id }}"
-        key: "workarounds"
-        value: "{{ dci_workarounds | length }}"
-
     - name: Add cluster tag to the current job
       dci_job:
         id: '{{ job_id }}'
         tags:
           - cluster:{{ cluster_name }}
       when: cluster_name is defined
+
+    - name: Count workarounds
+      dci_job:
+        id: "{{ job_id }}"
+        key: "workarounds"
+        value: "{{ dci_workarounds | length }}"
+      register: job_info        # register again job_info to have the updated information
+
+    - name: Debug job_info
+      debug:
+        var: job_info
 
     - name: "Merge pull secrets"
       include_tasks: 'plays/pullsecrets.yml'
