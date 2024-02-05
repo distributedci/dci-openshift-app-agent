@@ -16,6 +16,23 @@
       "message": "The change is tested fine, the run on cluster10 with GA OCP shows the --submit to be added (https://www.distributed-ci.io/jobs/4f5484ee-cea4-4341-b493-99781af4ae98/jobStates?sort\u003ddate\u0026task\u003d72e9df6f-cda5-45f2-b57e-f7293f6d90c4) when dci_all_components_are_ga is True (https://www.distributed-ci.io/jobs/4f5484ee-cea4-4341-b493-99781af4ae98/jobStates?sort\u003ddate\u0026task\u003d3a6555c6-22c9-483f-af8b-493479ae8f07).\n\nPlease review the change in the app-agent first, to follow the merge order.",
       "revId": "bfc92f8b799883dba07f79449a5943c76bd3a9d9",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ba13694_23c31b1a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-02-05T13:57:36Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "bfc92f8b799883dba07f79449a5943c76bd3a9d9",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
