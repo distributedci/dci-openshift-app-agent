@@ -95,6 +95,29 @@ function interrupt() {
 
 trap interrupt INT TERM
 
+function check_inventory() {
+    # if ansible-inventory not in $PATH, skip inventory check
+    if ! command -v ansible-inventory; then
+	echo "SKIP: inventory check, ansible-inventory not in PATH"
+	return 0
+    fi
+
+    # retrieve stderr output
+    stderr=$(ansible-inventory --list $1  2>&1 1>/dev/null)
+    stderr_orig="$stderr"
+    # remove leading whitespace characters
+    stderr="${stderr#${stderr%%[![:space:]]*}}"
+    # remove trailing whitespace characters
+    stderr="${stderr%${stderr##*[![:space:]]}}"
+
+    if [[ -n $stderr ]]; then
+	echo "Inventory error\nERROR: $stderr_orig"
+	exit 1
+    else
+	echo "Inventory: no syntax issue detected at this stage"
+    fi
+}
+
 if [ -r /etc/dci-openshift-app-agent/config ]; then
     . /etc/dci-openshift-app-agent/config
 fi
@@ -206,6 +229,9 @@ fi
 
 
 if [ "$start" -eq 1 ]; then
+    # run check_inventory on all host files
+    check_inventory $host_args
+
     OUTPUT_DIR="$(mktemp -d /tmp/dci-openshift-app-agent.XXXXX)"
     cd "${OUTPUT_DIR}" || exit 1
     JOB_ID_FILE="$OUTPUT_DIR/dci-openshift-app-agent.job"
