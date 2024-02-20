@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2465259b_5fc74120",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2024-02-20T18:53:22Z",
+      "side": 1,
+      "message": "Worked for d-o-a https://github.com/redhat-cip/dci-openshift-agent/pull/16",
+      "revId": "3a35b12db6102d4d0191c7f872e5eb54f0065a6a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
