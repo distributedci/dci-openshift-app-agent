@@ -16,6 +16,23 @@
       "message": "Although this job failed:\n\n\u003e from change https://github.com/dci-labs/dallas-pipelines/pull/1020:\n\u003e FAILURE https://www.distributed-ci.io/jobs/49276e7b-4953-4781-8d11-86d27fa51a40/jobStates\n\nIn fact, the installation of istio resources in tnf_test_example was passing fine. Here we can see that the pods are able to be deployed fine with istio container: https://www.distributed-ci.io/jobs/49276e7b-4953-4781-8d11-86d27fa51a40/jobStates?sort\u003ddate\u0026task\u003db3938535-0802-473c-89a0-22ec08a15c14\n\nThe failure is because tnf detected some tests that should pass are now failing, but since this change is just to include the functionality of istio workloads in tnf_test_example, it\u0027s enough to consider this change for being merged.\n\nI\u0027ll address the issue of tnf tests that are now failing when re-testing platform-alteration-service-mesh test in https://github.com/dci-labs/dallas-pipelines/pull/1020\n\n@Manuel adding you as reviewer since you already checked the pipelines PR",
       "revId": "b46a476c9f002b3add0e998f05851d1b012f32a4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1daa9f28_e747c7fd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-02-22T12:26:09Z",
+      "side": 1,
+      "message": "Just launched a final job with a success case, just in case.",
+      "revId": "b46a476c9f002b3add0e998f05851d1b012f32a4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
