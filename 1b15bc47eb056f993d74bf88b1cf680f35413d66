@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5fd4aa0_009d59fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-03-05T15:30:14Z",
+      "side": 1,
+      "message": "Change is ready for review, it\u0027s working. Just launching a new job with HEAD version to have service-mesh test passing",
+      "revId": "1b15bc47eb056f993d74bf88b1cf680f35413d66",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
