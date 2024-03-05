@@ -33,6 +33,23 @@
       "message": "Here we have the job where service-mesh test is passing: https://www.distributed-ci.io/jobs/4efe2a0b-ef8d-464c-ba39-ae9f784a0931/jobStates, ready for review\n\nThis change will prevent us from failures such as this one from daily jobs: https://www.distributed-ci.io/jobs/09b08f15-6e80-48e7-ab2d-eaead702d6f3/jobStates",
       "revId": "1b15bc47eb056f993d74bf88b1cf680f35413d66",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a9247b3_77ed6877",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2024-03-05T18:23:56Z",
+      "side": 1,
+      "message": "Thanks Ramon. LGTM!",
+      "revId": "1b15bc47eb056f993d74bf88b1cf680f35413d66",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
