@@ -16,6 +16,40 @@
       "message": "Hi Manny, thank you for the fix, looks good as a workaround. \nAs a final solution, I\u0027d prefer to add these annotations in kni/example-cnf, in ClusterServiceVersion.annotations for every operator: https://github.com/search?q\u003drepo%3Aopenshift-kni%2Fexample-cnf%20clusterservice\u0026type\u003dcode",
       "revId": "edff0aced56176171ddc2236426b600af03bd58a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0fb03bf_0b206737",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-03-06T10:58:30Z",
+      "side": 1,
+      "message": "There\u0027s something that must be changed in the README\nAlso, we need a positive test with https://github.com/test-network-function/cnf-certification-test/pull/1898, I\u0027ve added the build-depends there since I have permissions in tnf repo and launching a job now in the core cluster",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c69f407c_3d8fece5",
+        "filename": "samples/tnf_test_example/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-03-06T10:58:30Z",
+      "side": 1,
+      "message": "These new vars should be under `tnf_operator_to_install`, rather than under `tnf_helm_chart_to_install`",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
