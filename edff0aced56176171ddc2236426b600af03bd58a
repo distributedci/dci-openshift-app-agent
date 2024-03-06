@@ -107,6 +107,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "a87e1267_3dc2a563",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-03-06T14:26:42Z",
+      "side": 1,
+      "message": "Now that I see this more carefully, I\u0027m debating if we should do this at all or not, for the operators that we build like example-cnf makes sense to add the annotations in the CSV, and partners should add them in their operators as well, and when we\u0027ll run the certification tests we should check for the annotations. But for the workloads under samples directory where we install operators that we do not maintain maybe we should just ignore that test as I did in https://github.com/dci-labs/dallas-pipelines/pull/1042, because we are not going to patch those third party operators just to make pass our tests, I\u0027m ok with creating resources that are requirements for the operator like NS annotations/labels, network-policies, etc, but adding information in the CSV that the operator is suppose to provide is a diff thing. Wdyt?",
+      "parentUuid": "ec55dfed_dd26b9d6",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "c69f407c_3d8fece5",
         "filename": "samples/tnf_test_example/README.md",
         "patchSetId": 1
