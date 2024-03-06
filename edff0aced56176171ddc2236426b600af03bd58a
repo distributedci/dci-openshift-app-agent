@@ -52,6 +52,23 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6490610_c0526d30",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-03-06T11:24:29Z",
+      "side": 1,
+      "message": "Also, I noticed that we\u0027re just creating the annotations in the namespace under test, shouldn\u0027t we put the annotations in the CSV?",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c69f407c_3d8fece5",
