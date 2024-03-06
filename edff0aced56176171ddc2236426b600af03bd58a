@@ -123,6 +123,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "00c43825_f3178208",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-03-06T15:20:19Z",
+      "side": 1,
+      "message": "We could maybe switch to using simple-demo-operator instead of mongodb-operator. Simple-demo is built by preflight team and is supposed to be up-to-date with all annotations etc.",
+      "parentUuid": "4b47285b_c853042f",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c69f407c_3d8fece5",
