@@ -14,6 +14,17 @@
           security.openshift.io/scc.podSecurityLabelSync: "false"
           pod-security.kubernetes.io/enforce: baseline
           pod-security.kubernetes.io/enforce-version: latest
+        annotations:
+          features.operators.openshift.io/disconnected: "{{ tnf_operator_to_install.feature_disconnected | default(false) }}"
+          features.operators.openshift.io/fips-compliant: "{{ tnf_operator_to_install.feature_fips | default(false) }}"
+          features.operators.openshift.io/proxy-aware: "{{ tnf_operator_to_install.feature_proxy | default(false) }}"
+          features.operators.openshift.io/tls-profiles: "{{ tnf_operator_to_install.feature_tls | default(false) }}"
+          features.operators.openshift.io/token-auth-aws: "{{ tnf_operator_to_install.feature_auth_aws | default(false) }}"
+          features.operators.openshift.io/token-auth-azure: "{{ tnf_operator_to_install.feature_auth_azure | default(false) }}"
+          features.operators.openshift.io/token-auth-gcp: "{{ tnf_operator_to_install.feature_auth_gcp | default(false) }}"
+          features.operators.openshift.io/cnf: "{{ tnf_operator_to_install.feature_cnf | default(false) }}"
+          features.operators.openshift.io/cni: "{{ tnf_operator_to_install.feature_cni | default(false) }}"
+          features.operators.openshift.io/csi: "{{ tnf_operator_to_install.feature_csi | default(false) }}"
 
 # It was done in configure_aspenmesh_for_ns.yml before, but now moved here so that
 # the RoleBinding is applied by default to all pods, as there is a new security

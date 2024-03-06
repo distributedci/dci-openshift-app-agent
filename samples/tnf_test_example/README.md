@@ -64,6 +64,18 @@ Note that the component defines some data that is used by the hooks. Here you ha
   * `chart_url`: URL to the chart.tgz file that includes the Helm chart.
   * `image_repository`: public image used within the Helm chart.
   * `app_version`: (only needed in disconnected environments) version linked to `image_repository` image, so that the image would be `image_repository`:`app_version`.
+  * `feature_disconnected`: (required) Specify whether an Operator leverages the spec.relatedImages CSV field and can run without an internet connection by referring to any related image by its digest.
+  * `feature_fips`: (required) Specify whether an Operator accepts the FIPS-140 configuration of the underlying platform and works on nodes that are booted into FIPS mode.
+  * `feature_proxy`: (required) Specify whether an Operator supports running on a cluster behind a proxy by accepting the standard HTTP_PROXY and HTTPS_PROXY proxy environment variables.
+  * `feature_tls`: (required) Specify whether an Operator implements well-known tunables to modify the TLS cipher suite used by the Operator.
+  * `feature_auth_aws`: (required) Specify whether an Operator supports configuration for tokenzied authentication with AWS APIs via AWS Secure Token Service (STS) by using the Cloud Credential Operator (CCO).
+  * `feature_auth_azure`: (required) Specify whether an Operator supports configuration for tokenzied authentication with Azure APIs via Azure Managed Identity by using the Cloud Credential Operator (CCO).
+  * `feature_auth_gcp`: (required) Specify whether an Operator supports configuration for tokenzied authentication with Google Cloud APIs via GCP Workload Identity Foundation (WIF) by using the Cloud Credential Operator (CCO).
+  * `feature_cnf`: (optional) Specify whether an Operator provides a Cloud-Native Network Function (CNF) Kubernetes plugin.
+  * `feature_cni`: (optional) Specify whether an Operator provides a Container Network Interface (CNI) Kubernetes plugin.
+  * `feature_csi`: (optional) Specify whether an Operator provides a Container Storage Interface (CSI) Kubernetes plugin.
+
+NOTE: The `feature_*` variables require a `true` or `false` value (False by default if not specified), and are based on [Infrastructure features annotations](https://docs.openshift.com/container-platform/4.15/operators/operator_sdk/osdk-generating-csvs.html#osdk-csv-annotations-infra_osdk-generating-csvs) in OCP.
 
 These resources create services in the namespace that are updated to `PreferDualStack` IP family policy, then obtaining an IPv6 IP address if the OCP cluster is configured in dual-stack mode.
 
