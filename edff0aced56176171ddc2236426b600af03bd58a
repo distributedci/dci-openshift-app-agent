@@ -69,6 +69,42 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec55dfed_dd26b9d6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-03-06T14:00:44Z",
+      "side": 1,
+      "message": "Yes, that\u0027s the problem, I thought the annotations were in the NS, but they need to go in the CSV, so I\u0027l modify the PR and test, this is tricky because as I said, we do not control the operator we use in the tnf_example (mongodb), so I\u0027m just going to add the annotations.",
+      "parentUuid": "f6490610_c0526d30",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b47285b_c853042f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-03-06T14:00:44Z",
+      "side": 1,
+      "message": "Hi Tania, yes for example-cnf we\u0027ll have to add the annotations in kni/example-cnf or somewhere where we build the operator. For the workload under test (mongodb in samples/tnf_test_example) because we dot not build that operator I decided to add the annotations in the component. But any other ideas are welcome.",
+      "parentUuid": "6fb2d787_892888e6",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c69f407c_3d8fece5",
@@ -82,6 +118,24 @@
       "writtenOn": "2024-03-06T10:58:30Z",
       "side": 1,
       "message": "These new vars should be under `tnf_operator_to_install`, rather than under `tnf_helm_chart_to_install`",
+      "revId": "edff0aced56176171ddc2236426b600af03bd58a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c8050932_68a81e58",
+        "filename": "samples/tnf_test_example/README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-03-06T14:00:44Z",
+      "side": 1,
+      "message": "Yes, my bad, I missed some lines :)",
+      "parentUuid": "c69f407c_3d8fece5",
       "revId": "edff0aced56176171ddc2236426b600af03bd58a",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
