@@ -1,5 +1,5 @@
 Name:          dci-openshift-app-agent
-Version:       0.8.0
+Version:       0.9.0
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
@@ -16,7 +16,7 @@ Requires: python2-dciclient >= 3.1.0
 %else
 Requires: python3-dciclient >= 3.1.0
 %endif
-Requires: ansible-collection-redhatci-ocp >= 0.4.0
+Requires: ansible-collection-redhatci-ocp >= 0.5.0
 Requires(pre): shadow-utils
 Requires(post): systemd
 Requires(preun): systemd
@@ -79,6 +79,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Mon Mar 18 2024 Tony Garcia <tonyg@redhat.com> 0.13.0-1
+- Require ansible-collection-redhatci-ocp >= 0.5.0 with kubernetes.core
+
 * Mon Feb 12 2024 Tony Garcia <tonyg@redhat.com> 0.8.0-1
 - Move out dependencies to the redhatci.ocp collection
 
