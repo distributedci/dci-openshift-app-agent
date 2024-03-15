@@ -332,7 +332,7 @@ After installing the agent, login as dci-openshift-app-agent user and install th
 
 ```ShellSession
 # su - dci-openshift-app-agent
-$ ansible-galaxy collection install community.kubernetes
+$ ansible-galaxy collection install kubernetes.core
 $ ansible-galaxy collection install community.general
 ```
 
