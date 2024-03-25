@@ -1,6 +1,25 @@
 ---
+- name: Force to delete the pods within the namespace
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Pod
+    namespace: "{{ pods_in_same_ns.namespace }}"
+    name: "{{ item.metadata.name }}"
+    state: absent
+    delete_options:
+      gracePeriodSeconds: 30
+  loop: "{{ pods_in_same_ns.pods }}"
 
-- name: Delete namespaces if not done before
+- name: Delete namespace forcing the shutdown
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ pods_in_same_ns.namespace }}"
+    state: absent
+    delete_options:
+      gracePeriodSeconds: 30
+
+- name: Ensure the namespace to be deleted
   community.kubernetes.k8s:
     api_version: v1
     kind: Namespace
