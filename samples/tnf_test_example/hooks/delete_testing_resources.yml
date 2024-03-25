@@ -1,6 +1,57 @@
 ---
+- name: Discover deployments and stateful sets
+  community.kubernetes.k8s_info:
+    api_version: v1
+    kind: "{{ item }}"
+    namespace: "{{ pods_in_same_ns.namespace }}"
+  loop:
+    - "Deployment"
+    - "StatefulSet"
+  register: resources_in_namespace
+  # Removing bulky output
+  # no_log: true
 
-- name: Delete namespaces if not done before
+- name: Delete deployments
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Deployment
+    namespace: "{{ pods_in_same_ns.namespace }}"
+    name: "{{ item.metadata.name }}"
+    state: absent
+  loop: "{{ resources_in_namespace.resources }}"
+  when: item.kind == 'Deployment'
+
+- name: Delete stateful sets
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: StatefulSet
+    namespace: "{{ pods_in_same_ns.namespace }}"
+    name: "{{ item.metadata.name }}"
+    state: absent
+  loop: "{{ resources_in_namespace.resources }}"
+  when: item.kind == 'StatefulSet'
+
+- name: Delete pods
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Pod
+    namespace: "{{ pods_in_same_ns.namespace }}"
+    name: "{{ item.metadata.name }}"
+    state: absent
+    delete_options:
+      gracePeriodSeconds: 30
+  loop: "{{ pods_in_same_ns }}"
+
+- name: Delete namespace forcing the shutdown
+  community.kubernetes.k8s:
+    api_version: v1
+    kind: Namespace
+    name: "{{ pods_in_same_ns.namespace }}"
+    state: absent
+    delete_options:
+      gracePeriodSeconds: 30
+
+- name: Ensure the namespace to be deleted
   community.kubernetes.k8s:
     api_version: v1
     kind: Namespace
