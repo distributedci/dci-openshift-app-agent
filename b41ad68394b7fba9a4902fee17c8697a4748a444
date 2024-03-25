@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dca20e9f_5aae4be5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2024-03-25T18:24:23Z",
+      "side": 1,
+      "message": "I agree deleting the NS is the easiest way as it will terminate and delete all children objects first, but if it it\u0027s taking 5 minutes maybe it\u0027s time to break it down in pieces first? Just a thought for the future.",
+      "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
