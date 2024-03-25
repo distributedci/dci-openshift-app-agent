@@ -8,7 +8,7 @@
     state: absent
     wait: yes
     wait_sleep: 5
-    wait_timeout: 120
+    wait_timeout: 300
 
 - name: Delete storage resources created
   include_tasks: delete_storage_resources.yml
