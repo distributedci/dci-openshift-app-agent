@@ -68,6 +68,24 @@
       "parentUuid": "4e2e1ef0_dee151a2",
       "revId": "d32a1b27132e3d93d4d0a324c45c2bbfa708ef17",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0987960b_caf3d6db",
+        "filename": "samples/tnf_test_example/hooks/delete_testing_resources.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2024-03-26T18:33:36Z",
+      "side": 1,
+      "message": "I think if you just set `wait: true` (or whatever the param is) on deleting deployments/statefulsets and _then_ delete the namespace you should be good to go because that will a) delete all pods for all statefulsets b) delete all pods from all deployments c) delete the namespace which will delete any leftover pods, just make sure to move the delete_options to the 2 calls above",
+      "parentUuid": "55a98234_9389ea68",
+      "revId": "d32a1b27132e3d93d4d0a324c45c2bbfa708ef17",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
