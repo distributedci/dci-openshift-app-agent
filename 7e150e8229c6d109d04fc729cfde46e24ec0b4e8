@@ -50,6 +50,23 @@
       "message": "The tests in BOS2 are green, Dallas is ongoing: https://www.distributed-ci.io/jobs?limit\u003d20\u0026offset\u003d0\u0026sort\u003d-created_at\u0026where\u003dtags:gerrit:dci-openshift-app-agent-31158,state:active",
       "revId": "7e150e8229c6d109d04fc729cfde46e24ec0b4e8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fd121ab_ed859c2a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-03-26T14:31:36Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "7e150e8229c6d109d04fc729cfde46e24ec0b4e8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
