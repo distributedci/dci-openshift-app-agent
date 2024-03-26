@@ -67,6 +67,42 @@
       "message": "Tania, \nI added a comment in CILAB-790 about the NS deletion, maybe we can try a different approach. I also started doaa#31158 to fix the dci-agent-syntax-check error that your current change helped to discover. :P",
       "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "321c4831_1241db9d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-03-26T11:33:17Z",
+      "side": 1,
+      "message": "Hi Manny, agree with you and Jorge. I found delete_options in the k8s 1.2.0+ (https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.html#parameter-delete_options) and will try it out both to force the deletion of pods and the namespace. \n\nI\u0027m trying to add the depends-on on your CR, not sure if it will work because the repo is the same, but let\u0027s see. If not, we\u0027ll merge your CR first.",
+      "parentUuid": "63a33f8f_31967868",
+      "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ab23f7d_a8fd8493",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-03-26T11:33:17Z",
+      "side": 1,
+      "message": "Hi Jorge, thank you for the idea, let\u0027s try it out. \n\nI found delete_options in the k8s 1.2.0+ (https://docs.ansible.com/ansible/latest/collections/kubernetes/core/k8s_module.html#parameter-delete_options) and will try it out both to force the deletion of pods and the namespace.",
+      "parentUuid": "dca20e9f_5aae4be5",
+      "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
