@@ -50,6 +50,23 @@
       "message": "I agree deleting the NS is the easiest way as it will terminate and delete all children objects first, but if it it\u0027s taking 5 minutes maybe it\u0027s time to break it down in pieces first? Just a thought for the future.",
       "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63a33f8f_31967868",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-03-26T02:11:01Z",
+      "side": 1,
+      "message": "Tania, \nI added a comment in CILAB-790 about the NS deletion, maybe we can try a different approach. I also started doaa#31158 to fix the dci-agent-syntax-check error that your current change helped to discover. :P",
+      "revId": "b41ad68394b7fba9a4902fee17c8697a4748a444",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
