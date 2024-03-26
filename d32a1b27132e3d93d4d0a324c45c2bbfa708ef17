@@ -86,6 +86,24 @@
       "parentUuid": "55a98234_9389ea68",
       "revId": "d32a1b27132e3d93d4d0a324c45c2bbfa708ef17",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "642eb335_508b06bc",
+        "filename": "samples/tnf_test_example/hooks/delete_testing_resources.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-03-26T19:44:29Z",
+      "side": 1,
+      "message": "good plan, thanks Jorge!",
+      "parentUuid": "0987960b_caf3d6db",
+      "revId": "d32a1b27132e3d93d4d0a324c45c2bbfa708ef17",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
