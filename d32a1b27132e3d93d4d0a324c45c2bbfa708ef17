@@ -50,6 +50,24 @@
       "message": "Tania, thanks for considering our comments. Here I have some concerns, I suspect if we delete the pods they will be recreated immediately because they are controlled by a Deployment or a StatefulSet, that\u0027s why I believe we need to scale down or delete these resources instead of deleting the pod. Of course, first we can try your approach and see if that works.",
       "revId": "d32a1b27132e3d93d4d0a324c45c2bbfa708ef17",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "55a98234_9389ea68",
+        "filename": "samples/tnf_test_example/hooks/delete_testing_resources.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2024-03-26T13:45:17Z",
+      "side": 1,
+      "message": "oh ok, I was fixing things fast this morning and misunderstood your previous comment, I thought these two were already taken care of. I\u0027ll modify the CR",
+      "parentUuid": "4e2e1ef0_dee151a2",
+      "revId": "d32a1b27132e3d93d4d0a324c45c2bbfa708ef17",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
