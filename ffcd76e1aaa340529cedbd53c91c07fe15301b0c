@@ -33,6 +33,24 @@
       "message": "check dallas ocp-4.14-vanilla example-cnf",
       "revId": "ffcd76e1aaa340529cedbd53c91c07fe15301b0c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "76c987a6_8a0a8fa9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-03-27T01:47:33Z",
+      "side": 1,
+      "message": "Tania, I believe the example-cnf job will run its own tear-down (example-cnf-config/testpmd/hooks/teardown.yml) and it won\u0027t use the play in this change :(\n\nI ran a tnf job and it failed during the TNF tests results validation, but the good news is that I see your code in action, it discovered the StatefulSets and deleted it: https://www.distributed-ci.io/jobs/6bf012bd-bec4-4483-8e94-644558703e24/jobStates?sort\u003ddate\u0026task\u003de45caae3-d542-4cc7-8b16-01f33ad3eae5\n\nNow let\u0027s just have a green job,",
+      "parentUuid": "330a14eb_7ecad9e7",
+      "revId": "ffcd76e1aaa340529cedbd53c91c07fe15301b0c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
