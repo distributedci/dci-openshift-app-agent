@@ -16,6 +16,24 @@
       "message": "I suppose this needs to be tested? I cannot see helmchart_to_certify var declared in the hints, don\u0027t know if this will be just tested in Andrew\u0027s setup",
       "revId": "ff592dbee843d72fa2320f53e4c8773484c628c2",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef6a7022_a360bd7c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2024-04-02T17:55:58Z",
+      "side": 1,
+      "message": "Yeah, we need to defer that to Andrew\u0027s lab. I do not know if we have the parameters for the test. \n\nThe change is not affecting the logic of the helm_chart_to_certify role, just updating the execution order. I think it should be good.",
+      "parentUuid": "ac78c25b_5f59eab4",
+      "revId": "ff592dbee843d72fa2320f53e4c8773484c628c2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
