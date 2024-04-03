@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f162673_f22eabfe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-04-03T12:17:56Z",
+      "side": 1,
+      "message": "Can we test this with a pipeline that generates JUnit results, such as preflight or tnf?",
+      "revId": "62957520bcf91300ca6a1257b1213cd241933357",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
