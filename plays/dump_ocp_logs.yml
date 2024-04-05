@@ -25,10 +25,11 @@
       include_role:
         name: redhatci.ocp.get_logs_from_namespace
       vars:
-        get_logs_folder: "{{ job_logs.path }}"
+        glfn_dir: "{{ job_logs.path }}"
+        glfn_oc: "{{ oc_tool_path }}"
       loop: "{{ ns_list }}"
       loop_control:
-        loop_var: get_logs_ns
+        loop_var: glfn_ns
 
   - name: Get logs from OCP deployment
     environment:
