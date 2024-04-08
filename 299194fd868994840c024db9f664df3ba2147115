@@ -16,6 +16,23 @@
       "message": "check workload tnf-test-cnf-green",
       "revId": "299194fd868994840c024db9f664df3ba2147115",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6cf79ac_11371a6b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-04-08T07:51:46Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "299194fd868994840c024db9f664df3ba2147115",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
