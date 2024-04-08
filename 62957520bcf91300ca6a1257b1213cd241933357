@@ -51,6 +51,23 @@
       "message": "Whatever is decided in https://softwarefactory-project.io/r/c/dci-openshift-agent/+/31218 should be applied here",
       "revId": "62957520bcf91300ca6a1257b1213cd241933357",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f6bc0ba_83eadf29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-04-08T07:46:34Z",
+      "side": 1,
+      "message": "If agent change is about to be merged with this same config, then we can merge this one",
+      "revId": "62957520bcf91300ca6a1257b1213cd241933357",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
