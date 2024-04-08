@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "299194fd868994840c024db9f664df3ba2147115",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bab21cb2_de1d1c55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 648
+      },
+      "writtenOn": "2024-04-08T21:20:45Z",
+      "side": 1,
+      "message": "I feel like those blocks had a `when` clause at some point and we just never removed the block 😞",
+      "revId": "299194fd868994840c024db9f664df3ba2147115",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
