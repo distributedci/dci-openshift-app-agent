@@ -76,7 +76,9 @@
       until: job_component_result is not failed
       retries: 5
       delay: 20
-      when: job_info is defined
+      when:
+        - job_info is defined
+        - ocp_component_id is defined
 
     # Schedule a new job only if not passed via dci-pipeline
     - name: "Schedule a new job"
