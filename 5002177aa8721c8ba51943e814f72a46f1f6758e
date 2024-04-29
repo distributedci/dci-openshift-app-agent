@@ -52,6 +52,24 @@
       "parentUuid": "b6697129_8edade3a",
       "revId": "5002177aa8721c8ba51943e814f72a46f1f6758e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e0cb4f63_07fdb91c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2024-04-29T17:53:46Z",
+      "side": 1,
+      "message": "The task \"Set OCP name and version facts\" is already using the OCP version of cluster_version to set the topic.",
+      "parentUuid": "7f1c474a_10355ba6",
+      "revId": "5002177aa8721c8ba51943e814f72a46f1f6758e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
