@@ -16,6 +16,24 @@
       "message": "Hi Pierre, do we have any use case where the OCP component cannot be found? as far as I know, it\u0027s extracted from the running cluster. Is it because there\u0027s an OCP cluster not deployed by DCI where the OCP component is not created or present?",
       "revId": "5002177aa8721c8ba51943e814f72a46f1f6758e",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b6697129_8edade3a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2024-04-29T14:17:26Z",
+      "side": 1,
+      "message": "Yes, you catch it. It is when OpenShift is not installed by DCI.\nI replicated the issue with CRC, but with ROSA or ARO it will be the same thing.\n\nWithout the change:\nhttps://www.distributed-ci.io/jobs/2b334bec-abb0-443e-98bd-87f225aea129/jobStates?sort\u003ddate\u0026task\u003db3e27a93-6b4e-4b42-a6e4-a1e401930a52\n\nWith the change:\nhttps://www.distributed-ci.io/jobs/33ea6dcf-248f-4828-8907-67505aec5f11/jobStates?sort\u003ddate",
+      "parentUuid": "4c2ba5f8_d6440410",
+      "revId": "5002177aa8721c8ba51943e814f72a46f1f6758e",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
