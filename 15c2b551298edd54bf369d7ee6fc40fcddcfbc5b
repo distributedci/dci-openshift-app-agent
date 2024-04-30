@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e7c06a1_df35d4d3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-04-30T09:14:20Z",
+      "side": 1,
+      "message": "Discussed with Fred offline, for me it looks fine, I suppose we need to wait for Pierre\u0027s tests to confirm it\u0027s fine.",
+      "revId": "15c2b551298edd54bf369d7ee6fc40fcddcfbc5b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
