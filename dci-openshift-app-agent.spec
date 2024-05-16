@@ -71,6 +71,7 @@ exit 0
 %{_datadir}/dci-openshift-app-agent/plays/*.yml
 %{_datadir}/dci-openshift-app-agent/plays/scripts/*
 %{_datadir}/dci-openshift-app-agent/group_vars/all
+%{_datadir}/dci-openshift-app-agent/utilities/internal-registry/*.yml
 
 %{_unitdir}/*
 
@@ -79,6 +80,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Thu May 16 2024 Ramon Perez <raperez@redhat.com> 0.8.0-2
+- Include missed utilities folder
+
 * Mon Feb 12 2024 Tony Garcia <tonyg@redhat.com> 0.8.0-1
 - Move out dependencies to the redhatci.ocp collection
 
