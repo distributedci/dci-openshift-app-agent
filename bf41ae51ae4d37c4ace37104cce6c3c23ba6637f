@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4d409edc_857452f9",
+        "filename": "README.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-05-16T17:55:51Z",
+      "side": 1,
+      "message": "Same here as in 31517, maybe just add a note that these binaries are not recommended to use anymore?",
+      "revId": "bf41ae51ae4d37c4ace37104cce6c3c23ba6637f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
