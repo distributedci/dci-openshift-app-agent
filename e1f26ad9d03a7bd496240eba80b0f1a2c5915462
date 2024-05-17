@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02ebe789_c4725942",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-05-17T13:36:06Z",
+      "side": 1,
+      "message": "there was an issue with the spec release, I think now it\u0027s fixed",
+      "revId": "e1f26ad9d03a7bd496240eba80b0f1a2c5915462",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
