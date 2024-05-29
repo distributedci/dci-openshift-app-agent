@@ -39,7 +39,17 @@
   include_role:
     name: redhatci.ocp.preflight
     tasks_from: main_standalone_containers_certification
-  when: preflight_containers_to_certify is defined
+  when:
+    - preflight_containers_to_certify is defined
+    - not do_container_parallel_test|bool
+
+- name: Preflight container in parallel-only tests
+  include_role:
+    name: redhatci.ocp.preflight
+    tasks_from: main_parallel_containers_recertification
+  when:
+    - preflight_containers_to_certify is defined
+    - do_container_parallel_test|bool
 
 - name: Preflight tests
   vars:
