@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36c95988_ced00fbd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-05-30T06:55:21Z",
+      "side": 1,
+      "message": "In the PR description, you should add a workload pipeline to launch preflight, and not only sno, e.g. control-plane",
+      "revId": "1e212801f2adcd23c0d6a585eb6ce85e2508ef83",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
