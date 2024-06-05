@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "23efea2d_e2b2837d",
+        "filename": "plays/tests.yml",
+        "patchSetId": 8
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-06-05T11:31:15Z",
+      "side": 1,
+      "message": "Could you set a default value to `do_container_parallel_test`, either in group_vars file or in this condition using `do_container_parallel_test|default(false)|bool`? Same below if following that trend.",
+      "revId": "e49766f27d72b8a179a051f5a9ea604f47398691",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
