@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fdad891f_eea07d44",
+        "filename": ".ansible-lint",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2024-06-10T20:50:42Z",
+      "side": 1,
+      "message": "Maybe align the comment as the other items.\n\nOther that that. LOL!",
+      "revId": "98f4512f57cf138292d67633d053ad0f7d30fde7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ea49336_4ba60a65",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2024-06-10T20:50:42Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "98f4512f57cf138292d67633d053ad0f7d30fde7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
