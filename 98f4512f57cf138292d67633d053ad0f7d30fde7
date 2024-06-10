@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "4c2eaead_3a74ed10",
+        "filename": ".ansible-lint",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-06-10T21:48:06Z",
+      "side": 1,
+      "message": "Done, I just copied that line from DOA .ansible-lint file, I think Bill came up with that funny sentence!",
+      "parentUuid": "fdad891f_eea07d44",
+      "revId": "98f4512f57cf138292d67633d053ad0f7d30fde7",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "4ea49336_4ba60a65",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 2
