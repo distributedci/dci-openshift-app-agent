@@ -16,6 +16,24 @@
       "message": "LGTM, let\u0027s just wait for dci-openshift-app-agent/+/31694 to fix the linting issues and then we can rebase.",
       "revId": "1e7a8a874583f6b177483fcb510bb65b803a256f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "acab761e_a672182d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2024-06-11T00:44:53Z",
+      "side": 1,
+      "message": "Thank Manuel, just rebased.",
+      "parentUuid": "b3d2829c_46dbf97d",
+      "revId": "1e7a8a874583f6b177483fcb510bb65b803a256f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
