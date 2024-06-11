@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a7d76fe8_539012cd",
+        "filename": "group_vars/all",
+        "patchSetId": 9
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-06-11T08:27:04Z",
+      "side": 1,
+      "message": "Also, let\u0027s add this variable to the README, in the table where we describe the variables to use",
+      "revId": "ada8df6fde1e4f643bf4a7b8bd72153c7c92d91a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
