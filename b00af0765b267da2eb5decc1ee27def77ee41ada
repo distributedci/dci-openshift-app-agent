@@ -18,6 +18,24 @@
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "66def1ed_b8669daa",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-06-12T09:09:35Z",
+      "side": 1,
+      "message": "(Sorry for the double comment) In fact, it\u0027s better to test `tnf-test-cnf-green` in cluster10, to avoid issues with tests that may be failing here, so: `TestDallasWorkload: tnf-test-cnf-green`",
+      "parentUuid": "8e882802_720d5689",
+      "revId": "b00af0765b267da2eb5decc1ee27def77ee41ada",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "04051a8c_0847a705",
