@@ -1,6 +1,6 @@
 Name:          dci-openshift-app-agent
-Version:       0.8.0
-Release:       2.VERS%{?dist}
+Version:       0.9.0
+Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
 URL:           https://github.com/redhat-cip/dci-openshift-app-agent
@@ -10,13 +10,19 @@ Source0:       dci-openshift-app-agent-%{version}.tar.gz
 BuildRequires: systemd
 BuildRequires: systemd-units
 Requires: sudo
+
+%if 0%{?rhel} && 0%{?rhel} < 8
 Requires: dci-ansible >= 0.3.1
+%else
+Requires: ansible-core
+%endif
+
 %if 0%{?rhel} && 0%{?rhel} < 8
 Requires: python2-dciclient >= 3.1.0
 %else
 Requires: python3-dciclient >= 3.1.0
 %endif
-Requires: ansible-collection-redhatci-ocp >= 0.4.0
+Requires: ansible-collection-redhatci-ocp >= 0.11.0
 Requires(pre): shadow-utils
 Requires(post): systemd
 Requires(preun): systemd
@@ -80,6 +86,11 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Fri Jun 21 2024 Tony Garcia <tonyg@redhat.com> 0.9.0-1
+- Modify requirements for el9 package
+- Add ansible-core
+- Remove dci-ansible
+
 * Thu May 16 2024 Ramon Perez <raperez@redhat.com> 0.8.0-2
 - Include missed utilities folder
 
