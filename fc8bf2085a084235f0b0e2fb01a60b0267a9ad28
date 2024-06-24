@@ -33,6 +33,23 @@
       "message": "Same as 31787 we can talk more about this in our sync later",
       "revId": "fc8bf2085a084235f0b0e2fb01a60b0267a9ad28",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52b5c16d_3f6e4bea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-06-24T23:19:13Z",
+      "side": 1,
+      "message": "Thanks for checking, you\u0027re right I was wrong, the fix is in dci-pipeline under https://softwarefactory-project.io/r/c/dci-ansible/+/31851",
+      "revId": "fc8bf2085a084235f0b0e2fb01a60b0267a9ad28",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
