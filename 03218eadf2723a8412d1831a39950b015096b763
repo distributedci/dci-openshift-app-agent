@@ -50,6 +50,24 @@
       "message": "Thanks Ramon, I think your approach should work, but I wonder if is time to moeve to 4.16 stable version and use the client for RHEL8: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/openshift-client-linux-amd64-rhel8.tar.gz or even more specific and use the stable-4.16 version: https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable-4.16/openshift-client-linux-amd64-rhel8.tar.gz\n\nIn the stable mirror URL there is also a rhel9 version, so we can write something that keeps compatibility for rhel8/rhel9 using an ansible fact, something like this (to be tested): https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable-4.16/openshift-client-linux-amd64-rhel{{ ansible_distribution_major_version }}.tar.gz\n\nwdyt?",
       "revId": "03218eadf2723a8412d1831a39950b015096b763",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3412539d_dc58bee1",
+        "filename": "plays/check_kubeconfig.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-06-28T12:33:04Z",
+      "side": 1,
+      "message": "I like your approach, let me try it",
+      "parentUuid": "ef9fb22c_4ba07317",
+      "revId": "03218eadf2723a8412d1831a39950b015096b763",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
