@@ -16,6 +16,23 @@
       "message": "Now passing the failed task reported in CILAB-1334: https://www.distributed-ci.io/jobs/d705523e-ad74-4ac2-9760-eedce532168c/jobStates?sort\u003ddate\u0026task\u003d95a19668-6b57-4d9c-8a1b-22c00e8a5db0",
       "revId": "03218eadf2723a8412d1831a39950b015096b763",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "118e1e8b_6bd4b806",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-06-28T11:48:43Z",
+      "side": 1,
+      "message": "recheck",
+      "revId": "03218eadf2723a8412d1831a39950b015096b763",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
