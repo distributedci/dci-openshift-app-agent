@@ -1,0 +1,15 @@
+---
+
+- name: Attach spoke cluster to hub cluster
+  ansible.builtin.include_role:
+    name: redhatci.ocp.acm_attach_spoke_cluster
+  vars:
+    aasc_cluster_kubeconfig_path: "{{ spoke_cluster_kubeconfig_path }}"
+    aasc_cluster_name: "{{ spoke_cluster_name }}"
+
+      - aasc_cluster_kubeconfig_path is defined
+      - aasc_cluster_kubeconfig_path | length > 0
+      - aasc_cluster_name is defined
+      - aasc_cluster_name | length > 0
+
+...
