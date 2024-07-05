@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3152bff_030038c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-05T11:05:33Z",
+      "side": 1,
+      "message": "Please check the testing of these samples on https://github.com/redhatci/ansible-collection-redhatci-ocp/pull/366, they\u0027re working fine separately. This is ready for review.",
+      "revId": "3b2dc0db1bcb6aa93f0e2bb1473beacfe493d3ca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
