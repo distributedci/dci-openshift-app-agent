@@ -16,6 +16,23 @@
       "message": "Please check the testing of these samples on https://github.com/redhatci/ansible-collection-redhatci-ocp/pull/366, they\u0027re working fine separately. This is ready for review.",
       "revId": "3b2dc0db1bcb6aa93f0e2bb1473beacfe493d3ca",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2b1b0fe6_edf8849d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-05T13:11:14Z",
+      "side": 1,
+      "message": "Complete pipeline is also working fine, as can be seen in the last reported jobs.",
+      "revId": "3b2dc0db1bcb6aa93f0e2bb1473beacfe493d3ca",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
