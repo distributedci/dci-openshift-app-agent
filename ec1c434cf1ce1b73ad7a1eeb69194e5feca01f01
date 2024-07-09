@@ -50,6 +50,91 @@
       "message": "LGTM thank you Ramon!",
       "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0057fdb0_a8f1d586",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-09T21:54:45Z",
+      "side": 1,
+      "message": "nit: omit partner hooks",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36cbbf4e_47e4231c",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-09T21:54:45Z",
+      "side": 1,
+      "message": "Hmm, Wondering if we should append instead of replace?\n\nQuestion is, do we always expect at least `kubeconfig` as an output?\n\nI see the same was done in dci-openshift-agent, I guess is too late to discuss this, so carry-on. 👍",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2218c06b_38eb1103",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-09T21:54:45Z",
+      "side": 1,
+      "message": "The beauty of Ansible is that the conditionals should read as English, so it should be clear form the \"when\" clause what conditions are required.\n\nFor example is not clear for me what \"outputs folder\" is, but looking at the condition is clear to me that the variable used in the task needs to be defined.\n\nI additionally suggest switching from with_dict to loop like this:\n\nloop: \"{{ job_info.outputs | dict2items }}\"",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1bed6f74_89146df8",
+        "filename": "samples/day_2_cluster_operations/attach_spoke_cluster/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-09T21:54:45Z",
+      "side": 1,
+      "message": "nit: omit partner: post-run hook",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3756183b_d8a5b755",
+        "filename": "samples/day_2_cluster_operations/detach_ztp_spoke_cluster/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-09T21:54:45Z",
+      "side": 1,
+      "message": "nit: omit partner",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
