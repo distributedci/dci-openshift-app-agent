@@ -16,6 +16,23 @@
       "message": "This is ready for review again, after applying the proper refactor in the collections change",
       "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f9a89345_46c657df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-07-09T13:46:45Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
