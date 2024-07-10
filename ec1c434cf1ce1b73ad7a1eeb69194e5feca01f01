@@ -159,6 +159,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "909dfa1a_65f2acab",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-10T16:28:00Z",
+      "side": 1,
+      "message": "Thanks for the explanation.\n\nI still see a with_dict here, would you mind to change it as well?",
+      "parentUuid": "2064d637_45a9caa7",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1bed6f74_89146df8",
         "filename": "samples/day_2_cluster_operations/attach_spoke_cluster/README.md",
         "patchSetId": 4
