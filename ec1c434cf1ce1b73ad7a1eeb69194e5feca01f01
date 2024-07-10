@@ -71,6 +71,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "10dece61_28f67da7",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-10T07:13:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "0057fdb0_a8f1d586",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "36cbbf4e_47e4231c",
         "filename": "plays/post-run.yml",
         "patchSetId": 4
@@ -82,6 +100,24 @@
       "writtenOn": "2024-07-09T21:54:45Z",
       "side": 1,
       "message": "Hmm, Wondering if we should append instead of replace?\n\nQuestion is, do we always expect at least `kubeconfig` as an output?\n\nI see the same was done in dci-openshift-agent, I guess is too late to discuss this, so carry-on. 👍",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a00c1e6e_579801c0",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-10T07:13:30Z",
+      "side": 1,
+      "message": "Could be interesting to append instead of replace. But maybe we can do this in a next iteration, probably.\nFrom what I could see, kubeconfig was always set as output, but then, it was also needed to include the kubeconfig\u0027s output in the pipeline, else this logic failed, that\u0027s why I\u0027ve included the conditionals in the copy outputs task.",
+      "parentUuid": "36cbbf4e_47e4231c",
       "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -105,6 +141,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "2064d637_45a9caa7",
+        "filename": "plays/post-run.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-10T07:13:30Z",
+      "side": 1,
+      "message": "I agree with you, but I just included these clarifications because, during a team meeting last week, in fact it was not 100% clear to anybody how this task was behaving, and this is just to make clear that the output can be seen 1) as a folder where to save variable\u0027s values and 2) as the local variable that contains the values to save. So, with this, I tried to fill in that gap. Hope it\u0027s clear now the reason why I\u0027ve included that.\n\nI\u0027ve already included your suggestion for the `loop` (originally it was used `with_dict` but I agree it\u0027s better in that way. I\u0027ve done the same in d-o-a: https://softwarefactory-project.io/r/c/dci-openshift-agent/+/31934",
+      "parentUuid": "2218c06b_38eb1103",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "1bed6f74_89146df8",
         "filename": "samples/day_2_cluster_operations/attach_spoke_cluster/README.md",
         "patchSetId": 4
@@ -116,6 +170,24 @@
       "writtenOn": "2024-07-09T21:54:45Z",
       "side": 1,
       "message": "nit: omit partner: post-run hook",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9fd6048a_3a70e3c7",
+        "filename": "samples/day_2_cluster_operations/attach_spoke_cluster/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-10T07:13:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "1bed6f74_89146df8",
       "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     },
@@ -133,6 +205,24 @@
       "writtenOn": "2024-07-09T21:54:45Z",
       "side": 1,
       "message": "nit: omit partner",
+      "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d495f772_3a983368",
+        "filename": "samples/day_2_cluster_operations/detach_ztp_spoke_cluster/README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-10T07:13:30Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "3756183b_d8a5b755",
       "revId": "ec1c434cf1ce1b73ad7a1eeb69194e5feca01f01",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
