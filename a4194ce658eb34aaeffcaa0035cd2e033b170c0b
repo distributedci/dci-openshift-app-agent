@@ -16,6 +16,23 @@
       "message": "LGTM",
       "revId": "a4194ce658eb34aaeffcaa0035cd2e033b170c0b",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bfdfe4ed_3391fb14",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-11T08:03:32Z",
+      "side": 1,
+      "message": "I will merge if you don\u0027t mind because I need to continue integrating more use cases and I need this change to be merged for that, all comments have been addressed and the change is working fine.",
+      "revId": "a4194ce658eb34aaeffcaa0035cd2e033b170c0b",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
