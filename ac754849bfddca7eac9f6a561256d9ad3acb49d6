@@ -50,6 +50,23 @@
       "message": "check dallas ocp-4.14-vanilla control-plane-example tnf-test-cnf preflight example-cnf",
       "revId": "ac754849bfddca7eac9f6a561256d9ad3acb49d6",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e613f03d_4ba8b49b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-24T12:23:29Z",
+      "side": 1,
+      "message": "LGTM, the error in the tnf-test-cnf and example-cnf jobs from the previous execution is expected, it\u0027s because debug-partner:5.2.2 is not available in the registry. I\u0027m fixing this here: https://github.com/redhatci/ansible-collection-redhatci-ocp/pull/386",
+      "revId": "ac754849bfddca7eac9f6a561256d9ad3acb49d6",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
