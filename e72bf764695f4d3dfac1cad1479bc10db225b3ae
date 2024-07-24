@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c66c4f8_bef83e56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-24T18:30:45Z",
+      "side": 1,
+      "message": "check dallas ocp-4.14-acm-hub control-plane-example",
+      "revId": "e72bf764695f4d3dfac1cad1479bc10db225b3ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
