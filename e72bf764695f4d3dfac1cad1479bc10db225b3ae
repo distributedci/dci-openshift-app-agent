@@ -84,6 +84,23 @@
       "message": "check dallas ocp-4.14-acm-hub control-plane-example",
       "revId": "e72bf764695f4d3dfac1cad1479bc10db225b3ae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf1a6e43_26975633",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-07-25T07:15:59Z",
+      "side": 1,
+      "message": "Let me test in connected to see if the issue with ACM (assisted) is also there",
+      "revId": "e72bf764695f4d3dfac1cad1479bc10db225b3ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
