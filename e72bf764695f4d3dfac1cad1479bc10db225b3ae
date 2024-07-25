@@ -135,6 +135,23 @@
       "message": "The last error is unrelated to the change, the problem happened after the AI job succeeded and the control-plane-example was going to be scheduled but it couldn\u0027t.",
       "revId": "e72bf764695f4d3dfac1cad1479bc10db225b3ae",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "219623df_2b5056a3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-07-25T23:58:06Z",
+      "side": 1,
+      "message": "Similarly the last failure was not in the installer but in the workload, because it was expecting to deploy the example in 3 different nodes and it was on an SNO.",
+      "revId": "e72bf764695f4d3dfac1cad1479bc10db225b3ae",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
