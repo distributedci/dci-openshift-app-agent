@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aef10ff0_a8c83929",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 14
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-08-09T23:05:46Z",
+      "side": 1,
+      "message": "We rebased all changes till Aug 9th 2024",
+      "revId": "0a2cca06f3a11ae38fa9c5db118fe02c8e8879b2",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
