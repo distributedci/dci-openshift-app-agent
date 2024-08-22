@@ -16,6 +16,23 @@
       "message": "recheck",
       "revId": "5aa10deb49e5429dee5af453b93fff32c2782035",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f65d739e_8521cd14",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-08-22T07:54:05Z",
+      "side": 1,
+      "message": "Waiting for a green job to go ahead",
+      "revId": "5aa10deb49e5429dee5af453b93fff32c2782035",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
