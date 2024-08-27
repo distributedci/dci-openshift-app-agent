@@ -16,6 +16,24 @@
       "message": "Beto just curious is \"hub_kubeconfig_path\" and \"kubeconfig_path\" the same?",
       "revId": "8d347ac50f7a445e0da929e461e504de9df92afb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89296c77_480ab6a7",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 724
+      },
+      "writtenOn": "2024-08-27T23:10:40Z",
+      "side": 1,
+      "message": "LOL, no. There were too many *kubeconfig* in my day today. Thanks for catching this.",
+      "parentUuid": "bd0c0738_3f556879",
+      "revId": "8d347ac50f7a445e0da929e461e504de9df92afb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
