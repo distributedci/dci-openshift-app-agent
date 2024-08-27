@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bd0c0738_3f556879",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-08-27T22:59:28Z",
+      "side": 1,
+      "message": "Beto just curious is \"hub_kubeconfig_path\" and \"kubeconfig_path\" the same?",
+      "revId": "8d347ac50f7a445e0da929e461e504de9df92afb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
