@@ -22,15 +22,24 @@
       rescue: &error_with_upload_logs
         - name: "Run common logging process"
           include_tasks: plays/common_logging.yml
+          apply:
+            environment:
+              KUBECONFIG: "{{ hub_kubeconfig_path }}"
 
         - name: "Execute the teardown process"
           include_tasks: "{{ dci_config_dir }}/hooks/teardown.yml"
+          apply:
+            environment:
+              KUBECONFIG: "{{ hub_kubeconfig_path }}"
           when:
             - dci_teardown_on_failure
             - check_teardown.stat.exists
 
         - name: "Run the teardown play"
           include_tasks: plays/teardown.yml
+          apply:
+            environment:
+              KUBECONFIG: "{{ hub_kubeconfig_path }}"
           when:
             - dci_teardown_on_failure
 
