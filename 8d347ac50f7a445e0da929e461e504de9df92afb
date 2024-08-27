@@ -34,6 +34,24 @@
       "parentUuid": "bd0c0738_3f556879",
       "revId": "8d347ac50f7a445e0da929e461e504de9df92afb",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74f44f32_5d3e10bd",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 908
+      },
+      "writtenOn": "2024-08-27T23:54:17Z",
+      "side": 1,
+      "message": "Thanks, LGTM",
+      "parentUuid": "89296c77_480ab6a7",
+      "revId": "8d347ac50f7a445e0da929e461e504de9df92afb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
