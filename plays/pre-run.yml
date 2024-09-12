@@ -35,6 +35,9 @@
   dci_job:
     id: "{{ job_id }}"
   register: dci_app_agent_job_info
+  retries: 2
+  delay: 10
+  until: dci_app_agent_job_info.status_code not in [502, 503]
 
 - name: Compute if all needed components are ga
   vars:
