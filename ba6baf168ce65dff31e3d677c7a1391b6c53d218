@@ -16,6 +16,23 @@
       "message": "lgtm",
       "revId": "ba6baf168ce65dff31e3d677c7a1391b6c53d218",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "16af7493_da6a9268",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2024-10-15T15:52:29Z",
+      "side": 1,
+      "message": "I\u0027ll hold on this change till https://github.com/redhat-best-practices-for-k8s/certsuite/pull/2479 is merged",
+      "revId": "ba6baf168ce65dff31e3d677c7a1391b6c53d218",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
