@@ -4,6 +4,7 @@
   dci_job:
     id: "{{ job_id }}"
     status: "pre-run"
+  delegate_to: localhost
   tags: [dci]
 
 - name: Install packages to check workload compatibility with OCP versions
@@ -34,6 +35,7 @@
 - name: Get the updated job_info
   dci_job:
     id: "{{ job_id }}"
+  delegate_to: localhost
   register: dci_app_agent_job_info
 
 - name: Compute if all needed components are ga
