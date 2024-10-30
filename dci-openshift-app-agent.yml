@@ -66,7 +66,7 @@
 
 # Step 0b : initial step
 - name: "Execute initial step"
-  hosts: jumphost
+  hosts: localhost
   gather_facts: false
   tags:
     - job
@@ -165,6 +165,17 @@
       debug:
         msg: 'Follow the log at: {{ dci_ui_url }}/jobs/{{ job_id }}/jobStates' # noqa 204
 
+    - name: Set facts also in jumphost host scope
+      set_fact:
+        job_id: "{{ job_id }}"
+        dci_client_id: "{{ dci_client_id }}"
+        dci_api_secret: "{{ dci_api_secret }}"
+        dci_cs_url: "{{ dci_cs_url }}"
+        dci_ui_url: "{{ dci_ui_url }}"
+        pullsecret_tmp_file: "{{ dci_ui_url }}"
+      delegate_to: jumphost
+      delegate_facts: true
+
 # Step 1a : Red Hat "pre-run" step
 - name: "Execute Red Hat pre-run step"
   hosts: jumphost
@@ -223,6 +234,7 @@
           dci_job:
             id: "{{ job_id }}"
             status: "running"
+          delegate_to: localhost
           tags: [dci]
 
         - name: "Execute install play"
@@ -374,6 +386,7 @@
       dci_job:
         id: "{{ job_id }}"
         status: "success"
+      delegate_to: localhost
       tags: [dci]
 
     - name: "Final step"
