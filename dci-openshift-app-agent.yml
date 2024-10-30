@@ -5,6 +5,8 @@
   hosts: jumphost
   tags:
     - kubeconfig
+  environment:
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Kubeconfig tasks
       block:
@@ -66,11 +68,13 @@
 
 # Step 0b : initial step
 - name: "Execute initial step"
-  hosts: jumphost
+  hosts: localhost
   gather_facts: false
   tags:
     - job
     - dci
+  environment:
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Read credentials from env vars
       set_fact:
@@ -165,6 +169,17 @@
       debug:
         msg: 'Follow the log at: {{ dci_ui_url }}/jobs/{{ job_id }}/jobStates' # noqa 204
 
+    - name: Set facts also in jumphost host scope
+      set_fact:
+        job_id: "{{ job_id }}"
+        dci_client_id: "{{ dci_client_id }}"
+        dci_api_secret: "{{ dci_api_secret }}"
+        dci_cs_url: "{{ dci_cs_url }}"
+        dci_ui_url: "{{ dci_ui_url }}"
+        pullsecret_tmp_file: "{{ pullsecret_tmp_file | default() }}"
+      delegate_to: jumphost
+      delegate_facts: true
+
 # Step 1a : Red Hat "pre-run" step
 - name: "Execute Red Hat pre-run step"
   hosts: jumphost
@@ -173,6 +188,7 @@
     - redhat-pre-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Pre-run tasks
       block:
@@ -191,6 +207,7 @@
   hosts: jumphost
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tags:
     - pre-run
     - partner-pre-run
@@ -216,6 +233,7 @@
     - running
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Install tasks
       block:
@@ -223,6 +241,7 @@
           dci_job:
             id: "{{ job_id }}"
             status: "running"
+          delegate_to: localhost
           tags: [dci]
 
         - name: "Execute install play"
@@ -276,6 +295,7 @@
     - redhat-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Tests tasks
       block:
@@ -298,6 +318,7 @@
     - partner-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Test hooks
       block:
@@ -320,6 +341,7 @@
     - testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Test results
       block:
@@ -336,6 +358,7 @@
     - post-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: Post-run tasks
       block:
@@ -355,6 +378,7 @@
     - success
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
+    TMPDIR: "$HOME/tmp"
   tasks:
     - name: "Run common logging process"
       include_tasks: plays/common_logging.yml
@@ -374,6 +398,7 @@
       dci_job:
         id: "{{ job_id }}"
         status: "success"
+      delegate_to: localhost
       tags: [dci]
 
     - name: "Final step"
