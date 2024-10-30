@@ -66,7 +66,7 @@
 
 # Step 0b : initial step
 - name: "Execute initial step"
-  hosts: jumphost
+  hosts: localhost
   gather_facts: false
   tags:
     - job
