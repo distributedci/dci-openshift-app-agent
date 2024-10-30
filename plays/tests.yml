@@ -67,6 +67,8 @@
 - name: Compute removed API after executing the workload
   include_role:
     name: redhatci.ocp.deprecated_api
+    apply:
+      delegate_to: localhost
   vars:
     deprecated_api_logs:
       path: "{{ job_logs.path }}"
