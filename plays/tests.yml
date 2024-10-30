@@ -67,6 +67,8 @@
 - name: Compute removed API after executing the workload
   include_role:
     name: redhatci.ocp.deprecated_api
+    apply:
+      delegate_to: localhost
   vars:
     deprecated_api_logs:
       path: "{{ job_logs.path }}"
@@ -77,5 +79,7 @@
     preflight_dci_all_components_are_ga: "{{ dci_all_components_are_ga }}"
   include_role:
     name: redhatci.ocp.preflight
+    apply:
+      delegate_to: localhost
   when: preflight_operators_to_certify is defined
 ...
