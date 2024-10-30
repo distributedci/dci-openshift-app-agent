@@ -6,14 +6,17 @@
     status: "pre-run"
   tags: [dci]
 
-- name: Install packages to check workload compatibility with OCP versions
-  dnf:
-    name:
-      - python3-semver
-      - python3-junit_xml
-    state: present
-  become: true
-  when: check_workload_api | default(true) | bool
+- name: debug
+  command: "id"
+
+#- name: Install packages to check workload compatibility with OCP versions
+#  dnf:
+#    name:
+#      - python3-semver
+#      - python3-junit_xml
+#    state: present
+#  become: true
+#  when: check_workload_api | default(true) | bool
 
 - name: Include installed software and git repos as components
   vars:
