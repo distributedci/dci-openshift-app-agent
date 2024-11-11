@@ -1,4 +1,8 @@
 ---
+- name: fail properly
+  fail:
+    msg: "this is just for testing"
+
 - name: "Install required rpm packages"
   package:
     name: "{{ item }}"
