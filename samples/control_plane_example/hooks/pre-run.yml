@@ -9,6 +9,10 @@
     - python3-pyyaml
   become: true
 
+- name: "supersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersupersuperlong"
+  debug:
+    msg: "This should not appear in DCI UI"
+
 - name: "Set default variables if none provided"
   set_fact:
     openshift_app_ns: "{{ dci_openshift_app_ns | default('myns') }}"
