@@ -16,6 +16,24 @@
       "message": "Is this change just addressing the three files that are currently changed? Because there are more tasks in the app-agent that are currently using community.kubernetes that would require a change too, e.g. tasks in tnf_test_example",
       "revId": "5d2f9aef81cff3bba1b9aa2e1de4db597ce6f97f",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5724c387_fdcf979e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2024-12-05T18:16:11Z",
+      "side": 1,
+      "message": "At the moment is verifying the CI will work for the verification. Once that\u0027s done the real change will take place, I\u0027ll move it to WIP to avoid confusion with it.",
+      "parentUuid": "04601bc1_7337e850",
+      "revId": "5d2f9aef81cff3bba1b9aa2e1de4db597ce6f97f",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
