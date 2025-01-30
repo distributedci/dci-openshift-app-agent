@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d086d87c_06e075c7",
+        "filename": "dci-openshift-app-agent.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 398,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-01-30T22:55:53Z",
+      "side": 1,
+      "message": "Same comment as with doa, wouldn\u0027t be better to move it after the teardown?",
+      "revId": "1bec54afde1818b86d42f81e053561ef937b9a64",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "697d07be_c6af9301",
+        "filename": "plays/pullsecrets.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-01-30T22:55:53Z",
+      "side": 1,
+      "message": "+1 to keep password",
+      "revId": "1bec54afde1818b86d42f81e053561ef937b9a64",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c461c692_608a3f04",
+        "filename": "samples/control_plane_example/hooks/install.yml",
+        "patchSetId": 4
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-01-30T22:55:53Z",
+      "side": 1,
+      "message": "This is not deleted in the cleanup 😭\n\nhelm_tmp_dir",
+      "revId": "1bec54afde1818b86d42f81e053561ef937b9a64",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
