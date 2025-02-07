@@ -16,3 +16,18 @@
   fail:
     msg: "webserver is not running"
   when: web_service == False
+
+- name: Get job info
+  dci_job:
+    id: "{{ job_id }}"
+    status: "present"
+  register: job_info
+
+- name: test_ Check is OCP component is present
+  assert:
+    success_msg: "{{ ocp_component_id }} is present"
+    fail_msg: "{{ ocp_component_id }} is absent"
+    that:
+      - "ocp_component_id in job_info['job']['components']"
+
+
