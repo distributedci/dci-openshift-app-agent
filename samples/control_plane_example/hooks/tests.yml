@@ -12,7 +12,22 @@
       - status.phase=Running
   register: web_service
 
-- name: Fail if pod is NOT found
+- name: test_ if webserver pod is running
   fail:
     msg: "webserver is not running"
   when: web_service == False
+
+- name: Get job info
+  dci_job:
+    id: "{{ job_id }}"
+  register: job_info
+  delegate_to: localhost
+
+- name: test_ if the OCP component is present
+  assert:
+    success_msg: "{{ ocp_component_id }} is present"
+    fail_msg: "{{ ocp_component_id }} is absent"
+    that:
+      - "ocp_component_id in [cmp['id'] for cmp in job_info['job']['components']]"
+
+...
