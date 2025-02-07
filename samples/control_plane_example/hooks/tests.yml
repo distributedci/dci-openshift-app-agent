@@ -1,4 +1,22 @@
 ---
+
+- name: Get job info
+  dci_job:
+    id: "{{ job_id }}"
+  register: job_info
+  delegate_to: localhost
+
+- name: Print components
+  debug:
+    var: job_info
+
+- name: test_ if the OCP component is present
+  assert:
+    success_msg: "{{ ocp_component_id }} is present"
+    fail_msg: "{{ ocp_component_id }} is absent"
+    that:
+      - (job_info['job']['components'] | selectattr('id', 'equalto', ocp_component_id) | list | length) > 0
+
 - name:  Wait until pod livenessProbe starts
   pause:
     seconds: 40
@@ -12,7 +30,11 @@
       - status.phase=Running
   register: web_service
 
-- name: Fail if pod is NOT found
-  fail:
-    msg: "webserver is not running"
-  when: web_service == False
+- name: test_ if webserver pod is running
+  assert:
+    success_msg: "webserver is not running"
+    fail_msg: "webserver is not running"
+    that:
+      - web_service == True
+
+...
