@@ -16,3 +16,14 @@
   fail:
     msg: "webserver is not running"
   when: web_service == False
+
+- name: Trying to attach ocp component to the job
+  dci_job_component:
+    job_id: "{{ job_info.job.id }}"
+    component_id: "{{ ocp_component_id }}"
+  register: job_component_result
+  until: job_component_result is not failed
+  retries: 5
+  delay: 20
+
+
