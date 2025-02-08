@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d9edc181_8809531e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-02-08T00:12:01Z",
+      "side": 1,
+      "message": "Could you improve the commit message by including why this change is required.\nI\u0027d like to understand why adding components in the hooks were needed. Does this mean all the hooks for the app-agent require a modification like this?",
+      "revId": "0693e9a99255d334ae7323910cd2650a3a4b2685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
