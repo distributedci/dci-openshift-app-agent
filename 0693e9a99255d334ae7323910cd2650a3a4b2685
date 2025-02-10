@@ -33,6 +33,42 @@
       "message": "This change is fixing https://github.com/redhatci/ansible-collection-redhatci-ocp/issues/545, so I consider this is really needed. However, as Tony said, I\u0027d like to also understand why hooks are updated too",
       "revId": "0693e9a99255d334ae7323910cd2650a3a4b2685",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ae5eb9c9_80f98e09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2025-02-10T14:24:02Z",
+      "side": 1,
+      "message": "It is just a test to validate if we are able to assign component. For better detection of this error if it occurs again.",
+      "parentUuid": "d9edc181_8809531e",
+      "revId": "0693e9a99255d334ae7323910cd2650a3a4b2685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7a712f94_53cfc128",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2025-02-10T14:24:02Z",
+      "side": 1,
+      "message": "Thx. Same response to Tony 😊",
+      "parentUuid": "09f6c21b_e53ebd7b",
+      "revId": "0693e9a99255d334ae7323910cd2650a3a4b2685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
