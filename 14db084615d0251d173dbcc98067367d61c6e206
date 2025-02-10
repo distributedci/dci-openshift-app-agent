@@ -33,6 +33,23 @@
       "message": "LGTM",
       "revId": "14db084615d0251d173dbcc98067367d61c6e206",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40c0ed3d_699446f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2025-02-10T18:43:10Z",
+      "side": 1,
+      "message": "The test should verify that the ocp component is present not add it. And use the `test_` prefix in the task name to be sure it appears in the test results.",
+      "revId": "14db084615d0251d173dbcc98067367d61c6e206",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
