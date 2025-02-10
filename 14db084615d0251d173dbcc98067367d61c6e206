@@ -16,6 +16,23 @@
       "message": "Thank you for your reviews, I updated the commit message.",
       "revId": "14db084615d0251d173dbcc98067367d61c6e206",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a570f406_f2e2bcc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-02-10T17:09:16Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "14db084615d0251d173dbcc98067367d61c6e206",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
