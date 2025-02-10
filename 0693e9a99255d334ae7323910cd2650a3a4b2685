@@ -16,6 +16,23 @@
       "message": "Could you improve the commit message by including why this change is required.\nI\u0027d like to understand why adding components in the hooks were needed. Does this mean all the hooks for the app-agent require a modification like this?",
       "revId": "0693e9a99255d334ae7323910cd2650a3a4b2685",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "09f6c21b_e53ebd7b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-02-10T11:48:14Z",
+      "side": 1,
+      "message": "This change is fixing https://github.com/redhatci/ansible-collection-redhatci-ocp/issues/545, so I consider this is really needed. However, as Tony said, I\u0027d like to also understand why hooks are updated too",
+      "revId": "0693e9a99255d334ae7323910cd2650a3a4b2685",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
