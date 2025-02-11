@@ -16,6 +16,24 @@
       "message": "Why not adding this test to the test play instead of a test hook? For example, I saw a partner is currently affected by OCP component not being created, but it\u0027s not using any of these hooks, so that it will not be able to test this.\nAlso, this code is not related to the hook, it\u0027s something general, and I think it could be better placed in the test play so that it\u0027s always launched.",
       "revId": "98c6cf80c79205e4aac2660151fb85c4ee8da38c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e0ecf1c_d137a86d",
+        "filename": "samples/control_plane_example/hooks/tests.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 20
+      },
+      "writtenOn": "2025-02-11T15:17:55Z",
+      "side": 1,
+      "message": "\u003e Why not adding this test to the test play instead of a test hook? For example, I saw a partner is currently affected by OCP component not being created, but it\u0027s not using any of these hooks, so that it will not be able to test this.\n\u003e Also, this code is not related to the hook, it\u0027s something general, and I think it could be better placed in the test play so that it\u0027s always launched.\n\nWe should not block a job on this as this is optional and it happened in the past that we had no ocp component. In our jobs, it should always be there so that\u0027s why it makes more sense to have it in hooks.",
+      "parentUuid": "ede84a88_e2f2064b",
+      "revId": "98c6cf80c79205e4aac2660151fb85c4ee8da38c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
