@@ -34,6 +34,24 @@
       "parentUuid": "ede84a88_e2f2064b",
       "revId": "98c6cf80c79205e4aac2660151fb85c4ee8da38c",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb20769f_3d522ab0",
+        "filename": "samples/control_plane_example/hooks/tests.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2025-02-11T17:43:09Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e0ecf1c_d137a86d",
+      "revId": "98c6cf80c79205e4aac2660151fb85c4ee8da38c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
