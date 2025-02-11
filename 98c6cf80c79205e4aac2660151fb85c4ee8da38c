@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ede84a88_e2f2064b",
+        "filename": "samples/control_plane_example/hooks/tests.yml",
+        "patchSetId": 7
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-02-11T09:03:56Z",
+      "side": 1,
+      "message": "Why not adding this test to the test play instead of a test hook? For example, I saw a partner is currently affected by OCP component not being created, but it\u0027s not using any of these hooks, so that it will not be able to test this.\nAlso, this code is not related to the hook, it\u0027s something general, and I think it could be better placed in the test play so that it\u0027s always launched.",
+      "revId": "98c6cf80c79205e4aac2660151fb85c4ee8da38c",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
