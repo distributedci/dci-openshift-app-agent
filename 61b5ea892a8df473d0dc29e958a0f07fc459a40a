@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "83bae2e2_be77029e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-02-12T12:52:29Z",
+      "side": 1,
+      "message": "Project creation works fine, and the projectId is correctly used to try to submit Certsuite results to CWE API. However, it\u0027s throwing HTTP 400 error right now. The only difference between our test and Andrew\u0027s test could be, potentially, the Pyxis API key used, we need to check that.\nI\u0027m testing in parallel the status of the CWE API in another debug job, just to see if it\u0027s working in that case (it should).",
+      "revId": "61b5ea892a8df473d0dc29e958a0f07fc459a40a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
