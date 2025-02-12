@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8962858_eddb8bd8",
+        "filename": "plays/tests.yml",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-02-12T11:07:36Z",
+      "side": 1,
+      "message": "Andrew, I\u0027ll finally remove this condition, We can assume that, if running this workflow, the user should be using the certsuite release containing the logic to submit files to CWE API. Else, we may have failures if kbpc_version is not declared (typically there\u0027s a default value for this but only in the role scope, not on DCI scope)",
+      "revId": "0a3f52ec2255f3e0b8c62d7e49fce0fd11f22443",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
