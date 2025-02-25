@@ -1,5 +1,6 @@
 ---
 
+
 # Step 0a : set kubeconfig_path, OCP version vars and dci_topic. Check hooks
 - name: "Execute kubeconfig step"
   hosts: jumphost
