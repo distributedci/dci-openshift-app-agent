@@ -53,6 +53,7 @@
 - name: Preflight container-only tests
   vars:
     preflight_dci_all_components_are_ga: "{{ dci_all_components_are_ga }}"
+    partner_creds: "{{ partner_creds | default('') | expanduser }}"
   ansible.builtin.include_role:
     name: redhatci.ocp.preflight
     tasks_from: main_standalone_containers_certification
