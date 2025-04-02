@@ -8,6 +8,10 @@
   with_items: "{{ job_info.job.components }}"
   when: item["type"] == "tnf_test_example"
 
+- name: Debug pblanc
+  debug:
+    msg: "tnf_app_image: {{ tnf_app_image }}"
+
 # In this case, previous task would have been skipped and no variables would have been created.
 - name: Tasks in case component was not used
   block:
@@ -30,15 +34,15 @@
       assert:
         that: "{{ item }} is defined"
         fail_msg: "The variable {{ item }} is required"
-      with_items:
-          - tnf_app_image
-          - tnf_operator_to_install
-          - tnf_operator_to_install.operator_name
-          - tnf_operator_to_install.operator_version
-          - tnf_operator_to_install.operator_bundle
-          - tnf_helm_chart_to_install
-          - tnf_helm_chart_to_install.chart_url
-          - tnf_helm_chart_to_install.image_repository
+      loop:
+        - tnf_app_image
+        - tnf_operator_to_install
+        - tnf_operator_to_install.operator_name
+        - tnf_operator_to_install.operator_version
+        - tnf_operator_to_install.operator_bundle
+        - tnf_helm_chart_to_install
+        - tnf_helm_chart_to_install.chart_url
+        - tnf_helm_chart_to_install.image_repository
 
     # Needed for doing the mirroring of the image
     - name: Validate that app_version for tnf_helm_chart is provided in disconnected environments
