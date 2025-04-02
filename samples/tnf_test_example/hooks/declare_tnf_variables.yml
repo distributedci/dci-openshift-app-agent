@@ -8,6 +8,10 @@
   with_items: "{{ job_info.job.components }}"
   when: item["type"] == "tnf_test_example"
 
+- name: Debug pblanc
+  debug:
+    msg: "tnf_app_image: {{ tnf_app_image }}"
+
 # In this case, previous task would have been skipped and no variables would have been created.
 - name: Tasks in case component was not used
   block:
