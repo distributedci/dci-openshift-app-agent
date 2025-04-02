@@ -50,6 +50,11 @@
   when:
     - certsuite_wait|int > 0
 
+- name: debug pblanc
+  ansible.builtin.set_fact:
+    partner_creds: "{{ partner_creds | expanduser }}"
+  when: partner_creds is defined
+
 - name: Preflight container-only tests
   vars:
     preflight_dci_all_components_are_ga: "{{ dci_all_components_are_ga }}"
