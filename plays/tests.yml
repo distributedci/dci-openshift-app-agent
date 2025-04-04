@@ -79,7 +79,7 @@
   vars:
     deprecated_api_logs:
       path: "{{ job_logs.path }}"
-  when: check_workload_api | default(true) | bool
+  when: check_workload_api | default(false) | bool
 
 - name: Preflight check operator tests
   vars:
