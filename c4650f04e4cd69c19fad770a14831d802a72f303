@@ -16,6 +16,24 @@
       "message": "What about:\nhttps://softwarefactory-project.io/r/plugins/gitiles/dci-openshift-app-agent/+/refs/heads/master/plays/upload_logs.yml#10 ?\n\nThat is called by common_logging.yml but that task could run in jumphost or localhost depending on the stage.\n\nIf that one is also delegated to localhost, will the logs be available there too?",
       "revId": "c4650f04e4cd69c19fad770a14831d802a72f303",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72139c0a_e8019c06",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2025-04-15T17:52:56Z",
+      "side": 1,
+      "message": "Good catch, I added it.",
+      "parentUuid": "dc2be282_375daaaa",
+      "revId": "c4650f04e4cd69c19fad770a14831d802a72f303",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
