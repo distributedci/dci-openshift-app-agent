@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6ae50356_bb8a330c",
+        "filename": "plays/upload_logs.yml",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-04-16T18:01:26Z",
+      "side": 1,
+      "message": "Simplify with:\n\n```\n  name: \"{{ (remove_ext | default(False) | bool) | ternary(item.path | basename | splitext | first, item.path | basename) }}\"\n```",
+      "revId": "9574caa5f7d9008d7be10fab8b600ab9a022995a",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
