@@ -16,6 +16,23 @@
       "message": "I can see the xml file without extension, LGTM",
       "revId": "70cbff64c3b461ec6d9a0e7fb837ba8aee7c3002",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2af84d2f_07458d2f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-04-21T08:59:25Z",
+      "side": 1,
+      "message": "Moving to +1 since I remember the implied pipelines need to be changed before merging, e.g.: https://github.com/dci-labs/dallas-pipelines/blob/master/control-plane-example-pipeline.yml#L21",
+      "revId": "70cbff64c3b461ec6d9a0e7fb837ba8aee7c3002",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
