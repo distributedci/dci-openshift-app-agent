@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71bdad95_731a7dcd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-04-21T08:58:02Z",
+      "side": 1,
+      "message": "I can see the xml file without extension, LGTM",
+      "revId": "70cbff64c3b461ec6d9a0e7fb837ba8aee7c3002",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
