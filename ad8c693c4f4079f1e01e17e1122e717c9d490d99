@@ -16,6 +16,23 @@
       "message": "LGTM, please test it in BOS2 so we can merge this.",
       "revId": "ad8c693c4f4079f1e01e17e1122e717c9d490d99",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1ba7f35_cbb8c80e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-04-23T00:51:25Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "ad8c693c4f4079f1e01e17e1122e717c9d490d99",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
