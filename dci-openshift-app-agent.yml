@@ -6,7 +6,7 @@
   tags:
     - kubeconfig
   environment:
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}"
   tasks:
     - name: Kubeconfig tasks
       block:
@@ -77,7 +77,7 @@
     - job
     - dci
   environment:
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Read credentials from env vars
       ansible.builtin.set_fact:
@@ -199,7 +199,7 @@
     - redhat-pre-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Pre-run tasks
       block:
@@ -218,7 +218,7 @@
   hosts: jumphost
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tags:
     - pre-run
     - partner-pre-run
@@ -244,7 +244,7 @@
     - running
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Install tasks
       block:
@@ -309,7 +309,7 @@
     - redhat-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Tests tasks
       block:
@@ -332,7 +332,7 @@
     - partner-testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Test hooks
       block:
@@ -355,7 +355,7 @@
     - testing
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Test results
       block:
@@ -372,7 +372,7 @@
     - post-run
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: Post-run tasks
       block:
@@ -392,7 +392,7 @@
     - success
   environment:
     KUBECONFIG: "{{ kubeconfig_path }}"
-    TMPDIR: "{{ ansible_env.HOME }}/tmp"
+    TMPDIR: "{{ dci_tmp_dir }}" 
   tasks:
     - name: "Run common logging process"
       ansible.builtin.include_tasks: plays/common_logging.yml
