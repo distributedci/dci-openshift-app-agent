@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "10ff200d_28d80cdc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-05-26T14:14:21Z",
+      "side": 1,
+      "message": "I guess you need to add the new variable to the README and also try with a debug job.",
+      "revId": "a1e61182edfa53f40f54847005d1f17e86cc8c6d",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
