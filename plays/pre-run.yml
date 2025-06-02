@@ -35,6 +35,7 @@
     name: redhatci.ocp.include_components
     apply:
       delegate_to: localhost
+      delegate_facts: true
 
 - name: Get the updated job_info
   dci_job:
