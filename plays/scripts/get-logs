@@ -42,7 +42,7 @@ ${oc_path} get subs -A -o json | jq '[.items[] | {operator_name: .spec.name, ver
 ${oc_path} get network cluster -o yaml > "${log_dir}/clusternetwork.yaml"
 ${oc_path} get nodes -o wide > "${log_dir}/nodes.txt"
 ${oc_path} get nodes -o yaml > "${log_dir}/all-nodes.yaml"
-${oc_path} get events --all-namespaces --sort-by='.metadata.creationTimestamp' > "${log_dir}/events.txt"
+${oc_path} get events --all-namespaces --sort-by='.metadata.creationTimestamp' -o custom-columns='NAMESPACE:.involvedObject.namespace,CREATED:.metadata.creationTimestamp,TYPE:.type,REASON:.reason,KIND:.involvedObject.kind,NAME:.involvedObject.name,MESSAGE:.message' > "${log_dir}/events.txt"
 ${oc_path} get pods --all-namespaces -o wide > "${log_dir}/pods.txt"
 
 if [ "$DO_MUST_GATHER" = true ]; then
