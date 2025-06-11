@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f035a0ca_b7e7efbf",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-06-11T18:12:49Z",
+      "side": 1,
+      "message": "The new format is breaking lines and columns, please compare the events.txt from this file to one ran yesterday, e.g. https://www.distributed-ci.io/jobs/9dad9a09-43b6-4619-9fde-5384f74c1601/files.\n\nI think some additional formatting is required to keep a similar output as before.",
+      "revId": "b4b9b7710c5e525a1100f88ceb7c74f8b7577083",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
