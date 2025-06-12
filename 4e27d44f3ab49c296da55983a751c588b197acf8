@@ -33,6 +33,23 @@
       "message": "lgtm",
       "revId": "4e27d44f3ab49c296da55983a751c588b197acf8",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e98aab7b_09aa3cd9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 800
+      },
+      "writtenOn": "2025-06-12T07:57:00Z",
+      "side": 1,
+      "message": "Here you have a job where I\u0027ve omitted the logging process: https://www.distributed-ci.io/jobs/75b6b6ec-edfe-45da-9ee5-c2ffe593a201/jobStates?sort\u003ddate\u0026task\u003d175936cd-0990-4dbc-8b45-5b6e2e7b5571",
+      "revId": "4e27d44f3ab49c296da55983a751c588b197acf8",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
