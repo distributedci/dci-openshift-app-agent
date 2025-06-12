@@ -171,7 +171,6 @@
 
     - name: "Merge pull secrets"
       ansible.builtin.include_tasks: 'plays/pullsecrets.yml'
-      when: dci_disconnected | default(false) | bool
 
     # Keep in sync with test-runner parsing from d-o-a
     - name: UI URL
