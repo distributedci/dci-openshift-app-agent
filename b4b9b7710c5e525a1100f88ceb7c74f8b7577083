@@ -16,6 +16,24 @@
       "message": "The new format is breaking lines and columns, please compare the events.txt from this file to one ran yesterday, e.g. https://www.distributed-ci.io/jobs/9dad9a09-43b6-4619-9fde-5384f74c1601/files.\n\nI think some additional formatting is required to keep a similar output as before.",
       "revId": "b4b9b7710c5e525a1100f88ceb7c74f8b7577083",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86bdf7ce_3e5fec38",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 1631
+      },
+      "writtenOn": "2025-06-26T16:55:25Z",
+      "side": 1,
+      "message": "with custom-columns output , it is not possible to concatenate KIND \u0026 NAME i.e \"pod/podname\". Hence, we see OBJECT is divided into KIND \u0026 NAME.\nElse, I need to use json path output, as below\n\noc get events --all-namespaces -o jsonpath\u003d\u0027{range .items[*]}{.metadata.creationTimestamp}{\"\\t\"}{.type}{\"\\t\"}{.reason}{\"\\t\"}{.involvedObject.kind}{\"/\"}{.involvedObject.name}{\"\\t\"}{.message}{\"\\n\"}{end}",
+      "parentUuid": "f035a0ca_b7e7efbf",
+      "revId": "b4b9b7710c5e525a1100f88ceb7c74f8b7577083",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
