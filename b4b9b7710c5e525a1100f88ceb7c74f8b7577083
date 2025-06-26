@@ -34,6 +34,24 @@
       "parentUuid": "f035a0ca_b7e7efbf",
       "revId": "b4b9b7710c5e525a1100f88ceb7c74f8b7577083",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07573dc9_ef72889f",
+        "filename": "plays/scripts/get-logs",
+        "patchSetId": 4
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 667
+      },
+      "writtenOn": "2025-06-26T20:05:13Z",
+      "side": 1,
+      "message": "Column formatting would be broken with it, I\u0027ve created this other change in the agent, I think you can adopt in here as well:\nhttps://softwarefactory-project.io/r/c/dci-openshift-agent/+/34014",
+      "parentUuid": "86bdf7ce_3e5fec38",
+      "revId": "b4b9b7710c5e525a1100f88ceb7c74f8b7577083",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
