@@ -33,6 +33,23 @@
       "message": "recheck",
       "revId": "85ddd128ace99e9dfb37522324fed69b5be19eb4",
       "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d7440a38_41909c4e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 11
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 938
+      },
+      "writtenOn": "2025-07-08T07:18:35Z",
+      "side": 1,
+      "message": "the job is green, everything looks fine, thanks Pierre",
+      "revId": "85ddd128ace99e9dfb37522324fed69b5be19eb4",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
     }
   ]
 }
