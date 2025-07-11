@@ -192,7 +192,7 @@
         dci_cs_url: "{{ dci_cs_url }}"
         dci_ui_url: "{{ dci_ui_url }}"
         pullsecret_tmp_file: "{{ pullsecret_tmp_file | default() }}"
-        ocp_component_id: "{{ ocp_component_id }}"
+        ocp_component_id: "{{ ocp_component_id | default()}}"
       no_log: true
       delegate_to: jumphost
       delegate_facts: true
