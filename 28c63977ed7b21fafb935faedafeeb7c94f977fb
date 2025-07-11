@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f155fe6_7da18a16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 821
+      },
+      "writtenOn": "2025-07-11T01:27:16Z",
+      "side": 1,
+      "message": "it works on the app job:\nhttps://www.distributed-ci.io/jobs/c1fc443b-e46f-441f-a469-db0275ca3e64/jobStates?sort\u003ddate",
+      "revId": "28c63977ed7b21fafb935faedafeeb7c94f977fb",
+      "serverId": "6c1dc8ef-8b94-40e4-bd83-c2359d45ecc0"
+    }
+  ]
+}
