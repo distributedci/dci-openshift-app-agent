@@ -108,6 +108,18 @@
     name: redhatci.ocp.preflight
   when: preflight_operators_to_certify is defined
 
+- name: Run eco-gotests
+  vars:
+    eco_gotests_test_suites: "{{ eco_test_suites }}"
+    eco_gotests_registry_auth_file: "{{ pullsecret_tmp_file | default('') }}"
+    eco_gotests_log_dir: "{{ job_logs.path }}"
+    eco_gotests_kubconfig_dir: "{{ kubeconfig_path | dirname }}"
+  ansible.builtin.include_role:
+    name: redhatci.ocp.eco_gotests
+  when:
+    - eco_test_suites is defined
+    - eco_test_suites | length
+
 - name: Get final job info
   dci_job:
     id: "{{ job_id }}"
