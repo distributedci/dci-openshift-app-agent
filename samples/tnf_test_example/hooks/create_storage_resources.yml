@@ -37,7 +37,7 @@
       until:
         - pod_pvc.resources is defined
         - pod_pvc.resources[0].status.phase == "Bound"
-      retries: 6
+      retries: 12
       delay: 10
   when: storage_class is defined
 
