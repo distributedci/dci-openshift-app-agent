@@ -8,10 +8,10 @@
   ansible.builtin.include_tasks: dump_ocp_logs.yml
   when: dci_gather_logs | bool
 
-- name: "Find files to be uploaded to DCI (log,txt,html,yaml,yml,json,pcap,trace,csv)"
+- name: "Find files to be uploaded to DCI (log,txt,html,yaml,yml,pcap,trace,csv)"
   ansible.builtin.find:
     paths: "{{ job_logs.path }}"
-    patterns: "*.log,*.txt,*.html,*.yaml,*.yml,*.json,*.pcap,*.trace,*.csv"
+    patterns: "*.log,*.txt,*.html,*.yaml,*.yml,*.pcap,*.trace,*.csv"
   register: logs_matched
   tags: [dci]
 
@@ -20,6 +20,21 @@
     mime_type: "text/plain"
   ansible.builtin.include_tasks: upload_logs.yml
   with_items: "{{ logs_matched.files }}"
+  tags: [dci]
+
+- name: "Find JSON files"
+  ansible.builtin.find:
+    paths: "{{ job_logs.path }}"
+    patterns: "*.json"
+    excludes: "dci-extra.*.json"
+  register: json_matched
+  tags: [dci]
+
+- name: "Upload JSON files"
+  vars:
+    mime_type: "application/json"
+  ansible.builtin.include_tasks: upload_logs.yml
+  with_items: "{{ json_matched.files }}"
   tags: [dci]
 
 - name: "Find deployment JUnit files"
