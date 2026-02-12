@@ -58,7 +58,19 @@
       - "ga_components: {{ ga_components }}"
       - "dci_all_components_are_ga: {{ dci_all_components_are_ga }}"
 
-### Mirror must-gather images
+- name: Gather node hardware and kernel information
+  ansible.builtin.include_role:
+    name: redhatci.ocp.node_info
+  vars:
+    ni_oc_tool_path: "{{ oc_tool_path }}"
+    ni_job_logs_path: "{{ job_logs.path }}"
+    ni_disconnected: "{{ dci_disconnected | default(false) }}"
+    ni_local_registry: "{{ dci_local_registry }}"
+    ni_local_img_path: "{{ dci_hardware_img_path | default('/dci/lshw') }}"
+    ni_pullsecret_file: "{{ pullsecret_tmp_file | default('') }}"
+    ni_tag: "{{ dci_hardware_tag | default('lastest') }}"
+  when:
+    - dci_collect_hardware | default(true) | bool
 
 - name: Mirror must gather images
   ansible.builtin.include_role:
@@ -71,4 +83,5 @@
     - dci_disconnected | default(false) | bool
     - dci_local_registry | length
     - do_must_gather | bool
+
 ...
