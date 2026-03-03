@@ -32,7 +32,7 @@
 
   - name: Download Helm binary
     vars:
-        helm_ver: "{{ helm_version | default('3.9.0') }}"
+        helm_ver: "{{ helm_version | default('3.20.0') }}"
     unarchive:
       src: https://get.helm.sh/helm-v{{ helm_ver }}-linux-amd64.tar.gz
       dest: "{{ helm_tmp_dir.path }}"
