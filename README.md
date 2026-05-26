@@ -82,6 +82,7 @@ dci\_gather\_logs                  | true                                       
 dci\_collect\_hardware             | true                                                 | Collect node hardware and kernel information from the cluster. Hardware details are gathered using lshw and kernel information from all ready nodes.
 dci\_hardware\_tag                 | latest                                               | Tag used for the lshw container image in disconnected environments.
 dci\_hardware\_img\_path           | /dci/lshw                                            | Image path in the local registry for the lshw container used in disconnected hardware collection.
+dci\_local\_log\_dir               | /var/tmp                                             | Directory on the playbook host where logs are stored when upload to DCI fails (`<dci_local_log_dir>/<job_id>/`). **Not cleaned up automatically**. See [Local log fallback directory](#local-log-fallback-directory-dci_local_log_dir).
 dci\_local\_registry               | ""                                                   | Registry to fetch containers that may be used. Mandatory for disconnected environments.
 provision\_cache\_store            | "/opt/cache"                                         | Directory aimed to share artifacts between dci-openshift-agent and dci-openshift-app-agent.
 partner\_creds                     | ""                                                   | Authfile with registries' creds. This variable must have a value if we are on a disconnected environment. In that case, it must include the creds for the local registry used, and optionally have private registry creds for partners. If it is a connected environment, this variable is optional and, if it has a value, the file would contain just private registry creds for partners. [In this link](https://man.archlinux.org/man/community/containers-common/containers-auth.json.5.en#FORMAT), there are examples about how the files should be formatted. This variable has to be defined when running preflight on Red Hat Best Practices Test Suite for Kubernetes.
@@ -122,6 +123,7 @@ Here is an example of a pipeline job definition for `dci-openshift-app-agent`:
     dci_config_dir: ~/my-lab-config/ocp-workload
     dci_gits_to_components:
       - ~/my-lab-config
+    # Fallback when log upload to DCI fails; not removed automatically — prune manually
     dci_local_log_dir: ~/upload-errors
     dci_tags: []
   use_previous_topic: true
@@ -129,6 +131,9 @@ Here is an example of a pipeline job definition for `dci-openshift-app-agent`:
     kubeconfig: kubeconfig_path
 ```
 
+### Local log fallback directory (`dci_local_log_dir`)
+
+When uploading job artifacts to the DCI Control Server fails, the agent copies them under `dci_local_log_dir/<job_id>/` on the host running the playbook (typically the jumphost). **Those files are not deleted when the job ends.** Remove old job directories yourself (cron, tmpwatch, or similar), especially if you set `dci_local_log_dir` on a large filesystem, so the disk does not fill up. The default in `group_vars/all` is `/var/tmp`.
 
 ## Enabling the Test Suites in DCI App Agent
 
