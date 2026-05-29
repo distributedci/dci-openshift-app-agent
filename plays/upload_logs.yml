@@ -1,41 +1,44 @@
 ---
-- name: Upload to DCI Control Server ({{ item.path | basename }})
-  environment:
-    DCI_CLIENT_ID: "{{ lookup('env', 'DCI_CLIENT_ID') }}"
-    DCI_API_SECRET: "{{ lookup('env', 'DCI_API_SECRET') }}"
-    DCI_CS_URL: "{{ lookup('env', 'DCI_CS_URL') }}"
-  dci_file:
-    path: "{{ item.path }}"
-    name: "{{ (remove_ext | default(False) | bool) | ternary(item.path | basename | splitext | first, item.path | basename) }}"
-    job_id: "{{ job_id }}"
-    mime: "{{ mime_type }}"
-  register: _dci_upload_result
-  failed_when: false
-  delegate_to: localhost
+- name: Upload logs ({{ item.path | basename }})
+  block:
+    - name: Upload to DCI Control Server ({{ item.path | basename }})
+      environment:
+        DCI_CLIENT_ID: "{{ lookup('env', 'DCI_CLIENT_ID') }}"
+        DCI_API_SECRET: "{{ lookup('env', 'DCI_API_SECRET') }}"
+        DCI_CS_URL: "{{ lookup('env', 'DCI_CS_URL') }}"
+      dci_file:
+        path: "{{ item.path }}"
+        name: "{{ (remove_ext | default(False) | bool) | ternary(item.path | basename | splitext | first, item.path | basename) }}"
+        job_id: "{{ job_id }}"
+        mime: "{{ mime_type }}"
+      register: _dci_upload_result
+      delegate_to: localhost
 
-- name: Ensure local log directory exists when DCI upload failed
-  ansible.builtin.file:
-    path: "{{ dir }}"
-    state: directory
-    mode: '0755'
-  loop:
-    - "{{ dci_local_log_dir }}"
-    - "{{ dci_local_log_dir }}/{{ job_id }}"
-  loop_control:
-    label: "{{ item }}"
-  when: _dci_upload_result.failed | default(false) | bool
+  rescue:
+    - name: Ensure local log directories exist
+      ansible.builtin.file:
+        path: "{{ dir }}"
+        state: directory
+        mode: '0755'
+        owner: "{{ ansible_user_uid }}"
+        group: "{{ ansible_user_gid }}"
+      become: true
+      loop:
+        - "{{ dci_local_log_dir }}"
+        - "{{ dci_local_log_dir }}/{{ job_id }}"
+      loop_control:
+        loop_var: dir
+        label: "{{ dir }}"
 
-- name: Copy locally when DCI upload failed ({{ item.path | basename }})
-  ansible.builtin.copy:
-    src: "{{ item.path }}"
-    dest: "{{ dci_local_log_dir }}/{{ job_id }}/"
-    mode: '0644'
-  when: _dci_upload_result.failed | default(false) | bool
+    - name: Copy locally ({{ item.path | basename }})
+      ansible.builtin.copy:
+        src: "{{ item.path }}"
+        dest: "{{ dci_local_log_dir }}/{{ job_id }}/"
+        mode: '0644'
 
-- name: Report DCI upload failure
-  ansible.builtin.debug:
-    msg: >-
-      Failed to upload {{ item.path | basename }} to DCI
-      ({{ _dci_upload_result.msg | default(_dci_upload_result) }}); saved under
-      {{ dci_local_log_dir }}/{{ job_id }}/
-  when: _dci_upload_result.failed | default(false) | bool
+    - name: Report DCI upload failure
+      ansible.builtin.debug:
+        msg: >-
+          Failed to upload {{ item.path | basename }} to DCI
+          ({{ _dci_upload_result.msg | default(_dci_upload_result) }}); saved under
+          {{ dci_local_log_dir }}/{{ job_id }}/
