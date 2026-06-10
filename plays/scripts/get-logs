@@ -64,23 +64,32 @@ MUST_GATHER_OPTS=""
 
 if [ "$DO_MUST_GATHER" = true ]; then
   # Get image sources if available
-  idms_reg=$(\
-      ${oc_path} get imagedigestmirrorsets -o json 2>/dev/null |
-        jq -r '.items[0].spec.imageDigestMirrors[0].mirrors[0] // ""'
-  )
-  icsp_reg=$(\
-      ${oc_path} get imagecontentsourcepolicy -o json 2>/dev/null |
-        jq -r '.items[0].spec.repositoryDigestMirrors[0].mirrors[0] // ""'
-  )
-  if [[ -n "${idms_reg}" ]]; then
-     registry=${idms_reg/\/*}
-  elif [[ -n "${icsp_reg}" ]]; then
-     registry=${icsp_reg/\/*}
-  fi
+  # Only rewrite registry if there is an IDMS/ICSP entry whose source
+  # matches the image we want to pull (e.g. registry.redhat.io/openshift4).
+  # Blindly using the first IDMS entry breaks connected clusters that have
+  # unrelated IDMS entries (e.g. for OADP operators).
   for image in ${DCI_MUST_GATHER_IMAGES:-"registry.redhat.io/openshift4/ose-must-gather"}
   do
-    if [ -n "${registry}" ];then
-      image="${registry}/${image#*/}"
+    # Extract the source registry+namespace (e.g. "registry.redhat.io/openshift4")
+    image_source="${image%/*}"
+    mirror=$(\
+        ${oc_path} get imagedigestmirrorsets -o json 2>/dev/null |
+          jq -r --arg source "${image_source}" \
+            '[.items[].spec.imageDigestMirrors[] |
+             select(.source == $source) |
+             .mirrors[0]] | first // ""'
+    )
+    if [[ -z "${mirror}" ]]; then
+      mirror=$(\
+          ${oc_path} get imagecontentsourcepolicy -o json 2>/dev/null |
+            jq -r --arg source "${image_source}" \
+              '[.items[].spec.repositoryDigestMirrors[] |
+               select(.source == $source) |
+               .mirrors[0]] | first // ""'
+      )
+    fi
+    if [[ -n "${mirror}" ]]; then
+      image="${mirror}/${image##*/}"
     fi
     MUST_GATHER_OPTS="${MUST_GATHER_OPTS} --image=${image}"
   done
