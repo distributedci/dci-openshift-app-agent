@@ -61,6 +61,8 @@ ${oc_path} get events --all-namespaces --sort-by='.metadata.creationTimestamp' -
   > "${log_dir}/events.txt"
 
 MUST_GATHER_OPTS=""
+MUST_GATHER_ORIG_OPTS=""
+any_mirror_used=false
 
 if [ "$DO_MUST_GATHER" = true ]; then
   # Get image sources if available
@@ -70,6 +72,7 @@ if [ "$DO_MUST_GATHER" = true ]; then
   # unrelated IDMS entries (e.g. for OADP operators).
   for image in ${DCI_MUST_GATHER_IMAGES:-"registry.redhat.io/openshift4/ose-must-gather"}
   do
+    MUST_GATHER_ORIG_OPTS="${MUST_GATHER_ORIG_OPTS} --image=${image}"
     # Extract the source registry+namespace (e.g. "registry.redhat.io/openshift4")
     image_source="${image%/*}"
     mirror=$(\
@@ -90,6 +93,7 @@ if [ "$DO_MUST_GATHER" = true ]; then
     fi
     if [[ -n "${mirror}" ]]; then
       image="${mirror}/${image##*/}"
+      any_mirror_used=true
     fi
     MUST_GATHER_OPTS="${MUST_GATHER_OPTS} --image=${image}"
   done
@@ -97,10 +101,20 @@ if [ "$DO_MUST_GATHER" = true ]; then
   must_gather_dir="${log_dir}/must_gather"
   mkdir -p "${must_gather_dir}"
 
-  ${oc_path} adm must-gather \
+  if ! ${oc_path} adm must-gather \
     --dest-dir="${must_gather_dir}" \
     ${MUST_GATHER_OPTS} \
-    >/dev/null
+    >/dev/null; then
+    if ${any_mirror_used}; then
+      echo "Mirror-based must-gather failed, falling back to original images..."
+      rm -Rf "${must_gather_dir}"
+      mkdir -p "${must_gather_dir}"
+      ${oc_path} adm must-gather \
+        --dest-dir="${must_gather_dir}" \
+        ${MUST_GATHER_ORIG_OPTS} \
+        >/dev/null
+    fi
+  fi
 
   # Trim log files to only keep entries since the job start time
   if [ -n "${SINCE_TIME}" ]; then
