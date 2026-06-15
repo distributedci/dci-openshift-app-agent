@@ -15,20 +15,11 @@
       delegate_to: localhost
 
   rescue:
-    - name: Ensure local log directories exist
+    - name: Ensure local log directory exists
       ansible.builtin.file:
-        path: "{{ dir }}"
+        path: "{{ dci_local_log_dir }}/{{ job_id }}"
         state: directory
         mode: '0755'
-        owner: "{{ ansible_user_uid }}"
-        group: "{{ ansible_user_gid }}"
-      become: true
-      loop:
-        - "{{ dci_local_log_dir }}"
-        - "{{ dci_local_log_dir }}/{{ job_id }}"
-      loop_control:
-        loop_var: dir
-        label: "{{ dir }}"
 
     - name: Copy locally ({{ item.path | basename }})
       ansible.builtin.copy:
