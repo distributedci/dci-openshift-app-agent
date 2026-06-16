@@ -72,6 +72,14 @@
   when:
     - dci_collect_hardware | default(true) | bool
 
+- name: Empty Console log files if present
+  ansible.builtin.command: dd if=/dev/null of="{{ item }}"
+  with_fileglob:
+    - "/var/consoles/{{ cluster_name }}/{{ cluster_name }}*"
+  when:
+    - cluster_name is defined
+  become: true
+
 - name: Mirror must gather images
   ansible.builtin.include_role:
     name: redhatci.ocp.mirror_images

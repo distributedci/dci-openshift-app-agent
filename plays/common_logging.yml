@@ -8,6 +8,22 @@
   ansible.builtin.include_tasks: dump_ocp_logs.yml
   when: dci_gather_logs | bool
 
+- name: Find console logs
+  ansible.builtin.find:
+    paths: "/var/consoles/{{ cluster_name }}/"
+    patterns: '{{ cluster_name }}*'
+    size: 1k
+    recurse: false
+  register: console_log_files
+
+- name: Copy console logs into tmp directory
+  ansible.builtin.fetch:
+    src: "{{ item }}"
+    dest: "{{ job_logs.path }}/{{ item | basename }}-console.log"
+    flat: true
+    validate_checksum: false
+  loop: "{{ console_log_files.files | map(attribute='path') | list }}"
+
 - name: "Find files to be uploaded to DCI (log,txt,html,yaml,yml,pcap,trace,csv)"
   ansible.builtin.find:
     paths: "{{ job_logs.path }}"
