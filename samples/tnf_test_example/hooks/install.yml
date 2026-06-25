@@ -8,7 +8,7 @@
       kind: RuntimeClass
       metadata:
         name: production-runtime-class
-      handler: runc
+      handler: "{{ 'crun' if (ocp_version is defined and (ocp_version | float) >= 5.0) else 'runc' }}"
 
 # Create local-storage StorageClass is no StorageClass is present in the cluster
 - name: Create local-storage StorageClass
