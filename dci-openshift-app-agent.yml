@@ -23,7 +23,7 @@
 
       rescue: &error_with_upload_logs
         - name: Set job state - error
-          dci_job:
+          ansible.legacy.dci_job:
             id: "{{ job_info.job.id }}"
             status: "error"
           when: job_info is defined
@@ -114,7 +114,7 @@
 
     # Add the ocp component when called from dci-pipeline
     - name: Attach ocp component to the job
-      dci_job_component:
+      ansible.legacy.dci_job_component:
         job_id: "{{ job_info.job.id }}"
         component_id: "{{ ocp_component_id }}"
       register: job_component_result
@@ -127,7 +127,7 @@
 
     # Schedule a new job only if not passed via dci-pipeline
     - name: "Schedule a new job"
-      dci_job:
+      ansible.legacy.dci_job:
         components: "{{ dci_components + [ocp_component_id] | default([ocp_component_id]) }}"
         components_by_query: "{{ dci_components_by_query | default([]) }}"
         topic: "{{ dci_topic }}"
@@ -161,7 +161,7 @@
         - 'job_info.job.previous_job_id | length > 0'
 
     - name: 'Set DCI tags for the current job'
-      dci_job:
+      ansible.legacy.dci_job:
         id: '{{ job_id }}'
         tags: >
           {{
@@ -173,13 +173,13 @@
           }}
 
     - name: Count workarounds
-      dci_job:
+      ansible.legacy.dci_job:
         id: "{{ job_id }}"
         key: "workarounds"
         value: "{{ dci_workarounds | length }}"
 
     - name: Add cluster tag to the current job
-      dci_job:
+      ansible.legacy.dci_job:
         id: '{{ job_id }}'
         tags:
           - cluster:{{ cluster_name }}
@@ -266,7 +266,7 @@
     - name: Install tasks
       block:
         - name: Set job state - running
-          dci_job:
+          ansible.legacy.dci_job:
             id: "{{ job_id }}"
             status: "running"
           delegate_to: localhost
@@ -429,7 +429,7 @@
       include_tasks: plays/agent-cleanup.yml
 
     - name: Success
-      dci_job:
+      ansible.legacy.dci_job:
         id: "{{ job_id }}"
         status: "success"
       delegate_to: localhost

@@ -1,7 +1,7 @@
 ---
 
 - name: Pre-run
-  dci_job:
+  ansible.legacy.dci_job:
     id: "{{ job_id }}"
     status: "pre-run"
   delegate_to: localhost
@@ -37,7 +37,7 @@
       delegate_to: localhost
 
 - name: Get the updated job_info
-  dci_job:
+  ansible.legacy.dci_job:
     id: "{{ job_id }}"
   delegate_to: localhost
   register: dci_app_agent_job_info

@@ -6,7 +6,7 @@
         DCI_CLIENT_ID: "{{ lookup('env', 'DCI_CLIENT_ID') }}"
         DCI_API_SECRET: "{{ lookup('env', 'DCI_API_SECRET') }}"
         DCI_CS_URL: "{{ lookup('env', 'DCI_CS_URL') }}"
-      dci_file:
+      ansible.legacy.dci_file:
         path: "{{ item.path }}"
         name: "{{ (remove_ext | default(False) | bool) | ternary(item.path | basename | splitext | first, item.path | basename) }}"
         job_id: "{{ job_id }}"

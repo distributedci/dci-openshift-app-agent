@@ -1,7 +1,7 @@
 ---
 
 - name: Failure
-  dci_job:
+  ansible.legacy.dci_job:
     id: "{{ job_id }}"
     status: "failure"
   tags: [dci]

@@ -121,7 +121,7 @@
     - eco_test_suites | length
 
 - name: Get final job info
-  dci_job:
+  ansible.legacy.dci_job:
     id: "{{ job_id }}"
   register: job_info_updated
   delegate_to: localhost

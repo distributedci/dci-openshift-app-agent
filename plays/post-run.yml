@@ -5,7 +5,7 @@
   delegate_facts: true
   block:
     - name: Post-run state
-      dci_job:
+      ansible.legacy.dci_job:
         id: "{{ job_id }}"
         status: "post-run"
       tags: [dci]
