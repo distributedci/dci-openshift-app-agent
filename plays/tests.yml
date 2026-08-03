@@ -102,11 +102,27 @@
   when: check_workload_api | default(true) | bool
 
 - name: Preflight check operator tests
-  vars:
-    preflight_dci_all_components_are_ga: "{{ dci_all_components_are_ga }}"
-  ansible.builtin.include_role:
-    name: redhatci.ocp.preflight
   when: preflight_operators_to_certify is defined
+  block:
+    - name: Run preflight operator certification
+      vars:
+        preflight_dci_all_components_are_ga: "{{ dci_all_components_are_ga }}"
+      ansible.builtin.include_role:
+        name: redhatci.ocp.preflight
+  always:
+    - name: Create preflight component
+      when:
+        - preflight_source_dir is not defined
+        - preflight_version_info is defined
+      vars:
+        ic_commit_urls:
+          - "{{ preflight_version_info.commit_url }}"
+        ic_gits: []
+        ic_dev_gits: []
+      ansible.builtin.include_role:
+        name: redhatci.ocp.include_components
+        apply:
+          delegate_to: localhost
 
 - name: Run eco-gotests
   vars:
