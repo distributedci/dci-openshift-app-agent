@@ -1,5 +1,5 @@
 Name:          dci-openshift-app-agent
-Version:       1.5.0
+Version:       1.6.0
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
@@ -16,7 +16,7 @@ Requires: python2-dciclient >= 3.1.0
 %else
 Requires: python3-dciclient >= 3.1.0
 %endif
-Requires: ansible-collection-redhatci-ocp >= 2.20.0
+Requires: ansible-collection-redhatci-ocp >= 4.1.0
 Requires(pre): shadow-utils
 
 %description
@@ -60,6 +60,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Mon Aug  3 2026 Tony Garcia <tonyg@redhat.com> - 1.6.0-1.VERS
+- Move preflight component creation from redhatci.ocp.preflight to doaa
+
 * Sat Feb  7 2026 Frederic Lepied <flepied@redhat.com> 1.5.0-1.VERS
 - Bump to use redhatci.ocp node_info role
 
