@@ -27,6 +27,8 @@ dci_local_registry: |-
   {%- if local_registry_port is defined %}
   :{{ local_registry_port }}
   {%- endif %}
+dci_must_gather_images:
+  - registry.redhat.io/openshift4/ose-must-gather
 provision_cache_store: "/opt/cache"
 dci_workarounds: []
 dci_local_log_dir: /var/tmp
