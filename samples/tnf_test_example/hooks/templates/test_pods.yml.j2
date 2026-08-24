@@ -35,6 +35,7 @@ spec:
       annotations:
         redhat-best-practices-for-k8s.com/container_tests: '["PRIVILEGED_POD","PRIVILEGED_ROLE"]' # optional
         redhat-best-practices-for-k8s.com/defaultnetworkinterface: '"eth0"' # optional
+        certsuite.redhat.com/non-tls-ports: "8080"
 {% if app_ns == 'production-cnf' %}
         cpu-load-balancing.crio.io: disable
         irq-load-balancing.crio.io: disable
