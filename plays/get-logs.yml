@@ -26,10 +26,45 @@
   loop_control:
     loop_var: glfn_ns
 
-# rmgi_resolved_images is resolved at pre-run
+- name: Resolve and mirror must-gather images
+  vars:
+    _mg_hints: "{{ dci_must_gather_images | default([]) | reject('search', '/') | list }}"
+    _mg_full: "{{ dci_must_gather_images | default([]) | select('search', '/') | list }}"
+  block:
+    - name: Reset resolved must-gather images
+      ansible.builtin.set_fact:
+        rmgi_resolved_images: []
+
+    - name: Resolve must-gather hints to full image references
+      ansible.builtin.include_role:
+        name: redhatci.ocp.resolve_must_gather_images
+      vars:
+        rmgi_images: "{{ _mg_hints }}"
+      when:
+        - _mg_hints | length > 0
+
+    - name: Set must-gather images
+      ansible.builtin.set_fact:
+        mi_mg_images: "{{ (_mg_full + rmgi_resolved_images) | flatten | unique | list }}"
+
+    # Best effort to mirror explicit full must-gather refs. Hints
+    # are resolved from CSVs and are expected to be reachable already.
+    - name: Mirror must-gather images
+      ansible.builtin.include_role:
+        name: redhatci.ocp.mirror_images
+      vars:
+        mi_images: "{{ _mg_full }}"
+        mi_authfile: "{{ pullsecret_tmp_file }}"
+        mi_registry: "{{ dci_local_registry }}"
+      when:
+        - dci_disconnected | default(false) | bool
+        - dci_local_registry | length
+        - do_must_gather | bool
+        - _mg_full | length > 0
+
 - name: Get logs from OCP deployment
   environment:
-    DCI_MUST_GATHER_IMAGES: '{{ rmgi_resolved_images | default(dci_must_gather_images) | join(" ") }}'
+    DCI_MUST_GATHER_IMAGES: '{{ mi_mg_images | default([]) | join(" ") }}'
     SINCE_TIME: "{{ job_info.job.created_at }}"
     PATH: "{{ ansible_env.PATH }}:/sbin:/usr/sbin:/usr/local/bin/{% if client_tmp_dir.path is defined %}:{{ client_tmp_dir.path }}{% endif %}"
     DO_MUST_GATHER: "{{ do_must_gather | lower }}"

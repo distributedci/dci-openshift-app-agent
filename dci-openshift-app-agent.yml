@@ -15,7 +15,7 @@
             msg: "http_proxy={{ lookup('env', 'http_proxy') }} https_proxy={{ lookup('env', 'https_proxy') }} no_proxy={{ lookup('env', 'no_proxy') }}"
 
         - name: Check kubeconfig
-          ansible.builtin.include_tasks: 'plays/check_kubeconfig.yml'
+          ansible.builtin.include_tasks: 'plays/check-kubeconfig.yml'
 
         # Check prerequisite
         - name: "Check prerequisite"
@@ -32,7 +32,7 @@
 
         - name: "Run common logging process"
           ansible.builtin.include_tasks:
-            file: plays/common_logging.yml
+            file: plays/common-logging.yml
             apply:
               environment:
                 KUBECONFIG: "{{ kubeconfig_path }}"
@@ -283,7 +283,7 @@
 
       rescue: &failure_with_upload_logs
         - name: "Run common logging process"
-          ansible.builtin.include_tasks: plays/common_logging.yml
+          ansible.builtin.include_tasks: plays/common-logging.yml
 
         - name: "Execute the teardown process"
           ansible.builtin.include_tasks: "{{ dci_config_dir }}/hooks/teardown.yml"
@@ -412,7 +412,7 @@
     TMPDIR: "{{ ansible_env.HOME }}/tmp"
   tasks:
     - name: "Run common logging process"
-      ansible.builtin.include_tasks: plays/common_logging.yml
+      ansible.builtin.include_tasks: plays/common-logging.yml
 
     - name: "Execute the teardown process"
       ansible.builtin.include_tasks: "{{ dci_config_dir }}/hooks/teardown.yml"
