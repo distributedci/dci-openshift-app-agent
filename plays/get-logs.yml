@@ -28,6 +28,7 @@
 
 - name: Resolve and mirror must-gather images
   vars:
+    _mg_is_type: "{{ (ocp_version | default(version)) is version('4.14', '>') | ternary('idms', 'icsp') }}"
     _mg_hints: "{{ dci_must_gather_images | default([]) | reject('search', '/') | list }}"
     _mg_full: "{{ dci_must_gather_images | default([]) | select('search', '/') | list }}"
   block:
@@ -49,6 +50,10 @@
 
     # Best effort to mirror explicit full must-gather refs. Hints
     # are resolved from CSVs and are expected to be reachable already.
+    - name: Clear Image Source file fact
+      ansible.builtin.set_fact:
+        mi_is_file: {}
+
     - name: Mirror must-gather images
       ansible.builtin.include_role:
         name: redhatci.ocp.mirror_images
@@ -56,11 +61,47 @@
         mi_images: "{{ _mg_full }}"
         mi_authfile: "{{ pullsecret_tmp_file }}"
         mi_registry: "{{ dci_local_registry }}"
+        mi_is_type: "{{ _mg_is_type }}"
+        mi_is_name: "must-gather"
       when:
         - dci_disconnected | default(false) | bool
         - dci_local_registry | length
         - do_must_gather | bool
         - _mg_full | length > 0
+
+    - name: Apply Image Source manifest
+      kubernetes.core.k8s:
+        state: present
+        definition: "{{ lookup('ansible.builtin.file', mi_is_file.path) | from_yaml_all | list }}"
+      register: _mg_is_apply
+      failed_when: false
+      when:
+        - mi_is_file is defined
+        - mi_is_file.path is defined
+
+    - name: Wait for IDMS to roll out
+      ansible.builtin.include_role:
+        name: redhatci.ocp.check_resource
+        apply:
+          ignore_errors: true
+      vars:
+        resource_to_check: "MachineConfigPool"
+        check_wait_retries: 120
+        check_wait_delay: 10
+      when:
+        - _mg_is_apply is changed  # noqa: no-handler
+
+    - name: Remove temporary Image Source file
+      ansible.builtin.file:
+        path: "{{ mi_is_file.path }}"
+        state: absent
+      when:
+        - mi_is_file is defined
+        - mi_is_file.path is defined
+
+    - name: Clear Image Source file fact
+      ansible.builtin.set_fact:
+        mi_is_file: {}
 
 - name: Get logs from OCP deployment
   environment:
