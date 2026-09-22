@@ -1,5 +1,5 @@
 Name:          dci-openshift-app-agent
-Version:       1.7.0
+Version:       1.8.0
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
@@ -10,6 +10,7 @@ Source0:       dci-openshift-app-agent-%{version}.tar.gz
 BuildRequires: systemd
 BuildRequires: systemd-units
 Requires: sudo
+Requires: /usr/sbin/hardlink
 Requires: dci-ansible >= 0.3.1
 %if 0%{?rhel} && 0%{?rhel} < 8
 Requires: python2-dciclient >= 3.1.0
@@ -60,6 +61,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Wed Sep 16 2026 Frederic Lepied <flepied@redhat.com> 1.8.0-1.VERS
+- depend on hardlink for reducing must_gather size
+
 * Tue Aug 04 2026 Frederic Lepied <flepied@redhat.com> 1.7.0-1.VERS
 - Resolve must-gather images from CSV relatedImages (redhatci.ocp >= 4.3.0)
 
