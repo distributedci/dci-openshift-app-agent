@@ -5,7 +5,7 @@
   when: job_logs is undefined
 
 - name: "Collect OCP logs"
-  ansible.builtin.include_tasks: dump_ocp_logs.yml
+  ansible.builtin.include_tasks: get-logs.yml
   when: dci_gather_logs | bool
 
 - name: Find console logs

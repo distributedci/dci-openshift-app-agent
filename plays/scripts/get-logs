@@ -60,61 +60,22 @@ ${oc_path} get events --all-namespaces --sort-by='.metadata.creationTimestamp' -
   column -t -s $'\t' \
   > "${log_dir}/events.txt"
 
-MUST_GATHER_OPTS=""
-MUST_GATHER_ORIG_OPTS=""
-any_mirror_used=false
-
 if [ "$DO_MUST_GATHER" = true ]; then
-  # Get image sources if available
-  # Only rewrite registry if there is an IDMS/ICSP entry whose source
-  # matches the image we want to pull (e.g. registry.redhat.io/openshift4).
-  # Blindly using the first IDMS entry breaks connected clusters that have
-  # unrelated IDMS entries (e.g. for OADP operators).
-  for image in ${DCI_MUST_GATHER_IMAGES:-"registry.redhat.io/openshift4/ose-must-gather"}
+  must_gather_opts="--image-stream=openshift/must-gather:latest"
+
+  for image in ${DCI_MUST_GATHER_IMAGES}
   do
-    MUST_GATHER_ORIG_OPTS="${MUST_GATHER_ORIG_OPTS} --image=${image}"
-    # Extract the source registry+namespace (e.g. "registry.redhat.io/openshift4")
-    image_source="${image%/*}"
-    mirror=$(\
-        ${oc_path} get imagedigestmirrorsets -o json 2>/dev/null |
-          jq -r --arg source "${image_source}" \
-            '[.items[].spec.imageDigestMirrors[] |
-             select(.source == $source) |
-             .mirrors[0]] | first // ""'
-    )
-    if [[ -z "${mirror}" ]]; then
-      mirror=$(\
-          ${oc_path} get imagecontentsourcepolicy -o json 2>/dev/null |
-            jq -r --arg source "${image_source}" \
-              '[.items[].spec.repositoryDigestMirrors[] |
-               select(.source == $source) |
-               .mirrors[0]] | first // ""'
-      )
-    fi
-    if [[ -n "${mirror}" ]]; then
-      image="${mirror}/${image##*/}"
-      any_mirror_used=true
-    fi
-    MUST_GATHER_OPTS="${MUST_GATHER_OPTS} --image=${image}"
+    [ -n "${image}" ] || continue
+    must_gather_opts="${must_gather_opts} --image=${image}"
   done
 
   must_gather_dir="${log_dir}/must_gather"
   mkdir -p "${must_gather_dir}"
-
-  if ! ${oc_path} adm must-gather \
+  ${oc_path} adm must-gather \
     --dest-dir="${must_gather_dir}" \
-    ${MUST_GATHER_OPTS} \
-    >/dev/null; then
-    if ${any_mirror_used}; then
-      echo "Mirror-based must-gather failed, falling back to original images..."
-      rm -Rf "${must_gather_dir}"
-      mkdir -p "${must_gather_dir}"
-      ${oc_path} adm must-gather \
-        --dest-dir="${must_gather_dir}" \
-        ${MUST_GATHER_ORIG_OPTS} \
-        >/dev/null
-    fi
-  fi
+    ${must_gather_opts} \
+    --timeout=15m \
+    >/dev/null
 
   # Trim log files to only keep entries since the job start time
   if [ -n "${SINCE_TIME}" ]; then
