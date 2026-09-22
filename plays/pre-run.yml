@@ -68,7 +68,7 @@
     ni_local_registry: "{{ dci_local_registry }}"
     ni_local_img_path: "{{ dci_hardware_img_path | default('/dci/lshw') }}"
     ni_pullsecret_file: "{{ pullsecret_tmp_file | default('') }}"
-    ni_tag: "{{ dci_hardware_tag | default('lastest') }}"
+    ni_tag: "{{ dci_hardware_tag | default('latest') }}"
   when:
     - dci_collect_hardware | default(true) | bool
 
