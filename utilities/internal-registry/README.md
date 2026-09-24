@@ -4,17 +4,17 @@ Some test suites may require a local registry to load/pull container images, in 
 
 This playbook helps enabling the OCP integrated registry on an already created cluster, configuring it with ephemeral storage. Please note that all the images are lost if you restart the registry.
 
-Also it is important to notice that enabling the internal registry will configure the cluster nodes to be able to pull from the internal registry endpoint, this requires changes applied via Machine Configs that will execute a cluster nodes rolling restart causing some delays or pods distruption depending on the cluster size.
+Also it is important to notice that enabling the internal registry will configure the cluster nodes to be able to pull from the internal registry endpoint, this requires changes applied via Machine Configs that will execute a cluster nodes rolling restart causing some delays or pods disruption depending on the cluster size.
 
 **The usage of this configuration is not recommended for production environments.**
 
 The following is a list of actions performed by this playbook:
 1. The internal registry is enabled on the cluster.
 1. The internal registry is configured with ephemeral storage.
-1. The internal registry is exposed via a the cluster's default route.
-1. A new identity provider based in httpd backed is created.
+1. The internal registry is exposed via the cluster's default route.
+1. A new identity provider based on httpd backend is created.
 1. A new user called `ocp_registry_user` is created and granted with read/write access to the registry.
-1. The cluster's global pull secrets is updated withm the `ocp_registry_user` credentials.
+1. The cluster's global pull secrets is updated with the `ocp_registry_user` credentials.
 1. Access to the internal registry is allowed on the cluster's nodes by adding it as insecure registry (this will perform a rolling restart on the cluster nodes).
 
 The above actions are reverted by the `disable_ocp_registry` flag, except for the restoration of the original pull secret. Please see the [Recommendations](#recommendations) section for more information.

@@ -2,7 +2,7 @@
 
 This example creates a deployment with a pod from a web server image and validates if the pods are running.
 The deployment uses anti-affinity and replicas, also a service and route are created to access the web service.
-This example can also be installed with Helm by setting the correct variable (see bellow).
+This example can also be installed with Helm by setting the correct variable (see below).
 
 The table below shows the available variables and their default values.
 

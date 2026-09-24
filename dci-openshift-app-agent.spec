@@ -106,7 +106,7 @@ exit 0
 
 * Fri Oct 13 2023 Tony Garcia <tonyg@redhat.com> 0.7.0-1
 - Remove roles, use collections instead
-- Does not require the dci-openshif-agent any more
+- Does not require the dci-openshift-agent any more
 
 * Mon Oct 09 2023 Jorge A Gallegos <jgallego@redhat.com> - 0.6.0-1
 - Adding Red Hat CI OCP collection as a dependency
