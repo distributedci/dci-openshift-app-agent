@@ -10,13 +10,13 @@ Once installed, you need to export the `kubeconfig` from the jumphost to the hos
 
 > NOTE: If you followed the instructions of DCI OpenShift Agent to deploy the cluster, the `kubeconfig` file is on the provisionhost (usually located in `~/clusterconfigs/auth/kubeconfig`)
 
-These instructions applies when using the `dci-openshift-app-agent` over both baremetal and virtual machines (libvirt) environments.
+These instructions apply when using the `dci-openshift-app-agent` over both baremetal and virtual machines (libvirt) environments.
 
 ## Configuration
 
 A minimal configuration is required for the DCI OpenShift App Agent to run, before launching the agent, make sure you have the following:
 
-1. In /etc/dci-openshift-app-agent/settings.yml these variables are required, see their definitions in the table above. You can also define this variables in a different form, see section [Using customized tags](#using-customized-tags) below where a fake `job_info` is created.
+1. In /etc/dci-openshift-app-agent/settings.yml these variables are required, see their definitions in the table above. You can also define these variables in a different form, see section [Using customized tags](#using-customized-tags) below where a fake `job_info` is created.
 
         dci_topic:
         dci_components_by_query:
@@ -25,7 +25,7 @@ A minimal configuration is required for the DCI OpenShift App Agent to run, befo
 1. The DCI OpenShift App Agent by default runs a series of Ansible playbooks called hooks in phases (see section [Hooks](#hooks)). The default files only contain the string `---` and no actions are performed. The install.yml is missing on purpose, and if you run the agent at this point, you will receive an error. In that case you can choose between one of the following options to proceed:
 
     - Create install.yml file with the string `---` and no actions will be performed at this phase.
-    - Create install.yml with your own tasks. (You might also consider provide tasks for all the phases: pre-run, tests, post-run, teardown)
+    - Create install.yml with your own tasks. (You might also consider providing tasks for all the phases: pre-run, tests, post-run, teardown)
     - Include dci_config_dir variable in `settings.yml` with the path where the hooks you want to execute are located.
 
     > See section [Examples](#examples) for basic configurations of settings.yml to start using the agent.

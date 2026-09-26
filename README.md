@@ -17,7 +17,7 @@ Before starting make sure the next list of items are covered in the jumphost ser
   - appstream-rpms
 - Podman 3.0 (See section [Old Podman versions](#old-podman-versions) for older Podman versions)
 - Kubernetes Python module
-- An OpensShift cluster already deployed or a process to deploy it before running the `dci-openshift-app-agent`.
+- An OpenShift cluster already deployed or a process to deploy it before running the `dci-openshift-app-agent`.
 
 In an already registered server with RHEL you can fulfil the repositories and Ansible 2.9 requirements with the following commands:
 
@@ -137,7 +137,7 @@ When uploading job artifacts to the DCI Control Server fails, the agent copies t
 
 ## Enabling the Test Suites in DCI App Agent
 
-The DCI App Agent has support to execute multiple test suites to validate containers, virtual functions, Helm charts, and operators. The suites are in the form of Ansible roles executed during the Red Hat testing phases. The suites help the partners on getting prepared for the Red Hat Certifications or actually run the certification process on the the workloads deployed via DCI.
+The DCI App Agent has support to execute multiple test suites to validate containers, virtual functions, Helm charts, and operators. The suites are in the form of Ansible roles executed during the Red Hat testing phases. The suites help the partners on getting prepared for the Red Hat Certifications or actually run the certification process on the workloads deployed via DCI.
 
 ### Operator Certification tests
 
@@ -165,19 +165,19 @@ The [chart_verifier role](https://github.com/redhatci/ocp/tree/main/roles/chart_
 
 The test suites are executed in the following order, in the case all them are enabled.
 
-1. Helm chart erifier
+1. Helm chart verifier
 2. Red Hat Best Practices Test Suite for Kubernetes
 3. Preflight container only
 4. Preflight operators
 5. Operator SDK
 
-Test suites may requires some delay between each execution. The following variables allow setting a pause between the execution of each test. The time must be set in minutes.
+Test suites may require some delay between each execution. The following variables allow setting a pause between the execution of each test. The time must be set in minutes.
 ```
 chart_verified_wait: 0
 certsuite_wait: 0
 ```
 
-If the execution order or pre-defined workflow does not suits the partner needs, it it recommended to use agent hooks that will allow to use the roles available for the App agent and define a custom execution workflow. See [tnf_test_example sample](samples/tnf_test_example/README.md) for a reference about the hooks structure.
+If the execution order or pre-defined workflow does not suit the partner needs, it is recommended to use agent hooks that will allow to use the roles available for the App agent and define a custom execution workflow. See [tnf_test_example sample](samples/tnf_test_example/README.md) for a reference about the hooks structure.
 
 ## General workflow
 
@@ -271,7 +271,7 @@ It's included either when there's a failure, error or at the end of all the step
 ## Examples
 
 Some examples of hooks are provided in the $HOME directory of the `dci-openshift-app-agent` user (/var/lib/dci-openshift-app-agent/samples/). You can use those to initialize the agent tests.
-To use these samples, you need to include the variable `dci_config_dir` with the path of the sample to use in you pipeline job definition.
+To use these samples, you need to include the variable `dci_config_dir` with the path of the sample to use in your pipeline job definition.
 
 > NOTE: Please check the README.md for more information of how to use the examples.
 
@@ -293,10 +293,10 @@ A DCI job produces a set of relevant configuration files, logs, reports, and tes
 
 | File                                           | Section | Description                                                                               |
 | ---------------------------------------------- | ------- | ----------------------------------------------------------------------------------------- |
-| all-nodes.yaml                                 | Files   | The output `oc get get nodes` command                                                     |
+| all-nodes.yaml                                 | Files   | The output `oc get nodes` command                                                     |
 | \<pod_name\>.log                               | Files   | The log entries for a given pod                                                           |
-| \<namespace\>_events.log                       | Files   | The OCP events collected for an specific namespace                                        |
-| \<namespace\>_status.log                       | Files   | The list of pods that were deployed in an specific namespace                              |
+| \<namespace\>_events.log                       | Files   | The OCP events collected for a specific namespace                                        |
+| \<namespace\>_status.log                       | Files   | The list of pods that were deployed in a specific namespace                              |
 | *.log                                          | Files   | Log files generated during the job execution and stored in the `dci_log` directory        |
 | *.trace                                        | Files   | Tracing files generated during the job execution and stored in the `dci_log` directory    |
 | clusternetwork.yaml                            | Files   | File describing the network configuration of the cluster                                  |
@@ -317,7 +317,7 @@ A DCI job produces a set of relevant configuration files, logs, reports, and tes
 | *junit                                         | Tests   | Processed JUnit files generated by the Job or partner tests                               |
 | apirequestcounts_removed_api.csv               | Files   | This file lists the Cluster APIs used by a workload that have been marked for deprecation and removed in upcoming OCP versions |
 | apirequestcounts_ocp_compatibility.xml         | Files   | The compatibility of the workload with OCP versions                                       |
-| version.txt                                    | Files   | Report of the OCP client and server version using during the deployment                   |
+| version.txt                                    | Files   | Report of the OCP client and server version used during the deployment                   |
 | diff-jobs.txt                                  | Files   | A post-run stage to report that compares `the current` job versus the `previous job` of the same type regarding the components used |
 | operators.json                                 | Files   | A JSON file with details about the operators installed in the cluster                     |
 

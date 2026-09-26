@@ -15,7 +15,7 @@
 # under the License.
 
 # Description: A shell script that collects logs from an OCP cluster
-# It requires access to the a valid KUBECONFIG env variable and a log directory
+# It requires access to a valid KUBECONFIG env variable and a log directory
 
 set -x
 

@@ -5,7 +5,7 @@
     prefix: "dci_logs_{{ job_id | default('') }}_"
   register: job_logs
 
-- name: "Duplicate this directory in loclahost if needed"
+- name: "Duplicate this directory in localhost if needed"
   ansible.builtin.file:
     state: directory
     path: "{{ job_logs.path }}"
