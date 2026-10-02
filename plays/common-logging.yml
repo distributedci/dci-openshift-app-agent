@@ -4,30 +4,40 @@
   ansible.builtin.include_tasks: plays/log-dir.yml
   when: job_logs is undefined
 
-- name: "Collect OCP logs"
-  ansible.builtin.include_tasks: get-logs.yml
-  when: dci_gather_logs | bool
+- name: Collect logs before upload
+  block:
+    - name: "Collect OCP logs"
+      ansible.builtin.include_tasks: get-logs.yml
+      when: dci_gather_logs | bool
 
-- name: Find console logs
-  ansible.builtin.find:
-    paths: "/var/consoles/{{ cluster_name }}/"
-    patterns: '{{ cluster_name }}*'
-    size: 1k
-    recurse: false
-  register: console_log_files
+    - name: Find console logs
+      ansible.builtin.find:
+        paths: "/var/consoles/{{ cluster_name }}/"
+        patterns: '{{ cluster_name }}*'
+        size: 1k
+        recurse: false
+      register: console_log_files
 
-- name: Copy console logs into tmp directory
-  ansible.builtin.fetch:
-    src: "{{ item }}"
-    dest: "{{ job_logs.path }}/{{ item | basename }}-console.log"
-    flat: true
-    validate_checksum: false
-  loop: "{{ console_log_files.files | map(attribute='path') | list }}"
+    - name: Copy console logs into tmp directory
+      ansible.builtin.fetch:
+        src: "{{ item }}"
+        dest: "{{ job_logs.path }}/{{ item | basename }}-console.log"
+        flat: true
+        validate_checksum: false
+      loop: "{{ console_log_files.files | map(attribute='path') | list }}"
 
-- name: Get the differences from the previous DCI job
-  ansible.builtin.shell: "dci-diff-jobs --job_id_1 {{ job_id }} > {{ job_logs.path }}/diff-jobs.txt"
-  ignore_errors: true
-  delegate_to: localhost
+    - name: Get the differences from the previous DCI job
+      ansible.builtin.shell: "dci-diff-jobs --job_id_1 {{ job_id }} > {{ job_logs.path }}/diff-jobs.txt"
+      ignore_errors: true
+      delegate_to: localhost
+
+  rescue:
+    - name: Log collection failed, continue to upload
+      ansible.builtin.debug:
+        msg: >-
+          Log collection failed
+          ({{ ansible_failed_result.msg | default('see previous task') }}).
+          Uploading files already in {{ job_logs.path }}.
 
 - name: "Find files to be uploaded to DCI (log,txt,html,yaml,yml,pcap,trace,csv)"
   ansible.builtin.find:
