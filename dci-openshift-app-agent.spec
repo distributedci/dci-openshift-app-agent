@@ -1,5 +1,5 @@
 Name:          dci-openshift-app-agent
-Version:       1.8.0
+Version:       1.9.0
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
@@ -17,7 +17,7 @@ Requires: python2-dciclient >= 3.1.0
 %else
 Requires: python3-dciclient >= 3.1.0
 %endif
-Requires: ansible-collection-redhatci-ocp >= 4.3.0
+Requires: ansible-collection-redhatci-ocp >= 6.5.0
 Requires(pre): shadow-utils
 
 %description
@@ -61,6 +61,10 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+
+* Mon Oct  5 2026 Tony Garcia <tonyg@redhat.com> - 1.9.0-1.VERS
+- Increase dependency with redhatci.ocp collection to use ocp_tools role
+
 * Wed Sep 16 2026 Frederic Lepied <flepied@redhat.com> 1.8.0-1.VERS
 - depend on hardlink for reducing must_gather size
 
