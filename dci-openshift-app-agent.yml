@@ -225,6 +225,9 @@
           ansible.builtin.include_tasks: plays/log-dir.yml
           when: job_logs is undefined
 
+        - name: "Record cluster info on the DCI job"
+          ansible.builtin.include_tasks: plays/set-cluster-info-metadata.yml
+
         - name: "Execute pre-run"
           ansible.builtin.include_tasks: 'plays/pre-run.yml'
 
