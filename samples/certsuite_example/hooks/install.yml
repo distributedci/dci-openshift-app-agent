@@ -27,7 +27,7 @@
 # the pods under test.
 - name: Check Aspenmesh resources
   include_tasks: check_aspenmesh.yml
-  when: tnf_enable_service_mesh | default(false) | bool
+  when: certsuite_enable_service_mesh | default(false) | bool
 
 # Obtained from Verizon VCP Webscale Core and Edge Cloud Native Network Function Requirements, v1.4.
 # Note that this SCC seems to be incompatible with the execution of this test suite:
@@ -109,13 +109,13 @@
 - name: Deploy operator
   include_tasks: deploy_operator.yml
   when:
-    - tnf_install_operator | default(true) | bool
-    - tnf_operator_to_install is defined
+    - certsuite_install_operator | default(true) | bool
+    - certsuite_operator_to_install is defined
 
 - name: Deploy Helm chart
   include_tasks: deploy_helm_chart.yml
   when:
-    - tnf_helm_chart_to_install is defined
+    - certsuite_helm_chart_to_install is defined
 
 - name: Patch services created by operator and Helm chart
   block:
@@ -140,7 +140,7 @@
       loop_control:
         loop_var: service
   when:
-    - tnf_operator_to_install is defined
-    - tnf_helm_chart_to_install is defined
+    - certsuite_operator_to_install is defined
+    - certsuite_helm_chart_to_install is defined
 
 ...

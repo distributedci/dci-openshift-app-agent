@@ -1,0 +1,54 @@
+---
+
+- name: Get certsuite variables from certsuite_example component
+  set_fact:
+    certsuite_app_image: "{{ item['data']['certsuite_app_image'] }}"
+    certsuite_operator_to_install: "{{ item['data']['certsuite_operator_to_install'] }}"
+    certsuite_helm_chart_to_install: "{{ item['data']['certsuite_helm_chart_to_install'] }}"
+  with_items: "{{ job_info.job.components }}"
+  when: item["type"] == "certsuite_example"
+
+# In this case, previous task would have been skipped and no variables would have been created.
+- name: Tasks in case component was not used
+  block:
+    # Just verify if certsuite_app_image is provided in the settings explicitly, else make the job to fail.
+    - name: Validate that certsuite variables are defined
+      assert:
+        that: "{{ item }} is defined"
+        fail_msg: "The variable {{ item }} is required"
+      loop:
+          - certsuite_app_image
+  when:
+    - certsuite_operator_to_install is not defined
+    - certsuite_helm_chart_to_install is not defined
+
+- name: Tasks in case component was used
+  block:
+    # Check that the variables have been defined correctly in case
+    # they have been defined elsewhere.
+    - name: Validate that certsuite variables are defined
+      assert:
+        that: "{{ item }} is defined"
+        fail_msg: "The variable {{ item }} is required"
+      loop:
+        - certsuite_app_image
+        - certsuite_operator_to_install
+        - certsuite_operator_to_install.operator_name
+        - certsuite_operator_to_install.operator_version
+        - certsuite_operator_to_install.operator_bundle
+        - certsuite_helm_chart_to_install
+        - certsuite_helm_chart_to_install.chart_url
+        - certsuite_helm_chart_to_install.image_repository
+
+    # Needed for doing the mirroring of the image
+    - name: Validate that app_version for certsuite_helm_chart is provided in disconnected environments
+      assert:
+        that: "certsuite_helm_chart_to_install.app_version is defined"
+        fail_msg: "The variable certsuite_helm_chart_to_install.app_version is required in disconnected environments"
+      when:
+        - dci_disconnected | default(false) | bool
+  when:
+    - certsuite_operator_to_install is defined
+    - certsuite_helm_chart_to_install is defined
+
+...

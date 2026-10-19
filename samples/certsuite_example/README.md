@@ -1,8 +1,6 @@
-# TNF Test example
+# Certsuite example
 
 This example deploys a couple of pods in different namespaces, to be used with the [Red Hat Best Practices Test Suite for Kubernetes](https://github.com/redhat-best-practices-for-k8s/certsuite) in a multi-namespace scenario.
-
-> Even though CNF Cert Suite has been renamed to Red Hat Best Practices Test Suite for Kubernetes, this example will keep tnf_test_example name.
 
 Note that this example works in OCP versions equal or higher than 4.8.x.
 
@@ -11,8 +9,8 @@ A possible configuration to deploy this sample is the following (note that varia
 ```yaml
 ---
 dci_tags: ["debug"]
-dci_config_dir: "/var/lib/dci-openshift-app-agent/samples/tnf_test_example"
-dci_components_by_query: ["type:tnf_test_example"]
+dci_config_dir: "/var/lib/dci-openshift-app-agent/samples/certsuite_example"
+dci_components_by_query: ["type:certsuite_example"]
 do_certsuite: true
 kbpc_test_config:
   - namespace: "test-cnf"
@@ -36,7 +34,7 @@ In particular, two namespaces are created, called `test-cnf` and `production-cnf
 
 Other resources related to the pods under test are also deployed:
 
-- Configuration for istio injection, in order to install istio-proxy container on each pod, if istio/Aspenmesh is installed in the cluster. This is only done if `tnf_enable_service_mesh` control flag is set to `true` (`false` by default).
+- Configuration for istio injection, in order to install istio-proxy container on each pod, if istio/Aspenmesh is installed in the cluster. This is only done if `certsuite_enable_service_mesh` control flag is set to `true` (`false` by default).
 - (If no default StorageClass is present in the cluster) Local StorageClass and PersistentVolumes, attached to the pods under test in `production-cnf` namespace.
 - A custom SCC applied to all the pods. This SCC follows the Verizon recommendations to use best practices for deploying pods securely.
 - Resource quotas, extracted from [this repository](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload/blob/main/test-target/resource-quota.yaml).
@@ -44,7 +42,7 @@ Other resources related to the pods under test are also deployed:
 - CRD under test, extracted from [this repository](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload/blob/main/test-target/local-crd-under-test.yaml).
 - Pod disruption budget, extracted from [this repository](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload/blob/main/test-target/pod-disruption-budget.yaml).
 - Hugepages configuration in the pods under test, extracted from [this repository](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload/tree/main/examples/platform).
-  - Note that, to use this feature, you need to activate `tnf_enable_hugepages: true` in your code (default to `false`).
+  - Note that, to use this feature, you need to activate `certsuite_enable_hugepages: true` in your code (default to `false`).
 - Affinity rules applied to the pods under test. In the case of `test-cnf` namespace, pods are deployed using `podAntiAffinity` rule to keep the pods in different worker nodes, and in `production-cnf` namespace, a `podAffinity` rule is used to keep the pods in the same worker node, also using `AffinityRequired: 'true'` label.
 - Pods in `test-cnf` namespace are deployed with non-guaranteed QoS, whereas pods in `production-cnf` are deployed with guaranteed QoS, together with certain CPU allocation constraints and runtime class definition.
 
@@ -52,20 +50,20 @@ Finally, apart from the pods under test, it also deploys, in one of the namespac
 
 - An operator, which can be based on [mongodb-enterprise](https://catalog.redhat.com/software/operators/detail/5e9872923f398525a0ceafba) or in [simple-demo-operator](https://github.com/redhat-openshift-ecosystem/certified-operators/tree/main/operators/simple-demo-operator), in order to execute certsuite and Preflight tests over this operator.
 
-> Note the operator will only be installed if `tnf_install_operator` flag is set to `true`.
+> Note the operator will only be installed if `certsuite_install_operator` flag is set to `true`.
 
 - A Helm chart, based on [fredco samplechart](https://github.com/openshift-helm-charts/charts/tree/main/charts/partners/fredco/samplechart/0.1.3), in order to execute certsuite tests over this Helm chart.
 
-The specific operator and Helm chart that are deployed depend on the `tnf_test_example` DCI component used. Currently, we support `v0.0.1` (it uses simple-demo-operator is used) and `v0.0.2` (the latest one, where mongodb-enterprise operator is used). By using `dci_components_by_query` variable in your settings file, you can select the component that best suits you.
+The specific operator and Helm chart that are deployed depend on the `certsuite_example` DCI component used. Currently, we support `v1.0.0` (the latest one, where mongodb-enterprise operator is used). By using `dci_components_by_query` variable in your settings file, you can select the component that best suits you.
 
-Note that the component defines some data that is used by the hooks. Here you have an [example](https://www.distributed-ci.io/topics/818491de-8ee6-4ae8-a9bc-2d2ce62ef71c/components/95d2c742-d3a3-4bb5-8b8c-7a9a3243eec7) that you can check. If you click in `Data` > `See content`, you will see a JSON string containing the following variables (which needs to be declared):
+Note that the component defines some data that is used by the hooks:
 
-* `tnf_app_image`: image to be used in the pods under test. In our case, the specification, obtained from [this repository](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload), is a suitable one for passing all the test suites from the CNF Test Suite.
-* `tnf_operator_to_install`: information related to the operator to be installed. It must include the following variables within it:
+* `certsuite_app_image`: image to be used in the pods under test. In our case, the specification, obtained from [this repository](https://github.com/redhat-best-practices-for-k8s/certsuite-sample-workload), is a suitable one for passing all the test suites from the CNF Test Suite.
+* `certsuite_operator_to_install`: information related to the operator to be installed. It must include the following variables within it:
   * `operator_name`: name of the operator.
   * `operator_version`: version of the operator.
   * `operator_bundle`: bundle Image SHA of the operator to be installed. This is used to create a custom catalog for disconnected environments.
-* `tnf_helm_chart_to_install`: information related to the Helm chart to be deployed. It must include the following variables within it:
+* `certsuite_helm_chart_to_install`: information related to the Helm chart to be deployed. It must include the following variables within it:
   * `chart_url`: URL to the chart.tgz file that includes the Helm chart.
   * `image_repository`: public image used within the Helm chart.
   * `app_version`: (only needed in disconnected environments) version linked to `image_repository` image, so that the image would be `image_repository`:`app_version`.
@@ -75,12 +73,12 @@ These resources create services in the namespace that are updated to `PreferDual
 Example of values for these variables are the following (in connected, it will use quay.io; in disconnected, the image must be present in a `dci_local_registry`):
 
 ```yaml
-tnf_app_image: redhat-best-practices-for-k8s/certsuite-sample-workload:latest
-tnf_operator_to_install:
+certsuite_app_image: redhat-best-practices-for-k8s/certsuite-sample-workload:latest
+certsuite_operator_to_install:
   operator_name: mongodb-enterprise
   operator_version: v1.17.0
   operator_bundle: registry.connect.redhat.com/mongodb/enterprise-operator-bundle@sha256:f2127ed11f4fb714f5c35f0cc4561da00181ffb5edb098556df598d3a5a6a691
-tnf_helm_chart_to_install:
+certsuite_helm_chart_to_install:
   chart_url: https://github.com/openshift-helm-charts/charts/releases/download/fredco-samplechart-0.1.3/fredco-samplechart-0.1.3.tgz
   image_repository: registry.access.redhat.com/ubi8/nginx-118
   app_version: 1-42
@@ -91,4 +89,4 @@ For further information, you can check the following blog posts:
 - [Running CNF Cert Suite certification with dci-openshift-app-agent](https://blog.distributed-ci.io/cnf-cert-suite-with-dci-openshift-app-agent.html)
 - [How to automate DCI components creation](https://blog.distributed-ci.io/automate-dci-components.html)
 
-> Note that, in case you are not using components, operator and Helm chart will not be tested, but you can still run the job. For this, you need to define `tnf_app_image` explicitly in your settings or pipelines, else the job will fail in pre-run stage.
+> Note that, in case you are not using components, operator and Helm chart will not be tested, but you can still run the job. For this, you need to define `certsuite_app_image` explicitly in your settings or pipelines, else the job will fail in pre-run stage.

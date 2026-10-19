@@ -1,0 +1,14 @@
+---
+- name: Checking found CatalogSource with opcap
+  include_role:
+    name: redhatci.ocp.opcap_tool
+  vars:
+    opcap_target_catalog_source: "{{ certsuite_operator_to_install.operator_name }}-catalog"
+    opcap_catalog_source_namespace: "openshift-marketplace"
+    opcap_output_dir: "{{ job_logs.path }}"
+    opcap_packages: "{{ certsuite_operator_to_install.operator_name }}"
+  when:
+    - certsuite_install_operator | default(true) | bool
+    - certsuite_run_opcap_tests | default(true) | bool
+
+...

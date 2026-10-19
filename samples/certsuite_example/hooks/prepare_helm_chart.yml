@@ -5,7 +5,7 @@
     name: redhatci.ocp.mirror_images
   vars:
     mi_images:
-      - "{{ tnf_helm_chart_to_install.image_repository }}:{{ tnf_helm_chart_to_install.app_version }}"
+      - "{{ certsuite_helm_chart_to_install.image_repository }}:{{ certsuite_helm_chart_to_install.app_version }}"
     mi_authfile: "{{ pullsecret_tmp_file }}"
     mi_registry: "{{ dci_local_registry }}"
 

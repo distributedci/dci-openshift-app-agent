@@ -3,22 +3,22 @@
   include_tasks: uninstall_operator.yml
   vars:
     operator_namespace: "{{ target_ns }}"
-    operator_name: "{{ tnf_operator_to_install.operator_name }}"
+    operator_name: "{{ certsuite_operator_to_install.operator_name }}"
   when:
-    - tnf_install_operator | default(true) | bool
-    - tnf_operator_to_install is defined
+    - certsuite_install_operator | default(true) | bool
+    - certsuite_operator_to_install is defined
     - target_ns is defined
 
 - name: Delete operator-catalog
   kubernetes.core.k8s:
     state: absent
     api_version: operators.coreos.com/v1alpha1
-    name: "{{ tnf_operator_to_install.operator_name }}-catalog"
+    name: "{{ certsuite_operator_to_install.operator_name }}-catalog"
     namespace: openshift-marketplace
     kind: CatalogSource
   when:
-    - tnf_install_operator | default(true) | bool
-    - tnf_operator_to_install is defined
+    - certsuite_install_operator | default(true) | bool
+    - certsuite_operator_to_install is defined
 
 - name: Delete testing resources
   include_tasks: delete_testing_resources.yml

@@ -48,12 +48,12 @@ spec:
 {% if app_ns == 'production-cnf' %}
       runtimeClassName: production-runtime-class
 {% endif %}
-{% if tnf_enable_service_mesh|default(false)|bool and am_installed|default(false)| bool %}
+{% if certsuite_enable_service_mesh|default(false)|bool and am_installed|default(false)| bool %}
       imagePullSecrets:
       - name: aspen-mesh-pull-secret
 {% endif %}
       containers:
-        - image: {{ ( dci_disconnected|default(false)|bool and dci_local_registry|length ) | ternary(dci_local_registry, 'quay.io') }}/{{ tnf_app_image | default('redhat-best-practices-for-k8s/certsuite-sample-workload:latest') }}
+        - image: {{ ( dci_disconnected|default(false)|bool and dci_local_registry|length ) | ternary(dci_local_registry, 'quay.io') }}/{{ certsuite_app_image | default('redhat-best-practices-for-k8s/certsuite-sample-workload:latest') }}
           imagePullPolicy: IfNotPresent
           name: test
           ports:
@@ -65,7 +65,7 @@ spec:
               memory: 512Mi
               cpu: 2000m
             limits:
-{% if tnf_enable_hugepages | default(false) | bool %}
+{% if certsuite_enable_hugepages | default(false) | bool %}
               hugepages-2Mi: 100Mi
 {% endif %}
               memory: 512Mi
@@ -75,7 +75,7 @@ spec:
               memory: 256Mi
               cpu: 0.10
             limits:
-{% if tnf_enable_hugepages | default(false) | bool %}
+{% if certsuite_enable_hugepages | default(false) | bool %}
               hugepages-2Mi: 100Mi
 {% endif %}
               memory: 512Mi
@@ -117,14 +117,14 @@ spec:
             periodSeconds: 5
           command: ["./bin/app"]
           terminationMessagePolicy: FallbackToLogsOnError
-{% if app_ns == 'production-cnf' or tnf_enable_hugepages | default(false) | bool %}
+{% if app_ns == 'production-cnf' or certsuite_enable_hugepages | default(false) | bool %}
           volumeMounts:
 {% endif %}
 {% if app_ns == 'production-cnf' %}
           - mountPath: /data
             name: volume-claim-{{ app_ns }}
 {% endif %}
-{% if tnf_enable_hugepages | default(false) | bool %}
+{% if certsuite_enable_hugepages | default(false) | bool %}
           - mountPath: /hugepages-2Mi
             name: hugepage-2mi
       volumes:
