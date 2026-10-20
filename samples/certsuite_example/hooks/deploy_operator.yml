@@ -1,9 +1,9 @@
 ---
-- name: "Create CatalogSource for operator {{ tnf_operator_to_install.operator_name }}"
+- name: "Create CatalogSource for operator {{ certsuite_operator_to_install.operator_name }}"
   include_role:
     name: redhatci.ocp.catalog_source
   vars:
-    cs_name: "{{ tnf_operator_to_install.operator_name }}-catalog"
+    cs_name: "{{ certsuite_operator_to_install.operator_name }}-catalog"
     cs_namespace: "openshift-marketplace"
     cs_image: "{{ mc_catalog_digest | default('registry.redhat.io/redhat/certified-operator-index:v' + ocp_version) }}"
     cs_publisher: "Red Hat"
@@ -12,8 +12,8 @@
   include_role:
     name: redhatci.ocp.olm_operator
   vars:
-    operator: "{{ tnf_operator_to_install.operator_name }}"
-    source: "{{ tnf_operator_to_install.operator_name }}-catalog"
+    operator: "{{ certsuite_operator_to_install.operator_name }}"
+    source: "{{ certsuite_operator_to_install.operator_name }}-catalog"
     namespace: "{{ target_ns }}"
     operator_group_spec:
       targetNamespaces:

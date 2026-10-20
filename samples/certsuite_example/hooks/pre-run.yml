@@ -1,7 +1,7 @@
 ---
 # First task to do: if the variables are not correctly defined, do not continue.
-- name: Declare tnf variables
-  include_tasks: declare_tnf_variables.yml
+- name: Declare certsuite variables
+  include_tasks: declare_certsuite_variables.yml
 
 # Make sure that we don't have any remaining resources before starting tests, just
 # in case they were not deleted properly in previous executions in the same cluster.
@@ -35,8 +35,8 @@
 - name: Preparing the operator in disconnected environments
   include_tasks: prepare_operator.yml
   when:
-    - tnf_install_operator | default(true) | bool
-    - tnf_operator_to_install is defined
+    - certsuite_install_operator | default(true) | bool
+    - certsuite_operator_to_install is defined
     - dci_disconnected | default(false) | bool
     - dci_local_registry | length
     - pullsecret_tmp_file|length
@@ -45,7 +45,7 @@
 - name: Preparing the Helm chart in disconnected environments
   include_tasks: prepare_helm_chart.yml
   when:
-    - tnf_helm_chart_to_install is defined
+    - certsuite_helm_chart_to_install is defined
     - dci_disconnected | default(false) | bool
     - dci_local_registry | length
     - pullsecret_tmp_file|length

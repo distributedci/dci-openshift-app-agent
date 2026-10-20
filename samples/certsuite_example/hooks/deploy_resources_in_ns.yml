@@ -68,7 +68,7 @@
 - name: Configure Aspenmesh for namespace
   include_tasks: configure_aspenmesh_for_ns.yml
   when:
-    - tnf_enable_service_mesh | default(false) | bool
+    - certsuite_enable_service_mesh | default(false) | bool
     - am_installed | default(false) | bool
 
 - name: Create ResourceQuotas for namespace
@@ -143,7 +143,7 @@
       loop_control:
         loop_var: test_pod
   when:
-    - tnf_enable_service_mesh | default(false) | bool
+    - certsuite_enable_service_mesh | default(false) | bool
     - am_installed | default(false) | bool
 
 - name: Create CRD under test
