@@ -3,15 +3,15 @@
 - name: Create temporary directory
   tempfile:
     state: directory
-    prefix: "dci_tnf_helm_{{ job_id | default('') }}_"
-  register: tnf_test_example_helm_chart
+    prefix: "dci_certsuite_helm_{{ job_id | default('') }}_"
+  register: certsuite_example_helm_chart
 
 - name: Download Helm binary
   vars:
     helm_ver: "{{ helm_version | default('3.20.0') }}"
   unarchive:
     src: https://get.helm.sh/helm-v{{ helm_ver }}-linux-amd64.tar.gz
-    dest: "{{ tnf_test_example_helm_chart.path }}"
+    dest: "{{ certsuite_example_helm_chart.path }}"
     extra_opts:
       - linux-amd64/helm
       - --strip-components=1
@@ -19,12 +19,12 @@
 
 - name: Set helm_tool_path
   set_fact:
-    helm_tool_path: "{{ tnf_test_example_helm_chart.path }}/helm"
+    helm_tool_path: "{{ certsuite_example_helm_chart.path }}/helm"
 
 - name: Download Helm chart file
   get_url:
-    url: "{{ tnf_helm_chart_to_install.chart_url }}"
-    dest: "{{ tnf_test_example_helm_chart.path }}/tnf_test_example.tgz"
+    url: "{{ certsuite_helm_chart_to_install.chart_url }}"
+    dest: "{{ certsuite_example_helm_chart.path }}/certsuite_example.tgz"
     mode: 0644
   register: hc_req
   until: hc_req.changed
@@ -33,28 +33,28 @@
 
 - name: "Render Chart values file"
   vars:
-    image_name: "{{ tnf_helm_chart_to_install.image_repository | regex_replace('^[^/]*/', '') }}"
+    image_name: "{{ certsuite_helm_chart_to_install.image_repository | regex_replace('^[^/]*/', '') }}"
     image_repository: "{{ ( dci_disconnected|default(false)|bool and dci_local_registry|length ) |
-                      ternary(dci_local_registry + '/' + image_name, tnf_helm_chart_to_install.image_repository) }}"
+                      ternary(dci_local_registry + '/' + image_name, certsuite_helm_chart_to_install.image_repository) }}"
   copy:
     content: |
       image:
         repository: {{ image_repository }}
-    dest: "{{ tnf_test_example_helm_chart.path }}/values.yml"
+    dest: "{{ certsuite_example_helm_chart.path }}/values.yml"
     mode: 0600
 
 - name: Deploy Helm chart
   kubernetes.core.helm:
-    name: tnf-test-example
-    chart_ref: "{{ tnf_test_example_helm_chart.path }}/tnf_test_example.tgz"
+    name: certsuite-example
+    chart_ref: "{{ certsuite_example_helm_chart.path }}/certsuite_example.tgz"
     release_namespace: "{{ target_ns }}"
     binary_path: "{{ helm_tool_path }}"
     values_files:
-      - "{{ tnf_test_example_helm_chart.path }}/values.yml"
+      - "{{ certsuite_example_helm_chart.path }}/values.yml"
 
 - name: Wait until Helm chart is deployed
   kubernetes.core.helm_info:
-    name: tnf-test-example
+    name: certsuite-example
     release_namespace: "{{ target_ns }}"
     binary_path: "{{ helm_tool_path }}"
   register: chart_check
@@ -67,7 +67,7 @@
 
 - name: Remove temporary directory
   file:
-    path: "{{ tnf_test_example_helm_chart.path }}"
+    path: "{{ certsuite_example_helm_chart.path }}"
     state: absent
 
 ...

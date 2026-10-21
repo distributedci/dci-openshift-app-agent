@@ -1,30 +1,30 @@
 ---
 - name: Define catalog path and version
   set_fact:
-    catalog_path: "{{ dci_local_registry }}/telcoci/redhat-best-practices-for-k8s/{{ tnf_operator_to_install.operator_name }}-disconnected-catalog"
-    catalog_version: "{{ tnf_operator_to_install.operator_version }}_{{ lookup('password', '/dev/null length=16 chars=ascii_lowercase,digits') }}"
+    catalog_path: "{{ dci_local_registry }}/telcoci/redhat-best-practices-for-k8s/{{ certsuite_operator_to_install.operator_name }}-disconnected-catalog"
+    catalog_version: "{{ certsuite_operator_to_install.operator_version }}_{{ lookup('password', '/dev/null length=16 chars=ascii_lowercase,digits') }}"
 
 - name: Create temporary directory for mirroring catalog
   tempfile:
     state: directory
-    prefix: "dci_tnf_ops_{{ job_id | default('') }}_"
-  register: tnf_test_example_prerun_tmp_dir
+    prefix: "dci_certsuite_ops_{{ job_id | default('') }}_"
+  register: certsuite_example_prerun_tmp_dir
 
 - name: Copy authentication config
   copy:
     src: "{{ partner_creds }}"
-    dest: "{{ tnf_test_example_prerun_tmp_dir.path }}/config.json"
+    dest: "{{ certsuite_example_prerun_tmp_dir.path }}/config.json"
 
 - name: "Create FBC catalog"
   include_role:
     name: redhatci.ocp.fbc_catalog
     apply:
       environment:
-        - DOCKER_CONFIG: "{{ tnf_test_example_prerun_tmp_dir.path }}"
+        - DOCKER_CONFIG: "{{ certsuite_example_prerun_tmp_dir.path }}"
   vars:
     fbc_index_image: "{{ catalog_path }}:{{ catalog_version }}"
     fbc_bundles:
-      - "{{ tnf_operator_to_install.operator_bundle }}"
+      - "{{ certsuite_operator_to_install.operator_bundle }}"
     fbc_opm_args: "--skip-tls-verify=false"
 
 - name: Push catalog image to local registry and delete local image
@@ -57,7 +57,7 @@
 
 - name: Remove temporary directory
   file:
-    path: "{{ tnf_test_example_prerun_tmp_dir.path }}"
+    path: "{{ certsuite_example_prerun_tmp_dir.path }}"
     state: absent
 
 - name: Wait for MCP status

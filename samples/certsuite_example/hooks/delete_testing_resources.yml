@@ -68,7 +68,7 @@
     namespace: "{{ pods_in_same_ns.namespace }}"
     state: absent
   when:
-    - tnf_enable_service_mesh | default(false) | bool
+    - certsuite_enable_service_mesh | default(false) | bool
     - am_installed | default(false) | bool
 
 - name: "Delete use-restricted-cat-1 RoleBinding"

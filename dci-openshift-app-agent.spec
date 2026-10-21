@@ -1,9 +1,9 @@
 Name:          dci-openshift-app-agent
-Version:       1.9.0
+Version:       1.10.0
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
-URL:           https://github.com/redhat-cip/dci-openshift-app-agent
+URL:           https://github.com/distributedci/dci-openshift-app-agent
 BuildArch:     noarch
 Source0:       dci-openshift-app-agent-%{version}.tar.gz
 
@@ -17,7 +17,7 @@ Requires: python2-dciclient >= 3.1.0
 %else
 Requires: python3-dciclient >= 3.1.0
 %endif
-Requires: ansible-collection-redhatci-ocp >= 6.6.0
+Requires: ansible-collection-redhatci-ocp >= 6.7.0
 Requires(pre): shadow-utils
 
 %description
@@ -61,6 +61,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Mon Oct 19 2026 Ramon Perez <raperez@redhat.com> -  1.10.0-1.VERS
+- Refactor tnf references and move to certsuite
+
 * Thu Oct 08 2026 Frederic Lepied <flepied@redhat.com> 1.9.0-1.VERS
 - Record cluster configuration as DCI job tags and key/values (redhatci.ocp >= 6.6.0)
 

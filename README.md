@@ -153,7 +153,7 @@ The [k8s_best_practices_certsuite role](https://github.com/redhatci/ocp/tree/mai
 
 For specific details about the features and variables for this test suite see: [k8s_best_practices_certsuite role](https://github.com/redhatci/ocp/tree/main/roles/k8s_best_practices_certsuite/README.md) documentation.
 
-Also, the [tnf_test_example sample](samples/tnf_test_example/README.md) can be followed as a good example of how to deploy a workload to be tested by the Red Hat Best Practices Test Suite for Kubernetes.
+Also, the [certsuite_example sample](samples/certsuite_example/README.md) can be followed as a good example of how to deploy a workload to be tested by the Red Hat Best Practices Test Suite for Kubernetes.
 
 ### Helm Chart Verifier
 
@@ -177,7 +177,7 @@ chart_verified_wait: 0
 certsuite_wait: 0
 ```
 
-If the execution order or pre-defined workflow does not suit the partner needs, it is recommended to use agent hooks that will allow to use the roles available for the App agent and define a custom execution workflow. See [tnf_test_example sample](samples/tnf_test_example/README.md) for a reference about the hooks structure.
+If the execution order or pre-defined workflow does not suit the partner needs, it is recommended to use agent hooks that will allow to use the roles available for the App agent and define a custom execution workflow. See [certsuite_example sample](samples/certsuite_example/README.md) for a reference about the hooks structure.
 
 ## General workflow
 
