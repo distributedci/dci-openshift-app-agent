@@ -1,5 +1,5 @@
 Name:          dci-openshift-app-agent
-Version:       1.10.0
+Version:       1.11.0
 Release:       1.VERS%{?dist}
 Summary:       DCI OpenShift App Agent
 License:       ASL 2.0
@@ -61,6 +61,9 @@ exit 0
 %{_sysconfdir}/sudoers.d/%{name}
 
 %changelog
+* Fri Oct 23 2026 Tony Garcia <tonyg@redhat.com> - 1.11.0-1.VERS
+- Increase dependency with redhatci.ocp collection to use ocp_tools role
+
 * Mon Oct 19 2026 Ramon Perez <raperez@redhat.com> -  1.10.0-1.VERS
 - Refactor tnf references and move to certsuite
 
