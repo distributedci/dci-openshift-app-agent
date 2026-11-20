@@ -63,13 +63,13 @@ spec:
 {% if app_ns == 'production-cnf' %}
             requests:
               memory: 512Mi
-              cpu: 2000m
+              cpu: 1000m
             limits:
 {% if certsuite_enable_hugepages | default(false) | bool %}
               hugepages-2Mi: 100Mi
 {% endif %}
               memory: 512Mi
-              cpu: 2000m
+              cpu: 1000m
 {% else %}
             requests:
               memory: 256Mi
