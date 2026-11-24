@@ -126,6 +126,7 @@
 
 - name: Run eco-gotests
   vars:
+    eco_gotests_image_version: "v{{ dci_topic | regex_replace('^OCP-', '') }}.0"
     eco_gotests_test_suites: "{{ eco_test_suites }}"
     eco_gotests_registry_auth_file: "{{ pullsecret_tmp_file | default('') }}"
     eco_gotests_log_dir: "{{ job_logs.path }}"
